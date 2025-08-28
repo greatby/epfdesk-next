@@ -3,6 +3,7 @@ import useUserLocation from "@/hooks/useUserLocation";
 
 export default function LocationBanner() {
   const { country, city, lat, lng } = useUserLocation();
+console.log("Location from cookies:", country, city);
 
   return (
     <div className="p-4 bg-green-100 text-center text-gray-800">
