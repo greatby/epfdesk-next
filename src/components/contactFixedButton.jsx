@@ -192,8 +192,8 @@ export default function FloatingFormToggle({ animate = true }) {
                   "I’d like to know more about your compliance services.\n\n" +
                   "Company Name:\n" +
                   "No. of Employees:\n" +
-                  "My Role: [HR / Finance / Founder]\n" +
-                  "Areas of Interest: [EPF / ESIC / LWF / PT / POSH / All]"
+                  "My Role:\n" +
+                  "Areas of Interest:"
               );
               window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
             }}
@@ -218,8 +218,8 @@ export default function FloatingFormToggle({ animate = true }) {
                 "I’d like to know more about your compliance services.\n\n" +
                 "Company Name:\n" +
                 "No. of Employees:\n" +
-                "My Role: [HR / Finance / Founder]\n" +
-                "Areas of interest: [EPF / ESIC / LWF / PT / POSH / All]"
+                "My Role:\n" +
+                "Areas of interest:"
             )}`}
             className="flex h-[50px] w-[50px] sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-0 md:p-4 lg:p-4 text-black shadow-lg transition hover:bg-[rgb(209,244,112)]"
           >

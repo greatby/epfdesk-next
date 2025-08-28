@@ -143,8 +143,8 @@ const LinkButtons = () => {
                 "I’d like to know more about your compliance services.\n\n" +
                 "Company Name:\n" +
                 "No. of Employees:\n" +
-                "My Role: [HR / Finance / Founder]\n" +
-                "Areas of Interest: [EPF / ESIC / LWF / PT / POSH / All]"
+                "My Role:\n" +
+                "Areas of Interest:"
             );
             window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
           }}

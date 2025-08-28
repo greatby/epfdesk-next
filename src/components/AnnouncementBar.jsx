@@ -23,10 +23,10 @@ export default function AnnouncementBar() {
   return (
     <div className="w-full bg-green-900 text-white py-2 px-4 flex justify-center items-center gap-2 text-sm sm:text-base">
       {/* Mobile text */}
-      <span className="block sm:hidden">PF Issues? FREE Expert Help →</span>
+      <span className="block sm:hidden text-[16px]">PF Issues? FREE Expert Help →</span>
 
       {/* Desktop text */}
-      <span className="hidden sm:block">
+      <span className="hidden sm:block text-[18px]">
         FREE EPF Help for Every Employee | PF Withdrawal Stuck? UAN Issues? Expert Support on WhatsApp →
       </span>
 

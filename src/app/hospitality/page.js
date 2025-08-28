@@ -33,7 +33,34 @@ Cost of Guest Experience`,
 };
 
 function Hero() {
-  return <HeroSection slide={heroSlides[7]} />;
+  return (
+ <div
+  style={{
+    backgroundImage: `url("https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?_gl=1*1r2b55l*_ga*MTQ2OTkzMDg1My4xNzQ5NTY3ODA4*_ga_8JE65Q40S6*czE3NTYyMDYwOTYkbzE2JGcxJHQxNzU2MjA2MTA4JGo0OCRsMCRoMA..")`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    height: "100vh",
+    position: "relative",
+  }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/50"></div>
+
+  {/* Content */}
+  <div className="relative flex items-center justify-center h-screen text-white flex-col max-w-5xl m-auto px-4">
+    <h1 className="text-5xl text-center mb-5">
+      Hospitality Compliance: The Hidden Cost of Guest Experience
+    </h1>
+    <p className="text-center text-2xl">
+      Workforce Limited offers specialized compliance for restaurants & hotels.
+      Master EPF, ESIC, POSH & labor laws. We protect your brand and manage high
+      attrition, from a single outlet to a national chain.
+    </p>
+  </div>
+</div>
+
+  );
 }
 
 const Posh = () => {
@@ -42,7 +69,7 @@ const Posh = () => {
       <FadeInWhenVisible>
         <Hero />
       </FadeInWhenVisible>
-      <FadeInWhenVisible>
+      {/* <FadeInWhenVisible>
         <VerticalAndHorizontalCards
           horizontalCards={horizontalCardsHosp}
           verticalCards={verticalCardsHosp}
@@ -76,7 +103,7 @@ const Posh = () => {
       </FadeInWhenVisible>
       <FadeInWhenVisible>
         <LimitedOnboardingCTA />
-      </FadeInWhenVisible>
+      </FadeInWhenVisible> */}
     </>
   );
 };

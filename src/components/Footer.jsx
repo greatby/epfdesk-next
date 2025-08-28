@@ -86,8 +86,8 @@ export default function Footer() {
                       "I’d like to know more about your compliance services.\n\n" +
                       "Company Name:\n" +
                       "No. of Employees:\n" +
-                      "My Role: [HR / Finance / Founder]\n" +
-                      "Areas of interest: [EPF / ESIC / LWF / PT / POSH / All]"
+                      "My Role:\n" +
+                      "Areas of interest:"
                   )}`}
                   className="text-gray-500 hover:text-blue-700 transition"
                 >
@@ -101,8 +101,8 @@ export default function Footer() {
                         "I’d like to know more about your compliance services.\n\n" +
                         "Company Name:\n" +
                         "No. of Employees:\n" +
-                        "My Role: [HR / Finance / Founder]\n" +
-                        "Areas of Interest: [EPF / ESIC / LWF / PT / POSH / All]"
+                        "My Role:\n" +
+                        "Areas of Interest:"
                     );
                     window.open(
                       `https://wa.me/${phone}?text=${text}`,
