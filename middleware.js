@@ -1,34 +1,45 @@
+// // middleware.js
+// import { NextResponse } from "next/server";
+
+// export async function middleware(req) {
+//   const ip = req.headers.get("x-forwarded-for")?.split(",")[0] || "8.8.8.8";
+
+//   try {
+//     const res = await fetch(`https://ipapi.co/${ip}/json/`);
+//     const data = await res.json();
+
+//     const response = NextResponse.next();
+
+//     // Save to cookies
+//     response.cookies.set("userCountry", data.country_name || "Unknown");
+//     response.cookies.set("userCity", data.city || "Unknown");
+
+//     return response;
+//   } catch (err) {
+//     console.error("❌ IP lookup failed:", err.message);
+//     return NextResponse.next();
+//   }
+// }
+
+// middleware.js
 import { NextResponse } from "next/server";
 
 export async function middleware(req) {
-  let country = req.geo?.country || null;
-  let city = req.geo?.city || null;
+  const ip =
+    req.headers.get("x-forwarded-for")?.split(",")[0] ||
+    "8.8.8.8"; // fallback for local dev
 
-  // fallback if req.geo is missing
-  if (!country || !city) {
-    const ip =
-      req.headers.get("x-forwarded-for")?.split(",")[0] ||
-      req.ip ||
-      "8.8.8.8";
+  try {
+    const res = await fetch(`https://ipapi.co/${ip}/json/`);
+    const data = await res.json();
 
-    try {
-      const res = await fetch(`https://ipapi.co/${ip}/json/`);
-      const data = await res.json();
+    const response = NextResponse.next();
+    response.cookies.set("userCountry", data.country_name || "Unknown Country");
+    response.cookies.set("userCity", data.city || "Unknown City");
 
-      country = data.country_name || "Unknown";
-      city = data.city || "Unknown";
-    } catch (e) {
-      console.error("IP lookup failed", e);
-    }
+    return response;
+  } catch (err) {
+    console.error("IP lookup failed", err);
+    return NextResponse.next();
   }
-
-  const response = NextResponse.next();
-  response.cookies.set("userCountry", country || "Unknown");
-  response.cookies.set("userCity", city || "Unknown");
-
-  return response;
 }
-
-export const config = {
-  matcher: ["/:path*"], // run on all routes
-};
