@@ -1,18 +1,34 @@
 import { NextResponse } from "next/server";
 
-export function middleware(req) {
-  const country = req.geo?.country || "Unknown";
-  const city = req.geo?.city || "Unknown";
+export async function middleware(req) {
+  let country = req.geo?.country || null;
+  let city = req.geo?.city || null;
 
-  console.log("🌍 Geo detected:", req.geo); // should log in Vercel
+  // fallback if req.geo is missing
+  if (!country || !city) {
+    const ip =
+      req.headers.get("x-forwarded-for")?.split(",")[0] ||
+      req.ip ||
+      "8.8.8.8";
 
-  const res = NextResponse.next();
-  res.cookies.set("userCountry", country);
-  res.cookies.set("userCity", city);
+    try {
+      const res = await fetch(`https://ipapi.co/${ip}/json/`);
+      const data = await res.json();
 
-  return res;
+      country = data.country_name || "Unknown";
+      city = data.city || "Unknown";
+    } catch (e) {
+      console.error("IP lookup failed", e);
+    }
+  }
+
+  const response = NextResponse.next();
+  response.cookies.set("userCountry", country || "Unknown");
+  response.cookies.set("userCity", city || "Unknown");
+
+  return response;
 }
 
 export const config = {
-  matcher: ["/:path*"],
+  matcher: ["/:path*"], // run on all routes
 };
