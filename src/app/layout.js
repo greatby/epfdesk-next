@@ -58,7 +58,6 @@
 //   );
 // }
 
-
 "use client";
 import { usePathname } from "next/navigation";
 import Navbar from "@/components/Navbar";
@@ -67,6 +66,7 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import Footer from "@/components/Footer";
 import HeroObserver from "@/components/heroObserver";
 import LocationBanner from "@/components/LocationBanner";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -76,7 +76,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         {!hideLayout && <Navbar />}
-        <main>{children}</main>
+        <main>
+          {children}
+          <Analytics />
+        </main>
         <LocationBanner />
         {!hideLayout && (
           <FadeInWhenVisible>
