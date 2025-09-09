@@ -26,6 +26,15 @@ import HC_Testimonials from "@/components/hospitality/HC_Testimonials";
 import HC_PricingComparison from "@/components/hospitality/HC_PricingComparison";
 import HC_FAQ from "@/components/hospitality/HC_FAQ";
 import HC_FinalCTA from "@/components/hospitality/HC_FinalCTA";
+import VideoHighlight from "@/components/hospitality/VideoHighlight";
+import Testimonials from "@/components/hospitality/Testimonial";
+import Bubbles from "@/components/hospitality/Bubbles";
+import Questioning from "@/components/hospitality/Questioning";
+import Slider from "@/components/hospitality/Slider";
+import Upskills from "@/components/hospitality/Upskills";
+import YoutubeSlider from "@/components/hospitality/YoutubeSlider";
+import Footer from "@/components/hospitality/Footer"
+
 
 export const metadata = {
   title: `Hospitality Compliance: The Hidden 
@@ -103,42 +112,15 @@ const Hospitality = () => {
       <FadeInWhenVisible>
         <Hero />
       </FadeInWhenVisible>
+      <VideoHighlight />
+      <Testimonials />
+      <Bubbles />
+      <Questioning />
+      <Slider />
+      <Upskills />
+      <YoutubeSlider />
+      <Footer/>
       {/* <FadeInWhenVisible>
-        <VerticalAndHorizontalCards
-          horizontalCards={horizontalCardsHosp}
-          verticalCards={verticalCardsHosp}
-        />
-      </FadeInWhenVisible>
-      <FadeInWhenVisible>
-        <LargeCardSlider cardsData={largeCardsHosp} />
-      </FadeInWhenVisible>
-      <FadeInWhenVisible>
-        <div className="max-w-[1400px] mx-auto">
-          <h1 className="text-4xl px-2 sm:text-5xl mt-16 font-extrabold text-center text-gray-800 mb-10">
-            Exactly What We Handle (No Corporate Fluff)
-          </h1>
-          <p className="max-w-5xl mx-auto mt-6 text-center px-4 text-[1.4rem] mb-10 text-gray-600 font-bold">
-            Workforce Limited transforms your compliance chaos into a strategic
-            advantage. It frees your team to focus on what they do best:
-            delivering an exceptional guest experience, managing your brand, and
-            building the future of your organization.
-          </p>
-        </div>
-        <PastelCardSlider cardsData={pastelCardsHosp} />
-      </FadeInWhenVisible>
-      <FadeInWhenVisible>
-        <CustomerCarousel slides={slidesLandingHosp} />
-      </FadeInWhenVisible>
-      <FadeInWhenVisible>
-        <CostComparison />
-      </FadeInWhenVisible>
-      <FadeInWhenVisible>
-        <FaqAccordion faqs={hospFaq} />
-      </FadeInWhenVisible>
-      <FadeInWhenVisible>
-        <LimitedOnboardingCTA />
-      </FadeInWhenVisible> */}
-      <FadeInWhenVisible>
         <HC_CrisisStory />
       </FadeInWhenVisible>
       <FadeInWhenVisible>
@@ -161,7 +143,7 @@ const Hospitality = () => {
       </FadeInWhenVisible>
       <FadeInWhenVisible>
         <HC_FinalCTA />
-      </FadeInWhenVisible>
+      </FadeInWhenVisible> */}
     </>
   );
 };
