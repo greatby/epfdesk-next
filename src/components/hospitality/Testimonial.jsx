@@ -106,7 +106,7 @@ function updateLeftConnector() {
   // width = distance from viewport left (0) to first card left
   const leftWidth = Math.max(0, firstRect.left);
 
-  leftEl.style.position = "absolute"; // fixed to viewport!
+  leftEl.style.position = "absolute";
   leftEl.style.left = "0px";
   leftEl.style.top = `145px`;//${centerY}px
   leftEl.style.height = `${LINE_HEIGHT}px`;
