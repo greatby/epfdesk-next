@@ -205,15 +205,15 @@ const Bubbles = () => {
         const rightY =
           rightBubble.top + rightBubble.height / 2 - containerRect.top;
 
-        const path = `
-          M 0 ${leftY}
-          L ${leftX - 15} ${leftY}
-          m 0 0 a 5 5 0 1 0 10 0 a 5 5 0 1 0 -10 0
-          M ${rightX + 15} ${rightY}
-          L ${containerRect.width} ${rightY}
-          m -10 0 a 5 5 0 1 0 10 0 a 5 5 0 1 0 -10 0
-        `;
-        pathRef.current.setAttribute("d", path);
+        // const path = `
+        //   M 0 ${leftY}
+        //   L ${leftX - 15} ${leftY}
+        //   m 0 0 a 5 5 0 1 0 10 0 a 5 5 0 1 0 -10 0
+        //   M ${rightX + 15} ${rightY}
+        //   L ${containerRect.width} ${rightY}
+        //   m -10 0 a 5 5 0 1 0 10 0 a 5 5 0 1 0 -10 0
+        // `;
+        // pathRef.current.setAttribute("d", path);
       }
       requestAnimationFrame(updatePath);
     };
