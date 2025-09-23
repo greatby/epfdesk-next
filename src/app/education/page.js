@@ -14,8 +14,7 @@ export const metadata = {
     "Workforce Limited offers specialized compliance solutions for schools & colleges. We handle EPF, ESIC, POSH & labor laws for faculty and staff, ensuring institutional integrity and protecting your reputation",
   alternates: { canonical: "https://epfdesk.com/education" },
   openGraph: {
-    title: `Hospitality Compliance: The Hidden 
-Cost of Guest Experience`,
+    title: `Educational Institutions Compliance: Protecting Your Reputation, Empowering Your Staff`,
     url: "https://epfdesk.com/education",
   },
 };
