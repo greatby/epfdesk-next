@@ -99,7 +99,7 @@ const Questioning = () => {
         >
           <div className={styles["s__header-content"]}>
             <h2 className="text-5xl font-extrabold">
-              The Cost of Chaos: Why Compliance Failures Cascade in Hospitality
+              The Cost of Education Compliance Chaos
             </h2>
           </div>
         </div>
@@ -144,7 +144,7 @@ const Questioning = () => {
                     className={styles["word"]}
                   >
                     {" "}
-                    The High-Attrition Administrative Nightmare
+                    The Diverse Workforce & EPF/ESIC Minefield
                   </div>{" "}
                   <div
                     style={{
@@ -201,8 +201,8 @@ const Questioning = () => {
                   opacity: "1",
                 }}
               >
-                High employee turnover—around 80% annually—causes massive
-                administrative work managing EPF, ESIC, and UAN records.
+                Seamlessly manage EPF and ESIC compliance for teaching,
+                non-teaching, and contractual staff.
               </p>
             </div>
 
@@ -266,7 +266,7 @@ const Questioning = () => {
                     className={styles["word"]}
                   >
                     {" "}
-                    The GST Reconciliation Nightmare
+                    The POSH Reputation Bomb
                   </div>{" "}
                   <div
                     style={{
@@ -314,8 +314,10 @@ const Questioning = () => {
                   opacity: "1",
                 }}
               >
-                A GSTR-2B mismatch isn’t a software glitch but a data issue that
-                threatens your Input Tax Credit and cash flow.
+                POSH compliance is critical for schools and colleges, where even
+                one mishandled case can trigger fines, reputational damage, and
+                loss of trust. Beyond penalties, the real risk is declining
+                enrollment and public backlash
               </p>
             </div>
 
@@ -340,7 +342,7 @@ const Questioning = () => {
               ></div>
             </div>
           </div>
-          <div className={styles["s__usp"] + " " + styles["sb-usp"]}>
+          <div className={styles["s__usp"] + " " + styles["sb-usp"]+ " " + styles["payroll"]}>
             <div className={styles["sb__content"]}>
               <h3
                 className={
@@ -379,7 +381,7 @@ const Questioning = () => {
                     className={styles["word"]}
                   >
                     {" "}
-                    The Overtime & Tips Trap
+                    The Payroll & Leave Compliance Trap
                   </div>{" "}
                   <div
                     style={{
@@ -436,9 +438,9 @@ const Questioning = () => {
                   opacity: "1",
                 }}
               >
-                One mistake can trigger a full audit of all statutory records,
-                exposing hidden errors and heavy penalties. Automated payroll
-                integration ensures precise, compliant calculations every time.
+                Strict compliance with the Payment of Wages Act and labor laws
+                is essential, as payroll and leave errors are prime audit
+                targets.
               </p>
             </div>
 
@@ -461,7 +463,7 @@ const Questioning = () => {
               ></div>
             </div>
           </div>
-          <div className={styles["s__usp"] + " " + styles["sb-usp"]}>
+          {/* <div className={styles["s__usp"] + " " + styles["sb-usp"]}>
             <div className={styles["sb__content"]}>
               <h3
                 className={
@@ -538,8 +540,9 @@ const Questioning = () => {
                 }}
               >
                 A single POSH violation in a customer-facing, shift-based
-                workplace can undo years of brand reputation. Robust POSH compliance and an
-                independent hotline safeguard your brand and workforce.
+                workplace can undo years of brand reputation. Robust POSH
+                compliance and an independent hotline safeguard your brand and
+                workforce.
               </p>
             </div>
 
@@ -574,7 +577,7 @@ const Questioning = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

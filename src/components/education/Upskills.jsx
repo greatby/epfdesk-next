@@ -28,16 +28,15 @@ const Upskills = () => {
             style={{ transform: "translate3d(0px, 62.2px, 0px)" }}
           >
             <h2 className={`${styles["s__title"]} ${styles["t-h-3xs"]}`}>
-             Secure Your Spot: Limited Onboarding
+              Secure Your Spot: Limited Onboarding
             </h2>
 
             <div className={`${styles["s__text"]} ${styles["rte"]}`}>
               <p>
                 Our dedication to quality means we can only partner with a
-                select number of new hospitality businesses each month. Secure
+                select number of new educational institutions each month. Secure
                 your position for a seamless transition now.
               </p>
-            
             </div>
 
             <a
@@ -46,9 +45,7 @@ const Upskills = () => {
               data-plr-component="btn-plain"
             >
               <span className={styles["btn-plain__inner"]}>
-                <span className={styles["btn-plain__text"]}>
-                 Contact Us
-                </span>
+                <span className={styles["btn-plain__text"]}>Contact Us</span>
                 <span className={styles["btn-plain__arrow"]}></span>
               </span>
 

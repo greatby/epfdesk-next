@@ -24,21 +24,21 @@ export default function Testimonials() {
 
   const testimonials = [
     {
-      text: "“ EPFDesk transformed our compliance from a nightmare to a seamless operation. Their expertise in handling our multi-location staff has completely eliminated our compliance worries. ”",
-      author: "Neeta ",
-      role: "HR Head,Regional Hotel Chain",
+      text: "“The peace of mind knowing our POSH compliance is handled by experts is invaluable for our brand. Our parents and staff now have complete confidence in our institution's commitment to safety ”",
+      author: "Priya Sharma ",
+      role: "Principal, CBSE School, Hyderabad",
       img: "https://nodcoding.com/wp-content/uploads/2024/09/eugenia-200x200.jpg",
     },
     {
-      text: "“ As a single-outlet owner, a fine would have been devastating. EPFDesk took away all the fear, so I can focus on my guests ”",
-      author: "Rajesh",
-      role: "Owner, Boutique Restaurant, Goa",
+      text: "“ As a single-campus administrator, a fine would have been devastating. Workforce Limited took away all the fear, so I can focus on my students and faculty.”",
+      author: "Rakesh",
+      role: "Administrator, Engineering College, Pune",
       img: "https://nodcoding.com/wp-content/uploads/2024/09/gustav-200x200.jpg",
     },
     {
-      text: "“ The peace of mind knowing our POSH compliance is handled by experts who guarantee 100% accuracy and timely filings is invaluable for our brand ”",
-      author: "Vikram Kumar",
-      role: "Regional Commercial Director, Large 5-Star Hotel Group",
+      text: "“ Their expertise in handling our multi-campus staff has completely eliminated our compliance worries. We now have a consistent compliance standard across our entire organization. ”",
+      author: "Anand Singh",
+      role: "HR Head, Regional College Chain",
       img: "https://nodcoding.com/wp-content/uploads/2024/09/haruka-200x200.jpg",
     },
   ];
@@ -329,7 +329,7 @@ useEffect(()=>{
     //   </div>
     // </div>
     <div
-    className="relative w-full overflow-hidden"
+    className="relative w-full overflow-hidden py-12"
     style={{ position: "relative" }}
   >
     {/* Left connector line and dot */}

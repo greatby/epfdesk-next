@@ -4,32 +4,27 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const slides = [
   {
-    title: "GST: We are the operators",
-    text: "Meticulous reconciliation, return filing, and audit defense.",
+    title: "EPF/ESIC for a diverse workforce",
+    text: " We manage statutory contributions for all staff, from full-time faculty to contractual support personnel, expertly handling the nuances of your employee structure.",
     image:
       "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
   },
   {
-    title: "EPF/ESIC for a dynamic workforce",
-    text: " We manage statutory contributions for all staff, from permanent managers to part-time banquet staff and contract workers, expertly handling the administrative nightmare of high attrition.",
+    title: "Meticulous Labour Registrations",
+    text: "We manage your Shops and Establishment Act registration and renewals for all campuses, ensuring continuous operational legality.",
     image:
       "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
   },
-  {
-    title: "Your licenses that can shut you down",
-    text: " We manage the Shop & Establishment Act registration and renewals for a single café or a multi-location chain, ensuring continuous operational legality.",
-    image:
-      "https://nodcoding.com/wp-content/uploads/2024/07/home-islands-1920x2075.jpg",
-  },
+
    {
     title: "The POSH Act",
-    text: "We draft your policy, train your staff (waiters to management), and handle complaints with the legal precision needed in your industry, safeguarding your brand's reputation.",
+    text: "We draft your policy, train your staff (faculty, non-teaching, and management), and handle complaints with the legal precision needed to safeguard your institutional reputation.",
     image:
       "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
   },
   {
     title: " All other statutory requirements",
-    text: "  We ensure perfect compliance with Minimum Wages Act, Payment of Gratuity Act, and LWF/PT for all your locations, providing a single point of control for your entire compliance landscape.",
+    text: "We ensure perfect compliance with the Payment of Gratuity Act, Minimum Wages Act, and other state-specific labor laws, providing a single point of control for your entire compliance landscape.",
     image:
       "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
   },

@@ -66,7 +66,8 @@ export default function NodCodingExperience() {
             ${styles["js-heading"]}
           `}
               >
-                The True Cost of a Seamless Guest Experience
+                Your compliance is a direct reflection of your institutional
+                integrity.
               </h2>
 
               <div className={styles["b__shapes"]}>
@@ -192,9 +193,8 @@ export default function NodCodingExperience() {
             `}
                 style={{ left: "0px", opacity: 1 }}
               ></span>
-              The hospitality industry is huge and highly regulated, so even one
-              compliance lapse can cause major financial and reputational
-              damage.
+              In India’s competitive education sector, even minor compliance
+              failures can severely damage institutional trust and integrity.
             </p>
           </div>
         </div>

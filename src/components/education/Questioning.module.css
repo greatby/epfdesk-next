@@ -370,12 +370,19 @@
   fill: var(--color-brand-5);
 }
 
+.payroll{
+  left:320px;
+}
+
 @media (max-width: 767px) {
   .sb-usp {
     width: 100% !important;
     height: 100vh !important;
     margin-left: 0 !important;
   }
+  .payroll{
+  left:0;
+}
 }
 
 @keyframes eye-blink {
