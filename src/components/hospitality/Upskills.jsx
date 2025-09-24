@@ -28,7 +28,7 @@ const Upskills = () => {
             style={{ transform: "translate3d(0px, 62.2px, 0px)" }}
           >
             <h2 className={`${styles["s__title"]} ${styles["t-h-3xs"]}`}>
-             Secure Your Spot: Limited Onboarding
+              Secure Your Spot: Limited Onboarding
             </h2>
 
             <div className={`${styles["s__text"]} ${styles["rte"]}`}>
@@ -37,18 +37,26 @@ const Upskills = () => {
                 select number of new hospitality businesses each month. Secure
                 your position for a seamless transition now.
               </p>
-            
             </div>
 
             <a
               className={`${styles["btn-plain"]} ${styles["s__cta"]}`}
-              href="https://nodcoding.com/b2b-course/"
+              onClick={() => {
+                const phone = "919980511980";
+                const text = encodeURIComponent(
+                  "Hello EPFDesk,\n\n" +
+                    "I’d like to know more about your compliance services.\n\n" +
+                    "Company/Organisation Name:\n" +
+                    "No. of Employees:\n" +
+                    "My Role:\n" +
+                    "Areas of Interest:"
+                );
+                window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
+              }}
               data-plr-component="btn-plain"
             >
               <span className={styles["btn-plain__inner"]}>
-                <span className={styles["btn-plain__text"]}>
-                 Contact Us
-                </span>
+                <span className={styles["btn-plain__text"]}>Contact Us</span>
                 <span className={styles["btn-plain__arrow"]}></span>
               </span>
 

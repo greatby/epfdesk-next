@@ -41,7 +41,18 @@ const Upskills = () => {
 
             <a
               className={`${styles["btn-plain"]} ${styles["s__cta"]}`}
-              href="https://nodcoding.com/b2b-course/"
+              onClick={() => {
+                const phone = "919980511980";
+                const text = encodeURIComponent(
+                  "Hello EPFDesk,\n\n" +
+                    "I’d like to know more about your compliance services.\n\n" +
+                    "Company/Organisation Name:\n" +
+                    "No. of Employees:\n" +
+                    "My Role:\n" +
+                    "Areas of Interest:"
+                );
+                window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
+              }}
               data-plr-component="btn-plain"
             >
               <span className={styles["btn-plain__inner"]}>
