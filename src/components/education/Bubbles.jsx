@@ -4,119 +4,138 @@ import styles from "./Bubbles.module.css";
 
 const NUM_BUBBLES = 9;
 
-const Bubbles = () => {
+export default function Bubbles() {
   const containerRef = useRef(null);
   const bubblesRef = useRef([]);
-  const [positions, setPositions] = useState([]);
-  const mouse = useRef({ x: 0, y: 0, inside: false });
+  const svgRef = useRef(null);
   const pathRef = useRef(null);
+  const rafRef = useRef(null);
+  const roRef = useRef(null);
 
-  // Draw the thread path
+  // small inner wiggle offsets only
+  const [offsets, setOffsets] = useState([]);
+
   useEffect(() => {
-    const updatePath = () => {
-      if (!pathRef.current || bubblesRef.current.length === 0) return;
-      const containerRect = containerRef.current.getBoundingClientRect();
-
-      const leftBubble = bubblesRef.current[3]?.getBoundingClientRect();
-      const rightBubble = bubblesRef.current[5]?.getBoundingClientRect();
-
-      if (leftBubble && rightBubble) {
-        const leftX =
-          leftBubble.left + leftBubble.width / 2 - containerRect.left;
-        const leftY =
-          leftBubble.top + leftBubble.height / 2 - containerRect.top;
-
-        const rightX =
-          rightBubble.left + rightBubble.width / 2 - containerRect.left;
-        const rightY =
-          rightBubble.top + rightBubble.height / 2 - containerRect.top;
-
-        // const path = `
-        //   M 0 ${leftY}
-        //   L ${leftX - 15} ${leftY}
-        //   m 0 0 a 5 5 0 1 0 10 0 a 5 5 0 1 0 -10 0
-        //   M ${rightX + 15} ${rightY}
-        //   L ${containerRect.width} ${rightY}
-        //   m -10 0 a 5 5 0 1 0 10 0 a 5 5 0 1 0 -10 0
-        // `;
-        // pathRef.current.setAttribute("d", path);
-      }
-      requestAnimationFrame(updatePath);
-    };
-    requestAnimationFrame(updatePath);
+    setOffsets(
+      Array.from({ length: NUM_BUBBLES }, () => ({
+        ox: 0,
+        oy: 0,
+        vx: (Math.random() - 0.5) * 0.3,
+        vy: (Math.random() - 0.5) * 0.3,
+      }))
+    );
   }, []);
 
-  // Initial random offsets
-  useEffect(() => {
-    const initial = Array.from({ length: NUM_BUBBLES }).map(() => ({
-      x: (Math.random() - 0.5) * 10,
-      y: (Math.random() - 0.5) * 10,
-      vx: (Math.random() - 0.5) * 0.5,
-      vy: (Math.random() - 0.5) * 0.5,
-    }));
-    setPositions(initial);
-  }, []);
-
-  // Animation
+  // 🔑 animate only a small inner offset
   useEffect(() => {
     let raf;
-    const animate = () => {
-      setPositions((prev) =>
+    const tick = () => {
+      setOffsets((prev) =>
         prev.map((p) => {
-          let { x, y, vx, vy } = p;
-          let newX = x + vx;
-          let newY = y + vy;
-
-          // bounce within ±20px
-          if (newX > 20 || newX < -20) vx *= -1;
-          if (newY > 20 || newY < -20) vy *= -1;
-
-          // apply mouse influence only when inside
-          if (mouse.current.inside) {
-            const dx = mouse.current.x - newX;
-            const dy = mouse.current.y - newY;
-            const dist = Math.sqrt(dx * dx + dy * dy);
-            if (dist < 60) {
-              const strength = Math.min(0.05, 3 / (dist + 10));
-              newX += (dx / dist) * strength * 20;
-              newY += (dy / dist) * strength * 20;
-            }
-          }
-
-          return { x: newX, y: newY, vx, vy };
+          let { ox, oy, vx, vy } = p;
+          let nx = ox + vx;
+          let ny = oy + vy;
+          if (nx > 6 || nx < -6) vx *= -1;
+          if (ny > 6 || ny < -6) vy *= -1;
+          return { ox: nx, oy: ny, vx, vy };
         })
       );
-      raf = requestAnimationFrame(animate);
+      raf = requestAnimationFrame(tick);
     };
-    raf = requestAnimationFrame(animate);
+    raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
   }, []);
 
-  // Track mouse only inside container
+  // --- dynamic thread ---
   useEffect(() => {
-    const el = containerRef.current;
-    if (!el) return;
+    if (!svgRef.current || !pathRef.current) return;
+    let running = true;
 
-    const handleMove = (e) => {
-      const rect = el.getBoundingClientRect();
-      mouse.current.x = ((e.clientX - rect.left) / rect.width - 0.5) * 40;
-      mouse.current.y = ((e.clientY - rect.top) / rect.height - 0.5) * 40;
-    };
-    const enter = () => (mouse.current.inside = true);
-    const leave = () => {
-      mouse.current.inside = false;
-      // reset so no force when outside
-      mouse.current.x = 0;
-      mouse.current.y = 0;
+    const updatePath = () => {
+      if (!running) return;
+      const svgEl = svgRef.current;
+      const pathEl = pathRef.current;
+      const svgRect = svgEl.getBoundingClientRect();
+      const svgLeft = svgRect.left;
+      const svgW = svgRect.width;
+      const svgH = svgRect.height;
+      const centerY = svgH / 2;
+
+      svgEl.setAttribute("viewBox", `0 0 ${svgW} ${svgH}`);
+
+      const all = bubblesRef.current.filter(Boolean);
+      if (all.length < 2) return;
+
+      // find left-most and right-most bubble centers
+      let left = all[0];
+      let right = all[0];
+      all.forEach((b) => {
+        const br = b.getBoundingClientRect();
+        if (br.left < left.getBoundingClientRect().left) left = b;
+        if (br.right > right.getBoundingClientRect().right) right = b;
+      });
+
+      const Lrect = left.getBoundingClientRect();
+      const Rrect = right.getBoundingClientRect();
+      const Lx = Lrect.left + Lrect.width / 2 - svgLeft;
+      const Rx = Rrect.left + Rrect.width / 2 - svgLeft;
+
+      const r = Math.max(3, Math.min(8, svgH * 0.9));
+
+      // 🔑 draw ONLY the outer line and circles – no “gap” segments
+      // const d = [
+      //   `M 0 ${centerY}`,
+      //   `L ${Lx - r} ${centerY}`,
+      //   `M ${Lx - r} ${centerY}`,
+      //   `a ${r} ${r} 0 1 0 ${2 * r} 0`,
+      //   `a ${r} ${r} 0 1 0 ${-2 * r} 0`,
+      //   `M ${Lx + r} ${centerY}`,
+      //   `L ${Rx - r} ${centerY}`,
+      //   `M ${Rx - r} ${centerY}`,
+      //   `a ${r} ${r} 0 1 0 ${2 * r} 0`,
+      //   `a ${r} ${r} 0 1 0 ${-2 * r} 0`,
+      //   `M ${Rx + r} ${centerY}`,
+      //   `L ${svgW} ${centerY}`,
+      // ].join(" ");
+
+      const d = [
+        // left line up to the first circle
+        `M 0 ${centerY}`,
+        `L ${Lx - r} ${centerY}`,
+
+        // left circle
+        `M ${Lx - r} ${centerY}`,
+        `a ${r} ${r} 0 1 0 ${2 * r} 0`,
+        `a ${r} ${r} 0 1 0 ${-2 * r} 0`,
+
+        // **NO horizontal line between the two circles**
+
+        // right circle
+        `M ${Rx - r} ${centerY}`,
+        `a ${r} ${r} 0 1 0 ${2 * r} 0`,
+        `a ${r} ${r} 0 1 0 ${-2 * r} 0`,
+
+        // line from the right circle to the end
+        `M ${Rx + r} ${centerY}`,
+        `L ${svgW} ${centerY}`,
+      ].join(" ");
+
+      pathEl.setAttribute("d", d);
     };
 
-    el.addEventListener("mousemove", handleMove);
-    el.addEventListener("mouseenter", enter);
-    el.addEventListener("mouseleave", leave);
+    const loop = () => {
+      updatePath();
+      rafRef.current = requestAnimationFrame(loop);
+    };
+    rafRef.current = requestAnimationFrame(loop);
+
+    roRef.current = new ResizeObserver(updatePath);
+    roRef.current.observe(document.documentElement);
+
     return () => {
-      el.removeEventListener("mousemove", handleMove);
-      el.removeEventListener("mouseenter", enter);
-      el.removeEventListener("mouseleave", leave);
+      running = false;
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      if (roRef.current) roRef.current.disconnect();
     };
   }, []);
 
@@ -137,44 +156,37 @@ const Bubbles = () => {
             data-plr-component="a-waves"
           ></div>
 
-          <div className={styles["b__bubbles"] + " " + styles["js-bubbles"]}>
-            {positions.map((p, i) => (
+          <div className={styles["b__bubbles"] + " js-bubbles"}>
+            {offsets.map((p, i) => (
               <div
                 key={i}
                 ref={(el) => (bubblesRef.current[i] = el)}
-                className={styles["b__bubble"] + " " + styles["js-bubble"]}
-                style={{
-                  transform: `translate(${p.x}px, ${p.y}px)`,
-                }}
+                className={styles["b__bubble"] + " js-bubble"}
               >
-                <div className={styles["b__circle"]}></div>
+                {/* 🔑 apply only a tiny inner transform so grid stays intact */}
+                <div
+                  className={styles["b__circle"]}
+                  style={{
+                    transform: `translate3d(${p.ox}px, ${p.oy}px, 0)`,
+                  }}
+                />
               </div>
             ))}
           </div>
 
           <svg
-            width="1920"
-            height="5"
-            fill="none"
+            ref={svgRef}
+            className={styles["b__render"] + " js-render"}
             xmlns="http://www.w3.org/2000/svg"
-            className={styles["b__render"] + " " + styles["js-render"]}
             overflow="visible"
             preserveAspectRatio="none"
-            data-lg-scroll=""
           >
-            <path
-              ref={pathRef}
-              d="M 0 2.5 Q 142.638 2.5 356.60231970066695 2.458189018171878 m 0 -8.102813702335153e-141 a 5 5 0 1 0 10 0 a 5 5 0 1 0 -10 0 M 1566 2.5 Q 1223.362 2.5 1009.4092068635429 2.464145658085508 m -10 -8.102813702335153e-141 a 5 5 0 1 0 10 0 a 5 5 0 1 0 -10 0"
-              fill="#fff"
-              className={styles["js-render-path"]}
-            ></path>
+            <path ref={pathRef} className="js-render-path" />
           </svg>
 
-          <div className={styles["b__ruler"] + " " + styles["js-ruler"]}></div>
+          <div className={styles["b__ruler"] + " js-ruler"}></div>
         </div>
       </div>
     </div>
   );
-};
-
-export default Bubbles;
+}

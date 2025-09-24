@@ -7,6 +7,7 @@ import Testimonials from "@/components/education/Testimonial";
 import FAQ from "@/components/education/FAQ";
 import Footer from "@/components/education/Footer";
 import Upskills from "@/components/education/Upskills";
+import Bubbles from "@/components/education/Bubbles";
 
 export const metadata = {
   title: `Educational Institutions Compliance: Protecting Your Reputation, Empowering Your Staff`,
@@ -54,6 +55,7 @@ const Education = () => {
       <VideoHighlight />
       <ComplianceTable />
       <Questioning />
+      <Bubbles />
       <ContentSlider />
       <Testimonials />
       <Upskills />

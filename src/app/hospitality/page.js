@@ -37,12 +37,12 @@ function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-green-300 to-blue-400 bg-clip-text text-transparent">
-          Hospitality Compliance: GST, EPF & Labour Laws for India&#39;s Hotels &
-          Restaurants
+          Hospitality Compliance: GST, EPF & Labour Laws for India&#39;s Hotels
+          & Restaurants
         </h1>
         <p className="text-lg md:text-2xl text-gray-200 leading-relaxed">
-          Don&#39;t lose ₹10L+ to compliance errors. Get end-to-end GST, EPF, ESIC,
-          and POSH compliance for your hotel or restaurant. We ensure zero
+          Don&#39;t lose ₹10L+ to compliance errors. Get end-to-end GST, EPF,
+          ESIC, and POSH compliance for your hotel or restaurant. We ensure zero
           penalties, from a single cafe to a national chain.
         </p>
       </div>
@@ -55,12 +55,12 @@ const Hospitality = () => {
     <>
       <Hero />
       <VideoHighlight />
-     
-      {/* <Bubbles /> */}
+
       <ComplianceTable />
       <Questioning />
+      <Bubbles />
       <Slider />
-       <Testimonials />
+      <Testimonials />
       <Upskills />
       {/* <YoutubeSlider /> */}
       <FAQ />
