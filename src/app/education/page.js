@@ -1,13 +1,21 @@
 import React from "react";
-import VideoHighlight from "@/components/education/VideoHighlight";
-import ComplianceTable from "@/components/education/ComplianceTable";
-import Questioning from "@/components/education/Questioning";
-import ContentSlider from "@/components/education/Slider";
-import Testimonials from "@/components/education/Testimonial";
-import FAQ from "@/components/education/FAQ";
-import Footer from "@/components/education/Footer";
-import Upskills from "@/components/education/Upskills";
-import Bubbles from "@/components/education/Bubbles";
+import VideoHighlight from "@/components/reusableComponents/VideoHighlight";
+import ComplianceTable from "@/components/reusableComponents/ComplianceTable";
+import Questioning from "@/components/reusableComponents/Questioning";
+import ContentSlider from "@/components/reusableComponents/Slider";
+import Testimonials from "@/components/reusableComponents/Testimonial";
+import FAQ from "@/components/reusableComponents/FAQ";
+import Footer from "@/components/reusableComponents/Footer";
+import Upskills from "@/components/reusableComponents/Upskills";
+import Bubbles from "@/components/reusableComponents/Bubbles";
+import {
+  dataTableEducation,
+  faqsEducation,
+  slidesEducation,
+  testimonialsEducation,
+  uspDataEducation,
+  videoHighlightDataEducation,
+} from "@/utils/data";
 
 export const metadata = {
   title: `Educational Institutions Compliance: Protecting Your Reputation, Empowering Your Staff`,
@@ -52,14 +60,19 @@ const Education = () => {
   return (
     <>
       <Hero />
-      <VideoHighlight />
-      <ComplianceTable />
-      <Questioning />
+      <VideoHighlight data={videoHighlightDataEducation} />
+      <ComplianceTable data={dataTableEducation} />
+      <Questioning uspData={uspDataEducation} />
       <Bubbles />
-      <ContentSlider />
-      <Testimonials />
-      <Upskills />
-      <FAQ />
+      <ContentSlider slides={slidesEducation} />
+      <Testimonials testimonials={testimonialsEducation} />
+      <Upskills
+        title="Secure Your Spot: Limited Onboarding"
+        paragraphs={[
+          "Our dedication to quality means we can only partner with a select number of new educational institutions each month. Secure your position for a seamless transition now.",
+        ]}
+      />
+      <FAQ faqs={faqsEducation}/>
       <Footer />
     </>
   );

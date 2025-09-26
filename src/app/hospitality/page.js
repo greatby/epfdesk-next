@@ -1,14 +1,14 @@
 import React from "react";
-import VideoHighlight from "@/components/hospitality/VideoHighlight";
-import Testimonials from "@/components/hospitality/Testimonial";
-import Bubbles from "@/components/hospitality/Bubbles";
-import Questioning from "@/components/hospitality/Questioning";
-import Slider from "@/components/hospitality/Slider";
-import Upskills from "@/components/hospitality/Upskills";
-import YoutubeSlider from "@/components/hospitality/YoutubeSlider";
-import Footer from "@/components/hospitality/Footer";
-import ComplianceTable from "@/components/hospitality/ComplianceTable";
-import FAQ from "@/components/hospitality/FAQ";
+import VideoHighlight from "@/components/reusableComponents/VideoHighlight"
+import Testimonials from "@/components/reusableComponents/Testimonial";
+import Bubbles from "@/components/reusableComponents/Bubbles";
+import Questioning from "@/components/reusableComponents/Questioning";
+import Slider from "@/components/reusableComponents/Slider";
+import Upskills from "@/components/reusableComponents/Upskills";
+import Footer from "@/components/reusableComponents/Footer";
+import ComplianceTable from "@/components/reusableComponents/ComplianceTable";
+import FAQ from "@/components/reusableComponents/FAQ";
+import { dataTableHospitality, faqsHospitality, slidesHospitality, testimonialsHospitality, uspDataHospitality, videoHighlightDataHospitality } from "@/utils/data";
 
 export const metadata = {
   title: `Hospitality Compliance: The Hidden 
@@ -54,16 +54,15 @@ const Hospitality = () => {
   return (
     <>
       <Hero />
-      <VideoHighlight />
-
-      <ComplianceTable />
-      <Questioning />
+      <VideoHighlight data={videoHighlightDataHospitality}/>
+      <ComplianceTable data={dataTableHospitality}/>
+      <Questioning uspData={uspDataHospitality}/>
       <Bubbles />
-      <Slider />
-      <Testimonials />
-      <Upskills />
+      <Slider slides={slidesHospitality}/>
+      <Testimonials testimonials={testimonialsHospitality}/>
+      <Upskills title="Secure Your Spot: Limited Onboarding" paragraphs={["Our dedication to quality means we can only partner with a select number of new hospitality businesses each month. Secure your position for a seamless transition now."]}/>
       {/* <YoutubeSlider /> */}
-      <FAQ />
+      <FAQ faqs={faqsHospitality}/>
       <Footer />
     </>
   );

@@ -71,7 +71,7 @@ import { Analytics } from "@vercel/analytics/react";
 export default function RootLayout({ children }) {
   const pathname = usePathname();
   
-  const hiddenRoutes = ["/hospitality", "/education"];
+  const hiddenRoutes = ["/hospitality", "/education","/manufacturing","/facility","/construction"];
 
   const hideLayout = hiddenRoutes.some((route) =>
     pathname.startsWith(route)

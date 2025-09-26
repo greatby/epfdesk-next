@@ -1,9 +1,9 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import styles from "./Upskills.module.css";
 import lottie from "lottie-web";
+import styles from "./Upskills.module.css";
 
-const Upskills = () => {
+const Upskills = ({ title, paragraphs }) => {
   const container = useRef(null);
 
   useEffect(() => {
@@ -12,11 +12,11 @@ const Upskills = () => {
       renderer: "svg",
       loop: true,
       autoplay: true,
-      path: "/illus-1.json",
+      path: "/illus-1.json", // keep the same Lottie file
     });
-
     return () => anim.destroy();
   }, []);
+
   return (
     <div className={styles["s-content-1"]} data-plr-component="s-content-1">
       <div className={styles["u-container"]}>
@@ -28,15 +28,13 @@ const Upskills = () => {
             style={{ transform: "translate3d(0px, 62.2px, 0px)" }}
           >
             <h2 className={`${styles["s__title"]} ${styles["t-h-3xs"]}`}>
-              Secure Your Spot: Limited Onboarding
+              {title}
             </h2>
 
             <div className={`${styles["s__text"]} ${styles["rte"]}`}>
-              <p>
-                Our dedication to quality means we can only partner with a
-                select number of new educational institutions each month. Secure
-                your position for a seamless transition now.
-              </p>
+              {paragraphs.map((text, i) => (
+                <p key={i}>{text}</p>
+              ))}
             </div>
 
             <a

@@ -2,7 +2,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import styles from "./Testimonial.module.css";
 
-export default function Testimonials() {
+export default function Testimonials({testimonials}) {
   const sliderRef = useRef(null);
   const firstCardRef = useRef(null);
   const leftConnectorRef = useRef(null);
@@ -22,26 +22,7 @@ export default function Testimonials() {
   const LINE_HEIGHT = 3;
   const DOT_SIZE = 14;
 
-  const testimonials = [
-    {
-      text: "“ EPFDesk transformed our compliance from a nightmare to a seamless operation. Their expertise in handling our multi-location staff has completely eliminated our compliance worries. ”",
-      author: "Neeta ",
-      role: "HR Head,Regional Hotel Chain",
-      img: "https://nodcoding.com/wp-content/uploads/2024/09/eugenia-200x200.jpg",
-    },
-    {
-      text: "“ As a single-outlet owner, a fine would have been devastating. EPFDesk took away all the fear, so I can focus on my guests ”",
-      author: "Rajesh",
-      role: "Owner, Boutique Restaurant, Goa",
-      img: "https://nodcoding.com/wp-content/uploads/2024/09/gustav-200x200.jpg",
-    },
-    {
-      text: "“ The peace of mind knowing our POSH compliance is handled by experts who guarantee 100% accuracy and timely filings is invaluable for our brand ”",
-      author: "Vikram Kumar",
-      role: "Regional Commercial Director, Large 5-Star Hotel Group",
-      img: "https://nodcoding.com/wp-content/uploads/2024/09/haruka-200x200.jpg",
-    },
-  ];
+
 
   // ---- helpers ----
   function setSliderXImmediate(x) {
