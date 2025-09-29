@@ -5355,7 +5355,6 @@ export const uspDataManufacturing = {
   ],
 };
 
-
 export const slidesHospitality = [
   {
     title: "GST: We are the operators",
@@ -5375,7 +5374,7 @@ export const slidesHospitality = [
     image:
       "https://nodcoding.com/wp-content/uploads/2024/07/home-islands-1920x2075.jpg",
   },
-   {
+  {
     title: "The POSH Act",
     text: "We draft your policy, train your staff (waiters to management), and handle complaints with the legal precision needed in your industry, safeguarding your brand's reputation.",
     image:
@@ -5387,7 +5386,6 @@ export const slidesHospitality = [
     image:
       "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
   },
- 
 ];
 
 export const slidesEducation = [
@@ -5404,7 +5402,7 @@ export const slidesEducation = [
       "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
   },
 
-   {
+  {
     title: "The POSH Act",
     text: "We draft your policy, train your staff (faculty, non-teaching, and management), and handle complaints with the legal precision needed to safeguard your institutional reputation.",
     image:
@@ -5416,7 +5414,6 @@ export const slidesEducation = [
     image:
       "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
   },
- 
 ];
 
 export const slidesConstruction = [
@@ -5473,7 +5470,7 @@ export const slidesFacility = [
       "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
   },
 
-   {
+  {
     title: "Statutory Registers",
     text: "Maintenance of all required statutory registers (attendance, wages, overtime, leave records) ensuring they are audit-ready at all times.",
     image:
@@ -5491,13 +5488,12 @@ export const slidesFacility = [
     image:
       "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
   },
-    {
+  {
     title: "GST Filing & ITC",
     text: "Seamless management of your own GST filing, ensuring Input Tax Credit (ITC) optimization and preventing costly mismatches.",
     image:
       "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
   },
- 
 ];
 
 export const slidesManufacturing = [
@@ -5527,49 +5523,49 @@ export const slidesManufacturing = [
   },
 ];
 
- export const testimonialsHospitality = [
-    {
-      text: "“ EPFDesk transformed our compliance from a nightmare to a seamless operation. Their expertise in handling our multi-location staff has completely eliminated our compliance worries. ”",
-      author: "Neeta ",
-      role: "HR Head,Regional Hotel Chain",
-      img: "https://nodcoding.com/wp-content/uploads/2024/09/eugenia-200x200.jpg",
-    },
-    {
-      text: "“ As a single-outlet owner, a fine would have been devastating. EPFDesk took away all the fear, so I can focus on my guests ”",
-      author: "Rajesh",
-      role: "Owner, Boutique Restaurant, Goa",
-      img: "https://nodcoding.com/wp-content/uploads/2024/09/gustav-200x200.jpg",
-    },
-    {
-      text: "“ The peace of mind knowing our POSH compliance is handled by experts who guarantee 100% accuracy and timely filings is invaluable for our brand ”",
-      author: "Vikram Kumar",
-      role: "Regional Commercial Director, Large 5-Star Hotel Group",
-      img: "https://nodcoding.com/wp-content/uploads/2024/09/haruka-200x200.jpg",
-    },
-  ];
+export const testimonialsHospitality = [
+  {
+    text: "“ EPFDesk transformed our compliance from a nightmare to a seamless operation. Their expertise in handling our multi-location staff has completely eliminated our compliance worries. ”",
+    author: "Neeta ",
+    role: "HR Head,Regional Hotel Chain",
+    img: "https://nodcoding.com/wp-content/uploads/2024/09/eugenia-200x200.jpg",
+  },
+  {
+    text: "“ As a single-outlet owner, a fine would have been devastating. EPFDesk took away all the fear, so I can focus on my guests ”",
+    author: "Rajesh",
+    role: "Owner, Boutique Restaurant, Goa",
+    img: "https://nodcoding.com/wp-content/uploads/2024/09/gustav-200x200.jpg",
+  },
+  {
+    text: "“ The peace of mind knowing our POSH compliance is handled by experts who guarantee 100% accuracy and timely filings is invaluable for our brand ”",
+    author: "Vikram Kumar",
+    role: "Regional Commercial Director, Large 5-Star Hotel Group",
+    img: "https://nodcoding.com/wp-content/uploads/2024/09/haruka-200x200.jpg",
+  },
+];
 
-  export   const testimonialsEducation = [
-    {
-      text: "“The peace of mind knowing our POSH compliance is handled by experts is invaluable for our brand. Our parents and staff now have complete confidence in our institution's commitment to safety ”",
-      author: "Priya Sharma ",
-      role: "Principal, CBSE School, Hyderabad",
-      img: "https://nodcoding.com/wp-content/uploads/2024/09/eugenia-200x200.jpg",
-    },
-    {
-      text: "“ As a single-campus administrator, a fine would have been devastating. Workforce Limited took away all the fear, so I can focus on my students and faculty.”",
-      author: "Rakesh",
-      role: "Administrator, Engineering College, Pune",
-      img: "https://nodcoding.com/wp-content/uploads/2024/09/gustav-200x200.jpg",
-    },
-    {
-      text: "“ Their expertise in handling our multi-campus staff has completely eliminated our compliance worries. We now have a consistent compliance standard across our entire organization. ”",
-      author: "Anand Singh",
-      role: "HR Head, Regional College Chain",
-      img: "https://nodcoding.com/wp-content/uploads/2024/09/haruka-200x200.jpg",
-    },
-  ];
+export const testimonialsEducation = [
+  {
+    text: "“The peace of mind knowing our POSH compliance is handled by experts is invaluable for our brand. Our parents and staff now have complete confidence in our institution's commitment to safety ”",
+    author: "Priya Sharma ",
+    role: "Principal, CBSE School, Hyderabad",
+    img: "https://nodcoding.com/wp-content/uploads/2024/09/eugenia-200x200.jpg",
+  },
+  {
+    text: "“ As a single-campus administrator, a fine would have been devastating. Workforce Limited took away all the fear, so I can focus on my students and faculty.”",
+    author: "Rakesh",
+    role: "Administrator, Engineering College, Pune",
+    img: "https://nodcoding.com/wp-content/uploads/2024/09/gustav-200x200.jpg",
+  },
+  {
+    text: "“ Their expertise in handling our multi-campus staff has completely eliminated our compliance worries. We now have a consistent compliance standard across our entire organization. ”",
+    author: "Anand Singh",
+    role: "HR Head, Regional College Chain",
+    img: "https://nodcoding.com/wp-content/uploads/2024/09/haruka-200x200.jpg",
+  },
+];
 
-  export const faqsHospitality = [
+export const faqsHospitality = [
   {
     question: "We have 200+ employees across 5 cities. Too complex?",
     answer:
@@ -5594,39 +5590,41 @@ export const slidesManufacturing = [
     answer:
       " We directly solve this. Our systems automate the creation, linking, and management of EPF and ESIC records for every joiner and exit, turning your biggest administrative burden into a seamless background task. This ensures perfect compliance, even with a high-turnover workforce.",
   },
-    {
+  {
     question: "Can you handle our GST reconciliation and filings too?",
-    answer:
-      ` Yes, our specialized GST team acts as the "operator for your GST machine." We handle meticulous data reconciliation, return filing, and audit defense, ensuring you maximize your Input Tax Credit and are protected from penalties and audits.`,
+    answer: ` Yes, our specialized GST team acts as the "operator for your GST machine." We handle meticulous data reconciliation, return filing, and audit defense, ensuring you maximize your Input Tax Credit and are protected from penalties and audits.`,
   },
 ];
 
 export const faqsEducation = [
   {
-    question: "Are teachers and non-teaching staff both covered by your services?",
+    question:
+      "Are teachers and non-teaching staff both covered by your services?",
     answer:
       "Yes, our services are specifically tailored for educational institutions and cover all staff, including full-time faculty, part-time teachers, administrative staff, and contractual support personnel.",
   },
   {
-    question: "Is it mandatory to have a POSH policy and an Internal Committee (IC) in a school or college?",
+    question:
+      "Is it mandatory to have a POSH policy and an Internal Committee (IC) in a school or college?",
     answer:
       "Yes. If your institution employs 10 or more people (including teaching, non-teaching, and contractual staff), it is mandatory to have a POSH policy and an Internal Committee (IC). This is a critical legal requirement for the industry.",
   },
   {
-    question: "How do you help us manage compliance for multiple campuses in different states?",
+    question:
+      "How do you help us manage compliance for multiple campuses in different states?",
     answer:
       " Our unique strength lies in our nationwide operational footprint and deep expertise in the nuances of each state's specific labor laws. We provide centralized management for all your registrations and renewals, ensuring seamless compliance across your entire organization.",
   },
   {
-    question: "What is the biggest compliance risk for an educational institution?",
-    answer: "The biggest risks are non-compliance with the POSH Act (leading to severe reputational damage), non-adherence to the Shops and Establishment Act (leading to fines), and incorrect statutory contributions for a diverse workforce, which can trigger a large-scale audit.",
+    question:
+      "What is the biggest compliance risk for an educational institution?",
+    answer:
+      "The biggest risks are non-compliance with the POSH Act (leading to severe reputational damage), non-adherence to the Shops and Establishment Act (leading to fines), and incorrect statutory contributions for a diverse workforce, which can trigger a large-scale audit.",
   },
   {
     question: "How fast can you start?",
-    answer:
-      " 48 hours to full compliance. We've done it 500+ times.",
+    answer: " 48 hours to full compliance. We've done it 500+ times.",
   },
-  
 ];
 
 export const faqsConstruction = [
@@ -5673,27 +5671,32 @@ export const faqsFacility = [
       "The Contract Labour (R&A) Act, 1970, regulates the employment of contract workers. It is critical because it holds you (the principal employer) liable if your contractors fail to provide statutory benefits like EPF, ESIC, or timely wages. We ensure both you and your contractors are compliant.",
   },
   {
-    question: "Is my client responsible for GST under the Reverse Charge Mechanism (RCM)?",
+    question:
+      "Is my client responsible for GST under the Reverse Charge Mechanism (RCM)?",
     answer:
       "Yes, RCM often applies to services you supply, particularly security services or manpower supply services. This means your client must pay the GST. Errors in your invoicing or data can cause them major problems. We ensure your RCM process is flawless, protecting your client's ITC.",
   },
   {
-    question: "What are the biggest compliance risks for a Facility Management company?",
+    question:
+      "What are the biggest compliance risks for a Facility Management company?",
     answer:
       "The biggest risks are financial liability under the CLRA Act (due to contractor non-compliance), severe penalties for non-adherence to the Minimum Wages Act (especially across states), and legal consequences related to RCM errors.",
   },
   {
-    question: "How do you handle EPF and ESIC for a high-turnover contract workforce?",
+    question:
+      "How do you handle EPF and ESIC for a high-turnover contract workforce?",
     answer:
       "We provide expert management for statutory contributions for all staff types. Our automated systems accurately calculate EPF and ESIC contributions, ensuring full compliance for your entire workforce and minimizing administrative burdens from high attrition.",
   },
   {
-    question: "Do you assist with both the Principal Employer's registration and the contractor's license?",
+    question:
+      "Do you assist with both the Principal Employer's registration and the contractor's license?",
     answer:
       "Yes. We handle the mandatory registration for you as the principal employer and manage the verification, monitoring, and compliance for all your contractors' labor licenses.",
   },
   {
-    question: "How do you protect us against state-specific differences in minimum wages and labor laws?",
+    question:
+      "How do you protect us against state-specific differences in minimum wages and labor laws?",
     answer:
       "Our expertise covers the nuances of all Indian states. We provide centralized management and continuous monitoring of state-wise regulations, ensuring your local contracts and payroll adhere to the correct minimum wages and working hours rules.",
   },
@@ -5701,33 +5704,196 @@ export const faqsFacility = [
 
 export const faqsManufacturing = [
   {
-    question: "Does the Factories Act apply to my business if I have under 20 workers?",
+    question:
+      "Does the Factories Act apply to my business if I have under 20 workers?",
     answer:
       "The Factories Act, 1948, generally applies to any premises where a manufacturing process is carried on with 10 or more workers (using power) or 20 or more workers (without power). We can help you assess its exact applicability and registration requirements.",
   },
   {
-    question: "Do I need a separate license for contract workers in my factory?",
+    question:
+      "Do I need a separate license for contract workers in my factory?",
     answer:
       "Yes. If you engage 20 or more contract workers, you, as the principal employer, must obtain a Registration Certificate under the CLRA Act. Your contractor must also obtain a Labor License. We manage both these processes for you.",
   },
   {
-    question: "What are the biggest compliance risks for a manufacturing unit in India?",
+    question:
+      "What are the biggest compliance risks for a manufacturing unit in India?",
     answer:
       "The biggest risks are direct non-compliance with the Factories Act (leading to severe penalties, including imprisonment, and production shutdowns) and non-adherence to the CLRA Act, which can lead to liability for your contractor's errors.",
   },
   {
-    question: "How do you handle EPF and ESIC contributions for a mixed workforce?",
+    question:
+      "How do you handle EPF and ESIC contributions for a mixed workforce?",
     answer:
       "We provide expert management for statutory contributions for all staff types, accurately calculating EPF and ESIC contributions on varied pay structures, ensuring compliance for your entire workforce and protecting you from penalties.",
   },
   {
-    question: "Do your services cover safety and health provisions under the Factories Act?",
+    question:
+      "Do your services cover safety and health provisions under the Factories Act?",
     answer:
       "Yes, our services cover all required health, safety, and welfare provisions under the Factories Act, including the maintenance of required registers and records, ensuring your factory is compliant with the law.",
   },
   {
     question: "How fast can you start?",
+    answer: "48 hours to full compliance. We've done it 500+ times.",
+  },
+];
+
+export const videoHighlightDataTransport = {
+  heading:
+    "Your compliance is a direct reflection of your operational efficiency and capacity to deliver.",
+  description:
+    "A single oversight on a driver's hours or a GST invoice can cascade into a massive operational and legal threat.",
+  coverImage: "https://nodcoding.com/wp-content/uploads/2024/09/Nod-Intro.jpg",
+  alt: "construction",
+};
+
+export const dataTableTransport = [
+  {
+    threshold: "1+ employee",
+    law: "Motor Transport Workers Act (MTWA), 1961",
+    meaning:
+      "Regulates working hours, welfare, and rest intervals for drivers/transport staff. Registration is mandatory.",
+  },
+
+  {
+    threshold: "10+ employees",
+    law: "ESIC Act, 1948",
+    meaning:
+      "Triggers social security contributions for eligible transport/warehouse workers.",
+  },
+  {
+    threshold: "20+ employees",
+    law: "EPF Act, 1952",
+    meaning: "Triggers mandatory provident fund contributions.",
+  },
+  {
+    threshold: "20+ contract workers",
+    law: "CLRA Act, 1970",
+    meaning:
+      "Triggers mandatory registration as Principal Employer (common in warehousing/loading).",
+  },
+];
+
+export const uspDataTransport = {
+  mainTitle:
+    "The Cost of Logistics Compliance Chaos: MTWA, RCM & Mobile Workforce",
+  cards: [
+    {
+      title: "The MTWA & Working Hours Audit Risk",
+      description:
+        "The MTWA limits drivers to 8-hour workdays and requires strict tracking of hours, which is difficult for 24/7 fleets. Failure to comply risks heavy fines, legal action, and operational disruption.",
+    },
+    {
+      title: "The GST RCM (Reverse Charge) Trap for GTAs",
+      description: `The GST Reverse Charge Mechanism (RCM) shifts tax payment from the transporter to the service recipient, and mistakes in classification or payment can block Input Tax Credit and create major tax liabilities`,
+    },
+    {
+      title: "The Decentralized Workforce & EPF/ESIC Burden",
+      description:
+        "Handling EPF and ESIC for a large, high-turnover workforce across multiple states is complex and time-consuming. Errors or missed filings can incur penalties and violate varying state minimum wage laws.",
+    },
+  ],
+};
+
+export const slidesTransport = [
+  {
+    title: "Motor Transport Workers Act (MTWA) Compliance",
+    text: `: Complete registration, record maintenance (e.g., duty registers), and compliance with working hours, rest intervals, and welfare provisions for your transport workers.
+`,
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
+  },
+  {
+    title: "CLRA & Contract Labour Management",
+    text: ` Expert management of CLRA registration for your clients (Principal Employers) and ensuring all your contractors/sub-contractors have valid Labour Licenses (common for warehouse and loading operations).`,
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  },
+  {
+    title: "Warehouse/Static Compliance",
+    text: ` Ensuring adherence to the Shops & Establishment Act for administrative offices and other applicable welfare acts for static warehouse staff.`,
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
+  },
+  {
+    title: "Reverse Charge Mechanism (RCM) Mastery",
+    text: " We analyze your service offerings (GTA, renting) to accurately determine when GST RCM applies and ensure compliant payment and documentation.",
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  },
+  {
+    title: "ITC Optimization",
+    text: "Seamless GST filing for your own business, optimizing Input Tax Credit (ITC) utilization and preventing costly mismatches.",
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  },
+  {
+    title: "E-Way Bill Compliance",
+    text: " Guidance and process setup for E-way Bill generation to ensure seamless, legally compliant movement of goods across state lines.",
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  },
+  {
+    title: "E-Way Bill Compliance",
+    text: " Guidance and process setup for E-way Bill generation to ensure seamless, legally compliant movement of goods across state lines.",
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  },
+  {
+    title: "EPF & ESIC Compliance",
+    text: " Meticulous handling of EPF and ESIC contribution calculations and filings tailored specifically for a multi-site, high-attrition transport workforce.",
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  },
+  {
+    title: "Minimum Wages & Working Hours",
+    text: "Proactive guidance on adherence to the Minimum Wages Act (which vary by state and category) and Working Hours Regulations across all your decentralized sites.",
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  },
+  {
+    title: "POSH Act Compliance",
+    text: "Implementation of the POSH Act for all administrative and operational staff, mitigating severe legal and reputational risks.",
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  },
+];
+
+export const faqsTransport = [
+  {
+    question:
+      "What is the Motor Transport Workers Act (MTWA), and does it apply to my fleet?",
     answer:
-      "48 hours to full compliance. We've done it 500+ times.",
+      "The MTWA regulates the working conditions of motor transport workers (drivers, conductors, cleaners). It applies to every motor transport undertaking employing one or more motor transport workers. It mandates adherence to strict rules on working hours, rest intervals, and welfare. We handle full MTWA compliance.",
+  },
+  {
+    question: "Is our business liable for GST on freight charges under RCM?",
+    answer:
+      "Yes, the Reverse Charge Mechanism (RCM) often applies to services provided by a Goods Transport Agency (GTA). This means you, the recipient, are liable to pay the GST, not the GTA. Errors in RCM compliance can lead to major tax liabilities. We ensure your RCM process is flawless.",
+  },
+  {
+    question:
+      "What is the biggest compliance risk for a logistics company in India?",
+    answer:
+      "The biggest risks are financial liability under the CLRA Act (due to contractor non-compliance at warehouse/loading sites), severe penalties under the Minimum Wages Act, and legal consequences related to MTWA and RCM errors.",
+  },
+  {
+    question:
+      "How do you handle EPF and ESIC for a high-turnover contract workforce?",
+    answer:
+      "We provide expert management for statutory contributions for all staff types. Our automated systems accurately calculate EPF and ESIC contributions, ensuring full compliance for your entire workforce and minimizing administrative burdens from high attrition.",
+  },
+  {
+    question:
+      "What are the penalties for violating the Motor Transport Workers Act?",
+    answer:
+      "Penalties for violating the MTWA can be severe, including monetary fines, legal action against management, and potential operational disruption (e.g., halting the fleet) due to non-compliance.",
+  },
+  {
+    question:
+      "Do you assist with both the Principal Employer's CLRA registration and the contractor's license?",
+    answer:
+      "Yes. We handle the mandatory registration for you as the principal employer and manage the verification, monitoring, and compliance for all your contractors' labor licenses.",
   },
 ];
