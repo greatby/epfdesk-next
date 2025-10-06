@@ -5799,7 +5799,7 @@ export const uspDataTransport = {
 export const slidesTransport = [
   {
     title: "Motor Transport Workers Act (MTWA) Compliance",
-    text: `: Complete registration, record maintenance (e.g., duty registers), and compliance with working hours, rest intervals, and welfare provisions for your transport workers.
+    text: `Complete registration, record maintenance (e.g., duty registers), and compliance with working hours, rest intervals, and welfare provisions for your transport workers.
 `,
     image:
       "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",

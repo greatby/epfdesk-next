@@ -29,7 +29,7 @@ export default function ContentSlider({ slides }) {
               border-l-[40px] border-l-transparent"
             ></div>
           </div>
-          <div className="absolute inset-0 z-10 a-waves a-waves--blue"></div>
+          <div className="absolute hidden md:block inset-0 z-10 a-waves a-waves--blue"></div>
           <div className="a-strips"></div>
           <div className="flex flex-col md:flex-row bg-white rounded-lg shadow overflow-hidden relative">
             {/* 🔹 Decorative shapes in top corner */}

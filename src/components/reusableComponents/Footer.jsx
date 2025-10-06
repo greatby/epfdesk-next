@@ -26,7 +26,7 @@ export default function Footer() {
 
           {/* CTA */}
           <a
-            href="mailto:info@nodcoding.com"
+            href="mailto:hello@epfdesk.com"
             className="text-3xl sm:text-6xl font-bold text-[#3a2f2c] flex items-center gap-2 relative z-10"
           >
             Get in touch <FiArrowRight className="text-3xl sm:text-6xl" />

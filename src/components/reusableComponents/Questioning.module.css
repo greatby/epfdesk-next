@@ -61,7 +61,7 @@
 .s-usps .sb-usp {
   position: relative;
   width: var(--card-width);
-  height: var(--card-height);
+  height:85vh;/*var(--card-height)*/
 }
 
 .s-usps .sb-usp .sb__content {
@@ -376,7 +376,7 @@
 @media (max-width: 767px) {
   .sb-usp {
     width: 100% !important;
-    height: 50vh !important;
+    height: 65vh !important;
     margin-left: 0 !important;
   }
     .payroll{

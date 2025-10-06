@@ -802,7 +802,7 @@ const Questioning = ({ uspData }) => {
                 data-plr-component="b-usp-hired"
               >
                 <div
-                  className={`${styles["b__eye"]} ${styles["js-eye"]}`}
+                  className={`${styles["b__eye"]} ${styles["js-eye"]} ${styles["is-set"]}`}
                   style={{
                     "--path-open":
                       "path('M 0 42.5 Q 95.5 -42.5 191 42.5 Q 95.5 127.5 0 42.5 Z')",

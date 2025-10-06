@@ -5,8 +5,14 @@ import Footer from "@/components/reusableComponents/Footer";
 import Questioning from "@/components/reusableComponents/Questioning";
 import ContentSlider from "@/components/reusableComponents/Slider";
 import Upskills from "@/components/reusableComponents/Upskills";
-import VideoHighlight from "@/components/reusableComponents/VideoHighlight"
-import { dataTableConstruction, faqsConstruction, slidesConstruction, uspDataConstruction, videoHighlightDataConstruction } from "@/utils/data";
+import VideoHighlight from "@/components/reusableComponents/VideoHighlight";
+import {
+  dataTableConstruction,
+  faqsConstruction,
+  slidesConstruction,
+  uspDataConstruction,
+  videoHighlightDataConstruction,
+} from "@/utils/data";
 import React from "react";
 
 export const metadata = {
@@ -47,18 +53,27 @@ function Hero() {
 }
 
 const Construction = () => {
-  return <>
-     <Hero />
-      <VideoHighlight data={videoHighlightDataConstruction}/>
-      <ComplianceTable data={dataTableConstruction}/>
-      <Questioning uspData={uspDataConstruction}/>
+  return (
+    <>
+      <Hero />
+      <VideoHighlight data={videoHighlightDataConstruction} />
+      <ComplianceTable data={dataTableConstruction} />
+      <Questioning uspData={uspDataConstruction} />
       <Bubbles />
-      <ContentSlider slides={slidesConstruction}/>
-     
-      <Upskills title="Transform Your Projects & Compliance Today" paragraphs={["Transform Your Projects & Compliance Today"]}/>
-      <FAQ faqs={faqsConstruction}/>
+      <ContentSlider slides={slidesConstruction} />
+
+      <Upskills
+        title="Transform Your Projects & Compliance Today"
+        paragraphs={[
+          "Our expertise is built on deep legal knowledge and dedicated processes specific to the contract-based construction industry.",
+          "Our proactive monitoring significantly reduces the risk of project delays or stop-work orders caused by compliance lapses.",
+          "Ready to master the complexities of Construction compliance, eliminate project risks, and secure your contracts with legal certainty?",
+        ]}
+      />
+      <FAQ faqs={faqsConstruction} />
       <Footer />
-  </>;
+    </>
+  );
 };
 
 export default Construction;
