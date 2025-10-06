@@ -310,7 +310,7 @@ useEffect(()=>{
     //   </div>
     // </div>
     <div
-    className="relative w-full overflow-hidden"
+    className="relative my-12 w-full overflow-hidden"
     style={{ position: "relative" }}
   >
     {/* Left connector line and dot */}
