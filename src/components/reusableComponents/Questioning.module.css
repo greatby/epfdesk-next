@@ -46,21 +46,18 @@
 }
 
 .s-usps .s__usps {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  display: grid;
+ grid-template-columns: auto auto auto auto;
 }
 
-.s-usps--layout-1 .sb-usp:nth-child(4n + 1) {
+/* .s-usps--layout-1 .sb-usp:nth-child(4n + 1) {
   margin-left: calc(
     1 * var(--grid-column-width) + 0 * var(--grid-gutter-width)
   );
-}
+} */
 .s-usps .sb-usp {
   position: relative;
-  width: var(--card-width);
+  /* width: var(--card-width); */
   height:85vh;/*var(--card-height)*/
 }
 
@@ -200,7 +197,7 @@
 .b-usp-hired .b__eye {
   position: absolute;
   top: 20%;
-  left: 21.5262%;
+ left: 4.5262%;
   width: 200px;
 }
 
@@ -382,6 +379,9 @@
     .payroll{
   left:0;
 }
+.b-usp-hired .b__eye{
+ left: 21.5262%;
+}
 }
 
 @keyframes eye-blink {
@@ -413,6 +413,6 @@
 
 @media (max-width: 546px) {
   .b-usp-hired .b__eye {
-    left: 11.5262%;
+    left:15.5262%;
   }
 }

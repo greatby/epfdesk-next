@@ -650,7 +650,7 @@ const Questioning = ({ uspData }) => {
       className={styles["s-usps"] + " " + styles["s-usps--layout-1"]}
       data-plr-component="s-usps"
     >
-      <div className={styles["u-container"]}>
+      <div className={""}>
         <div
           className={styles["s__header"] + " " + styles["js-header"]}
           data-lg-scroll=""
@@ -662,7 +662,8 @@ const Questioning = ({ uspData }) => {
           </div>
         </div>
 
-        <div className={styles["s__usps"]}>
+        <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 ${uspData.cards.length === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4"}`
+}>
           {/* ---------- CARD 1 ---------- */}
           <div className={styles["s__usp"] + " " + styles["sb-usp"]}>
             <div className={styles["sb__content"]}>
@@ -737,7 +738,7 @@ const Questioning = ({ uspData }) => {
               styles["s__usp"] +
               " " +
               styles["sb-usp"] +
-              (uspData.cards.length === 3 ? " " + styles["payroll"] : "")
+              (uspData.cards.length === 3 ? " " + styles[""] : "")
             }
           >
             <div className={styles["sb__content"]}>
