@@ -116,35 +116,9 @@ export default function NodCodingExperience({ data }) {
         </div>
 
         <div className={styles["s__body"]}>
-          <div className={styles["s__video-mask"]}></div>
-          <div className={styles["s__video-border"]}></div>
-
-          <div
-            className={`
-              ${styles["s__video-wrapper"]} 
-              ${styles["js-wrapper"]}
-            `}
-          >
-            <div className={styles["s__cover"]}>
-              <picture
-                className={`
-                  ${styles["lazy-image__img"]} 
-                  ${styles["b-image"]}
-                `}
-                data-plr-component="b-image"
-              >
-                <img
-                  src={data.coverImage}
-                  sizes="(min-width: 1440px) 700px, (min-width: 1024px) 500px, (min-width: 577px) 350px, 100vw"
-                  alt={data.alt || "Video Highlight"}
-                  width="1080"
-                  height="1080"
-                  loading="lazy"
-                />
-              </picture>
-            </div>
-          </div>
-
+         <div className="hidden md:block absolute top-0 bottom-0 left-0 right-0 w-[40%] m-[_42px_60px]">
+          <img src="/images/hospitalityImage.png" alt="hospitality" className="rounded-md" />
+         </div>
           <div
             className={`
               ${styles["s__text"]} 
