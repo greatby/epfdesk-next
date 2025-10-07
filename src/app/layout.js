@@ -85,7 +85,7 @@ export default function RootLayout({ children }) {
           {children}
           <Analytics />
         </main>
-        <LocationBanner />
+        {/* <LocationBanner /> */}
         {!hideLayout && (
           <FadeInWhenVisible>
             <Footer />
