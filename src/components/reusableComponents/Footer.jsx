@@ -15,8 +15,7 @@ export default function Footer() {
             Questions?
           </h2>
           <p className="text-xl sm:text-3xl font-semibold text-[#3a2f2c] max-w-md">
-            Do you love what we do and want to help us revolutionize teaching
-            and change how people learn to code?
+          Passionate about keeping industries safe and compliant? Join us in transforming how businesses manage regulations.
           </p>
         </div>
 
