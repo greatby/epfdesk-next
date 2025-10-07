@@ -4,7 +4,7 @@ import { FiArrowRight } from "react-icons/fi";
 
 export default function Footer() {
   return (
-    <footer className=" max-w-7xl mx-auto relative px-8 py-12 md:px-16 md:py-20 overflow-hidden z-[1]">
+    <footer className="relative px-8 py-12 md:px-16 md:py-20 overflow-hidden z-[1]">
       {/* Top border */}
       <div className="absolute top-0 left-0 w-full h-[10px] bg-[#3a2f2c]" />
 
