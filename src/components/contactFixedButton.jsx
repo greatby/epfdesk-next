@@ -223,19 +223,29 @@ export default function FloatingFormToggle({ animate = true }) {
               );
               window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
             }}
-            className="flex h-[50px] w-[50px] sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] px-0 sm:px-4 text-black shadow-lg transition hover:bg-[rgb(209,244,112)]"
+            className="group relative flex h-[50px] w-[50px] sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] px-0 sm:px-4 text-black shadow-lg transition"
           >
-            <IoLogoWhatsapp className="size-5 sm:size-6" />
-            <span className="hidden sm:inline">WhatsApp</span>
+            <IoLogoWhatsapp className="size-5 sm:size-6 transition-transform sm:group-hover:scale-0" />
+            <span className="hidden sm:inline transition-opacity sm:group-hover:opacity-0">
+              WhatsApp
+            </span>
+            <span className="absolute hidden sm:inline opacity-0 transition-opacity sm:group-hover:opacity-100">
+              +91 99805 11980
+            </span>
           </button>
 
-          {/* Contact Us Button (opens phone app) */}
+          {/* Contact Us Button */}
           <button
             onClick={() => (window.location.href = "tel:+919980511980")}
-            className="flex h-[50px] w-[50px] sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] px-0 sm:px-4 text-black shadow-lg transition hover:bg-[rgb(209,244,112)]"
+            className="group relative flex h-[50px] w-[50px] sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] px-0 sm:px-4 text-black shadow-lg transition"
           >
-            <FaPhone className="size-5 sm:size-6" />
-            <span className="hidden sm:inline">Contact Us</span>
+            <FaPhone className="size-5 sm:size-6 transition-transform sm:group-hover:scale-0" />
+            <span className="hidden sm:inline transition-opacity sm:group-hover:opacity-0">
+              Contact Us
+            </span>
+            <span className="absolute hidden sm:inline opacity-0 transition-opacity sm:group-hover:opacity-100">
+              +91 99805 11980
+            </span>
           </button>
           <a
             href={`mailto:hello@epfdesk.com?subject=${encodeURIComponent(
