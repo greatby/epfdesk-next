@@ -57,7 +57,10 @@ function Hero() {
     // </section>
     <Bootcamps
       title="Hospitality Compliance"
-      description=" Don&#39;t lose ₹10L+ to compliance errors. Get end-to-end GST, EPF,ESIC, and POSH compliance for your hotel or restaurant. We ensure zero penalties, from a single cafe to a national chain."
+      description="One Execution Infrastructure for Hotels, Restaurants, Cafés, Bars, Pubs & Cloud Kitchens
+Workforce is India’s only compliance execution system built for the hospitality industry.
+We manage every registration, license, inspection, renewal, and closure — across all 29 states
+and 1,000+ local authorities."
     />
   );
 }
@@ -73,9 +76,16 @@ const Hospitality = () => {
       <Slider slides={slidesHospitality} />
       <Testimonials testimonials={testimonialsHospitality} />
       <Upskills
-        title="Secure Your Spot: Limited Onboarding"
+        // title="Secure Your Spot: Limited Onboarding"
+        // paragraphs={[
+        //   "Our dedication to quality means we can only partner with a select number of new hospitality businesses each month. Secure your position for a seamless transition now.",
+        // ]}
+        title="What Changes When Compliance Becomes Infrastructure"
         paragraphs={[
-          "Our dedication to quality means we can only partner with a select number of new hospitality businesses each month. Secure your position for a seamless transition now.",
+          "Workforce turns regulation into infrastructure — predictable, programmable, perpetual. Every filing, inspection, and renewal is executed through one pane of glass across all departments and entities.",
+          "0 missed renewals. 30–60% faster approvals. A unified compliance control plane that powers legal continuity as a product feature.",
+          "From mapping Acts and assembling documentation to executing and sustaining renewals automatically, Workforce converts every compliance into a workflow that runs itself.",
+          "Build without fear. We handle the law.",
         ]}
       />
       {/* <YoutubeSlider /> */}

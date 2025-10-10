@@ -5037,9 +5037,9 @@ high-turnover workforce.`,
 // Data starts from here for hospitality links..,
 
 export const videoHighlightDataHospitality = {
-  heading: "The True Cost of a Seamless Guest Experience",
+  heading: "Every License. Every Renewal. Every Closure.",
   description:
-    "The hospitality industry is huge and highly regulated, so even one compliance lapse can cause major financial and reputational damage.",
+    "Operate legally and confidently — from your first FSSAI registration to your last Fire NOC renewal.",
   coverImage: "https://nodcoding.com/wp-content/uploads/2024/09/Nod-Intro.jpg",
   alt: "hospitality",
 };
@@ -5081,42 +5081,78 @@ export const videoHighlightDataManufacturing = {
 };
 
 export const dataTableHospitality = [
-  {
-    threshold: "1+ employees",
-    law: "GST Act, 2017 (Turnover-based)",
-    meaning:
-      "You must register and file GST returns, regardless of employee count.",
-  },
-  {
-    threshold: "1+ employees",
-    law: "Shop & Establishment Act",
-    meaning:
-      "You must register your premises and comply with rules on working hours and leave.",
-  },
-  {
-    threshold: "10+ employees",
-    law: "POSH Act, 2013",
-    meaning:
-      "You must constitute an Internal Committee and provide regular employee training.",
-  },
-  {
-    threshold: "10+ employees",
-    law: "ESIC Act, 1948 (in notified areas)",
-    meaning:
-      "You must register your business and contribute for employees with a monthly wage up to ₹21,000.",
-  },
-  {
-    threshold: "20+ employees",
-    law: "EPF Act, 1952",
-    meaning:
-      "You must register your business and contribute for all eligible employees.",
-  },
-  {
-    threshold: "20+ contract workers",
-    law: "CLRA Act, 1970",
-    meaning:
-      "You must get a Principal Employer certificate and ensure your contractor has a labor license.",
-  },
+  // {
+  //   threshold: "1+ employees",
+  //   law: "GST Act, 2017 (Turnover-based)",
+  //   meaning:
+  //     "You must register and file GST returns, regardless of employee count.",
+  // },
+  // {
+  //   threshold: "1+ employees",
+  //   law: "Shop & Establishment Act",
+  //   meaning:
+  //     "You must register your premises and comply with rules on working hours and leave.",
+  // },
+  // {
+  //   threshold: "10+ employees",
+  //   law: "POSH Act, 2013",
+  //   meaning:
+  //     "You must constitute an Internal Committee and provide regular employee training.",
+  // },
+  // {
+  //   threshold: "10+ employees",
+  //   law: "ESIC Act, 1948 (in notified areas)",
+  //   meaning:
+  //     "You must register your business and contribute for employees with a monthly wage up to ₹21,000.",
+  // },
+  // {
+  //   threshold: "20+ employees",
+  //   law: "EPF Act, 1952",
+  //   meaning:
+  //     "You must register your business and contribute for all eligible employees.",
+  // },
+  // {
+  //   threshold: "20+ contract workers",
+  //   law: "CLRA Act, 1970",
+  //   meaning:
+  //     "You must get a Principal Employer certificate and ensure your contractor has a labor license.",
+  // },
+   {
+      threshold: "Licenses & Registrations",
+      law: "Examples: FSSAI, Factory license, Boiler, PCB consents",
+      meaning:
+        "Registration, government approvals, periodic renewals and inspection readiness (case: F&B chain, Manufacturer).",
+    },
+    {
+      threshold: "Operational Filings & Inspections",
+      law: "Submission → Inspection → Approval workflows",
+      meaning:
+        "Sequenced filings, inspection scheduling and approval tracking with department badges and officer telemetry.",
+    },
+    {
+      threshold: "Renewals, Amendments & Closures",
+      law: "Auto-renewals / Amendments",
+      meaning:
+        "Renewals auto-tracked and pre-filed; Workforce schedules filings to ensure zero missed renewals.",
+    },
+    {
+      threshold: "Tracking & Audit Trail",
+      law: "Document vault & tamper-evident history",
+      meaning:
+        "Real-time status, document vault, timestamps, SLA alerts and provenance for audit readiness.",
+    },
+    {
+      threshold: "Industry & State Coverage",
+      law: "State × Industry × Act matrix (36 states/UTs · 30+ industries)",
+      meaning:
+        "Instant scoping — what applies to me? Tailored modules for Hospitality, Healthcare, Education, Manufacturing and more.",
+    },
+    {
+      threshold: "Regulatory Intelligence",
+      law: "Regulatory Intelligence Graph",
+      meaning:
+        "Each filing becomes data — timelines, rejections, inspection notes and fees feed intelligence to speed and harden future executions.",
+    },
 ];
 
 export const dataTableEducation = [
@@ -5235,30 +5271,53 @@ export const dataTableManufacturing = [
 ];
 
 export const uspDataHospitality = {
-  mainTitle:
-    "The Cost of Chaos: Why Compliance Failures Cascade in Hospitality",
-  cards: [
-    {
-      title: "The High-Attrition Administrative Nightmare",
-      description:
-        "High employee turnover—around 80% annually—causes massive administrative work managing EPF, ESIC, and UAN records.",
-    },
-    {
-      title: "The GST Reconciliation Nightmare",
-      description:
-        "A GSTR-2B mismatch isn’t a software glitch but a data issue that threatens your Input Tax Credit and cash flow.",
-    },
-    {
-      title: "The Overtime & Tips Trap",
-      description:
-        "One mistake can trigger a full audit of all statutory records, exposing hidden errors and heavy penalties. Automated payroll integration ensures precise, compliant calculations every time.",
-    },
-    {
-      title: "The POSH Reputation Bomb",
-      description:
-        "A single POSH violation in a customer-facing, shift-based workplace can undo years of brand reputation. Robust POSH compliance and an independent hotline safeguard your brand and workforce.",
-    },
-  ],
+  // mainTitle:
+  //   "The Cost of Chaos: Why Compliance Failures Cascade in Hospitality",
+  // cards: [
+  //   {
+  //     title: "The High-Attrition Administrative Nightmare",
+  //     description:
+  //       "High employee turnover—around 80% annually—causes massive administrative work managing EPF, ESIC, and UAN records.",
+  //   },
+  //   {
+  //     title: "The GST Reconciliation Nightmare",
+  //     description:
+  //       "A GSTR-2B mismatch isn’t a software glitch but a data issue that threatens your Input Tax Credit and cash flow.",
+  //   },
+  //   {
+  //     title: "The Overtime & Tips Trap",
+  //     description:
+  //       "One mistake can trigger a full audit of all statutory records, exposing hidden errors and heavy penalties. Automated payroll integration ensures precise, compliant calculations every time.",
+  //   },
+  //   {
+  //     title: "The POSH Reputation Bomb",
+  //     description:
+  //       "A single POSH violation in a customer-facing, shift-based workplace can undo years of brand reputation. Robust POSH compliance and an independent hotline safeguard your brand and workforce.",
+  //   },
+  // ],
+    mainTitle: "A Regulatory Execution Engine",
+    cards: [
+      {
+        title: "Discover",
+        description:
+          "Know every compliance you need — Workforce maps every applicable requirement by state, industry, and scale.",
+      },
+      {
+        title: "Execute",
+        description:
+          "Registrations, inspections, approvals — handled digitally and on-ground with verified liaison network.",
+      },
+      {
+        title: "Track",
+        description:
+          "Officer-level progress, document vault, SLAs and file provenance — every action logged and traceable.",
+      },
+      {
+        title: "Sustain",
+        description:
+          "Renewals, amendments and closures auto-tracked and pre-filed — zero missed deadlines, perpetual compliance.",
+      },
+    ],
 };
 
 export const uspDataEducation = {
@@ -5356,36 +5415,56 @@ export const uspDataManufacturing = {
 };
 
 export const slidesHospitality = [
+  // {
+  //   title: "GST: We are the operators",
+  //   text: "Meticulous reconciliation, return filing, and audit defense.",
+  //   image:
+  //     "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
+  // },
+  // {
+  //   title: "EPF/ESIC for a dynamic workforce",
+  //   text: " We manage statutory contributions for all staff, from permanent managers to part-time banquet staff and contract workers, expertly handling the administrative nightmare of high attrition.",
+  //   image:
+  //     "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  // },
+  // {
+  //   title: "Your licenses that can shut you down",
+  //   text: " We manage the Shop & Establishment Act registration and renewals for a single café or a multi-location chain, ensuring continuous operational legality.",
+  //   image:
+  //     "https://nodcoding.com/wp-content/uploads/2024/07/home-islands-1920x2075.jpg",
+  // },
+  // {
+  //   title: "The POSH Act",
+  //   text: "We draft your policy, train your staff (waiters to management), and handle complaints with the legal precision needed in your industry, safeguarding your brand's reputation.",
+  //   image:
+  //     "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
+  // },
+  // {
+  //   title: " All other statutory requirements",
+  //   text: "  We ensure perfect compliance with Minimum Wages Act, Payment of Gratuity Act, and LWF/PT for all your locations, providing a single point of control for your entire compliance landscape.",
+  //   image:
+  //     "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  // },
   {
-    title: "GST: We are the operators",
-    text: "Meticulous reconciliation, return filing, and audit defense.",
-    image:
-      "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
-  },
-  {
-    title: "EPF/ESIC for a dynamic workforce",
-    text: " We manage statutory contributions for all staff, from permanent managers to part-time banquet staff and contract workers, expertly handling the administrative nightmare of high attrition.",
-    image:
-      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
-  },
-  {
-    title: "Your licenses that can shut you down",
-    text: " We manage the Shop & Establishment Act registration and renewals for a single café or a multi-location chain, ensuring continuous operational legality.",
-    image:
-      "https://nodcoding.com/wp-content/uploads/2024/07/home-islands-1920x2075.jpg",
-  },
-  {
-    title: "The POSH Act",
-    text: "We draft your policy, train your staff (waiters to management), and handle complaints with the legal precision needed in your industry, safeguarding your brand's reputation.",
-    image:
-      "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
-  },
-  {
-    title: " All other statutory requirements",
-    text: "  We ensure perfect compliance with Minimum Wages Act, Payment of Gratuity Act, and LWF/PT for all your locations, providing a single point of control for your entire compliance landscape.",
-    image:
-      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
-  },
+      title: "Map — What Applies to Me?",
+      text: "State × Industry × Act matrix lights up with instant scoping. Workforce maps every applicable law so you always know what applies — across 36 states & UTs and 30+ industries.",
+      image: "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
+    },
+    {
+      title: "Workflow — From Submission to Approval",
+      text: "Each filing follows a sequenced timeline — submission, inspection, approval — with department badges, challans, and officer tracking built-in. No missed steps, no manual chasers.",
+      image: "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+    },
+    {
+      title: "Tracking — Officer-Level Telemetry",
+      text: "Monitor every file: officer name, timestamps, remarks, and SLA status. Each document is versioned in a secure vault — creating a tamper-evident audit trail automatically.",
+      image: "https://nodcoding.com/wp-content/uploads/2024/07/home-islands-1920x2075.jpg",
+    },
+    {
+      title: "Renewals — Auto-Filed & Scheduled",
+      text: "Every registration and license is auto-tracked for expiry. Workforce pre-files renewals, reconciles fees, and keeps continuity without intervention — zero downtime, zero penalties.",
+      image: "https://nodcoding.com/wp-content/uploads/2024/07/home-islands-1920x2075.jpg",
+    },
 ];
 
 export const slidesEducation = [
@@ -5593,6 +5672,60 @@ export const faqsHospitality = [
   {
     question: "Can you handle our GST reconciliation and filings too?",
     answer: ` Yes, our specialized GST team acts as the "operator for your GST machine." We handle meticulous data reconciliation, return filing, and audit defense, ensuring you maximize your Input Tax Credit and are protected from penalties and audits.`,
+  },
+  {
+    question:
+      "What licenses are mandatory to open a restaurant or café in India?",
+    answer: ` You’ll need: Shops & Establishment License, FSSAI License, Trade License, Fire NOC, Pollution
+NOC, and a Health/Sanitation Certificate.
+Bars and hotels additionally require Excise and Tourism Department registration.`,
+  },
+  {
+    question: "Are GST and tax filings handled by Workforce?",
+    answer: `No — Workforce focuses on regulatory and operational compliance. All taxation, accounting, and audit-related filings (like GST returns or Income Tax) should be
+handled by your Chartered Accountant.`,
+  },
+  {
+    question: "How does Workforce help with ongoing compliance?",
+    answer: `Our execution system tracks renewal timelines, prepares documents, coordinates inspections,
+and handles filings with departments — ensuring no penalty or suspension due to missed
+deadlines.`,
+  },
+  {
+    question: "Is Fire NOC and Pollution NOC mandatory for all restaurants?",
+    answer: `Yes. Even small cafés and cloud kitchens require fire safety certification and basic pollution/
+waste disposal approvals from local authorities.`,
+  },
+  {
+    question: "What employee-related compliances apply in hospitality?",
+    answer: `Once you cross 10 employees — ESIC and POSH Act apply.
+At 20 employees — EPF becomes mandatory. Workforce registers and manages both.`,
+  },
+  {
+    question: "How long does it take to get all approvals?",
+    answer: `Typically 20–45 working days, depending on state and municipality.
+Workforce’s process sequencing helps parallelize departments, reducing total turnaround time.`,
+  },
+  {
+    question: "What happens during closure or transfer of a restaurant?",
+    answer: `All active licenses must be surrendered or transferred — Fire, FSSAI, Trade, Pollution, etc.
+Workforce ensures this is done in proper legal order, so no future liability remains.`,
+  },
+  {
+    question: "Can Workforce handle multiple outlets or franchises?",
+    answer: `Yes. Workforce manages location-specific compliance profiles, so each outlet’s licenses and
+renewals are tracked separately but managed centrally.`,
+  },
+  {
+    question: "Does Workforce provide legal representation or advisory?",
+    answer: `We execute filings, renewals, and NOCs, and coordinate with authorities.
+For legal disputes or litigation, we can connect you to verified legal partners — but Workforce’s
+core is execution, not representation.`,
+  },
+  {
+    question: "Can I download a compliance checklist before signing up?",
+    answer: `Yes — download our free Hospitality Promoter Compliance Checklist (2025) for a complete
+state-wise view of every registration, renewal, and NOC required.`,
   },
 ];
 
