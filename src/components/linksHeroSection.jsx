@@ -1,10 +1,15 @@
+"use client";
+import React, { useEffect } from "react";
 
-
-import React from "react";
-
-const HeroSection = ({ slide }) => {
+const HeroSection = ({ slide, city, slug, data }) => {
+  const formatSlug = (slug) =>
+  slug
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (c) => c.toUpperCase());
   const { gradientClass, icon, title, subtitle } = slide;
-
+  useEffect(() => {
+    data;
+  }, []);
   return (
     <section
       className={`relative min-h-screen flex items-center justify-center overflow-hidden animate-gradientShift`}
@@ -43,6 +48,12 @@ const HeroSection = ({ slide }) => {
         <div className="hero-icon-massive mx-auto mb-10">{icon}</div>
         <h1 className="hero-title-massive">{title}</h1>
         <p className="hero-subtitle-massive mb-8">{subtitle}</p>
+        {city && slug && (
+          <p className="text-2xl italic text-gray-100 mt-4">
+           [ For {city.charAt(0).toUpperCase() + city.slice(1)},{" "}
+            {formatSlug(slug)}]
+          </p>
+        )}
       </div>
     </section>
   );

@@ -5117,42 +5117,42 @@ export const dataTableHospitality = [
   //   meaning:
   //     "You must get a Principal Employer certificate and ensure your contractor has a labor license.",
   // },
-   {
-      threshold: "Licenses & Registrations",
-      law: "Examples: FSSAI, Factory license, Boiler, PCB consents",
-      meaning:
-        "Registration, government approvals, periodic renewals and inspection readiness (case: F&B chain, Manufacturer).",
-    },
-    {
-      threshold: "Operational Filings & Inspections",
-      law: "Submission → Inspection → Approval workflows",
-      meaning:
-        "Sequenced filings, inspection scheduling and approval tracking with department badges and officer telemetry.",
-    },
-    {
-      threshold: "Renewals, Amendments & Closures",
-      law: "Auto-renewals / Amendments",
-      meaning:
-        "Renewals auto-tracked and pre-filed; Workforce schedules filings to ensure zero missed renewals.",
-    },
-    {
-      threshold: "Tracking & Audit Trail",
-      law: "Document vault & tamper-evident history",
-      meaning:
-        "Real-time status, document vault, timestamps, SLA alerts and provenance for audit readiness.",
-    },
-    {
-      threshold: "Industry & State Coverage",
-      law: "State × Industry × Act matrix (36 states/UTs · 30+ industries)",
-      meaning:
-        "Instant scoping — what applies to me? Tailored modules for Hospitality, Healthcare, Education, Manufacturing and more.",
-    },
-    {
-      threshold: "Regulatory Intelligence",
-      law: "Regulatory Intelligence Graph",
-      meaning:
-        "Each filing becomes data — timelines, rejections, inspection notes and fees feed intelligence to speed and harden future executions.",
-    },
+  {
+    threshold: "Licenses & Registrations",
+    law: "Examples: FSSAI, Factory license, Boiler, PCB consents",
+    meaning:
+      "Registration, government approvals, periodic renewals and inspection readiness (case: F&B chain, Manufacturer).",
+  },
+  {
+    threshold: "Operational Filings & Inspections",
+    law: "Submission → Inspection → Approval workflows",
+    meaning:
+      "Sequenced filings, inspection scheduling and approval tracking with department badges and officer telemetry.",
+  },
+  {
+    threshold: "Renewals, Amendments & Closures",
+    law: "Auto-renewals / Amendments",
+    meaning:
+      "Renewals auto-tracked and pre-filed; Workforce schedules filings to ensure zero missed renewals.",
+  },
+  {
+    threshold: "Tracking & Audit Trail",
+    law: "Document vault & tamper-evident history",
+    meaning:
+      "Real-time status, document vault, timestamps, SLA alerts and provenance for audit readiness.",
+  },
+  {
+    threshold: "Industry & State Coverage",
+    law: "State × Industry × Act matrix (36 states/UTs · 30+ industries)",
+    meaning:
+      "Instant scoping — what applies to me? Tailored modules for Hospitality, Healthcare, Education, Manufacturing and more.",
+  },
+  {
+    threshold: "Regulatory Intelligence",
+    law: "Regulatory Intelligence Graph",
+    meaning:
+      "Each filing becomes data — timelines, rejections, inspection notes and fees feed intelligence to speed and harden future executions.",
+  },
 ];
 
 export const dataTableEducation = [
@@ -5295,29 +5295,29 @@ export const uspDataHospitality = {
   //       "A single POSH violation in a customer-facing, shift-based workplace can undo years of brand reputation. Robust POSH compliance and an independent hotline safeguard your brand and workforce.",
   //   },
   // ],
-    mainTitle: "A Regulatory Execution Engine",
-    cards: [
-      {
-        title: "Discover",
-        description:
-          "Know every compliance you need — Workforce maps every applicable requirement by state, industry, and scale.",
-      },
-      {
-        title: "Execute",
-        description:
-          "Registrations, inspections, approvals — handled digitally and on-ground with verified liaison network.",
-      },
-      {
-        title: "Track",
-        description:
-          "Officer-level progress, document vault, SLAs and file provenance — every action logged and traceable.",
-      },
-      {
-        title: "Sustain",
-        description:
-          "Renewals, amendments and closures auto-tracked and pre-filed — zero missed deadlines, perpetual compliance.",
-      },
-    ],
+  mainTitle: "A Regulatory Execution Engine",
+  cards: [
+    {
+      title: "Discover",
+      description:
+        "Know every compliance you need — Workforce maps every applicable requirement by state, industry, and scale.",
+    },
+    {
+      title: "Execute",
+      description:
+        "Registrations, inspections, approvals — handled digitally and on-ground with verified liaison network.",
+    },
+    {
+      title: "Track",
+      description:
+        "Officer-level progress, document vault, SLAs and file provenance — every action logged and traceable.",
+    },
+    {
+      title: "Sustain",
+      description:
+        "Renewals, amendments and closures auto-tracked and pre-filed — zero missed deadlines, perpetual compliance.",
+    },
+  ],
 };
 
 export const uspDataEducation = {
@@ -5446,25 +5446,29 @@ export const slidesHospitality = [
   //     "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
   // },
   {
-      title: "Map — What Applies to Me?",
-      text: "State × Industry × Act matrix lights up with instant scoping. Workforce maps every applicable law so you always know what applies — across 36 states & UTs and 30+ industries.",
-      image: "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
-    },
-    {
-      title: "Workflow — From Submission to Approval",
-      text: "Each filing follows a sequenced timeline — submission, inspection, approval — with department badges, challans, and officer tracking built-in. No missed steps, no manual chasers.",
-      image: "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
-    },
-    {
-      title: "Tracking — Officer-Level Telemetry",
-      text: "Monitor every file: officer name, timestamps, remarks, and SLA status. Each document is versioned in a secure vault — creating a tamper-evident audit trail automatically.",
-      image: "https://nodcoding.com/wp-content/uploads/2024/07/home-islands-1920x2075.jpg",
-    },
-    {
-      title: "Renewals — Auto-Filed & Scheduled",
-      text: "Every registration and license is auto-tracked for expiry. Workforce pre-files renewals, reconciles fees, and keeps continuity without intervention — zero downtime, zero penalties.",
-      image: "https://nodcoding.com/wp-content/uploads/2024/07/home-islands-1920x2075.jpg",
-    },
+    title: "Map — What Applies to Me?",
+    text: "State × Industry × Act matrix lights up with instant scoping. Workforce maps every applicable law so you always know what applies — across 36 states & UTs and 30+ industries.",
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
+  },
+  {
+    title: "Workflow — From Submission to Approval",
+    text: "Each filing follows a sequenced timeline — submission, inspection, approval — with department badges, challans, and officer tracking built-in. No missed steps, no manual chasers.",
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  },
+  {
+    title: "Tracking — Officer-Level Telemetry",
+    text: "Monitor every file: officer name, timestamps, remarks, and SLA status. Each document is versioned in a secure vault — creating a tamper-evident audit trail automatically.",
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-islands-1920x2075.jpg",
+  },
+  {
+    title: "Renewals — Auto-Filed & Scheduled",
+    text: "Every registration and license is auto-tracked for expiry. Workforce pre-files renewals, reconciles fees, and keeps continuity without intervention — zero downtime, zero penalties.",
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-islands-1920x2075.jpg",
+  },
 ];
 
 export const slidesEducation = [
@@ -6030,3 +6034,160 @@ export const faqsTransport = [
       "Yes. We handle the mandatory registration for you as the principal employer and manage the verification, monitoring, and compliance for all your contractors' labor licenses.",
   },
 ];
+
+export const cityData = {
+  bangalore: {
+    pf: {
+      title: "PF Consultants in Bangalore",
+      description:
+        "Expert PF compliance consultants in Bangalore providing end-to-end EPF registration and management.",
+      contact: "bangalore@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Bangalore",
+      description:
+        "Trusted ESIC consultants in Bangalore offering complete ESIC registration and compliance services.",
+      contact: "bangalore@esicconsultants.in",
+    },
+  },
+  hyderabad: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+  goa: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+  mumbai: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+  chennai: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+  vizag: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+  naviMumbai: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+  delhi: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+  gurugram: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+  india: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+  jaipur: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+};

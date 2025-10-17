@@ -1,0 +1,46 @@
+import ESCIServicesSection from "@/components/esciServicesSection";
+import FadeInWhenVisible from "@/components/fadeInWhenVisible";
+import FaqAccordion from "@/components/faqAccordian";
+import HeroSection from "@/components/linksHeroSection";
+import StickyScrollSections from "@/components/scrollSyncComponent";
+import { cityData,esicFaq, heroSlides, plans } from "@/utils/data";
+
+export const metadata = {
+  title: `ESIC Compliance: Effortless Management for Employee Well-being & Business Protection`,
+  description:
+    "Master ESIC compliance with EPFDesk.com. We handle registration, accurate contributions, monthly filings & ensure all employee benefits. Avoid penalties, achieve 99.9% accuracy, and empower your HR.",
+  alternates: { canonical: "https://epfdesk.com/esic" },
+  openGraph: {
+    title: `ESIC Compliance: Effortless Management for Employee Well-being & Business Protection`,
+    url: "https://epfdesk.com/esic",
+  },
+};
+
+// function Hero() {
+//   return <HeroSection slide={heroSlides[0]} />;
+// }
+
+const ESICCompliance = ({params}) => {
+      const { city, slug } = params;
+  const data = cityData[city]?.esic;
+
+  if (!data) return <div className="p-10 text-red-500">City not found!</div>;
+  return (
+    <>
+      <FadeInWhenVisible>
+        {/* <Hero /> */}
+        <HeroSection slide={heroSlides[0]} city={city} slug={slug} data={data}/>
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible>
+        <ESCIServicesSection plans={plans} />
+      </FadeInWhenVisible>
+      <StickyScrollSections items={plans} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={esicFaq} />
+      </FadeInWhenVisible>
+    </>
+  );
+};
+
+export default ESICCompliance;
