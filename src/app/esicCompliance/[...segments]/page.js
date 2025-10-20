@@ -1,6 +1,6 @@
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import HeroSection from "@/components/linksHeroSection";
-import LatticeTabs from "@/components/LatticeTabs";
+import LatticeTabs from "@/components/latticeTabs";
 import EPFServicesSection from "@/components/epfServicesSection";
 import FaqAccordion from "@/components/faqAccordian";
 import { heroSlides, epfoCards, epfManagementFaq,cityData,standalonePagesEsic } from "@/utils/data";

@@ -6215,7 +6215,7 @@ export const gstData = [
     description: "Hassle-free GST registration and compliance.",
   },
   {
-    slug: "gst-monthly-return-filings-in-bamgalore",
+    slug: "gst-monthly-return-filings-in-bangalore",
     title: "GST Registration in Hyderabad",
     description: "Hassle-free GST registration and compliance.",
   },
