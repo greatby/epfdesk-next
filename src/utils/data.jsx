@@ -6191,3 +6191,228 @@ export const cityData = {
     },
   },
 };
+
+// data.js
+export const gstData = [
+  {
+    slug: "gst-expert-consultants-in-bangalore",
+    title: "GST Expert Consultants in Bangaloregst",
+    description: "Trusted GST filing and advisory services in Bangalore.",
+  },
+  {
+    slug: "gst-consultants-in-bangalore",
+    title: "GST Registration in Hyderabad",
+    description: "Hassle-free GST registration and compliance.",
+  },
+  {
+    slug: "gstr-2",
+    title: "GST Registration in Hyderabad",
+    description: "Hassle-free GST registration and compliance.",
+  },
+  {
+    slug: "gstr-3b",
+    title: "GST Registration in Hyderabad",
+    description: "Hassle-free GST registration and compliance.",
+  },
+  {
+    slug: "gst-monthly-return-filings-in-bamgalore",
+    title: "GST Registration in Hyderabad",
+    description: "Hassle-free GST registration and compliance.",
+  },
+  {
+    slug: "gst-registration-in-bangalore",
+    title: "GST Registration in Hyderabad",
+    description: "Hassle-free GST registration and compliance.",
+  },
+];
+
+export const standalonePages = {
+  "umang-app": {
+    title: "UMANG App – Unified Mobile App for New Governance",
+    description:
+      "Access EPF, ESIC, and other government services using the UMANG App. Learn how to use it for EPF services.",
+  },
+  "UAN-linking": {
+    title: "EPFO Login Guide for Members",
+    description:
+      "Step-by-step instructions for EPFO member login, UAN activation, and password reset.",
+  },
+  "pf-consultants-for-it": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pf-consultants-for-factories": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pf-consultants-for-manufacturing": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pf-monthly-returns": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "UAN-creation": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "PF-monthly-challans": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "PF-registration-in-bangalore": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "IC-registration-in-bangalore": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "ECR-monthly-generation": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "epf-notice-reply": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pension-withdrawl": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pf-death-claim-procedure": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pf-employee-grievience-handling": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "how-to-generate-UAN-number": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pf-for-schools": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pf-for-colleges": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pf-for-hospitals": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pf-for-hotels": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "ecr-issues": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "how-to-close-epf-registration": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "how-to-change-address-in-epf": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "how-to-link-dsc-in-epf": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "how-to-approve-claims-in-epf": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "how-to-approve-form-13": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "how-to-approve-employee-name-change-in-epf": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "how-to-file-joint-declaration-in-epf": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "epf-form-5": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "epf-updates": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "epf-policy-changes": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "epf-code-closure": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+};
+
+export const standalonePagesEsic = {
+   "esic-challan-generation": {
+    title: "UMANG App – Unified Mobile App for New Governance",
+    description:
+      "Access EPF, ESIC, and other government services using the UMANG App. Learn how to use it for EPF services.",
+  },
+  "esic-consultants-for-it": {
+    title: "UMANG App – Unified Mobile App for New Governance",
+    description:
+      "Access EPF, ESIC, and other government services using the UMANG App. Learn how to use it for EPF services.",
+  },
+   "esic-consultants-for-factories": {
+    title: "UMANG App – Unified Mobile App for New Governance",
+    description:
+      "Access EPF, ESIC, and other government services using the UMANG App. Learn how to use it for EPF services.",
+  },
+   "esic-consultants-for-manufacturing": {
+    title: "UMANG App – Unified Mobile App for New Governance",
+    description:
+      "Access EPF, ESIC, and other government services using the UMANG App. Learn how to use it for EPF services.",
+  },
+   "esic-monthly-returns": {
+    title: "UMANG App – Unified Mobile App for New Governance",
+    description:
+      "Access EPF, ESIC, and other government services using the UMANG App. Learn how to use it for EPF services.",
+  },
+}

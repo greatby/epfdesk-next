@@ -2,10 +2,12 @@
 import React, { useEffect } from "react";
 
 const HeroSection = ({ slide, city, slug, data }) => {
+  useEffect(() => {
+    console.log("HeroSection props:", { city, slug, data });
+  }, [city, slug, data]);
+
   const formatSlug = (slug) =>
-  slug
-    .replace(/-/g, " ")
-    .replace(/\b\w/g, (c) => c.toUpperCase());
+    slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   const { gradientClass, icon, title, subtitle } = slide;
   useEffect(() => {
     data;
@@ -48,10 +50,17 @@ const HeroSection = ({ slide, city, slug, data }) => {
         <div className="hero-icon-massive mx-auto mb-10">{icon}</div>
         <h1 className="hero-title-massive">{title}</h1>
         <p className="hero-subtitle-massive mb-8">{subtitle}</p>
-        {city && slug && (
+        {/* {city && slug && (
           <p className="text-2xl italic text-gray-100 mt-4">
-           [ For {city.charAt(0).toUpperCase() + city.slice(1)},{" "}
+           [ For {city?.charAt(0).toUpperCase() + city?.slice(1)},{" "}
             {formatSlug(slug)}]
+          </p>
+        )} */}
+        {slug && (
+          <p className="text-2xl italic text-gray-100 mt-4">
+            {city
+              ? `[ ${city.charAt(0).toUpperCase() + city.slice(1)}, ${formatSlug(slug)} ]`
+              : `[ ${formatSlug(slug)} ]`}
           </p>
         )}
       </div>
