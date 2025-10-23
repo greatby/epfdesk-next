@@ -185,17 +185,35 @@
 //   );
 // }
 
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import HeroSection from "@/components/linksHeroSection";
 import LatticeTabs from "@/components/latticeTabs";
 import EPFServicesSection from "@/components/epfServicesSection";
 import FaqAccordion from "@/components/faqAccordian";
-import { heroSlides, epfoCards, epfManagementFaq,cityData,standalonePages } from "@/utils/data";
+import StickyScrollSections from "../../../components/scrollSyncComponent";
+import {
+  heroSlides,
+  epfoCards,
+  epfManagementFaq,
+  cityData,
+  standalonePages,
+  epfManagementBangalore,
+  epfManagementFaqBangalore,
+} from "@/utils/data";
 
+export const metadata = {
+  title: `PF Consultant in Bangalore | EPF Registration, Returns & Inspections | Workforce`,
+  description:
+    "Leading PF consultants in Bangalore for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+  alternates: { canonical: "https://epfdesk.com/epf/bangalore/pf-consultants-in-bangalore" },
+  openGraph: {
+    title: `Leading PF consultants in Bangalore for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+    url: "https://epfdesk.com/epf/bangalore/pf-consultants-in-bangalore",
+  },
+};
 
-export default function EPFPage({ params }) {
-  const { segments = [] } = params;
+export default async function EPFPage({ params }) {
+  const { segments = [] } = await params;
 
   // CASE 1: /epf
   if (segments.length === 0) {
@@ -236,7 +254,11 @@ export default function EPFPage({ params }) {
     const data = standalonePages[slug];
 
     if (!data)
-      return <div className="p-10 text-center text-red-500">No page found for “{slug}”</div>;
+      return (
+        <div className="p-10 text-center text-red-500">
+          No page found for “{slug}”
+        </div>
+      );
 
     return (
       <>
@@ -246,7 +268,9 @@ export default function EPFPage({ params }) {
 
         <FadeInWhenVisible>
           <div>
-            <h2 className="text-3xl sm:text-5xl mt-12 font-bold text-center">{data.title}</h2>
+            <h2 className="text-3xl sm:text-5xl mt-12 font-bold text-center">
+              {data.title}
+            </h2>
             <p className="max-w-4xl mx-auto mt-8 text-center px-4 text-[1.2rem] text-gray-600 font-bold">
               {data.description}
             </p>
@@ -271,15 +295,24 @@ export default function EPFPage({ params }) {
     const data = cityData[city]?.pf;
 
     if (!data)
-      return <div className="p-10 text-center text-red-500">No data found for city “{city}”</div>;
+      return (
+        <div className="p-10 text-center text-red-500">
+          No data found for city “{city}”
+        </div>
+      );
 
     return (
       <>
         <FadeInWhenVisible>
-          <HeroSection slide={heroSlides[4]} city={city} slug={slug} data={data} />
+          <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          />
         </FadeInWhenVisible>
 
-        <FadeInWhenVisible>
+        {/* <FadeInWhenVisible>
           <div>
             <h2 className="text-3xl sm:text-5xl mt-12 font-bold text-center">{data.title}</h2>
             <p className="max-w-4xl mx-auto mt-8 text-center px-4 text-[1.2rem] text-gray-600 font-bold">
@@ -287,14 +320,20 @@ export default function EPFPage({ params }) {
             </p>
             <LatticeTabs cards={epfoCards} />
           </div>
-        </FadeInWhenVisible>
+        </FadeInWhenVisible> */}
 
-        <FadeInWhenVisible>
+        {/* <FadeInWhenVisible>
           <EPFServicesSection />
+        </FadeInWhenVisible> */}
+        <FadeInWhenVisible>
+          <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+           PF Consultants in Bangalore — End-to-End EPF Compliance by Workforce
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} />
         </FadeInWhenVisible>
 
         <FadeInWhenVisible>
-          <FaqAccordion faqs={epfManagementFaq} />
+          <FaqAccordion faqs={epfManagementFaqBangalore} />
         </FadeInWhenVisible>
       </>
     );

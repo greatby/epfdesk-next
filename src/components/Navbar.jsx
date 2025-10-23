@@ -29,7 +29,7 @@
 
 //   return (
 //     <div className="fixed top-0 left-0 right-0 z-50">
- 
+
 //     <header
 //       className={`fixed z-50 w-full border-b border-gray-300 px-5 backdrop-blur-md ${
 //         scrolled ? "bg-white/80 shadow" : "bg-transparent"
@@ -148,15 +148,25 @@ export default function Navbar() {
   }, []);
 
   // detect dynamic routes
-  const isDynamicEPF = pathname.startsWith("/epf/") && pathname.split("/").length > 2;
-  const isDynamicESIC = pathname.startsWith("/esicCompliance/") && pathname.split("/").length > 2;
+  const isDynamicEPF =
+    pathname.startsWith("/epf/") && pathname.split("/").length > 2;
+  const isDynamicESIC =
+    pathname.startsWith("/esicCompliance/") && pathname.split("/").length > 2;
+  const isDynamicUnigst =
+    pathname.startsWith("/unigst/") && pathname.split("/").length > 2;
 
   // conditional links for desktop
   let desktopLinks;
+
   if (isDynamicEPF) {
     desktopLinks = [{ href: "/esic", label: "ESIC" }];
   } else if (isDynamicESIC) {
     desktopLinks = [{ href: "/epfManagement", label: "EPFO" }];
+  } else if (isDynamicUnigst) {
+    desktopLinks = [
+      { href: "/epfManagement", label: "EPFO" },
+      { href: "/esic", label: "ESIC" },
+    ];
   } else {
     desktopLinks = links;
   }
@@ -258,4 +268,3 @@ export default function Navbar() {
     </div>
   );
 }
-

@@ -6,8 +6,8 @@ import FaqAccordion from "@/components/faqAccordian";
 import { heroSlides, epfoCards, epfManagementFaq,cityData,standalonePagesEsic } from "@/utils/data";
 
 
-export default function EPFPage({ params }) {
-  const { segments = [] } = params;
+export default async function EPFPage({ params }) {
+  const { segments = [] } = await params;
 
   // CASE 1: /epf
   if (segments.length === 0) {

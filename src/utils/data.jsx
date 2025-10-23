@@ -6038,9 +6038,9 @@ export const faqsTransport = [
 export const cityData = {
   bangalore: {
     pf: {
-      title: "PF Consultants in Bangalore",
+      title: "EPF Compliance. Simplified. Secured. Sustained.",
       description:
-        "Expert PF compliance consultants in Bangalore providing end-to-end EPF registration and management.",
+        "Leading PF consultants in Bangalore for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
       contact: "bangalore@pfconsultants.in",
     },
     esic: {
@@ -6215,7 +6215,7 @@ export const gstData = [
     description: "Hassle-free GST registration and compliance.",
   },
   {
-    slug: "gst-monthly-return-filings-in-bangalore",
+    slug: "gst-monthly-returns-filings-in-bangalore",
     title: "GST Registration in Hyderabad",
     description: "Hassle-free GST registration and compliance.",
   },
@@ -6390,7 +6390,7 @@ export const standalonePages = {
 };
 
 export const standalonePagesEsic = {
-   "esic-challan-generation": {
+  "esic-challan-generation": {
     title: "UMANG App – Unified Mobile App for New Governance",
     description:
       "Access EPF, ESIC, and other government services using the UMANG App. Learn how to use it for EPF services.",
@@ -6400,19 +6400,133 @@ export const standalonePagesEsic = {
     description:
       "Access EPF, ESIC, and other government services using the UMANG App. Learn how to use it for EPF services.",
   },
-   "esic-consultants-for-factories": {
+  "esic-consultants-for-factories": {
     title: "UMANG App – Unified Mobile App for New Governance",
     description:
       "Access EPF, ESIC, and other government services using the UMANG App. Learn how to use it for EPF services.",
   },
-   "esic-consultants-for-manufacturing": {
+  "esic-consultants-for-manufacturing": {
     title: "UMANG App – Unified Mobile App for New Governance",
     description:
       "Access EPF, ESIC, and other government services using the UMANG App. Learn how to use it for EPF services.",
   },
-   "esic-monthly-returns": {
+  "esic-monthly-returns": {
     title: "UMANG App – Unified Mobile App for New Governance",
     description:
       "Access EPF, ESIC, and other government services using the UMANG App. Learn how to use it for EPF services.",
   },
-}
+};
+
+export const epfManagementBangalore = {
+  mainTitle: "Comprehensive Employer EPF Compliance Services",
+  cards: [
+    {
+      title: "What Businesses in Bangalore Are Facing?",
+      features: [
+        `Every month, hundreds of Bengaluru establishments lose time and money over EPF defaults
+they never saw coming.`,
+        `Missed challans, wrong UAN mapping, delayed inspection replies — small mistakes that cost
+lakhs.`,
+        `The law doesn’t forgive ignorance.`,
+        `If you’re an employer, you’re responsible — even when your contractor isn’t.`,
+      ],
+    },
+    {
+      title: "What Workforce Does?",
+
+      features: [
+        `Workforce builds the compliance infrastructure that Indian enterprises run on.`,
+        `From Peenya’s factories to Koramangala’s startups, we handle end-to-end EPF obligations
+— so your team never has to.`,
+      ],
+    },
+    {
+      title: "Our Services",
+
+      features: [
+        `EPF Registration & Code Activation — handled in 48 hours.`,
+        `Monthly Return Filing (ECR & Challan) — automated + verified.`,
+        `EPFO Inspection & Notice Response — legal drafting, officer representation.`,
+        `Employee UAN & KYC Management — streamlined onboarding & exits.`,
+        `Establishment Closure or Transfer — complete documentation & surrender.`,
+        `PF Health Report — Know your compliance score before your next
+inspection.`,
+      ],
+    },
+    {
+      title: "Built for India’s Employers",
+
+      features: [
+        `Workforce serves over 100 enterprises across Karnataka — from industrial clusters to IT
+parks — ensuring continuous compliance and peace of mind.`,
+        `Case Example:A Bengaluru logistics firm faced ₹8.7 lakh penalty after PF short remittance across 47
+employees. Workforce intervened, reconciled challans, and cleared inspection in 14 days — zero further
+liability.`,
+      ],
+    },
+    {
+      title: "Get Your Free PF Health Audit",
+
+      features: [
+        `Before the next inspection letter arrives, know where you stand.`,
+        `Upload your last PF challan or ECR file.`,
+        `We’ll review and send a detailed risk report:
+  * Missing employee codes
+  * Interest liabilities
+  * Delayed payment flags
+  * Future inspection triggers`,
+      ],
+    },
+    {
+      title: "Why Choose Workforce?",
+
+      features: [
+        `Response Time:Live compliance experts available same day.`,
+        `Data Security:End-to-end encrypted filing environment.`,
+        `Local Network:Deep liaison with Karnataka PF offices.`,
+        `Accuracy:Auto-check of ECR mismatch before submission.`,
+        `Accountability:You deal with licensed consultants, not brokers.`,
+        `We don’t file forms. We build trust between the law and those who follow it.`,
+      ],
+    },
+  ],
+};
+
+export const epfManagementFaqBangalore = [
+  {
+    question: "How do I register for EPF in Bangalore?",
+    answer: `To register for EPF in Bangalore, visit the EPFO Unified Portal, submit Form 5A
+along with incorporation documents, bank proof, and identity verification. Workforce
+completes this process in 48 hours with full DSC setup and code activation support.`,
+  },
+  {
+    question: "What are the penalties for PF non-compliance in Bangalore?",
+    answer: `Under Section 14B of the EPF Act, penalties range from 5% to 25% of the arrear
+amount, plus 12% annual interest. In severe cases under Section 7A, penalties can reach
+₹5 lakh, with potential criminal prosecution for willful defaults exceeding ₹1 lakh.`,
+  },
+  {
+    question: "Which EPFO office handles Bangalore?",
+    answer: `Bangalore has multiple EPFO offices: Regional Office at Indiranagar, and subregional
+offices at Jayanagar, Rajajinagar, Koramangala, and Whitefield. Workforce
+maintains direct liaison with all Bangalore EPFO offices for seamless compliance.`,
+  },
+  {
+    question: "How long does EPF registration take in Bangalore?",
+    answer: `EPF registration typically takes 7-10 working days if filed correctly. Workforce
+accelerates this to 48 hours through pre-verified documentation and direct EPFO liaison.`,
+  },
+  {
+    question: "Can Workforce handle EPFO inspections?",
+    answer: `Yes. Workforce specializes in Section 7A inspection handling, including showcause
+notice replies, officer representation, challan reconciliation, and penalty
+negotiation. We've successfully closed 50+ inspections in Bangalore with minimal
+penalties.`,
+  },
+  {
+    question: "What is the cost of hiring a PF consultant in Bangalore?",
+    answer: `PF consultant fees in Bangalore vary based on employee strength and complexity.
+Workforce offers transparent pricing starting at ₹3,000/month for up to 50 employees,
+with customized packages for larger establishments.`,
+  },
+];
