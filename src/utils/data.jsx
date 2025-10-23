@@ -6420,26 +6420,26 @@ export const standalonePagesEsic = {
 export const epfManagementBangalore = {
   mainTitle: "Comprehensive Employer EPF Compliance Services",
   cards: [
-    {
-      title: "What Businesses in Bangalore Are Facing?",
-      features: [
-        `Every month, hundreds of Bengaluru establishments lose time and money over EPF defaults
-they never saw coming.`,
-        `Missed challans, wrong UAN mapping, delayed inspection replies — small mistakes that cost
-lakhs.`,
-        `The law doesn’t forgive ignorance.`,
-        `If you’re an employer, you’re responsible — even when your contractor isn’t.`,
-      ],
-    },
-    {
-      title: "What Workforce Does?",
+    //     {
+    //       title: "What Businesses in Bangalore Are Facing?",
+    //       features: [
+    //         `Every month, hundreds of Bengaluru establishments lose time and money over EPF defaults
+    // they never saw coming.`,
+    //         `Missed challans, wrong UAN mapping, delayed inspection replies — small mistakes that cost
+    // lakhs.`,
+    //         `The law doesn’t forgive ignorance.`,
+    //         `If you’re an employer, you’re responsible — even when your contractor isn’t.`,
+    //       ],
+    //     },
+    //     {
+    //       title: "What Workforce Does?",
 
-      features: [
-        `Workforce builds the compliance infrastructure that Indian enterprises run on.`,
-        `From Peenya’s factories to Koramangala’s startups, we handle end-to-end EPF obligations
-— so your team never has to.`,
-      ],
-    },
+    //       features: [
+    //         `Workforce builds the compliance infrastructure that Indian enterprises run on.`,
+    //         `From Peenya’s factories to Koramangala’s startups, we handle end-to-end EPF obligations
+    // — so your team never has to.`,
+    //       ],
+    //     },
     {
       title: "Our Services",
 
@@ -6528,5 +6528,173 @@ penalties.`,
     answer: `PF consultant fees in Bangalore vary based on employee strength and complexity.
 Workforce offers transparent pricing starting at ₹3,000/month for up to 50 employees,
 with customized packages for larger establishments.`,
+  },
+];
+
+export const largeCardsEpfoBangalore = {
+  subTitle: "What Businesses in Bangalore Are Facing?",
+  // subText:
+  //   "Your assigned client manager ensures seamless ongoing operations and proactive problem-solving.",
+
+  cards: [
+    {
+      title: "The Cost of Missed Compliance",
+      subtitle: `Every month, hundreds of Bengaluru establishments lose time and money over EPF defaults
+they never saw coming.`,
+      icon: "🛡️",
+      bubble: "Protect!",
+      bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
+    },
+    {
+      title: "The Real Cost of PF Filing Errors",
+      subtitle: `Missed challans, wrong UAN mapping, delayed inspection replies — small mistakes that cost
+lakhs.`,
+      icon: "🔗",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Compliance Isn’t Optional — It’s the Law",
+      subtitle: `The law doesn’t forgive ignorance.`,
+      icon: "💼",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
+    {
+      title: "Responsibility Can’t Be Outsourced",
+      subtitle: `If you’re an employer, you’re responsible — even when your contractor isn’t.`,
+      icon: "🤖",
+      bubble: "Automate!",
+      bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
+    },
+  ],
+};
+
+export const pastelCardsEpfoBangalore = {
+  subTitle: "What Workforce Does?",
+  // subText:
+  //   "Our experts handle complete setup while you focus on your business.",
+  cards: [
+    {
+      title: "Building India’s Compliance Infrastructure",
+      subtitle: `Workforce builds the compliance infrastructure that Indian enterprises run on.`,
+      icon: "🎨",
+      bubble: "Create!",
+      bg: "from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Powering India’s Businesses Through Compliance Infrastructure",
+      subtitle: `From Peenya’s factories to Koramangala’s startups, we handle end-to-end EPF obligations
+— so your team never has to.`,
+      icon: "🌱",
+      bubble: "Grow!",
+      bg: "from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "EPF Registration & Code Activation",
+      subtitle: `We handle complete EPFO registration for new establishments in Karnataka — from digital signature setup to code allotment — ensuring your organization is compliant and operational within 48 working hours.`,
+      icon: "🤝",
+      bubble: "Connect!",
+      bg: "from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Employee UAN & KYC Management",
+      subtitle: `
+End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
+      icon: "✨",
+      bubble: "Dream!",
+      bg: "from-[#d299c2] to-[#fef9d7]",
+    },
+  ],
+};
+
+export const videoHighlightDataEpfBangalore = {
+  heading:
+    "PF Consultants in Bangalore — End-to-End EPF Compliance by Workforce",
+  description:
+    "Workforce is Bangalore’s trusted PF compliance partner — managing EPF registration, filings, inspections, and closure for India’s top employers.",
+  coverImage: "https://nodcoding.com/wp-content/uploads/2024/09/Nod-Intro.jpg",
+  alt: "construction",
+};
+
+export const uspDataEpfBangalore = {
+  mainTitle: "What Businesses in Bangalore Are Facing?",
+  cards: [
+    {
+      title: "The Cost of Missed Compliance",
+      description:
+        "Every month, hundreds of Bengaluru establishments lose time and money over EPF defaults they never saw coming.",
+    },
+    {
+      title: "The Real Cost of PF Filing Errors",
+      description:
+        "Missed challans, wrong UAN mapping, delayed inspection replies — small mistakes that cost lakhs.",
+    },
+    {
+      title: "Compliance Isn’t Optional — It’s the Law",
+      description: "The law doesn’t forgive ignorance.",
+    },
+    {
+      title: "Responsibility Can’t Be Outsourced",
+      description:
+        "If you’re an employer, you’re responsible — even when your contractor isn’t.",
+    },
+  ],
+};
+
+export const slidesEpfBangalore = [
+  {
+    title: "Building India’s Compliance Infrastructure",
+    text: "Workforce builds the compliance infrastructure that Indian enterprises run on.",
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
+  },
+  {
+    title: "Powering India’s Businesses Through Compliance Infrastructure",
+    text: `
+From Peenya’s factories to Koramangala’s startups, we handle end-to-end EPF obligations — so your team never has to.`,
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  },
+
+  {
+    title: "EPF Registration & Code Activation",
+    text: "We handle complete EPFO registration for new establishments in Karnataka — from digital signature setup to code allotment — ensuring your organization is compliant and operational within 48 working hours.",
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
+  },
+  {
+    title: "Employee UAN & KYC Management",
+    text: `
+End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  },
+  {
+    title: "Our Services",
+    text: `
+EPF Registration & Code Activation — handled in 48 hours. Monthly Return Filing (ECR & Challan) — automated + verified. EPFO Inspection & Notice Response — legal drafting, officer representation. Employee UAN & KYC Management — streamlined onboarding & exits.`,
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  },
+   {
+    title: "Built for India’s Employers",
+    text: `
+Workforce serves over 100 enterprises across Karnataka — from industrial clusters to IT parks — ensuring continuous compliance and peace of mind.`,
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  },
+    {
+    title: "Get Your Free PF Health Audit",
+    text: "Before the next inspection letter arrives, know where you stand. Upload your last PF challan or ECR file. We’ll review and send a detailed risk report",
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
+  },
+   {
+    title: "Why Choose Workforce?",
+    text: `
+Live compliance experts available same day. End-to-end encrypted filing environment. Deep liaison with Karnataka PF offices. Auto-check of ECR mismatch before submission. You deal with licensed consultants, not brokers.`,
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
   },
 ];

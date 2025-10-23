@@ -199,13 +199,19 @@ import {
   standalonePages,
   epfManagementBangalore,
   epfManagementFaqBangalore,
+  largeCardsEpfoBangalore,
+  pastelCardsEpfoBangalore,
 } from "@/utils/data";
+import LargeCardSlider from "@/components/largeCards";
+import PastelCardSlider from "@/components/pastelCardSlider";
 
 export const metadata = {
   title: `PF Consultant in Bangalore | EPF Registration, Returns & Inspections | Workforce`,
   description:
     "Leading PF consultants in Bangalore for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
-  alternates: { canonical: "https://epfdesk.com/epf/bangalore/pf-consultants-in-bangalore" },
+  alternates: {
+    canonical: "https://epfdesk.com/epf/bangalore/pf-consultants-in-bangalore",
+  },
   openGraph: {
     title: `Leading PF consultants in Bangalore for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
     url: "https://epfdesk.com/epf/bangalore/pf-consultants-in-bangalore",
@@ -326,8 +332,18 @@ export default async function EPFPage({ params }) {
           <EPFServicesSection />
         </FadeInWhenVisible> */}
         <FadeInWhenVisible>
+           <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            PF Consultants in Bangalore — End-to-End EPF Compliance by Workforce
+          </h2>
+
+          <FadeInWhenVisible>
+            <LargeCardSlider cardsData={largeCardsEpfoBangalore} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <PastelCardSlider cardsData={pastelCardsEpfoBangalore} />
+          </FadeInWhenVisible>
           <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
-           PF Consultants in Bangalore — End-to-End EPF Compliance by Workforce
+            Workforce: End-to-End EPF Management for Modern Businesses
           </h2>
           <StickyScrollSections items={epfManagementBangalore} />
         </FadeInWhenVisible>
