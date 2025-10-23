@@ -33,12 +33,25 @@ export const metadata = {
 
 function Hero() {
   return (
-    <Bootcamps
-      title="EPF Compliance"
-      description={
-        "Leading PF consultants in Bangalore for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit."
-      }
-    />
+    // <Bootcamps
+    //   title="EPF Compliance"
+    //   description={
+    //     "Leading PF consultants in Bangalore for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit."
+    //   }
+    // />
+    <div>
+      <div>
+        <img
+          src="/images/EPF-bangalore.png"
+          alt="bangalore"
+          className="w-full h-auto"
+        />
+      </div>
+      <div className="flex items-center justify-between gap-[20px] md:gap-[250px] max-w-6xl mx-auto">
+        <h1 className="text-3xl sm:text-5xl font-semibold">EPF Compliance Bangalore</h1>
+        <p className="text-xl font-semibold">Leading PF consultants in Bangalore for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.</p>
+      </div>
+    </div>
   );
 }
 
@@ -46,7 +59,7 @@ const Construction = () => {
   return (
     <>
       <Hero />
-      <VideoHighlight data={videoHighlightDataEpfBangalore} />
+      {/* <VideoHighlight data={videoHighlightDataEpfBangalore} /> */}
       {/* <ComplianceTable data={dataTableConstruction} /> */}
       <Questioning uspData={uspDataEpfBangalore} />
       <Bubbles />

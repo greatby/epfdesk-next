@@ -67,12 +67,13 @@ import Footer from "@/components/Footer";
 import HeroObserver from "@/components/heroObserver";
 import LocationBanner from "@/components/LocationBanner";
 import { Analytics } from "@vercel/analytics/react";
+import NavbarNew from "@/components/NavbarNew";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
   
   const hiddenRoutes = ["/hospitality", "/education","/manufacturing","/facility","/construction","/transport","/epfBangalore"];
-
+ const showNavbarNew = pathname === "/epfBangalore";
   const hideLayout = hiddenRoutes.some((route) =>
     pathname.startsWith(route)
   );
@@ -81,6 +82,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         {!hideLayout && <Navbar />}
+         {showNavbarNew && <NavbarNew />}
         <main>
           {children}
           <Analytics />
