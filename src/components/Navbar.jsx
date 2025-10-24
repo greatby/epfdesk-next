@@ -243,7 +243,7 @@ export default function Navbar() {
                   onClick={() =>
                     window.open("https://wa.me/919945933333", "_blank")
                   }
-                  className="bg-[#003d3d] cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 py-3 shadow-sm transition rounded-[13px]"
+                  className="bg-[#003d3d] cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 h-[42px] shadow-sm transition rounded-[13px]"
                   style={{
                     backgroundImage: "linear-gradient(180deg, #066, #003d3d)",
                     boxShadow:
@@ -255,7 +255,7 @@ export default function Navbar() {
 
                 <button
                   onClick={() => (window.location.href = "tel:+919945933333")}
-                  className="bg-[#003d3d] cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 py-3 shadow-sm transition rounded-[13px]"
+                  className="bg-[#003d3d] cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 h-[42px] shadow-sm transition rounded-[13px]"
                   style={{
                     backgroundImage: "linear-gradient(180deg, #066, #003d3d)",
                     boxShadow:
@@ -268,7 +268,7 @@ export default function Navbar() {
                   onClick={() =>
                     (window.location.href = "mailto:hello@epfdesk.com")
                   }
-                  className="bg-[#003d3d] cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 py-3 shadow-sm transition rounded-[13px]"
+                  className="bg-[#003d3d] cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 h-[42px] shadow-sm transition rounded-[13px]"
                   style={{
                     backgroundImage: "linear-gradient(180deg, #066, #003d3d)",
                     boxShadow:
