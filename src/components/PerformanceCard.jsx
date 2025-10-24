@@ -1,0 +1,70 @@
+"use client";
+
+import Image from "next/image";
+import React from "react";
+
+const PerformanceCard = () => {
+  return (
+    <section
+      className="flex flex-col md:flex-row gap-[40px] p-[70px] bg-transparent rounded-[3.2rem]"
+      style={{ backgroundImage: "linear-gradient(180deg,#f7f6f2,#fff0)" }}
+    >
+      <div className="w-full md:max-w-xl">
+        <h1 className="text-[2.6rem] font-semibold mb-6">EPF Management</h1>
+        <p className="text-[1.2rem] leading-[1.3]">
+          Your PF compliance worries end here. EPFdesk has protected 50+
+          Bangalore enterprises from EPF penalties and compliance chaos with
+          zero defaults — and we're ready to do the same for you. From Peenya's
+          factories to Whitefield's tech corridors, Electronic City,
+          Koramangala, and the CBD, businesses trust us to handle what keeps HR
+          teams awake: employee UAN linking that never lags, exit marking that
+          meets every deadline, monthly ECRs filed flawlessly, inspection
+          notices resolved without penalties, and contractor PF obligations that
+          don't become your nightmare. Our difference? We don't just tell you
+          what to do, we log into your portal and do it for you. Whether you're
+          a startup activating EPFO for the first time, a manufacturer drowning
+          in contractor documentation, or an IT company fielding employee PF
+          questions, our Bangalore team transforms EPF from your constant worry
+          into your competitive advantage. Sleep better tonight. Your EPF
+          compliance is now our responsibility.
+        </p>
+      </div>
+      <div className="max-w-3xl mx-auto bg-white rounded-[20px] shadow-[inset_0_10px_16px_-10px_#ffffff0f,0_8px_8px_#001f1f0f,0_4px_4px_#001f1f0f,0_2px_2px_#001f1f0f,0_0_1px_#001f1f52,inset_0_-2px_1px_#001f1f3d,inset_0_1px_1px_#cdface14] p-6 flex flex-col md:flex-col items-stretch gap-6 transition hover:shadow-lg">
+        {/* Left side: image section */}
+        <div className="rounded-[12px] flex-1 flex items-center justify-center">
+          <img
+            src="/images/EPF-bangalore.png" // replace with your actual image path
+            alt="Performance Review"
+            className="rounded-md object-contain w-full h-auto"
+          />
+        </div>
+
+        {/* Right side: text section */}
+      
+        <div className="flex flex-row justify-between py-4 relative">
+          {/* Left text */}
+          <div>
+            <h2 className="text-[1.6rem] font-bold text-[#001f1f] leading-[1.1]">
+              PF Compliance Management
+            </h2>
+          </div>
+
+          {/* Right content */}
+          <div className="flex items-center relative">
+            {/* Centered vertical dashed line */}
+            <div className="absolute left-[8px] top-1/2 transform -translate-y-1/2 w-[2px] h-[60%] border-l-[2px] border-dashed border-[color-mix(in_srgb,_#001f1f_8%,_transparent)]"></div>
+
+            {/* Paragraph */}
+            <div className="ml-6">
+              <p className="text-[#6a7878] text-[1rem] leading-[1.3]">
+                End to End EPF compliance Management in Bangalore
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default PerformanceCard;

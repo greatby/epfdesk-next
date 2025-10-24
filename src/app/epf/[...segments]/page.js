@@ -206,6 +206,7 @@ import LargeCardSlider from "@/components/largeCards";
 import PastelCardSlider from "@/components/pastelCardSlider";
 
 import { PerformanceSection } from "@/components/PerformanceSection";
+import PerformanceCard from "@/components/PerformanceCard";
 
 export const metadata = {
   title: `PF Consultant in Bangalore | EPF Registration, Returns & Inspections | Workforce`,
@@ -321,6 +322,9 @@ export default async function EPFPage({ params }) {
             data={data}
           /> */}
           <PerformanceSection />
+        </FadeInWhenVisible>
+        <FadeInWhenVisible>
+          <PerformanceCard />
         </FadeInWhenVisible>
 
         {/* <FadeInWhenVisible>

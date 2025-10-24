@@ -97,8 +97,8 @@ export const PerformanceSection = () => {
       {/* Card */}
      
     </section>
-     <div className="mt-16 relative bg-gradient-to-br from-emerald-200 to-emerald-300 p-1 rounded-3xl shadow-md w-full max-w-4xl mx-auto">
-        <div className="bg-white rounded-2xl p-6 m-2">
+     <div className="mt-16 relative p-1 rounded-3xl w-full max-w-5xl mx-auto">
+        <div className="rounded-2xl p-6 m-2">
           <div className="grid grid-rows-1 text-left">
             <img src="/images/hero_maze_optimized.webp" />
           </div>
