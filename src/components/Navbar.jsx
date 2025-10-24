@@ -241,7 +241,7 @@ export default function Navbar() {
               <div className="flex items-center gap-3 ml-4">
                 <button
                   onClick={() =>
-                    window.open("https://wa.me/919980511980", "_blank")
+                    window.open("https://wa.me/919945933333", "_blank")
                   }
                   className="bg-[#003d3d] cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 py-3 shadow-sm transition rounded-[13px]"
                   style={{
@@ -254,7 +254,7 @@ export default function Navbar() {
                 </button>
 
                 <button
-                  onClick={() => (window.location.href = "tel:+919980511980")}
+                  onClick={() => (window.location.href = "tel:+919945933333")}
                   className="bg-[#003d3d] cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 py-3 shadow-sm transition rounded-[13px]"
                   style={{
                     backgroundImage: "linear-gradient(180deg, #066, #003d3d)",
@@ -358,7 +358,7 @@ export default function Navbar() {
 
                       <button
                         onClick={() =>
-                          (window.location.href = "tel:+919980511980")
+                          (window.location.href = "tel:+919945933333")
                         }
                         className="bg-[#003d3d] cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 py-3 shadow-sm transition rounded-[13px]"
                         style={{
@@ -373,7 +373,7 @@ export default function Navbar() {
 
                       <button
                         onClick={() =>
-                          window.open("https://wa.me/919980511980", "_blank")
+                          window.open("https://wa.me/919945933333", "_blank")
                         }
                         className="bg-[#003d3d] cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 py-3 shadow-sm transition rounded-[13px]"
                         style={{
