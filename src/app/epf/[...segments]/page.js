@@ -205,6 +205,8 @@ import {
 import LargeCardSlider from "@/components/largeCards";
 import PastelCardSlider from "@/components/pastelCardSlider";
 
+import { PerformanceSection } from "@/components/PerformanceSection";
+
 export const metadata = {
   title: `PF Consultant in Bangalore | EPF Registration, Returns & Inspections | Workforce`,
   description:
@@ -217,6 +219,8 @@ export const metadata = {
     url: "https://epfdesk.com/epf/bangalore/pf-consultants-in-bangalore",
   },
 };
+
+
 
 export default async function EPFPage({ params }) {
   const { segments = [] } = await params;
@@ -310,12 +314,13 @@ export default async function EPFPage({ params }) {
     return (
       <>
         <FadeInWhenVisible>
-          <HeroSection
+          {/* <HeroSection
             slide={heroSlides[4]}
             city={city}
             slug={slug}
             data={data}
-          />
+          /> */}
+          <PerformanceSection />
         </FadeInWhenVisible>
 
         {/* <FadeInWhenVisible>
@@ -332,7 +337,7 @@ export default async function EPFPage({ params }) {
           <EPFServicesSection />
         </FadeInWhenVisible> */}
         <FadeInWhenVisible>
-           <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+          <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
             PF Consultants in Bangalore — End-to-End EPF Compliance by Workforce
           </h2>
 

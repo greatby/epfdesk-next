@@ -128,6 +128,13 @@ module.exports = {
       "from-[#84fab0]",
       "to-[#8fd3f4]",
     ],
+      boxShadow: {
+        'performance': `
+          inset 0 12px 12px 0 rgb(255 255 255 / 32%),
+          inset 0 1px 0 0 rgb(255 255 255 / 32%),
+          0 0px 0 0 rgba(0, 31, 31, 0.08)
+        `,
+      },
   },
   plugins: [],
 };
