@@ -9,11 +9,12 @@ const PerformanceCard = () => {
       className="flex items-center justify-center gap-[40px] p-[70px] bg-transparent rounded-[3.2rem]"
       style={{ backgroundImage: "linear-gradient(180deg,#f7f6f2,#fff0)" }}
     >
-      <div className="w-full md:max-w-2xl">
-        <h1 className="text-[4rem] text-center font-semibold mb-6 text-[#001f1f]">
+      <div className="w-full md:max-w-3xl rounded-[20px] p-4 bg-white shadow-[inset_0_10px_16px_-10px_#ffffff0f,0_8px_8px_#001f1f0f,0_4px_4px_#001f1f0f,0_2px_2px_#001f1f0f,0_0_1px_#001f1f52,inset_0_-2px_1px_#001f1f3d,inset_0_1px_1px_#cdface14]">
+       <div className="bg-[#cdface] rounded-[20px] p-8 ">
+         <h1 className="text-[2.6rem] text-center font-bold mb-6 text-[#001f1f]">
           EPF Management
         </h1>
-        <div className="p-8 bg-white rounded-[20px] shadow-[inset_0_10px_16px_-10px_#ffffff0f,0_8px_8px_#001f1f0f,0_4px_4px_#001f1f0f,0_2px_2px_#001f1f0f,0_0_1px_#001f1f52,inset_0_-2px_1px_#001f1f3d,inset_0_1px_1px_#cdface14]">
+      
           <p className="text-[1.2rem] text-[#001f1f] leading-[1.3]">
             Your PF compliance worries end here. EPFdesk has protected 50+
             Bangalore enterprises from EPF penalties and compliance chaos with
@@ -31,7 +32,8 @@ const PerformanceCard = () => {
             constant worry into your competitive advantage. Sleep better
             tonight. Your EPF compliance is now our responsibility.
           </p>
-        </div>
+       </div>
+      
       </div>
       {/* <div className="max-w-3xl mx-auto bg-white rounded-[20px] shadow-[inset_0_10px_16px_-10px_#ffffff0f,0_8px_8px_#001f1f0f,0_4px_4px_#001f1f0f,0_2px_2px_#001f1f0f,0_0_1px_#001f1f52,inset_0_-2px_1px_#001f1f3d,inset_0_1px_1px_#cdface14] p-6 flex flex-col md:flex-col items-stretch gap-6 transition hover:shadow-lg">
        
