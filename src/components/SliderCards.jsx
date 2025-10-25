@@ -20,7 +20,7 @@ const testimonials = [
   {
     id: 3,
     name: "Weave Team",
-    text: `Weave saves 30 hours per engagement survey.`,
+    text: `Lattice is better than its competitors. It feels like it was made for us. Everything is rooted in building a high-performance culture and raising the bar year-on-year.`,
     bg: "bg-[#eaeaff]",
   },
   {
@@ -38,7 +38,7 @@ const testimonials = [
   {
     id: 6,
     name: "Weave Team",
-    text: `Weave saves 30 hours per engagement survey.`,
+    text: `Lattice is better than its competitors. It feels like it was made for us. Everything is rooted in building a high-performance culture and raising the bar year-on-year.`,
     bg: "bg-[#eaeaff]",
   },
 ];
@@ -200,15 +200,15 @@ export default function Testimonials() {
           {testimonials.map((t) => (
             <div
               key={t.id}
-              className={`${t.bg} snap-center flex-shrink-0 w-[90%] md:w-[420px] rounded-3xl p-8 flex flex-col justify-between transition-transform duration-300`}
+              className={`${t.bg} snap-center flex-shrink-0 w-[90%] md:w-[420px] h-[350px] rounded-3xl p-8 flex flex-col justify-between transition-transform duration-300`}
             >
               <div className="flex items-center gap-4 mb-4">
                 <div>
-                  <h3 className="text-[1.5rem] font-semibold">{t.name}</h3>
+                  <h3 className="text-[2rem] font-semibold">{t.name}</h3>
                 </div>
               </div>
 
-              <p className="text-gray-800 text-[0.95rem] leading-relaxed mb-6">
+              <p className="text-gray-800 text-[20px] mb-6">
                 {t.text}
               </p>
             </div>
