@@ -10,7 +10,7 @@ export const PerformanceSection = () => {
           <span className="w-[40px] h-[40px] shadow-performance bg-[#c4f5db] text-[#007a7a] text-[39px] rounded-[10px]">
             <TiArrowRepeat />
           </span>{" "}
-          EPFO Compliance
+          EPFDesk
         </div>
       </div>
 
