@@ -186,7 +186,7 @@ export default function Testimonials() {
     //     ))}
     //   </div>
     // </section>
-    <div className="w-full rounded-[3.2rem] my-16 max-w-7xl mx-auto border border-[color-mix(in_srgb,_#001f1f_8%,_transparent)] bg-white py-12">
+    <div className="w-full rounded-[3.2rem] mt-36 md:max-w-7xl lg:max-w-[100rem] xl:max-w-[150rem] mx-auto border border-[color-mix(in_srgb,_#001f1f_8%,_transparent)] bg-white py-12">
       <h1 className="text-center text-[2.6rem] font-semibold tracking-[-.024em] text-[#001f1f]">
         Trusted by top performers
       </h1>

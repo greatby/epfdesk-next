@@ -7,10 +7,11 @@ export const PerformanceSection = () => {
       {/* Label */}
       <div className="flex items-center gap-2 mb-3">
         <div className=" text-[#001f1f] flex items-center gap-3 font-semibold px-3 py-1 rounded-full text-[17px]">
-          <span className="w-[40px] h-[40px] shadow-performance bg-[#c4f5db] text-[#007a7a] text-[39px] rounded-[10px]">
+          {/* <span className="w-[40px] h-[40px] shadow-performance bg-[#c4f5db] text-[#007a7a] text-[39px] rounded-[10px]">
             <TiArrowRepeat />
           </span>{" "}
-          EPFDesk
+          EPFDesk */}
+          <img src="/images/EPFdesk (1).svg" alt="logo" className="w-[200px] h-auto"/>
         </div>
       </div>
 

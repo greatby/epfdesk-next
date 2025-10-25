@@ -327,7 +327,7 @@ export default async function EPFPage({ params }) {
         <FadeInWhenVisible>
           <PerformanceCard />
         </FadeInWhenVisible>
-<SliderCards />
+{/* <SliderCards /> */}
         {/* <FadeInWhenVisible>
           <div>
             <h2 className="text-3xl sm:text-5xl mt-12 font-bold text-center">{data.title}</h2>
