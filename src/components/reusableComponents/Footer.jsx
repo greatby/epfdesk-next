@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
 
         {/* Right content */}
-        <div className="flex justify-center items-center relative">
+        <div className="flex flex-col justify-center items-center relative">
           {/* CTA */}
           <a
             href="mailto:hello@epfdesk.com"
@@ -37,6 +37,7 @@ export default function Footer() {
           >
             Get in touch <FiArrowRight className="text-3xl sm:text-6xl" />
           </a>
+          <span className="text-[20px] mt-2 font-semibold">hello@epfdesk.com</span>
         </div>
       </div>
       <div className="s__cta__shape"></div>
