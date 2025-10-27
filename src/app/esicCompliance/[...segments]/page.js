@@ -14,7 +14,7 @@ export default async function EPFPage({ params }) {
     return (
       <>
         <FadeInWhenVisible>
-          <HeroSection slide={heroSlides[4]} />
+          <HeroSection slide={heroSlides[4]} />l
         </FadeInWhenVisible>
 
         <FadeInWhenVisible>
