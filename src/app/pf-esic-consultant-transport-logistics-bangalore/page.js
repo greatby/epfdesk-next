@@ -68,7 +68,7 @@ const Transport = () => {
         ],
         contactPoint: {
           "@type": "ContactPoint",
-          telephone: "+91-9876543210",
+          telephone: "+91-9945933333",
           contactType: "customer service",
           areaServed: "IN",
           availableLanguage: "English",
