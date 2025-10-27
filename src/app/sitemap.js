@@ -83,7 +83,7 @@ export default function sitemap() {
       url: `${base}/pf-esic-consultant-transport-logistics-bangalore`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.8,
     },
      {
       url: `${base}/epf/bangalore/pf-consultants-in-bangalore`,
