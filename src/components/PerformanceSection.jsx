@@ -16,7 +16,7 @@ export const PerformanceSection = ({data}) => {
       </div>
 
       {/* Heading */}
-      <h2 className="text-4xl md:text-[3.2rem] font-bold text-[#001f1f] max-w-4xl tracking-tight">
+      <h2 className="text-4xl md:text-[3.2rem] font-bold text-[#001f1f] max-w-5xl tracking-tight">
        {data?.title}
       </h2>
 
