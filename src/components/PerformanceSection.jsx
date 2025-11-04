@@ -1,8 +1,6 @@
 "use client";
-import { TiArrowRepeat } from "react-icons/ti";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { FaPhone } from "react-icons/fa6";
-import { EnvelopeIcon } from "@heroicons/react/24/outline";
+import { TiArrowRepeat } from "react-icons/ti";
 export const PerformanceSection = ({ data }) => {
   return (
     <>
@@ -74,94 +72,54 @@ export const PerformanceSection = ({ data }) => {
           }}
         >
           Get a Free PF Audit
-        </button>
-
-        <button
-          onClick={() => (window.location.href = "tel:+919980511980")}
-          className="bg-[#c4f5db] cursor-pointer text-[16px] text-[#066] font-[500] px-6 py-3 rounded-[13px] transition"
-          style={{
-            backgroundImage: "linear-gradient(180deg, #eafce9, #cdface)",
-            boxShadow:
-              "0 4px 4px #001f1f0f,0 2px 2px #001f1f0f,0 0 1px #001f1f52,inset 0 1px 1px #cdface14",
-          }}
-        >
-          Get Started in 24 hours
-        </button>
-
-        <button
-          onClick={() => window.open("https://wa.me/919980511980", "_blank")}
-          className="bg-[#c4f5db] cursor-pointer text-[16px] text-[#066] font-[500] px-6 py-3 rounded-[13px] transition"
-          style={{
-            backgroundImage: "linear-gradient(180deg, #eafce9, #cdface)",
-            boxShadow:
-              "0 4px 4px #001f1f0f,0 2px 2px #001f1f0f,0 0 1px #001f1f52,inset 0 1px 1px #cdface14",
-          }}
-        >
-          Whatsapp Us
         </button> */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center w-full mt-6">
-            {/* WhatsApp Button */}
-            <button
-              onClick={() => {
-                const phone = "919945933333";
-                const text = encodeURIComponent(
-                  "Hello EPFDesk,\n\n" +
-                    "I’d like to know more about your compliance services.\n\n" +
-                    "Company Name:\n" +
-                    "No. of Employees:\n" +
-                    "My Role:\n" +
-                    "Areas of Interest:"
-                );
-                window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
-              }}
-              className="group relative flex h-[50px] w-full sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] px-4 text-black shadow-lg transition-all duration-300"
-            >
-              <IoLogoWhatsapp className="size-5 sm:size-6 transition-transform sm:group-hover:scale-0" />
-              <span className="sm:inline transition-opacity sm:group-hover:opacity-0">
-                WhatsApp
-              </span>
-              <span className="absolute hidden sm:inline opacity-0 transition-opacity sm:group-hover:opacity-100">
-                +919945933333
-              </span>
-            </button>
-
-            {/* Contact Us Button */}
-            <button
-              onClick={() => (window.location.href = "tel:+919945933333")}
-              className="group relative flex h-[50px] w-full sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] px-4 text-black shadow-lg transition-all duration-300"
-            >
-              <FaPhone className="size-5 sm:size-6 transition-transform sm:group-hover:scale-0" />
-              <span className="sm:inline transition-opacity sm:group-hover:opacity-0">
-                Call Us
-              </span>
-              <span className="absolute hidden sm:inline opacity-0 transition-opacity sm:group-hover:opacity-100">
-                +919945933333
-              </span>
-            </button>
-
-            {/* Email Us Button */}
-            <a
-              href={`mailto:hello@epfdesk.com?subject=${encodeURIComponent(
-                "Inquiry about Compliance Services"
-              )}&body=${encodeURIComponent(
+          <button
+            onClick={() => {
+              const phone = "919945933333";
+              const text = encodeURIComponent(
                 "Hello EPFDesk,\n\n" +
                   "I’d like to know more about your compliance services.\n\n" +
                   "Company Name:\n" +
                   "No. of Employees:\n" +
                   "My Role:\n" +
-                  "Areas of interest:"
-              )}`}
-              className="group relative flex h-[50px] w-full sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] px-4 text-black shadow-lg transition-all duration-300"
-            >
-              <EnvelopeIcon className="size-5 sm:size-6 transition-transform sm:group-hover:scale-0" />
-              <span className="sm:inline transition-opacity sm:group-hover:opacity-0">
-                Email Us
-              </span>
-              <span className="absolute hidden sm:inline opacity-0 transition-opacity sm:group-hover:opacity-100">
-                hello@epfdesk.com
-              </span>
-            </a>
-          </div>
+                  "Areas of Interest:"
+              );
+              window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
+            }}
+            className="group relative flex h-[50px] w-full sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] px-4 text-black shadow-lg transition-all duration-300"
+          >
+            <IoLogoWhatsapp className="size-5 sm:size-6 transition-transform sm:group-hover:scale-0" />
+            <span className="sm:inline transition-opacity sm:group-hover:opacity-0">
+              WhatsApp
+            </span>
+            <span className="absolute hidden sm:inline opacity-0 transition-opacity sm:group-hover:opacity-100">
+              +919945933333
+            </span>
+          </button>
+
+          <button
+            onClick={() => (window.location.href = "tel:+919980511980")}
+            className="bg-[#c4f5db] cursor-pointer text-[16px] text-[#066] font-[500] px-6 py-3 rounded-[13px] transition"
+            style={{
+              backgroundImage: "linear-gradient(180deg, #eafce9, #cdface)",
+              boxShadow:
+                "0 4px 4px #001f1f0f,0 2px 2px #001f1f0f,0 0 1px #001f1f52,inset 0 1px 1px #cdface14",
+            }}
+          >
+            Get Started in 24 hours
+          </button>
+
+          <button
+            onClick={() => window.open("https://wa.me/919980511980", "_blank")}
+            className="bg-[#c4f5db] cursor-pointer text-[16px] text-[#066] font-[500] px-6 py-3 rounded-[13px] transition"
+            style={{
+              backgroundImage: "linear-gradient(180deg, #eafce9, #cdface)",
+              boxShadow:
+                "0 4px 4px #001f1f0f,0 2px 2px #001f1f0f,0 0 1px #001f1f52,inset 0 1px 1px #cdface14",
+            }}
+          >
+            Whatsapp Us
+          </button>
         </div>
 
         {/* Card */}
