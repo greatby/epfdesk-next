@@ -156,6 +156,9 @@ import { usePathname } from "next/navigation";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { AnimatePresence, motion } from "framer-motion";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaPhone } from "react-icons/fa6";
+import { EnvelopeIcon } from "@heroicons/react/24/outline";
 
 const links = [
   { href: "/epfdesk", label: "EPFdesk" },
@@ -188,7 +191,7 @@ export default function Navbar() {
   const isDynamicPFEsic =
     pathname === "/pf-esic-consultant-bangalore" ||
     pathname.startsWith("/pf-esic-consultant-bangalore/");
-      const isDynamicPFEsicReg =
+  const isDynamicPFEsicReg =
     pathname === "/pf-esic-registration-bangalore" ||
     pathname.startsWith("/pf-esic-registration-bangalore/");
 
@@ -209,19 +212,22 @@ export default function Navbar() {
       { href: "/epfManagement", label: "EPFO" },
       { href: "/esic", label: "ESIC" },
     ];
-  }else if (isDynamicPFEsicReg) {
+  } else if (isDynamicPFEsicReg) {
     desktopLinks = [
       { href: "/epfManagement", label: "EPFO" },
       { href: "/esic", label: "ESIC" },
     ];
-  }
-   else {
+  } else {
     desktopLinks = links;
   }
 
   // show CTAs only on dynamic routes
   const showCTAs =
-    isDynamicEPF || isDynamicESIC || isDynamicUnigst || isDynamicPFEsic || isDynamicPFEsicReg;
+    isDynamicEPF ||
+    isDynamicESIC ||
+    isDynamicUnigst ||
+    isDynamicPFEsic ||
+    isDynamicPFEsicReg;
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
@@ -257,7 +263,7 @@ export default function Navbar() {
             {/* Conditional CTA Buttons */}
             {showCTAs && (
               <div className="flex items-center gap-3 ml-4">
-                <button
+                {/* <button
                   onClick={() =>
                     window.open("https://wa.me/919945933333", "_blank")
                   }
@@ -294,7 +300,63 @@ export default function Navbar() {
                   }}
                 >
                   Email Us
+                </button> */}
+                <button
+                  onClick={() => {
+                    const phone = "919945933333";
+                    const text = encodeURIComponent(
+                      "Hello EPFDesk,\n\n" +
+                        "I’d like to know more about your compliance services.\n\n" +
+                        "Company Name:\n" +
+                        "No. of Employees:\n" +
+                        "My Role:\n" +
+                        "Areas of Interest:"
+                    );
+                    window.open(
+                      `https://wa.me/${phone}?text=${text}`,
+                      "_blank"
+                    );
+                  }}
+                  className="group relative flex h-[45px] w-[50px] sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] px-0 sm:px-4 text-black shadow-lg transition"
+                >
+                  <IoLogoWhatsapp className="size-5 sm:size-6 transition-transform sm:group-hover:scale-0" />
+                  <span className="hidden sm:inline transition-opacity sm:group-hover:opacity-0">
+                    WhatsApp
+                  </span>
+                  <span className="absolute hidden sm:inline opacity-0 transition-opacity sm:group-hover:opacity-100">
+                    +919945933333
+                  </span>
                 </button>
+
+                {/* Contact Us Button */}
+                <button
+                  onClick={() => (window.location.href = "tel:+919945933333")}
+                  className="group relative flex h-[45px] w-[50px] sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] px-0 sm:px-4 text-black shadow-lg transition"
+                >
+                  <FaPhone className="size-5 sm:size-6 transition-transform sm:group-hover:scale-0" />
+                  <span className="hidden sm:inline transition-opacity sm:group-hover:opacity-0">
+                    Contact Us
+                  </span>
+                  <span className="absolute hidden sm:inline opacity-0 transition-opacity sm:group-hover:opacity-100">
+                    +919945933333
+                  </span>
+                </button>
+                <a
+                  href={`mailto:hello@epfdesk.com?subject=${encodeURIComponent(
+                    "Inquiry about Compliance Services"
+                  )}&body=${encodeURIComponent(
+                    "Hello EPFDesk,\n\n" +
+                      "I’d like to know more about your compliance services.\n\n" +
+                      "Company Name:\n" +
+                      "No. of Employees:\n" +
+                      "My Role:\n" +
+                      "Areas of interest:"
+                  )}`}
+                  className="flex h-[45px] w-[50px] sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-0 md:p-4 lg:p-4 text-black shadow-lg transition hover:bg-[rgb(209,244,112)]"
+                >
+                  <EnvelopeIcon className="size-5" />
+                  <span className="hidden sm:inline">Email Us</span>
+                </a>
               </div>
             )}
           </div>
@@ -358,51 +420,119 @@ export default function Navbar() {
 
                   {/* CTA buttons in mobile view */}
                   {showCTAs && (
-                    <div className="flex flex-col gap-3 mt-6">
+                    // <div className="flex flex-col gap-3 mt-6">
+                    //   <button
+                    //     onClick={() =>
+                    //       (window.location.href = "mailto:hello@epfdesk.com")
+                    //     }
+                    //     className="bg-[#003d3d] text-[1rem] font-normal text-[#cdface] px-6 py-3 shadow-sm transition rounded-[13px]"
+                    //     style={{
+                    //       backgroundImage:
+                    //         "linear-gradient(180deg, #066, #003d3d)",
+                    //       boxShadow:
+                    //         "inset 0 10px 16px -10px #ffffff0f, 0 8px 8px #001f1f0f, 0 4px 4px #001f1f0f, 0 2px 2px #001f1f0f, 0 0 1px #001f1f52, inset 0 -2px 1px #001f1f3d, inset 0 1px 1px #cdface14",
+                    //     }}
+                    //   >
+                    //     Email Us
+                    //   </button>
+
+                    //   <button
+                    //     onClick={() =>
+                    //       (window.location.href = "tel:+919945933333")
+                    //     }
+                    //     className="bg-[#003d3d] cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 py-3 shadow-sm transition rounded-[13px]"
+                    //     style={{
+                    //       backgroundImage:
+                    //         "linear-gradient(180deg, #066, #003d3d)",
+                    //       boxShadow:
+                    //         "inset 0 10px 16px -10px #ffffff0f, 0 8px 8px #001f1f0f, 0 4px 4px #001f1f0f, 0 2px 2px #001f1f0f, 0 0 1px #001f1f52, inset 0 -2px 1px #001f1f3d, inset 0 1px 1px #cdface14",
+                    //     }}
+                    //   >
+                    //     Call Us
+                    //   </button>
+
+                    //   <button
+                    //     onClick={() =>
+                    //       window.open("https://wa.me/919945933333", "_blank")
+                    //     }
+                    //     className="bg-[#003d3d] cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 py-3 shadow-sm transition rounded-[13px]"
+                    //     style={{
+                    //       backgroundImage:
+                    //         "linear-gradient(180deg, #066, #003d3d)",
+                    //       boxShadow:
+                    //         "inset 0 10px 16px -10px #ffffff0f, 0 8px 8px #001f1f0f, 0 4px 4px #001f1f0f, 0 2px 2px #001f1f0f, 0 0 1px #001f1f52, inset 0 -2px 1px #001f1f3d, inset 0 1px 1px #cdface14",
+                    //     }}
+                    //   >
+                    //     WhatsApp Us
+                    //   </button>
+                    // </div>
+                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center w-full mt-6">
+                      {/* WhatsApp Button */}
                       <button
-                        onClick={() =>
-                          (window.location.href = "mailto:hello@epfdesk.com")
-                        }
-                        className="bg-[#003d3d] text-[1rem] font-normal text-[#cdface] px-6 py-3 shadow-sm transition rounded-[13px]"
-                        style={{
-                          backgroundImage:
-                            "linear-gradient(180deg, #066, #003d3d)",
-                          boxShadow:
-                            "inset 0 10px 16px -10px #ffffff0f, 0 8px 8px #001f1f0f, 0 4px 4px #001f1f0f, 0 2px 2px #001f1f0f, 0 0 1px #001f1f52, inset 0 -2px 1px #001f1f3d, inset 0 1px 1px #cdface14",
+                        onClick={() => {
+                          const phone = "919945933333";
+                          const text = encodeURIComponent(
+                            "Hello EPFDesk,\n\n" +
+                              "I’d like to know more about your compliance services.\n\n" +
+                              "Company Name:\n" +
+                              "No. of Employees:\n" +
+                              "My Role:\n" +
+                              "Areas of Interest:"
+                          );
+                          window.open(
+                            `https://wa.me/${phone}?text=${text}`,
+                            "_blank"
+                          );
                         }}
+                        className="group relative flex h-[50px] w-full sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] px-4 text-black shadow-lg transition-all duration-300"
                       >
-                        Email Us
+                        <IoLogoWhatsapp className="size-5 sm:size-6 transition-transform sm:group-hover:scale-0" />
+                        <span className="sm:inline transition-opacity sm:group-hover:opacity-0">
+                          WhatsApp
+                        </span>
+                        <span className="absolute hidden sm:inline opacity-0 transition-opacity sm:group-hover:opacity-100">
+                          +919945933333
+                        </span>
                       </button>
 
+                      {/* Contact Us Button */}
                       <button
                         onClick={() =>
                           (window.location.href = "tel:+919945933333")
                         }
-                        className="bg-[#003d3d] cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 py-3 shadow-sm transition rounded-[13px]"
-                        style={{
-                          backgroundImage:
-                            "linear-gradient(180deg, #066, #003d3d)",
-                          boxShadow:
-                            "inset 0 10px 16px -10px #ffffff0f, 0 8px 8px #001f1f0f, 0 4px 4px #001f1f0f, 0 2px 2px #001f1f0f, 0 0 1px #001f1f52, inset 0 -2px 1px #001f1f3d, inset 0 1px 1px #cdface14",
-                        }}
+                        className="group relative flex h-[50px] w-full sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] px-4 text-black shadow-lg transition-all duration-300"
                       >
-                        Call Us
+                        <FaPhone className="size-5 sm:size-6 transition-transform sm:group-hover:scale-0" />
+                        <span className="sm:inline transition-opacity sm:group-hover:opacity-0">
+                          Call Us
+                        </span>
+                        <span className="absolute hidden sm:inline opacity-0 transition-opacity sm:group-hover:opacity-100">
+                          +919945933333
+                        </span>
                       </button>
 
-                      <button
-                        onClick={() =>
-                          window.open("https://wa.me/919945933333", "_blank")
-                        }
-                        className="bg-[#003d3d] cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 py-3 shadow-sm transition rounded-[13px]"
-                        style={{
-                          backgroundImage:
-                            "linear-gradient(180deg, #066, #003d3d)",
-                          boxShadow:
-                            "inset 0 10px 16px -10px #ffffff0f, 0 8px 8px #001f1f0f, 0 4px 4px #001f1f0f, 0 2px 2px #001f1f0f, 0 0 1px #001f1f52, inset 0 -2px 1px #001f1f3d, inset 0 1px 1px #cdface14",
-                        }}
+                      {/* Email Us Button */}
+                      <a
+                        href={`mailto:hello@epfdesk.com?subject=${encodeURIComponent(
+                          "Inquiry about Compliance Services"
+                        )}&body=${encodeURIComponent(
+                          "Hello EPFDesk,\n\n" +
+                            "I’d like to know more about your compliance services.\n\n" +
+                            "Company Name:\n" +
+                            "No. of Employees:\n" +
+                            "My Role:\n" +
+                            "Areas of interest:"
+                        )}`}
+                        className="group relative flex h-[50px] w-full sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] px-4 text-black shadow-lg transition-all duration-300"
                       >
-                        WhatsApp Us
-                      </button>
+                        <EnvelopeIcon className="size-5 sm:size-6 transition-transform sm:group-hover:scale-0" />
+                        <span className="sm:inline transition-opacity sm:group-hover:opacity-0">
+                          Email Us
+                        </span>
+                        <span className="absolute hidden sm:inline opacity-0 transition-opacity sm:group-hover:opacity-100">
+                          hello@epfdesk.com
+                        </span>
+                      </a>
                     </div>
                   )}
                 </div>
