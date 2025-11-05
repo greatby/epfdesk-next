@@ -6039,7 +6039,8 @@ export const cityData = {
   bangalore: {
     pf: {
       title:
-        "EPF Consultants Bangalore: We Log Into Your Portal and Do It For You",
+        "EPF Consultants Bangalore",
+        subTitle:"We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "bangalore@pfconsultants.in",
     },
