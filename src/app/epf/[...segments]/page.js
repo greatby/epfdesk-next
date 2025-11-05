@@ -27,6 +27,7 @@ import { PerformanceSection } from "@/components/PerformanceSection";
 import PerformanceCard from "@/components/PerformanceCard";
 import SliderCards from "@/components/SliderCards";
 import Script from "next/script";
+import ThreeStepSection from "@/components/ThreeStepSection";
 
 export const metadata = {
   title: `PF Consultant in Bangalore | EPF Registration, Returns & Inspections | Workforce`,
@@ -240,7 +241,8 @@ export default async function EPFPage({ params }) {
               <LargeCardSlider cardsData={largeCardsEpfoBangalore} />
             </FadeInWhenVisible>
             <FadeInWhenVisible>
-              <PastelCardSlider cardsData={pastelCardsEpfoBangalore} />
+              {/* <PastelCardSlider cardsData={pastelCardsEpfoBangalore} /> */}
+            <ThreeStepSection cardsData={pastelCardsEpfoBangalore}/>
             </FadeInWhenVisible>
             {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
             Workforce: End-to-End EPF Management for Modern Businesses

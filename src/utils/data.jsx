@@ -6038,25 +6038,25 @@ export const faqsTransport = [
 export const cityData = {
   bangalore: {
     pf: {
-      title:
-        "EPF Consultants Bangalore",
-        subTitle:"We log into your portal and do it for you",
+      title: "EPF Consultants Bangalore",
+      subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "bangalore@pfconsultants.in",
     },
-      pfRegistration: {
+    pfRegistration: {
       title: "EPF Registration Bangalore: We Get You Registered in 7 Days",
       description:
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "bangalore@pfconsultants.in",
     },
     esic: {
-      title: "ESIC Consultants Bangalore: We Handle Everything, You Handle Nothing",
+      title:
+        "ESIC Consultants Bangalore: We Handle Everything, You Handle Nothing",
       description:
         "100% On-Time Filing. Zero Penalties. Zero Stress Since 2023.",
       contact: "bangalore@esicconsultants.in",
     },
-      esicRegistration: {
+    esicRegistration: {
       title: "ESIC Registration Bangalore: We Get You Registered in 5 Days",
       description:
         "100% Approval Rate. Zero Rejections. Start Covering Employees Immediately.",
@@ -6540,7 +6540,6 @@ export const epfManagementFaqBangalore = [
   },
 ];
 
-
 export const largeCardsEpfoBangalore = {
   subTitle: "What Our Bangalore Clients Say",
   // subText:
@@ -6586,32 +6585,26 @@ export const pastelCardsEpfoBangalore = {
     {
       title: "Step 1",
       subtitle: `Talk to us for 10 minutes — we’ll audit your current setup`,
-      icon: "🎨",
-      bubble: "Create!",
-      bg: "from-[#a8e6cf] to-[#dcedc1]",
+      number: 1,
     },
     {
       title: "Step 2",
       subtitle: `We onboard in 48 hours — portal access, documentation, process setup`,
-      icon: "🌱",
-      bubble: "Grow!",
-      bg: "from-[#ffd3a5] to-[#fd9853]",
+      number: 2,
     },
     {
       title: "Step 3",
       subtitle: `Relax — we handle everything from Day 1`,
-      icon: "🤝",
-      bubble: "Connect!",
-      bg: "from-[#a8edea] to-[#fed6e3]",
+      number: 3,
     },
-//     {
-//       title: "Employee UAN & KYC Management",
-//       subtitle: `
-// End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
-//       icon: "✨",
-//       bubble: "Dream!",
-//       bg: "from-[#d299c2] to-[#fef9d7]",
-//     },
+    //     {
+    //       title: "Employee UAN & KYC Management",
+    //       subtitle: `
+    // End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
+    //       icon: "✨",
+    //       bubble: "Dream!",
+    //       bg: "from-[#d299c2] to-[#fef9d7]",
+    //     },
   ],
 };
 
@@ -6714,47 +6707,48 @@ export const epfBangaloreCardData = {
 };
 
 export const testimonialsEpfBangalore = {
-title:"What We Actually Do (Not Just Consult)",
-subTitle:"We don’t give you a checklist. We log into your EPFO portal and do everything",
-  cards:[
-  {
-    id: 1,
-    name: "Onboarding (Day 1)",
-    text: `Day-1 EPF onboarding made effortless — we generate and link UANs, complete all KYC and bank verifications via the UMANG app, and ensure every new employee is EPF-compliant within 24 hours of joining.`,
-    bg: "bg-[#ffeaea]",
-  },
-  {
-    id: 2,
-    name: "Monthly Filing (Before 15th Every Month)",
-    text: `Timely and accurate monthly EPF filing — we generate precise ECRs, verify challans, and complete submissions before the 15th each month, ensuring zero penalties and full compliance with instant filing confirmations.`,
-    bg: "bg-[#f3ffe7]",
-  },
-  {
-    id: 3,
-    name: "Exit Management (Within 48 Hours)",
-    text: `Swift and compliant exit management — we mark exits within 48 hours, handle PF transfers and withdrawals, and ensure smooth final settlements for a hassle-free employee offboarding experience.`,
-    bg: "bg-[#eaeaff]",
-  },
-  {
-    id: 4,
-    name: "Crisis Response (EPFO Inspections)",
-    text: `Expert EPFO crisis management — we respond to inspection notices within 24 hours, prepare complete audit documentation, represent you in hearings, and secure favorable resolutions with zero penalties.`,
-    bg: "bg-[#ffeaea]",
-  },
-  {
-    id: 5,
-    name: "Employee Support (Grievance Shield)",
-    text: `End-to-end employee PF support — we manage all grievances through the EPFiGMS portal, resolve account issues and delays, and provide direct employee assistance so your HR team stays complaint-free.`,
-    bg: "bg-[#f3ffe7]",
-  },
-  {
-    id: 6,
-    name: "What This Actually Saves You",
-    text: `What This Actually Saves You — eliminate 40+ HR hours a month, avoid ₹50,000+ in annual penalties, and remove every PF-related headache. With EPFdesk, you gain guaranteed compliance, zero employee complaints, and complete peace of mind — all at a fraction of your current cost.`,
-    bg: "bg-[#eaeaff]",
-  },
-]
-}
+  title: "What We Actually Do (Not Just Consult)",
+  subTitle:
+    "We don’t give you a checklist. We log into your EPFO portal and do everything",
+  cards: [
+    {
+      id: 1,
+      name: "Onboarding (Day 1)",
+      text: `Day-1 EPF onboarding made effortless — we generate and link UANs, complete all KYC and bank verifications via the UMANG app, and ensure every new employee is EPF-compliant within 24 hours of joining.`,
+      bg: "bg-[#ffeaea]",
+    },
+    {
+      id: 2,
+      name: "Monthly Filing (Before 15th Every Month)",
+      text: `Timely and accurate monthly EPF filing — we generate precise ECRs, verify challans, and complete submissions before the 15th each month, ensuring zero penalties and full compliance with instant filing confirmations.`,
+      bg: "bg-[#f3ffe7]",
+    },
+    {
+      id: 3,
+      name: "Exit Management (Within 48 Hours)",
+      text: `Swift and compliant exit management — we mark exits within 48 hours, handle PF transfers and withdrawals, and ensure smooth final settlements for a hassle-free employee offboarding experience.`,
+      bg: "bg-[#eaeaff]",
+    },
+    {
+      id: 4,
+      name: "Crisis Response (EPFO Inspections)",
+      text: `Expert EPFO crisis management — we respond to inspection notices within 24 hours, prepare complete audit documentation, represent you in hearings, and secure favorable resolutions with zero penalties.`,
+      bg: "bg-[#ffeaea]",
+    },
+    {
+      id: 5,
+      name: "Employee Support (Grievance Shield)",
+      text: `End-to-end employee PF support — we manage all grievances through the EPFiGMS portal, resolve account issues and delays, and provide direct employee assistance so your HR team stays complaint-free.`,
+      bg: "bg-[#f3ffe7]",
+    },
+    {
+      id: 6,
+      name: "What This Actually Saves You",
+      text: `What This Actually Saves You — eliminate 40+ HR hours a month, avoid ₹50,000+ in annual penalties, and remove every PF-related headache. With EPFdesk, you gain guaranteed compliance, zero employee complaints, and complete peace of mind — all at a fraction of your current cost.`,
+      bg: "bg-[#eaeaff]",
+    },
+  ],
+};
 
 export const epfBangaloreRegistrationCardData = {
   title: "EPF Registration",
@@ -6764,47 +6758,47 @@ export const epfBangaloreRegistrationCardData = {
 };
 
 export const testimonialsEpfBangaloreRegistration = {
-title:"Our 7-Day EPF Registration Process",
-// subTitle:"We don’t give you a checklist. We log into your EPFO portal and do everything",
-  cards:[
-  {
-    id: 1,
-    name: "Day 1-2: Documentation & DSC",
-    text: `We kick off by collecting and verifying all essential establishment details and documents. Our team secures your Digital Signature Certificate (DSC) and prepares the EPF registration form with complete accuracy — ensuring a smooth start to your registration process`,
-    bg: "bg-[#ffeaea]",
-  },
-  {
-    id: 2,
-    name: "Day 3-4: EPFO Submission",
-    text: `We create your establishment profile on the EPFO portal, upload verified documents, and file Form 5A. Our team tracks the application in real time to ensure smooth submission and zero delays.`,
-    bg: "bg-[#f3ffe7]",
-  },
-  {
-    id: 3,
-    name: "Day 5-6: EPFO Processing",
-    text: `We closely monitor your EPFO application, respond to any department queries, and coordinate with officials. If an inspection is required, we handle the entire process on your behalf for seamless approval.`,
-    bg: "bg-[#eaeaff]",
-  },
-  {
-    id: 4,
-    name: "Day 7: Approval & Setup",
-    text: `Your establishment gets approved, LIN is activated, and your EPFO access is set up on UMANG. We provide full login credentials, a quick team briefing, and ensure you're ready to file your first ECR — all within 7 days.`,
-    bg: "bg-[#ffeaea]",
-  },
-  // {
-  //   id: 5,
-  //   name: "Employee Support (Grievance Shield)",
-  //   text: `End-to-end employee PF support — we manage all grievances through the EPFiGMS portal, resolve account issues and delays, and provide direct employee assistance so your HR team stays complaint-free.`,
-  //   bg: "bg-[#f3ffe7]",
-  // },
-  // {
-  //   id: 6,
-  //   name: "What This Actually Saves You",
-  //   text: `What This Actually Saves You — eliminate 40+ HR hours a month, avoid ₹50,000+ in annual penalties, and remove every PF-related headache. With EPFdesk, you gain guaranteed compliance, zero employee complaints, and complete peace of mind — all at a fraction of your current cost.`,
-  //   bg: "bg-[#eaeaff]",
-  // },
-]
-}
+  title: "Our 7-Day EPF Registration Process",
+  // subTitle:"We don’t give you a checklist. We log into your EPFO portal and do everything",
+  cards: [
+    {
+      id: 1,
+      name: "Day 1-2: Documentation & DSC",
+      text: `We kick off by collecting and verifying all essential establishment details and documents. Our team secures your Digital Signature Certificate (DSC) and prepares the EPF registration form with complete accuracy — ensuring a smooth start to your registration process`,
+      bg: "bg-[#ffeaea]",
+    },
+    {
+      id: 2,
+      name: "Day 3-4: EPFO Submission",
+      text: `We create your establishment profile on the EPFO portal, upload verified documents, and file Form 5A. Our team tracks the application in real time to ensure smooth submission and zero delays.`,
+      bg: "bg-[#f3ffe7]",
+    },
+    {
+      id: 3,
+      name: "Day 5-6: EPFO Processing",
+      text: `We closely monitor your EPFO application, respond to any department queries, and coordinate with officials. If an inspection is required, we handle the entire process on your behalf for seamless approval.`,
+      bg: "bg-[#eaeaff]",
+    },
+    {
+      id: 4,
+      name: "Day 7: Approval & Setup",
+      text: `Your establishment gets approved, LIN is activated, and your EPFO access is set up on UMANG. We provide full login credentials, a quick team briefing, and ensure you're ready to file your first ECR — all within 7 days.`,
+      bg: "bg-[#ffeaea]",
+    },
+    // {
+    //   id: 5,
+    //   name: "Employee Support (Grievance Shield)",
+    //   text: `End-to-end employee PF support — we manage all grievances through the EPFiGMS portal, resolve account issues and delays, and provide direct employee assistance so your HR team stays complaint-free.`,
+    //   bg: "bg-[#f3ffe7]",
+    // },
+    // {
+    //   id: 6,
+    //   name: "What This Actually Saves You",
+    //   text: `What This Actually Saves You — eliminate 40+ HR hours a month, avoid ₹50,000+ in annual penalties, and remove every PF-related headache. With EPFdesk, you gain guaranteed compliance, zero employee complaints, and complete peace of mind — all at a fraction of your current cost.`,
+    //   bg: "bg-[#eaeaff]",
+    // },
+  ],
+};
 
 export const largeCardsEpfoBangaloreRegistration = {
   subTitle: "What Bangalore Businesses Say",
@@ -6869,14 +6863,14 @@ export const pastelCardsEpfoBangaloreRegistration = {
       bubble: "Connect!",
       bg: "from-[#a8edea] to-[#fed6e3]",
     },
-//     {
-//       title: "Employee UAN & KYC Management",
-//       subtitle: `
-// End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
-//       icon: "✨",
-//       bubble: "Dream!",
-//       bg: "from-[#d299c2] to-[#fef9d7]",
-//     },
+    //     {
+    //       title: "Employee UAN & KYC Management",
+    //       subtitle: `
+    // End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
+    //       icon: "✨",
+    //       bubble: "Dream!",
+    //       bg: "from-[#d299c2] to-[#fef9d7]",
+    //     },
   ],
 };
 
@@ -6915,7 +6909,6 @@ export const epfManagementFaqBangaloreRegistration = [
   },
 ];
 
-
 export const esicBangaloreCardData = {
   title: "ESIC Consultants",
   subTitle: "End to End ESIC compliance Management in Bangalore",
@@ -6924,47 +6917,47 @@ export const esicBangaloreCardData = {
 };
 
 export const testimonialsEsicBangalore = {
-title:"What We Actually Do (Not Just Consult)",
-// subTitle:"We don’t give you a checklist. We log into your EPFO portal and do everything",
-  cards:[
-  {
-    id: 1,
-    name: "Employee Registration (Day 1)",
-    text: `We generate ESIC IP numbers within 24 hours, complete employee KYC and linking, ensuring every new hire is covered from Day 1—no delays, no compliance gaps.`,
-    bg: "bg-[#ffeaea]",
-  },
-  {
-    id: 2,
-    name: "Monthly Filing (Before 15th Every Month)",
-    text: `We handle complete ESIC monthly filing before the 15th—accurate calculations, challan generation, payment, and confirmation—ensuring zero delays or penalties.`,
-    bg: "bg-[#f3ffe7]",
-  },
-  {
-    id: 3,
-    name: "Claims Management (We Handle, Not You)",
-    text: `We manage the entire ESIC claims process—from document verification to reimbursement—so your HR never deals with employee claims or ESIC follow-ups.`,
-    bg: "bg-[#eaeaff]",
-  },
-  {
-    id: 4,
-    name: "Inspection Response (24-Hour Turnaround)",
-    text: `We handle ESIC inspections end-to-end—responding within 24 hours, preparing documents, representing you, and closing cases with zero penalties.`,
-    bg: "bg-[#ffeaea]",
-  },
-  {
-    id: 5,
-    name: "Exit Management",
-    text: `We manage employee exits instantly—updating ESIC records, verifying final contributions, and ensuring every exit is fully compliant and penalty-free.`,
-    bg: "bg-[#f3ffe7]",
-  },
-  {
-    id: 6,
-    name: "What This Actually Saves You",
-    text: `By switching to EPFdesk, you eliminate penalties, delays, and HR effort—saving Lakhs annually while your HR team stays completely free from ESIC hassles.`,
-    bg: "bg-[#eaeaff]",
-  },
-]
-}
+  title: "What We Actually Do (Not Just Consult)",
+  // subTitle:"We don’t give you a checklist. We log into your EPFO portal and do everything",
+  cards: [
+    {
+      id: 1,
+      name: "Employee Registration (Day 1)",
+      text: `We generate ESIC IP numbers within 24 hours, complete employee KYC and linking, ensuring every new hire is covered from Day 1—no delays, no compliance gaps.`,
+      bg: "bg-[#ffeaea]",
+    },
+    {
+      id: 2,
+      name: "Monthly Filing (Before 15th Every Month)",
+      text: `We handle complete ESIC monthly filing before the 15th—accurate calculations, challan generation, payment, and confirmation—ensuring zero delays or penalties.`,
+      bg: "bg-[#f3ffe7]",
+    },
+    {
+      id: 3,
+      name: "Claims Management (We Handle, Not You)",
+      text: `We manage the entire ESIC claims process—from document verification to reimbursement—so your HR never deals with employee claims or ESIC follow-ups.`,
+      bg: "bg-[#eaeaff]",
+    },
+    {
+      id: 4,
+      name: "Inspection Response (24-Hour Turnaround)",
+      text: `We handle ESIC inspections end-to-end—responding within 24 hours, preparing documents, representing you, and closing cases with zero penalties.`,
+      bg: "bg-[#ffeaea]",
+    },
+    {
+      id: 5,
+      name: "Exit Management",
+      text: `We manage employee exits instantly—updating ESIC records, verifying final contributions, and ensuring every exit is fully compliant and penalty-free.`,
+      bg: "bg-[#f3ffe7]",
+    },
+    {
+      id: 6,
+      name: "What This Actually Saves You",
+      text: `By switching to EPFdesk, you eliminate penalties, delays, and HR effort—saving Lakhs annually while your HR team stays completely free from ESIC hassles.`,
+      bg: "bg-[#eaeaff]",
+    },
+  ],
+};
 
 export const largeCardsEsicBangalore = {
   subTitle: "What Our Bangalore Clients Say",
@@ -7029,14 +7022,14 @@ export const pastelCardsEsicBangalore = {
       bubble: "Connect!",
       bg: "from-[#a8edea] to-[#fed6e3]",
     },
-//     {
-//       title: "Employee UAN & KYC Management",
-//       subtitle: `
-// End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
-//       icon: "✨",
-//       bubble: "Dream!",
-//       bg: "from-[#d299c2] to-[#fef9d7]",
-//     },
+    //     {
+    //       title: "Employee UAN & KYC Management",
+    //       subtitle: `
+    // End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
+    //       icon: "✨",
+    //       bubble: "Dream!",
+    //       bg: "from-[#d299c2] to-[#fef9d7]",
+    //     },
   ],
 };
 
@@ -7082,49 +7075,48 @@ export const esicBangaloreRegistrationCardData = {
     "ESIC registration in Bangalore is simpler than EPF—but only if you know exactly what ESIC wants. Most businesses make three costly mistakes: wrong branch selection, incorrect wage declaration, and incomplete factory inspection documentation. EPFdesk has registered 50+ Bangalore establishments with 100% approval rate—no rejections, no delays, no re-submissions. We handle everything: employer registration (Code 17), factory/office inspection coordination, employee IP generation, portal setup, and first monthly return. While DIY attempts take 15-20 days (and often fail), we get you registered in 5 days. Whether you’re a Peenya manufacturer just crossing 10 employees, a Whitefield startup hiring your first batch, or an Electronic City logistics company expanding operations, we ensure ESIC coverage from Day 1. Don’t let registration delays leave your employees uncovered. We handle the paperwork in 5 days flat.",
 };
 
-
 export const testimonialsEsicRegistrationBangalore = {
-title:"Our 5-Day ESIC Registration Process",
-// subTitle:"We don’t give you a checklist. We log into your EPFO portal and do everything",
-  cards:[
-  {
-    id: 1,
-    name: "Day 1: Documentation Collection",
-    text: `We collect all necessary documents, verify every detail for accuracy, and determine your correct ESIC branch or sub-regional office. We also prepare and validate the employer registration form (Code 17) to ensure a smooth registration process.`,
-    bg: "bg-[#ffeaea]",
-  },
-  {
-    id: 2,
-    name: "Day 2: ESIC Submission",
-    text: `We submit the completed Code 17 form to the designated ESIC branch, begin tracking the application status in real time, and proactively prepare for any inspection or additional documentation requests from ESIC authorities.`,
-    bg: "bg-[#f3ffe7]",
-  },
-  {
-    id: 3,
-    name: "Day 3: Inspection (if required)",
-    text: `We coordinate and manage the ESIC inspection process—arranging the visit, presenting all required documentation, addressing officer queries on the spot, and ensuring your establishment receives prompt inspection clearance.`,
-    bg: "bg-[#eaeaff]",
-  },
-  {
-    id: 4,
-    name: "Day 4: Registration Approval",
-    text: `We secure your 17-digit ESIC establishment code, set up your online employer portal access, and prepare the complete employee registration list—ensuring your organization is ready to onboard employees under ESIC immediately.`,
-    bg: "bg-[#ffeaea]",
-  },
-  {
-    id: 5,
-    name: "Employee Registration & Setup",
-    text: `We complete full employee registration by generating IP numbers, filing the first monthly return (if applicable), and setting up online challan payments. You receive full portal access and a team briefing—making your establishment fully ESIC-compliant within just 5 days.`,
-    bg: "bg-[#f3ffe7]",
-  },
-  // {
-  //   id: 6,
-  //   name: "What This Actually Saves You",
-  //   text: `By switching to EPFdesk, you eliminate penalties, delays, and HR effort—saving Lakhs annually while your HR team stays completely free from ESIC hassles.`,
-  //   bg: "bg-[#eaeaff]",
-  // },
-]
-}
+  title: "Our 5-Day ESIC Registration Process",
+  // subTitle:"We don’t give you a checklist. We log into your EPFO portal and do everything",
+  cards: [
+    {
+      id: 1,
+      name: "Day 1: Documentation Collection",
+      text: `We collect all necessary documents, verify every detail for accuracy, and determine your correct ESIC branch or sub-regional office. We also prepare and validate the employer registration form (Code 17) to ensure a smooth registration process.`,
+      bg: "bg-[#ffeaea]",
+    },
+    {
+      id: 2,
+      name: "Day 2: ESIC Submission",
+      text: `We submit the completed Code 17 form to the designated ESIC branch, begin tracking the application status in real time, and proactively prepare for any inspection or additional documentation requests from ESIC authorities.`,
+      bg: "bg-[#f3ffe7]",
+    },
+    {
+      id: 3,
+      name: "Day 3: Inspection (if required)",
+      text: `We coordinate and manage the ESIC inspection process—arranging the visit, presenting all required documentation, addressing officer queries on the spot, and ensuring your establishment receives prompt inspection clearance.`,
+      bg: "bg-[#eaeaff]",
+    },
+    {
+      id: 4,
+      name: "Day 4: Registration Approval",
+      text: `We secure your 17-digit ESIC establishment code, set up your online employer portal access, and prepare the complete employee registration list—ensuring your organization is ready to onboard employees under ESIC immediately.`,
+      bg: "bg-[#ffeaea]",
+    },
+    {
+      id: 5,
+      name: "Employee Registration & Setup",
+      text: `We complete full employee registration by generating IP numbers, filing the first monthly return (if applicable), and setting up online challan payments. You receive full portal access and a team briefing—making your establishment fully ESIC-compliant within just 5 days.`,
+      bg: "bg-[#f3ffe7]",
+    },
+    // {
+    //   id: 6,
+    //   name: "What This Actually Saves You",
+    //   text: `By switching to EPFdesk, you eliminate penalties, delays, and HR effort—saving Lakhs annually while your HR team stays completely free from ESIC hassles.`,
+    //   bg: "bg-[#eaeaff]",
+    // },
+  ],
+};
 
 export const largeCardsEsicRegistrationBangalore = {
   subTitle: "What Bangalore Businesses Say",
@@ -7189,14 +7181,14 @@ export const pastelCardsEsicRegistrationBangalore = {
       bubble: "Connect!",
       bg: "from-[#a8edea] to-[#fed6e3]",
     },
-//     {
-//       title: "Employee UAN & KYC Management",
-//       subtitle: `
-// End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
-//       icon: "✨",
-//       bubble: "Dream!",
-//       bg: "from-[#d299c2] to-[#fef9d7]",
-//     },
+    //     {
+    //       title: "Employee UAN & KYC Management",
+    //       subtitle: `
+    // End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
+    //       icon: "✨",
+    //       bubble: "Dream!",
+    //       bg: "from-[#d299c2] to-[#fef9d7]",
+    //     },
   ],
 };
 
@@ -7235,7 +7227,6 @@ export const esicRegistrationFaqBangalore = [
   },
 ];
 
-
 export const PFEsicBangaloreCardData = {
   title: "PF & ESIC Consultants",
   subTitle: "End to End PF & ESIC compliance Management in Bangalore",
@@ -7244,47 +7235,47 @@ export const PFEsicBangaloreCardData = {
 };
 
 export const testimonialsPFEsicBangalore = {
-title:"What We Do (Everything, Together)",
-// subTitle:"We don’t give you a checklist. We log into your EPFO portal and do everything",
-  cards:[
-  {
-    id: 1,
-    name: "Onboarding (EPF + ESIC Together)",
-    text: `We register new employees under both EPF and ESIC on the same day—UAN creation, IP generation, and portal linking—all completed seamlessly. Your workforce becomes 100% compliant from Day 1 with a unified, hassle-free onboarding process.`,
-    bg: "bg-[#ffeaea]",
-  },
-  {
-    id: 2,
-    name: "Monthly Filing (Both Before 15th)",
-    text: `We file both EPF and ESIC returns before the 15th each month—accurate ECRs, challans, and payments done together. You receive one consolidated confirmation, ensuring zero penalties and perfect synchronization across both compliances.`,
-    bg: "bg-[#f3ffe7]",
-  },
-  {
-    id: 3,
-    name: "Exit Management (Coordinated)",
-    text: `We coordinate EPF and ESIC exits simultaneously—marking employees in both portals, settling final contributions, and guiding on PF transfers or withdrawals. Result: clean exits with no compliance gaps or pending obligations.`,
-    bg: "bg-[#eaeaff]",
-  },
-  {
-    id: 4,
-    name: "Employee Support (One Team, All Queries)",
-    text: `We provide a single support line for all employee PF and ESIC issues—UAN, IP, claims, transfers, or balances—so your HR team never deals with compliance complaints again`,
-    bg: "bg-[#ffeaea]",
-  },
-  {
-    id: 5,
-    name: "Inspection Response (Coordinated Defense)",
-    text: `We handle both EPF and ESIC inspections together—responding within 24 hours, coordinating documentation, and ensuring consistent, penalty-free closure.`,
-    bg: "bg-[#f3ffe7]",
-  },
-  {
-    id: 6,
-    name: "What Integrated PF+ESIC Management Saves You",
-    text: `With EPFdesk’s integrated PF + ESIC management, you eliminate duplicate work, delays, and penalties — saving 50+ HR hours a month, ₹80,000+ in fines, and endless coordination headaches. One dashboard, zero stress.`,
-    bg: "bg-[#eaeaff]",
-  },
-]
-}
+  title: "What We Do (Everything, Together)",
+  // subTitle:"We don’t give you a checklist. We log into your EPFO portal and do everything",
+  cards: [
+    {
+      id: 1,
+      name: "Onboarding (EPF + ESIC Together)",
+      text: `We register new employees under both EPF and ESIC on the same day—UAN creation, IP generation, and portal linking—all completed seamlessly. Your workforce becomes 100% compliant from Day 1 with a unified, hassle-free onboarding process.`,
+      bg: "bg-[#ffeaea]",
+    },
+    {
+      id: 2,
+      name: "Monthly Filing (Both Before 15th)",
+      text: `We file both EPF and ESIC returns before the 15th each month—accurate ECRs, challans, and payments done together. You receive one consolidated confirmation, ensuring zero penalties and perfect synchronization across both compliances.`,
+      bg: "bg-[#f3ffe7]",
+    },
+    {
+      id: 3,
+      name: "Exit Management (Coordinated)",
+      text: `We coordinate EPF and ESIC exits simultaneously—marking employees in both portals, settling final contributions, and guiding on PF transfers or withdrawals. Result: clean exits with no compliance gaps or pending obligations.`,
+      bg: "bg-[#eaeaff]",
+    },
+    {
+      id: 4,
+      name: "Employee Support (One Team, All Queries)",
+      text: `We provide a single support line for all employee PF and ESIC issues—UAN, IP, claims, transfers, or balances—so your HR team never deals with compliance complaints again`,
+      bg: "bg-[#ffeaea]",
+    },
+    {
+      id: 5,
+      name: "Inspection Response (Coordinated Defense)",
+      text: `We handle both EPF and ESIC inspections together—responding within 24 hours, coordinating documentation, and ensuring consistent, penalty-free closure.`,
+      bg: "bg-[#f3ffe7]",
+    },
+    {
+      id: 6,
+      name: "What Integrated PF+ESIC Management Saves You",
+      text: `With EPFdesk’s integrated PF + ESIC management, you eliminate duplicate work, delays, and penalties — saving 50+ HR hours a month, ₹80,000+ in fines, and endless coordination headaches. One dashboard, zero stress.`,
+      bg: "bg-[#eaeaff]",
+    },
+  ],
+};
 
 export const largeCardsPFEsicBangalore = {
   subTitle: "What Bangalore Businesses Say",
@@ -7349,14 +7340,14 @@ export const pastelCardsPFEsicBangalore = {
       bubble: "Connect!",
       bg: "from-[#a8edea] to-[#fed6e3]",
     },
-//     {
-//       title: "Employee UAN & KYC Management",
-//       subtitle: `
-// End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
-//       icon: "✨",
-//       bubble: "Dream!",
-//       bg: "from-[#d299c2] to-[#fef9d7]",
-//     },
+    //     {
+    //       title: "Employee UAN & KYC Management",
+    //       subtitle: `
+    // End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
+    //       icon: "✨",
+    //       bubble: "Dream!",
+    //       bg: "from-[#d299c2] to-[#fef9d7]",
+    //     },
   ],
 };
 
@@ -7366,7 +7357,8 @@ export const pfEsicManagementFaqBangalore = [
     answer: `We actually handle both—we log into both portals (with your permissions) and do all the work. You get one unified dashboard showing status of both compliances.`,
   },
   {
-    question: "Is integrated service more expensive than hiring two consultants?",
+    question:
+      "Is integrated service more expensive than hiring two consultants?",
     answer: `No! It’s usually cheaper because we eliminate duplicate work. Plus, you save massive amounts of coordination time. Ask for a quote—you’ll be surprised.`,
   },
   {
@@ -7374,7 +7366,8 @@ export const pfEsicManagementFaqBangalore = [
     answer: `We offer standalone services too. But if you need both, integrated service makes way more sense. [Links to EPF-only and ESIC-only pages]`,
   },
   {
-    question: "Can you take over if I’m currently using two different consultants?",
+    question:
+      "Can you take over if I’m currently using two different consultants?",
     answer: `Absolutely. We specialize in consolidation. We’ll transition both smoothly without any compliance gaps. Usually done within one month.`,
   },
   {
@@ -7403,36 +7396,35 @@ export const PFEsicRegBangaloreCardData = {
 };
 
 export const testimonialsPFEsicRegBangalore = {
-title:"Our 7-Day Integrated Registration Process",
-// subTitle:"We don’t give you a checklist. We log into your EPFO portal and do everything",
-  cards:[
-  {
-    id: 1,
-    name: "Documentation & Preparation",
-    text: `Streamlined document collection for both EPF and ESIC—handled together in a single session. We prepare all required forms, verify details, and ensure accuracy before submission.`,
-    bg: "bg-[#ffeaea]",
-  },
-  {
-    id: 2,
-    name: "Parallel Submissions",
-    text: `EPF and ESIC registrations are submitted simultaneously—no waiting between the two. We create your EPF establishment, file required forms, and submit ESIC Code 17 the same day, ensuring both processes move forward in parallel for faster approval.`,
-    bg: "bg-[#f3ffe7]",
-  },
-  {
-    id: 3,
-    name: "Inspection & Processing",
-    text: `If an inspection is required, we coordinate a single, unified inspection for both EPF and ESIC. Our team presents all documentation together, addresses officer queries on the spot, and monitors both applications closely to ensure quick, hassle-free approvals`,
-    bg: "bg-[#eaeaff]",
-  },
-  {
-    id: 4,
-    name: "Approval & Complete Setup",
-    text: `By Day 7, both EPF and ESIC setups are fully approved and active. You receive establishment and ESIC codes, LIN activation, and employee access through UMANG and ESIC portals. With both systems ready, you can instantly start filings, generate UANs and IPs, and onboard new hires seamlessly.`,
-    bg: "bg-[#ffeaea]",
-  },
-  
-]
-}
+  title: "Our 7-Day Integrated Registration Process",
+  // subTitle:"We don’t give you a checklist. We log into your EPFO portal and do everything",
+  cards: [
+    {
+      id: 1,
+      name: "Documentation & Preparation",
+      text: `Streamlined document collection for both EPF and ESIC—handled together in a single session. We prepare all required forms, verify details, and ensure accuracy before submission.`,
+      bg: "bg-[#ffeaea]",
+    },
+    {
+      id: 2,
+      name: "Parallel Submissions",
+      text: `EPF and ESIC registrations are submitted simultaneously—no waiting between the two. We create your EPF establishment, file required forms, and submit ESIC Code 17 the same day, ensuring both processes move forward in parallel for faster approval.`,
+      bg: "bg-[#f3ffe7]",
+    },
+    {
+      id: 3,
+      name: "Inspection & Processing",
+      text: `If an inspection is required, we coordinate a single, unified inspection for both EPF and ESIC. Our team presents all documentation together, addresses officer queries on the spot, and monitors both applications closely to ensure quick, hassle-free approvals`,
+      bg: "bg-[#eaeaff]",
+    },
+    {
+      id: 4,
+      name: "Approval & Complete Setup",
+      text: `By Day 7, both EPF and ESIC setups are fully approved and active. You receive establishment and ESIC codes, LIN activation, and employee access through UMANG and ESIC portals. With both systems ready, you can instantly start filings, generate UANs and IPs, and onboard new hires seamlessly.`,
+      bg: "bg-[#ffeaea]",
+    },
+  ],
+};
 
 export const largeCardsPFEsicRegBangalore = {
   subTitle: "What Bangalore Businesses Say",
@@ -7497,14 +7489,14 @@ export const pastelCardsPFEsicRegBangalore = {
       bubble: "Connect!",
       bg: "from-[#a8edea] to-[#fed6e3]",
     },
-//     {
-//       title: "Employee UAN & KYC Management",
-//       subtitle: `
-// End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
-//       icon: "✨",
-//       bubble: "Dream!",
-//       bg: "from-[#d299c2] to-[#fef9d7]",
-//     },
+    //     {
+    //       title: "Employee UAN & KYC Management",
+    //       subtitle: `
+    // End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
+    //       icon: "✨",
+    //       bubble: "Dream!",
+    //       bg: "from-[#d299c2] to-[#fef9d7]",
+    //     },
   ],
 };
 
