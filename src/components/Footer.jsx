@@ -454,30 +454,30 @@ const footerData = {
       label: "Manufacturing",
       url: "https://www.epfdesk.com/pf-esic-consultant-manufacturing-bangalore/",
     },
-    {
-      label: "PF Consultant Bangalore",
-      url: "https://www.epfdesk.com/epf/bangalore/pf-consultants-in-bangalore",
-    },
-    {
-      label: "EPF Registration Bangalore",
-      url: "https://www.epfdesk.com/epf/bangalore/epf-registration-bangalore",
-    },
-    {
-      label: "ESIC Consultant Bangalore",
-      url: "https://www.epfdesk.com/esicCompliance/bangalore/esic-consultants-bangalore",
-    },
-    {
-      label: "ESIC Registration Bangalore",
-      url: "https://www.epfdesk.com/esicCompliance/bangalore/esic-registration-bangalore",
-    },
-    {
-      label: "PF-ESIC Consultant Bangalore",
-      url: "https://www.epfdesk.com/pf-esic-consultant-bangalore",
-    },
-    {
-      label: "PF-ESIC Registration Bangalore",
-      url: "https://www.epfdesk.com/pf-esic-registration-bangalore",
-    },
+    // {
+    //   label: "PF Consultant Bangalore",
+    //   url: "https://www.epfdesk.com/epf/bangalore/pf-consultants-in-bangalore",
+    // },
+    // {
+    //   label: "EPF Registration Bangalore",
+    //   url: "https://www.epfdesk.com/epf/bangalore/epf-registration-bangalore",
+    // },
+    // {
+    //   label: "ESIC Consultant Bangalore",
+    //   url: "https://www.epfdesk.com/esicCompliance/bangalore/esic-consultants-bangalore",
+    // },
+    // {
+    //   label: "ESIC Registration Bangalore",
+    //   url: "https://www.epfdesk.com/esicCompliance/bangalore/esic-registration-bangalore",
+    // },
+    // {
+    //   label: "PF-ESIC Consultant Bangalore",
+    //   url: "https://www.epfdesk.com/pf-esic-consultant-bangalore",
+    // },
+    // {
+    //   label: "PF-ESIC Registration Bangalore",
+    //   url: "https://www.epfdesk.com/pf-esic-registration-bangalore",
+    // },
   ],
 
   links: [
@@ -562,7 +562,7 @@ export default function Footer() {
               </div>
 
               <div>
-                <h4 className="text-sm font-semibold mb-4 uppercase">Offerings</h4>
+                <h4 className="text-sm font-semibold mb-4 uppercase">Industries</h4>
                 <ul className="space-y-2 text-sm text-[#374151]">
                   {footerData.offerings.map(({ label, url }) => (
                     <li key={label} className="leading-6">

@@ -241,7 +241,7 @@ export default function FloatingFormToggle({ animate = true }) {
           >
             <FaPhone className="size-5 sm:size-6 transition-transform sm:group-hover:scale-0" />
             <span className="hidden sm:inline transition-opacity sm:group-hover:opacity-0">
-              Call Us
+              Call
             </span>
             <span className="absolute hidden sm:inline opacity-0 transition-opacity sm:group-hover:opacity-100">
               +919945933333

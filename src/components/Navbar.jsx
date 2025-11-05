@@ -348,7 +348,7 @@ export default function Navbar() {
                       "inset 0 10px 16px -10px #ffffff0f, 0 8px 8px #001f1f0f, 0 4px 4px #001f1f0f, 0 2px 2px #001f1f0f, 0 0 1px #001f1f52, inset 0 -2px 1px #001f1f3d, inset 0 1px 1px #cdface14",
                   }}
                 ><FaPhone />
-                  Call Us
+                  Call
                 </button>
                 <button
                   onClick={() =>
