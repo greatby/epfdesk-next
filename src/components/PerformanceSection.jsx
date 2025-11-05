@@ -165,7 +165,7 @@ export const PerformanceSection = ({ data }) => {
         {/* Card */}
       </section>
       <div className=" relative p-1 rounded-3xl w-full max-w-5xl mx-auto">
-        <div className="p-6 m-2 transition  rounded-[20px] ">
+        <div className="transition  rounded-[20px] ">
           {/*shadow-[inset_0_10px_16px_-10px_#ffffff0f,0_8px_8px_#001f1f0f,0_4px_4px_#001f1f0f,0_2px_2px_#001f1f0f,0_0_1px_#001f1f52,inset_0_-2px_1px_#001f1f3d,inset_0_1px_1px_#cdface14]*/}
           <div className="grid grid-rows-1 text-left ">
             <img src="/images/EPF-bangalore.png" />
