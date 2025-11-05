@@ -207,7 +207,7 @@ export default function FaqAccordion({ faqs, title = "Frequently Asked Questions
   };
 
   return (
-    <section className="w-full max-w-4xl mx-auto px-4 py-16 rounded-2xl">
+    <section className="w-full max-w-3xl mx-auto px-4 py-16 rounded-2xl">
       <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-[#001f1f]">
         {title}
       </h2>
@@ -221,14 +221,14 @@ export default function FaqAccordion({ faqs, title = "Frequently Asked Questions
               className={`rounded-xl border transition-all duration-300 ${
                 isOpen
                   ? "bg-white shadow-md border-[#e0e0e0]"
-                  : "bg-[#f9fafb] hover:bg-[#f3f4f6] border-transparent"
+                  : "bg-[color-mix(in_srgb,#001f1f_4%,transparent)] hover:bg-[#f3f4f6] border-transparent"
               }`}
             >
               {/* Question button */}
               <button
                 onClick={() => toggle(index)}
                 className={`w-full flex justify-between items-center px-6 py-5 text-left text-[1rem] font-semibold transition-all duration-300 focus:outline-none ${
-                  isOpen ? "text-[#008272]" : "text-[#6a7878] hover:text-[#001f1f]"
+                  isOpen ? "text-[#001f1f]" : "text-[#6a7878] hover:text-[#001f1f]"
                 }`}
                 aria-expanded={isOpen}
                 aria-controls={`faq-${index}`}
@@ -261,10 +261,10 @@ export default function FaqAccordion({ faqs, title = "Frequently Asked Questions
               <div
                 id={`faq-${index}`}
                 className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${
-                  isOpen ? "max-h-[500px] py-4" : "max-h-0 py-0"
+                  isOpen ? "max-h-[500px] pb-4" : "max-h-0 py-0"
                 }`}
               >
-                <p className="text-[#334155] text-base leading-relaxed">
+                <p className="text-[#334155] text-base leading-[1.4]">
                   {faq.answer}
                 </p>
               </div>

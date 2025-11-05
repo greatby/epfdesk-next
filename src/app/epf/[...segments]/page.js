@@ -28,6 +28,7 @@ import PerformanceCard from "@/components/PerformanceCard";
 import SliderCards from "@/components/SliderCards";
 import Script from "next/script";
 import ThreeStepSection from "@/components/ThreeStepSection";
+import CodeOfConduct from "@/components/CodeOfConduct";
 
 export const metadata = {
   title: `PF Consultant in Bangalore | EPF Registration, Returns & Inspections | Workforce`,
@@ -216,7 +217,8 @@ export default async function EPFPage({ params }) {
             <PerformanceSection data={data} />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <PerformanceCard slug={slug} data={epfBangaloreCardData} />
+            {/* <PerformanceCard slug={slug} data={epfBangaloreCardData} /> */}
+            <CodeOfConduct />
           </FadeInWhenVisible>
           {/* <SliderCards /> */}
           {/* <FadeInWhenVisible>
@@ -242,7 +244,7 @@ export default async function EPFPage({ params }) {
             </FadeInWhenVisible>
             <FadeInWhenVisible>
               {/* <PastelCardSlider cardsData={pastelCardsEpfoBangalore} /> */}
-            <ThreeStepSection cardsData={pastelCardsEpfoBangalore}/>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
             </FadeInWhenVisible>
             {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
             Workforce: End-to-End EPF Management for Modern Businesses
@@ -258,7 +260,7 @@ export default async function EPFPage({ params }) {
     } else if (slug === "epf-registration-bangalore") {
       return (
         <>
-        <Script
+          <Script
             id="schema-pf-esic"
             type="application/ld+json"
             dangerouslySetInnerHTML={{
