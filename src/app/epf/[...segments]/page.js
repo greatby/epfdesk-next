@@ -239,9 +239,9 @@ export default async function EPFPage({ params }) {
             PF Consultants in Bangalore — End-to-End EPF Compliance by Workforce
           </h2> */}
 
-            <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
               <LargeCardSlider cardsData={largeCardsEpfoBangalore} />
-            </FadeInWhenVisible>
+            </FadeInWhenVisible> */}
             <FadeInWhenVisible>
               {/* <PastelCardSlider cardsData={pastelCardsEpfoBangalore} /> */}
               <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
