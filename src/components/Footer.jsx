@@ -379,16 +379,56 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaYoutube, FaTwitter, FaLinkedin, FaGithub,FaInstagram } from "react-icons/fa";
+import {
+  FaYoutube,
+  FaTwitter,
+  FaLinkedin,
+  FaGithub,
+  FaInstagram,
+} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 const footerData = {
   socials: [
-    { label: "YOUTUBE", icon: FaYoutube, url: "https://www.youtube.com/@EPFDesk" },
+    {
+      label: "YOUTUBE",
+      icon: FaYoutube,
+      url: "https://www.youtube.com/@EPFDesk",
+    },
     { label: "X", icon: FaXTwitter, url: "https://twitter.com/epfdesk" },
-    { label: "LINKEDIN", icon: FaLinkedin, url: "https://linkedin.com/company/epfdesk" },
-    { label: "INSTAGRAM", icon: FaInstagram, url: "https://www.instagram.com/epfdesk/" },
+    {
+      label: "LINKEDIN",
+      icon: FaLinkedin,
+      url: "https://linkedin.com/company/epfdesk",
+    },
+    {
+      label: "INSTAGRAM",
+      icon: FaInstagram,
+      url: "https://www.instagram.com/epfdesk/",
+    },
   ],
 
+  cities: [
+    { label: "Bengaluru", url: "/test" },
+    { label: "Mumbai", url: "/test" },
+    { label: "Delhi (NCR)", url: "/test" },
+    { label: "Chennai", url: "/test" },
+    { label: "Hyderabad", url: "/test" },
+    { label: "Pune", url: "/test" },
+    { label: "Kolkata", url: "/test" },
+    { label: "Ahmedabad", url: "/test" },
+    { label: "Surat", url: "/test" },
+    { label: "Gurgaon (Gurugram)", url: "/test" },
+    { label: "Noida", url: "/test" },
+    { label: "Jaipur", url: "/test" },
+    { label: "Lucknow", url: "/test" },
+    { label: "Indore", url: "/test" },
+    { label: "Coimbatore", url: "/test" },
+    { label: "Vadodara", url: "/test" },
+    { label: "Visakhapatnam", url: "/test" },
+    { label: "Nagpur", url: "/test" },
+    { label: "Bhopal", url: "/test" },
+    { label: "Kanpur", url: "/test" },
+  ],
   offerings: [
     {
       label: "Education",
@@ -498,15 +538,31 @@ export default function Footer() {
               </div>
             </div>
           </div>
-<div className="lg:col-span-1"></div>
+          <div className="lg:col-span-1"></div>
           {/* Right columns */}
           <div className="col-span-12 md:col-span-9 lg:col-span-9">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
               {/* Offerings (external URLs) */}
               <div>
-                <h4 className="text-sm font-semibold mb-4 uppercase">
-                  Offerings
-                </h4>
+                <h4 className="text-sm font-semibold mb-4 uppercase">Locations</h4>
+                <ul className="space-y-2 text-sm text-[#374151]">
+                  {footerData.cities.map(({ label, url }) => (
+                    <li key={label} className="leading-6">
+                      <a
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline hover:text-[#066] transition-colors"
+                      >
+                        {label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-sm font-semibold mb-4 uppercase">Offerings</h4>
                 <ul className="space-y-2 text-sm text-[#374151]">
                   {footerData.offerings.map(({ label, url }) => (
                     <li key={label} className="leading-6">
