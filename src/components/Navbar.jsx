@@ -157,6 +157,8 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { AnimatePresence, motion } from "framer-motion";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { FaPhone } from "react-icons/fa6";
+import { EnvelopeIcon } from "@heroicons/react/24/outline";
 
 const links = [
   { href: "/epfdesk", label: "EPFdesk" },
@@ -274,7 +276,7 @@ export default function Navbar() {
                 >
                   WhatsApp Us
                 </button> */}
-                <button
+                {/* <button
                   onClick={() => {
                     const phone = "919945933333";
                     const text = encodeURIComponent(
@@ -299,31 +301,68 @@ export default function Navbar() {
                   <span className="absolute hidden sm:inline opacity-0 transition-opacity sm:group-hover:opacity-100">
                     +919945933333
                   </span>
+                </button> */}
+                <button
+                  onClick={() => {
+                    const phone = "919945933333";
+                    const text = encodeURIComponent(
+                      "Hello EPFDesk,\n\n" +
+                        "I’d like to know more about your compliance services.\n\n" +
+                        "Company Name:\n" +
+                        "No. of Employees:\n" +
+                        "My Role:\n" +
+                        "Areas of Interest:"
+                    );
+                    window.open(
+                      `https://wa.me/${phone}?text=${text}`,
+                      "_blank"
+                    );
+                  }}
+                  className="relative group bg-[#c4f5db] cursor-pointer text-[16px] flex items-center justify-center gap-2 text-[#066] font-[500] px-6 py-2 rounded-[13px] transition"
+                  style={{
+                    backgroundImage:
+                      "linear-gradient(180deg, #eafce9, #cdface)",
+                    boxShadow:
+                      "0 4px 4px #001f1f0f,0 2px 2px #001f1f0f,0 0 1px #001f1f52,inset 0 1px 1px #cdface14",
+                  }}
+                >
+                  <IoLogoWhatsapp className="size-5 sm:size-6 transition-transform group-hover:scale-0" />
+
+                  {/* Default text */}
+                  <span className="transition-opacity group-hover:opacity-0">
+                    WhatsApp
+                  </span>
+
+                  {/* Hidden number, shows on hover */}
+                  <span className="absolute left-1/2 -translate-x-1/2 opacity-0 transition-opacity group-hover:opacity-100">
+                    +919945933333
+                  </span>
                 </button>
 
                 <button
                   onClick={() => (window.location.href = "tel:+919945933333")}
-                  className="bg-[#003d3d] cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 h-[42px] shadow-sm transition rounded-[13px]"
+                  className="bg-[#003d3d] flex items-center justify-center gap-2 cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 h-[42px] shadow-sm transition rounded-[13px]"
                   style={{
                     backgroundImage: "linear-gradient(180deg, #066, #003d3d)",
                     boxShadow:
                       "inset 0 10px 16px -10px #ffffff0f, 0 8px 8px #001f1f0f, 0 4px 4px #001f1f0f, 0 2px 2px #001f1f0f, 0 0 1px #001f1f52, inset 0 -2px 1px #001f1f3d, inset 0 1px 1px #cdface14",
                   }}
-                >
+                ><FaPhone />
                   Call Us
                 </button>
                 <button
                   onClick={() =>
                     (window.location.href = "mailto:hello@epfdesk.com")
                   }
-                  className="bg-[#003d3d] cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 h-[42px] shadow-sm transition rounded-[13px]"
+                  className="bg-[#003d3d] flex items-center justify-center gap-2 cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 h-[42px] shadow-sm transition rounded-[13px]"
                   style={{
                     backgroundImage: "linear-gradient(180deg, #066, #003d3d)",
                     boxShadow:
                       "inset 0 10px 16px -10px #ffffff0f, 0 8px 8px #001f1f0f, 0 4px 4px #001f1f0f, 0 2px 2px #001f1f0f, 0 0 1px #001f1f52, inset 0 -2px 1px #001f1f3d, inset 0 1px 1px #cdface14",
                   }}
                 >
-                  Email Us
+                  <EnvelopeIcon className="w-[20px] h-[20px]"/>
+                  Email
                 </button>
               </div>
             )}
@@ -403,7 +442,7 @@ export default function Navbar() {
                       >
                         Email Us
                       </button> */}
-                      <button
+                      {/* <button
                         onClick={() => {
                           const phone = "919945933333";
                           const text = encodeURIComponent(
@@ -428,13 +467,49 @@ export default function Navbar() {
                         <span className="absolute hidden sm:inline opacity-0 transition-opacity sm:group-hover:opacity-100">
                           +919945933333
                         </span>
+                      </button> */}
+                      <button
+                        onClick={() => {
+                          const phone = "919945933333";
+                          const text = encodeURIComponent(
+                            "Hello EPFDesk,\n\n" +
+                              "I’d like to know more about your compliance services.\n\n" +
+                              "Company Name:\n" +
+                              "No. of Employees:\n" +
+                              "My Role:\n" +
+                              "Areas of Interest:"
+                          );
+                          window.open(
+                            `https://wa.me/${phone}?text=${text}`,
+                            "_blank"
+                          );
+                        }}
+                        className="relative group bg-[#c4f5db] cursor-pointer text-[16px] flex items-center justify-center gap-2 text-[#066] font-[500] px-6 py-3 rounded-[13px] transition"
+                        style={{
+                          backgroundImage:
+                            "linear-gradient(180deg, #eafce9, #cdface)",
+                          boxShadow:
+                            "0 4px 4px #001f1f0f,0 2px 2px #001f1f0f,0 0 1px #001f1f52,inset 0 1px 1px #cdface14",
+                        }}
+                      >
+                        <IoLogoWhatsapp className="size-5 sm:size-6 transition-transform group-hover:scale-0" />
+
+                        {/* Default text */}
+                        <span className="transition-opacity group-hover:opacity-0">
+                          WhatsApp
+                        </span>
+
+                        {/* Hidden number, shows on hover */}
+                        <span className="absolute left-1/2 -translate-x-1/2 opacity-0 transition-opacity group-hover:opacity-100">
+                          +919945933333
+                        </span>
                       </button>
 
                       <button
                         onClick={() =>
                           (window.location.href = "tel:+919945933333")
                         }
-                        className="bg-[#003d3d] cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 py-3 shadow-sm transition rounded-[13px]"
+                        className="bg-[#003d3d] flex items-center justify-center gap-2 cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 py-3 shadow-sm transition rounded-[13px]"
                         style={{
                           backgroundImage:
                             "linear-gradient(180deg, #066, #003d3d)",
@@ -442,6 +517,7 @@ export default function Navbar() {
                             "inset 0 10px 16px -10px #ffffff0f, 0 8px 8px #001f1f0f, 0 4px 4px #001f1f0f, 0 2px 2px #001f1f0f, 0 0 1px #001f1f52, inset 0 -2px 1px #001f1f3d, inset 0 1px 1px #cdface14",
                         }}
                       >
+                        <FaPhone />
                         Call Us
                       </button>
 
@@ -449,15 +525,15 @@ export default function Navbar() {
                         onClick={() =>
                           window.open("https://wa.me/919945933333", "_blank")
                         }
-                        className="bg-[#003d3d] cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 py-3 shadow-sm transition rounded-[13px]"
+                        className="bg-[#003d3d] flex items-center justify-center gap-2 cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 py-3 shadow-sm transition rounded-[13px]"
                         style={{
                           backgroundImage:
                             "linear-gradient(180deg, #066, #003d3d)",
                           boxShadow:
                             "inset 0 10px 16px -10px #ffffff0f, 0 8px 8px #001f1f0f, 0 4px 4px #001f1f0f, 0 2px 2px #001f1f0f, 0 0 1px #001f1f52, inset 0 -2px 1px #001f1f3d, inset 0 1px 1px #cdface14",
                         }}
-                      >
-                        WhatsApp Us
+                      ><EnvelopeIcon className="w-[20px] h-[20px]"/>
+                        WhatsApp
                       </button>
                     </div>
                   )}
