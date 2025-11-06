@@ -304,8 +304,8 @@ export default async function EPFPage({ params }) {
           </h2>
           <StickyScrollSections items={epfManagementBangalore} /> */}
           </FadeInWhenVisible>
-          {/* <TestimonialCarousel />
-          <SingleQuote /> */}
+          <TestimonialCarousel />
+          <SingleQuote />
           <FadeInWhenVisible>
             <FaqAccordion faqs={epfManagementFaqBangalore} />
           </FadeInWhenVisible>
