@@ -19,6 +19,9 @@ import {
   largeCardsEpfoBangaloreRegistration,
   pastelCardsEpfoBangaloreRegistration,
   epfManagementFaqBangaloreRegistration,
+  sectionsPFConsultants,
+  sectionsPFRegsitration,
+  metadataMap,
 } from "@/utils/data";
 import LargeCardSlider from "@/components/largeCards";
 import PastelCardSlider from "@/components/pastelCardSlider";
@@ -29,19 +32,49 @@ import SliderCards from "@/components/SliderCards";
 import Script from "next/script";
 import ThreeStepSection from "@/components/ThreeStepSection";
 import CodeOfConduct from "@/components/CodeOfConduct";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
+import SingleQuote from "@/components/SingleQuote";
+import QuoteSwiper from "@/components/TestimonialCarousel";
 
-export const metadata = {
-  title: `PF Consultant in Bangalore | EPF Registration, Returns & Inspections | Workforce`,
-  description:
-    "Leading PF consultants in Bangalore for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
-  alternates: {
-    canonical: "https://epfdesk.com/epf/bangalore/pf-consultants-in-bangalore",
-  },
-  openGraph: {
-    title: `Leading PF consultants in Bangalore for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
-    url: "https://epfdesk.com/epf/bangalore/pf-consultants-in-bangalore",
-  },
-};
+// export const metadata = {
+//   title: `PF Consultant in Bangalore | EPF Registration, Returns & Inspections | Workforce`,
+//   description:
+//     "Leading PF consultants in Bangalore for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+//   alternates: {
+//     canonical: "https://epfdesk.com/epf/bangalore/pf-consultants-in-bangalore",
+//   },
+//   openGraph: {
+//     title: `Leading PF consultants in Bangalore for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+//     url: "https://epfdesk.com/epf/bangalore/pf-consultants-in-bangalore",
+//   },
+// };
+
+export async function generateMetadata({ params }) {
+  // Get the last segment (e.g., "hyderabad")
+  const city = params.segments?.[params.segments.length - 1];
+
+  if (!city) {
+    return {
+      title: "PF Consultants | Workforce",
+      description:
+        "Expert PF & ESIC compliance services across India. Get stress-free EPF registration, filing, and inspection support.",
+    };
+  }
+
+  const cityTitle = city.charAt(0).toUpperCase() + city.slice(1);
+
+  return {
+    title: `PF Consultant in ${cityTitle} | EPF Registration, Returns & Inspections | Workforce`,
+    description: `Leading PF consultants in ${cityTitle} for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+    alternates: {
+      canonical: `https://epfdesk.com/epf/${city}/pf-consultants-in-${city}`,
+    },
+    openGraph: {
+      title: `PF Consultant in ${cityTitle} | EPF Registration, Returns & Inspections | Workforce`,
+      url: `https://epfdesk.com/epf/${city}/pf-consultants-in-${city}`,
+    },
+  };
+}
 
 export default async function EPFPage({ params }) {
   const { segments = [] } = await params;
@@ -136,9 +169,29 @@ export default async function EPFPage({ params }) {
       );
 
     const slugMap = {
-      "pf-consultants-in-bangalore": "pf",
-      "epf-registration-bangalore": "pfRegistration",
-      "esic-consultants-bangalore": "esic",
+      "pf-consultants-in-bangalore": "pfBangalore",
+      "epf-registration-bangalore": "pfRegistrationBangalore",
+      "esic-consultants-bangalore": "esicBangalore",
+      "pf-consultants-in-hyderabad": "pfHyderabad",
+
+      "pf-consultants-in-mumbai": "pfMumbai",
+      "pf-consultants-in-chennai": "pfChennai",
+      "pf-consultants-in-visakhapatnam": "pfVisakhapatnam",
+      "pf-consultants-in-delhi": "pfDelhi",
+      "pf-consultants-in-pune": "pfPune",
+      "pf-consultants-in-kolkata": "pfKolkata",
+      "pf-consultants-in-ahmedabad": "pfAhmedabad",
+      "pf-consultants-in-surat": "pfSurat",
+      "pf-consultants-in-gurgaon": "pfGurgaon",
+      "pf-consultants-in-noida": "pfNoida",
+      "pf-consultants-in-jaipur": "pfJaipur",
+      "pf-consultants-in-lucknow": "pfLucknow",
+      "pf-consultants-in-indore": "pfIndore",
+      "pf-consultants-in-coimbatore": "pfCoimbatore",
+      "pf-consultants-in-vadodara": "pfVadodara",
+      "pf-consultants-in-nagpur": "pfNagpur",
+      "pf-consultants-in-bhopal": "pfBhopal",
+      "pf-consultants-in-kanpur": "pfKanpur",
     };
 
     const key = slugMap[slug];
@@ -218,7 +271,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
           <FadeInWhenVisible>
             {/* <PerformanceCard slug={slug} data={epfBangaloreCardData} /> */}
-            <CodeOfConduct />
+            <CodeOfConduct sections={sectionsPFConsultants} />
           </FadeInWhenVisible>
           {/* <SliderCards /> */}
           {/* <FadeInWhenVisible>
@@ -251,7 +304,8 @@ export default async function EPFPage({ params }) {
           </h2>
           <StickyScrollSections items={epfManagementBangalore} /> */}
           </FadeInWhenVisible>
-
+          {/* <TestimonialCarousel />
+          <SingleQuote /> */}
           <FadeInWhenVisible>
             <FaqAccordion faqs={epfManagementFaqBangalore} />
           </FadeInWhenVisible>
@@ -323,19 +377,23 @@ export default async function EPFPage({ params }) {
             <PerformanceSection data={data} />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <PerformanceCard
+            {/* <PerformanceCard
               slug={slug}
               data={epfBangaloreRegistrationCardData}
-            />
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
               <LargeCardSlider
                 cardsData={largeCardsEpfoBangaloreRegistration}
               />
-            </FadeInWhenVisible>
+            </FadeInWhenVisible> */}
             <FadeInWhenVisible>
-              <PastelCardSlider
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
                 cardsData={pastelCardsEpfoBangaloreRegistration}
               />
             </FadeInWhenVisible>
@@ -347,6 +405,1431 @@ export default async function EPFPage({ params }) {
 
           <FadeInWhenVisible>
             <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-consultants-in-hyderabad") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Consultants Hyderabad",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/hyderabad/pf-consultants-in-hyderabad/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-consultants-in-mumbai") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Consultants Mumbai",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/mumbai/pf-consultants-in-mumbai/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-consultants-in-chennai") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Consultants Chennai",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/chennai/pf-consultants-in-chennai/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-consultants-in-visakhapatnam") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Consultants Visakhapatnam",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/visakhapatnam/pf-consultants-in-visakhapatnam/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-consultants-in-delhi") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Consultants delhi",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/delhi/pf-consultants-in-delhi/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-consultants-in-pune") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Consultants Pune",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/pune/pf-consultants-in-pune/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-consultants-in-kolkata") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Consultants Kolkata",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/kolkata/pf-consultants-in-kolkata/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-consultants-in-ahmedabad") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Consultants Ahmedabad",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/ahmedabad/pf-consultants-in-ahmedabad/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-consultants-in-surat") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Consultants Surat",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/surat/pf-consultants-in-surat/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-consultants-in-gurgaon") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Consultants Gurgaon",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/gurgaon/pf-consultants-in-gurgaon/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-consultants-in-noida") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Consultants Noida",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/noida/pf-consultants-in-noida/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-consultants-in-jaipur") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Consultants Jaipur",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/jaipur/pf-consultants-in-jaipur/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-consultants-in-lucknow") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Consultants Lucknow",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/lucknow/pf-consultants-in-lucknow/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-consultants-in-indore") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Consultants Indore",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/indore/pf-consultants-in-indore/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-consultants-in-coimbatore") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Consultants Coimbatore",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/coimbatore/pf-consultants-in-coimbatore/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-consultants-in-vadodara") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Consultants Vadodara",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/vadodara/pf-consultants-in-vadodara/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-consultants-in-nagpur") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Consultants Nagpur",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/nagpur/pf-consultants-in-nagpur/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-consultants-in-bhopal") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Consultants Bhopal",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/bhopal/pf-consultants-in-bhopal/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-consultants-in-kanpur") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Consultants Kanpur",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/kanpur/pf-consultants-in-kanpur/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
           </FadeInWhenVisible>
         </>
       );

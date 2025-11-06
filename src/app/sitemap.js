@@ -85,25 +85,25 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.8,
     },
-     {
+    {
       url: `${base}/epf/bangalore/pf-consultants-in-bangalore`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
-     {
+    {
       url: `${base}/epf/bangalore/epf-registration-bangalore`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
-     {
+    {
       url: `${base}/esicCompliance/bangalore/esic-consultants-bangalore`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
-     {
+    {
       url: `${base}/esicCompliance/bangalore/esic-registration-bangalore`,
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -115,8 +115,122 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.8,
     },
-     {
+    {
       url: `${base}/pf-esic-consultant-bangalore`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/epf/hyderabad/pf-consultants-in-hyderabad`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/epf/mumbai/pf-consultants-in-mumbai`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/epf/chennai/pf-consultants-in-chennai`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/epf/visakhapatnam/pf-consultants-in-visakhapatnam`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/epf/delhi/pf-consultants-in-delhi`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/epf/pune/pf-consultants-in-pune`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/epf/kolkata/pf-consultants-in-kolkata`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/epf/ahmedabad/pf-consultants-in-ahmedabad`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/epf/surat/pf-consultants-in-surat`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/epf/gurgaon/pf-consultants-in-gurgaon`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/epf/noida/pf-consultants-in-noida`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/epf/jaipur/pf-consultants-in-jaipur`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/epf/lucknow/pf-consultants-in-lucknow`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/epf/indore/pf-consultants-in-indore`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/epf/coimbatore/pf-consultants-in-coimbatore`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/epf/vadodara/pf-consultants-in-vadodara`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/epf/nagpur/pf-consultants-in-nagpur`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/epf/bhopal/pf-consultants-in-bhopal`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/epf/kanpur/pf-consultants-in-kanpur`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

@@ -6037,38 +6037,39 @@ export const faqsTransport = [
 
 export const cityData = {
   bangalore: {
-    pf: {
+    pfBangalore: {
       title: "EPF Consultants Bangalore",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "bangalore@pfconsultants.in",
     },
-    pfRegistration: {
-      title: "EPF Registration Bangalore: We Get You Registered in 7 Days",
+    pfRegistrationBangalore: {
+      title: "EPF Registration Bangalore",
+      subTitle: "We get you registered in 7 days",
       description:
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "bangalore@pfconsultants.in",
     },
-    esic: {
-      title:
-        "ESIC Consultants Bangalore: We Handle Everything, You Handle Nothing",
+    esicBangalore: {
+      title: "ESIC Consultants Bangalore",
+      subTitle: " We handle everything, you handle nothing",
       description:
         "100% On-Time Filing. Zero Penalties. Zero Stress Since 2023.",
       contact: "bangalore@esicconsultants.in",
     },
     esicRegistration: {
-      title: "ESIC Registration Bangalore: We Get You Registered in 5 Days",
+      title: "ESIC Registration Bangalore",
+      subTitle: "We get you registered in 5 days",
       description:
         "100% Approval Rate. Zero Rejections. Start Covering Employees Immediately.",
       contact: "bangalore@pfconsultants.in",
     },
   },
   hyderabad: {
-    pf: {
-      title: "PF Consultants in Hyderabad",
-      description:
-        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
-      contact: "hyderabad@pfconsultants.in",
+    pfHyderabad: {
+      title: "EPF Consultants Hyderabad",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
     },
     esic: {
       title: "ESIC Consultants in Hyderabad",
@@ -6078,11 +6079,10 @@ export const cityData = {
     },
   },
   goa: {
-    pf: {
-      title: "PF Consultants in Hyderabad",
-      description:
-        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
-      contact: "hyderabad@pfconsultants.in",
+    pfGoa: {
+       title: "EPF Consultants Goa",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
     },
     esic: {
       title: "ESIC Consultants in Hyderabad",
@@ -6092,11 +6092,10 @@ export const cityData = {
     },
   },
   mumbai: {
-    pf: {
-      title: "PF Consultants in Hyderabad",
-      description:
-        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
-      contact: "hyderabad@pfconsultants.in",
+    pfMumbai: {
+       title: "EPF Consultants Mumbai",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
     },
     esic: {
       title: "ESIC Consultants in Hyderabad",
@@ -6106,11 +6105,10 @@ export const cityData = {
     },
   },
   chennai: {
-    pf: {
-      title: "PF Consultants in Hyderabad",
-      description:
-        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
-      contact: "hyderabad@pfconsultants.in",
+    pfChennai: {
+      title: "EPF Consultants Chennai",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
     },
     esic: {
       title: "ESIC Consultants in Hyderabad",
@@ -6119,12 +6117,11 @@ export const cityData = {
       contact: "hyderabad@esicconsultants.in",
     },
   },
-  vizag: {
-    pf: {
-      title: "PF Consultants in Hyderabad",
-      description:
-        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
-      contact: "hyderabad@pfconsultants.in",
+  visakhapatnam: {
+    pfVisakhapatnam: {
+      title: "EPF Consultants Visakhapatnam",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
     },
     esic: {
       title: "ESIC Consultants in Hyderabad",
@@ -6133,12 +6130,11 @@ export const cityData = {
       contact: "hyderabad@esicconsultants.in",
     },
   },
-  naviMumbai: {
-    pf: {
-      title: "PF Consultants in Hyderabad",
-      description:
-        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
-      contact: "hyderabad@pfconsultants.in",
+   delhi: {
+    pfDelhi: {
+      title: "EPF Consultants Delhi",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
     },
     esic: {
       title: "ESIC Consultants in Hyderabad",
@@ -6147,62 +6143,175 @@ export const cityData = {
       contact: "hyderabad@esicconsultants.in",
     },
   },
-  delhi: {
-    pf: {
-      title: "PF Consultants in Hyderabad",
-      description:
-        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
-      contact: "hyderabad@pfconsultants.in",
+  pune: {
+    "pfPune": {
+      "title": "EPF Consultants Pune",
+      "subTitle": "We log into your portal and do it for you",
+      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
     },
-    esic: {
-      title: "ESIC Consultants in Hyderabad",
-      description:
-        "Reliable ESIC registration and compliance support in Hyderabad.",
-      contact: "hyderabad@esicconsultants.in",
-    },
+    "esic": {
+      "title": "ESIC Consultants in Hyderabad",
+      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
+      "contact": "hyderabad@esicconsultants.in"
+    }
   },
-  gurugram: {
-    pf: {
-      title: "PF Consultants in Hyderabad",
-      description:
-        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
-      contact: "hyderabad@pfconsultants.in",
+  kolkata: {
+    "pfKolkata": {
+      "title": "EPF Consultants Kolkata",
+      "subTitle": "We log into your portal and do it for you",
+      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
     },
-    esic: {
-      title: "ESIC Consultants in Hyderabad",
-      description:
-        "Reliable ESIC registration and compliance support in Hyderabad.",
-      contact: "hyderabad@esicconsultants.in",
-    },
+    "esic": {
+      "title": "ESIC Consultants in Hyderabad",
+      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
+      "contact": "hyderabad@esicconsultants.in"
+    }
   },
-  india: {
-    pf: {
-      title: "PF Consultants in Hyderabad",
-      description:
-        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
-      contact: "hyderabad@pfconsultants.in",
+  ahmedabad: {
+    "pfAhmedabad": {
+      "title": "EPF Consultants Ahmedabad",
+      "subTitle": "We log into your portal and do it for you",
+      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
     },
-    esic: {
-      title: "ESIC Consultants in Hyderabad",
-      description:
-        "Reliable ESIC registration and compliance support in Hyderabad.",
-      contact: "hyderabad@esicconsultants.in",
+    "esic": {
+      "title": "ESIC Consultants in Hyderabad",
+      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
+      "contact": "hyderabad@esicconsultants.in"
+    }
+  },
+  surat: {
+    "pfSurat": {
+      "title": "EPF Consultants Surat",
+      "subTitle": "We log into your portal and do it for you",
+      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
     },
+    "esic": {
+      "title": "ESIC Consultants in Hyderabad",
+      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
+      "contact": "hyderabad@esicconsultants.in"
+    }
+  },
+  gurgaon: {
+    "pfGurgaon": {
+      "title": "EPF Consultants Gurgaon",
+      "subTitle": "We log into your portal and do it for you",
+      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    },
+    "esic": {
+      "title": "ESIC Consultants in Hyderabad",
+      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
+      "contact": "hyderabad@esicconsultants.in"
+    }
+  },
+  noida: {
+    "pfNoida": {
+      "title": "EPF Consultants Noida",
+      "subTitle": "We log into your portal and do it for you",
+      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    },
+    "esic": {
+      "title": "ESIC Consultants in Hyderabad",
+      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
+      "contact": "hyderabad@esicconsultants.in"
+    }
   },
   jaipur: {
-    pf: {
-      title: "PF Consultants in Hyderabad",
-      description:
-        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
-      contact: "hyderabad@pfconsultants.in",
+    "pfJaipur": {
+      "title": "EPF Consultants Jaipur",
+      "subTitle": "We log into your portal and do it for you",
+      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
     },
-    esic: {
-      title: "ESIC Consultants in Hyderabad",
-      description:
-        "Reliable ESIC registration and compliance support in Hyderabad.",
-      contact: "hyderabad@esicconsultants.in",
-    },
+    "esic": {
+      "title": "ESIC Consultants in Hyderabad",
+      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
+      "contact": "hyderabad@esicconsultants.in"
+    }
   },
+  lucknow: {
+    "pfLucknow": {
+      "title": "EPF Consultants Lucknow",
+      "subTitle": "We log into your portal and do it for you",
+      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    },
+    "esic": {
+      "title": "ESIC Consultants in Hyderabad",
+      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
+      "contact": "hyderabad@esicconsultants.in"
+    }
+  },
+  indore: {
+    "pfIndore": {
+      "title": "EPF Consultants Indore",
+      "subTitle": "We log into your portal and do it for you",
+      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    },
+    "esic": {
+      "title": "ESIC Consultants in Hyderabad",
+      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
+      "contact": "hyderabad@esicconsultants.in"
+    }
+  },
+  coimbatore: {
+    "pfCoimbatore": {
+      "title": "EPF Consultants Coimbatore",
+      "subTitle": "We log into your portal and do it for you",
+      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    },
+    "esic": {
+      "title": "ESIC Consultants in Hyderabad",
+      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
+      "contact": "hyderabad@esicconsultants.in"
+    }
+  },
+  vadodara: {
+    "pfVadodara": {
+      "title": "EPF Consultants Vadodara",
+      "subTitle": "We log into your portal and do it for you",
+      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    },
+    "esic": {
+      "title": "ESIC Consultants in Hyderabad",
+      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
+      "contact": "hyderabad@esicconsultants.in"
+    }
+  },
+  nagpur: {
+    "pfNagpur": {
+      "title": "EPF Consultants Nagpur",
+      "subTitle": "We log into your portal and do it for you",
+      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    },
+    "esic": {
+      "title": "ESIC Consultants in Hyderabad",
+      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
+      "contact": "hyderabad@esicconsultants.in"
+    }
+  },
+  bhopal: {
+    "pfBhopal": {
+      "title": "EPF Consultants Bhopal",
+      "subTitle": "We log into your portal and do it for you",
+      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    },
+    "esic": {
+      "title": "ESIC Consultants in Hyderabad",
+      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
+      "contact": "hyderabad@esicconsultants.in"
+    }
+  },
+  kanpur: {
+    "pfKanpur": {
+      "title": "EPF Consultants Kanpur",
+      "subTitle": "We log into your portal and do it for you",
+      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    },
+    "esic": {
+      "title": "ESIC Consultants in Hyderabad",
+      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
+      "contact": "hyderabad@esicconsultants.in"
+    }
+  }
+  
 };
 
 // data.js
@@ -6845,23 +6954,17 @@ export const pastelCardsEpfoBangaloreRegistration = {
     {
       title: "DIY Registration",
       subtitle: `Doing EPF registration yourself often leads to delays, rejections, and wasted effort — with a 30–45 day timeline, high rejection risk, no expert guidance, and significant time spent chasing approvals.`,
-      icon: "🎨",
-      bubble: "Create!",
-      bg: "from-[#a8e6cf] to-[#dcedc1]",
+      number: 1,
     },
     {
       title: "Other Consultants",
       subtitle: `Typical consultants take 20–30 days, offer minimal guidance, provide no penalty protection, and treat registration as a one-time task without ongoing support.`,
-      icon: "🌱",
-      bubble: "Grow!",
-      bg: "from-[#ffd3a5] to-[#fd9853]",
+      number: 2,
     },
     {
       title: "EPFdesk",
       subtitle: `EPFdesk delivers guaranteed registration in 7 days with a 100% approval rate, full documentation support, proactive follow-ups, penalty protection, and ongoing post-registration compliance support.`,
-      icon: "🤝",
-      bubble: "Connect!",
-      bg: "from-[#a8edea] to-[#fed6e3]",
+      number: 3,
     },
     //     {
     //       title: "Employee UAN & KYC Management",
@@ -7004,23 +7107,17 @@ export const pastelCardsEsicBangalore = {
     {
       title: "Step 1",
       subtitle: `Talk to us for 10 minutes — we’ll audit your current setup`,
-      icon: "🎨",
-      bubble: "Create!",
-      bg: "from-[#a8e6cf] to-[#dcedc1]",
+      number: 1,
     },
     {
       title: "Step 2",
       subtitle: `We onboard in 48 hours — portal access, documentation, process setup`,
-      icon: "🌱",
-      bubble: "Grow!",
-      bg: "from-[#ffd3a5] to-[#fd9853]",
+      number: 2,
     },
     {
       title: "Step 3",
       subtitle: `Relax — we handle everything from Day 1`,
-      icon: "🤝",
-      bubble: "Connect!",
-      bg: "from-[#a8edea] to-[#fed6e3]",
+      number: 3,
     },
     //     {
     //       title: "Employee UAN & KYC Management",
@@ -7163,23 +7260,17 @@ export const pastelCardsEsicRegistrationBangalore = {
     {
       title: "Step 1",
       subtitle: `Share basic details (10-minute call)`,
-      icon: "🎨",
-      bubble: "Create!",
-      bg: "from-[#a8e6cf] to-[#dcedc1]",
+      number: 1,
     },
     {
       title: "Step 2",
       subtitle: `We handle everything (5 days)`,
-      icon: "🌱",
-      bubble: "Grow!",
-      bg: "from-[#ffd3a5] to-[#fd9853]",
+      number: 2,
     },
     {
       title: "Step 3",
       subtitle: `You’re registered, employees covered`,
-      icon: "🤝",
-      bubble: "Connect!",
-      bg: "from-[#a8edea] to-[#fed6e3]",
+      number: 3,
     },
     //     {
     //       title: "Employee UAN & KYC Management",
@@ -7322,23 +7413,17 @@ export const pastelCardsPFEsicBangalore = {
     {
       title: "Step 1",
       subtitle: `10-minute call — we audit both your EPF and ESIC compliance`,
-      icon: "🎨",
-      bubble: "Create!",
-      bg: "from-[#a8e6cf] to-[#dcedc1]",
+      number: 1,
     },
     {
       title: "Step 2",
       subtitle: `48-hour onboarding — we take over both portals`,
-      icon: "🌱",
-      bubble: "Grow!",
-      bg: "from-[#ffd3a5] to-[#fd9853]",
+      number: 2,
     },
     {
       title: "Step 3",
       subtitle: `Relax — we handle both, you handle neither`,
-      icon: "🤝",
-      bubble: "Connect!",
-      bg: "from-[#a8edea] to-[#fed6e3]",
+      number: 3,
     },
     //     {
     //       title: "Employee UAN & KYC Management",
@@ -7471,23 +7556,17 @@ export const pastelCardsPFEsicRegBangalore = {
     {
       title: "DIY Approach",
       subtitle: `The DIY approach is slow and inefficient—taking 6–8 weeks with high rejection risk and separate inspections. You’ll spend over 60 hours coordinating tasks and managing two different portals, increasing the chance of delays and compliance errors`,
-      icon: "🎨",
-      bubble: "Create!",
-      bg: "from-[#a8e6cf] to-[#dcedc1]",
+     number:1
     },
     {
       title: "Two Separate Consultants",
       subtitle: `Hiring two separate consultants still causes inefficiency—4–5 weeks of sequential work, duplicate documentation, and double coordination. You’ll manage two invoices and risk getting conflicting advice from different consultants.`,
-      icon: "🌱",
-      bubble: "Grow!",
-      bg: "from-[#ffd3a5] to-[#fd9853]",
+    number:2
     },
     {
       title: "EPFdesk Integrated",
       subtitle: `With EPFdesk’s integrated approach, both EPF and ESIC registrations are completed in just 7 days through parallel processing. You get 100% approval rates, zero coordination hassles, and spend only 10 minutes on the initial call—one team, one invoice, one seamless process.`,
-      icon: "🤝",
-      bubble: "Connect!",
-      bg: "from-[#a8edea] to-[#fed6e3]",
+     number:3
     },
     //     {
     //       title: "Employee UAN & KYC Management",
@@ -7545,3 +7624,682 @@ We immediately start DSC procurement and documentation preparation.`,
 But if you’re interested, we also offer integrated compliance management for both.`,
   },
 ];
+
+export const sectionsPFConsultants = [
+  {
+    title: "What We Actually Do (Not Just Consult)",
+    description:
+      "We don’t give you a checklist. We log into your EPFO portal and do everything",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Onboarding (Day 1)",
+        content:
+          "EPF onboarding made effortless — we generate and link UANs, complete all KYC and bank verifications via the UMANG app, and ensure every new employee is EPF-compliant within 24 hours of joining.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Monthly Filing (Before 15th Every Month)",
+        content: (
+          <>
+            <p>
+              Timely and accurate monthly EPF filing — we generate precise ECRs,
+              verify challans, and complete submissions before the 15th each
+              month, ensuring zero penalties and full compliance with instant
+              filing confirmations.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Exit Management (Within 48 Hours)",
+        content:
+          "Swift and compliant exit management — we mark exits within 48 hours, handle PF transfers and withdrawals, and ensure smooth final settlements for a hassle-free employee offboarding experience.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Crisis Response (EPFO Inspections)",
+        content: (
+          <>
+            <p>
+              Expert EPFO crisis management — we respond to inspection notices
+              within 24 hours, prepare complete audit documentation, represent
+              you in hearings, and secure favorable resolutions with zero
+              penalties.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Employee Support (Grievance Shield)",
+        content: (
+          <>
+            <p>
+              End-to-end employee PF support — we manage all grievances through
+              the EPFiGMS portal, resolve account issues and delays, and provide
+              direct employee assistance so your HR team stays complaint-free.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "What This Actually Saves You",
+        content: (
+          <>
+            <p>
+              What This Actually Saves You — eliminate 40+ HR hours a month,
+              avoid ₹50,000+ in annual penalties, and remove every PF-related
+              headache. With EPFdesk, you gain guaranteed compliance, zero
+              employee complaints, and complete peace of mind — all at a
+              fraction of your current cost.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+
+export const sectionsPFRegsitration = [
+  {
+    title: "Our 7-Day EPF Registration Process",
+    // description:
+    //   "We don’t give you a checklist. We log into your EPFO portal and do everything",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Day 1-2: Documentation & DSC",
+        content:
+          "We kick off by collecting and verifying all essential establishment details and documents. Our team secures your Digital Signature Certificate (DSC) and prepares the EPF registration form with complete accuracy — ensuring a smooth start to your registration process",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Day 3-4: EPFO Submission",
+        content: (
+          <>
+            <p>
+              We create your establishment profile on the EPFO portal, upload
+              verified documents, and file Form 5A. Our team tracks the
+              application in real time to ensure smooth submission and zero
+              delays.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Day 5-6: EPFO Processing",
+        content:
+          "We closely monitor your EPFO application, respond to any department queries, and coordinate with officials. If an inspection is required, we handle the entire process on your behalf for seamless approval.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Day 7: Approval & Setup",
+        content: (
+          <>
+            <p>
+              Your establishment gets approved, LIN is activated, and your EPFO
+              access is set up on UMANG. We provide full login credentials, a
+              quick team briefing, and ensure you're ready to file your first
+              ECR — all within 7 days.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Employee Support (Grievance Shield)",
+        content: (
+          <>
+            <p>
+              End-to-end employee PF support — we manage all grievances through
+              the EPFiGMS portal, resolve account issues and delays, and provide
+              direct employee assistance so your HR team stays complaint-free.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "What This Actually Saves You",
+        content: (
+          <>
+            <p>
+              What This Actually Saves You — eliminate 40+ HR hours a month,
+              avoid ₹50,000+ in annual penalties, and remove every PF-related
+              headache. With EPFdesk, you gain guaranteed compliance, zero
+              employee complaints, and complete peace of mind — all at a
+              fraction of your current cost.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+
+export const sectionsESICConsultant = [
+  {
+    title: "What We Actually Do (Not Just Consult)",
+    // description:
+    //   "We don’t give you a checklist. We log into your EPFO portal and do everything",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Employee Registration (Day 1)",
+        content:
+          "We generate ESIC IP numbers within 24 hours, complete employee KYC and linking, ensuring every new hire is covered from Day 1—no delays, no compliance gaps.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Monthly Filing (Before 15th Every Month)",
+        content: (
+          <>
+            <p>
+              We handle complete ESIC monthly filing before the 15th—accurate
+              calculations, challan generation, payment, and
+              confirmation—ensuring zero delays or penalties.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Claims Management (We Handle, Not You)",
+        content:
+          "We manage the entire ESIC claims process—from document verification to reimbursement—so your HR never deals with employee claims or ESIC follow-ups.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Inspection Response (24-Hour Turnaround)",
+        content: (
+          <>
+            <p>
+              We handle ESIC inspections end-to-end—responding within 24 hours,
+              preparing documents, representing you, and closing cases with zero
+              penalties.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Exit Management",
+        content: (
+          <>
+            <p>
+              We manage employee exits instantly—updating ESIC records,
+              verifying final contributions, and ensuring every exit is fully
+              compliant and penalty-free.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "What This Actually Saves You",
+        content: (
+          <>
+            <p>
+              By switching to EPFdesk, you eliminate penalties, delays, and HR
+              effort—saving Lakhs annually while your HR team stays completely
+              free from ESIC hassles.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+
+export const sectionsESICRegistration = [
+  {
+    title: "Our 5-Day ESIC Registration Process",
+    // description:
+    //   "We don’t give you a checklist. We log into your EPFO portal and do everything",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Day 1: Documentation Collection",
+        content:
+          "We collect all necessary documents, verify every detail for accuracy, and determine your correct ESIC branch or sub-regional office. We also prepare and validate the employer registration form (Code 17) to ensure a smooth registration process.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Day 2: ESIC Submission",
+        content: (
+          <>
+            <p>
+              We submit the completed Code 17 form to the designated ESIC
+              branch, begin tracking the application status in real time, and
+              proactively prepare for any inspection or additional documentation
+              requests from ESIC authorities.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Day 3: Inspection (if required)",
+        content:
+          "We coordinate and manage the ESIC inspection process—arranging the visit, presenting all required documentation, addressing officer queries on the spot, and ensuring your establishment receives prompt inspection clearance.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Day 4: Registration Approval",
+        content: (
+          <>
+            <p>
+              We secure your 17-digit ESIC establishment code, set up your
+              online employer portal access, and prepare the complete employee
+              registration list—ensuring your organization is ready to onboard
+              employees under ESIC immediately.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Employee Registration & Setup",
+        content: (
+          <>
+            <p>
+              We complete full employee registration by generating IP numbers,
+              filing the first monthly return (if applicable), and setting up
+              online challan payments. You receive full portal access and a team
+              briefing—making your establishment fully ESIC-compliant within
+              just 5 days.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+
+export const pfESICConsultant = [
+  {
+    title: "What We Do (Everything, Together)",
+    // description:
+    //   "We don’t give you a checklist. We log into your EPFO portal and do everything",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Onboarding (EPF + ESIC Together)",
+        content:
+          "We register new employees under both EPF and ESIC on the same day—UAN creation, IP generation, and portal linking—all completed seamlessly. Your workforce becomes 100% compliant from Day 1 with a unified, hassle-free onboarding process.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Monthly Filing (Both Before 15th)",
+        content: (
+          <>
+            <p>
+              We file both EPF and ESIC returns before the 15th each
+              month—accurate ECRs, challans, and payments done together. You
+              receive one consolidated confirmation, ensuring zero penalties and
+              perfect synchronization across both compliances.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Exit Management (Coordinated)",
+        content:
+          "We coordinate EPF and ESIC exits simultaneously—marking employees in both portals, settling final contributions, and guiding on PF transfers or withdrawals. Result: clean exits with no compliance gaps or pending obligations.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Employee Support (One Team, All Queries)",
+        content: (
+          <>
+            <p>
+              We provide a single support line for all employee PF and ESIC
+              issues—UAN, IP, claims, transfers, or balances—so your HR team
+              never deals with compliance complaints again
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Inspection Response (Coordinated Defense)",
+        content: (
+          <>
+            <p>
+              We handle both EPF and ESIC inspections together—responding within
+              24 hours, coordinating documentation, and ensuring consistent,
+              penalty-free closure.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "What Integrated PF+ESIC Management Saves You",
+        content: (
+          <>
+            <p>
+              With EPFdesk’s integrated PF + ESIC management, you eliminate
+              duplicate work, delays, and penalties — saving 50+ HR hours a
+              month, ₹80,000+ in fines, and endless coordination headaches. One
+              dashboard, zero stress.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+
+export const pfESICRegistration = [
+  {
+    title: "Our 7-Day Integrated Registration Process",
+    // description:
+    //   "We don’t give you a checklist. We log into your EPFO portal and do everything",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Documentation & Preparation",
+        content:
+          "Streamlined document collection for both EPF and ESIC—handled together in a single session. We prepare all required forms, verify details, and ensure accuracy before submission.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Parallel Submissions",
+        content: (
+          <>
+            <p>
+              EPF and ESIC registrations are submitted simultaneously—no waiting
+              between the two. We create your EPF establishment, file required
+              forms, and submit ESIC Code 17 the same day, ensuring both
+              processes move forward in parallel for faster approval.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        color: "bg-white border-gray-300",
+        title: "Inspection & Processing",
+        content: (
+          <>
+            <p>
+              If an inspection is required, we coordinate a single, unified
+              inspection for both EPF and ESIC. Our team presents all
+              documentation together, addresses officer queries on the spot, and
+              monitors both applications closely to ensure quick, hassle-free
+              approvals.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Approval & Complete Setup",
+        content: (
+          <>
+            <p>
+              By Day 7, both EPF and ESIC setups are fully approved and active.
+              You receive establishment and ESIC codes, LIN activation, and
+              employee access through UMANG and ESIC portals. With both systems
+              ready, you can instantly start filings, generate UANs and IPs, and
+              onboard new hires seamlessly.{" "}
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+
+
+// Meta data starts here
+
+export const metadataMap = {
+  "pf-consultants-in-hyderabad": {
+    title: `PF Consultant in Hyderabad | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Hyderabad for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/hyderabad/pf-consultants-in-hyderabad",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Hyderabad for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/hyderabad/pf-consultants-in-hyderabad",
+    },
+  },
+  "pf-consultants-in-goa": {
+    title: `PF Consultant in Goa | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Goa for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/goa/pf-consultants-in-goa",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Goa for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/goa/pf-consultants-in-goa",
+    },
+  },
+  "pf-consultants-in-mumbai": {
+    title: `PF Consultant in Mumbai | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Mumbai for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/mumbai/pf-consultants-in-mumbai",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Mumbai for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/mumbai/pf-consultants-in-mumbai",
+    },
+  },
+  "pf-consultants-in-chennai": {
+    title: `PF Consultant in Chennai | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Chennai for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/chennai/pf-consultants-in-chennai",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Chennai for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/chennai/pf-consultants-in-chennai",
+    },
+  },
+  "pf-consultants-in-visakhapatnam": {
+    title: `PF Consultant in Visakhapatnam | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Visakhapatnam for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/visakhapatnam/pf-consultants-in-visakhapatnam",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Visakhapatnam for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/visakhapatnam/pf-consultants-in-visakhapatnam",
+    },
+  },
+  "pf-consultants-in-delhi": {
+    title: `PF Consultant in Delhi | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Delhi for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/delhi/pf-consultants-in-delhi",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Delhi for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/delhi/pf-consultants-in-delhi",
+    },
+  },
+  "pf-consultants-in-pune": {
+    title: `PF Consultant in Pune | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Pune for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/pune/pf-consultants-in-pune",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Pune for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/pune/pf-consultants-in-pune",
+    },
+  },
+  "pf-consultants-in-kolkata": {
+    title: `PF Consultant in Kolkata | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Kolkata for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/kolkata/pf-consultants-in-kolkata",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Kolkata for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/kolkata/pf-consultants-in-kolkata",
+    },
+  },
+  "pf-consultants-in-ahmedabad": {
+    title: `PF Consultant in Ahmedabad | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Ahmedabad for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/ahmedabad/pf-consultants-in-ahmedabad",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Ahmedabad for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/ahmedabad/pf-consultants-in-ahmedabad",
+    },
+  },
+  "pf-consultants-in-surat": {
+    title: `PF Consultant in Surat | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Surat for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/surat/pf-consultants-in-surat",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Surat for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/surat/pf-consultants-in-surat",
+    },
+  },
+  "pf-consultants-in-gurgaon": {
+    title: `PF Consultant in Gurgaon | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Gurgaon for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/gurgaon/pf-consultants-in-gurgaon",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Gurgaon for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/gurgaon/pf-consultants-in-gurgaon",
+    },
+  },
+  "pf-consultants-in-noida": {
+    title: `PF Consultant in Noida | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Noida for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/noida/pf-consultants-in-noida",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Noida for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/noida/pf-consultants-in-noida",
+    },
+  },
+  "pf-consultants-in-jaipur": {
+    title: `PF Consultant in Jaipur | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Jaipur for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/jaipur/pf-consultants-in-jaipur",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Jaipur for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/jaipur/pf-consultants-in-jaipur",
+    },
+  },
+  "pf-consultants-in-lucknow": {
+    title: `PF Consultant in Lucknow | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Lucknow for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/lucknow/pf-consultants-in-lucknow",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Lucknow for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/lucknow/pf-consultants-in-lucknow",
+    },
+  },
+  "pf-consultants-in-indore": {
+    title: `PF Consultant in Indore | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Indore for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/indore/pf-consultants-in-indore",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Indore for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/indore/pf-consultants-in-indore",
+    },
+  },
+  "pf-consultants-in-coimbatore": {
+    title: `PF Consultant in Coimbatore | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Coimbatore for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/coimbatore/pf-consultants-in-coimbatore",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Coimbatore for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/coimbatore/pf-consultants-in-coimbatore",
+    },
+  },
+  "pf-consultants-in-vadodara": {
+    title: `PF Consultant in Vadodara | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Vadodara for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/vadodara/pf-consultants-in-vadodara",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Vadodara for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/vadodara/pf-consultants-in-vadodara",
+    },
+  },
+  "pf-consultants-in-nagpur": {
+    title: `PF Consultant in Nagpur | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Nagpur for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/nagpur/pf-consultants-in-nagpur",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Nagpur for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/nagpur/pf-consultants-in-nagpur",
+    },
+  },
+  "pf-consultants-in-bhopal": {
+    title: `PF Consultant in Bhopal | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Bhopal for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/bhopal/pf-consultants-in-bhopal",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Bhopal for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/bhopal/pf-consultants-in-bhopal",
+    },
+  },
+  "pf-consultants-in-kanpur": {
+    title: `PF Consultant in Kanpur | EPF Registration, Returns & Inspections | Workforce`,
+    description:
+      "Leading PF consultants in Kanpur for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+    alternates: {
+      canonical: "https://epfdesk.com/epf/kanpur/pf-consultants-in-kanpur",
+    },
+    openGraph: {
+      title: `Leading PF consultants in Kanpur for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
+      url: "https://epfdesk.com/epf/kanpur/pf-consultants-in-kanpur",
+    },
+  }
+};

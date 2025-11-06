@@ -408,26 +408,86 @@ const footerData = {
   ],
 
   cities: [
-    { label: "Bengaluru", url: "/test" },
-    { label: "Mumbai", url: "/test" },
-    { label: "Delhi (NCR)", url: "/test" },
-    { label: "Chennai", url: "/test" },
-    { label: "Hyderabad", url: "/test" },
-    { label: "Pune", url: "/test" },
-    { label: "Kolkata", url: "/test" },
-    { label: "Ahmedabad", url: "/test" },
-    { label: "Surat", url: "/test" },
-    { label: "Gurgaon (Gurugram)", url: "/test" },
-    { label: "Noida", url: "/test" },
-    { label: "Jaipur", url: "/test" },
-    { label: "Lucknow", url: "/test" },
-    { label: "Indore", url: "/test" },
-    { label: "Coimbatore", url: "/test" },
-    { label: "Vadodara", url: "/test" },
-    { label: "Visakhapatnam", url: "/test" },
-    { label: "Nagpur", url: "/test" },
-    { label: "Bhopal", url: "/test" },
-    { label: "Kanpur", url: "/test" },
+    {
+      label: "Bangalore",
+      url: "https://epfdesk-next.vercel.app/epf/bangalore/pf-consultants-in-bangalore",
+    },
+    {
+      label: "Mumbai",
+      url: "https://epfdesk-next.vercel.app/epf/mumbai/pf-consultants-in-mumbai",
+    },
+    {
+      label: "Delhi (NCR)",
+      url: "https://epfdesk-next.vercel.app/epf/delhi/pf-consultants-in-delhi",
+    },
+    {
+      label: "Chennai",
+      url: "https://epfdesk-next.vercel.app/epf/chennai/pf-consultants-in-chennai",
+    },
+    {
+      label: "Hyderabad",
+      url: "https://epfdesk-next.vercel.app/epf/hyderabad/pf-consultants-in-hyderabad",
+    },
+    {
+      label: "Pune",
+      url: "https://epfdesk-next.vercel.app/epf/pune/pf-consultants-in-pune",
+    },
+    {
+      label: "Kolkata",
+      url: "https://epfdesk-next.vercel.app/epf/kolkata/pf-consultants-in-kolkata",
+    },
+    {
+      label: "Ahmedabad",
+      url: "https://epfdesk-next.vercel.app/epf/ahmedabad/pf-consultants-in-ahmedabad",
+    },
+    {
+      label: "Surat",
+      url: "https://epfdesk-next.vercel.app/epf/surat/pf-consultants-in-surat",
+    },
+    {
+      label: "Gurgaon (Gurugram)",
+      url: "https://epfdesk-next.vercel.app/epf/gurgaon/pf-consultants-in-gurgaon",
+    },
+    {
+      label: "Noida",
+      url: "https://epfdesk-next.vercel.app/epf/noida/pf-consultants-in-noida",
+    },
+    {
+      label: "Jaipur",
+      url: "https://epfdesk-next.vercel.app/epf/jaipur/pf-consultants-in-jaipur",
+    },
+    {
+      label: "Lucknow",
+      url: "https://epfdesk-next.vercel.app/epf/lucknow/pf-consultants-in-lucknow",
+    },
+    {
+      label: "Indore",
+      url: "https://epfdesk-next.vercel.app/epf/indore/pf-consultants-in-indore",
+    },
+    {
+      label: "Coimbatore",
+      url: "https://epfdesk-next.vercel.app/epf/coimbatore/pf-consultants-in-coimbatore",
+    },
+    {
+      label: "Vadodara",
+      url: "https://epfdesk-next.vercel.app/epf/vadodara/pf-consultants-in-vadodara",
+    },
+    {
+      label: "Visakhapatnam",
+      url: "https://epfdesk-next.vercel.app/epf/visakhapatnam/pf-consultants-in-visakhapatnam",
+    },
+    {
+      label: "Nagpur",
+      url: "https://epfdesk-next.vercel.app/epf/nagpur/pf-consultants-in-nagpur",
+    },
+    {
+      label: "Bhopal",
+      url: "https://epfdesk-next.vercel.app/epf/bhopal/pf-consultants-in-bhopal",
+    },
+    {
+      label: "Kanpur",
+      url: "https://epfdesk-next.vercel.app/epf/kanpur/pf-consultants-in-kanpur",
+    },
   ],
   offerings: [
     {
@@ -484,9 +544,9 @@ const footerData = {
     { label: "EPFdesk", url: "/epfdesk" },
     { label: "EPFO", url: "/epfManagement" },
     { label: "ESIC", url: "/esic" },
-    { label: "POSH", url: "/posh" },
-    { label: "LWF", url: "/lwf" },
-    { label: "PT", url: "/pt" },
+    // { label: "POSH", url: "/posh" },
+    // { label: "LWF", url: "/lwf" },
+    // { label: "PT", url: "/pt" },
     { label: "About Us", url: "/aboutUs" },
   ],
 };
@@ -544,7 +604,9 @@ export default function Footer() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
               {/* Offerings (external URLs) */}
               <div>
-                <h4 className="text-sm font-semibold mb-4 uppercase">Locations</h4>
+                <h4 className="text-sm font-semibold mb-4 uppercase">
+                  Locations
+                </h4>
                 <ul className="space-y-2 text-sm text-[#374151]">
                   {footerData.cities.map(({ label, url }) => (
                     <li key={label} className="leading-6">
@@ -562,7 +624,9 @@ export default function Footer() {
               </div>
 
               <div>
-                <h4 className="text-sm font-semibold mb-4 uppercase">Industries</h4>
+                <h4 className="text-sm font-semibold mb-4 uppercase">
+                  Industries
+                </h4>
                 <ul className="space-y-2 text-sm text-[#374151]">
                   {footerData.offerings.map(({ label, url }) => (
                     <li key={label} className="leading-6">

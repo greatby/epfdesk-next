@@ -3,11 +3,13 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import PerformanceCard from "@/components/PerformanceCard";
 import { PerformanceSection } from "@/components/PerformanceSection";
 import React from "react";
-import { largeCardsPFEsicBangalore, pastelCardsPFEsicBangalore, PFEsicBangaloreCardData, pfEsicManagementFaqBangalore } from "@/utils/data";
+import { largeCardsPFEsicBangalore, pastelCardsPFEsicBangalore, PFEsicBangaloreCardData, pfESICConsultant, pfEsicManagementFaqBangalore } from "@/utils/data";
 import LargeCardSlider from "@/components/largeCards";
 import PastelCardSlider from "@/components/pastelCardSlider";
 import FaqAccordion from "@/components/faqAccordian";
+import CodeOfConduct from "@/components/CodeOfConduct"
 import Script from "next/script";
+import ThreeStepSection from "@/components/ThreeStepSection";
 export const metadata = {
   title: "PF & ESIC Consultant Bangalore | Integrated Compliance by EPFdesk",
   description:
@@ -90,7 +92,8 @@ const schemaData = {
     },
   };
     const data = {
-        title: "PF ESIC Consultant Bangalore: One Team, Both Compliances, Zero Headaches",
+        title: "PF ESIC Consultant Bangalore",
+        subTitle:" One Team, Both Compliances, Zero Headaches",
         description:"Stop Managing Two Consultants. We Handle EPF + ESIC Together."
     }
   return (
@@ -104,15 +107,17 @@ const schemaData = {
         <PerformanceSection data={data} />
       </FadeInWhenVisible>
       <FadeInWhenVisible>
-        <PerformanceCard slug={"pf-esic-consultant-bangalore"} data={PFEsicBangaloreCardData} />
+        {/* <PerformanceCard slug={"pf-esic-consultant-bangalore"} data={PFEsicBangaloreCardData} /> */}
+         <CodeOfConduct sections={pfESICConsultant}/>
       </FadeInWhenVisible>
 
       <FadeInWhenVisible>
-        <FadeInWhenVisible>
+        {/* <FadeInWhenVisible>
           <LargeCardSlider cardsData={largeCardsPFEsicBangalore} />
-        </FadeInWhenVisible>
+        </FadeInWhenVisible> */}
         <FadeInWhenVisible>
-          <PastelCardSlider cardsData={pastelCardsPFEsicBangalore} />
+          {/* <PastelCardSlider cardsData={pastelCardsPFEsicBangalore} /> */}
+          <ThreeStepSection cardsData={pastelCardsPFEsicBangalore} />
         </FadeInWhenVisible>
       </FadeInWhenVisible>
 

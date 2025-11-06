@@ -17,12 +17,16 @@ import {
   largeCardsEsicRegistrationBangalore,
   pastelCardsEsicRegistrationBangalore,
   esicRegistrationFaqBangalore,
+  sectionsESICConsultant,
+  sectionsESICRegistration,
 } from "@/utils/data";
 import { PerformanceSection } from "@/components/PerformanceSection";
 import PerformanceCard from "@/components/PerformanceCard";
 import LargeCardSlider from "@/components/largeCards";
 import PastelCardSlider from "@/components/pastelCardSlider";
+import CodeOfConduct from "@/components/CodeOfConduct";
 import Script from "next/script";
+import ThreeStepSection from "@/components/ThreeStepSection";
 
 export default async function EPFPage({ params }) {
   const { segments = [] } = await params;
@@ -192,15 +196,17 @@ export default async function EPFPage({ params }) {
             <PerformanceSection data={data} />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <PerformanceCard slug={slug} data={esicBangaloreCardData} />
+            {/* <PerformanceCard slug={slug} data={esicBangaloreCardData} /> */}
+            <CodeOfConduct sections={sectionsESICConsultant} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
               <LargeCardSlider cardsData={largeCardsEsicBangalore} />
-            </FadeInWhenVisible>
+            </FadeInWhenVisible> */}
             <FadeInWhenVisible>
-              <PastelCardSlider cardsData={pastelCardsEsicBangalore} />
+              {/* <PastelCardSlider cardsData={pastelCardsEsicBangalore} /> */}
+              <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
             </FadeInWhenVisible>
             {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
                  Workforce: End-to-End EPF Management for Modern Businesses
@@ -216,7 +222,7 @@ export default async function EPFPage({ params }) {
     } else if (slug === "esic-registration-bangalore") {
       return (
         <>
-        <Script
+          <Script
             id="schema-pf-esic"
             type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -273,20 +279,24 @@ export default async function EPFPage({ params }) {
             <PerformanceSection data={data} />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <PerformanceCard
+            {/* <PerformanceCard
               slug={slug}
               data={esicBangaloreRegistrationCardData}
-            />
+            /> */}
+            <CodeOfConduct sections={sectionsESICRegistration} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
               <LargeCardSlider
                 cardsData={largeCardsEsicRegistrationBangalore}
               />
-            </FadeInWhenVisible>
+            </FadeInWhenVisible> */}
             <FadeInWhenVisible>
-              <PastelCardSlider
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEsicRegistrationBangalore}
+              /> */}
+              <ThreeStepSection
                 cardsData={pastelCardsEsicRegistrationBangalore}
               />
             </FadeInWhenVisible>

@@ -207,8 +207,8 @@ export default function FaqAccordion({ faqs, title = "Frequently Asked Questions
   };
 
   return (
-    <section className="w-full max-w-3xl mx-auto px-4 py-16 rounded-2xl">
-      <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-[#001f1f]">
+    <section className="w-full max-w-2xl mx-auto px-4 py-16 rounded-2xl">
+      <h2 className="text-3xl md:text-[2.6rem] tracking-[-.024em] font-bold mb-12 text-center text-[#001f1f]">
         {title}
       </h2>
 
@@ -233,7 +233,7 @@ export default function FaqAccordion({ faqs, title = "Frequently Asked Questions
                 aria-expanded={isOpen}
                 aria-controls={`faq-${index}`}
               >
-                <span className="text-lg">{faq.question}</span>
+                <span className="text-[1rem] font-[500] tracking-[-.024em]">{faq.question}</span>
 
                 {/* ---- Custom Plus-to-Minus Icon (pure CSS) ---- */}
                 <span
@@ -243,12 +243,12 @@ export default function FaqAccordion({ faqs, title = "Frequently Asked Questions
                 >
                   {/* horizontal bar (always visible) */}
                   <span
-                    className={`absolute block w-4 h-[2px] bg-current transition-colors duration-300`}
+                    className={`absolute block w-3 h-[2px] bg-current transition-colors duration-300`}
                     aria-hidden="true"
                   />
                   {/* vertical bar (scales to 0 when open) */}
                   <span
-                    className={`absolute block h-4 w-[2px] bg-current transform transition-transform duration-300 origin-center ${
+                    className={`absolute block h-3 w-[2px] bg-current transform transition-transform duration-300 origin-center ${
                       isOpen ? "scale-y-0" : "scale-y-100"
                     }`}
                     aria-hidden="true"
