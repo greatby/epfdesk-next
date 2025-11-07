@@ -169,11 +169,11 @@ export default async function EPFPage({ params }) {
       );
 
     const slugMap = {
+      // PF Consultants
       "pf-consultants-in-bangalore": "pfBangalore",
       "epf-registration-bangalore": "pfRegistrationBangalore",
       "esic-consultants-bangalore": "esicBangalore",
       "pf-consultants-in-hyderabad": "pfHyderabad",
-
       "pf-consultants-in-mumbai": "pfMumbai",
       "pf-consultants-in-chennai": "pfChennai",
       "pf-consultants-in-visakhapatnam": "pfVisakhapatnam",
@@ -192,6 +192,28 @@ export default async function EPFPage({ params }) {
       "pf-consultants-in-nagpur": "pfNagpur",
       "pf-consultants-in-bhopal": "pfBhopal",
       "pf-consultants-in-kanpur": "pfKanpur",
+      // EPF Registration
+      "epf-registration-bangalore": "pfRegistrationBangalore",
+      "epf-registration-hyderabad": "pfRegistrationHyderabad",
+      "epf-registration-goa": "pfRegistrationGoa",
+      "epf-registration-mumbai": "pfRegistrationMumbai",
+      "epf-registration-chennai": "pfRegistrationChennai",
+      "epf-registration-visakhapatnam": "pfRegistrationVisakhapatnam",
+      "epf-registration-delhi": "pfRegistrationDelhi",
+      "epf-registration-pune": "pfRegistrationPune",
+      "epf-registration-kolkata": "pfRegistrationKolkata",
+      "epf-registration-ahmedabad": "pfRegistrationAhmedabad",
+      "epf-registration-surat": "pfRegistrationSurat",
+      "epf-registration-gurgaon": "pfRegistrationGurgaon",
+      "epf-registration-noida": "pfRegistrationNoida",
+      "epf-registration-jaipur": "pfRegistrationJaipur",
+      "epf-registration-lucknow": "pfRegistrationLucknow",
+      "epf-registration-indore": "pfRegistrationIndore",
+      "epf-registration-coimbatore": "pfRegistrationCoimbatore",
+      "epf-registration-vadodara": "pfRegistrationVadodara",
+      "epf-registration-nagpur": "pfRegistrationNagpur",
+      "epf-registration-bhopal": "pfRegistrationBhopal",
+      "epf-registration-kanpur": "pfRegistrationKanpur",
     };
 
     const key = slugMap[slug];
@@ -308,103 +330,6 @@ export default async function EPFPage({ params }) {
           <SingleQuote />
           <FadeInWhenVisible>
             <FaqAccordion faqs={epfManagementFaqBangalore} />
-          </FadeInWhenVisible>
-        </>
-      );
-    } else if (slug === "epf-registration-bangalore") {
-      return (
-        <>
-          <Script
-            id="schema-pf-esic"
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "ProfessionalService",
-                name: "EPFdesk - PF Registration Bangalore",
-                image: "https://epfdesk.com/images/logo.jpg",
-                url: "https://epfdesk.com/epf/bangalore/epf-registration-bangalore/",
-                telephone: "+91-9945933333",
-                address: {
-                  "@type": "PostalAddress",
-                  streetAddress: "Church Street",
-                  addressLocality: "Bangalore",
-                  addressRegion: "Karnataka",
-                  postalCode: "560001",
-                  addressCountry: "IN",
-                },
-                geo: {
-                  "@type": "GeoCoordinates",
-                  latitude: 12.9716,
-                  longitude: 77.5946,
-                },
-                openingHoursSpecification: {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                  ],
-                  opens: "09:00",
-                  closes: "18:00",
-                },
-                priceRange: "₹₹",
-                areaServed: [
-                  { "@type": "City", name: "Bangalore" },
-                  { "@type": "Place", name: "Peenya" },
-                  { "@type": "Place", name: "Whitefield" },
-                  { "@type": "Place", name: "Electronic City" },
-                  { "@type": "Place", name: "Koramangala" },
-                ],
-                aggregateRating: {
-                  "@type": "AggregateRating",
-                  ratingValue: "4.9",
-                  reviewCount: "47",
-                },
-              }),
-            }}
-          />
-          <FadeInWhenVisible>
-            {/* <HeroSection
-            slide={heroSlides[4]}
-            city={city}
-            slug={slug}
-            data={data}
-          /> */}
-            <PerformanceSection data={data} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            {/* <PerformanceCard
-              slug={slug}
-              data={epfBangaloreRegistrationCardData}
-            /> */}
-            <CodeOfConduct sections={sectionsPFRegsitration} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            {/* <FadeInWhenVisible>
-              <LargeCardSlider
-                cardsData={largeCardsEpfoBangaloreRegistration}
-              />
-            </FadeInWhenVisible> */}
-            <FadeInWhenVisible>
-              {/* <PastelCardSlider
-                cardsData={pastelCardsEpfoBangaloreRegistration}
-              /> */}
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangaloreRegistration}
-              />
-            </FadeInWhenVisible>
-            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
-            Workforce: End-to-End EPF Management for Modern Businesses
-          </h2>
-          <StickyScrollSections items={epfManagementBangalore} /> */}
-          </FadeInWhenVisible>
-
-          <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
           </FadeInWhenVisible>
         </>
       );
@@ -1830,6 +1755,1946 @@ export default async function EPFPage({ params }) {
 
           <FadeInWhenVisible>
             <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-bangalore") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration Bangalore",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/bangalore/epf-registration-bangalore/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-hyderabad") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration Hyderabad",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/hyderabad/epf-registration-hyderabad/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-mumbai") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration Mumbai",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/mumbai/epf-registration-mumbai/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-delhi") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration Delhi",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/delhi/epf-registration-delhi/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-chennai") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration Chennai",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/chennai/epf-registration-chennai/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-pune") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration Pune",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/pune/epf-registration-pune/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-kolkata") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration Kolkata",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/kolkata/epf-registration-kolkata/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-ahmedabad") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration Ahmedabad",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/ahmedabad/epf-registration-ahmedabad/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-surat") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration Surat",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/surat/epf-registration-surat/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-gurgaon") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration gurgaon",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/gurgaon/epf-registration-gurgaon/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-noida") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration Noida",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/noida/epf-registration-noida/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-jaipur") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration Jaipur",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/jaipur/epf-registration-jaipur/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-lucknow") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration Lucknow",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/lucknow/epf-registration-lucknow/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-indore") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration Indore",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/indore/epf-registration-indore/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-coimbatore") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration Coimbatore",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/coimbatore/epf-registration-coimbatore/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-vadodara") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration Vadodara",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/vadodara/epf-registration-vadodara/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-visakhapatnam") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration Visakhapatnam",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/visakhapatnam/epf-registration-visakhapatnam/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-nagpur") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration Nagpur",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/nagpur/epf-registration-nagpur/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-bhopal") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration Bhopal",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/bhopal/epf-registration-bhopal/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "epf-registration-kanpur") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Registration Kanpur",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/kanpur/epf-registration-kanpur/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            {/* <HeroSection
+            slide={heroSlides[4]}
+            city={city}
+            slug={slug}
+            data={data}
+          /> */}
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <PerformanceCard
+              slug={slug}
+              data={epfBangaloreRegistrationCardData}
+            /> */}
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
+              <LargeCardSlider
+                cardsData={largeCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible> */}
+            <FadeInWhenVisible>
+              {/* <PastelCardSlider
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              /> */}
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
+            Workforce: End-to-End EPF Management for Modern Businesses
+          </h2>
+          <StickyScrollSections items={epfManagementBangalore} /> */}
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
           </FadeInWhenVisible>
         </>
       );

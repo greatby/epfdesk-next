@@ -6065,252 +6065,405 @@ export const cityData = {
       contact: "bangalore@pfconsultants.in",
     },
   },
-  hyderabad: {
+ hyderabad: {
     pfHyderabad: {
       title: "EPF Consultants Hyderabad",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    pfRegistrationHyderabad: {
+      title: "EPF Registration Hyderabad",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "hyderabad@pfconsultants.in",
     },
     esic: {
-      title: "ESIC Consultants in Hyderabad",
-      description:
-        "Reliable ESIC registration and compliance support in Hyderabad.",
+      title: "ESIC Consultants Hyderabad",
+      description: "Reliable ESIC registration and compliance support in Hyderabad.",
       contact: "hyderabad@esicconsultants.in",
     },
   },
+
   goa: {
     pfGoa: {
-       title: "EPF Consultants Goa",
+      title: "EPF Consultants Goa",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "goa@pfconsultants.in",
+    },
+    pfRegistrationGoa: {
+      title: "EPF Registration Goa",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "goa@pfconsultants.in",
     },
     esic: {
-      title: "ESIC Consultants in Hyderabad",
-      description:
-        "Reliable ESIC registration and compliance support in Hyderabad.",
-      contact: "hyderabad@esicconsultants.in",
+      title: "ESIC Consultants Goa",
+      description: "Reliable ESIC registration and compliance support in Goa.",
+      contact: "goa@esicconsultants.in",
     },
   },
+
   mumbai: {
     pfMumbai: {
-       title: "EPF Consultants Mumbai",
+      title: "EPF Consultants Mumbai",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "mumbai@pfconsultants.in",
+    },
+    pfRegistrationMumbai: {
+      title: "EPF Registration Mumbai",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "mumbai@pfconsultants.in",
     },
     esic: {
-      title: "ESIC Consultants in Hyderabad",
-      description:
-        "Reliable ESIC registration and compliance support in Hyderabad.",
-      contact: "hyderabad@esicconsultants.in",
+      title: "ESIC Consultants Mumbai",
+      description: "Reliable ESIC registration and compliance support in Mumbai.",
+      contact: "mumbai@esicconsultants.in",
     },
   },
+
   chennai: {
     pfChennai: {
       title: "EPF Consultants Chennai",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "chennai@pfconsultants.in",
+    },
+    pfRegistrationChennai: {
+      title: "EPF Registration Chennai",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "chennai@pfconsultants.in",
     },
     esic: {
-      title: "ESIC Consultants in Hyderabad",
-      description:
-        "Reliable ESIC registration and compliance support in Hyderabad.",
-      contact: "hyderabad@esicconsultants.in",
+      title: "ESIC Consultants Chennai",
+      description: "Reliable ESIC registration and compliance support in Chennai.",
+      contact: "chennai@esicconsultants.in",
     },
   },
+
   visakhapatnam: {
     pfVisakhapatnam: {
       title: "EPF Consultants Visakhapatnam",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "visakhapatnam@pfconsultants.in",
+    },
+    pfRegistrationVisakhapatnam: {
+      title: "EPF Registration Visakhapatnam",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "visakhapatnam@pfconsultants.in",
     },
     esic: {
-      title: "ESIC Consultants in Hyderabad",
-      description:
-        "Reliable ESIC registration and compliance support in Hyderabad.",
-      contact: "hyderabad@esicconsultants.in",
+      title: "ESIC Consultants Visakhapatnam",
+      description: "Reliable ESIC registration and compliance support in Visakhapatnam.",
+      contact: "visakhapatnam@esicconsultants.in",
     },
   },
-   delhi: {
+
+  delhi: {
     pfDelhi: {
       title: "EPF Consultants Delhi",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "delhi@pfconsultants.in",
+    },
+    pfRegistrationDelhi: {
+      title: "EPF Registration Delhi",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "delhi@pfconsultants.in",
     },
     esic: {
-      title: "ESIC Consultants in Hyderabad",
-      description:
-        "Reliable ESIC registration and compliance support in Hyderabad.",
-      contact: "hyderabad@esicconsultants.in",
+      title: "ESIC Consultants Delhi",
+      description: "Reliable ESIC registration and compliance support in Delhi.",
+      contact: "delhi@esicconsultants.in",
     },
   },
+
   pune: {
-    "pfPune": {
-      "title": "EPF Consultants Pune",
-      "subTitle": "We log into your portal and do it for you",
-      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    pfPune: {
+      title: "EPF Consultants Pune",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "pune@pfconsultants.in",
     },
-    "esic": {
-      "title": "ESIC Consultants in Hyderabad",
-      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
-      "contact": "hyderabad@esicconsultants.in"
-    }
+    pfRegistrationPune: {
+      title: "EPF Registration Pune",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "pune@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants Pune",
+      description: "Reliable ESIC registration and compliance support in Pune.",
+      contact: "pune@esicconsultants.in",
+    },
   },
+
   kolkata: {
-    "pfKolkata": {
-      "title": "EPF Consultants Kolkata",
-      "subTitle": "We log into your portal and do it for you",
-      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    pfKolkata: {
+      title: "EPF Consultants Kolkata",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "kolkata@pfconsultants.in",
     },
-    "esic": {
-      "title": "ESIC Consultants in Hyderabad",
-      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
-      "contact": "hyderabad@esicconsultants.in"
-    }
+    pfRegistrationKolkata: {
+      title: "EPF Registration Kolkata",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "kolkata@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants Kolkata",
+      description: "Reliable ESIC registration and compliance support in Kolkata.",
+      contact: "kolkata@esicconsultants.in",
+    },
   },
+
   ahmedabad: {
-    "pfAhmedabad": {
-      "title": "EPF Consultants Ahmedabad",
-      "subTitle": "We log into your portal and do it for you",
-      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    pfAhmedabad: {
+      title: "EPF Consultants Ahmedabad",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "ahmedabad@pfconsultants.in",
     },
-    "esic": {
-      "title": "ESIC Consultants in Hyderabad",
-      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
-      "contact": "hyderabad@esicconsultants.in"
-    }
+    pfRegistrationAhmedabad: {
+      title: "EPF Registration Ahmedabad",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "ahmedabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants Ahmedabad",
+      description: "Reliable ESIC registration and compliance support in Ahmedabad.",
+      contact: "ahmedabad@esicconsultants.in",
+    },
   },
+
   surat: {
-    "pfSurat": {
-      "title": "EPF Consultants Surat",
-      "subTitle": "We log into your portal and do it for you",
-      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    pfSurat: {
+      title: "EPF Consultants Surat",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "surat@pfconsultants.in",
     },
-    "esic": {
-      "title": "ESIC Consultants in Hyderabad",
-      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
-      "contact": "hyderabad@esicconsultants.in"
-    }
+    pfRegistrationSurat: {
+      title: "EPF Registration Surat",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "surat@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants Surat",
+      description: "Reliable ESIC registration and compliance support in Surat.",
+      contact: "surat@esicconsultants.in",
+    },
   },
+
   gurgaon: {
-    "pfGurgaon": {
-      "title": "EPF Consultants Gurgaon",
-      "subTitle": "We log into your portal and do it for you",
-      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    pfGurgaon: {
+      title: "EPF Consultants Gurgaon",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "gurgaon@pfconsultants.in",
     },
-    "esic": {
-      "title": "ESIC Consultants in Hyderabad",
-      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
-      "contact": "hyderabad@esicconsultants.in"
-    }
+    pfRegistrationGurgaon: {
+      title: "EPF Registration Gurgaon",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "gurgaon@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants Gurgaon",
+      description: "Reliable ESIC registration and compliance support in Gurgaon.",
+      contact: "gurgaon@esicconsultants.in",
+    },
   },
+
   noida: {
-    "pfNoida": {
-      "title": "EPF Consultants Noida",
-      "subTitle": "We log into your portal and do it for you",
-      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    pfNoida: {
+      title: "EPF Consultants Noida",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "noida@pfconsultants.in",
     },
-    "esic": {
-      "title": "ESIC Consultants in Hyderabad",
-      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
-      "contact": "hyderabad@esicconsultants.in"
-    }
+    pfRegistrationNoida: {
+      title: "EPF Registration Noida",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "noida@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants Noida",
+      description: "Reliable ESIC registration and compliance support in Noida.",
+      contact: "noida@esicconsultants.in",
+    },
   },
+
   jaipur: {
-    "pfJaipur": {
-      "title": "EPF Consultants Jaipur",
-      "subTitle": "We log into your portal and do it for you",
-      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    pfJaipur: {
+      title: "EPF Consultants Jaipur",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "jaipur@pfconsultants.in",
     },
-    "esic": {
-      "title": "ESIC Consultants in Hyderabad",
-      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
-      "contact": "hyderabad@esicconsultants.in"
-    }
+    pfRegistrationJaipur: {
+      title: "EPF Registration Jaipur",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "jaipur@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants Jaipur",
+      description: "Reliable ESIC registration and compliance support in Jaipur.",
+      contact: "jaipur@esicconsultants.in",
+    },
   },
+
   lucknow: {
-    "pfLucknow": {
-      "title": "EPF Consultants Lucknow",
-      "subTitle": "We log into your portal and do it for you",
-      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    pfLucknow: {
+      title: "EPF Consultants Lucknow",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "lucknow@pfconsultants.in",
     },
-    "esic": {
-      "title": "ESIC Consultants in Hyderabad",
-      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
-      "contact": "hyderabad@esicconsultants.in"
-    }
+    pfRegistrationLucknow: {
+      title: "EPF Registration Lucknow",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "lucknow@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants Lucknow",
+      description: "Reliable ESIC registration and compliance support in Lucknow.",
+      contact: "lucknow@esicconsultants.in",
+    },
   },
+
   indore: {
-    "pfIndore": {
-      "title": "EPF Consultants Indore",
-      "subTitle": "We log into your portal and do it for you",
-      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    pfIndore: {
+      title: "EPF Consultants Indore",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "indore@pfconsultants.in",
     },
-    "esic": {
-      "title": "ESIC Consultants in Hyderabad",
-      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
-      "contact": "hyderabad@esicconsultants.in"
-    }
+    pfRegistrationIndore: {
+      title: "EPF Registration Indore",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "indore@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants Indore",
+      description: "Reliable ESIC registration and compliance support in Indore.",
+      contact: "indore@esicconsultants.in",
+    },
   },
+
   coimbatore: {
-    "pfCoimbatore": {
-      "title": "EPF Consultants Coimbatore",
-      "subTitle": "We log into your portal and do it for you",
-      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    pfCoimbatore: {
+      title: "EPF Consultants Coimbatore",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "coimbatore@pfconsultants.in",
     },
-    "esic": {
-      "title": "ESIC Consultants in Hyderabad",
-      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
-      "contact": "hyderabad@esicconsultants.in"
-    }
+    pfRegistrationCoimbatore: {
+      title: "EPF Registration Coimbatore",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "coimbatore@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants Coimbatore",
+      description: "Reliable ESIC registration and compliance support in Coimbatore.",
+      contact: "coimbatore@esicconsultants.in",
+    },
   },
+
   vadodara: {
-    "pfVadodara": {
-      "title": "EPF Consultants Vadodara",
-      "subTitle": "We log into your portal and do it for you",
-      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    pfVadodara: {
+      title: "EPF Consultants Vadodara",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "vadodara@pfconsultants.in",
     },
-    "esic": {
-      "title": "ESIC Consultants in Hyderabad",
-      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
-      "contact": "hyderabad@esicconsultants.in"
-    }
+    pfRegistrationVadodara: {
+      title: "EPF Registration Vadodara",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "vadodara@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants Vadodara",
+      description: "Reliable ESIC registration and compliance support in Vadodara.",
+      contact: "vadodara@esicconsultants.in",
+    },
   },
+
   nagpur: {
-    "pfNagpur": {
-      "title": "EPF Consultants Nagpur",
-      "subTitle": "We log into your portal and do it for you",
-      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    pfNagpur: {
+      title: "EPF Consultants Nagpur",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "nagpur@pfconsultants.in",
     },
-    "esic": {
-      "title": "ESIC Consultants in Hyderabad",
-      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
-      "contact": "hyderabad@esicconsultants.in"
-    }
+    pfRegistrationNagpur: {
+      title: "EPF Registration Nagpur",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "nagpur@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants Nagpur",
+      description: "Reliable ESIC registration and compliance support in Nagpur.",
+      contact: "nagpur@esicconsultants.in",
+    },
   },
+
   bhopal: {
-    "pfBhopal": {
-      "title": "EPF Consultants Bhopal",
-      "subTitle": "We log into your portal and do it for you",
-      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    pfBhopal: {
+      title: "EPF Consultants Bhopal",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "bhopal@pfconsultants.in",
     },
-    "esic": {
-      "title": "ESIC Consultants in Hyderabad",
-      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
-      "contact": "hyderabad@esicconsultants.in"
-    }
+    pfRegistrationBhopal: {
+      title: "EPF Registration Bhopal",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "bhopal@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants Bhopal",
+      description: "Reliable ESIC registration and compliance support in Bhopal.",
+      contact: "bhopal@esicconsultants.in",
+    },
   },
+
   kanpur: {
-    "pfKanpur": {
-      "title": "EPF Consultants Kanpur",
-      "subTitle": "We log into your portal and do it for you",
-      "description": "Zero Penalties. Zero Stress. Zero Defaults Since 2023."
+    pfKanpur: {
+      title: "EPF Consultants Kanpur",
+      subTitle: "We log into your portal and do it for you",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "kanpur@pfconsultants.in",
     },
-    "esic": {
-      "title": "ESIC Consultants in Hyderabad",
-      "description": "Reliable ESIC registration and compliance support in Hyderabad.",
-      "contact": "hyderabad@esicconsultants.in"
-    }
-  }
+    pfRegistrationKanpur: {
+      title: "EPF Registration Kanpur",
+      subTitle: "We get you registered in 7 days",
+      description: "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
+      contact: "kanpur@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants Kanpur",
+      description: "Reliable ESIC registration and compliance support in Kanpur.",
+      contact: "kanpur@esicconsultants.in",
+    },
+  },
   
 };
 
