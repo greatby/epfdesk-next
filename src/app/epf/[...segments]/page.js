@@ -22,6 +22,12 @@ import {
   sectionsPFConsultants,
   sectionsPFRegsitration,
   metadataMap,
+  sectionsPFMonthlyFiling,
+  pastelCardsEpfoBangaloreMonthlyFiling,
+  epfManagementFaqBangaloreMonthlyFiling,
+  sectionsPFCompliance,
+  pastelCardsEpfoBangalorePFCompliance,
+  epfManagementFaqBangalorePFCompliance,
 } from "@/utils/data";
 import LargeCardSlider from "@/components/largeCards";
 import PastelCardSlider from "@/components/pastelCardSlider";
@@ -171,7 +177,6 @@ export default async function EPFPage({ params }) {
     const slugMap = {
       // PF Consultants
       "pf-consultants-in-bangalore": "pfBangalore",
-      "epf-registration-bangalore": "pfRegistrationBangalore",
       "esic-consultants-bangalore": "esicBangalore",
       "pf-consultants-in-hyderabad": "pfHyderabad",
       "pf-consultants-in-mumbai": "pfMumbai",
@@ -214,6 +219,10 @@ export default async function EPFPage({ params }) {
       "epf-registration-nagpur": "pfRegistrationNagpur",
       "epf-registration-bhopal": "pfRegistrationBhopal",
       "epf-registration-kanpur": "pfRegistrationKanpur",
+      // Monthly Filing
+      "pf-monthly-filing-in-bangalore": "pfMonthlyFilingBangalore",
+      // PF Compliance
+      "pf-compliance-in-bangalore":"pfComplianceBangalore"
     };
 
     const key = slugMap[slug];
@@ -281,54 +290,33 @@ export default async function EPFPage({ params }) {
               }),
             }}
           />
-
-          <FadeInWhenVisible>
-            {/* <HeroSection
-            slide={heroSlides[4]}
-            city={city}
-            slug={slug}
-            data={data}
-          /> */}
+          {/* <FadeInWhenVisible>
             <PerformanceSection data={data} />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            {/* <PerformanceCard slug={slug} data={epfBangaloreCardData} /> */}
             <CodeOfConduct sections={sectionsPFConsultants} />
           </FadeInWhenVisible>
-          {/* <SliderCards /> */}
-          {/* <FadeInWhenVisible>
-          <div>
-            <h2 className="text-3xl sm:text-5xl mt-12 font-bold text-center">{data.title}</h2>
-            <p className="max-w-4xl mx-auto mt-8 text-center px-4 text-[1.2rem] text-gray-600 font-bold">
-              {data.description}
-            </p>
-            <LatticeTabs cards={epfoCards} />
-          </div>
-        </FadeInWhenVisible> */}
-
-          {/* <FadeInWhenVisible>
-          <EPFServicesSection />
-        </FadeInWhenVisible> */}
           <FadeInWhenVisible>
-            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
-            PF Consultants in Bangalore — End-to-End EPF Compliance by Workforce
-          </h2> */}
-
-            {/* <FadeInWhenVisible>
-              <LargeCardSlider cardsData={largeCardsEpfoBangalore} />
-            </FadeInWhenVisible> */}
             <FadeInWhenVisible>
-              {/* <PastelCardSlider cardsData={pastelCardsEpfoBangalore} /> */}
               <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
             </FadeInWhenVisible>
-            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
-            Workforce: End-to-End EPF Management for Modern Businesses
-          </h2>
-          <StickyScrollSections items={epfManagementBangalore} /> */}
           </FadeInWhenVisible>
           <TestimonialCarousel />
           <SingleQuote />
           <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalore} />
+          </FadeInWhenVisible> */}
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFConsultants} />
+          </FadeInWhenVisible>
+           <FadeInWhenVisible>
+              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+            </FadeInWhenVisible>
+             <FadeInWhenVisible>
             <FaqAccordion faqs={epfManagementFaqBangalore} />
           </FadeInWhenVisible>
         </>
@@ -1814,43 +1802,41 @@ export default async function EPFPage({ params }) {
               }),
             }}
           />
-          <FadeInWhenVisible>
-            {/* <HeroSection
-            slide={heroSlides[4]}
-            city={city}
-            slug={slug}
-            data={data}
-          /> */}
+          {/* <FadeInWhenVisible>
             <PerformanceSection data={data} />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            {/* <PerformanceCard
-              slug={slug}
-              data={epfBangaloreRegistrationCardData}
-            /> */}
+           
             <CodeOfConduct sections={sectionsPFRegsitration} />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            {/* <FadeInWhenVisible>
-              <LargeCardSlider
-                cardsData={largeCardsEpfoBangaloreRegistration}
-              />
-            </FadeInWhenVisible> */}
+            
             <FadeInWhenVisible>
-              {/* <PastelCardSlider
-                cardsData={pastelCardsEpfoBangaloreRegistration}
-              /> */}
+             
               <ThreeStepSection
                 cardsData={pastelCardsEpfoBangaloreRegistration}
               />
             </FadeInWhenVisible>
-            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
-            Workforce: End-to-End EPF Management for Modern Businesses
-          </h2>
-          <StickyScrollSections items={epfManagementBangalore} /> */}
+           
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible> */}
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+           
+            <CodeOfConduct sections={sectionsPFRegsitration} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+             
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreRegistration}
+              />
+            </FadeInWhenVisible>
+            <FadeInWhenVisible>
             <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
           </FadeInWhenVisible>
         </>
@@ -3695,6 +3681,157 @@ export default async function EPFPage({ params }) {
 
           <FadeInWhenVisible>
             <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-monthly-filing-in-bangalore") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Bangalore",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/bangalore/pf-monthly-filing-in-bangalore/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }
+    else if (slug === "pf-compliance-in-bangalore") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Bangalore",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/bangalore/pf-compliance-in-bangalore/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
           </FadeInWhenVisible>
         </>
       );
