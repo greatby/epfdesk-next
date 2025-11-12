@@ -70,7 +70,7 @@ export async function generateMetadata({ params }) {
   const cityTitle = city.charAt(0).toUpperCase() + city.slice(1);
 
   return {
-    title: `PF Consultant in ${cityTitle} | EPF Registration, Returns & Inspections | Workforce`,
+    title: `${cityTitle} | EPF Registration, Returns & Inspections | Workforce`,
     description: `Leading PF consultants in ${cityTitle} for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.`,
     alternates: {
       canonical: `https://epfdesk.com/epf/${city}/pf-consultants-in-${city}`,
@@ -221,8 +221,28 @@ export default async function EPFPage({ params }) {
       "epf-registration-kanpur": "pfRegistrationKanpur",
       // Monthly Filing
       "pf-monthly-filing-in-bangalore": "pfMonthlyFilingBangalore",
+      "pf-monthly-filing-in-hyderabad": "pfMonthlyFilingHyderabad",
+      "pf-monthly-filing-in-mumbai": "pfMonthlyFilingMumbai",
+      "pf-monthly-filing-in-chennai": "pfMonthlyFilingChennai",
+      "pf-monthly-filing-in-visakhapatnam": "pfMonthlyFilingVisakhapatnam",
+      "pf-monthly-filing-in-delhi": "pfMonthlyFilingDelhi",
+      "pf-monthly-filing-in-pune": "pfMonthlyFilingPune",
+      "pf-monthly-filing-in-kolkata": "pfMonthlyFilingKolkata",
+      "pf-monthly-filing-in-ahmedabad": "pfMonthlyFilingAhmedabad",
+      "pf-monthly-filing-in-surat": "pfMonthlyFilingSurat",
+      "pf-monthly-filing-in-gurgaon": "pfMonthlyFilingGurgaon",
+      "pf-monthly-filing-in-noida": "pfMonthlyFilingNoida",
+      "pf-monthly-filing-in-jaipur": "pfMonthlyFilingJaipur",
+      "pf-monthly-filing-in-lucknow": "pfMonthlyFilingLucknow",
+      "pf-monthly-filing-in-indore": "pfMonthlyFilingIndore",
+      "pf-monthly-filing-in-coimbatore": "pfMonthlyFilingCoimbatore",
+      "pf-monthly-filing-in-vadodara": "pfMonthlyFilingVadodara",
+      "pf-monthly-filing-in-nagpur": "pfMonthlyFilingNagpur",
+      "pf-monthly-filing-in-bhopal": "pfMonthlyFilingBhopal",
+      "pf-monthly-filing-in-kanpur": "pfMonthlyFilingKanpur",
+
       // PF Compliance
-      "pf-compliance-in-bangalore":"pfComplianceBangalore"
+      "pf-compliance-in-bangalore": "pfComplianceBangalore",
     };
 
     const key = slugMap[slug];
@@ -313,10 +333,10 @@ export default async function EPFPage({ params }) {
           <FadeInWhenVisible>
             <CodeOfConduct sections={sectionsPFConsultants} />
           </FadeInWhenVisible>
-           <FadeInWhenVisible>
-              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
-            </FadeInWhenVisible>
-             <FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
             <FaqAccordion faqs={epfManagementFaqBangalore} />
           </FadeInWhenVisible>
         </>
@@ -1827,16 +1847,14 @@ export default async function EPFPage({ params }) {
             <PerformanceSection data={data} />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-           
             <CodeOfConduct sections={sectionsPFRegsitration} />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-             
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangaloreRegistration}
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible>
+            <ThreeStepSection
+              cardsData={pastelCardsEpfoBangaloreRegistration}
+            />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
             <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
           </FadeInWhenVisible>
         </>
@@ -3759,8 +3777,1432 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }
-    else if (slug === "pf-compliance-in-bangalore") {
+    } else if (slug === "pf-monthly-filing-in-mumbai") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Mumbai",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/mumbai/pf-monthly-filing-in-mumbai/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }else if (slug === "pf-monthly-filing-in-delhi") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Delhi",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/delhi/pf-monthly-filing-in-delhi/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }else if (slug === "pf-monthly-filing-in-chennai") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Chennai",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/chennai/pf-monthly-filing-in-chennai/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }else if (slug === "pf-monthly-filing-in-hyderabad") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Hyderabad",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/hyderabad/pf-monthly-filing-in-hyderabad/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }else if (slug === "pf-monthly-filing-in-pune") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Pune",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/pune/pf-monthly-filing-in-pune/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }else if (slug === "pf-monthly-filing-in-kolkata") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Kolkata",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/kolkata/pf-monthly-filing-in-kolkata/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }else if (slug === "pf-monthly-filing-in-ahmedabad") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Ahmedabad",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/ahmedabad/pf-monthly-filing-in-ahmedabad/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }else if (slug === "pf-monthly-filing-in-surat") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Surat",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/surat/pf-monthly-filing-in-surat/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }else if (slug === "pf-monthly-filing-in-gurgaon") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Gurgaon",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/gurgaon/pf-monthly-filing-in-gurgaon/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }else if (slug === "pf-monthly-filing-in-noida") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Noida",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/noida/pf-monthly-filing-in-noida/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }else if (slug === "pf-monthly-filing-in-jaipur") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Jaipur",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/jaipur/pf-monthly-filing-in-jaipur/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }else if (slug === "pf-monthly-filing-in-lucknow") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Lucknow",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/lucknow/pf-monthly-filing-in-lucknow/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }else if (slug === "pf-monthly-filing-in-indore") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Indore",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/indore/pf-monthly-filing-in-indore/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }else if (slug === "pf-monthly-filing-in-coimbatore") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Coimbatore",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/coimbatore/pf-monthly-filing-in-coimbatore/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }else if (slug === "pf-monthly-filing-in-vadodara") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Vadodara",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/vadodara/pf-monthly-filing-in-vadodara/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }else if (slug === "pf-monthly-filing-in-visakhapatnam") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Visakhapatnam",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/visakhapatnam/pf-monthly-filing-in-visakhapatnam/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }else if (slug === "pf-monthly-filing-in-nagpur") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Nagpur",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/nagpur/pf-monthly-filing-in-nagpur/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }else if (slug === "pf-monthly-filing-in-bhopal") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Bhopal",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/bhopal/pf-monthly-filing-in-bhopal/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }else if (slug === "pf-monthly-filing-in-kanpur") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Monthly Filing Kanpur",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/kanpur/pf-monthly-filing-in-kanpur/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFMonthlyFiling} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangaloreMonthlyFiling}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+          </FadeInWhenVisible>
+        </>
+      );
+    }else if (slug === "pf-compliance-in-bangalore") {
       return (
         <>
           <Script

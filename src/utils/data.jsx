@@ -6054,10 +6054,9 @@ export const cityData = {
       // description:
       //   "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       // contact: "bangalore@pfconsultants.in",
-        title: "PF Registration Services in Bangalore",
+      title: "PF Registration Services in Bangalore",
       subTitle: "Get your PF code in 7-15 days. Complete documentation.",
-      description:
-        "Professional EPF & ESI registration for new businesses.",
+      description: "Professional EPF & ESI registration for new businesses.",
       contact: "bangalore@pfconsultants.in",
     },
     esicBangalore: {
@@ -6081,7 +6080,7 @@ export const cityData = {
         "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
       contact: "bangalore@pfconsultants.in",
     },
-     pfComplianceBangalore: {
+    pfComplianceBangalore: {
       title: "PF Compliance Services in Bangalore",
       subTitle: "Clean up past issues. Stay compliant forever.",
       description:
@@ -6109,6 +6108,13 @@ export const cityData = {
         "Reliable ESIC registration and compliance support in Hyderabad.",
       contact: "hyderabad@esicconsultants.in",
     },
+    pfMonthlyFilingHyderabad: {
+      title: "PF Monthly Filing Services in Hyderabad",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
+      contact: "hyderabad@pfconsultants.in",
+    },
   },
 
   goa: {
@@ -6116,6 +6122,13 @@ export const cityData = {
       title: "EPF Consultants Goa",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "goa@pfconsultants.in",
+    },
+    pfMonthlyFilingGoa: {
+      title: "PF Monthly Filing Services in Goa",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
       contact: "goa@pfconsultants.in",
     },
     pfRegistrationGoa: {
@@ -6137,6 +6150,13 @@ export const cityData = {
       title: "EPF Consultants Mumbai",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "mumbai@pfconsultants.in",
+    },
+    pfMonthlyFilingMumbai: {
+      title: "PF Monthly Filing Services in Mumbai",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
       contact: "mumbai@pfconsultants.in",
     },
     pfRegistrationMumbai: {
@@ -6161,6 +6181,13 @@ export const cityData = {
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "chennai@pfconsultants.in",
     },
+    pfMonthlyFilingChennai: {
+      title: "PF Monthly Filing Services in Chennai",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
+      contact: "chennai@pfconsultants.in",
+    },
     pfRegistrationChennai: {
       title: "EPF Registration Chennai",
       subTitle: "We get you registered in 7 days",
@@ -6181,6 +6208,13 @@ export const cityData = {
       title: "EPF Consultants Visakhapatnam",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "visakhapatnam@pfconsultants.in",
+    },
+    pfMonthlyFilingVisakhapatnam: {
+      title: "PF Monthly Filing Services in Visakhapatnam",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
       contact: "visakhapatnam@pfconsultants.in",
     },
     pfRegistrationVisakhapatnam: {
@@ -6205,6 +6239,13 @@ export const cityData = {
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "delhi@pfconsultants.in",
     },
+    pfMonthlyFilingDelhi: {
+      title: "PF Monthly Filing Services in Delhi",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
+      contact: "delhi@pfconsultants.in",
+    },
     pfRegistrationDelhi: {
       title: "EPF Registration Delhi",
       subTitle: "We get you registered in 7 days",
@@ -6227,6 +6268,13 @@ export const cityData = {
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "pune@pfconsultants.in",
     },
+    pfMonthlyFilingPune: {
+      title: "PF Monthly Filing Services in Pune",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
+      contact: "pune@pfconsultants.in",
+    },
     pfRegistrationPune: {
       title: "EPF Registration Pune",
       subTitle: "We get you registered in 7 days",
@@ -6246,6 +6294,13 @@ export const cityData = {
       title: "EPF Consultants Kolkata",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "kolkata@pfconsultants.in",
+    },
+    pfMonthlyFilingKolkata: {
+      title: "PF Monthly Filing Services in Kolkata",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
       contact: "kolkata@pfconsultants.in",
     },
     pfRegistrationKolkata: {
@@ -6270,6 +6325,13 @@ export const cityData = {
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "ahmedabad@pfconsultants.in",
     },
+    pfMonthlyFilingAhmedabad: {
+      title: "PF Monthly Filing Services in Ahmedabad",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
+      contact: "ahmedabad@pfconsultants.in",
+    },
     pfRegistrationAhmedabad: {
       title: "EPF Registration Ahmedabad",
       subTitle: "We get you registered in 7 days",
@@ -6290,6 +6352,13 @@ export const cityData = {
       title: "EPF Consultants Surat",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "surat@pfconsultants.in",
+    },
+    pfMonthlyFilingSurat: {
+      title: "PF Monthly Filing Services in Surat",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
       contact: "surat@pfconsultants.in",
     },
     pfRegistrationSurat: {
@@ -6314,6 +6383,13 @@ export const cityData = {
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "gurgaon@pfconsultants.in",
     },
+    pfMonthlyFilingGurgaon: {
+      title: "PF Monthly Filing Services in Gurgaon",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
+      contact: "gurgaon@pfconsultants.in",
+    },
     pfRegistrationGurgaon: {
       title: "EPF Registration Gurgaon",
       subTitle: "We get you registered in 7 days",
@@ -6334,6 +6410,13 @@ export const cityData = {
       title: "EPF Consultants Noida",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "noida@pfconsultants.in",
+    },
+    pfMonthlyFilingNoida: {
+      title: "PF Monthly Filing Services in Noida",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
       contact: "noida@pfconsultants.in",
     },
     pfRegistrationNoida: {
@@ -6365,6 +6448,14 @@ export const cityData = {
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "jaipur@pfconsultants.in",
     },
+    pfMonthlyFilingJaipur: {
+      title: "PF Monthly Filing Services in Jaipur",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
+      contact: "jaipur@pfconsultants.in",
+    },
+
     esic: {
       title: "ESIC Consultants Jaipur",
       description:
@@ -6378,6 +6469,13 @@ export const cityData = {
       title: "EPF Consultants Lucknow",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "lucknow@pfconsultants.in",
+    },
+    pfMonthlyFilingLucknow: {
+      title: "PF Monthly Filing Services in Lucknow",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
       contact: "lucknow@pfconsultants.in",
     },
     pfRegistrationLucknow: {
@@ -6402,6 +6500,13 @@ export const cityData = {
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "indore@pfconsultants.in",
     },
+    pfMonthlyFilingIndore: {
+      title: "PF Monthly Filing Services in Indore",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
+      contact: "indore@pfconsultants.in",
+    },
     pfRegistrationIndore: {
       title: "EPF Registration Indore",
       subTitle: "We get you registered in 7 days",
@@ -6422,6 +6527,13 @@ export const cityData = {
       title: "EPF Consultants Coimbatore",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "coimbatore@pfconsultants.in",
+    },
+    pfMonthlyFilingCoimbatore: {
+      title: "PF Monthly Filing Services in Coimbatore",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
       contact: "coimbatore@pfconsultants.in",
     },
     pfRegistrationCoimbatore: {
@@ -6446,6 +6558,13 @@ export const cityData = {
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "vadodara@pfconsultants.in",
     },
+    pfMonthlyFilingVadodara: {
+      title: "PF Monthly Filing Services in Vadodara",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
+      contact: "vadodara@pfconsultants.in",
+    },
     pfRegistrationVadodara: {
       title: "EPF Registration Vadodara",
       subTitle: "We get you registered in 7 days",
@@ -6466,6 +6585,13 @@ export const cityData = {
       title: "EPF Consultants Nagpur",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "nagpur@pfconsultants.in",
+    },
+    pfMonthlyFilingNagpur: {
+      title: "PF Monthly Filing Services in Nagpur",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
       contact: "nagpur@pfconsultants.in",
     },
     pfRegistrationNagpur: {
@@ -6490,6 +6616,13 @@ export const cityData = {
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "bhopal@pfconsultants.in",
     },
+    pfMonthlyFilingBhopal: {
+      title: "PF Monthly Filing Services in Bhopal",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
+      contact: "bhopal@pfconsultants.in",
+    },
     pfRegistrationBhopal: {
       title: "EPF Registration Bhopal",
       subTitle: "We get you registered in 7 days",
@@ -6510,6 +6643,13 @@ export const cityData = {
       title: "EPF Consultants Kanpur",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "kanpur@pfconsultants.in",
+    },
+    pfMonthlyFilingKanpur: {
+      title: "PF Monthly Filing Services in Kanpur",
+      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
+      description:
+        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
       contact: "kanpur@pfconsultants.in",
     },
     pfRegistrationKanpur: {
@@ -6861,7 +7001,7 @@ export const epfManagementFaqBangalore = [
   //   question: "What if we’re already behind on filings?",
   //   answer: `We specialize in cleanup. We’ll assess arrears, file all pending returns, negotiate penalty waivers where possible, and bring you current within 30 days. Then we keep you compliant forever.`,
   // },
-   {
+  {
     question: "Is PF registration mandatory for my company?",
     answer: `Yes. PF registration is mandatory if you have 20+ employees (any establishment) or 10+ employees (factories). All employees count—full-time, part-time, contractual. Registration must be done within 1 month of crossing the threshold. Penalty for non-registration can reach ₹5,000–1,00,000 + backdated PF + interest. Even if everyone earns >₹15,000, registration is still mandatory. In Bangalore, PF compliance is also checked during investor due diligence and can impact funding.`,
   },
@@ -6943,7 +7083,7 @@ In Karnataka, penalties are negotiable with proper representation. Prevention is
     answer: `DIY works if you have <20 employees and stable payroll. Consulting is worth it when you have 50+ employees, frequent exits, salary structuring, or want zero risk.  
 We provide: salary optimization, PF transfers, claim handling, notices, inspections, error-free filings, time savings (20–40 hrs/month), and penalty prevention.  
 ROI averages 10x—₹1.2L/year service cost can save ₹10–15L through compliance, error reduction and optimized payroll.`,
-  }
+  },
 ];
 
 export const largeCardsEpfoBangalore = {
@@ -7003,11 +7143,10 @@ export const pastelCardsEpfoBangalore = {
   //     subtitle: `Relax — we handle everything from Day 1`,
   //     number: 3,
   //   },
-    
+
   // ],
   subTitle: "Why Bangalore Companies Choose Our PF Consulting",
-  subText:
-    "Not just filing. Complete PF management and protection.",
+  subText: "Not just filing. Complete PF management and protection.",
   cards: [
     {
       title: "Never Miss a Deadline",
@@ -7034,7 +7173,7 @@ export const pastelCardsEpfoBangalore = {
       subtitle: `Legal salary restructuring (reduce PF burden by 15-30%). Identify overpayments. Recover excess contributions. Optimize statutory costs without breaking rules.`,
       number: 5,
     },
-     {
+    {
       title: "Expert Advisory Access",
       subtitle: `Dedicated PF consultant assigned. Complex queries answered in 4 hours. Annual compliance planning. Law updates communicated proactively. Peace of mind guaranteed.`,
       number: 6,
@@ -7300,9 +7439,8 @@ export const pastelCardsEpfoBangaloreRegistration = {
   //   //       bg: "from-[#d299c2] to-[#fef9d7]",
   //   //     },
   // ],
-   subTitle: "How PF Registration Works (Step-by-Step)",
-  subText:
-    "Detailed explanation of the official EPFO registration process.",
+  subTitle: "How PF Registration Works (Step-by-Step)",
+  subText: "Detailed explanation of the official EPFO registration process.",
   cards: [
     {
       title: "STEP 1: Unified Portal Registration",
@@ -7324,17 +7462,17 @@ export const pastelCardsEpfoBangaloreRegistration = {
       subtitle: `Download the auto-filled Form 5A from the EPFO portal, sign it using a Class 2 or Class 3 DSC, and re-upload the digitally signed file. Submit the application and save the acknowledgement number for status tracking and future reference.`,
       number: 4,
     },
-     {
+    {
       title: "STEP 5: EPFO Verification",
       subtitle: `The EPFO Regional Office reviews the PF registration application for document authenticity, employee threshold (20+), address verification (may include physical inspection), and duplicate PF code check. The standard processing time is 5–10 working days.`,
       number: 5,
     },
-     {
+    {
       title: "STEP 6: PF Code Allotment",
       subtitle: `Upon approval, EPFO issues a unique PF establishment code (e.g., KRNBN1234567000 for Bangalore, based on state and regional office). The code becomes visible on the portal, an approval letter can be downloaded, and confirmation is sent via SMS and email.`,
       number: 6,
     },
-     {
+    {
       title: "STEP 7: Post-Registration Setup",
       subtitle: `After PF code activation, the employer must generate UAN for all employees within 1 month, configure the DSC for monthly ECR filing, and submit the first ECR by the 15th of the next month. Additionally, statutory notices (Form 3A, 5, 10) must be displayed at the workplace to complete compliance.`,
       number: 7,
@@ -7464,7 +7602,8 @@ Process:
 No office visit needed unless EPFO specifically calls for inspection (<5% cases). We handle the entire process online for you.`,
   },
   {
-    question: "Do I need separate PF registration for different office locations?",
+    question:
+      "Do I need separate PF registration for different office locations?",
     answer: `If offices are in the same state → 1 PF code is enough.  
 If in different states → separate PF codes required.
 
@@ -7495,7 +7634,8 @@ Benefits:
 We generate UANs within 7 days and assist employees in activation and Aadhaar linking.`,
   },
   {
-    question: "Can I register for PF voluntarily if I have fewer than 20 employees?",
+    question:
+      "Can I register for PF voluntarily if I have fewer than 20 employees?",
     answer: `Yes, voluntary registration is allowed but comes with conditions:
 
 ✅ Good if:
@@ -8374,7 +8514,7 @@ export const sectionsPFConsultants = [
       },
     ],
   },
-   {
+  {
     title: "How Our PF Consulting Service Works?",
     description:
       "Four-step process. Then your PF compliance runs automatically.",
@@ -8392,7 +8532,9 @@ export const sectionsPFConsultants = [
         content: (
           <>
             <p>
-              Connect your payroll system (Zoho, Greythr, Keka). Verify employee UAN database. Set up digital signature for filing. Create compliance calendar. Assign dedicated PF consultant.
+              Connect your payroll system (Zoho, Greythr, Keka). Verify employee
+              UAN database. Set up digital signature for filing. Create
+              compliance calendar. Assign dedicated PF consultant.
             </p>
           </>
         ),
@@ -8409,12 +8551,13 @@ export const sectionsPFConsultants = [
         content: (
           <>
             <p>
-              Monthly filing automatic. Annual returns handled. Employee queries resolved. EPFO notices managed. Inspections coordinated. You stay compliant, stress-free.
+              Monthly filing automatic. Annual returns handled. Employee queries
+              resolved. EPFO notices managed. Inspections coordinated. You stay
+              compliant, stress-free.
             </p>
           </>
         ),
       },
-      
     ],
   },
 ];
@@ -8495,10 +8638,9 @@ export const sectionsPFRegsitration = [
   //     },
   //   ],
   // },
-   {
+  {
     title: "PF Registration Requirements in India",
-    description:
-      "Know exactly when your company must register for PF/ESI.",
+    description: "Know exactly when your company must register for PF/ESI.",
     cards: [
       {
         color: "bg-white border-gray-300",
@@ -8512,7 +8654,13 @@ export const sectionsPFRegsitration = [
         content: (
           <>
             <p>
-              ESI registration is mandatory for factories with 10+ employees and other establishments (offices, shops, restaurants, etc.) with 20+ employees, if any employee earns below ₹21,000 per month. Registration must be completed within 15 days of becoming applicable. All eligible employees and their dependents receive medical and social benefits. Non-registration can lead to fines, backdated ESI contributions, and possible legal prosecution.
+              ESI registration is mandatory for factories with 10+ employees and
+              other establishments (offices, shops, restaurants, etc.) with 20+
+              employees, if any employee earns below ₹21,000 per month.
+              Registration must be completed within 15 days of becoming
+              applicable. All eligible employees and their dependents receive
+              medical and social benefits. Non-registration can lead to fines,
+              backdated ESI contributions, and possible legal prosecution.
             </p>
           </>
         ),
@@ -8523,10 +8671,9 @@ export const sectionsPFRegsitration = [
         content:
           "Full-time employees (permanent or temporary). Part-time employees if they meet employee definition under law. Contract workers (if employed by you, not genuine contractor). Excludes: Directors not drawing salary, genuine independent contractors, apprentices under Apprentices Act.",
       },
-     
     ],
   },
-   {
+  {
     title: "Complete PF & ESI Registration Service",
     description:
       "We handle everything. You just provide documents. Get PF code in 10-12 days.",
@@ -8543,7 +8690,10 @@ export const sectionsPFRegsitration = [
         content: (
           <>
             <p>
-              We provide document checklist (simple Excel). You provide: Company registration documents, Director/Partner IDs, Employee list with details, Bank account information, Office address proof. We review and verify all documents (ensure completeness and correctness).
+              We provide document checklist (simple Excel). You provide: Company
+              registration documents, Director/Partner IDs, Employee list with
+              details, Bank account information, Office address proof. We review
+              and verify all documents (ensure completeness and correctness).
             </p>
           </>
         ),
@@ -8560,13 +8710,13 @@ export const sectionsPFRegsitration = [
         content:
           "Create establishment account on EPFO Unified Portal. Fill Form 5A (Employer's registration form). Upload all documents (PAN, incorporation certificate, address proof, etc.). Generate and submit application. Obtain acknowledgment number.",
       },
-       {
+      {
         color: "bg-white border-gray-300",
         title: "EPFO Processing & Approval (Days 10-14)",
         content:
           "EPFO reviews application (typically 5-7 working days). We track application status daily. Handle any queries from EPFO (document clarifications, additional information). Liaise with EPFO office if needed (local Bangalore office visit if required).",
       },
-       {
+      {
         color: "bg-white border-gray-300",
         title: "PF Code Allotment & Setup (Day 15)",
         content:
@@ -9214,7 +9364,7 @@ export const sectionsPFMonthlyFiling = [
 ];
 
 export const pastelCardsEpfoBangaloreMonthlyFiling = {
-  subTitle: "Why Bangalore Businesses Choose Our PF Filing Service?",
+  subTitle: "Why Businesses Choose Our PF Filing Service?",
   subText: "Not just filing. Complete accuracy and peace of mind.",
   cards: [
     {
@@ -9378,7 +9528,9 @@ export const sectionsPFCompliance = [
         content: (
           <>
             <p>
-              Correct PF calculation (12% employee + 12% employer). Proper wage base (basic + DA only). EPF vs EPS split (3.67% + 8.33%). Wage ceiling application (₹15,000 max).
+              Correct PF calculation (12% employee + 12% employer). Proper wage
+              base (basic + DA only). EPF vs EPS split (3.67% + 8.33%). Wage
+              ceiling application (₹15,000 max).
             </p>
           </>
         ),
@@ -9395,29 +9547,35 @@ export const sectionsPFCompliance = [
         content: (
           <>
             <p>
-              Statutory registers (Form 5, 6, 10, 12A, MW Register). ECR copies stored (minimum 3 years). Payment proofs (challans, TRCP). Digital/physical documentation organized.
+              Statutory registers (Form 5, 6, 10, 12A, MW Register). ECR copies
+              stored (minimum 3 years). Payment proofs (challans, TRCP).
+              Digital/physical documentation organized.
             </p>
           </>
         ),
       },
-       {
+      {
         color: "bg-white border-gray-300",
         title: "Statutory Compliance",
         content: (
           <>
             <p>
-              PF registration when threshold reached (20+ employees). DSC (Digital Signature) maintained and renewed. Portal access active. Authorized signatory updated with EPFO.
+              PF registration when threshold reached (20+ employees). DSC
+              (Digital Signature) maintained and renewed. Portal access active.
+              Authorized signatory updated with EPFO.
             </p>
           </>
         ),
       },
-       {
+      {
         color: "bg-white border-gray-300",
         title: "Employee Rights Protection",
         content: (
           <>
             <p>
-              Timely PF transfers (Form 13 processed in 15 days). Quick withdrawal processing (Form 19, 10C). Employee queries resolved. PF passbook access enabled. UAN portal activated.
+              Timely PF transfers (Form 13 processed in 15 days). Quick
+              withdrawal processing (Form 19, 10C). Employee queries resolved.
+              PF passbook access enabled. UAN portal activated.
             </p>
           </>
         ),
@@ -9441,7 +9599,9 @@ export const sectionsPFCompliance = [
         content: (
           <>
             <p>
-              Criminal liability under Section 14 of EPF Act. Penalty up to ₹10,000 + imprisonment up to 3 years. Company directors personally liable. Court cases drain time and money.
+              Criminal liability under Section 14 of EPF Act. Penalty up to
+              ₹10,000 + imprisonment up to 3 years. Company directors personally
+              liable. Court cases drain time and money.
             </p>
           </>
         ),
@@ -9458,7 +9618,10 @@ export const sectionsPFCompliance = [
         content: (
           <>
             <p>
-             Delayed PF transfers = unhappy employees. 35% of employees cite "PF hassle" as reason for leaving (exit interviews). Cost of replacing one employee: ₹5-10 lakhs. Prevent 3-5 exits = ROI of compliance investment.
+              Delayed PF transfers = unhappy employees. 35% of employees cite
+              "PF hassle" as reason for leaving (exit interviews). Cost of
+              replacing one employee: ₹5-10 lakhs. Prevent 3-5 exits = ROI of
+              compliance investment.
             </p>
           </>
         ),
@@ -9469,7 +9632,10 @@ export const sectionsPFCompliance = [
         content: (
           <>
             <p>
-             Funding rounds delayed if PF non-compliant. Investors red-flag statutory non-compliance. Valuation impacted (5-10% discount). Term sheet can be withdrawn. We've seen ₹10+ crore funding held up due to ₹5 lakh PF liability.
+              Funding rounds delayed if PF non-compliant. Investors red-flag
+              statutory non-compliance. Valuation impacted (5-10% discount).
+              Term sheet can be withdrawn. We've seen ₹10+ crore funding held up
+              due to ₹5 lakh PF liability.
             </p>
           </>
         ),
@@ -9480,7 +9646,9 @@ export const sectionsPFCompliance = [
         content: (
           <>
             <p>
-             Talented candidates ask about PF compliance. Senior hires reject offers if PF issues visible. Employer brand damage ("they don't even pay PF properly"). Can't attract top talent.
+              Talented candidates ask about PF compliance. Senior hires reject
+              offers if PF issues visible. Employer brand damage ("they don't
+              even pay PF properly"). Can't attract top talent.
             </p>
           </>
         ),
@@ -9491,7 +9659,9 @@ export const sectionsPFCompliance = [
         content: (
           <>
             <p>
-             Banks check statutory compliance for business loans. PF non-compliance = loan rejection or higher interest rates. Working capital limits affected. Business growth constrained.
+              Banks check statutory compliance for business loans. PF
+              non-compliance = loan rejection or higher interest rates. Working
+              capital limits affected. Business growth constrained.
             </p>
           </>
         ),
@@ -9502,7 +9672,9 @@ export const sectionsPFCompliance = [
         content: (
           <>
             <p>
-             EPFO can attach bank accounts for recovery. Court orders can freeze operations. Directors barred from foreign travel (in extreme cases). Reputational damage in market.
+              EPFO can attach bank accounts for recovery. Court orders can
+              freeze operations. Directors barred from foreign travel (in
+              extreme cases). Reputational damage in market.
             </p>
           </>
         ),
@@ -9530,7 +9702,6 @@ export const pastelCardsEpfoBangalorePFCompliance = {
       subtitle: `We run your PF compliance every month so you never miss a deadline, face notices, or handle employee PF issues manually. From ECR filing and UAN generation to transfers, inspections, and legal updates—everything is managed with real-time reporting and strategic optimization. Continuous service. ₹5,000–₹20,000/month based on team size.`,
       number: 3,
     },
- 
   ],
 };
 
@@ -9565,7 +9736,8 @@ If any answer is “No” or “Not sure” → compliance gaps exist.
 We offer a **free 45-min PF audit** with compliance score (0–100) and gap report.`,
   },
   {
-    question: "What happens if I haven’t registered for PF despite having 20+ employees?",
+    question:
+      "What happens if I haven’t registered for PF despite having 20+ employees?",
     answer: `Consequences:  
 • Penalty ₹10,000–₹5,00,000  
 • Backdated PF liability + 12% interest  
