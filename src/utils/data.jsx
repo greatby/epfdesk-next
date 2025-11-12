@@ -6095,6 +6095,13 @@ export const cityData = {
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "hyderabad@pfconsultants.in",
     },
+    pfComplianceHyderabad: {
+      title: "PF Compliance Services in Hyderabad",
+      subTitle: "Clean up past issues. Stay compliant forever.",
+      description:
+        "Complete EPF compliance audit, remediation, and ongoing management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
     pfRegistrationHyderabad: {
       title: "EPF Registration Hyderabad",
       subTitle: "We get you registered in 7 days",
@@ -6152,6 +6159,13 @@ export const cityData = {
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "mumbai@pfconsultants.in",
     },
+    pfComplianceMumbai: {
+      title: "PF Compliance Services in Mumbai",
+      subTitle: "Clean up past issues. Stay compliant forever.",
+      description:
+        "Complete EPF compliance audit, remediation, and ongoing management.",
+      contact: "mumbai@pfconsultants.in",
+    },
     pfMonthlyFilingMumbai: {
       title: "PF Monthly Filing Services in Mumbai",
       subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
@@ -6179,6 +6193,13 @@ export const cityData = {
       title: "EPF Consultants Chennai",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "chennai@pfconsultants.in",
+    },
+    pfComplianceChennai: {
+      title: "PF Compliance Services in Chennai",
+      subTitle: "Clean up past issues. Stay compliant forever.",
+      description:
+        "Complete EPF compliance audit, remediation, and ongoing management.",
       contact: "chennai@pfconsultants.in",
     },
     pfMonthlyFilingChennai: {
@@ -6210,6 +6231,13 @@ export const cityData = {
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "visakhapatnam@pfconsultants.in",
     },
+    pfComplianceVisakhapatnam: {
+      title: "PF Compliance Services in Visakhapatnam",
+      subTitle: "Clean up past issues. Stay compliant forever.",
+      description:
+        "Complete EPF compliance audit, remediation, and ongoing management.",
+      contact: "visakhapatnam@pfconsultants.in",
+    },
     pfMonthlyFilingVisakhapatnam: {
       title: "PF Monthly Filing Services in Visakhapatnam",
       subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
@@ -6237,6 +6265,13 @@ export const cityData = {
       title: "EPF Consultants Delhi",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "delhi@pfconsultants.in",
+    },
+    pfComplianceDelhi: {
+      title: "PF Compliance Services in Delhi",
+      subTitle: "Clean up past issues. Stay compliant forever.",
+      description:
+        "Complete EPF compliance audit, remediation, and ongoing management.",
       contact: "delhi@pfconsultants.in",
     },
     pfMonthlyFilingDelhi: {
@@ -6268,6 +6303,13 @@ export const cityData = {
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "pune@pfconsultants.in",
     },
+    pfCompliancePune: {
+      title: "PF Compliance Services in Pune",
+      subTitle: "Clean up past issues. Stay compliant forever.",
+      description:
+        "Complete EPF compliance audit, remediation, and ongoing management.",
+      contact: "pune@pfconsultants.in",
+    },
     pfMonthlyFilingPune: {
       title: "PF Monthly Filing Services in Pune",
       subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
@@ -6294,6 +6336,13 @@ export const cityData = {
       title: "EPF Consultants Kolkata",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "kolkata@pfconsultants.in",
+    },
+    pfComplianceKolkata: {
+      title: "PF Compliance Services in Kolkata",
+      subTitle: "Clean up past issues. Stay compliant forever.",
+      description:
+        "Complete EPF compliance audit, remediation, and ongoing management.",
       contact: "kolkata@pfconsultants.in",
     },
     pfMonthlyFilingKolkata: {
@@ -6325,6 +6374,13 @@ export const cityData = {
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "ahmedabad@pfconsultants.in",
     },
+    pfComplianceAhmedabad: {
+      title: "PF Compliance Services in Ahmedabad",
+      subTitle: "Clean up past issues. Stay compliant forever.",
+      description:
+        "Complete EPF compliance audit, remediation, and ongoing management.",
+      contact: "ahmedabad@pfconsultants.in",
+    },
     pfMonthlyFilingAhmedabad: {
       title: "PF Monthly Filing Services in Ahmedabad",
       subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
@@ -6352,6 +6408,13 @@ export const cityData = {
       title: "EPF Consultants Surat",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "surat@pfconsultants.in",
+    },
+    pfComplianceSurat: {
+      title: "PF Compliance Services in Surat",
+      subTitle: "Clean up past issues. Stay compliant forever.",
+      description:
+        "Complete EPF compliance audit, remediation, and ongoing management.",
       contact: "surat@pfconsultants.in",
     },
     pfMonthlyFilingSurat: {
@@ -6383,6 +6446,13 @@ export const cityData = {
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "gurgaon@pfconsultants.in",
     },
+    pfComplianceGurgaon: {
+      title: "PF Compliance Services in Gurgaon",
+      subTitle: "Clean up past issues. Stay compliant forever.",
+      description:
+        "Complete EPF compliance audit, remediation, and ongoing management.",
+      contact: "gurgaon@pfconsultants.in",
+    },
     pfMonthlyFilingGurgaon: {
       title: "PF Monthly Filing Services in Gurgaon",
       subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
@@ -6412,6 +6482,13 @@ export const cityData = {
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "noida@pfconsultants.in",
     },
+    pfComplianceNoida: {
+      title: "PF Compliance Services in Noida",
+      subTitle: "Clean up past issues. Stay compliant forever.",
+      description:
+        "Complete EPF compliance audit, remediation, and ongoing management.",
+      contact: "noida@pfconsultants.in",
+    },
     pfMonthlyFilingNoida: {
       title: "PF Monthly Filing Services in Noida",
       subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
@@ -6439,6 +6516,13 @@ export const cityData = {
       title: "EPF Consultants Jaipur",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "jaipur@pfconsultants.in",
+    },
+    pfComplianceJaipur: {
+      title: "PF Compliance Services in Jaipur",
+      subTitle: "Clean up past issues. Stay compliant forever.",
+      description:
+        "Complete EPF compliance audit, remediation, and ongoing management.",
       contact: "jaipur@pfconsultants.in",
     },
     pfRegistrationJaipur: {
@@ -6471,6 +6555,13 @@ export const cityData = {
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "lucknow@pfconsultants.in",
     },
+    pfComplianceLucknow: {
+      title: "PF Compliance Services in Lucknow",
+      subTitle: "Clean up past issues. Stay compliant forever.",
+      description:
+        "Complete EPF compliance audit, remediation, and ongoing management.",
+      contact: "lucknow@pfconsultants.in",
+    },
     pfMonthlyFilingLucknow: {
       title: "PF Monthly Filing Services in Lucknow",
       subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
@@ -6498,6 +6589,13 @@ export const cityData = {
       title: "EPF Consultants Indore",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "indore@pfconsultants.in",
+    },
+    pfComplianceIndore: {
+      title: "PF Compliance Services in Indore",
+      subTitle: "Clean up past issues. Stay compliant forever.",
+      description:
+        "Complete EPF compliance audit, remediation, and ongoing management.",
       contact: "indore@pfconsultants.in",
     },
     pfMonthlyFilingIndore: {
@@ -6529,6 +6627,13 @@ export const cityData = {
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "coimbatore@pfconsultants.in",
     },
+    pfComplianceCoimbatore: {
+      title: "PF Compliance Services in Coimbatore",
+      subTitle: "Clean up past issues. Stay compliant forever.",
+      description:
+        "Complete EPF compliance audit, remediation, and ongoing management.",
+      contact: "coimbatore@pfconsultants.in",
+    },
     pfMonthlyFilingCoimbatore: {
       title: "PF Monthly Filing Services in Coimbatore",
       subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
@@ -6556,6 +6661,13 @@ export const cityData = {
       title: "EPF Consultants Vadodara",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "vadodara@pfconsultants.in",
+    },
+    pfComplianceVadodara: {
+      title: "PF Compliance Services in Vadodara",
+      subTitle: "Clean up past issues. Stay compliant forever.",
+      description:
+        "Complete EPF compliance audit, remediation, and ongoing management.",
       contact: "vadodara@pfconsultants.in",
     },
     pfMonthlyFilingVadodara: {
@@ -6587,6 +6699,13 @@ export const cityData = {
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "nagpur@pfconsultants.in",
     },
+    pfComplianceNagpur: {
+      title: "PF Compliance Services in Nagpur",
+      subTitle: "Clean up past issues. Stay compliant forever.",
+      description:
+        "Complete EPF compliance audit, remediation, and ongoing management.",
+      contact: "nagpur@pfconsultants.in",
+    },
     pfMonthlyFilingNagpur: {
       title: "PF Monthly Filing Services in Nagpur",
       subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
@@ -6616,6 +6735,13 @@ export const cityData = {
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
       contact: "bhopal@pfconsultants.in",
     },
+    pfComplianceBhopal: {
+      title: "PF Compliance Services in Bhopal",
+      subTitle: "Clean up past issues. Stay compliant forever.",
+      description:
+        "Complete EPF compliance audit, remediation, and ongoing management.",
+      contact: "bhopal@pfconsultants.in",
+    },
     pfMonthlyFilingBhopal: {
       title: "PF Monthly Filing Services in Bhopal",
       subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
@@ -6643,6 +6769,13 @@ export const cityData = {
       title: "EPF Consultants Kanpur",
       subTitle: "We log into your portal and do it for you",
       description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "kanpur@pfconsultants.in",
+    },
+    pfComplianceKanpur: {
+      title: "PF Compliance Services in Kanpur",
+      subTitle: "Clean up past issues. Stay compliant forever.",
+      description:
+        "Complete EPF compliance audit, remediation, and ongoing management.",
       contact: "kanpur@pfconsultants.in",
     },
     pfMonthlyFilingKanpur: {

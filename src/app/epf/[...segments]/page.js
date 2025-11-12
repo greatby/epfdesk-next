@@ -243,6 +243,25 @@ export default async function EPFPage({ params }) {
 
       // PF Compliance
       "pf-compliance-in-bangalore": "pfComplianceBangalore",
+      "pf-compliance-in-hyderabad": "pfComplianceHyderabad",
+      "pf-compliance-in-mumbai": "pfComplianceMumbai",
+      "pf-compliance-in-chennai": "pfComplianceChennai",
+      "pf-compliance-in-visakhapatnam": "pfComplianceVisakhapatnam",
+      "pf-compliance-in-delhi": "pfComplianceDelhi",
+      "pf-compliance-in-pune": "pfCompliancePune",
+      "pf-compliance-in-kolkata": "pfComplianceKolkata",
+      "pf-compliance-in-ahmedabad": "pfComplianceAhmedabad",
+      "pf-compliance-in-surat": "pfComplianceSurat",
+      "pf-compliance-in-gurgaon": "pfComplianceGurgaon",
+      "pf-compliance-in-noida": "pfComplianceNoida",
+      "pf-compliance-in-jaipur": "pfComplianceJaipur",
+      "pf-compliance-in-lucknow": "pfComplianceLucknow",
+      "pf-compliance-in-indore": "pfComplianceIndore",
+      "pf-compliance-in-coimbatore": "pfComplianceCoimbatore",
+      "pf-compliance-in-vadodara": "pfComplianceVadodara",
+      "pf-compliance-in-nagpur": "pfComplianceNagpur",
+      "pf-compliance-in-bhopal": "pfComplianceBhopal",
+      "pf-compliance-in-kanpur": "pfComplianceKanpur",
     };
 
     const key = slugMap[slug];
@@ -3852,7 +3871,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }else if (slug === "pf-monthly-filing-in-delhi") {
+    } else if (slug === "pf-monthly-filing-in-delhi") {
       return (
         <>
           <Script
@@ -3927,7 +3946,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }else if (slug === "pf-monthly-filing-in-chennai") {
+    } else if (slug === "pf-monthly-filing-in-chennai") {
       return (
         <>
           <Script
@@ -4002,7 +4021,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }else if (slug === "pf-monthly-filing-in-hyderabad") {
+    } else if (slug === "pf-monthly-filing-in-hyderabad") {
       return (
         <>
           <Script
@@ -4077,7 +4096,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }else if (slug === "pf-monthly-filing-in-pune") {
+    } else if (slug === "pf-monthly-filing-in-pune") {
       return (
         <>
           <Script
@@ -4152,7 +4171,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }else if (slug === "pf-monthly-filing-in-kolkata") {
+    } else if (slug === "pf-monthly-filing-in-kolkata") {
       return (
         <>
           <Script
@@ -4227,7 +4246,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }else if (slug === "pf-monthly-filing-in-ahmedabad") {
+    } else if (slug === "pf-monthly-filing-in-ahmedabad") {
       return (
         <>
           <Script
@@ -4302,7 +4321,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }else if (slug === "pf-monthly-filing-in-surat") {
+    } else if (slug === "pf-monthly-filing-in-surat") {
       return (
         <>
           <Script
@@ -4377,7 +4396,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }else if (slug === "pf-monthly-filing-in-gurgaon") {
+    } else if (slug === "pf-monthly-filing-in-gurgaon") {
       return (
         <>
           <Script
@@ -4452,7 +4471,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }else if (slug === "pf-monthly-filing-in-noida") {
+    } else if (slug === "pf-monthly-filing-in-noida") {
       return (
         <>
           <Script
@@ -4527,7 +4546,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }else if (slug === "pf-monthly-filing-in-jaipur") {
+    } else if (slug === "pf-monthly-filing-in-jaipur") {
       return (
         <>
           <Script
@@ -4602,7 +4621,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }else if (slug === "pf-monthly-filing-in-lucknow") {
+    } else if (slug === "pf-monthly-filing-in-lucknow") {
       return (
         <>
           <Script
@@ -4677,7 +4696,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }else if (slug === "pf-monthly-filing-in-indore") {
+    } else if (slug === "pf-monthly-filing-in-indore") {
       return (
         <>
           <Script
@@ -4752,7 +4771,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }else if (slug === "pf-monthly-filing-in-coimbatore") {
+    } else if (slug === "pf-monthly-filing-in-coimbatore") {
       return (
         <>
           <Script
@@ -4827,7 +4846,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }else if (slug === "pf-monthly-filing-in-vadodara") {
+    } else if (slug === "pf-monthly-filing-in-vadodara") {
       return (
         <>
           <Script
@@ -4902,7 +4921,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }else if (slug === "pf-monthly-filing-in-visakhapatnam") {
+    } else if (slug === "pf-monthly-filing-in-visakhapatnam") {
       return (
         <>
           <Script
@@ -4977,7 +4996,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }else if (slug === "pf-monthly-filing-in-nagpur") {
+    } else if (slug === "pf-monthly-filing-in-nagpur") {
       return (
         <>
           <Script
@@ -5052,7 +5071,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }else if (slug === "pf-monthly-filing-in-bhopal") {
+    } else if (slug === "pf-monthly-filing-in-bhopal") {
       return (
         <>
           <Script
@@ -5127,7 +5146,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }else if (slug === "pf-monthly-filing-in-kanpur") {
+    } else if (slug === "pf-monthly-filing-in-kanpur") {
       return (
         <>
           <Script
@@ -5202,7 +5221,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
         </>
       );
-    }else if (slug === "pf-compliance-in-bangalore") {
+    } else if (slug === "pf-compliance-in-bangalore") {
       return (
         <>
           <Script
@@ -5215,6 +5234,1431 @@ export default async function EPFPage({ params }) {
                 name: "EPFdesk - PF Compliance Bangalore",
                 image: "https://epfdesk.com/images/logo.jpg",
                 url: "https://epfdesk.com/epf/bangalore/pf-compliance-in-bangalore/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-compliance-in-mumbai") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Mumbai",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/mumbai/pf-compliance-in-mumbai/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-compliance-in-delhi") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Delhi",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/delhi/pf-compliance-in-delhi/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-compliance-in-chennai") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Chennai",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/chennai/pf-compliance-in-chennai/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-compliance-in-hyderabad") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Hyderabad",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/hyderabad/pf-compliance-in-hyderabad/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-compliance-in-pune") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Pune",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/pune/pf-compliance-in-pune/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-compliance-in-kolkata") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Kolkata",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/kolkata/pf-compliance-in-kolkata/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-compliance-in-ahmedabad") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Ahmedabad",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/ahmedabad/pf-compliance-in-ahmedabad/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-compliance-in-surat") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Surat",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/surat/pf-compliance-in-surat/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-compliance-in-gurgaon") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Gurgaon",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/gurgaon/pf-compliance-in-gurgaon/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-compliance-in-noida") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Noida",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/noida/pf-compliance-in-noida/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-compliance-in-jaipur") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Jaipur",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/jaipur/pf-compliance-in-jaipur/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-compliance-in-lucknow") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Lucknow",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/lucknow/pf-compliance-in-lucknow/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-compliance-in-indore") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Indore",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/indore/pf-compliance-in-indore/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-compliance-in-coimbatore") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Coimbatore",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/coimbatore/pf-compliance-in-coimbatore/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-compliance-in-vadodara") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Vadodara",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/vadodara/pf-compliance-in-vadodara/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-compliance-in-visakhapatnam") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Visakhapatnam",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/visakhapatnam/pf-compliance-in-visakhapatnam/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-compliance-in-nagpur") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Nagpur",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/nagpur/pf-compliance-in-nagpur/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-compliance-in-bhopal") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Bhopal",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/bhopal/pf-compliance-in-bhopal/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliance} />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <ThreeStepSection
+                cardsData={pastelCardsEpfoBangalorePFCompliance}
+              />
+            </FadeInWhenVisible>
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "pf-compliance-in-kanpur") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - PF Compliance Kanpur",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/epf/kanpur/pf-compliance-in-kanpur/",
                 telephone: "+91-9945933333",
                 address: {
                   "@type": "PostalAddress",
