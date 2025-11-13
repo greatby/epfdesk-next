@@ -57,7 +57,10 @@ import QuoteSwiper from "@/components/TestimonialCarousel";
 
 export async function generateMetadata({ params }) {
   // Get the last segment (e.g., "hyderabad")
-  const city = params.segments?.[params.segments.length - 1];
+  const slug = params.segments?.[params.segments.length - 1] || "";
+const city = slug.split("-").pop(); 
+console.log(city);
+
 
   if (!city) {
     return {
