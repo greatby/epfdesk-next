@@ -41,6 +41,7 @@ import CodeOfConduct from "@/components/CodeOfConduct";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import SingleQuote from "@/components/SingleQuote";
 import QuoteSwiper from "@/components/TestimonialCarousel";
+import { cityAddress } from "@/utils/data";
 
 // export const metadata = {
 //   title: `PF Consultant in Bangalore | EPF Registration, Returns & Inspections | Workforce`,
@@ -56,11 +57,10 @@ import QuoteSwiper from "@/components/TestimonialCarousel";
 // };
 
 export async function generateMetadata({ params }) {
-  // Get the last segment (e.g., "hyderabad")
+  
   const slug = params.segments?.[params.segments.length - 1] || "";
-const city = slug.split("-").pop(); 
-console.log(city);
-
+  const city = slug.split("-").pop();
+  console.log(city);
 
   if (!city) {
     return {
@@ -169,6 +169,37 @@ export default async function EPFPage({ params }) {
     const [city, slug] = segments;
     const cityPages = cityData[city];
     console.log(cityPages);
+
+    const titleCase = (s = "") =>
+      s ? s.charAt(0).toUpperCase() + s.slice(1) : "";
+
+    const addressFaq = (city, address) => ({
+      question: `What is the office address for ${titleCase(city)}?`,
+      answer: address || "Address not available",
+    });
+
+    const citySplit = slug.split("-").pop(); // e.g., "bangalore"
+    const address = cityAddress[citySplit];
+
+    const generalFaqWithAddress = [
+      ...epfManagementFaqBangalore,
+      addressFaq(citySplit, address),
+    ];
+
+    const registrationFaqWithAddress = [
+      ...epfManagementFaqBangaloreRegistration,
+      addressFaq(citySplit, address),
+    ];
+
+    const monthlyFilingFaqWithAddress = [
+      ...epfManagementFaqBangaloreMonthlyFiling,
+      addressFaq(citySplit, address),
+    ];
+
+    const complianceFaqWithAddress = [
+      ...epfManagementFaqBangalorePFCompliance,
+      addressFaq(citySplit, address),
+    ];
 
     if (!cityPages)
       return (
@@ -359,7 +390,7 @@ export default async function EPFPage({ params }) {
             <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalore} />
+            <FaqAccordion faqs={generalFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -434,7 +465,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalore} />
+            <FaqAccordion faqs={generalFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -509,7 +540,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalore} />
+            <FaqAccordion faqs={generalFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -584,7 +615,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalore} />
+            <FaqAccordion faqs={generalFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -659,7 +690,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalore} />
+            <FaqAccordion faqs={generalFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -734,7 +765,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalore} />
+            <FaqAccordion faqs={generalFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -809,7 +840,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalore} />
+            <FaqAccordion faqs={generalFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -884,7 +915,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalore} />
+            <FaqAccordion faqs={generalFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -959,7 +990,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalore} />
+            <FaqAccordion faqs={generalFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -1034,7 +1065,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalore} />
+            <FaqAccordion faqs={generalFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -1109,7 +1140,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalore} />
+            <FaqAccordion faqs={generalFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -1184,7 +1215,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalore} />
+            <FaqAccordion faqs={generalFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -1259,7 +1290,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalore} />
+            <FaqAccordion faqs={generalFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -1334,7 +1365,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalore} />
+            <FaqAccordion faqs={generalFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -1409,7 +1440,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalore} />
+            <FaqAccordion faqs={generalFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -1484,7 +1515,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalore} />
+            <FaqAccordion faqs={generalFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -1559,7 +1590,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalore} />
+            <FaqAccordion faqs={generalFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -1634,7 +1665,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalore} />
+            <FaqAccordion faqs={generalFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -1709,7 +1740,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalore} />
+            <FaqAccordion faqs={generalFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -1774,7 +1805,7 @@ export default async function EPFPage({ params }) {
             <PerformanceSection data={data} />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFConsultants} />
+            <CodeOfConduct sections={generalFaqWithAddress} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -1877,7 +1908,7 @@ export default async function EPFPage({ params }) {
             />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -1974,7 +2005,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -2071,7 +2102,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -2168,7 +2199,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -2265,7 +2296,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -2362,7 +2393,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -2459,7 +2490,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -2556,7 +2587,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -2653,7 +2684,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -2750,7 +2781,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -2847,7 +2878,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -2944,7 +2975,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -3041,7 +3072,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -3138,7 +3169,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -3235,7 +3266,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -3332,7 +3363,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -3429,7 +3460,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -3526,7 +3557,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -3623,7 +3654,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -3720,7 +3751,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreRegistration} />
+            <FaqAccordion faqs={registrationFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -3795,7 +3826,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -3870,7 +3901,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -3945,7 +3976,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -4020,7 +4051,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -4095,7 +4126,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -4170,7 +4201,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -4245,7 +4276,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -4320,7 +4351,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -4395,7 +4426,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -4470,7 +4501,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -4545,7 +4576,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -4620,7 +4651,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -4695,7 +4726,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -4770,7 +4801,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -4845,7 +4876,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -4920,7 +4951,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -4995,7 +5026,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -5070,7 +5101,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -5145,7 +5176,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -5220,7 +5251,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangaloreMonthlyFiling} />
+            <FaqAccordion faqs={monthlyFilingFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -5295,7 +5326,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -5370,7 +5401,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -5445,7 +5476,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -5520,7 +5551,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -5595,7 +5626,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -5670,7 +5701,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -5745,7 +5776,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -5820,7 +5851,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -5895,7 +5926,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -5970,7 +6001,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -6045,7 +6076,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -6120,7 +6151,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -6195,7 +6226,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -6270,7 +6301,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -6345,7 +6376,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -6420,7 +6451,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -6495,7 +6526,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -6570,7 +6601,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -6645,7 +6676,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );
@@ -6720,7 +6751,7 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={epfManagementFaqBangalorePFCompliance} />
+            <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
         </>
       );

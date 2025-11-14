@@ -10015,3 +10015,86 @@ Our strengths:
 • 300+ client success stories`,
   },
 ];
+
+export const cityAddress = {
+  bangalore: `Bengaluru Zone (Karnataka) Bhavishya Nidhi Bhavan,
+No.13 Raja Ram Mohan Roy Road,
+Bangalore-560025`,
+
+  hyderabad: `Bhavishya Nidhi Bhawan, Opposite Begumpet Railway Station,
+Brahmanwadi, Begumpet
+Hyderabad,Telangana-500016`,
+
+  mumbai: `341, Bhavishya Nidhi Bhawan,
+Bandra (East),
+MUMBAI-I (BANDRA)-400 051`,
+
+  chennai: `Office of the Addl. Central Provident Fund Commissioner(Chennai & Puducherry),
+No. 37, Royapettah High Road, Opposite Swagat Hotel, (TN).
+Chennai-600 014`,
+
+  visakhapatnam: `Bhavishya Nidhi Bhawan,
+Door No. 58-14-86, Marripalem VUDA Layout,
+NAD Post, Visakhapatnam – 530009, Andhra Pradesh`,
+
+  delhi: `Employees Provident Fund Organization, (Ministry of Labour & Employment)
+Plate A Ground Floor, Office Block-II, East Kidwai Nagar
+New Delhi-110023`,
+
+  pune: `2nd Floor, Pune Cantonment Board Building,
+Near Golibar Maidan, Camp
+Pune(Maharashtra) - 411 001.`,
+
+  kolkata: `Office of the Addl. Central Provident Fund Commissioner (West Bengal, NER)
+DK-Block, Sector-II, Salt Lake City, Karunamoyee,
+Kolkata- 700 091.`,
+
+  ahmedabad: `Bhavishyanidhi Bhawan, Near Income Tax Circle
+Ashram Road (Gujarat)
+Ahmedabad-380 014.`,
+
+  surat: `Bhavishyanidhi Bhawan, Near Income Tax Circle
+Ashram Road (Gujarat)
+Ahmedabad-380 014.`,
+
+  gurgaon: `Bhavishyanidhi Bhawan, Near Income Tax Circle
+Ashram Road (Gujarat)
+Ahmedabad-380 014.`,
+
+  noida: `Bhavishya Nidhi Bhawan
+A-2C, Sector 24, Noida,
+Uttar Pradesh -201301.`,
+
+  jaipur: `Nidhi Bhawan, Vidyut Marg,
+Jyoti Nagar,(RJ)
+Jaipur-302 005`,
+
+  lucknow: `Nidhi Bhawan, Vidyut Marg,
+Jyoti Nagar,(RJ)
+Jaipur-302 005`,
+
+  indore: `Nidhi Bhawan, Vidyut Marg,
+Jyoti Nagar,(RJ)
+Jaipur-302 005`,
+
+  coimbatore: `P.B.No-3875,
+Dr. Balasundaram Road,
+Coimbatore-641018.`,
+
+  vadodara: `Regional Office - VADODARA
+B/H VMC Ward-6 Office,
+Akota Stadium Road,
+Vadodara, GUJARAT`,
+
+  nagpur: `Bhavishya Nidhi Bhawan
+132-A, Ridge Road, Tukdoji Square,
+Raghuji Nagar, Nagpur 440009`,
+
+  bhopal: `Bhavishyanidhi Bhawan,
+59-Arera Hills, (M.P.)
+Bhopal-462 011`,
+
+  kanpur: `Office of the Addl. Central Provident Fund Commissioner (Uttar Pradesh),
+Nidhi Bhawan,Sarvodaya Nagar,
+Kanpur -208 005`,
+};
