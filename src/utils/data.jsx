@@ -6061,9 +6061,9 @@ export const cityData = {
     },
     esicBangalore: {
       title: "ESIC Consultants Bangalore",
-      subTitle: " We handle everything, you handle nothing",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
-        "100% On-Time Filing. Zero Penalties. Zero Stress Since 2023.",
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "bangalore@esicconsultants.in",
     },
     esicRegistration: {
@@ -6109,46 +6109,20 @@ export const cityData = {
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "hyderabad@pfconsultants.in",
     },
-    esic: {
+    esicHyderabad: {
       title: "ESIC Consultants Hyderabad",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
-        "Reliable ESIC registration and compliance support in Hyderabad.",
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "hyderabad@esicconsultants.in",
     },
+
     pfMonthlyFilingHyderabad: {
       title: "PF Monthly Filing Services in Hyderabad",
       subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
       description:
         "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
       contact: "hyderabad@pfconsultants.in",
-    },
-  },
-
-  goa: {
-    pfGoa: {
-      title: "EPF Consultants Goa",
-      subTitle: "We log into your portal and do it for you",
-      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
-      contact: "goa@pfconsultants.in",
-    },
-    pfMonthlyFilingGoa: {
-      title: "PF Monthly Filing Services in Goa",
-      subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
-      description:
-        "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
-      contact: "goa@pfconsultants.in",
-    },
-    pfRegistrationGoa: {
-      title: "EPF Registration Goa",
-      subTitle: "We get you registered in 7 days",
-      description:
-        "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
-      contact: "goa@pfconsultants.in",
-    },
-    esic: {
-      title: "ESIC Consultants Goa",
-      description: "Reliable ESIC registration and compliance support in Goa.",
-      contact: "goa@esicconsultants.in",
     },
   },
 
@@ -6180,10 +6154,11 @@ export const cityData = {
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "mumbai@pfconsultants.in",
     },
-    esic: {
+    esicMumbai: {
       title: "ESIC Consultants Mumbai",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
-        "Reliable ESIC registration and compliance support in Mumbai.",
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "mumbai@esicconsultants.in",
     },
   },
@@ -6216,10 +6191,11 @@ export const cityData = {
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "chennai@pfconsultants.in",
     },
-    esic: {
+    esicChennai: {
       title: "ESIC Consultants Chennai",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
-        "Reliable ESIC registration and compliance support in Chennai.",
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "chennai@esicconsultants.in",
     },
   },
@@ -6252,10 +6228,11 @@ export const cityData = {
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "visakhapatnam@pfconsultants.in",
     },
-    esic: {
+    esicVisakhapatnam: {
       title: "ESIC Consultants Visakhapatnam",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
-        "Reliable ESIC registration and compliance support in Visakhapatnam.",
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "visakhapatnam@esicconsultants.in",
     },
   },
@@ -6288,10 +6265,11 @@ export const cityData = {
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "delhi@pfconsultants.in",
     },
-    esic: {
+    esicDelhi: {
       title: "ESIC Consultants Delhi",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
-        "Reliable ESIC registration and compliance support in Delhi.",
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "delhi@esicconsultants.in",
     },
   },
@@ -6324,9 +6302,11 @@ export const cityData = {
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "pune@pfconsultants.in",
     },
-    esic: {
+    esicPune: {
       title: "ESIC Consultants Pune",
-      description: "Reliable ESIC registration and compliance support in Pune.",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
+      description:
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "pune@esicconsultants.in",
     },
   },
@@ -6359,10 +6339,11 @@ export const cityData = {
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "kolkata@pfconsultants.in",
     },
-    esic: {
+    esicKolkata: {
       title: "ESIC Consultants Kolkata",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
-        "Reliable ESIC registration and compliance support in Kolkata.",
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "kolkata@esicconsultants.in",
     },
   },
@@ -6395,10 +6376,11 @@ export const cityData = {
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "ahmedabad@pfconsultants.in",
     },
-    esic: {
+    esicAhmedabad: {
       title: "ESIC Consultants Ahmedabad",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
-        "Reliable ESIC registration and compliance support in Ahmedabad.",
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "ahmedabad@esicconsultants.in",
     },
   },
@@ -6431,10 +6413,11 @@ export const cityData = {
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "surat@pfconsultants.in",
     },
-    esic: {
+    esicSurat: {
       title: "ESIC Consultants Surat",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
-        "Reliable ESIC registration and compliance support in Surat.",
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "surat@esicconsultants.in",
     },
   },
@@ -6467,10 +6450,11 @@ export const cityData = {
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "gurgaon@pfconsultants.in",
     },
-    esic: {
+    esicGurgaon: {
       title: "ESIC Consultants Gurgaon",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
-        "Reliable ESIC registration and compliance support in Gurgaon.",
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "gurgaon@esicconsultants.in",
     },
   },
@@ -6503,10 +6487,11 @@ export const cityData = {
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "noida@pfconsultants.in",
     },
-    esic: {
+    esicNoida: {
       title: "ESIC Consultants Noida",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
-        "Reliable ESIC registration and compliance support in Noida.",
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "noida@esicconsultants.in",
     },
   },
@@ -6540,10 +6525,11 @@ export const cityData = {
       contact: "jaipur@pfconsultants.in",
     },
 
-    esic: {
+    esicJaipur: {
       title: "ESIC Consultants Jaipur",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
-        "Reliable ESIC registration and compliance support in Jaipur.",
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "jaipur@esicconsultants.in",
     },
   },
@@ -6576,10 +6562,11 @@ export const cityData = {
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "lucknow@pfconsultants.in",
     },
-    esic: {
+    esicLucknow: {
       title: "ESIC Consultants Lucknow",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
-        "Reliable ESIC registration and compliance support in Lucknow.",
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "lucknow@esicconsultants.in",
     },
   },
@@ -6612,10 +6599,11 @@ export const cityData = {
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "indore@pfconsultants.in",
     },
-    esic: {
+    esicIndore: {
       title: "ESIC Consultants Indore",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
-        "Reliable ESIC registration and compliance support in Indore.",
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "indore@esicconsultants.in",
     },
   },
@@ -6648,10 +6636,11 @@ export const cityData = {
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "coimbatore@pfconsultants.in",
     },
-    esic: {
+    esicCoimbatore: {
       title: "ESIC Consultants Coimbatore",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
-        "Reliable ESIC registration and compliance support in Coimbatore.",
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "coimbatore@esicconsultants.in",
     },
   },
@@ -6684,10 +6673,11 @@ export const cityData = {
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "vadodara@pfconsultants.in",
     },
-    esic: {
+    esicVadodara: {
       title: "ESIC Consultants Vadodara",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
-        "Reliable ESIC registration and compliance support in Vadodara.",
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "vadodara@esicconsultants.in",
     },
   },
@@ -6720,10 +6710,11 @@ export const cityData = {
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "nagpur@pfconsultants.in",
     },
-    esic: {
+    esicNagpur: {
       title: "ESIC Consultants Nagpur",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
-        "Reliable ESIC registration and compliance support in Nagpur.",
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "nagpur@esicconsultants.in",
     },
   },
@@ -6756,10 +6747,11 @@ export const cityData = {
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "bhopal@pfconsultants.in",
     },
-    esic: {
+    esicBhopal: {
       title: "ESIC Consultants Bhopal",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
-        "Reliable ESIC registration and compliance support in Bhopal.",
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "bhopal@esicconsultants.in",
     },
   },
@@ -6792,10 +6784,11 @@ export const cityData = {
         "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "kanpur@pfconsultants.in",
     },
-    esic: {
+    esicKanpur: {
       title: "ESIC Consultants Kanpur",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
-        "Reliable ESIC registration and compliance support in Kanpur.",
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "kanpur@esicconsultants.in",
     },
   },
@@ -7949,68 +7942,61 @@ export const largeCardsEsicBangalore = {
 };
 
 export const pastelCardsEsicBangalore = {
-  subTitle: "Get Started in 3 Steps",
+  subTitle: "Why Choose ESICDesk Specialists?",
   // subText:
-  //   "Our experts handle complete setup while you focus on your business.",
+  //   "We combine deep national regulatory expertise with precise local knowledge of the compliance ecosystem.",
   cards: [
     {
-      title: "Step 1",
-      subtitle: `Talk to us for 10 minutes — we’ll audit your current setup`,
+      title: "Focused",
+      subtitle: `We specialize in the Shops and Establishment Act and the specific ESIC rules for the mid-size tech company.`,
       number: 1,
     },
     {
-      title: "Step 2",
-      subtitle: `We onboard in 48 hours — portal access, documentation, process setup`,
+      title: "System Mastery",
+      subtitle: `Our expert consultants ensure compliance is seamless, fast, and accurate, providing a higher standard than a generalist accountant.`,
       number: 2,
     },
     {
-      title: "Step 3",
-      subtitle: `Relax — we handle everything from Day 1`,
+      title: "Liability Protection",
+      subtitle: `Our process is designed to legally shield the employer from personal liability in the event of an employee mishap, confirming coverage from day one.`,
       number: 3,
     },
-    //     {
-    //       title: "Employee UAN & KYC Management",
-    //       subtitle: `
-    // End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
-    //       icon: "✨",
-    //       bubble: "Dream!",
-    //       bg: "from-[#d299c2] to-[#fef9d7]",
-    //     },
+    {
+      title: "DIY Cost",
+      subtitle: `The cumulative cost of HR time + average annual penalty of ₹40,000, PLUS the risk of ₹25 Lakh liability for a single employee accident if coverage is lapsed.`,
+      number: 4,
+    },
+    {
+      title: "Your Savings",
+      subtitle: `Our strategic service converts this catastrophic liability into a predictable, managed investment, guaranteeing zero penalties and full employee coverage.`,
+      number: 5,
+    },
   ],
 };
 
 export const esicManagementFaqBangalore = [
   {
-    question: "Do you actually log into our ESIC portal, or just guide us?",
-    answer: `We actually log in (with access you grant us) and handle everything—IP generation, monthly filing, claim tracking. You get a dashboard to monitor status anytime, but you never need to touch the ESIC portal.`,
+    question: "Is ESIC registration mandatory for my company?",
+    answer: `Yes. ESIC registration is mandatory if your establishment employs 10 or more persons (or 20+ in some states), and employees earn up to ₹21,000 per month (₹25,000 for persons with disabilities). Registration should be completed quickly to avoid liability.`,
   },
   {
-    question: "What if you miss a deadline and we get penalized?",
-    answer: `In 24 months and 50+ clients, we’ve never missed a deadline. But if it happens, we pay the penalty—that’s in our service agreement. Your risk is zero.`,
+    question:
+      "What happens if an employee has an accident but doesn't have an ESIC card?",
+    answer: `If an eligible employee is not registered under ESIC, the employer becomes fully liable. This means your company must bear all medical expenses, compensation, and any legal costs associated with employment injury. The risk is substantial and direct.`,
   },
   {
-    question: "How quickly can you start?",
-    answer: `48 hours. We’ve onboarded emergency clients in 24 hours when filing deadlines were close.`,
+    question:
+      "How quickly do you generate the employee’s ESIC IP card and link the dispensary?",
+    answer: `We treat ESIC IP generation as a priority activity. We guarantee timely IP card creation and dispensary mapping—well within the legally required 15 days of joining—ensuring employees have immediate access to eligible benefits.`,
   },
   {
-    question: "Do you handle employee ESIC claims?",
-    answer: `Yes. This is one of our key services. Employees contact us directly (we give them a dedicated WhatsApp number), and we guide them through the entire claim process. Your HR team never hears from them.`,
+    question: "What is the penalty for delayed ESIC contributions?",
+    answer: `The penalty is significant. ESIC charges 12% simple annual interest for every day of delay, damages up to 25% of the arrears, and in some cases, prosecution. Our team ensures filings are completed on time to eliminate this risk entirely.`,
   },
   {
-    question: "What about ESIC inspections?",
-    answer: `We respond within 24 hours, prepare all documentation, and represent you. Our 100% resolution rate means zero penalties. You don’t even need to meet the inspector if you don’t want to.`,
-  },
-  {
-    question: "Can you handle both EPF and ESIC?",
-    answer: `Absolutely. Most of our clients use us for both. It’s more efficient and ensures both compliances are handled by one team. [Link to PF ESIC Consultant page]`,
-  },
-  {
-    question: "What if we’re already behind on filings?",
-    answer: `We specialize in cleanup. We’ll assess arrears, file all pending returns, negotiate penalty waivers where possible, and bring you current within 30 days.`,
-  },
-  {
-    question: "Do you provide reports for management?",
-    answer: `Yes. Monthly reports showing: contributions paid, employee count, new IPs generated, exits, pending claims, inspection status. Plus real-time dashboard.`,
+    question:
+      "Do you handle ESIC compliance for remote employees or staff working from home (WFH)?",
+    answer: `Yes. We manage ESIC compliance for remote or work-from-home employees located in notified ESIC areas of Bangalore or working across state lines, ensuring complete compliance with the latest regulations.`,
   },
 ];
 
@@ -8861,70 +8847,144 @@ export const sectionsPFRegsitration = [
 
 export const sectionsESICConsultant = [
   {
-    title: "What We Actually Do (Not Just Consult)",
-    // description:
-    //   "We don’t give you a checklist. We log into your EPFO portal and do everything",
+    title: "The Hidden Cost of ESIC: A ₹25 Lakh Liability Waiting to Happen",
+    description:
+      "The ESIC Act (10+ employees) is a high-stakes liability. If your business crosses the 10-employee threshold, registration is mandatory within 15 days of applicability.",
     cards: [
       {
         color: "bg-white border-gray-300",
-        title: "Employee Registration (Day 1)",
+        title: "The Problem",
         content:
-          "We generate ESIC IP numbers within 24 hours, complete employee KYC and linking, ensuring every new hire is covered from Day 1—no delays, no compliance gaps.",
+          "ESIC contributions are calculated on Gross Wages (up to ₹21,000), not just basic pay, making calculations a minefield.1 Missing the 15th of the month deadline attracts immediate penalties.",
       },
       {
         color: "bg-white border-gray-300",
-        title: "Monthly Filing (Before 15th Every Month)",
+        title: "The Catastrophic Risk",
         content: (
           <>
             <p>
-              We handle complete ESIC monthly filing before the 15th—accurate
-              calculations, challan generation, payment, and
-              confirmation—ensuring zero delays or penalties.
+              If an eligible employee meets with an employment-related accident
+              and lacks a valid ESIC card or registration, your company becomes
+              personally liable for ALL medical expenses and compensation. This
+              liability is often measured in lakhs and cannot be covered by
+              general insurance.
             </p>
           </>
         ),
       },
       {
         color: "bg-white border-gray-300",
-        title: "Claims Management (We Handle, Not You)",
+        title: "The Time Drain",
         content:
-          "We manage the entire ESIC claims process—from document verification to reimbursement—so your HR never deals with employee claims or ESIC follow-ups.",
+          "Hours vanish into the ESIC portal trying to fill complex Form-1 (Employer Registration), link employee data, and ensure accurate Dispensary mapping—all while risking severe penalties for delayed registration.",
       },
       {
         color: "bg-white border-gray-300",
-        title: "Inspection Response (24-Hour Turnaround)",
+        title: "The Challenge",
         content: (
           <>
             <p>
-              We handle ESIC inspections end-to-end—responding within 24 hours,
-              preparing documents, representing you, and closing cases with zero
-              penalties.
+              You are legally required to generate the Insured Person (IP)
+              card and correctly map the dispensary within 15 days of joining.
+              This administrative step is frequently missed in high-attrition
+              environments.
             </p>
           </>
         ),
       },
       {
         color: "bg-white border-gray-300",
-        title: "Exit Management",
+        title: "The Consequence",
         content: (
           <>
             <p>
-              We manage employee exits instantly—updating ESIC records,
-              verifying final contributions, and ensuring every exit is fully
-              compliant and penalty-free.
+              Delay means your employee has no access to benefits when they need
+              them most, leaving you exposed to full personal liability in the
+              event of an accident.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Your Solution: EPFDesk, Dedicated ESIC Shield",
+    description:
+      "We transform the complex, high-risk process of ESIC compliance into a seamless, expert-managed service. ",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Accurate Gross Wage Calculation",
+        content:
+          "We guarantee precise contribution calculation on Gross Wages (3.25% Employer, 0.75% Employee), eliminating the most common audit failure point.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "IP Card Generation within 15 Days",
+        content: (
+          <>
+            <p>
+              We manage the complete process of registering all eligible
+              employees and initiating the Insured Person (IP) card
+              generation within the legally required 15 days of joining.
             </p>
           </>
         ),
       },
       {
         color: "bg-white border-gray-300",
-        title: "What This Actually Saves You",
+        title: "Correct Dispensary Mapping",
+        content:
+          "We ensure accurate Dispensary and ESI Hospital mapping in the Bangalore area, guaranteeing employees can access medical benefits immediately.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Guaranteed Timeliness",
         content: (
           <>
             <p>
-              By switching to EPFdesk, you eliminate penalties, delays, and HR
-              effort—saving Lakhs annually while your HR team stays completely
-              free from ESIC hassles.
+              We ensure final filing and remittance are completed well before
+              the 15th of the month deadline, eliminating 100% of late-payment
+              penalties (12% interest p.a.) and damage charges.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Audit-Ready Records",
+        content: (
+          <>
+            <p>
+              We manage and maintain mandatory records, including the Accident
+              Register (Form 11) and other documentation necessary for audit and
+              immediate accident reporting.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Post-Registration Filings",
+        content: (
+          <>
+            <p>
+              We handle the meticulous preparation and submission of half-yearly
+              returns (Form 6/C-11), maintaining perfect record continuity for
+              the ESIC Corporation.{" "}
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Claim Facilitation",
+        content: (
+          <>
+            <p>
+              Assistance with processing employee claims for sickness,
+              maternity, and temporary disablement benefits, reducing the burden
+              on your HR team.
             </p>
           </>
         ),

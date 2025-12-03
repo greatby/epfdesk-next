@@ -434,7 +434,7 @@ export default function Footer() {
                   <span key={slug} className="flex items-center">
                     {/* ✔ CORRECT ROUTE FOR ESIC */}
                     <a
-                      href={`https://epfdesk.com/esicCompliance/${city.toLowerCase()}/${slug}`}
+                      href={`/esicCompliance/${city.toLowerCase()}/${slug}`}
                       className="hover:text-[#066] hover:underline"
                     >
                       {`${title} in ${city}`}
