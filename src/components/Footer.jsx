@@ -44,12 +44,10 @@ const footerCities = {
 
   epfRegistration: [
     { city: "Bangalore", slug: "epf-registration-bangalore" },
-    { city: "Hyderabad", slug: "epf-registration-hyderabad" },
-    { city: "Goa", slug: "epf-registration-goa" },
     { city: "Mumbai", slug: "epf-registration-mumbai" },
-    { city: "Chennai", slug: "epf-registration-chennai" },
-    { city: "Visakhapatnam", slug: "epf-registration-visakhapatnam" },
     { city: "Delhi", slug: "epf-registration-delhi" },
+    { city: "Chennai", slug: "epf-registration-chennai" },
+    { city: "Hyderabad", slug: "epf-registration-hyderabad" },
     { city: "Pune", slug: "epf-registration-pune" },
     { city: "Kolkata", slug: "epf-registration-kolkata" },
     { city: "Ahmedabad", slug: "epf-registration-ahmedabad" },
@@ -61,6 +59,7 @@ const footerCities = {
     { city: "Indore", slug: "epf-registration-indore" },
     { city: "Coimbatore", slug: "epf-registration-coimbatore" },
     { city: "Vadodara", slug: "epf-registration-vadodara" },
+    { city: "Visakhapatnam", slug: "epf-registration-visakhapatnam" },
     { city: "Nagpur", slug: "epf-registration-nagpur" },
     { city: "Bhopal", slug: "epf-registration-bhopal" },
     { city: "Kanpur", slug: "epf-registration-kanpur" },
@@ -68,11 +67,10 @@ const footerCities = {
 
   monthlyFiling: [
     { city: "Bangalore", slug: "pf-monthly-filing-in-bangalore" },
-    { city: "Hyderabad", slug: "pf-monthly-filing-in-hyderabad" },
     { city: "Mumbai", slug: "pf-monthly-filing-in-mumbai" },
-    { city: "Chennai", slug: "pf-monthly-filing-in-chennai" },
-    { city: "Visakhapatnam", slug: "pf-monthly-filing-in-visakhapatnam" },
     { city: "Delhi", slug: "pf-monthly-filing-in-delhi" },
+    { city: "Chennai", slug: "pf-monthly-filing-in-chennai" },
+    { city: "Hyderabad", slug: "pf-monthly-filing-in-hyderabad" },
     { city: "Pune", slug: "pf-monthly-filing-in-pune" },
     { city: "Kolkata", slug: "pf-monthly-filing-in-kolkata" },
     { city: "Ahmedabad", slug: "pf-monthly-filing-in-ahmedabad" },
@@ -84,6 +82,7 @@ const footerCities = {
     { city: "Indore", slug: "pf-monthly-filing-in-indore" },
     { city: "Coimbatore", slug: "pf-monthly-filing-in-coimbatore" },
     { city: "Vadodara", slug: "pf-monthly-filing-in-vadodara" },
+    { city: "Visakhapatnam", slug: "pf-monthly-filing-in-visakhapatnam" },
     { city: "Nagpur", slug: "pf-monthly-filing-in-nagpur" },
     { city: "Bhopal", slug: "pf-monthly-filing-in-bhopal" },
     { city: "Kanpur", slug: "pf-monthly-filing-in-kanpur" },
@@ -91,11 +90,10 @@ const footerCities = {
 
   pfCompliance: [
     { city: "Bangalore", slug: "pf-compliance-in-bangalore" },
-    { city: "Hyderabad", slug: "pf-compliance-in-hyderabad" },
     { city: "Mumbai", slug: "pf-compliance-in-mumbai" },
-    { city: "Chennai", slug: "pf-compliance-in-chennai" },
-    { city: "Visakhapatnam", slug: "pf-compliance-in-visakhapatnam" },
     { city: "Delhi", slug: "pf-compliance-in-delhi" },
+    { city: "Chennai", slug: "pf-compliance-in-chennai" },
+    { city: "Hyderabad", slug: "pf-compliance-in-hyderabad" },
     { city: "Pune", slug: "pf-compliance-in-pune" },
     { city: "Kolkata", slug: "pf-compliance-in-kolkata" },
     { city: "Ahmedabad", slug: "pf-compliance-in-ahmedabad" },
@@ -107,9 +105,103 @@ const footerCities = {
     { city: "Indore", slug: "pf-compliance-in-indore" },
     { city: "Coimbatore", slug: "pf-compliance-in-coimbatore" },
     { city: "Vadodara", slug: "pf-compliance-in-vadodara" },
+    { city: "Visakhapatnam", slug: "pf-compliance-in-visakhapatnam" },
     { city: "Nagpur", slug: "pf-compliance-in-nagpur" },
     { city: "Bhopal", slug: "pf-compliance-in-bhopal" },
     { city: "Kanpur", slug: "pf-compliance-in-kanpur" },
+  ],
+};
+export const esicCities = {
+  consultants: [
+    { city: "Bangalore", slug: "esic-consultants-bangalore" },
+    { city: "Mumbai", slug: "esic-consultants-mumbai" },
+    { city: "Delhi", slug: "esic-consultants-delhi" },
+    { city: "Chennai", slug: "esic-consultants-chennai" },
+    { city: "Hyderabad", slug: "esic-consultants-hyderabad" },
+    { city: "Pune", slug: "esic-consultants-pune" },
+    { city: "Kolkata", slug: "esic-consultants-kolkata" },
+    { city: "Ahmedabad", slug: "esic-consultants-ahmedabad" },
+    { city: "Surat", slug: "esic-consultants-surat" },
+    { city: "Gurgaon", slug: "esic-consultants-gurgaon" },
+    { city: "Noida", slug: "esic-consultants-noida" },
+    { city: "Jaipur", slug: "esic-consultants-jaipur" },
+    { city: "Lucknow", slug: "esic-consultants-lucknow" },
+    { city: "Indore", slug: "esic-consultants-indore" },
+    { city: "Coimbatore", slug: "esic-consultants-coimbatore" },
+    { city: "Vadodara", slug: "esic-consultants-vadodara" },
+    { city: "Visakhapatnam", slug: "esic-consultants-visakhapatnam" },
+    { city: "Nagpur", slug: "esic-consultants-nagpur" },
+    { city: "Bhopal", slug: "esic-consultants-bhopal" },
+    { city: "Kanpur", slug: "esic-consultants-kanpur" },
+  ],
+
+  registration: [
+    { city: "Bangalore", slug: "esic-registration-bangalore" },
+    { city: "Mumbai", slug: "esic-registration-mumbai" },
+    { city: "Delhi", slug: "esic-registration-delhi" },
+    { city: "Chennai", slug: "esic-registration-chennai" },
+    { city: "Hyderabad", slug: "esic-registration-hyderabad" },
+    { city: "Pune", slug: "esic-registration-pune" },
+    { city: "Kolkata", slug: "esic-registration-kolkata" },
+    { city: "Ahmedabad", slug: "esic-registration-ahmedabad" },
+    { city: "Surat", slug: "esic-registration-surat" },
+    { city: "Gurgaon", slug: "esic-registration-gurgaon" },
+    { city: "Noida", slug: "esic-registration-noida" },
+    { city: "Jaipur", slug: "esic-registration-jaipur" },
+    { city: "Lucknow", slug: "esic-registration-lucknow" },
+    { city: "Indore", slug: "esic-registration-indore" },
+    { city: "Coimbatore", slug: "esic-registration-coimbatore" },
+    { city: "Vadodara", slug: "esic-registration-vadodara" },
+    { city: "Visakhapatnam", slug: "esic-registration-visakhapatnam" },
+    { city: "Nagpur", slug: "esic-registration-nagpur" },
+    { city: "Bhopal", slug: "esic-registration-bhopal" },
+    { city: "Kanpur", slug: "esic-registration-kanpur" },
+  ],
+
+  monthlyFiling: [
+    { city: "Bangalore", slug: "esic-monthly-filing-bangalore" },
+    { city: "Mumbai", slug: "esic-monthly-filing-mumbai" },
+    { city: "Delhi", slug: "esic-monthly-filing-delhi" },
+    { city: "Chennai", slug: "esic-monthly-filing-chennai" },
+    { city: "Hyderabad", slug: "esic-monthly-filing-hyderabad" },
+    { city: "Pune", slug: "esic-monthly-filing-pune" },
+    { city: "Kolkata", slug: "esic-monthly-filing-kolkata" },
+    { city: "Ahmedabad", slug: "esic-monthly-filing-ahmedabad" },
+    { city: "Surat", slug: "esic-monthly-filing-surat" },
+    { city: "Gurgaon", slug: "esic-monthly-filing-gurgaon" },
+    { city: "Noida", slug: "esic-monthly-filing-noida" },
+    { city: "Jaipur", slug: "esic-monthly-filing-jaipur" },
+    { city: "Lucknow", slug: "esic-monthly-filing-lucknow" },
+    { city: "Indore", slug: "esic-monthly-filing-indore" },
+    { city: "Coimbatore", slug: "esic-monthly-filing-coimbatore" },
+    { city: "Vadodara", slug: "esic-monthly-filing-vadodara" },
+    { city: "Visakhapatnam", slug: "esic-monthly-filing-visakhapatnam" },
+    { city: "Nagpur", slug: "esic-monthly-filing-nagpur" },
+    { city: "Bhopal", slug: "esic-monthly-filing-bhopal" },
+    { city: "Kanpur", slug: "esic-monthly-filing-kanpur" },
+  ],
+
+  compliance: [
+    { city: "Bangalore", slug: "esic-compliance-bangalore" },
+    { city: "Mumbai", slug: "esic-compliance-mumbai" },
+    { city: "Delhi", slug: "esic-compliance-delhi" },
+    { city: "Chennai", slug: "esic-compliance-chennai" },
+    { city: "Hyderabad", slug: "esic-compliance-hyderabad" },
+    { city: "Pune", slug: "esic-compliance-pune" },
+    { city: "Kolkata", slug: "esic-compliance-kolkata" },
+    { city: "Ahmedabad", slug: "esic-compliance-ahmedabad" },
+    { city: "Surat", slug: "esic-compliance-surat" },
+    { city: "Gurgaon", slug: "esic-compliance-gurgaon" },
+    { city: "Noida", slug: "esic-compliance-noida" },
+    { city: "Jaipur", slug: "esic-compliance-jaipur" },
+    { city: "Lucknow", slug: "esic-compliance-lucknow" },
+    { city: "Indore", slug: "esic-compliance-indore" },
+    { city: "Coimbatore", slug: "esic-compliance-coimbatore" },
+    { city: "Vadodara", slug: "esic-compliance-vadodara" },
+    { city: "Visakhapatnam", slug: "esic-compliance-visakhapatnam" },
+    { city: "Nagpur", slug: "esic-compliance-nagpur" },
+    { city: "Bhopal", slug: "esic-compliance-bhopal" },
+    { city: "Kanpur", slug: "esic-compliance-kanpur" },
   ],
 };
 
@@ -121,79 +213,6 @@ const footerLinks = [
 ];
 
 export default function Footer() {
-  const [openSection, setOpenSection] = useState(null);
-
-  const toggle = (name) => {
-    setOpenSection(openSection === name ? null : name);
-  };
-  const DesktopSection = ({ icon: Icon, title, children }) => (
-    <div className="min-w-[150px]">
-      <div className="flex items-center gap-2 mb-3">
-        <Icon className="text-gray-700 text-[14px]" />
-        <h3 className="text-[11px] font-semibold text-gray-700 uppercase tracking-wide">
-          {title}
-        </h3>
-      </div>
-      {children}
-    </div>
-  );
-
-  // Mobile Accordion
-  const MobileAccordion = ({ icon: Icon, title, children }) => (
-    <div className="border-b border-gray-200 py-3 md:hidden">
-      <button
-        onClick={() => toggle(title)}
-        className="w-full flex items-center justify-between text-left"
-      >
-        <div className="flex items-center gap-2">
-          <Icon className="text-gray-700 text-[16px]" />
-          <span className="text-[12px] font-semibold uppercase text-gray-700 tracking-wide">
-            {title}
-          </span>
-        </div>
-
-        {openSection === title ? (
-          <FiChevronUp className="text-gray-500" />
-        ) : (
-          <FiChevronDown className="text-gray-500" />
-        )}
-      </button>
-
-      {openSection === title && (
-        <div className="mt-2 pl-6 pb-2">{children}</div>
-      )}
-    </div>
-  );
-
-  const ListDesktop = ({ items }) => (
-    <ul className="space-y-1">
-      {items.map(({ city, slug }) => (
-        <li key={slug}>
-          <Link
-            href={`/epf/${city.toLowerCase()}/${slug}`}
-            className="text-[11px] text-gray-500 hover:text-[#ec5b6b] transition"
-          >
-            {city}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  );
-
-  const ListMobile = ({ items }) => (
-    <ul className="space-y-2">
-      {items.map(({ city, slug }) => (
-        <li key={slug}>
-          <Link
-            href={`/epf/${city.toLowerCase()}/${slug}`}
-            className="text-[11px] text-gray-600 hover:text-[#ec5b6b] transition"
-          >
-            {city}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  );
   return (
     <>
       <footer
@@ -211,12 +230,6 @@ export default function Footer() {
                   width={150}
                   height={100}
                 />
-
-                <div className="text-sm text-[#6b7280]">
-                  © 2025 EPFdesk.com <br /> All rights reserved.
-                </div>
-
-                <hr className="border-t border-gray-200" />
 
                 <div className="flex flex-col gap-3">
                   {[
@@ -357,179 +370,89 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </footer>
-      <footer className="bg-white border-t pt-10 pb-8 border-gray-200">
-        <div className="max-w-7xl mx-auto px-6">
-          {/* LOGO (Desktop spacing copied from BMS) */}
-          <div className="mb-10 flex items-center">
-            <Image
-              src="/images/EPFdesk (1).svg"
-              width={140}
-              height={70}
-              alt="EPFdesk Logo"
-              className="opacity-90"
-            />
+        <hr className="text-gray-300 my-6" />
+        <div className="flex justify-center items-center">
+          <img
+            src="/images/EPFdesk (1).svg"
+            alt="EPFdesk Logo"
+            loading="lazy"
+            className="w-full h-auto"
+          />
+        </div>
+        <hr className="text-gray-300 my-6" />
+
+        <div className="">
+          <div className="max-w-7xl mx-auto px-6 py-8 space-y-6">
+            {[
+              { title: "PF Consultants", list: footerCities.pfConsultants },
+              { title: "EPF Registration", list: footerCities.epfRegistration },
+              { title: "PF Monthly Filing", list: footerCities.monthlyFiling },
+              { title: "PF Compliance", list: footerCities.pfCompliance },
+            ].map(({ title, list }) => (
+              <div key={title} className="leading-relaxed">
+                {/* Title */}
+                <div className="text-sm font-bold text-gray-800 tracking-wide uppercase mb-3">
+                  {title}
+                </div>
+
+                {/* Links */}
+                <div className="flex flex-wrap gap-1 text-[12px] text-gray-600">
+                  {list.map(({ city, slug }, i) => (
+                    <span key={slug} className="flex items-center">
+                      <Link
+                        href={`/epf/${city.toLowerCase()}/${slug}`}
+                        className="hover:text-[#066] hover:underline"
+                      >
+                        {`${title} in ${city}`}
+                      </Link>
+
+                      {i !== list.length - 1 && (
+                        <span className="px-2 text-gray-400">|</span>
+                      )}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
+        </div>
+        {/* --- ESIC BOOKMYSHOW STYLE LISTS --- */}
+        <div className="max-w-7xl mx-auto px-6 pb-10 space-y-6">
+          {[
+            { title: "ESIC Consultants", list: esicCities.consultants },
+            { title: "ESIC Registration", list: esicCities.registration },
+            { title: "ESIC Monthly Filing", list: esicCities.monthlyFiling },
+            { title: "ESIC Compliance", list: esicCities.compliance },
+          ].map(({ title, list }) => (
+            <div key={title}>
+              <div className="text-sm font-semibold text-gray-900 uppercase mb-2">
+                {title}
+              </div>
 
-          {/* ------------------ DESKTOP FOOTER ------------------ */}
-          <div
-            className="
-          hidden md:grid
-          grid-cols-2 
-          sm:grid-cols-3 
-          md:grid-cols-4 
-          lg:grid-cols-6 
-          gap-y-10 
-          gap-x-8 
-          lg:gap-x-14
-        "
-          >
-            <DesktopSection icon={FiUsers} title="PF Consultants">
-              <ListDesktop items={footerCities.pfConsultants} />
-            </DesktopSection>
-
-            <DesktopSection icon={FiFileText} title="EPF Registration">
-              <ListDesktop items={footerCities.epfRegistration} />
-            </DesktopSection>
-
-            <DesktopSection icon={FiCalendar} title="Monthly Filing">
-              <ListDesktop items={footerCities.monthlyFiling} />
-            </DesktopSection>
-
-            <DesktopSection icon={FiCheckCircle} title="PF Compliance">
-              <ListDesktop items={footerCities.pfCompliance} />
-            </DesktopSection>
-
-            <DesktopSection icon={FiBriefcase} title="Company">
-              <ul className="space-y-1">
-                {footerLinks.map(({ label, url }) => (
-                  <li key={url}>
-                    <Link
-                      href={url}
-                      className="text-[11px] text-gray-500 hover:text-[#ec5b6b] transition"
+              <div className="flex flex-wrap gap-2 text-[12px] text-gray-700">
+                {list.map(({ city, slug }, i) => (
+                  <span key={slug} className="flex items-center">
+                    {/* ✔ CORRECT ROUTE FOR ESIC */}
+                    <a
+                      href={`https://epfdesk.com/esicCompliance/${city.toLowerCase()}/${slug}`}
+                      className="hover:text-[#066] hover:underline"
                     >
-                      {label}
-                    </Link>
-                  </li>
+                      {`${title} in ${city}`}
+                    </a>
+
+                    {i !== list.length - 1 && (
+                      <span className="px-2 text-gray-400">|</span>
+                    )}
+                  </span>
                 ))}
-              </ul>
-            </DesktopSection>
+              </div>
+            </div>
+          ))}
+        </div>
 
-            <DesktopSection icon={FiGlobe} title="Social">
-              <ul className="space-y-1">
-                <li>
-                  <a
-                    href="https://youtube.com/@EPFDesk"
-                    className="text-[11px] text-gray-500 hover:text-[#ec5b6b]"
-                  >
-                    YouTube
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/epfdesk"
-                    className="text-[11px] text-gray-500 hover:text-[#ec5b6b]"
-                  >
-                    X (Twitter)
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://linkedin.com/company/epfdesk"
-                    className="text-[11px] text-gray-500 hover:text-[#ec5b6b]"
-                  >
-                    LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://instagram.com/epfdesk"
-                    className="text-[11px] text-gray-500 hover:text-[#ec5b6b]"
-                  >
-                    Instagram
-                  </a>
-                </li>
-              </ul>
-            </DesktopSection>
-          </div>
-
-          {/* ------------------ MOBILE FOOTER ------------------ */}
-          <div className="md:hidden">
-            <MobileAccordion title="PF Consultants" icon={FiUsers}>
-              <ListMobile items={footerCities.pfConsultants} />
-            </MobileAccordion>
-
-            <MobileAccordion title="EPF Registration" icon={FiFileText}>
-              <ListMobile items={footerCities.epfRegistration} />
-            </MobileAccordion>
-
-            <MobileAccordion title="Monthly Filing" icon={FiCalendar}>
-              <ListMobile items={footerCities.monthlyFiling} />
-            </MobileAccordion>
-
-            <MobileAccordion title="PF Compliance" icon={FiCheckCircle}>
-              <ListMobile items={footerCities.pfCompliance} />
-            </MobileAccordion>
-
-            <MobileAccordion title="Company" icon={FiBriefcase}>
-              <ul className="space-y-2">
-                {footerLinks.map(({ label, url }) => (
-                  <li key={url}>
-                    <Link
-                      href={url}
-                      className="text-[11px] text-gray-600 hover:text-[#ec5b6b]"
-                    >
-                      {label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </MobileAccordion>
-
-            <MobileAccordion title="Social" icon={FiGlobe}>
-              <ul className="space-y-2">
-                <li>
-                  <a
-                    href="https://youtube.com/@EPFDesk"
-                    className="text-[11px] text-gray-600 hover:text-[#ec5b6b]"
-                  >
-                    YouTube
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/epfdesk"
-                    className="text-[11px] text-gray-600 hover:text-[#ec5b6b]"
-                  >
-                    X (Twitter)
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://linkedin.com/company/epfdesk"
-                    className="text-[11px] text-gray-600 hover:text-[#ec5b6b]"
-                  >
-                    LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://instagram.com/epfdesk"
-                    className="text-[11px] text-gray-600 hover:text-[#ec5b6b]"
-                  >
-                    Instagram
-                  </a>
-                </li>
-              </ul>
-            </MobileAccordion>
-          </div>
-
-          {/* COPYRIGHT */}
-          <div className="mt-12 border-t border-gray-300 pt-4">
-            <p className="text-center text-[11px] text-gray-500">
-              © 2025 EPFdesk.com — All Rights Reserved.
-            </p>
-          </div>
+        <hr className="border-t border-gray-200" />
+        <div className="text-sm my-5 text-center text-[#6b7280]">
+          © 2025 EPFdesk.com | All rights reserved.
         </div>
       </footer>
     </>

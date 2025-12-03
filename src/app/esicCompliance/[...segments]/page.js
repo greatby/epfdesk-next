@@ -9,21 +9,15 @@ import {
   epfManagementFaq,
   cityData,
   standalonePagesEsic,
-  esicBangaloreCardData,
-  largeCardsEsicBangalore,
   pastelCardsEsicBangalore,
   esicManagementFaqBangalore,
-  esicBangaloreRegistrationCardData,
-  largeCardsEsicRegistrationBangalore,
   pastelCardsEsicRegistrationBangalore,
   esicRegistrationFaqBangalore,
   sectionsESICConsultant,
   sectionsESICRegistration,
 } from "@/utils/data";
 import { PerformanceSection } from "@/components/PerformanceSection";
-import PerformanceCard from "@/components/PerformanceCard";
-import LargeCardSlider from "@/components/largeCards";
-import PastelCardSlider from "@/components/pastelCardSlider";
+
 import CodeOfConduct from "@/components/CodeOfConduct";
 import Script from "next/script";
 import ThreeStepSection from "@/components/ThreeStepSection";
@@ -107,9 +101,6 @@ export default async function EPFPage({ params }) {
 
   // CASE 3: /epf/:city/:slug
   if (segments.length === 2) {
-    // const [city, slug] = segments;
-    // const data = cityData[city]?.esic;
-
     const [city, slug] = segments;
     const cityPages = cityData[city];
     console.log(cityPages);
@@ -124,7 +115,7 @@ export default async function EPFPage({ params }) {
     const slugMap = {
       // "pf-consultants-in-bangalore": "pf",
       "esic-registration-bangalore": "esicRegistration",
-      "esic-consultants-bangalore": "esic",
+      "esic-consultants-bangalore": "esicBangalore",
     };
 
     const key = slugMap[slug];
@@ -196,22 +187,13 @@ export default async function EPFPage({ params }) {
             <PerformanceSection data={data} />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            {/* <PerformanceCard slug={slug} data={esicBangaloreCardData} /> */}
             <CodeOfConduct sections={sectionsESICConsultant} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            {/* <FadeInWhenVisible>
-              <LargeCardSlider cardsData={largeCardsEsicBangalore} />
-            </FadeInWhenVisible> */}
             <FadeInWhenVisible>
-              {/* <PastelCardSlider cardsData={pastelCardsEsicBangalore} /> */}
               <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
             </FadeInWhenVisible>
-            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
-                 Workforce: End-to-End EPF Management for Modern Businesses
-               </h2>
-               <StickyScrollSections items={epfManagementBangalore} /> */}
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -279,31 +261,15 @@ export default async function EPFPage({ params }) {
             <PerformanceSection data={data} />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            {/* <PerformanceCard
-              slug={slug}
-              data={esicBangaloreRegistrationCardData}
-            /> */}
             <CodeOfConduct sections={sectionsESICRegistration} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            {/* <FadeInWhenVisible>
-              <LargeCardSlider
-                cardsData={largeCardsEsicRegistrationBangalore}
-              />
-            </FadeInWhenVisible> */}
             <FadeInWhenVisible>
-              {/* <PastelCardSlider
-                cardsData={pastelCardsEsicRegistrationBangalore}
-              /> */}
               <ThreeStepSection
                 cardsData={pastelCardsEsicRegistrationBangalore}
               />
             </FadeInWhenVisible>
-            {/* <h2 className="text-3xl max-w-7xl m-auto sm:text-5xl text-center font-bold my-14 text-gray-900">
-                 Workforce: End-to-End EPF Management for Modern Businesses
-               </h2>
-               <StickyScrollSections items={epfManagementBangalore} /> */}
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>

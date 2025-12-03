@@ -1,19 +1,19 @@
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
-import PerformanceCard from "@/components/PerformanceCard";
 import { PerformanceSection } from "@/components/PerformanceSection";
 import React from "react";
-import { largeCardsPFEsicBangalore, largeCardsPFEsicRegBangalore, pastelCardsPFEsicBangalore, pastelCardsPFEsicRegBangalore, PFEsicBangaloreCardData, pfEsicManagementFaqBangalore, PFEsicRegBangaloreCardData, pfEsicRegFaqBangalore, pfESICRegistration } from "@/utils/data";
-import LargeCardSlider from "@/components/largeCards";
-import PastelCardSlider from "@/components/pastelCardSlider";
+import {
+  pastelCardsPFEsicRegBangalore,
+  pfEsicRegFaqBangalore,
+  pfESICRegistration,
+} from "@/utils/data";
+
 import FaqAccordion from "@/components/faqAccordian";
 import Script from "next/script";
-import CodeOfConduct from "@/components/CodeOfConduct"
+import CodeOfConduct from "@/components/CodeOfConduct";
 import ThreeStepSection from "@/components/ThreeStepSection";
 
 export const metadata = {
-  title:
-    "PF & ESIC Registration Bangalore | Register Both in 7 Days | EPFdesk",
+  title: "PF & ESIC Registration Bangalore | Register Both in 7 Days | EPFdesk",
   description:
     "EPFdesk helps you register for both PF and ESIC in Bangalore — one process, one documentation, one week. Fast, compliant, and 100% approval rate.",
   keywords: [
@@ -46,7 +46,7 @@ export const metadata = {
 };
 
 const PFEsicRegistration = () => {
-const schemaData = {
+  const schemaData = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     name: "EPFdesk - PF & ESIC Registration Bangalore",
@@ -94,11 +94,12 @@ const schemaData = {
     },
   };
 
-    const data = {
-        title: "PF ESIC Registration Bangalore",
-        subTitle:"Get Both Registrations Done Together in 7 Days",
-        description:"Stop Wasting Time on Two Separate Registrations. We Do Both. One Process."
-    }
+  const data = {
+    title: "PF ESIC Registration Bangalore",
+    subTitle: "Get Both Registrations Done Together in 7 Days",
+    description:
+      "Stop Wasting Time on Two Separate Registrations. We Do Both. One Process.",
+  };
   return (
     <>
       <Script
@@ -110,17 +111,12 @@ const schemaData = {
         <PerformanceSection data={data} />
       </FadeInWhenVisible>
       <FadeInWhenVisible>
-        {/* <PerformanceCard slug={"pf-esic-registration-bangalore"} data={PFEsicRegBangaloreCardData} /> */}
-          <CodeOfConduct sections={pfESICRegistration}/>
+        <CodeOfConduct sections={pfESICRegistration} />
       </FadeInWhenVisible>
 
       <FadeInWhenVisible>
-        {/* <FadeInWhenVisible>
-          <LargeCardSlider cardsData={largeCardsPFEsicRegBangalore} />
-        </FadeInWhenVisible> */}
         <FadeInWhenVisible>
-          {/* <PastelCardSlider cardsData={pastelCardsPFEsicRegBangalore} /> */}
-           <ThreeStepSection cardsData={pastelCardsPFEsicRegBangalore} />
+          <ThreeStepSection cardsData={pastelCardsPFEsicRegBangalore} />
         </FadeInWhenVisible>
       </FadeInWhenVisible>
 

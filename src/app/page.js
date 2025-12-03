@@ -9,7 +9,6 @@ import ServiceCards from "@/components/serviceCards";
 import CustomerCarousel from "@/components/customerCarousel";
 import { largeCardsLanding, slidesLandingPage } from "@/utils/data";
 import { Toaster } from "react-hot-toast";
-import Image from "next/image";
 
 export const metadata = {
   title: "EPF Desk | Simplifying EPF Compliance for Businesses in India",
@@ -25,7 +24,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-    <Toaster position="top-center" />
+      <Toaster position="top-center" />
       <FadeInWhenVisible>
         <Hero />
       </FadeInWhenVisible>
@@ -39,7 +38,7 @@ export default function Home() {
         <StackedCards />
       </FadeInWhenVisible>
       <FadeInWhenVisible>
-        <CustomerCarousel slides={slidesLandingPage}/>
+        <CustomerCarousel slides={slidesLandingPage} />
       </FadeInWhenVisible>
       <FadeInWhenVisible>
         <LimitedCapacitySection />

@@ -164,9 +164,9 @@ const links = [
   { href: "/epfdesk", label: "EPFdesk" },
   { href: "/epfManagement", label: "EPFO" },
   { href: "/esic", label: "ESIC" },
-  { href: "/posh", label: "POSH" },
-  { href: "/lwf", label: "LWF" },
-  { href: "/pt", label: "PT" },
+  // { href: "/posh", label: "POSH" },
+  // { href: "/lwf", label: "LWF" },
+  // { href: "/pt", label: "PT" },
   { href: "/aboutUs", label: "About Us" },
 ];
 

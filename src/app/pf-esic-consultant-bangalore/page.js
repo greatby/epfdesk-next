@@ -1,13 +1,15 @@
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
-import PerformanceCard from "@/components/PerformanceCard";
+
 import { PerformanceSection } from "@/components/PerformanceSection";
 import React from "react";
-import { largeCardsPFEsicBangalore, pastelCardsPFEsicBangalore, PFEsicBangaloreCardData, pfESICConsultant, pfEsicManagementFaqBangalore } from "@/utils/data";
-import LargeCardSlider from "@/components/largeCards";
-import PastelCardSlider from "@/components/pastelCardSlider";
+import {
+  pastelCardsPFEsicBangalore,
+  pfESICConsultant,
+  pfEsicManagementFaqBangalore,
+} from "@/utils/data";
+
 import FaqAccordion from "@/components/faqAccordian";
-import CodeOfConduct from "@/components/CodeOfConduct"
+import CodeOfConduct from "@/components/CodeOfConduct";
 import Script from "next/script";
 import ThreeStepSection from "@/components/ThreeStepSection";
 export const metadata = {
@@ -44,7 +46,7 @@ export const metadata = {
 };
 
 const PFEsicConsultant = () => {
-const schemaData = {
+  const schemaData = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     name: "EPFdesk - PF & ESIC Consultant Bangalore",
@@ -91,14 +93,15 @@ const schemaData = {
       reviewCount: "47",
     },
   };
-    const data = {
-        title: "PF ESIC Consultant Bangalore",
-        subTitle:" One Team, Both Compliances, Zero Headaches",
-        description:"Stop Managing Two Consultants. We Handle EPF + ESIC Together."
-    }
+  const data = {
+    title: "PF ESIC Consultant Bangalore",
+    subTitle: " One Team, Both Compliances, Zero Headaches",
+    description:
+      "Stop Managing Two Consultants. We Handle EPF + ESIC Together.",
+  };
   return (
     <>
-     <Script
+      <Script
         id="schema-pf-esic-bangalore"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
@@ -107,16 +110,11 @@ const schemaData = {
         <PerformanceSection data={data} />
       </FadeInWhenVisible>
       <FadeInWhenVisible>
-        {/* <PerformanceCard slug={"pf-esic-consultant-bangalore"} data={PFEsicBangaloreCardData} /> */}
-         <CodeOfConduct sections={pfESICConsultant}/>
+        <CodeOfConduct sections={pfESICConsultant} />
       </FadeInWhenVisible>
 
       <FadeInWhenVisible>
-        {/* <FadeInWhenVisible>
-          <LargeCardSlider cardsData={largeCardsPFEsicBangalore} />
-        </FadeInWhenVisible> */}
         <FadeInWhenVisible>
-          {/* <PastelCardSlider cardsData={pastelCardsPFEsicBangalore} /> */}
           <ThreeStepSection cardsData={pastelCardsPFEsicBangalore} />
         </FadeInWhenVisible>
       </FadeInWhenVisible>

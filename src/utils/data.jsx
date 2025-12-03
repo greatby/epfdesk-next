@@ -3567,35 +3567,35 @@ export const horizontalCardsLinks = [
     gradient: "from-[#ffecd2] to-[#fcb69f]",
     bgs: ["bg-[#4ecdc4]", "bg-[#ffe66d]"],
   },
-  {
-    title: "POSH",
-    subtitle: `EPFdesk.com offers comprehensive POSH Act compliance services, including implementation, training, complaint redressal, advisory, and an independent complaint hotline. We ensure 100% adherence to the POSH Act 2013, fostering a safe, respectful workplace while protecting your organization’s reputation and legal integrity.`,
-    icon: "🛡️",
-    link: "/posh",
-    bubble: "Impact!",
-    gradient: "from-[#f093fb] to-[#f5576c]",
-    bgs: ["bg-[#4ecdc4]", "bg-[#ffe66d]"],
-  },
-  {
-    title: "LWF",
-    subtitle:
-      "Ensure flawless adherence to Labour Welfare Fund obligations across all your locations. We manage the diverse state-specific rates and periodic filings for LWF, simplifying this often-overlooked statutory requirement for your business.",
-    icon: "⚡",
-    link: "/lwf",
-    bubble: "Empower!",
-    gradient: "from-[#84fab0] to-[#8fd3f4]",
-    bgs: ["bg-[#d299c2]", "bg-[#ff6b6b]"],
-  },
-  {
-    title: "PT",
-    subtitle:
-      "Eliminate the headaches of varying state-specific Professional Tax laws. We provide accurate calculation, timely remittance, and meticulous filing for all applicable states, guaranteeing your PT compliance is always precise and penalty-free.",
-    icon: "💡",
-    link: "/pt",
-    bubble: "Innovate!",
-    gradient: "from-[#d4fc79] to-[#96e6a1]",
-    bgs: ["bg-[#ff6b6b]", "bg-[#4ecdc4]"],
-  },
+  // {
+  //   title: "POSH",
+  //   subtitle: `EPFdesk.com offers comprehensive POSH Act compliance services, including implementation, training, complaint redressal, advisory, and an independent complaint hotline. We ensure 100% adherence to the POSH Act 2013, fostering a safe, respectful workplace while protecting your organization’s reputation and legal integrity.`,
+  //   icon: "🛡️",
+  //   link: "/posh",
+  //   bubble: "Impact!",
+  //   gradient: "from-[#f093fb] to-[#f5576c]",
+  //   bgs: ["bg-[#4ecdc4]", "bg-[#ffe66d]"],
+  // },
+  // {
+  //   title: "LWF",
+  //   subtitle:
+  //     "Ensure flawless adherence to Labour Welfare Fund obligations across all your locations. We manage the diverse state-specific rates and periodic filings for LWF, simplifying this often-overlooked statutory requirement for your business.",
+  //   icon: "⚡",
+  //   link: "/lwf",
+  //   bubble: "Empower!",
+  //   gradient: "from-[#84fab0] to-[#8fd3f4]",
+  //   bgs: ["bg-[#d299c2]", "bg-[#ff6b6b]"],
+  // },
+  // {
+  //   title: "PT",
+  //   subtitle:
+  //     "Eliminate the headaches of varying state-specific Professional Tax laws. We provide accurate calculation, timely remittance, and meticulous filing for all applicable states, guaranteeing your PT compliance is always precise and penalty-free.",
+  //   icon: "💡",
+  //   link: "/pt",
+  //   bubble: "Innovate!",
+  //   gradient: "from-[#d4fc79] to-[#96e6a1]",
+  //   bgs: ["bg-[#ff6b6b]", "bg-[#4ecdc4]"],
+  // },
 ];
 
 export const plansEpfManagement = {

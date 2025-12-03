@@ -2,18 +2,9 @@
 
 import React from "react";
 
-export default function CommunityGuidelines({sections}) {
- 
-
+export default function CommunityGuidelines({ sections }) {
   return (
     <div className="bg-white">
-      {/* <h1 className="text-center text-[2.6rem] font-semibold tracking-[-.024em] text-[#001f1f]">
-        What We Actually Do (Not Just Consult)
-      </h1>
-      <p className="text-center mt-2.5 text-[17px]">
-        We don’t give you a checklist. We log into your EPFO portal and do
-        everything
-      </p> */}
       {sections.map((section, i) => (
         <section key={i} className="py-20 px-6 border-b border-gray-100">
           <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
