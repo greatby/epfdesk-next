@@ -15,6 +15,48 @@ import {
   esicRegistrationFaqBangalore,
   sectionsESICConsultant,
   sectionsESICRegistration,
+  sectionsESICompliance,
+  pastelCardsEsicComplianceBangalore,
+  esicComplianceFaqBangalore,
+  sectionsESICConsultantMumbai,
+  pastelCardsEsicMumbai,
+  esicManagementFaqMumbai,
+  sectionsESICConsultantDelhi,
+  esicManagementFaqDelhi,
+  sectionsESICConsultantChennai,
+  esicManagementFaqChennai,
+  sectionsESICConsultantHyderabad,
+  esicManagementFaqHyderabad,
+  sectionsESICConsultantPune,
+  esicManagementFaqPune,
+  sectionsESICConsultantKolkata,
+  esicManagementFaqKolkata,
+  sectionsESICConsultantAhmedabad,
+  esicManagementFaqAhmedabad,
+  sectionsESICConsultantSurat,
+  esicManagementFaqSurat,
+  sectionsESICConsultantGurgaon,
+  esicManagementFaqGurgaon,
+  sectionsESICConsultantNoida,
+  esicManagementFaqNoida,
+  sectionsESICConsultantJaipur,
+  esicManagementFaqJaipur,
+  sectionsESICConsultantLucknow,
+  esicManagementFaqLucknow,
+  sectionsESICConsultantIndore,
+  esicManagementFaqIndore,
+  sectionsESICConsultantCoimbatore,
+  esicManagementFaqCoimbatore,
+  sectionsESICConsultantVadodara,
+  esicManagementFaqVadodara,
+  sectionsESICConsultantVisakhapatnam,
+  esicManagementFaqVisakhapatnam,
+  sectionsESICConsultantNagpur,
+  esicManagementFaqNagpur,
+  sectionsESICConsultantBhopal,
+  esicManagementFaqBhopal,
+  sectionsESICConsultantKanpur,
+  esicManagementFaqKanpur,
 } from "@/utils/data";
 import { PerformanceSection } from "@/components/PerformanceSection";
 
@@ -134,6 +176,28 @@ export default async function EPFPage({ params }) {
       "esic-consultants-nagpur": "esicNagpur",
       "esic-consultants-bhopal": "esicBhopal",
       "esic-consultants-kanpur": "esicKanpur",
+      // ESIC Compliance
+      "esic-compliance-bangalore": "esicComplianceBangalore",
+      "esic-compliance-hyderabad": "esicComplianceHyderabad",
+      "esic-compliance-mumbai": "esicComplianceMumbai",
+      "esic-compliance-chennai": "esicComplianceChennai",
+      "esic-compliance-visakhapatnam": "esicComplianceVisakhapatnam",
+      "esic-compliance-delhi": "esicComplianceDelhi",
+      "esic-compliance-pune": "esicCompliancePune",
+      "esic-compliance-kolkata": "esicComplianceKolkata",
+      "esic-compliance-ahmedabad": "esicComplianceAhmedabad",
+      "esic-compliance-surat": "esicComplianceSurat",
+      "esic-compliance-gurgaon": "esicComplianceGurgaon",
+      "esic-compliance-noida": "esicComplianceNoida",
+      "esic-compliance-jaipur": "esicComplianceJaipur",
+      "esic-compliance-lucknow": "esicComplianceLucknow",
+      "esic-compliance-indore": "esicComplianceIndore",
+      "esic-compliance-coimbatore": "esicComplianceCoimbatore",
+      "esic-compliance-vadodara": "esicComplianceVadodara",
+      "esic-compliance-nagpur": "esicComplianceNagpur",
+      "esic-compliance-bhopal": "esicComplianceBhopal",
+      "esic-compliance-kanpur": "esicComplianceKanpur",
+
       // ESIC Registration
       "esic-registration-bangalore": "esicRegistration",
     };
@@ -288,17 +352,17 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsESICConsultant} />
+            <CodeOfConduct sections={sectionsESICConsultantMumbai} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
             <FadeInWhenVisible>
-              <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
+              <ThreeStepSection cardsData={pastelCardsEsicMumbai} />
             </FadeInWhenVisible>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={esicManagementFaqBangalore} />
+            <FaqAccordion faqs={esicManagementFaqMumbai} />
           </FadeInWhenVisible>
         </>
       );
@@ -372,17 +436,11 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsESICConsultant} />
+            <CodeOfConduct sections={sectionsESICConsultantDelhi} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
-            </FadeInWhenVisible>
-          </FadeInWhenVisible>
-
-          <FadeInWhenVisible>
-            <FaqAccordion faqs={esicManagementFaqBangalore} />
+            <FaqAccordion faqs={esicManagementFaqDelhi} />
           </FadeInWhenVisible>
         </>
       );
@@ -455,17 +513,13 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsESICConsultant} />
+            <CodeOfConduct sections={sectionsESICConsultantChennai} />
           </FadeInWhenVisible>
 
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
-            </FadeInWhenVisible>
-          </FadeInWhenVisible>
+         
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={esicManagementFaqBangalore} />
+            <FaqAccordion faqs={esicManagementFaqChennai} />
           </FadeInWhenVisible>
         </>
       );
@@ -538,15 +592,13 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsESICConsultant} />
+            <CodeOfConduct sections={sectionsESICConsultantHyderabad} />
           </FadeInWhenVisible>
 
-          <FadeInWhenVisible>
-            <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
-          </FadeInWhenVisible>
+         
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={esicManagementFaqBangalore} />
+            <FaqAccordion faqs={esicManagementFaqHyderabad} />
           </FadeInWhenVisible>
         </>
       );
@@ -619,15 +671,13 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsESICConsultant} />
+            <CodeOfConduct sections={sectionsESICConsultantPune} />
           </FadeInWhenVisible>
 
-          <FadeInWhenVisible>
-            <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
-          </FadeInWhenVisible>
+         
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={esicManagementFaqBangalore} />
+            <FaqAccordion faqs={esicManagementFaqPune} />
           </FadeInWhenVisible>
         </>
       );
@@ -693,15 +743,13 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsESICConsultant} />
+            <CodeOfConduct sections={sectionsESICConsultantKolkata} />
           </FadeInWhenVisible>
 
-          <FadeInWhenVisible>
-            <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
-          </FadeInWhenVisible>
+       
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={esicManagementFaqBangalore} />
+            <FaqAccordion faqs={esicManagementFaqKolkata} />
           </FadeInWhenVisible>
         </>
       );
@@ -767,15 +815,14 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsESICConsultant} />
+            <CodeOfConduct sections={sectionsESICConsultantAhmedabad} />
           </FadeInWhenVisible>
 
-          <FadeInWhenVisible>
-            <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
-          </FadeInWhenVisible>
+       
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={esicManagementFaqBangalore} />
+            <FaqAccordion faqs={esicManagementFaqAhmedabad} />
+
           </FadeInWhenVisible>
         </>
       );
@@ -841,15 +888,13 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsESICConsultant} />
+            <CodeOfConduct sections={sectionsESICConsultantSurat} />
           </FadeInWhenVisible>
 
-          <FadeInWhenVisible>
-            <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
-          </FadeInWhenVisible>
+     
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={esicManagementFaqBangalore} />
+            <FaqAccordion faqs={esicManagementFaqSurat} />
           </FadeInWhenVisible>
         </>
       );
@@ -915,15 +960,13 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsESICConsultant} />
+            <CodeOfConduct sections={sectionsESICConsultantGurgaon} />
           </FadeInWhenVisible>
 
-          <FadeInWhenVisible>
-            <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
-          </FadeInWhenVisible>
+         
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={esicManagementFaqBangalore} />
+            <FaqAccordion faqs={esicManagementFaqGurgaon} />
           </FadeInWhenVisible>
         </>
       );
@@ -989,16 +1032,13 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsESICConsultant} />
+            <CodeOfConduct sections={sectionsESICConsultantNoida} />
           </FadeInWhenVisible>
 
-          {/* DO NOT CHANGE VARIABLES — EXACTLY AS YOU WANT */}
-          <FadeInWhenVisible>
-            <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
-          </FadeInWhenVisible>
+         
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={esicManagementFaqBangalore} />
+            <FaqAccordion faqs={esicManagementFaqNoida} />
           </FadeInWhenVisible>
         </>
       );
@@ -1064,16 +1104,12 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsESICConsultant} />
+            <CodeOfConduct sections={sectionsESICConsultantJaipur} />
           </FadeInWhenVisible>
 
-          {/* DO NOT CHANGE THIS — SAME FOR ALL CITIES */}
+         
           <FadeInWhenVisible>
-            <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
-          </FadeInWhenVisible>
-
-          <FadeInWhenVisible>
-            <FaqAccordion faqs={esicManagementFaqBangalore} />
+            <FaqAccordion faqs={esicManagementFaqJaipur} />
           </FadeInWhenVisible>
         </>
       );
@@ -1138,16 +1174,13 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsESICConsultant} />
+            <CodeOfConduct sections={sectionsESICConsultantLucknow} />
           </FadeInWhenVisible>
 
-          {/* DO NOT CHANGE VARIABLES — EXACTLY AS REQUIRED */}
-          <FadeInWhenVisible>
-            <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
-          </FadeInWhenVisible>
+        
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={esicManagementFaqBangalore} />
+            <FaqAccordion faqs={esicManagementFaqLucknow} />
           </FadeInWhenVisible>
         </>
       );
@@ -1213,16 +1246,13 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsESICConsultant} />
+            <CodeOfConduct sections={sectionsESICConsultantIndore} />
           </FadeInWhenVisible>
 
-          {/* DO NOT CHANGE VARIABLES — EXACT SAME FOR EVERY CITY */}
-          <FadeInWhenVisible>
-            <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
-          </FadeInWhenVisible>
+          
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={esicManagementFaqBangalore} />
+            <FaqAccordion faqs={esicManagementFaqIndore} />
           </FadeInWhenVisible>
         </>
       );
@@ -1294,16 +1324,13 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsESICConsultant} />
+            <CodeOfConduct sections={sectionsESICConsultantCoimbatore} />
           </FadeInWhenVisible>
 
-          {/* DO NOT CHANGE — SAME VARIABLES FOR EVERY CITY */}
-          <FadeInWhenVisible>
-            <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
-          </FadeInWhenVisible>
+         
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={esicManagementFaqBangalore} />
+            <FaqAccordion faqs={esicManagementFaqCoimbatore} />
           </FadeInWhenVisible>
         </>
       );
@@ -1371,15 +1398,13 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsESICConsultant} />
+            <CodeOfConduct sections={sectionsESICConsultantVadodara} />
           </FadeInWhenVisible>
 
-          <FadeInWhenVisible>
-            <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
-          </FadeInWhenVisible>
+          
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={esicManagementFaqBangalore} />
+            <FaqAccordion faqs={esicManagementFaqVadodara} />
           </FadeInWhenVisible>
         </>
       );
@@ -1439,16 +1464,13 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsESICConsultant} />
+            <CodeOfConduct sections={sectionsESICConsultantVisakhapatnam} />
           </FadeInWhenVisible>
 
-          {/* 🔥 ALWAYS SAME VARIABLES FOR ALL CITIES */}
-          <FadeInWhenVisible>
-            <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
-          </FadeInWhenVisible>
+          
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={esicManagementFaqBangalore} />
+            <FaqAccordion faqs={esicManagementFaqVisakhapatnam} />
           </FadeInWhenVisible>
         </>
       );
@@ -1515,15 +1537,13 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsESICConsultant} />
+            <CodeOfConduct sections={sectionsESICConsultantNagpur} />
           </FadeInWhenVisible>
 
-          <FadeInWhenVisible>
-            <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
-          </FadeInWhenVisible>
+          
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={esicManagementFaqBangalore} />
+            <FaqAccordion faqs={esicManagementFaqNagpur} />
           </FadeInWhenVisible>
         </>
       );
@@ -1589,16 +1609,13 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsESICConsultant} />
+            <CodeOfConduct sections={sectionsESICConsultantBhopal} />
           </FadeInWhenVisible>
 
-          {/* DO NOT CHANGE VARIABLES — EXACT SAME FOR ALL CITIES */}
-          <FadeInWhenVisible>
-            <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
-          </FadeInWhenVisible>
+       
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={esicManagementFaqBangalore} />
+            <FaqAccordion faqs={esicManagementFaqBhopal} />
           </FadeInWhenVisible>
         </>
       );
@@ -1665,15 +1682,1379 @@ export default async function EPFPage({ params }) {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsESICConsultant} />
+            <CodeOfConduct sections={sectionsESICConsultantKanpur} />
+          </FadeInWhenVisible>
+
+          
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicManagementFaqKanpur} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-bangalore") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Bangalore",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/bangalore/esic-compliance-bangalore/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [
+                  { "@type": "City", name: "Bangalore" },
+                  { "@type": "Place", name: "Peenya" },
+                  { "@type": "Place", name: "Whitefield" },
+                  { "@type": "Place", name: "Electronic City" },
+                  { "@type": "Place", name: "Koramangala" },
+                ],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <ThreeStepSection cardsData={pastelCardsEsicBangalore} />
+            <CodeOfConduct sections={sectionsESICompliance} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FaqAccordion faqs={esicManagementFaqBangalore} />
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-mumbai") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Mumbai",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/mumbai/esic-compliance-mumbai/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [{ "@type": "City", name: "Mumbai" }],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsESICompliance} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-delhi") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Delhi",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/delhi/esic-compliance-delhi/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [{ "@type": "City", name: "Delhi" }],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsESICompliance} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-chennai") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Chennai",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/chennai/esic-compliance-chennai/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [{ "@type": "City", name: "Chennai" }],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsESICompliance} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-hyderabad") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Hyderabad",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/hyderabad/esic-compliance-hyderabad/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [{ "@type": "City", name: "Hyderabad" }],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsESICompliance} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-pune") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Pune",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/pune/esic-compliance-pune/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [{ "@type": "City", name: "Pune" }],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsESICompliance} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-kolkata") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Kolkata",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/kolkata/esic-compliance-kolkata/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [{ "@type": "City", name: "Kolkata" }],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsESICompliance} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-ahmedabad") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Ahmedabad",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/ahmedabad/esic-compliance-ahmedabad/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [{ "@type": "City", name: "Ahmedabad" }],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsESICompliance} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-surat") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Surat",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/surat/esic-compliance-surat/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [{ "@type": "City", name: "Surat" }],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsESICompliance} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-gurgaon") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Gurgaon",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/gurgaon/esic-compliance-gurgaon/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [{ "@type": "City", name: "Gurgaon" }],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsESICompliance} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-noida") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Noida",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/noida/esic-compliance-noida/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [{ "@type": "City", name: "Noida" }],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsESICompliance} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-jaipur") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Jaipur",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/jaipur/esic-compliance-jaipur/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [{ "@type": "City", name: "Jaipur" }],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsESICompliance} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-lucknow") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Lucknow",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/lucknow/esic-compliance-lucknow/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [{ "@type": "City", name: "Lucknow" }],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsESICompliance} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-indore") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Indore",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/indore/esic-compliance-indore/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [{ "@type": "City", name: "Indore" }],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsESICompliance} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-coimbatore") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Coimbatore",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/coimbatore/esic-compliance-coimbatore/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [{ "@type": "City", name: "Coimbatore" }],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsESICompliance} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-vadodara") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Vadodara",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/vadodara/esic-compliance-vadodara/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [{ "@type": "City", name: "Vadodara" }],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsESICompliance} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-visakhapatnam") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Visakhapatnam",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/visakhapatnam/esic-compliance-visakhapatnam/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [{ "@type": "City", name: "Visakhapatnam" }],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsESICompliance} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-nagpur") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Nagpur",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/nagpur/esic-compliance-nagpur/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [{ "@type": "City", name: "Nagpur" }],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsESICompliance} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-bhopal") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Bhopal",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/bhopal/esic-compliance-bhopal/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [{ "@type": "City", name: "Bhopal" }],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsESICompliance} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
+          </FadeInWhenVisible>
+        </>
+      );
+    } else if (slug === "esic-compliance-kanpur") {
+      return (
+        <>
+          <Script
+            id="schema-pf-esic"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                name: "EPFdesk - ESIC Compliance Service in Kanpur",
+                image: "https://epfdesk.com/images/logo.jpg",
+                url: "https://epfdesk.com/esicCompliance/kanpur/esic-compliance-kanpur/",
+                telephone: "+91-9945933333",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Church Street",
+                  addressLocality: "Bangalore",
+                  addressRegion: "Karnataka",
+                  postalCode: "560001",
+                  addressCountry: "IN",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 12.9716,
+                  longitude: 77.5946,
+                },
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "09:00",
+                  closes: "18:00",
+                },
+                priceRange: "₹₹",
+                areaServed: [{ "@type": "City", name: "Kanpur" }],
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.9",
+                  reviewCount: "47",
+                },
+              }),
+            }}
+          />
+
+          <FadeInWhenVisible>
+            <PerformanceSection data={data} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsESICompliance} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <ThreeStepSection cardsData={pastelCardsEsicComplianceBangalore} />
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <FaqAccordion faqs={esicComplianceFaqBangalore} />
           </FadeInWhenVisible>
         </>
       );

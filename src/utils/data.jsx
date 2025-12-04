@@ -6087,6 +6087,13 @@ export const cityData = {
         "Complete EPF compliance audit, remediation, and ongoing management.",
       contact: "bangalore@pfconsultants.in",
     },
+    esicComplianceBangalore: {
+      title: "ESIC Compliance Service in Bangalore",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
+      description:
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
+      contact: "bangalore@pfconsultants.in",
+    },
   },
   hyderabad: {
     pfHyderabad: {
@@ -6110,10 +6117,10 @@ export const cityData = {
       contact: "hyderabad@pfconsultants.in",
     },
     esicHyderabad: {
-      title: "ESIC Consultants Hyderabad",
-      subTitle: "End The Health Risk. Guarantee Coverage.",
+      title: "ESIC Consultant in Hyderabad",
+      subTitle: "The Tech and Pharma Compliance Hub",
       description:
-        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
+        "Hyderabad's specialist ESIC Consultant. We ensure compliance for the high-growth IT/ITES and Pharmaceutical sectors, managing the complex Variable Pay calculations in HITEC City and Gachibowli",
       contact: "hyderabad@esicconsultants.in",
     },
 
@@ -6122,6 +6129,13 @@ export const cityData = {
       subTitle: "ECR filed by 15th. Every month. Zero errors. Zero late fees",
       description:
         "Automated PF return filing for hassle-free compliance. 6,000+ ECR returns filed. 100% on-time record. Never missed a deadline.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esicComplianceHyderabad: {
+      title: "ESIC Compliance Service in Hyderabad",
+      subTitle: "End The Health Risk. Guarantee Coverage.",
+      description:
+        "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
       contact: "hyderabad@pfconsultants.in",
     },
   },
@@ -6155,11 +6169,18 @@ export const cityData = {
       contact: "mumbai@pfconsultants.in",
     },
     esicMumbai: {
-      title: "ESIC Consultants Mumbai",
+      title: "ESIC Consultant in Mumbai",
+      subTitle: "Compliance Certainty in the City of Thresholds",
+      description:
+        "Specialist ESIC Consultant in Mumbai. We guarantee compliance for the 20+ employee threshold, manage complexities for Service & Logistics sectors, and prevent recovery notices from the Regional Office, Mumbai.",
+      contact: "mumbai@esicconsultants.in",
+    },
+    esicComplianceMumbai: {
+      title: "ESIC Compliance Service in Mumbai",
       subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
         "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
-      contact: "mumbai@esicconsultants.in",
+      contact: "mumbai@pfconsultants.in",
     },
   },
 
@@ -6192,11 +6213,18 @@ export const cityData = {
       contact: "chennai@pfconsultants.in",
     },
     esicChennai: {
-      title: "ESIC Consultants Chennai",
+      title: "ESIC Consultant in Chennai",
+      subTitle: "Navigating the Tamil Nadu Industrial Corridor",
+      description:
+        "Premier ESIC Consultant in Chennai, specializing in Manufacturing, Automobile, and ITES compliance. Flawless filing with the Regional Office, Chennai to secure your legal defense.",
+      contact: "chennai@esicconsultants.in",
+    },
+    esicComplianceChennai: {
+      title: "ESIC Compliance Service in Chennai",
       subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
         "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
-      contact: "chennai@esicconsultants.in",
+      contact: "chennai@pfconsultants.in",
     },
   },
 
@@ -6229,11 +6257,18 @@ export const cityData = {
       contact: "visakhapatnam@pfconsultants.in",
     },
     esicVisakhapatnam: {
-      title: "ESIC Consultants Visakhapatnam",
+      title: "ESIC Consultant in Visakhapatnam & Andhra Pradesh",
+      subTitle: "Compliance for the AI/IT Hub",
+      description:
+        "Specialized ESIC Consultant for Visakhapatnam's booming IT/ITES, Data Center, and Pharmasectors. We guarantee compliance readiness for the New Wage Code's wage definition and protect companies from Principal Employer liability in a dynamic labor market.",
+      contact: "visakhapatnam@esicconsultants.in",
+    },
+    esicComplianceVisakhapatnam: {
+      title: "ESIC Compliance Service in Visakhapatnam",
       subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
         "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
-      contact: "visakhapatnam@esicconsultants.in",
+      contact: "visakhapatnam@pfconsultants.in",
     },
   },
 
@@ -6266,11 +6301,18 @@ export const cityData = {
       contact: "delhi@pfconsultants.in",
     },
     esicDelhi: {
-      title: "ESIC Consultants Delhi",
+      title: "ESIC Consultant in Delhi",
+      subTitle: "Compliance in the National Capital Region (NCR)",
+      description:
+        "Specialist ESIC Consultant in Delhi. We manage compliance for the 10-employee threshold across the Services, Trade, and Manufacturing sectors of NCR. Expert in resolving ESIC HQ notices.",
+      contact: "delhi@esicconsultants.in",
+    },
+    esicComplianceDelhi: {
+      title: "ESIC Compliance Service in Delhi",
       subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
         "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
-      contact: "delhi@esicconsultants.in",
+      contact: "delhi@pfconsultants.in",
     },
   },
 
@@ -6303,11 +6345,18 @@ export const cityData = {
       contact: "pune@pfconsultants.in",
     },
     esicPune: {
-      title: "ESIC Consultants Pune",
+      title: "ESIC Consultant in Pune",
+      subTitle: "Navigating the Industrial & IT Compliance Nexus",
+      description:
+        "Leading ESIC Consultant in Pune, specializing in compliance for the Manufacturing, Automobile, and ITES sectors of the Pimpri-Chinchwad and Hinjewadi belts. New Wage Code Ready payroll services for complex Maharashtra regulations.",
+      contact: "pune@esicconsultants.in",
+    },
+    esicCompliancePune: {
+      title: "ESIC Compliance Service in Pune",
       subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
         "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
-      contact: "pune@esicconsultants.in",
+      contact: "pune@pfconsultants.in",
     },
   },
 
@@ -6340,11 +6389,18 @@ export const cityData = {
       contact: "kolkata@pfconsultants.in",
     },
     esicKolkata: {
-      title: "ESIC Consultants Kolkata",
+      title: "ESIC Consultant in Kolkata",
+      subTitle: "Focused Compliance for the Jute, Engineering, & Services Hub",
+      description:
+        "Specialist ESIC Consultant in Kolkata and West Bengal. We provide New Wage Code Readycompliance for the unique challenges of Jute, Engineering, Tea Gardens, and Traditional Manufacturing. Expert risk mitigation in high-claim areas.",
+      contact: "kolkata@esicconsultants.in",
+    },
+    esicComplianceKolkata: {
+      title: "ESIC Compliance Service in Kolkata",
       subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
         "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
-      contact: "kolkata@esicconsultants.in",
+      contact: "kolkata@pfconsultants.in",
     },
   },
 
@@ -6377,11 +6433,18 @@ export const cityData = {
       contact: "ahmedabad@pfconsultants.in",
     },
     esicAhmedabad: {
-      title: "ESIC Consultants Ahmedabad",
+      title: "ESIC Consultant in Ahmedabad",
+      subTitle: "Compliance for the Textile, Pharma & Chemical Corridors",
+      description:
+        "Leading ESIC Consultant in Ahmedabad, specializing in the complex compliance needs of Gujarat's Textile, Pharmaceutical, and GIDC Chemical sectors. We offer New Wage Code Ready services to mitigate high-risk retrospective liabilities.",
+      contact: "ahmedabad@esicconsultants.in",
+    },
+    esicComplianceAhmedabad: {
+      title: "ESIC Compliance Service in Ahmedabad",
       subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
         "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
-      contact: "ahmedabad@esicconsultants.in",
+      contact: "ahmedabad@pfconsultants.in",
     },
   },
 
@@ -6414,11 +6477,18 @@ export const cityData = {
       contact: "surat@pfconsultants.in",
     },
     esicSurat: {
-      title: "ESIC Consultants Surat",
+      title: "ESIC Consultant in Surat",
+      subTitle: "Precision Compliance for Diamond and Powerloom Industries",
+      description:
+        "Specialist ESIC Consultant in Surat and South Gujarat. We navigate the complexities of the Diamond Polishing and Powerloom/Textile sectors, focusing on piece-rate workers, migrant labor, and high-risk unit compliance. New Wage Code Ready services.",
+      contact: "surat@esicconsultants.in",
+    },
+    esicComplianceSurat: {
+      title: "ESIC Compliance Service in Surat",
       subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
         "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
-      contact: "surat@esicconsultants.in",
+      contact: "surat@pfconsultants.in",
     },
   },
 
@@ -6451,11 +6521,18 @@ export const cityData = {
       contact: "gurgaon@pfconsultants.in",
     },
     esicGurgaon: {
-      title: "ESIC Consultants Gurgaon",
+      title: "ESIC Consultant in Gurgaon",
+      subTitle: "Statutory Compliance for the Corporate IT & Auto Hub",
+      description:
+        "Premier ESIC Consultant in Gurgaon, specializing in compliance for Corporate IT/ITES, GCCs, and Automobile Ancillary Units. Expert in salary restructuring for New Wage Code Readiness to manage the inevitable increase in the ESIC contribution base.",
+      contact: "gurgaon@esicconsultants.in",
+    },
+    esicComplianceGurgaon: {
+      title: "ESIC Compliance Service in Gurgaon",
       subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
         "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
-      contact: "gurgaon@esicconsultants.in",
+      contact: "gurgaon@pfconsultants.in",
     },
   },
 
@@ -6488,11 +6565,18 @@ export const cityData = {
       contact: "noida@pfconsultants.in",
     },
     esicNoida: {
-      title: "ESIC Consultants Noida",
+      title: "ESIC Consultant in Noida & Uttar Pradesh",
+      subTitle: "Navigating the Manufacturing-IT Divide",
+      description:
+        "Specialist ESIC Consultant in Noida, Greater Noida, and Western UP, focused on compliance for the Electronics, Apparel, and IT/ITES sectors. Experts in migrant labor management, factory accident claims, and preparing payroll for the New Wage Code's impact on the ESI contribution base.",
+      contact: "noida@esicconsultants.in",
+    },
+    esicComplianceNoida: {
+      title: "ESIC Compliance Service in Noida",
       subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
         "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
-      contact: "noida@esicconsultants.in",
+      contact: "noida@pfconsultants.in",
     },
   },
 
@@ -6526,11 +6610,18 @@ export const cityData = {
     },
 
     esicJaipur: {
-      title: "ESIC Consultants Jaipur",
+      title: "ESIC Consultant in Jaipur & Rajasthan",
+      subTitle: "Compliance for the MSME, Gems & Textile Clusters",
+      description:
+        "Leading ESIC Consultant in Jaipur, specializing in compliance for Handicrafts, Gems & Jewellery, Textile, and Marble/Granite MSMEs across Rajasthan. Expert in managing informal labor, principal employer liability, and ensuring seamless transition to the New Wage Code's wage definition.",
+      contact: "jaipur@esicconsultants.in",
+    },
+    esicComplianceJaipur: {
+      title: "ESIC Compliance Service in Jaipur",
       subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
         "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
-      contact: "jaipur@esicconsultants.in",
+      contact: "jaipur@pfconsultants.in",
     },
   },
 
@@ -6563,11 +6654,18 @@ export const cityData = {
       contact: "lucknow@pfconsultants.in",
     },
     esicLucknow: {
-      title: "ESIC Consultants Lucknow",
+      title: "ESIC Consultant in Lucknow & Uttar Pradesh",
+      subTitle: "Securing Compliance in the MSME and Service Sector",
+      description:
+        "Premier ESIC Consultant in Lucknow and across UP, specializing in compliance for the rapidly expanding MSME, IT/ITES, Healthcare, and Traditional Craft (ODOP) sectors. Navigate UP's extensive ESIC expansion and prepare your payroll for the mandatory New Wage Code changes.",
+      contact: "lucknow@esicconsultants.in",
+    },
+    esicComplianceLucknow: {
+      title: "ESIC Compliance Service in Lucknow",
       subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
         "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
-      contact: "lucknow@esicconsultants.in",
+      contact: "lucknow@pfconsultants.in",
     },
   },
 
@@ -6600,11 +6698,18 @@ export const cityData = {
       contact: "indore@pfconsultants.in",
     },
     esicIndore: {
-      title: "ESIC Consultants Indore",
+      title: "ESIC Consultant in Indore & Madhya Pradesh",
+      subTitle: "Targeting Auto, IT, and Food Processing",
+      description:
+        "Premier ESIC Consultant in Indore and MP, specializing in compliance for the Automobile, IT/ITES, Food Processing, and Pharmaceutical sectors. Experts in factory registration, contract worker compliance, and ensuring payroll adherence to the New Wage Code's revised contribution base.",
+      contact: "indore@esicconsultants.in",
+    },
+    esicComplianceIndore: {
+      title: "ESIC Compliance Service in Indore",
       subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
         "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
-      contact: "indore@esicconsultants.in",
+      contact: "indore@pfconsultants.in",
     },
   },
 
@@ -6637,11 +6742,18 @@ export const cityData = {
       contact: "coimbatore@pfconsultants.in",
     },
     esicCoimbatore: {
-      title: "ESIC Consultants Coimbatore",
+      title: "ESIC Consultant in Coimbatore & Tamil Nadu",
+      subTitle: "Compliance for the Manchester of South India",
+      description:
+        "Leading ESIC Consultant in Coimbatore, specializing in the high-stakes compliance challenges of the Textile, Spinning Mill, Foundry, and Auto Component sectors across Tamil Nadu. Ensure your factory payroll is secured and New Wage Code ready.",
+      contact: "coimbatore@esicconsultants.in",
+    },
+    esicComplianceCoimbatore: {
+      title: "ESIC Compliance Service in Coimbatore",
       subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
         "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
-      contact: "coimbatore@esicconsultants.in",
+      contact: "coimbatore@pfconsultants.in",
     },
   },
 
@@ -6674,11 +6786,18 @@ export const cityData = {
       contact: "vadodara@pfconsultants.in",
     },
     esicVadodara: {
-      title: "ESIC Consultants Vadodara",
+      title: "ESIC Consultant in Vadodara & Gujarat",
+      subTitle: "Compliance for the Industrial Powerhouse",
+      description:
+        "Expert ESIC Consultant in Vadodara and Gujarat. Specialized in Chemical, Pharmaceuticals, Engineering, and Ceramics sector compliance. We secure your business from retrospective demands and ensure New Wage Code payroll readiness.",
+      contact: "vadodara@esicconsultants.in",
+    },
+    esicComplianceVadodara: {
+      title: "ESIC Compliance Service in Vadodara",
       subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
         "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
-      contact: "vadodara@esicconsultants.in",
+      contact: "vadodara@pfconsultants.in",
     },
   },
 
@@ -6711,11 +6830,18 @@ export const cityData = {
       contact: "nagpur@pfconsultants.in",
     },
     esicNagpur: {
-      title: "ESIC Consultants Nagpur",
+      title: "ESIC Consultant in Nagpur & Maharashtra",
+      subTitle: "Compliance for the Central India Hub",
+      description:
+        "Premier ESIC Consultant in Nagpur and Maharashtra, specializing in Manufacturing, Textile, Logistics, and rapidly expanding Education/Healthcare sectors. We manage contractor compliance, navigate retrospective ESIC demands, and ensure absolute readiness for the mandatory New Wage Code's  wage rule.",
+      contact: "nagpur@esicconsultants.in",
+    },
+    esicComplianceNagpur: {
+      title: "ESIC Compliance Service in Nagpur",
       subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
         "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
-      contact: "nagpur@esicconsultants.in",
+      contact: "nagpur@pfconsultants.in",
     },
   },
 
@@ -6748,11 +6874,18 @@ export const cityData = {
       contact: "bhopal@pfconsultants.in",
     },
     esicBhopal: {
-      title: "ESIC Consultants Bhopal",
+      title: "ESIC Consultant in Bhopal & Madhya Pradesh",
+      subTitle: "Compliance for Industrial & Contract Labor",
+      description:
+        "Specialized ESIC Consultant for Bhopal and Madhya Pradesh's core sectors: Automobile, Pharmaceutical, Govindpura Industrial Estate, and Mandideep. We eliminate retrospective liability via SPREE 2025, manage complex contract labor ESIC, and guarantee seamless transition to the mandatory New Wage Code's wage definition.",
+      contact: "bhopal@esicconsultants.in",
+    },
+    esicComplianceBhopal: {
+      title: "ESIC Compliance Service in Bhopal",
       subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
         "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
-      contact: "bhopal@esicconsultants.in",
+      contact: "bhopal@pfconsultants.in",
     },
   },
 
@@ -6785,11 +6918,18 @@ export const cityData = {
       contact: "kanpur@pfconsultants.in",
     },
     esicKanpur: {
-      title: "ESIC Consultants Kanpur",
+      title: "ESIC Consultant in Kanpur & Uttar Pradesh",
+      subTitle: "Securing Compliance in the Leather & Industrial Hub",
+      description:
+        "Premier ESIC Consultant in Kanpur and Uttar Pradesh, specializing in the complex Leather, Textile (Hosiery), and Defence Corridors. We navigate the high-risk contract labor environment, manage environmental-related operational restrictions, and ensure immediate, full compliance with the mandatory New Wage Code's restructured wage definition.",
+      contact: "kanpur@esicconsultants.in",
+    },
+    esicComplianceKanpur: {
+      title: "ESIC Compliance Service in Kanpur",
       subTitle: "End The Health Risk. Guarantee Coverage.",
       description:
         "We make ESIC flawless. Expert calculation on gross wages, timely filing, and guaranteed IP Card/Dispensary linking. Eliminate liability, secure compliance.",
-      contact: "kanpur@esicconsultants.in",
+      contact: "kanpur@pfconsultants.in",
     },
   },
 };
@@ -10158,3 +10298,2247 @@ Bhopal-462 011`,
 Nidhi Bhawan,Sarvodaya Nagar,
 Kanpur -208 005`,
 };
+
+export const sectionsESICompliance = [
+  {
+    title: "The Hidden Cost of ESIC: A ₹25 Lakh Liability Waiting to Happen",
+    description:
+      "The ESIC Act (10+ employees) is a high-stakes liability. If your business crosses the 10-employee threshold, registration is mandatory within 15 days of applicability.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "The Problem",
+        content:
+          "ESIC contributions are calculated on Gross Wages (up to ₹21,000), not just basic pay, making calculations a minefield. Missing the 15th of the month deadline attracts immediate penalties.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "The Risk",
+        content: (
+          <>
+            <p>
+              If an eligible employee meets with an employment-related accident
+              and lacks a valid ESIC card or registration, your company becomes
+              personally liable for ALL medical expenses and compensation. This
+              liability is often measured in lakhs and cannot be covered by
+              general insurance.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "The Time Drain",
+        content:
+          "Hours vanish into the ESIC portal trying to fill forms, link employee data, and ensure accurate Dispensary mapping—all while risking the severe penalties for delayed registration.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "The Challenge",
+        content: (
+          <>
+            <p>
+              You are legally required to generate the Insured Person (IP)
+              card and correctly map the dispensary within 15 days of joining.
+              This administrative step is frequently missed in high-attrition
+              environments.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "The Consequence",
+        content: (
+          <>
+            <p>
+              Delay means your employee has no access to benefits when they need
+              them most, leaving you exposed to full personal liability in the
+              event of an accident.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Your Solution: EPFDesk, Dedicated ESIC Shield",
+    description:
+      "We transform the complex, high-risk process of ESIC compliance into a seamless, expert-managed service. ",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Accurate Gross Wage Calculation",
+        content:
+          "We guarantee precise contribution calculation on Gross Wages(3.25% Employer, 0.75% Employee), eliminating the most common audit failure point.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Guaranteed Timeliness",
+        content: (
+          <>
+            <p>
+              We ensure the final filing and remittance are completed well
+              before the 15th of the month, eliminating 100% of late-payment
+              penalties (12% interest p.a.) and damage charges.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Online Return Filing",
+        content:
+          "Meticulous preparation and filing of all monthly contributions and half-yearly returns (Form 6), ensuring accurate data submission.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Audit Support",
+        content: (
+          <>
+            <p>
+              We compile and maintain all audit-ready documentation and handle
+              liaison with the ESIC department on your behalf.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "IP Card Generation within 15 Days",
+        content: (
+          <>
+            <p>
+              We manage the complete process of registering all eligible
+              employees and initiating the Insured Person (IP) card
+              generation within the legally required 15 days of joining.{" "}
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Correct Dispensary Mapping",
+        content: (
+          <>
+            <p>
+              We coordinate with the employee to ensure accurate Dispensary and
+              ESI Hospital mapping in the Bangalore area, guaranteeing they can
+              access benefits immediately.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Claim Facilitation",
+        content: (
+          <>
+            <p>
+              Assistance with processing employee claims for sickness,
+              maternity, and temporary disablement benefits, reducing the burden
+              on your HR team.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+
+export const pastelCardsEsicComplianceBangalore = {
+  subTitle: "Why Choose ESIC Compliance Specialists?",
+  // subText:
+  //   "Our experts handle complete setup while you focus on your business.",
+  cards: [
+    {
+      title: "City Focused",
+      subtitle: `We specialize in the city Shops and Establishment Act and the specific ESIC rules for the mid-size tech company in your city.`,
+      number: 1,
+    },
+    {
+      title: "System Mastery",
+      subtitle: `Our expert consultants ensure compliance is seamless, fast, and accurate, providing a higher standard than a generalist accountant.`,
+      number: 2,
+    },
+    {
+      title: "Liability Protection",
+      subtitle: `Our process is designed to legally shield the employer from personal liability in the event of an employee mishap, confirming coverage from day one.`,
+      number: 3,
+    },
+     {
+      title: "DIY Cost",
+      subtitle: `The cumulative cost of HR time + average annual penalty of ₹40,000, PLUS the risk of ₹25 Lakh liability for a single employee accident if coverage is lapsed.`,
+      number: 4,
+    },
+     {
+      title: "Your Savings",
+      subtitle: `Our strategic service converts this catastrophic liability into a predictable, managed investment, guaranteeing zero penalties and full employee coverage.`,
+      number: 5,
+    },
+   
+  ],
+};
+
+export const esicComplianceFaqBangalore = [
+  {
+    question: "Is ESIC registration mandatory for my company in Bangalore?",
+    answer: `Yes, if your establishment employs 10 or more persons and the employee's gross monthly wage is up to ₹21,000 (₹25,000 for persons with disabilities). Registration must be secured quickly to avoid liability.`,
+  },
+  {
+    question: "What happens if an employee has an accident but doesn't have an ESIC card?",
+    answer: `This is a direct, substantial financial liability on the employer. If an eligible employee is not registered, your company is held entirely liable for all medical expenses, compensation, and legal costs associated with the employment injury.`,
+  },
+  {
+    question: "How quickly do you generate the employee's ESIC IP card and link the dispensary?",
+    answer: `We prioritize this critical step. We guarantee IP card generation and dispensary mapping are completed promptly to ensure compliance within the legally required 15 days of joining and immediate access to benefits.`,
+  },
+  {
+    question: "What is the penalty for delayed ESIC contributions?",
+    answer: `The penalty is severe: 12% simple annual interest is charged for every day of delay, along with potential damages up to 25% of the arrears and possible prosecution. We eliminate this risk.`,
+  },
+  {
+    question:
+      "Do you handle ESIC compliance for remote employees or staff working from home (WFH) in Bangalore?",
+    answer: `Yes, our services cover ESIC compliance for remote employees based in notified areas of Bangalore or working across state lines, ensuring full adherence to current regulations.`,
+  },
+];
+
+export const sectionsESICConsultantMumbai = [
+  {
+    title: "Mumbai’s Unique ESIC Challenge: Where a Higher Threshold Means Higher Risk",
+    description:
+      "The Mumbai-Thane-Navi Mumbai corridor is the heartbeat of India’s commercial services, finance, and manufacturing. Unlike most of India, ESIC applicability in Maharashtra (for non-factory establishments like shops, hotels, and services) traditionally begins at a higher employee threshold.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "The 20-Employee Trap",
+        content:
+          "For many non-factory establishments (Shops, Hotels, Restaurants, etc.) in Maharashtra, the mandatory registration limit remains at 20 or more employees. However, regulatory vigilance is high, and the definition of a 'factory' (especially for units using power) often pulls the limit down to 10.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "The Hidden Worker Risk",
+        content: (
+          <>
+            <p>
+              In Mumbai’s massive logistics, service, and contracting industries, the core challenge is accounting for contractual, temporary, and project-based workers. The ESIC department (RO Mumbai) mandates that all employees, regardless of whether they are direct or through a contractor, must be counted towards the threshold.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "The Looming Threat of Coercive Action",
+        content:
+          "Recent judgments from the Bombay High Court underscore the ESIC department’s aggressive stance on recovery. Notices and coercive actions (including bank account attachments) are being initiated swiftly for perceived non-compliance, leaving companies with little time to respond or present their case.",
+      },
+    ],
+  },
+  {
+    title: "Your Mumbai-Local ESIC Consultant: The Shield Against RO Mumbai Audits",
+    description:
+      "We specialize in managing the nuanced ESIC landscape of Maharashtra. Our service is not just about filing; it's about providing an iron-clad legal and technical defense tailored to the scrutiny of the Regional Office, Mumbai. ",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Applicability Assessment",
+        content:
+          "Precise, legally-vetted assessment of your establishment type (Factory vs. Non-Factory) to determine the correct ESIC applicability threshold—10 or 20 employees. Prevents wrongful delays, incorrect exemptions, and expensive retroactive liability.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Contract Labour Compliance Management",
+        content: (
+          <>
+            <p>
+          Systematic ESIC tracking, registration, and monthly contribution management for all contract and temporary staff—especially common in IT/ITES, logistics, and manufacturing clusters in Powai, Thane, and Navi Mumbai. Eliminates the ‘Hidden Employee’ risk that leads to severe ESIC penalties
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Contribution Accuracy Management",
+        content:
+          "Guaranteed, error-free calculation of wages defined as ‘Payable’ under the ESI Act, including strict adherence to the ₹21,000 Gross Wage ceiling. Prevents audit discrepancies and costly recovery notices due to miscalculations.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Dispensary & SST Hospital Linking",
+        content: (
+          <>
+            <p>
+             Immediate IP card generation and mapping to the latest ESIC SST (Super Speciality Treatment) Tie-Up Hospitals in Mumbai—covering regions like Bandra, Worli, and Thane. Ensures employee welfare and reinforces employer credibility.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Code on Social Security, 2020 Readiness",
+        content: (
+          <>
+            <p>
+              We prepare your establishment for the future, including the potential inclusion of Gig and Platform Workers and the transition to a Uniform Definition of Wages—critical for Mumbai’s rapidly evolving digital economy.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Representation & Liaison",
+        content: (
+          <>
+            <p>
+             We act as your authorized representative, handling all Summons, Inspection Reports, and Recovery Notices from the ESIC authorities, ensuring due process is followed and your legal rights are protected at the Bombay High Court level, if necessary.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+];
+
+export const pastelCardsEsicMumbai = {
+  subTitle: "Mumbai Industry Spotlight: Where ESIC Errors Hurt the Most",
+  // subText:
+  //   "We combine deep national regulatory expertise with precise local knowledge of the compliance ecosystem.",
+  cards: [
+    {
+      title: "Textile & Manufacturing (Thane-Belapur Belt)",
+      subtitle: `Frequent use of contract labour and power-driven machinery means the 10-employee factory rule is often missed, leading to sudden, crippling penalties.`,
+      number: 1,
+    },
+    {
+      title: "Hotels, Restaurants & Entertainment (South Mumbai)",
+      subtitle: `These non-factory sectors are bound by the 20+ employee limit in Maharashtra, but high attrition and casual labour make accurate monthly registration a logistical nightmare.`,
+      number: 2,
+    },
+    {
+      title: "Logistics & Road Transport (Navi Mumbai/JNPT)",
+      subtitle: `Highly scrutinized sector. ESIC coverage is mandatory for all road motor transport undertakings, demanding immediate and accurate coverage for drivers and helpers.`,
+      number: 3,
+    },
+  ],
+};
+
+export const esicManagementFaqMumbai = [
+  {
+    question: "In Mumbai, what is the ESIC employee threshold for my business?",
+    answer: `The threshold depends entirely on your industry. For factories using power for manufacturing, the limit is 10 or more employees. For most shops, hotels, restaurants, and IT/ITES services in Maharashtra, the mandatory limit is 20 or more employees earning up to ₹21,000 gross. We conduct a specific review to confirm your correct threshold.`,
+  },
+  {
+    question: "I use contract workers. Does the ESIC limit apply to them in Mumbai?",
+    answer: `Yes, absolutely. The ESIC Act is clear: all employees working in connection with the work of the establishment, whether directly employed or through a contractor, must be counted towards the employee threshold and covered if they meet the wage limit. This is a common failure point for Mumbai-based businesses.`,
+  },
+  {
+    question:
+      "We are a new startup in Mumbai (Bandra-Kurla Complex). When do we need to register for ESIC?",
+    answer: `You must register within 15 days of the date on which your employee count first reaches the mandatory threshold (10 or 20 employees, depending on your establishment type). Delays result in penalties and severe personal liability for employment injuries.`,
+  },
+  {
+    question:
+      "We received an ESIC Recovery Notice (Section 45A/85B). Can you help?",
+    answer: `Yes. We specialize in handling high-risk ESIC notices in Mumbai. This involves compiling historical records, representing you before the Regional Office/Designated Authority, and structuring a legal defense to address the demand and prevent attachment of assets.`,
+  },
+  {
+    question:
+      "How does the new policy on providing land for ESIC hospitals in Maharashtra affect my compliance?",
+    answer: `The state government’s decision to provide land for new ESIC hospitals (e.g., in Pune, Nashik, Palghar) indicates a massive push to strengthen the ESIC medical network in Maharashtra. This means better access for your employees, but also signals that the government is serious about expanding and enforcing compliance to fund these facilities.`,
+  },
+];
+
+export const sectionsESICConsultantDelhi = [
+  {
+    title: "The Delhi ESIC Difference: Scrutiny from the Central Authority",
+    description:
+      "In the National Capital Territory (NCT), ESIC compliance is under the direct, intense scrutiny of the ESIC Headquarters (Panchdeep Bhavan, New Delhi). The city's economy—driven by trade, services, media, and corporate offices—presents unique challenges, especially regarding the definition of 'wages' and the inclusion of casual labour.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "The NCR Threshold",
+        content:
+          "Unlike some non-factory establishments in Maharashtra, ESIC is strictly applicable to all establishments in notified areas of Delhi with 10 or more employees (wages up to ₹21,000). The smaller threshold coupled with high labour mobility creates a constant compliance churn.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "The 'Wages' Redefinition Trap",
+        content: (
+          <>
+            <p>
+              Delhi's service industry frequently uses complex payroll structures (allowances, incentives, variable pay). The ESIC department is rigorous in including almost all cash components into 'Gross Wages' for contribution calculation, often leading to unexpected arrears during audits.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Your Delhi-NCR ESIC Compliance Solution",
+    description:
+      "We provide specialized representation and flawless filing, designed to withstand the highest levels of scrutiny from the ESIC Head Office. ",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Head Office Liaison & ESIC Representation",
+        content:
+          "We directly coordinate with ESIC Headquarters and Regional Offices to handle Section 45A/85B notices, assessments, and escalated compliance matters. Our expert representation minimizes legal exposure, prevents unnecessary penalties, and ensures your case is presented accurately and professionally.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Labour Mobility Management",
+        content: (
+          <>
+            <p>
+              We manage rapid documentation and ESIC filings for the high churn of temporary and project-based staff common in Delhi’s corporate and logistics sectors. Our streamlined process ensures every eligible new hire receives immediate IP Card generation, eliminating any “no-coverage” compliance liability for your organisation.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "E-Challan & ESIC Return Filing",
+        content:
+          "We ensure accurate calculation and timely submission of monthly E-Challans and the mandatory half-yearly ESIC returns—critical for maintaining clean audit trails. Our precision-driven process eliminates the risk of 12% p.a. interest penalties and damage charges, keeping your compliance record flawless.",
+      },
+      
+    ],
+  },
+];
+export const esicManagementFaqDelhi = [
+  {
+    question: "Is the ESIC 10-employee limit final for all businesses in Delhi?",
+    answer: `Yes. For all establishments in notified areas of Delhi—including shops, restaurants, educational institutions, and corporate offices—the threshold for mandatory ESIC registration is 10 or more employees earning up to ₹21,000 gross. There are very few exceptions compared to other states.`,
+  },
+  {
+    question:
+      "My company is in Delhi, but my staff works across Gurgaon and Noida. Which ESIC Office applies?",
+    answer: `Applicability is based on the location of your main establishment (Delhi). However, contributions must be made centrally, and employees are entitled to medical benefits through the ESIC network across all NCR cities. We manage end-to-end multi-location compliance and dispensary mapping across the NCR grid.`,
+  },
+  {
+    question:
+      "The ESIC department has requested a physical audit of our Delhi office records. How do you manage this?",
+    answer: `We provide complete Audit Management and Representation. This includes preparing all required documentation (Form 6, Wage Registers, Attendance Registers) and coordinating directly with the ESIC Inspector on-site as your authorized compliance specialist, ensuring a smooth and legally compliant audit process.`,
+  },
+];
+
+export const sectionsESICConsultantChennai = [
+  {
+    title: "The Chennai ESIC Imperative: High-Volume Industrial Compliance",
+    description:
+      "Chennai and its surrounding industrial belt (including Sriperumbudur and Oragadam) is home to vast manufacturing, automotive, and textile sectors. In this environment, the core ESIC compliance challenge shifts from managing variable pay (Delhi) to accurately covering a high volume of permanent and contract blue-collar workers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "The Factory Act Interplay",
+        content:
+          "Many establishments in Chennai fall under the Factory Act. This makes the 10-employee threshold non-negotiable, and compliance with ESIC is often scrutinized simultaneously with other labour laws.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "The Contract Labour Audit Risk",
+        content: (
+          <>
+            <p>
+              In the automotive and engineering sectors, the continuous hiring and rotation of contract labour is the norm. The Regional Office, Chennai, is hyper-vigilant about the failure of principal employers to ensure ESIC coverage for all eligible contract workers, leading to hefty retrospective demands.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Your Chennai ESIC Compliance Solution",
+    description:
+      "We provide a structured ESIC management system built for high-volume industrial payroll, ensuring every worker is protected and your company avoids the crushing liability of non-coverage. ",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Worker Compliance Guarantee",
+        content:
+          "We run a dedicated process to audit, register, and track every contract and temporary worker across all your sites, ensuring full ESIC contribution and guaranteed IP Card issuance. This protects the Principal Employer from joint and several liability arising from contractor non-compliance, safeguarding you against penalties and legal exposure.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Sector-Specific Statutory Documentation",
+        content: (
+          <>
+            <p>
+              We prepare all statutory registers—including Wage Registers and Muster Rolls—in full compliance with the requirements of the ESIC Regional Office, Chennai, and Tamil Nadu Labour Codes. This ensures complete audit readiness for coordinated inspections by ESIC authorities and Factory Inspectorates, protecting your organisation from documentation-related non-compliance.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Medical Network Assurance",
+        content:
+          "We ensure prompt linking of employees to ESIC hospitals and dispensaries across major industrial hubs such as Ambattur, Guindy, and Sriperumbudur. This guarantees immediate medical access for your workforce, strengthens employee welfare, and significantly reduces the risk of uninsured employment injury claims.",
+      },
+      
+    ],
+  },
+];
+export const esicManagementFaqChennai = [
+  {
+    question: "Are there any ESIC exemptions for SEZ (Special Economic Zone) units in Chennai?",
+    answer: `No. While SEZ units enjoy income tax and customs duty exemptions, ESIC is a social security statute and applies universally to all eligible employees (earning up to ₹21,000) once the 10-employee threshold is met. Compliance in SEZs is monitored very closely by the authorities.`,
+  },
+  {
+    question:
+      "We have high attrition in our manufacturing unit. Is there a simpler way to manage monthly registration/de-registration?",
+    answer: `Yes. Our service integrates with your HRIS to manage high-frequency employee movements (Challan 7) common in manufacturing. We ensure timely de-registration to stop contributions and swift re-registration for new hires, eliminating manual errors on the ESIC portal.`,
+  },
+  {
+    question:
+      "What is the most common reason for penalties from the Chennai Regional Office?",
+    answer: `The most frequent and costly penalty arises from non-payment or delayed payment of contributions for contract labourers. The Chennai Regional Office holds the principal employer liable, often issuing demands for contributions going back several years. Our system prevents this retrospective risk entirely.`,
+  },
+];
+
+export const sectionsESICConsultantHyderabad = [
+  {
+    title: "The Hyderabad ESIC Dynamic: High-Value, High-Growth Risk",
+    description:
+      "Hyderabad, the hub for major IT/ITES companies (Cyberabad area) and the pharmaceutical industry (Genome Valley), faces a unique ESIC challenge: ensuring that highly-compensated, white-collar employees are correctly assessed under the ₹21,000 wage ceiling, especially when variable pay is high.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "The Variable Pay Misclassification",
+        content:
+          "In IT and Pharma, performance bonuses, joining bonuses, and shift allowances are common. The ESIC Regional Office, Telangana, is strict: if these components are paid at fixed intervals, they are considered 'Wages' for contribution purposes. Misclassification is the primary source of audit arrears.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "The 10-Employee Certainty",
+        content: (
+          <>
+            <p>
+              ESIC is strictly applicable to all establishments in notified areas of Telangana with 10 or more employees. The compliance rate is rising, making proactive adherence crucial to avoid aggressive enforcement.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+  {
+    title: "Your Hyderabad ESIC Compliance Solution",
+    description:
+      "We provide the technical expertise to interpret payroll variables against ESIC law, safeguarding your company from high-value retrospective claims common in the city's fast-paced tech environment. ",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Variable Pay Auditing",
+        content:
+          "We conduct an expert legal review of your IT/ITES/Pharma pay structures to accurately determine the ESIC-liable Gross Wage, clearly separating genuine reimbursements from taxable wage components. This prevents unnecessary over-contribution and eliminates the risk of large retrospective demands during ESIC audits.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Employee Medical Access",
+        content: (
+          <>
+            <p>
+              We ensure seamless linkage of employees to specialized ESIC and tie-up hospitals in key Hyderabad industrial zones such as Sanath Nagar and Nacharam, enabling smooth and immediate access to medical benefits. This significantly enhances employee security in high-stress tech and manufacturing environments.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Regional Office Management",
+        content:
+          "We maintain dedicated liaison with the ESIC Regional Office in Hyderabad to expedite the processing of Sickness, Maternity, and other employee benefits, while ensuring quick resolution of compliance-related queries. This frees your HR team from time-consuming bureaucratic follow-ups with the Telangana ESIC administration.",
+      },
+      
+    ],
+  },
+];
+export const esicManagementFaqHyderabad = [
+  {
+    question:
+      "Are trainees or apprentices in a Pharma/IT company in Hyderabad counted for ESIC?",
+    answer: `Generally, ESIC covers employees as defined under the ESI Act. Trainees who are paid 'wages' as per the statutory definition must be covered. Apprentices engaged under the Apprentices Act, 1961 may be exempt, but this requires expert verification. We assess each employee category to ensure accurate classification.`,
+  },
+  {
+    question:
+      "Our IT company has employees across multiple satellite offices in Hyderabad. Does the 10-employee count apply to each office?",
+    answer: `No. The 10-employee threshold applies to the entire ‘Establishment’ registered under a single legal entity (or GST/PAN). If your main office and satellite offices in areas like Gachibowli or Kondapur share the same entity, all employees are combined for ESIC applicability.`,
+  },
+  {
+    question:
+      "The Telangana ESIC Office has been stricter about non-compliance lately. What's the biggest threat?",
+    answer: `The biggest threat is a Retrospective Demand under Section 45A, often covering several years of non-contribution due to misclassified variable pay. These demands can reach lakhs of rupees plus penalties. Our service ensures forward-looking compliance to eliminate this risk immediately.`,
+  },
+];
+export const sectionsESICConsultantPune = [
+  {
+    title: "Pune's Unique ESIC Ecosystem: High Volume, High Risk",
+    description:
+      "Pune, the economic heart of Western Maharashtra, presents an ESIC environment defined by two distinct, high-growth industrial clusters: the Automobile and Manufacturing hub of Pimpri-Chinchwad (PCMC) and the vast IT/ITES and R&D campuses of Hinjewadi.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labour Management (Manufacturing)",
+        content:
+          "The manufacturing sector relies heavily on contract labour. The ESIC Regional Office, Pune (RO Pune), rigorously enforces the Principal Employer's liability to ensure ESIC contributions are paid for every contract worker. Retrospective demands often arise from the misclassification or non-coverage of outsourced staff (e.g., security, housekeeping, or ancillary shop-floor labour).",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "State-Wide Threshold Shift",
+        content: (
+          <>
+            <p>
+              Effective October 2020, the ESIC coverage threshold across Maharashtra for most establishments (Shops, Hotels, Transport, etc.) was reduced from 20 to 10 or more employees. This mandatory inclusion has brought thousands of SMEs and IT/ITES startups under the ESIC purview, drastically increasing the need for expert guidance.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Local News Insight",
+        content:
+          "The Maharashtra government's commitment to providing land at zero cost for ESIC hospitals and the extension of ESIC benefits to casual/contractual workers in municipal bodiesunderscores a state-level push to strengthen social security infrastructure. This signals intensified compliance monitoring by ESIC officials across Pune and the wider region.",
+      },
+      
+    ],
+  },
+  {
+    title: "EPFDesk: Your New Wage Code Ready ESIC Partner in Pune",
+    description:
+      "EPFDesk is New Wage Code Ready and provides forward-thinking ESIC management, ensuring your Pune operations—from the factory floor to the software park—are insulated from retrospective demands and litigation.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "New Wage Code Alignment",
+        content:
+          "We conduct a pre-emptive Payroll Audit to restructure “Wages” as defined under the Code on Social Security, 2020. Our review ensures that non-statutory components—such as allowances—do not push the excluded portion above 50% of total remuneration. This proactive alignment mitigates future ESIC penalty exposure by correctly balancing Basic Pay and allowances in line with the new statutory wage floor.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Worker Liability Management",
+        content: (
+          <>
+            <p>
+              We ensure flawless registration and timely E-Challan filing for all contract employees, fully discharging the Principal Employer’s liability in line with the stringent compliance standards of the Pune Regional Office. Our process aligns with the Code on Social Security’s expanded definition of ‘Employee,’ covering all workers engaged through contractors and preventing any back-dated ESIC liability.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Compliance for the 10-Employee Rule",
+        content:
+          "We provide specialized support for newly covered SMEs in Pune by managing immediate ESIC registration and setting up systems for continuous compliance under Maharashtra’s 10-employee applicability rule. This simplifies statutory onboarding for small establishments that previously believed they were exempt, ensuring a clean, risk-free start to ESIC compliance.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Audit Defense & Adjudication",
+        content: (
+          <>
+            <p>
+             We provide expert representation and meticulous document preparation for ESIC inspections, show-cause notices under Section 45A, and proceedings before the ESIC Court or Appellate Authority in Pune and Mumbai. Our approach protects your business from severe penalties and offence compounding under the New Labour Codes, ensuring compliance within the modern ‘Inspector-cum-Facilitator’ advisory framework.
+            </p>
+          </>
+        ),
+      },
+     
+    ],
+  },
+];
+export const esicManagementFaqPune = [
+  {
+    question:
+      "We are a new software startup in Hinjewadi with 12 employees. Is ESIC mandatory?",
+    answer: `Yes, absolutely. Since the Maharashtra government reduced the threshold to 10 or more employees for most establishments in notified areas (including ITES), your company must register with ESIC immediately. Failure to register within the stipulated time can attract substantial retrospective penalties and interest.`,
+  },
+  {
+    question:
+      "How does the New Wage Code impact our ESIC contribution calculation in Pune?",
+    answer: `The New Wage Code defines 'Wages' broadly and restricts non-statutory allowances (such as HRA, conveyance, and performance incentives) to a maximum of 50% of total remuneration. If the excluded portion exceeds this limit, the excess must be added back to 'Wages' for ESIC calculation. We ensure your payroll structure remains fully aligned with this safe-harbour limit.`,
+  },
+  {
+    question:
+      "Our manufacturing unit in Chakan/Talegaon uses many outsourced contract workers. Who is liable for their ESIC?",
+    answer: `The Principal Employer (your company) is ultimately responsible for ensuring ESIC compliance for every contract worker earning below ₹21,000. Although contractors must deduct and remit contributions, the Pune ESIC authorities will hold your establishment liable for any default, including penalties and damages. We manage contractor compliance end-to-end to protect you from this exposure.`,
+  },
+  {
+    question:
+      "If an employee leaves our company, how do we handle their ESIC exit formalities?",
+    answer: `Unlike PF, an employee retains their ESIC Insured Person (IP) status. Your responsibility is to ensure the final ESIC contribution is made and the date of exit is accurately updated on the ESIC portal within 15 days. This keeps your compliance record clean with the Regional Office, Pune.`,
+  },
+];
+export const sectionsESICConsultantKolkata = [
+  {
+    title: "The Kolkata ESIC Landscape: High Enforcement on Legacy Industries",
+    description:
+      "Kolkata and the extended industrial belts along the Hooghly River (like Howrah, Hooghly, and Barrackpore) represent a compliance challenge distinct from other metros. Here, ESIC scrutiny is intensely focused on traditional, labor-intensive industries—Jute, Engineering, Textiles, and Chemicals—where employee injury and sickness claims are historically high.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Jute Mill and Factory Claim History",
+        content:
+          "News reports highlight that the incidence of sickness and temporary disablement claims in West Bengal, especially in Jute and older manufacturing units, has historically been much higher than the national average. This high-claim environment leads to intensified ESIC vigilance and a willingness by the Corporation to utilize Section 69 of the ESI Act to ask high-claiming companies to share the expenditure burden.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "The 'Badli' Worker (Temporary Labour) Risk",
+        content: (
+          <>
+            <p>
+              The prevalent use of casual/temporary or 'badli' workers, particularly in traditional manufacturing and loading/unloading activities, creates a major ESIC risk. These workers are often prone to exploiting the cash benefit system or may be overlooked for contributions, resulting in retrospective financial demands on the Principal Employer when an accident occurs.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Wider Territorial Coverage",
+        content:
+          "The provisions of the ESI Act have been progressively extended to new districts across West Bengal (e.g., Alipurduar, Purulia, Cooch Behar), making ESIC coverage a state-wide mandate, not just a Kolkata metro issue. Businesses with operations beyond the core city must ensure uniform compliance.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Local Policy Insight",
+        content: (
+          <>
+            <p>
+              The existence of a dedicated Directorate of ESI (Medical Benefit) Scheme under the West Bengal Labour Department, administering medical services in conjunction with ESIC, signifies a decentralized and complex administrative structure. Compliance requires navigating both Central ESIC regulations and the State's specific medical benefit rules.
+            </p>
+          </>
+        ),
+      },
+     
+    ],
+  },
+  {
+    title: "EPFDesk: Your New Wage Code Ready ESIC Partner in West Bengal",
+    description:
+      "EPFDesk offers deep local expertise combined with preparation for national labour reforms. We are New Wage Code Ready, ensuring your Kolkatan enterprise transitions smoothly and compliantly into the new social security framework, managing risk where it's highest.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "High-Risk Liability Mitigation",
+        content:
+          "We conduct specialized audits for high-risk units in Howrah and Hooghly—particularly in Jute, Engineering, and heavy manufacturing—to review accident and sickness claim histories and proactively correct compliance gaps that could trigger Section 69 cost-sharing notices. Our audit ensures contribution calculations are accurate under the new ‘Wages’ definition, significantly reducing the scope for penalty-driven Section 45A assessments.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "‘Badli’ & Contract Labour Management",
+        content: (
+          <>
+            <p>
+              We ensure flawless registration and continuous E-Challan tracking for all temporary (‘Badli’) and contract workers, establishing a clear and defensible contribution trail that protects the Principal Employer from liability arising from contractor default. Our process aligns fully with the Code on Social Security’s emphasis on the Principal Employer’s responsibility for all workers, including those engaged through contractors or aggregators.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "New Wage Code Alignment",
+        content:
+          "We carry out mandatory payroll restructuring to ensure that non-statutory allowances—such as HRA, Conveyance, and other flexible components—do not exceed the 50% limit of total remuneration, preventing future artificial inflation of the ESIC contribution base. This proactive alignment future-proofs your payroll against strict enforcement of the new statutory ‘Wages’ floor, ensuring uniform compliance across PF, ESIC, Gratuity, and all Social Security obligations.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "RO Kolkata & State Liaison",
+        content: (
+          <>
+            <p>
+              We directly manage all ESIC disputes, inspection notices, and adjudication proceedings with the Regional Office, Kolkata, and the State Directorate of the ESI (MB) Scheme to ensure faster, smoother resolution. Our approach leverages the New Labour Code’s ‘Inspector-cum-Facilitator’ advisory framework, prioritizing guidance-based compliance outcomes over immediate prosecution.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+];
+export const esicManagementFaqKolkata = [
+  {
+    question:
+      "We have an IT firm in Salt Lake Sector V with fewer than 20 employees. Is ESIC mandatory for us?",
+    answer: `Yes, for most establishments. The Central Government’s notification extends the ESIC Act to Shops, Hotels, Cinemas, and similar establishments employing 10 or more persons. With ESIC fully implemented in Kolkata and nearby industrial zones, any establishment with 10+ employees generally falls under mandatory coverage.`,
+  },
+  {
+    question:
+      "How does the high sickness rate in Bengal's industries affect my ESIC liability?",
+    answer: `High sickness and accident rates in sectors like Jute are key enforcement triggers. If your establishment’s claim incidence is significantly higher than the state average, the ESIC Regional Director, Kolkata, may invoke Section 69 to recover a portion of the expenditure from your company. Maintaining accurate contribution and wage records is the strongest defence.`,
+  },
+  {
+    question:
+      "Our company provides benefits superior to ESIC. Can we get an exemption from the West Bengal government?",
+    answer: `Yes, exemptions under Sections 87/88 of the ESI Act are possible if your benefits are demonstrably superior. However, under the Code on Social Security, 2020, exemptions are no longer indefinite and require periodic review and renewal. The process involves coordinated submissions to both the ESIC Corporation and the West Bengal State Government.`,
+  },
+  {
+    question:
+      "What is the most common reason for retrospective ESIC demands in the Kolkata region?",
+    answer: `The most frequent cause is under-reporting of contract/temporary workers or misclassification of wages by excluding components that are regular or mandatory—such as attendance bonuses or fixed overtime. The Regional Office, Kolkata, maintains strict vigilance over the total number of individuals engaged at the premises.`,
+  },
+  {
+    question:
+      "Does the New Wage Code require us to change our employee contracts now?",
+    answer: `Yes. Even though the Codes are awaiting final implementation, it is advisable to update employment contracts to clearly define all wage components and explicitly reference your organisation's obligations under the Code on Social Security, 2020. This prevents future disputes over what constitutes ‘Wages’ for statutory contributions.`,
+  },
+];
+export const sectionsESICConsultantAhmedabad = [
+  {
+    title: "Gujarat's Distinct ESIC Compliance Environment",
+    description:
+      "Ahmedabad, historically the 'Manchester of India,' anchors a major manufacturing ecosystem that extends to Gandhinagar, Vadodara, and the vast industrial estates (GIDC) like Naroda, Vatva, and Sanand. The ESIC compliance landscape here is uniquely shaped by its dominant industries:",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "High-Risk Industrial Areas",
+        content:
+          "The Textile and Chemical/Pharmaceutical sectors face stringent ESIC inspection due to inherent occupational hazards (e.g., Silicosis risk in ceramics/refractories in nearby Morbi, and chemical exposure). Retrospective ESIC demands are often triggered by injuries or occupational disease claims from workers who were either un-enrolled or whose wages were misclassified.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract and Migrant Labour",
+        content: (
+          <>
+            <p>
+              Gujarat's industrial growth relies heavily on both internal and external migrant workers, often employed through contractors. ESIC authorities in Ahmedabad are extremely strict in enforcing the Principal Employer's ultimate liability for the social security of these outsourced personnel, especially in large-scale manufacturing and construction projects.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Local Legal Precedents (Non-Commencement of Production): ",
+        content:
+          "The Gujarat High Court has established precedents clarifying that ESIC liability on a factory arises only upon the commencement of manufacturing activity, not during the preliminary construction phase (e.g., Minaxi Textiles Limited case). This distinction is crucial for new units being set up in the GIDC areas and requires expert documentation.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Local Policy Insight",
+        content: (
+          <>
+            <p>
+              The Gujarat government is aggressively promoting industrial growth through policies like the Gujarat Textile Policy 2024 (offering high subsidies and skill grants). While this boosts employment, it simultaneously expands the ESIC coverage base, demanding that new and subsidized units establish immediate, flawless statutory compliance.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+  {
+    title: "EPFDesk: Your New Wage Code Ready ESIC Partner in Ahmedabad",
+    description:
+      "EPFDesk provides specialized ESIC management for the high-volume, high-risk industrial units of Gujarat. We are New Wage Code Ready, ensuring your transition to the unified labour framework is smooth and protects your company from future financial shock ",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "New Wage Code Compliance",
+        content:
+          "We conduct proactive payroll restructuring to ensure that the statutory ‘Wages’ components—Basic Pay, DA, and Retaining Allowance—constitute at least 50% of an employee’s total remuneration, preventing any compulsory increase of the ESIC contribution base. This alignment mitigates future ESIC cost escalation by ensuring compliance with the new statutory wage floor mandated under the Code on Social Security, 2020.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "GIDC Unit Liability Management",
+        content: (
+          <>
+            <p>
+              We conduct specialized compliance reviews for GIDC manufacturing units, with a focus on mandatory ESIC coverage for hazardous-process workers—even where only a single employee is engaged. Our process includes precise documentation of the actual production-commencement date to prevent wrongful retrospective ESIC demands. This ensures full alignment with the Code on Social Security’s mandate for universal ESIC coverage across India and heightened protection for workers in hazardous industries.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Worker Compliance Audit",
+        content:
+          "We implement a stringent Triple-Check mechanism to verify contractor compliance, ensuring timely E-Challan payments and accurate wage reporting for all outsourced staff—especially security, housekeeping, and ancillary manufacturing labour. This process protects the Principal Employer from penalties under the new Labour Codes by enforcing the strict definition of ‘Employee’ and the universal responsibility for ensuring social security contributions.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Inspection & ESI Court Defense",
+        content: (
+          <>
+            <p>
+              We provide expert representation and appeal handling before the Regional Office, Ahmedabad, the ESI Court, and the Gujarat High Court, using strong local precedents to defend against liability disputes. Our approach leverages the ‘Inspector-cum-Facilitator’ advisory framework to seek compounding of minor offences and resolution through guidance rather than immediate prosecution or heavy penalties.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+];
+export const esicManagementFaqAhmedabad = [
+  {
+    question:
+      "We are a new pharma unit in Sanand GIDC. When does our ESIC liability actually begin?",
+    answer: `Your ESIC liability begins from the date you commence your manufacturing process. As clarified in Gujarat High Court rulings, expenses incurred during factory construction do not attract ESIC contribution. We help you formally document the exact date of production commencement to establish a clear audit trail for future inspections.`,
+  },
+  {
+    question:
+      "Our company outsources logistics and transport. Are these contract workers covered by our ESIC registration?",
+    answer: `Yes. ESIC applies to employees of road motor transport establishments, and the Principal Employer (your company) remains ultimately responsible for ensuring compliance for outsourced workers whose activities are incidental or preliminary to your core operations. Ahmedabad’s Regional Office closely scrutinizes logistics and transport contractors, making accurate compliance essential.`,
+  },
+  {
+    question:
+      "The salary of our skilled textile workers fluctuates due to overtime. Is ESIC calculated on the gross pay every month?",
+    answer: `No. ESIC is calculated on 'Wages,' which typically excludes overtime pay. However, the New Wage Code’s unified definition of ‘Wages’ must be applied carefully. We structure your payroll to ensure fixed, regular components are included in the statutory 'Wages' base, while permissible exclusions like genuine overtime are kept separate.`,
+  },
+  {
+    question:
+      "We have 8 full-time employees and 3 contractual housekeeping staff in our Ahmedabad office. Are we covered?",
+    answer: `Yes, likely. The ESIC Act covers establishments—including shops, offices, and commercial entities—employing 10 or more persons. Since your combined headcount is 11, ESIC becomes mandatory, and you are responsible for compliance for all employees, including contract staff engaged through agencies.`,
+  },
+  {
+    question:
+      "Our industry (e.g., Chemicals/Dyes) is deemed 'hazardous.' Is there a special ESIC rule?",
+    answer: `Yes. Under the upcoming Code on Social Security, ESIC coverage is mandatory for any establishment engaged in hazardous work processes, regardless of employee count. This waives the usual 10-employee threshold and ensures universal coverage for workers in high-risk Gujarat GIDC zones.`,
+  },
+];
+export const sectionsESICConsultantSurat = [
+  {
+    title: "The Unique ESIC Challenges in Surat: The Dual Economy Hub",
+    description:
+      "Surat, known as the 'Diamond City of India' and a major hub for synthetic textiles, presents a unique ESIC compliance picture driven by its highly informal, piece-rate, and migrant labor-intensive economy. The Sub-Regional Office, Surat (SRO Surat), focuses heavily on ensuring social security coverage for the vast workforce in the clusters of Varachha, Katargam, and Udhana.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Piece-Rate Workers and Variable Wages (The Diamond Factor): ",
+        content:
+          "The majority of the Diamond Polishing and Cutting workforce is paid on a piece-rate basis. ESIC authorities frequently scrutinize these payrolls, demanding contributions on all payments made to these workers, regardless of the fluctuating nature of the income. The critical compliance challenge is accurately capturing and reporting all wage components—including allowances that are not strictly linked to production—to avoid penalties.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Migrant Labor & Informal Employment",
+        content: (
+          <>
+            <p>
+              Surat's economy relies on millions of migrant workers (over 58% of the total population, mainly in textiles and diamond processing). These workers are often employed via contractors or masterji (job workers). Failure to register or accurately report these workers, especially due to high attrition or economic downturns, results in massive retrospective demands and penalties on the Principal Employer.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "High-Risk Industrial Classification",
+        content:
+          "The Textile and Powerloom sectors (weaving, dyeing, and printing) have inherent risks due to machinery and chemical exposure. This leads to higher injury/sickness claims, prompting the SRO Surat to maintain intense vigilance on ESIC coverage for these units, particularly concerning occupational safety compliance.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Local Legal Insight (Gujarat Precedent): ",
+        content: (
+          <>
+            <p>
+              The Gujarat High Court has established that ESIC liability on a new factory arises only after the commencement of manufacturing operations, not during the preliminary construction or setup phase. This distinction is vital for the numerous new units establishing themselves in the Surat-Navsari industrial corridor and requires expert documentation.
+            </p>
+          </>
+        ),
+      },
+     
+    ],
+  },
+  {
+    title: "EPFDesk: Your New Wage Code Ready Partner in Surat",
+    description:
+      "EPFDesk combines deep knowledge of Gujarat's statutory compliance environment with practical experience in the piece-rate and contract-heavy Surat economy. We are New Wage Code Ready, prepared to handle the payroll overhaul mandated by the new laws.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Piece-Rate Wage Structuring",
+        content:
+          "We conduct a detailed ESIC Contribution Base Audit for diamond, textile, and powerloom units to ensure all fixed components of piece-rate wages are correctly included in the statutory ‘Wages’ base, while all permissible exclusions are properly documented. This alignment with the Code on Wages’ unified ‘Wages’ definition ensures that your ESIC base—along with future PF and Gratuity bases—is fully compliant and legally defensible.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labour Liability Management",
+        content: (
+          <>
+            <p>
+              We conduct a comprehensive Migrant Worker Verification and Registration Drive—using Aadhaar and other identity proofs—to ensure every temporary, casual, or contractor-supplied worker is assigned an ESIC IP Number and fully tracked through E-Challans. This directly addresses the Code on Social Security’s heightened emphasis on Principal Employer liability, which is especially critical in Surat’s high-turnover textile and diamond sectors.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Retrospective Demand Defense",
+        content:
+          "We provide direct representation before the SRO Surat and the ESI Court, using Gujarat-specific legal precedents to challenge arbitrary retrospective ESIC demands—especially those related to the Date of Commencement of Production or alleged non-coverage. Our approach leverages the Labour Codes’ ‘Inspector-cum-Facilitator’ advisory model to pursue amicable resolution or compounding of minor offences, avoiding unnecessary litigation.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "New Wage Code Payroll Transition",
+        content: (
+          <>
+            <p>
+             We execute a mandatory Payroll Component Split to ensure that non-statutory allowances—such as HRA, conveyance, and other flexible components—do not exceed the statutory 50% limit of total remuneration, thereby preventing any retrospective escalation of ESIC and other social security costs. This transition future-proofs your payroll structure ahead of the New Wage Code’s implementation, safeguarding your organisation from sudden, large increases in the ESIC contribution base.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+];
+export const esicManagementFaqSurat = [
+  {
+    question:
+      "Our textile unit uses a third-party labour contractor for weaving. Who is responsible for ESIC?",
+    answer: `The Principal Employer (your unit) is ultimately responsible. While the contractor is required to deduct and remit ESIC contributions, your organisation must ensure the payment is actually made. If the contractor defaults, ESIC can recover all dues—along with interest and penalties—directly from the Principal Employer. We implement systems to track contractor E-Challan compliance monthly and protect you from this liability.`,
+  },
+  {
+    question:
+      "We are starting a new chemical unit in the Hazira industrial area. When should we start ESIC contributions?",
+    answer: `ESIC liability generally begins once you cross the applicable employee threshold (typically 10 or 20 employees based on establishment type). Importantly, Gujarat rulings clarify that liability starts only when actual manufacturing or commercial operations begin—not during construction. Documenting your official ‘Date of Commencement of Production’ is essential to avoid wrongful retrospective demands.`,
+  },
+  {
+    question:
+      "The New Wage Code states that the allowance component cannot exceed 50% of the salary. How does this affect our ESIC?",
+    answer: `Many Surat firms currently structure salaries with a low Basic Pay and high allowances. Under the New Wage Code, if allowances exceed 50% of total remuneration, the excess must be added back to the statutory ‘Wages’ for calculating PF, Gratuity, and ESIC. This will significantly increase the ESIC contribution base, making advance payroll restructuring essential.`,
+  },
+  {
+    question:
+      "Does ESIC cover the temporary workers brought in during the heavy seasonal demand for Diwali and other festivals?",
+    answer: `Yes, absolutely. Any person employed for wages—directly by the Principal Employer or through a contractor—is covered under ESIC, even if employed for a single day, provided their wages fall within the threshold. Seasonal workers are a major ESIC audit risk if not registered and reported immediately.`,
+  },
+];
+export const sectionsESICConsultantGurgaon = [
+  {
+    title: "The Unique ESIC Landscape of Corporate Gurgaon (The Millennium City)",
+    description:
+      "Gurgaon (Gurugram) is defined by its massive concentration of Corporate Headquarters, Global Capability Centers (GCCs), IT/ITES companies, and the critical Automobile/Auto Ancillary manufacturing belt (Manesar, IMT Manesar). The ESIC compliance environment here is shaped by two distinct pressure points:",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "High-Salary Allowance Structures (The Corporate Challenge): ",
+        content:
+          "Companies in Cyber City and Golf Course Road often structure salaries with a low Basic Pay and high allowances to reduce statutory liabilities (PF, Gratuity, ESIC). This is the primary audit target for the ESIC Sub-Regional Office (SRO) in Gurgaon, as the New Wage Code will make this practice non-compliant, leading to huge retrospective demands if not corrected.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contractual Labor in Hazardous Sectors (The Auto Hub Challenge)",
+        content: (
+          <>
+            <p>
+              The massive auto supply chain in Manesar and the broader Haryana belt relies heavily on temporary/contractual workers. Reports highlight significant under-reporting of factory accidents and delayed issuance of ESIC identity cards, making the Principal Employer liable for un-insured workers' benefits and heavy penalties.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "The 'Dormant Registration' Trap (The Startup/New Business Challenge)",
+        content:
+          "The Haryana ESIC office has specific instructions regarding companies registered via the MCA portal. If a company does not reach the employee threshold, it must proactively extend its 'dormant' status. Failure to do so leads to automatic activation and the risk of unexpected retrospective ESIC liability.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Haryana ESIC Initiative",
+        content: (
+          <>
+            <p>
+              The SRO Gurgaon is actively running schemes like SPREE (Scheme for Promotion of Registration of Employers and Employees) and an AMNESTY Scheme-2025 to resolve long-standing disputes and encourage voluntary registration without demanding backdated dues. Our consultancy helps new firms leverage these temporary benefits while establishing future-proof compliance.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+  {
+    title: "EPFDesk: New Wage Code Ready ESIC Solutions for Gurgaon's Core Industries",
+    description:
+      "EPFDesk provides specialized ESIC risk mitigation for the high-stakes corporate and industrial environments of Gurgaon, ensuring your business is ready for the structural shift mandated by the new unified Labour Codes.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "High-Allowance Salary Structure Compliance",
+        content:
+          "We perform proactive payroll restructuring for all employees below the ESIC wage ceiling to ensure that statutory ‘Wages’—Basic Pay, DA, and Retaining Allowance—constitute at least 50% of CTC, as required under the new Wage Code framework. This prevents the ESIC Department from imposing a compulsory higher contribution base for past periods, effectively mitigating massive retrospective liability and backdated dues.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labour Compliance for Auto Ancillaries",
+        content: (
+          <>
+            <p>
+             We conduct a comprehensive Supply Chain ESIC Audit and contractor oversight program for auto ancillary units, ensuring immediate IP (Insured Person) registration for all workers engaged through manufacturing and facility management contractors in the Manesar/IMT industrial belt. This aligns with the Code on Social Security’s strengthened emphasis on Principal Employer liability for all third-party labour, protecting your organisation from major accident-related claims and compliance breaches.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "‘Dormant Status’ Compliance Managemen",
+        content:
+          "We provide dedicated monitoring and timely filing for the extension of Dormant ESIC Status for newly incorporated Corporate IT/ITES units in Haryana that have not yet crossed the 10-employee threshold. This prevents inadvertent activation of the ESIC registration and protects your business from premature contribution demands during non-operational or pre-eligibility stages.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Dispute Resolution & Litigation",
+        content: (
+          <>
+            <p>
+             We provide expert representation and appeal management before the ESIC Court in Gurgaon, leveraging the New Labour Code provisions for compounding minor offences and strategically utilising available Amnesty Schemes for past coverage disputes. Our approach aligns with the ‘Inspector-cum-Facilitator’ framework, prioritising advisory-led compliance over punitive action and enabling faster resolution of long-pending ESIC demands.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Audit-Ready Records",
+        content: (
+          <>
+            <p>
+              We manage and maintain mandatory records, including the Accident
+              Register (Form 11) and other documentation necessary for audit and
+              immediate accident reporting.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Post-Registration Filings",
+        content: (
+          <>
+            <p>
+              We handle the meticulous preparation and submission of half-yearly
+              returns (Form 6/C-11), maintaining perfect record continuity for
+              the ESIC Corporation.{" "}
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Claim Facilitation",
+        content: (
+          <>
+            <p>
+              Assistance with processing employee claims for sickness,
+              maternity, and temporary disablement benefits, reducing the burden
+              on your HR team.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const esicManagementFaqGurgaon = [
+  {
+    question:
+      "We are a new IT office in Cyber City with 15 employees. Are we covered under ESIC?",
+    answer: `Yes. ESIC is mandatory for shops, offices, and commercial establishments in the notified areas of Haryana/Gurgaon that employ 10 or more persons. Your IT office qualifies as a commercial establishment, making ESIC compliance mandatory for all employees earning up to the statutory wage threshold.`,
+  },
+  {
+    question:
+      "Our company uses high allowances (e.g., fuel, telephone) to keep Basic Pay low. How will the New Wage Code affect our ESIC?",
+    answer: `This traditional practice is directly impacted by the New Wage Code. If allowances exceed 50% of total remuneration, the excess must be added back into 'Wages' for ESIC calculation. This will significantly increase your ESIC liability. We proactively restructure salary components to comply with the 50% rule and prevent future penalties or retrospective contribution demands.`,
+  },
+  {
+    question:
+      "We use a third-party vendor for facility management (security, housekeeping). Who is responsible for their ESIC?",
+    answer: `The Principal Employer (your company) is ultimately responsible. While the vendor must deduct and remit contributions, you have a statutory obligation to ensure every contract worker is registered and contributions are paid on time. SRO Gurgaon inspections rigorously scrutinize this, especially in large corporate campuses.`,
+  },
+  {
+    question:
+      "What is the 'Dormant Status' that the Haryana ESIC office mentioned?",
+    answer: `Dormant Status applies to newly registered companies that have not yet crossed the 10-employee threshold. The Haryana ESIC Regional Office requires companies to renew this status every six months. Failure to renew results in automatic activation of your ESIC registration, triggering contribution demands even if you were not eligible.`,
+  },
+  {
+    question:
+      "We heard ESIC is running an Amnesty Scheme. Can we use it to cover our past non-compliance?",
+    answer: `Yes. Haryana ESIC has introduced one-time schemes such as AMNESTY and SPREE, allowing unregistered companies to enrol without penalties, interest, or backdated dues for the pre-registration period. This is a valuable, time-bound opportunity to regularize your workforce, and we guide you through the digital enrolment process end-to-end.`,
+  },
+];
+export const sectionsESICConsultantNoida = [
+  {
+    title: "The Unique ESIC Compliance Landscape of UP (Noida-Ghaziabad Industrial Corridor)",
+    description:
+      "The compliance challenges in Noida (and the broader Uttar Pradesh industrial belt like Greater Noida and Ghaziabad) are a direct result of its dual economy: a massive manufacturing hub (electronics, mobile, apparel) juxtaposed with a rapidly growing IT/ITES and Corporate Services sector. The Regional Office, Noida, and its sub-offices maintain high scrutiny on specific, high-risk areas in the state:",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Migrant Worker Coverage and Underreporting",
+        content:
+          "Uttar Pradesh is a major destination for migrant labor, particularly in construction and manufacturing. Workers from Bihar, West Bengal, and Eastern UP are often employed on a temporary or contract basis in factories (like those in Sector 62, NEPZ, and Greater Noida). ESIC inspections often target factories that fail to register these workers quickly, leading to massive retrospective demands on the Principal Employer based on estimated or minimum wages.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Factory Accident Claims & Compliance (The Manufacturing Core)",
+        content: (
+          <>
+            <p>
+             The high-volume electronics, textile, and auto-ancillary manufacturing units in Noida/Greater Noida pose a high risk for accidents. The ESIC office prioritizes checks on hazardous and factory-based establishments to ensure immediate IP registration and coverage, particularly after an accident, where non-compliance can result in severe penalties and prosecution under the ESI Act, Section 85.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Data Linkage and Audit Risk (The Digital Leap)",
+        content:
+          "The ESIC Corporation is now actively collaborating with other departments (GST, EPFO, Income Tax) to identify establishments that are covered but not contributing. This Joint Exercise for Coverage without Inspection relies on data matching, meaning companies operating formally but neglecting ESIC are at immediate risk of receiving a notice for retrospective coverage across the entire state of UP.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "UP Government's Compliance Focus",
+        content: (
+          <>
+            <p>
+              The UP State government is pushing for the digitization of labor returns and self-certification for MSMEs to improve the ease of doing business. However, this relies on the employer accurately assessing and self-certifying their ESIC liability, making expert consulting vital to avoid costly self-errors.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+  {
+    title: "EPFDesk: Your New Wage Code Ready ESIC Partner in Noida",
+    description:
+      "EPFDesk specializes in localizing ESIC compliance for the specific risks faced by the Noida-based IT and manufacturing sectors. We ensure your establishment is robust against the state's stringent enforcement and ready for the impending transition to the new Labour Codes.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Migrant & Contract Labour Onboarding",
+        content:
+          "We implement an Instant IP Registration System that rapidly onboards temporary, migrant, and contract workers using Aadhaar and other identity proofs, ensuring every worker in factory and construction environments is ESIC-registered before they begin work. This directly mitigates penalties by addressing the Code on Social Security’s strengthened Principal Employer liability—especially critical in Uttar Pradesh’s high-turnover labour market.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Allowance Cap & Payroll Structuring",
+        content: (
+          <>
+            <p>
+              We conduct a detailed ESIC Base Audit and CTC recalculation to ensure non-statutory allowances—such as HRA, travel, and special pay—remain within the statutory 50% threshold defined under the New Wage Code. This prevents any automatic upward revision of the ESIC contribution base for past years, protecting your organisation from sudden retrospective cost shocks and unexpected liability.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Demand Defense & ESI Court Representation",
+        content:
+          "We provide comprehensive dispute resolution and litigation support before the Regional Office and the ESI Court in Noida/Ghaziabad, with specialised expertise in contesting demands arising from alleged underreporting of contract wages or disputes over the initial date of ESIC applicability. Our strategy leverages the New Labour Codes’ provision for Compounding of Offences—where fines replace imprisonment for first-time violations—to secure quick, negotiated, and legally compliant settlements.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "New Unit ESIC Activation",
+        content: (
+          <>
+            <p>
+              We guide newly established IT and corporate units—including those operating in SEZs and tech parks—through the complete ESIC registration and activation process. This includes accurate declaration of employee strength and correct classification of the establishment type (Factory vs. Commercial Establishment), as required under Uttar Pradesh’s ESIC and labour regulations. We also standardize the statutory ‘Wages’ definition for all new hires, ensuring that ESIC, PF, and Gratuity calculations follow a consistent and legally compliant structure from Day 1.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+];
+export const esicManagementFaqNoida = [
+  {
+    question:
+      "Our IT/ITES office in Sector 62 has 12 employees. Are we mandatory covered by ESIC in Noida?",
+    answer: `Yes. In notified areas such as Noida and Greater Noida, ESIC is mandatory for any commercial establishment—including IT/ITES units—employing 10 or more persons. You must register and contribute for all employees earning up to the statutory wage threshold per month.`,
+  },
+  {
+    question:
+      "Many of our manufacturing workers in Greater Noida are daily wagers from other states. Do we need to cover them?",
+    answer: `Absolutely. ESIC coverage is mandatory for all workers—temporary, contractual, or migrant—if their wages fall within the threshold. The ESIC Regional Office in Uttar Pradesh places strong emphasis on covering this vulnerable, high-risk workforce. Failure to register migrant workers promptly is a major cause of penalties for factories in the region.`,
+  },
+  {
+    question:
+      "We structure our salaries with high HRA and conveyance to keep the Basic Pay low. How does the New Wage Code impact this in UP?",
+    answer: `This structure is now high-risk. Under the Code on Wages, allowances cannot exceed 50% of total remuneration (CTC). If they do, the excess must be added back to the statutory definition of 'Wages'—which forms the base for ESIC contributions. We recommend proactively restructuring salaries to ensure Basic Pay (plus DA) is at least 50% of CTC to avoid a sudden, unavoidable rise in ESIC costs.`,
+  },
+  {
+    question:
+      "We received a notice from ESIC about a 'Joint Exercise' audit, saying we are covered but not registered. What does this mean?",
+    answer: `This notice arises from the new data-matching drive across Uttar Pradesh. ESIC is cross-verifying GST, EPFO, MCA, and other government records to identify establishments that should be covered but are not registered. Being flagged means you are officially under non-compliance scrutiny and must take immediate action to manage potential retrospective liability.`,
+  },
+  {
+    question:
+      "A factory worker had an accident, but we had not registered them yet. What is our liability?",
+    answer: `If an eligible worker is unregistered, the Principal Employer becomes directly liable for all medical expenses, compensation, and benefits that ESIC would have paid. Additionally, the employer faces severe punitive action—including damages, interest, and prosecution—for evasion of the Act. Immediate expert intervention is essential to manage this high-risk situation.`,
+  },
+];
+export const sectionsESICConsultantJaipur = [
+  {
+    title: "The Unique ESIC Landscape of Rajasthan (Jaipur, Bhilwara & Udaipur)",
+    description:
+      "Rajasthan's industrial structure is characterized by a vast and culturally significant MSME (Micro, Small, and Medium Enterprises) sector, particularly concentrated in textiles (Bhilwara), marble/cement, and the high-value Gems and Jewellery cluster in Jaipur. This environment presents distinct ESIC challenges:",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Informal Workforce and Under-reporting (Gems, Textiles & Handicrafts): ",
+        content:
+          "A significant portion of the workforce in the traditional crafts and cottage industries is informal, often working from dispersed or unregistered small units. Recent ESIC drives in Jaipur (Malviya Nagar, Sanganer) focus on linking these smaller units to the formal economy. The ESIC Regional Office is aggressively auditing the number of workers to counter the tendency to keep employee counts just below the 10-person threshold for mandatory registration.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Remote Location Challenges (Cement & Mining)",
+        content: (
+          <>
+            <p>
+              Large-scale industries like Cement (Chittorgarh, Nimbahera) and Mining (Udaipur) operate in remote districts where providing ESIC medical infrastructure is difficult. ESIC often mandates coverage even when medical facilities are geographically distant, placing the onus on the employer to ensure initial registration and proper documentation for referral to the nearest available ESIC Dispensary/Hospital.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Apprenticeship and Child/Adolescent Labor Laws",
+        content:
+          "The Rajasthan Government recently approved amendments to the Shops and Commercial Establishments Act, raising the minimum age for employment in commercial institutions and revising rules for adolescent workers (14 to 18 years). ESIC compliance must align with these new state-level employment age mandates, especially in the craft and textile units that traditionally employ younger workers.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Rajasthan Government Mandates",
+        content: (
+          <>
+            <p>
+              The state has simplified compliance for establishments with up to 10 workers by exempting them from registration under the Shops and Commercial Establishments Act, but ESIC remains a separate central obligation if the worker count threshold is met. Simultaneously, there's a strong push for formalization, supported by the integration of Building and Construction Worker (BoCW) data with the e-Shram portal, which the ESIC department uses for coverage expansion.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+  {
+    title: "EPFDesk: New Wage Code Ready ESIC Solutions for Rajasthan's Industries",
+    description:
+      "EPFDesk provides localized ESIC management, mitigating the risk of retrospective demands and ensuring the seamless integration of your payroll with the upcoming New Wage Code, which will be critical for Rajasthan's wage-sensitive sectors.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "MSME Worker Threshold Management",
+        content:
+          "We conduct a specialised audit and rationalisation exercise for MSME units—such as gems, handicrafts, and handloom enterprises—to ensure accurate ESIC coverage as they approach the 10-employee threshold. We advise on voluntary registration or strategic workforce structuring to prevent sudden, high-penalty retrospective demands. By applying the unified ‘Wages’ definition from a pre-determined, compliant date, we ensure your transition into mandatory ESIC coverage is planned, seamless, and legally secure rather than punitive.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Artisan & Piece-Rate Worker ESIC Compliance",
+        content: (
+          <>
+            <p>
+             We provide structured compliance support for artisan, piece-rate, and commission-based workers—common in the Gems, Textiles, and Handicrafts sectors—by accurately mapping and annualising variable earnings and ensuring their correct inclusion in the ESIC ‘Wages’ base. This aligns with the Code on Wages, which broadens the scope of ‘Wages’ to include all remuneration not expressly excluded, effectively preventing the underreporting or exclusion of piece-rate income from statutory ESIC calculations.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "New Factory & Establishment Registration",
+        content:
+          "We guide new IT, automobile, and large-scale manufacturing units entering RIICO industrial zones—such as Mansarovar and Sitapura—through mandatory ESIC registration and initial contribution filing with the Jaipur Regional Office. Our process ensures that the ESIC contribution base is set correctly from Day 1 using the New Wage Code’s 50% of CTC rule, creating immediate statutory compliance and preventing future audit objections related to allowance-heavy salary structures.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Accident & Medical Claim Management",
+        content: (
+          <>
+            <p>
+              We provide dedicated support for managing injury and medical claims for workers in high-risk sectors such as mining and construction. Our team fast-tracks IP registration and ensures complete documentation so that workers can immediately access ESIC Medical College & Hospital, Alwar (or the nearest authorised facility), significantly reducing the employer’s immediate liability. This service aligns with the Code on Social Security’s mandate for universal social security and rapid, assured coverage for all workers in hazardous environments.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+];
+export const esicManagementFaqJaipur = [
+  {
+    question:
+      "We are a Gems and Jewellery manufacturer in Jaipur with 15 artisans. Are we required to register for ESIC?",
+    answer: `Yes. ESIC is mandatory for any factory, shop, or commercial establishment in the notified areas of Rajasthan (including most of Jaipur) employing 10 or more persons. ‘Employee’ includes artisans and piece-rate workers if they work under your supervision or control. Non-registration often results in large retrospective demands based on estimated wages.`,
+  },
+  {
+    question:
+      "If we pay our employees a high allowance and low Basic Pay, how will the New Wage Code affect our ESIC?",
+    answer: `The New Wage Code restricts allowances to a maximum of 50% of an employee’s Total Remuneration (CTC). If allowances exceed this limit, the excess must be added back to the statutory 'Wages' definition, which forms the base for ESIC contributions. This can substantially increase your ESIC cost. We redesign payroll structures to ensure full compliance and prevent an expensive structural shift.`,
+  },
+  {
+    question:
+      "We run a seasonal textile printing unit in Sanganer. Do we have to maintain ESIC for temporary/seasonal workers?",
+    answer: `Yes. ESIC coverage is mandatory for all eligible workers—temporary, seasonal, or casual—once the establishment is covered. Seasonal workers are a major focus area in ESIC audits in textile hubs such as Sanganer. We help you manage seasonal onboarding and de-registration smoothly and in compliance with law.`,
+  },
+  {
+    question:
+      "The Rajasthan government has been easing compliance for small businesses. Does this affect my ESIC obligation?",
+    answer: `No. ESIC is a Central Act, and its applicability is not affected by state-level relaxations. Even if the Rajasthan government exempts small units from certain local labour laws, ESIC remains mandatory if your establishment has 10 or more employees in a notified area. Central compliance thresholds must still be met.`,
+  },
+  {
+    question:
+      "Can we enroll workers voluntarily if we have fewer than 10 employees, especially for the medical benefits?",
+    answer: `Yes. Voluntary ESIC registration is allowed and encouraged. Establishments with fewer than 10 employees may opt in to secure comprehensive medical and social security benefits for their workforce. This is particularly valuable in Rajasthan, where medical infrastructure challenges make ESIC benefits a strong tool for retaining skilled labour.`,
+  },
+];
+export const sectionsESICConsultantLucknow = [
+  {
+    title: "The Strategic ESIC Environment of Lucknow and Uttar Pradesh",
+    description:
+      "Uttar Pradesh (UP) is undergoing a major industrial and compliance transformation. The state government’s focus on 'Ease of Doing Business' and initiatives like One District, One Product (ODOP) has formalized thousands of MSMEs. Simultaneously, the ESIC has dramatically expanded its coverage, notifying 74 out of 75 districts for ESI Scheme implementation. This dual focus on formalization and universal coverage means enforcement risk is now significantly higher, even for small establishments outside the main industrial corridors.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Massive ESIC Geographic Expansion",
+        content:
+          "With 74 districts now covered, the ESIC Sub-Regional Offices in Lucknow, Agra, and Kanpur are actively issuing notices to newly covered establishments like shops, private educational institutions, and healthcare facilities that were previously exempt. The primary risk is a retrospective demand for contributions dating back to the date of the district's notification.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "IT/ITES and Healthcare Sector Scrutiny (Lucknow)",
+        content: (
+          <>
+            <p>
+              Lucknow's growing IT hubs and numerous private hospitals/labs are under scrutiny for potential under-reporting of wages. The common practice of inflating allowances to keep the ESIC contribution base below the  threshold is a major audit risk, especially with the imminent implementation of the New Wage Code's definition of 'Wages'.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "MSME/ODOP Formalization Challenge (Kanpur-Varanasi-Agra Corridors)",
+        content:
+          "The vast network of small-scale enterprises dealing with traditional crafts (like Chikankari in Lucknow, leather in Kanpur, carpets in Varanasi) often relies on piece-rate, home-based, or contractual workers. ESIC auditors are increasingly focusing on the Principal Employer's Liability for these workers, regardless of whether they work inside a conventional 'factory' premises.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "UP's Regulatory Direction",
+        content: (
+          <>
+            <p>
+             The state is actively leveraging technology for compliance through its single-window system. This means data from other state departments (like GST registration, Shops & Establishment filings) can be cross-referenced by the ESIC, making non-compliance easier to detect. The focus is on universal social security benefits, including the integration of ESIC services with Ayushman Bharat (AB-PMJAY) for wider medical care access.
+            </p>
+          </>
+        ),
+      },
+     
+    ],
+  },
+  {
+    title: "EPFDesk: Your New Wage Code Ready ESIC Partner in Lucknow & UP",
+    description:
+      "EPFDesk provides tailored ESIC solutions that address the specific, newly emerging compliance risks in Uttar Pradesh, ensuring your business is secure, registered correctly, and fully prepared for the New Wage Code. ",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "New Wage Definition Audit",
+        content:
+          "We perform a comprehensive audit of all employee CTC structures (up to the ESIC wage ceiling) to ensure that the statutory ‘Wages’—Basic Pay, Dearness Allowance (DA), and Retaining Allowance—collectively form at least 50% of total remuneration. This prevents any retrospective reclassification of allowances into the ESIC wage base. Our restructuring directly implements the requirements of the Code on Wages, 2019, protecting your organisation from higher ESIC contributions as well as increased PF and Gratuity liability.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "New District Registration & ESIC Defense",
+        content: (
+          <>
+            <p>
+             We assist establishments in the 74 newly notified ESIC districts—including Mahoba, Pratapgarh, and Badaun—with timely registration, accurate documentation, and proper determination of the correct applicability date. For retrospective ESIC demands that are arbitrary or unjustified, we prepare and defend your case before the ESI Court or the appropriate Authority in the concerned Regional Office. This ensures full compliance with the Social Security Code, 2020’s mandate for universal coverage—while protecting your business from wrongful, backdated liabilities.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Principal Employer Liability Management for ODOP Cluste",
+        content:
+          "We implement a robust ESIC compliance system for contract and piece-rate workers across ODOP clusters such as Chikankari, Brassware, and Zari. This includes accurate calculation of contributions, complete documentation, and a defensible paper trail that protects the Principal Employer from liability arising out of contractor defaults. Our approach aligns with the Social Security Code’s enhanced focus on the welfare of gig, platform, and contract workers, significantly reducing legal and financial risk for the establishment.",
+      },
+      
+    ],
+  },
+];
+export const esicManagementFaqLucknow = [
+  {
+    question:
+      "We are a coaching institute/private school in Gomti Nagar, Lucknow, with 15 teachers and staff. Are we covered by ESIC?",
+    answer: `Yes. ESIC coverage in Uttar Pradesh now mandatorily applies to private educational institutions, coaching centres, and all shops/commercial establishments employing 10 or more persons. The ESIC Regional Office in Lucknow is actively enforcing compliance in the service-sector ecosystem.`,
+  },
+  {
+    question:
+      "Our MSME unit in the ODOP sector utilizes home-based piece-rate workers. Are they covered under ESIC?",
+    answer: `This category is high-risk and complex. If your establishment controls the quality, quantity, pricing, or payment of work done by home-based piece-rate workers—even if they operate from their homes—they are likely considered ‘employees’ under ESIC. The New Labour Codes expand the definition of ‘worker’ to include gig and platform workers, thereby increasing ESIC applicability risk for traditional home-based models widely used in UP.`,
+  },
+  {
+    question:
+      "Our company's salary structure gives a huge Special Allowance to keep Basic Pay low. How does the New Wage Code affect this?",
+    answer: `The New Wage Code imposes the 50% rule. If total allowances (HRA, Special Allowance, etc.) exceed 50% of an employee’s CTC, the excess amount is deemed part of statutory ‘Wages.’ This automatically raises the base for ESIC, PF, and Gratuity calculations, leading to higher mandatory contributions. We help restructure salary components legally to stay compliant before the Code is fully notified.`,
+  },
+  {
+    question:
+      "Our district was recently notified by ESIC (as part of the 74-district expansion). Can they demand contributions from five years ago?",
+    answer: `ESIC can demand contributions retrospectively for up to five years, but only from the date your district was officially notified for ESIC implementation. If the district was previously non-notified, liability begins strictly from the notification date. We prepare legal defense strategies to challenge any demands that pre-date notification and are therefore unlawful.`,
+  },
+];
+export const sectionsESICConsultantIndore = [
+  {
+    title: "The Unique ESIC Compliance Landscape of MP (Indore-Pithampur-Bhopal Corridor)",
+    description:
+      "Madhya Pradesh, particularly the Indore-Pithampur industrial belt, presents a complex ESIC environment due to its strong presence of organized sectors—Automobile, Pharmaceuticals, and IT—which are under high scrutiny, alongside a vast Food Processing and Textile MSME sector. The Indore Special Economic Zone (SEZ) and surrounding industrial areas are key focus points for the ESIC Regional Office.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "IT Sector and Allowance Structuring (Indore SEZ and Super Corridor)",
+        content:
+          "Indore is a rapidly growing IT hub. ESIC audits in this sector often focus on the salary structure, looking for excessive use of allowances (like HRA, Conveyance) to keep the statutory wage base low. The application of the new  rule under the Code on Wages, 2019, is a major compliance risk that, if ignored, will result in massive retrospective demands upon implementation.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Factory Status and Commencement Liability (Pithampur Industrial Area): ",
+        content: (
+          <>
+            <p>
+              For large manufacturing units (Auto, Pharma, Textiles) in Pithampur, the definition of when a factory commences operations is a critical point of dispute. ESIC often attempts to club initial setup/construction expenses as 'wages' to attract contribution liability earlier. Clear documentation of the actual date of commencement of manufacturing (post-trial run and registration) is vital to successfully defend against such claims.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Local Body Expansion of ESIC Coverage",
+        content:
+          "The MP Government is actively expanding ESIC coverage, recently extending the ESI Act to Municipal Bodies and Urban Local Bodies with 10 or more employees. This signifies a broader governmental focus on formalizing employment across all sectors, increasing the risk of cross-departmental data sharing for non-compliance detection.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "MP's Compliance Focus",
+        content: (
+          <>
+            <p>
+              The state is leveraging technology and promoting 'Ease of Doing Business' through policies like the MSME Development Policy 2021 and the One District, One Product (ODOP)scheme. While promoting growth, this requires businesses to maintain meticulous and accurate self-compliance, as official records (like GST, factory licenses) are often the basis for ESIC scrutiny.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+  {
+    title: "EPFDesk: Your New Wage Code Ready ESIC Partner in Indore & MP",
+    description:
+      "EPFDesk provides expert consulting focused on the specific industries and regulatory environment of Madhya Pradesh, ensuring your establishment is protected from the state’s stringent enforcement and prepared for the structural changes brought by the new Labour Codes. ",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "IT/ITES Wage Structure Redesign",
+        content:
+          "We conduct a proactive 50% Wages Audit for IT, ITES, and Pharma-sector employees (up to the ESIC wage ceiling), redesigning CTC structures to ensure that Basic Pay + Dearness Allowance meet the mandatory 50% threshold. This prevents any retrospective inflation of the ESIC contribution base. Our approach directly implements the Code on Wages, 2019 mandate, safeguarding your organisation against one of the most significant payroll risks faced by the formal sector today.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Pithampur Factory Registration & ESIC Applicability Certification",
+        content: (
+          <>
+            <p>
+              We assist new Automobile and Food Processing units in Pithampur and Dewas with end-to-end ESIC registration, including establishing legally defensible documentation for the actual Date of Commencement of Manufacturing. This prevents wrongful retrospective ESIC demands on construction or pre-production wages. Our approach applies established case law confirming that ESIC liability begins only once manufacturing operations start, fully aligning with the OSH Code, 2020’s intent to treat ESIC as an operational-stage safety and welfare obligation.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labour Compliance for Food Processing Units",
+        content:
+          "We implement robust ESIC compliance systems for high-turnover daily wagers, casual labour, and contract workers commonly engaged in Food Processing and Namkeen manufacturing clusters. This includes accurate wage mapping, correct eligibility checks, and timely contribution deposits for every worker. Our process mitigates the heightened Principal Employer Liability under the Code on Social Security, 2020, which mandates coverage for most contract, gig, and platform workers in these fast-growing sectors.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Medical Infrastructure Linkage",
+        content: (
+          <>
+            <p>
+              We guide employers on fully utilising ESIC’s medical network across Indore (T.B. Hospital), Bhopal, Gwalior, and Dewas, ensuring accurate IP registration, correct dispensary/hospital linkage, and proper documentation for medical referrals—especially critical for workers in remote industrial zones. This enhances employee welfare and supports the Social Security Code, 2020 mandate for universal ESIC coverage and seamless portability of benefits across regions.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+];
+export const esicManagementFaqIndore = [
+  {
+    question:
+      "Our Food Processing unit in the industrial area has 15 workers. Are we covered by ESIC?",
+    answer: `Yes. ESIC is mandatory for any factory, shop, or commercial establishment in the notified areas of Madhya Pradesh—including Indore, Pithampur, and Bhopal—employing 10 or more persons. With the Food Processing sector under heightened scrutiny, maintaining full compliance is essential.`,
+  },
+  {
+    question:
+      "We are an IT company in Crystal IT Park, Indore. Why is ESIC auditing our allowance structure?",
+    answer: `ESIC is reviewing whether your payroll relies on a low Basic Pay and high allowances (HRA, Conveyance, etc.). Under the New Wage Code, any allowance portion exceeding 50% of total remuneration (CTC) must be added back to 'Wages' for ESIC calculation. This significantly increases the ESIC contribution base, and ESIC is proactively auditing firms to ensure readiness for the transition.`,
+  },
+  {
+    question:
+      "We are building a new Automobile component factory in Pithampur. Do we have to pay ESIC on the wages of the construction workers?",
+    answer: `Generally, no. Multiple legal precedents confirm that ESIC liability begins only once actual manufacturing operations commence—not during construction or infrastructure setup. Construction workers may fall under the jurisdiction of BOCW (Building & Other Construction Workers) welfare bodies instead. Maintaining clear records separating construction and manufacturing phases is crucial to avoid retrospective ESIC demands.`,
+  },
+  {
+    question:
+      "We are an MSME in the textile sector in Indore. ESIC is threatening penal action for non-registration from five years ago. What are our options?",
+    answer: `ESIC can recover contributions retrospectively for up to five years, along with damages and interest. Your options include:  
+• **Amnesty Schemes:** Using one-time settlement schemes (like SPREE or new Amnesty programs) to register without heavy penalties.  
+• **Dispute Resolution:** Challenging the demand based on incorrect wage assessments, misclassification of your establishment, or flawed determination of commencement date.  
+We assist in both strategies for a defensible and compliant outcome.`,
+  },
+  {
+    question:
+      "How does the New Wage Code help our contract workers?",
+    answer: `The Code on Social Security, 2020 expands statutory protections to Gig and Platform workers and reinforces the Principal Employer’s responsibility to ensure social security coverage (including ESIC) for all contract labour. This improves benefit portability across state lines—critical for Madhya Pradesh’s high-migration labour force—and standardizes compliance for employers.`,
+  },
+];
+export const sectionsESICConsultantCoimbatore = [
+  {
+    title: "The Unique ESIC Challenges in Tamil Nadu's Industrial Hub (Coimbatore-Tirupur-Erode)",
+    description:
+      "Coimbatore, known as the 'Manchester of South India', is the nerve center for Tamil Nadu's Textile and Engineeringindustries, complemented by the vast knitted garment export cluster in nearby Tirupur. The ESIC environment here is marked by high employee density, principal employer liability for contract workers, and a regional office that actively conducts retrospective audits.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labor in Textile/Garment Industry (Tirupur Cluster)",
+        content:
+          "The garment and textile industry relies heavily on contract, piece-rate, and inter-state migrant workers. The ESIC Sub-Regional Office in Coimbatore actively enforces compliance on Principal Employers (the Mills/Factories) for the ESIC contributions of the contract labor they engage. Retrospective demands are common when contracts or manpower agencies fail to remit contributions, leading to the factory's bank accounts being frozen until the liability is settled.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Factory Commencement Date Disputes (Foundries & Engineering)",
+        content: (
+          <>
+            <p>
+              Given the robust manufacturing base (Foundry, Pump, Motor, and Auto Components), ESIC authorities frequently attempt to demand contributions from the date of the factory's construction or setup phase. As seen in Madras High Court judgments, establishing clear documentary proof of the actual commencement date of the manufacturing process (post-trial run) is critical to successfully defending against huge retrospective liabilities.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Expansion of ESIC Coverage to Local Bodies and MSMEs",
+        content:
+          "The Tamil Nadu government has been proactively extending the ESI Act to contractual employees of all local bodies and has recently extended full implementation to entire districts like Coimbatore. This signifies a broader enforcement push, with a specific focus on sectors like Private Educational Institutions and smaller MSME units that may have previously evaded coverage.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Tamil Nadu’s Regulatory Focus",
+        content: (
+          <>
+            <p>
+              While the state has been a strong opponent of the centralized Labour Codes, it is aggressively pushing for higher compliance and social security for workers. Recent ESIC one-time amnesty schemes (like SPREE) launched in the region underscore the corporation's focus on regularizing the workforce and bringing unregistered or partially registered factories into the formal ESIC fold, indicating an impending shift to stricter enforcement post-amnesty.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+  {
+    title: "EPFDesk: Your New Wage Code Ready ESIC Partner for Coimbatore's Industries",
+    description:
+      "We transform the complex, high-risk process of ESIC compliance into a seamless, expert-managed service. ",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Retrospective Liability Management",
+        content:
+          "We mitigate Principal Employer risk in the Textile and Foundry sectors by auditing contracts with manpower agencies, ensuring watertight compliance clauses and real-time verification of ESIC remittances. For existing retrospective ESIC demands, we prepare complete case files and supporting documentation for representation before the ESI Court (Principal Labour Court) in Chennai or Coimbatore. This service aligns with the Social Security Code, 2020, which strengthens the direct accountability of the Principal Employer for the ESIC coverage of all contract workers.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "New Wage Code Compliance Audit",
+        content: (
+          <>
+            <p>
+              We conduct a comprehensive Wage Structure Optimization audit to ensure that statutory ‘Wages’—Basic Pay plus Dearness Allowance—constitute at least 50% of CTC for all technical, supervisory, and administrative staff (up to the ESIC wage ceiling). This prevents the ESIC contribution base from being retrospectively inflated once the New Wage Code is notified. Our restructuring approach minimizes the expected 5–15% surge in manpower costs faced by manufacturing MSMEs due to the broader ‘Wages’ definition under the Code on Wages, 2019.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Inter-State Migrant Worker ESIC Compliance",
+        content:
+          "We manage end-to-end ESIC documentation and registration for inter-state migrant workers—particularly those employed in Spinning Mills—by integrating e-Shram details, issuing e-Pehchan cards, and ensuring full portability of ESIC benefits across states. This aligns with the Social Security Code’s mandate for universal coverage and guarantees that migrant workers receive uninterrupted social security and medical benefits, regardless of their home state.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Foundry & Engineering Safety & Medical Compliance",
+        content: (
+          <>
+            <p>
+             We align your factory’s ESIC compliance with the mandatory annual health check-up requirements for workers aged 40 and above under the OSH Code, 2020. Our team coordinates directly with the local ESIC Hospital—such as the facility in Singanallur, Coimbatore—to manage occupational health assessments, medical referrals, and risk documentation. This integrates ESIC benefits with the OSH Code’s enhanced focus on occupational safety and health for high-risk industries like Foundry, Casting, and Engineering.
+            </p>
+          </>
+        ),
+      },
+     
+    ],
+  },
+];
+export const esicManagementFaqCoimbatore = [
+  {
+    question:
+      "We run a small motor pump unit in Ganapathy, Coimbatore, with 12 workers. Are we covered by ESIC?",
+    answer: `Yes. As a factory/establishment operating in the notified areas of Coimbatore, the ESIC Act is mandatory for all units employing 10 or more persons. Coimbatore has been an ESIC-implemented zone since 1955, and compliance enforcement is stringent.`,
+  },
+  {
+    question:
+      "Our Spinning Mill uses job workers paid on a piece-rate basis. Are their earnings subject to ESIC contribution?",
+    answer: `Absolutely. Payments made to piece-rate workers or job workers for work performed within the factory are treated as 'Wages' under the ESI Act and must be included in the contribution base. ESIC closely monitors textile and spinning mills for wage under-reporting, making proper inclusion essential.`,
+  },
+  {
+    question:
+      "We pay our engineers a high transport allowance. Will the New Wage Code force us to pay more ESIC contribution?",
+    answer: `Yes, likely. Under the New Wage Code, total allowances cannot exceed 50% of total remuneration (CTC). If Transport Allowance, HRA, and other allowances exceed this limit, the excess must be added back to 'Wages'—increasing both ESIC and PF contribution liability. A proactive payroll audit is essential to avoid major cost escalation.`,
+  },
+  {
+    question:
+      "The ESIC Sub-Regional Office is demanding contributions from the date our Tirupur unit started construction, not manufacturing. Is this correct?",
+    answer: `No. Based on multiple High Court rulings, including those of the Madras High Court, ESIC liability begins only when actual manufacturing operations commence—not during civil construction or setup. We gather and prepare supporting documents such as Factory Inspector certifications, electricity service records, machinery installation proofs, and raw material purchase orders to successfully contest such retrospective demands.`,
+  },
+];
+export const sectionsESICConsultantVadodara = [
+  {
+    title: "Gujarat’s Unique ESIC Compliance Landscape (Vadodara-Ankleshwar-Morbi Corridor)",
+    description:
+      "Gujarat, known for its dynamic industrial clusters spanning from Vadodara's petrochemical and engineering hubs to Morbi's ceramics strength, presents a high-stakes ESIC compliance environment. The state’s focus on large-scale manufacturing and widespread use of contract labor creates specific audit risks that differ significantly from other states.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Construction vs. Manufacturing Commencement (Legal Risk)",
+        content:
+          "The Gujarat High Court has established a strong precedent that ESI liability starts only from the commencement of the actual manufacturing process, not from the date of factory construction or setup. ESIC authorities in Vadodara often issue retrospective demands attempting to cover construction-phase labor costs. EPFDesk specializes in leveraging these specific Gujarat judicial precedents to successfully defend against such demands (as seen in the Minaxi Textiles judgment).",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labor & Principal Employer Liability (Chemical & Engineering)",
+        content: (
+          <>
+            <p>
+             In the highly regulated Chemical, Pharma, and Engineering clusters surrounding Vadodara, the risk for the Principal Employer is paramount. Audits frequently target the non-payment or under-payment of ESIC contributions for contract workers (security, housekeeping, job-work). The state government has recently issued circulars reminding departments and corporations to ensure contractors are registered under PF/ESI, signaling stricter enforcement and direct liability on the Principal Employer for any default.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Widespread Non-Compliance in MSME Clusters (Morbi/Ceramics Effect)",
+        content:
+          "Despite the ESIC Act being notified decades ago, numerous workers in major industrial sectors like Ceramics (Morbi) and various MSME units are still denied basic ESIC benefits, with many units not registering or providing identity cards. This documented non-compliance suggests an impending, targeted enforcement drive by the ESIC and Labour Departments to regularize these unprotected workers.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Inadequate ESIC Healthcare Infrastructure",
+        content: (
+          <>
+            <p>
+              News reports from Vadodara highlight a disparity between growing ESIC contributions (which are mandatory) and crumbling or inadequate medical infrastructure (dispensaries, staff shortages). While this doesn't excuse non-compliance, it is a key driver for employee disputes and subsequent employer audit trigger.
+            </p>
+          </>
+        ),
+      },
+     
+    ],
+  },
+  {
+    title: "EPFDesk: Your ESIC and New Wage Code Shield in Gujarat",
+    description:
+      "We transform the complex, high-risk process of ESIC compliance into a seamless, expert-managed service. ",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Retrospective Demands Defense",
+        content:
+          "We prepare a comprehensive ‘Commencement Date’ legal defense—compiling Factory Inspector certificates, Electricity Board service activation records, machinery installation proofs, and first sales invoices—to establish the true start of manufacturing operations. This enables you to successfully challenge retrospective ESIC demands raised for the construction or pre-production period, relying on well-established Gujarat High Court rulings. Our approach protects employers from legacy ESIC liabilities under the old Act and ensures a clean transition into the compliance framework of the Code on Social Security, 2020.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labour Liability Management",
+        content: (
+          <>
+            <p>
+              We conduct a Principal Employer Indemnity Audit for all labour contracts—covering manpower agencies, job-work arrangements, and outsourced processes—in the Chemical and Engineering sectors. Our system ensures real-time verification of ESIC remittances by contractors and enables automatic deduction of defaults from contractor invoices, fully aligning with Gujarat’s stringent contractor-compliance mandate. This approach supports the broader ‘Wages’ definition under the Code on Wages, 2019, and the OSH Code, 2020’s heightened responsibility placed on the Principal Employer for the social security protection of contract workers.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "New Wage Definition Audit",
+        content:
+          "We conduct Statutory Wage Optimization for all covered employees (up to the ESIC wage ceiling) to ensure that statutory wage components—Basic Pay plus Dearness Allowance—meet the mandated 50% threshold of gross remuneration. This is especially critical in Gujarat’s manufacturing sector, where complex allowance-heavy salary structures are common. Our audit proactively addresses the core financial challenge posed by the New Wage Code: preventing an abrupt and unplanned increase in the ESIC, PF, and Gratuity contribution bases once the Code is enforced.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "e-Pehchan & Remote Worker Compliance",
+        content: (
+          <>
+            <p>
+              We manage end-to-end digital ESIC registration and e-Pehchan card issuance for workers—particularly migrant labour—in remote GIDC clusters such as Ankleshwar, Savli, and Manjusar. Our process ensures that every Insured Person is correctly linked to ESIC hospitals and referral facilities, enabling smooth access to medical benefits. This fully aligns with the Social Security Code’s mandate for universal social security and inclusive welfare coverage for all categories of workers.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+];
+export const esicManagementFaqVadodara = [
+  {
+    question:
+      "We are setting up a new plant in the Savli GIDC area. When does our ESIC liability start?",
+    answer: `Your ESIC liability begins only when the actual manufacturing process commences inside the factory premises—not when civil construction starts. This legal position is well supported by Gujarat High Court rulings. We assist in documenting your commencement date accurately to prevent wrongful retrospective ESIC demands.`,
+  },
+  {
+    question:
+      "Our salary structure heavily relies on allowances (HRA, Conveyance) to keep the Basic Pay low. Will the New Wage Code force us to pay more ESIC?",
+    answer: `Yes, almost certainly. Under the New Wage Code, if excluded allowances exceed 50% of total remuneration, the excess must be added back to form statutory ‘Wages.’ This increases the base for ESIC and PF contributions, raising your statutory costs significantly. We help restructure payroll early to avoid sudden financial impact.`,
+  },
+  {
+    question:
+      "We use contract workers supplied by a registered agency. If the agency defaults on ESIC payments, is our Vadodara company liable?",
+    answer: `Yes. As the Principal Employer, your organisation is legally responsible for ensuring full ESIC compliance for all contract labour deployed at your premises. If the contractor defaults, ESIC will recover dues—including penalties—from your company. This remains the single biggest ESIC litigation risk for Gujarat’s major industries.`,
+  },
+  {
+    question:
+      "I run a commercial establishment (Shop/Office) in the fully covered Vadodara district with 12 employees. Is ESIC compulsory?",
+    answer: `Yes. In notified areas of Gujarat, ESIC coverage is mandatory for shops, commercial establishments, factories, and other specified units employing 10 or more persons. Vadodara has been fully covered for several years, and compliance enforcement is strict. Your establishment is required to register and contribute for all eligible employees.`,
+  },
+];
+export const sectionsESICConsultantVisakhapatnam = [
+  {
+    title: "Visakhapatnam’s Evolving ESIC Compliance Matrix: The Tech & Manufacturing Blend",
+    description:
+      "Visakhapatnam (Vizag) is undergoing a significant economic shift, moving beyond its traditional core of Port, Steel, and Pharma to emerge as a prominent AI and IT/ITES destination.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "IT/ITES Sector ESIC Coverage",
+        content:
+          "Unlike traditional setups, IT/ITES establishments often maintain complex payroll structures with high allowances and rely heavily on contract or fixed-term employees. The ESIC Act applies to IT/ITES firms with 10 or more employees in notified areas like Vizag. The primary challenge is ensuring accurate ESIC applicability for employees whose allowances push them close to the  wage ceiling and managing the high-volume contract staff employed in supporting services (security, facilities, logistics) for the new Data Centres.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "SPREE and Formalization Drive",
+        content: (
+          <>
+            <p>
+              The AP ESIC region is actively using schemes like SPREE (Scheme for Promotion of Registration of Employers and Employees) to bring left-out establishments into the ESI fold. This targeted push suggests an imminent phase of strict enforcement after the voluntary window closes, directly impacting the numerous MSMEs, service providers, and new vendors supplying the burgeoning tech ecosystem.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "New Wage Code Readiness",
+        content:
+          "The impending New Wage Code, with its mandatory  'Wage' threshold, will be highly disruptive to the IT/ITES industry's standard compensation model, which typically features lower Basic Pay and high allowances. Companies in Vizag must proactively restructure their CTC to prevent an unplanned surge in their ESIC and PF contribution base.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Vizag’s Unique Risk",
+        content: (
+          <>
+            <p>
+              The construction phase of the new Data Centres involves thousands of contract laborers. Liability for their ESIC coverage rests squarely on the Principal Employer (the developer/IT firm) if the contractor defaults. This is a massive, high-value compliance risk.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+  {
+    title: "EPFDesk: ESIC Compliance and New Wage Code Mastery for Vizag's Future",
+    description:
+      "EPFDesk offers specialized consultancy that addresses the specific challenges of AP's industrial landscape, particularly the complexity introduced by the new IT/ITES and Data Center investments.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "IT/ITES Wage Restructuring",
+        content:
+          "We perform strategic wage optimisation for IT/ITES organisations in Madhurawada, Rushikonda, and other tech corridors by auditing and restructuring allowance-heavy salary packages to ensure that statutory ‘Wages’ meet the mandated 50% rule. This stabilises ESIC and PF contribution bases for all covered employees and prevents involuntary inflation of statutory costs—one of the most significant financial risks facing the IT sector under the Code on Wages, 2019.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Data Center & Infrastructure Contract Liability Management",
+        content: (
+          <>
+            <p>
+              We implement a real-time ESIC compliance monitoring system for all vendors engaged in construction, facilities, and maintenance activities for Data Centres and AI Hubs. This ensures full ESIC adherence by contractors and shields the Principal Employer—the IT/Data Center entity—from liability arising due to vendor default. Our framework aligns all contractual staff with the Universal Social Security mandate under the Code on Social Security, 2020, protecting your organisation from unforeseen retrospective ESIC demands.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Retrospective Demands & Formalization",
+        content:
+          "We guide unregistered service vendors and MSMEs through Andhra Pradesh ESIC’s SPREE and Voluntary Compliance schemes, enabling them to formalise ESIC coverage without incurring retrospective penalties for the prior period. Our process secures a clear, legally defensible commencement date for statutory liability—an essential requirement for seamless integration with new state-level industry incentives and for preventing future disputes over backdated ESIC demands.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Fixed-Term Employee Social Security Compliance",
+        content: (
+          <>
+            <p>
+              We help IT/ITES organisations ensure full parity of ESIC and social security benefits for fixed-term employees—common in Vizag’s project-based tech ecosystem—so that their entitlements match those of permanent staff, as mandated under the New Wage Code. This guarantees compliance with the principles of ‘equal pay for equal work’ and social security equivalence under the Code on Social Security, 2020.
+            </p>
+          </>
+        ),
+      },
+     
+    ],
+  },
+];
+export const esicManagementFaqVisakhapatnam = [
+  {
+    question:
+      "We are a software services firm in the Vizag IT Special Economic Zone with 45 employees. Does ESIC apply to us?",
+    answer: `Yes. In notified areas such as Visakhapatnam, the ESIC Act applies to all establishments—including IT/ITES firms—employing 10 or more persons. SEZ status does not provide any exemption from ESIC registration or contribution obligations.`,
+  },
+  {
+    question:
+      "My employee’s CTC has a Basic Pay of ___ and Allowances of ___. How will the New Wage Code impact my ESIC cost?",
+    answer: `Under the New Wage Code’s 50% rule, statutory ‘Wages’ must be at least 50% of total remuneration (CTC). If your employee’s Basic Pay is below the 50% threshold, the difference between statutory ‘Wages’ and the 50% benchmark will be added back into the ESIC wage base. This can substantially increase ESIC contributions unless payroll structures are proactively redesigned.`,
+  },
+  {
+    question:
+      "The construction of our Data Center in Anakapalli/Vizag is done by a third-party contractor. If they don't pay ESIC for their workers, are we liable?",
+    answer: `Yes. As the Principal Employer, your company is legally responsible for ensuring ESIC contributions are paid for all workers engaged in your operations—including those deployed through contractors. If the contractor defaults, ESIC will raise demands and penalties directly on your company. We specialise in contract structuring and monitoring systems to mitigate this high-risk exposure.`,
+  },
+  {
+    question:
+      "Our company missed the ESIC registration date when we started operations in Vizag. Can we avoid retrospective penalties?",
+    answer: `Possibly. Andhra Pradesh ESIC has promoted the SPREE scheme, which allows unregistered employers to voluntarily register now and receive immunity from inspections and retrospective contribution/penalty demands for the pre-registration period. We can guide you through the process to help secure a clean, penalty-free start.`,
+  },
+];
+export const sectionsESICConsultantNagpur = [
+  {
+    title: "Maharashtra's ESIC Landscape: Focus on Nagpur's Industrial & Vidarbha's Textile Core",
+    description:
+      "Nagpur, the winter capital of Maharashtra and the central economic pillar of the Vidarbha region, presents a distinct ESIC compliance environment, driven by its unique industrial mix and strategic importance as a logistics gateway.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Manufacturing and MIDC Zones (Butibori & Hingna): ",
+        content:
+          "Nagpur’s industrial belt, particularly the massive Butibori MIDC and Hingna MIDC, is dominated by heavy manufacturing, engineering, and processing units. These sectors rely on large volumes of contract and blue-collar labor. The primary ESIC risk is the Principal Employer's Liability for contributions not paid by contractors, leading to frequent and high-value retrospective demands, which local industry bodies have actively tried to mitigate.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Textile and Cotton Processing",
+        content: (
+          <>
+            <p>
+              The surrounding Vidarbha region is a major cotton belt. Government efforts to bolster the Textile Industry (with policies like the Integrated and Sustainable Textile Policy 2023-2028 and PM-MITRA parks) mean thousands of workers in ginning, spinning, and processing units are being brought under the formal ESIC umbrella, requiring detailed compliance management for seasonal and contract workers.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Expansion to New Sectors (Education & Healthcare)",
+        content:
+          "The Maharashtra government has actively proposed and extended ESIC coverage to previously uncovered sectors, most notably Educational and Medical Institutions. This means hospitals, nursing homes, schools, and coaching centers in Nagpur are now under the ESIC scanner, requiring immediate registration and compliance setup.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Healthcare Infrastructure Scrutiny",
+        content: (
+          <>
+            <p>
+             News reports consistently highlight the severe shortcomings and staff shortages at local ESIC hospitals (like Somwar Peth), despite crores of rupees in monthly contributions from employers and employees. This deficiency often leads to heightened employee grievances and regulatory scrutiny on employers, putting the onus on the companies to ensure flawless compliance.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+  {
+    title: "EPFDesk: Your ESIC Strategist and New Wage Code Expert in Nagpur & Maharashtra",
+    description:
+      "EPFDesk delivers highly localized ESIC and social security consultation, specifically engineered to navigate the unique risks of the Vidarbha industrial region and structurally prepare your payroll for the New Wage Code.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Manufacturing Contract Labour Liability Management",
+        content:
+          "We implement a rigorous ESIC compliance framework for Principal Employers in the MIDC zones of Butibori and Hingna, including strict verification of Form 6 (Return of Contributions) and mandatory real-time sub-code compliance checks for all contract vendors. This protects large manufacturing units from the heightened Principal Employer liability imposed under the Code on Social Security, 2020, and significantly reduces the risk of heavy retrospective ESIC fines frequently raised during inspections in these industrial clusters.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Educational & Medical Sector ESIC Expansion Compliance",
+        content: (
+          <>
+            <p>
+              We provide rapid ESIC coverage implementation for newly covered Educational Institutions, Hospitals, and Diagnostic Centres across Nagpur. Our services include end-to-end digital registration, creation of Sub-Codes for multi-branch organisations, and correct statutory classification of ‘Wages’ for non-teaching and non-medical staff. This ensures immediate compliance with Maharashtra’s latest sector-wide ESIC extension notifications, protecting institutions from heavy penalties for delayed or non-registration.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "New Wage Definition Audit (50% Rule)",
+        content:
+          "We conduct comprehensive payroll audits for large manufacturing and textile workforces, restructuring CTC components to ensure that statutory ‘Wages’—Basic Pay, DA, and Retaining Allowance—collectively meet the mandatory 50% of total remuneration threshold. This proactive restructuring addresses the most significant financial impact of the Code on Wages, 2019, stabilising the ESIC and PF contribution base and preventing allowance-heavy salary components from being involuntarily added back into ‘Wages.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Retrospective ESIC Demand Defense",
+        content: (
+          <>
+            <p>
+              We design robust legal strategies to contest retrospective ESIC demands—especially those arising from disputed coverage dates, misinterpreted applicability, or incorrect wage calculations. Our approach leverages local judicial precedents and statutory provisions within the ESIC Act regarding the true ‘date of coverage.’ This enables employers to obtain a clean break from legacy liabilities and transition smoothly into the simplified, standardised compliance framework introduced under the New Labour Codes.
+            </p>
+          </>
+        ),
+      },
+     
+    ],
+  },
+];
+export const esicManagementFaqNagpur = [
+  {
+    question:
+      "We are a large factory in Butibori MIDC, and many of our contractor workers are going on strike due to non-payment of ESIC benefits. Who is responsible?",
+    answer: `Legally, the Principal Employer—your factory—is ultimately responsible for ensuring ESIC compliance for all workers engaged at your premises, including those deployed through contractors. While you may recover dues from the contractor, ESIC will pursue your company for unpaid contributions, penalties, and interest. We mitigate this high-risk exposure by implementing strict, real-time contractor compliance monitoring systems.`,
+  },
+  {
+    question:
+      "We are a school in the heart of Nagpur. We have over 20 employees. Does the ESIC Act apply to us, as we are an educational institution?",
+    answer: `Yes. The Government of Maharashtra has formally extended ESIC coverage to Educational and Medical Institutions employing 10 or more persons in notified areas. Your school is now required to register and comply promptly to avoid penalties, inspections, and retrospective demands.`,
+  },
+  {
+    question:
+      "My company's current salary structure has low Basic Pay and high Special Allowance. How will the New Wage Code affect my ESIC contributions in Nagpur?",
+    answer: `This salary structure poses a major compliance risk. Under the Code on Wages, 2019, statutory ‘Wages’ (Basic + DA + Retaining Allowance) must constitute at least 50% of total remuneration. If allowances exceed 50%, the excess must be added back into the ‘Wages’ base, automatically increasing your ESIC and PF contribution liability. We restructure pay components legally to minimize this financial impact.`,
+  },
+  {
+    question:
+      "We operate several small cotton ginning units in the Vidarbha region. Is ESIC enforcement strict there, given the rural nature of the industry?",
+    answer: `Yes. Enforcement is increasing significantly, driven by state-level textile policy reforms and central schemes like PM-MITRA promoting formalisation. ESIC authorities are focusing on covering all eligible workers—including seasonal, daily-wage, and piece-rate workers common in textile and ginning units. Proactive registration and correct wage computation are essential to avoid substantial penalties in the coming years.`,
+  },
+];
+export const sectionsESICConsultantBhopal = [
+  {
+    title: "Madhya Pradesh’s Compliance Context: Bhopal & the Industrial Belt",
+    description:
+      "Bhopal, serving as the State Capital, and its adjacent industrial hubs like Mandideep and the Govindpura Industrial Estate, form a critical ESIC compliance zone characterized by heavy concentration in the following sectors:",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Automobile and Auto-Components",
+        content:
+          "This sector, a major economic driver in MP, involves extensive supply chains and relies heavily on third-party contract labor. The core compliance challenge is the rigorous management of Principal Employer liability for the thousands of contract workers employed across multiple vendors, which often leads to punitive retrospective ESIC demands spanning several years.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Pharmaceuticals and Manufacturing",
+        content: (
+          <>
+            <p>
+              MP's pharmaceutical industry, identified as a key thrust sector, requires meticulous adherence not only to quality but also to social security laws. The recent national focus on compliance failures in this sector (as highlighted by contaminated medicine incidents) means all regulatory bodies, including ESIC, are increasing scrutiny. Correct classification of technical staff and strict control over outsourcing partners are paramount.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "SPREE 2025 and Retrospective Liability",
+        content:
+          "The ESIC Sub-Regional Office, Bhopal, is actively promoting the central government's SPREE 2025 (Scheme for Promotion of Registration of Employers/Employees). This presents a critical, time-bound opportunity for unregistered establishments, especially MSMEs and vendors in Bhopal and Mandideep, to formalize their compliance and get immunity from past ESIC dues and penalties for the period prior to registration.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "The New Wage Code and Statutory Minimums",
+        content: (
+          <>
+            <p>
+              The impending New Wage Code, with its unified definition of 'Wages' and the  minimum wage floor, will drastically affect the CTC structures prevalent in the manufacturing and industrial sectors of MP, where allowances are often kept high to reduce statutory contributions.
+            </p>
+          </>
+        ),
+      },
+     
+    ],
+  },
+  {
+    title: "EPFDesk: ESIC Strategy & New Wage Code Mastery for MP Industry",
+    description:
+      "EPFDesk provides hyper-localized ESIC consulting that directly addresses the unique regulatory environment and industrial structure of Bhopal and Madhya Pradesh. We ensure your business is protected from historical liabilities while preparing for the future of social security legislation.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "New Wage Definition Audit",
+        content:
+          "We conduct a detailed payroll restructuring audit for units in Mandideep and Govindpura, focusing on blue-collar and factory employees to ensure that statutory ‘Wages’—Basic Pay, DA, and other includable components—meet the mandatory 50% threshold of total remuneration. This safeguards your organisation from sudden ESIC cost surges and ensures full compliance with the Code on Wages, 2019. By stabilising the statutory contribution base, our audit prevents allowance-heavy structures from being reclassified as ‘Wages,’ which would otherwise trigger a significant rise in manpower costs.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "SPREE 2025 Voluntary Registration",
+        content: (
+          <>
+            <p>
+              We assist eligible, unregistered employers in Bhopal in utilising the SPREE 2025 Voluntary Registration window (open until December 31, 2025). This programme enables establishments to obtain ESIC registration from a prospective date while receiving complete immunity from inspections, enquiries, and backdated ESIC contribution or penalty demands for the prior period. By eliminating legacy compliance liabilities, SPREE 2025 provides a clean slate and enables a seamless transition into the streamlined digital compliance and reporting framework of the New Labour Codes.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labour ESIC Risk Management (Auto & Pharma)",
+        content:
+          "We implement a comprehensive Vendor ESIC Compliance Management System for major Auto, Auto-Component, and Pharma manufacturers. This includes mandatory scrutiny of contractor ESI Sub-Codes, real-time verification of monthly ESIC contribution payments, and automated exception alerts—shifting your organisation’s compliance posture from reactive defence to proactive control. This framework directly fulfils the Code on Social Security, 2020 mandate, which places ultimate ESIC responsibility on the Principal Employer for all contract and outsourced workers.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Service Upgrades & Modernization Advisory",
+        content: (
+          <>
+            <p>
+             We track ESIC’s nationwide modernization initiatives—including new hospitals, upgraded dispensaries, digital service enhancements, and Ayush unit expansions—and help employers in the Bhopal and Indore regions leverage these improvements for better employee welfare outcomes. Our guidance ensures optimal utilization of ESIC benefits, reduces employee grievances regarding medical access, and maximizes the value derived from statutory ESIC contributions.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+];
+export const esicManagementFaqBhopal = [
+  {
+    question:
+      "We have not registered for ESIC yet, though we have 15 employees. We fear a massive penalty for the last few years. What is the solution in MP?",
+    answer: `You should immediately use the SPREE 2025 scheme. As announced by the ESIC Sub-Regional Office, Bhopal, SPREE 2025 offers a one-time opportunity (open until December 31, 2025) for employers to register now and gain full immunity from inspections and all retrospective ESIC demands, contributions, and penalties for the period prior to the declared registration date. We specialise in executing this voluntary compliance process swiftly to secure complete protection from past liabilities.`,
+  },
+  {
+    question:
+      "We are a large auto-component manufacturer near Mandideep and use several contract agencies. What is our biggest ESIC risk?",
+    answer: `Your single biggest risk is retrospective Principal Employer Liability. If any contractor fails to register their employees correctly or remit ESIC contributions, the department will raise the full demand—along with interest and penalties—directly against your company. We eliminate this risk by implementing a contract-level ESIC verification and indemnity process, ensuring real-time monitoring of contractor compliance before vendor payments are released.`,
+  },
+  {
+    question:
+      "Our salary structure in Bhopal has a Basic Pay of ___ and allowances of ___. Will the New Wage Code apply, and how?",
+    answer: `Yes. Under the New Wage Code, statutory ‘Wages’ (Basic Pay + DA + Retaining Allowance) must be at least 50% of total remuneration (CTC). If your employee’s total remuneration is ___, then statutory ‘Wages’ must be ___ (50% of CTC). Since your current Basic Pay is ___, ESIC will recompute contributions on ___—regardless of your internal salary split. A mandatory CTC restructuring is required to avoid a sudden, uncontrollable increase in ESIC costs.`,
+  },
+  {
+    question:
+      "Our company is in the Pharma sector. Are there any special ESIC risks for us?",
+    answer: `Yes. The Pharma sector in MP is under heightened ESIC scrutiny, particularly regarding workforce formalisation. Field staff, production workers, QC/QA roles, and long-term contract labour must all be correctly classified, registered, and covered if eligible. Incorrect wage classification or deliberate exclusion of eligible employees is a major enforcement trigger. Ensuring accurate registration and wage definition is essential to maintaining a clean compliance record.`,
+  },
+];
+export const sectionsESICConsultantKanpur = [
+  {
+    title: "Uttar Pradesh's ESIC Environment: Focus on Kanpur's Industrial Legacy",
+    description:
+      "Kanpur, historically known as the 'Manchester of the East' and the 'Leather City of the World,' presents a highly intricate ESIC compliance scenario. The region’s challenges are distinct, stemming from its older industrial base, reliance on complex supply chains, and specific regulatory hurdles.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "The Dominance of Leather and Allied Industries (Jajmau)",
+        content:
+          "This sector relies heavily on informal and contract labor. The primary ESIC challenge here is the persistent issue of misclassification of workers (e.g., home-based workers, job-work units) and the Principal Employer's Liability for sub-contracted work. Regulatory scrutiny is high due to environmental compliance issues (Zero Liquid Discharge - ZLD) which can lead to factory closures and operational disruptions, requiring flexible ESIC management for fluctuating workforces.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Textile and Hosiery Manufacturing",
+        content: (
+          <>
+            <p>
+              Kanpur and the wider UP region have a significant textile and hosiery footprint. The industry's practice of maintaining low basic pay and high allowances to reduce statutory burdens is on a direct collision course with the New Wage Code's  wage floor. This necessitates an urgent, large-scale payroll overhaul for thousands of enterprises.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "UP’s Industrial Corridors & Expansion",
+        content:
+          "With the state actively developing new industrial corridors (like the Defence Industrial Corridor) and focusing on MSME growth, ESIC coverage is expanding rapidly into new geographical areas and non-traditional sectors (e.g., modern logistics, electronics, and food processing).",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Leveraging ESIC’s Regional Initiatives",
+        content: (
+          <>
+            <p>
+              The ESIC Sub-Regional Offices in UP are promoting schemes like SPREE 2025 to bring unregistered employers into the formal economy while offering immunity from retrospective demands. This presents a critical, time-bound opportunity for the region’s numerous MSMEs. Furthermore, the establishment of a new ESIC Medical College in Noida & Varanasi signals future investment and enhanced medical benefits, making compliance more valuable to employees.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+  {
+    title: "EPFDesk: Your Expert for Kanpur ESIC & New Wage Code Transition",
+    description:
+      "EPFDesk delivers specialized ESIC solutions tailored to the industrial characteristics of Kanpur and the broader compliance requirements of Uttar Pradesh, ensuring complete legal de-risking and payroll future-proofing.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "New Wage Definition Audit (Hosiery & Textile CTC Restructuring)",
+        content:
+          "We conduct a comprehensive audit and restructuring of CTC components for high-volume Hosiery and Textile workforces to ensure statutory ‘Wages’—Basic Pay, Dearness Allowance, and Retaining Allowance—meet the mandated 50% of Total Remuneration threshold under the Code on Wages, 2019. This proactive restructuring is crucial for cost management, preventing the compulsory reclassification of allowances into ‘Wages,’ which would otherwise trigger an automatic surge in ESIC contribution liability and overall manpower costs for allowance-heavy UP industrial units.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Leather Industry Contract Labour & Supply Chain Compliance",
+        content: (
+          <>
+            <p>
+             We implement a tiered Principal Employer Liability Shield for Leather and Leather-Component manufacturing clusters in Jajmau and nearby industrial zones. This framework legally isolates the Principal Employer from non-compliant subcontractors through mandatory ESIC Sub-Code creation, real-time monthly contribution verification, and legally enforceable indemnity clauses in all vendor agreements. The system aligns with the enhanced Principal Employer accountability under the Code on Social Security, 2020, sharply reducing the sector’s long-standing exposure to retrospective ESIC demands and litigation.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "SPREE 2025 Retrospective Immunity",
+        content:
+          "We assist eligible, unregistered MSMEs and job-work units in Kanpur in availing the SPREE 2025 scheme, enabling voluntary ESIC registration from a prospective date while granting complete immunity from all retrospective liabilities—including past dues, penalties, interest, and inspections—prior to registration. This provides a clean compliance slate for Kanpur’s large unorganised MSME base, allowing them to enter the formal economy without the risk of crippling backdated ESIC demands.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Wage Ceiling Increase Management",
+        content: (
+          <>
+            <p>
+              We proactively monitor the proposed national increase in the ESIC wage ceiling (expected to rise from the current limit to a significantly higher threshold) and adjust your payroll systems accordingly. Our framework automatically brings newly eligible employees into ESIC coverage, ensuring seamless statutory compliance with zero operational disruption. This prepares organisations—especially UP’s engineering and automobile auxiliary units—for the likely expansion of ESIC applicability to mid-level skilled workers, preventing sudden compliance lapses and unplanned contribution liabilities.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+];
+export const esicManagementFaqKanpur = [
+  {
+    question:
+      "Our tannery operation in Jajmau is sometimes forced to shut down due to environmental restrictions (like ZLD issues). How do we manage ESIC contributions during temporary closure?",
+    answer: `During a month in which no wages are paid, no ESIC contributions are payable—but accurate declaration is essential. You must file returns correctly to document the non-payment of wages during the forced closure. For contract workers, it is equally critical that contractors file accurate ESIC returns reflecting the shutdown; otherwise, the Principal Employer may still be held liable. We guide you through the legal and procedural steps to ensure full compliance without attracting wrongful ESIC demands.`,
+  },
+  {
+    question:
+      "We are a textile unit in Kanpur with low basic pay. Will the New Wage Code force me to raise my employees' take-home salary?",
+    answer: `The New Wage Code will not necessarily raise take-home salary, but it *will* increase your statutory contribution base. Statutory 'Wages' must equal at least 50% of total remuneration. If your Basic Pay is below this threshold, the difference will be treated as 'Wages,' increasing ESIC and PF contribution liability. While your total CTC may remain the same, the salary structure will shift—Basic Pay/DA will rise, allowances will reduce. We help restructure pay legally to avoid non-compliance and cost shocks.`,
+  },
+  {
+    question:
+      "News is mentioning the SPREE 2025 scheme. Does this help an old Kanpur factory that never registered for ESIC?",
+    answer: `Yes. SPREE 2025 offers a rare and valuable opportunity. If your factory was liable for ESIC in the past but never registered, you may now register before December 31, 2025, and be treated as covered only from the date of registration. The scheme grants full amnesty from all past ESIC demands—contributions, interest, penalties, and inspections—for the entire pre-registration period. We specialise in executing this process securely and efficiently.`,
+  },
+  {
+    question:
+      "We use many seasonal laborers for specific processes. Are they covered under ESIC in UP?",
+    answer: `Yes. If your establishment is covered and the worker’s wage is within the ESIC ceiling, seasonal and temporary workers must be covered. ESIC does not distinguish between permanent, temporary, or seasonal employees; the only condition is that the work must be connected to your establishment. This is especially crucial in Kanpur’s leather and textile sectors, where failure to register seasonal job workers is a major audit trigger.`,
+  },
+];
