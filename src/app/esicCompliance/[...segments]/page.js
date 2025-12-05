@@ -1685,8 +1685,6 @@ export default async function EPFPage({ params }) {
             <CodeOfConduct sections={sectionsESICConsultantKanpur} />
           </FadeInWhenVisible>
 
-          
-
           <FadeInWhenVisible>
             <FaqAccordion faqs={esicManagementFaqKanpur} />
           </FadeInWhenVisible>

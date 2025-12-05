@@ -21,6 +21,14 @@ import {
   sectionsPFCompliance,
   pastelCardsEpfoBangalorePFCompliance,
   epfManagementFaqBangalorePFCompliance,
+  sectionsPFConsultantsMumbai,
+  epfManagementFaqMumbai,
+  sectionsPFConsultantsDelhi,
+  epfManagementFaqDelhi,
+  sectionsPFConsultantsChennai,
+  epfManagementFaqChennai,
+  sectionsPFConsultantsHyderabad,
+  epfManagementFaqHyderabad,
 } from "@/utils/data";
 import { PerformanceSection } from "@/components/PerformanceSection";
 import Script from "next/script";
@@ -407,17 +415,11 @@ export default async function EPFPage({ params }) {
             <PerformanceSection data={data} />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFConsultants} />
+            <CodeOfConduct sections={sectionsPFConsultantsHyderabad} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
-            </FadeInWhenVisible>
-          </FadeInWhenVisible>
-
-          <FadeInWhenVisible>
-            <FaqAccordion faqs={generalFaqWithAddress} />
+            <FaqAccordion faqs={epfManagementFaqHyderabad} />
           </FadeInWhenVisible>
         </>
       );
@@ -482,17 +484,11 @@ export default async function EPFPage({ params }) {
             <PerformanceSection data={data} />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFConsultants} />
+            <CodeOfConduct sections={sectionsPFConsultantsMumbai} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
-            </FadeInWhenVisible>
-          </FadeInWhenVisible>
-
-          <FadeInWhenVisible>
-            <FaqAccordion faqs={generalFaqWithAddress} />
+            <FaqAccordion faqs={epfManagementFaqMumbai} />
           </FadeInWhenVisible>
         </>
       );
@@ -557,17 +553,11 @@ export default async function EPFPage({ params }) {
             <PerformanceSection data={data} />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFConsultants} />
+            <CodeOfConduct sections={sectionsPFConsultantsChennai} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
-            </FadeInWhenVisible>
-          </FadeInWhenVisible>
-
-          <FadeInWhenVisible>
-            <FaqAccordion faqs={generalFaqWithAddress} />
+            <FaqAccordion faqs={epfManagementFaqChennai} />
           </FadeInWhenVisible>
         </>
       );
@@ -707,17 +697,11 @@ export default async function EPFPage({ params }) {
             <PerformanceSection data={data} />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFConsultants} />
+            <CodeOfConduct sections={sectionsPFConsultantsDelhi} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection cardsData={pastelCardsEpfoBangalore} />
-            </FadeInWhenVisible>
-          </FadeInWhenVisible>
-
-          <FadeInWhenVisible>
-            <FaqAccordion faqs={generalFaqWithAddress} />
+            <FaqAccordion faqs={epfManagementFaqDelhi} />
           </FadeInWhenVisible>
         </>
       );
