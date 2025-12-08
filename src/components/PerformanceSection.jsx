@@ -1,6 +1,6 @@
 "use client";
 import { IoLogoWhatsapp } from "react-icons/io";
-export const PerformanceSection = ({ data }) => {
+export const PerformanceSection = ({ data,image }) => {
   return (
     <>
       <section className="flex mt-8 flex-col items-center justify-center px-6 pt-20 text-center">
@@ -28,7 +28,7 @@ export const PerformanceSection = ({ data }) => {
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex flex-col sm:flex-row gap-4 mb-8">
           <button
             onClick={() => (window.location.href = "mailto:hello@epfdesk.com")}
             className="bg-[#003d3d] w-[250px] cursor-pointer text-[1rem] font-normal text-[#cdface] px-6 py-3 shadow-sm transition rounded-[13px]"
@@ -91,7 +91,7 @@ export const PerformanceSection = ({ data }) => {
       <div className=" relative p-1 rounded-3xl w-full max-w-5xl mx-auto">
         <div className="transition  rounded-[20px] ">
           <div className="grid grid-rows-1 text-left ">
-            <img src="/images/EPF-bangalore.png" alt="bangalore" />
+            <img src={image} alt="City Snap" />
           </div>
         </div>
       </div>

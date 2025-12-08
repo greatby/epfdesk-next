@@ -6082,10 +6082,10 @@ export const cityData = {
       contact: "bangalore@pfconsultants.in",
     },
     pfComplianceBangalore: {
-      title: "PF Compliance Services in Bangalore",
-      subTitle: "Clean up past issues. Stay compliant forever.",
+      title: "EPF Compliance Service in Bangalore",
+      subTitle: "New Wage Code (2025) Ready",
       description:
-        "Complete EPF compliance audit, remediation, and ongoing management.",
+        "India's & Bangalore's Best EPF Consultant: New Wage Code 2025 Ready PF Compliance | EPFDesk",
       contact: "bangalore@pfconsultants.in",
     },
     esicComplianceBangalore: {
@@ -6234,9 +6234,9 @@ export const cityData = {
 
   visakhapatnam: {
     pfVisakhapatnam: {
-      title: "EPF Consultants Visakhapatnam",
-      subTitle: "We log into your portal and do it for you",
-      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      title: "PF Consultant in Visakhapatnam",
+      subTitle: "The AI & Data Center Compliance Edge",
+      description: "India's and the Andhra Pradesh region's best EPF consultant. Specialized PF, Gratuity, and ESI compliance for Vizag's new AI Data Center Hub (Google, Reliance-Brookfield), IT/GCC, Steel (RINL), and Pharma (JNPC/AMTZ) sectors. EPFDesk is ready for the New Wage Code (Effective Nov 21, 2025), ensuring compliance in the face of hyper-scale contract labour, green energy PF complexities, and aggressive EPFO recovery drives.",
       contact: "visakhapatnam@pfconsultants.in",
     },
     pfComplianceVisakhapatnam: {
@@ -6323,9 +6323,9 @@ export const cityData = {
 
   pune: {
     pfPune: {
-      title: "EPF Consultants Pune",
-      subTitle: "We log into your portal and do it for you",
-      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      title: "PF Consultant in Pune & Maharashtra",
+      subTitle: "Mastering the IT, Auto & Gratuity Shift",
+      description: "Specialized PF and Gratuity compliance for Pune's IT/ITeS (Hinjewadi), Automobile Clusters (PCMC), and MSME sector. EPFDesk ensures $\mathbf{100\%}$readiness for the New Wage Code (Effective Nov 21, 2025), manages complex variable pay structures, and defends against aggressive $7A$ assessments from the Regional EPFO, Pune.",
       contact: "pune@pfconsultants.in",
     },
     pfCompliancePune: {
@@ -6367,9 +6367,9 @@ export const cityData = {
 
   kolkata: {
     pfKolkata: {
-      title: "EPF Consultants Kolkata",
-      subTitle: "We log into your portal and do it for you",
-      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      title: "PF Consultant in Kolkata",
+      subTitle: "Jute, Tea, & Engineering Sector Compliance",
+      description: "India's and West Bengal's best EPF consultant. Expert PF, Gratuity, and labour law consulting for Kolkata's traditional Jute & Tea industries, emerging MSMEs, and Engineering sector. EPFDesk ensures $50\%$Basic Pay compliance under the New Wage Code (Effective Nov 21, 2025) and navigates the complex, often contentious industrial relations environment of the Kolkata Regional EPFO.",
       contact: "kolkata@pfconsultants.in",
     },
     pfComplianceKolkata: {
@@ -6411,9 +6411,9 @@ export const cityData = {
 
   ahmedabad: {
     pfAhmedabad: {
-      title: "EPF Consultants Ahmedabad",
-      subTitle: "We log into your portal and do it for you",
-      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      title: "PF Consultant in Ahmedabad",
+      subTitle: "Decoding the Textile, Pharma & MSME Compliance Shift",
+      description: "India's and Gujarat's best EPF consultant. Specialized PF and Gratuity compliance for Ahmedabad's Textile, Pharmaceutical (Pharma), Chemical, and export-oriented MSME sectors. EPFDesk guarantees  compliance with the New Wage Code (Effective Nov 21, 2025), manages complex variable pay structures, and provides robust defense against $7A$ assessments from the Ahmedabad Regional EPFO.",
       contact: "ahmedabad@pfconsultants.in",
     },
     pfComplianceAhmedabad: {
@@ -6455,9 +6455,9 @@ export const cityData = {
 
   surat: {
     pfSurat: {
-      title: "EPF Consultants Surat",
-      subTitle: "We log into your portal and do it for you",
-      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      title: "PF Consultant in Surat",
+      subTitle: "Diamond, Textile, and Power Loom Compliance Expert",
+      description: "India's and Gujarat's best EPF consultant. Specialized PF, Gratuity, and labour law solutions for Surat's Diamond cutting/polishing, Textile manufacturing, and Power Loom sectors. EPFDesk ensures  adherence to the New Wage Code (Effective Nov 21, 2025), managing variable piece-rate wages and minimizing retrospective $7A$ liabilities from the Surat Regional EPFO.",
       contact: "surat@pfconsultants.in",
     },
     pfComplianceSurat: {
@@ -6499,9 +6499,9 @@ export const cityData = {
 
   gurgaon: {
     pfGurgaon: {
-      title: "EPF Consultants Gurgaon",
-      subTitle: "We log into your portal and do it for you",
-      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      title: "PF Consultant in Gurugram",
+      subTitle: "Decoding the NWC for MNCs, IT & BPOs",
+      description: "India's and the NCR region's best EPF consultant. Specialized PF and Gratuity compliance for Gurugram's IT/ITES, MNC, Fintech, and Automotive (Manesar) sectors. EPFDesk is  compliant with the New Wage Code (Effective Nov 21, 2025), managing complex variable pay, expatriate PF, and providing robust $7A$ defense in the Haryana EPFO jurisdiction.",
       contact: "gurgaon@pfconsultants.in",
     },
     pfComplianceGurgaon: {
@@ -6543,9 +6543,9 @@ export const cityData = {
 
   noida: {
     pfNoida: {
-      title: "EPF Consultants Noida",
-      subTitle: "We log into your portal and do it for you",
-      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      title: "PF Consultant in Noida",
+      subTitle: "Electronics, Media, and Startup Compliance Navigator",
+      description: "India's and the UP-NCR region's best EPF consultant. Specialized PF, Gratuity, and labour law solutions for Noida's Electronics Manufacturing Hub (Sector 63, Greater Noida), IT/ITES, Media, and high-growth Startup sectors. EPFDesk ensures  adherence to the New Wage Code (Effective Nov 21, 2025), managing contractual workforce complexities and reducing retrospective $7A$ liabilities from the Uttar Pradesh EPFO.",
       contact: "noida@pfconsultants.in",
     },
     pfComplianceNoida: {
@@ -6587,9 +6587,9 @@ export const cityData = {
 
   jaipur: {
     pfJaipur: {
-      title: "EPF Consultants Jaipur",
-      subTitle: "We log into your portal and do it for you",
-      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      title: "PF Consultant in Jaipur",
+      subTitle: "Navigating Compliance for Heritage & High-Tech",
+      description: "India's and the Rajasthan region's best EPF consultant. Specialized PF and Gratuity compliance for Jaipur’s Gems & Jewellery (Johri Bazaar), Tourism/Hospitality, Handicrafts, and the growing IT/Fintech sectors. EPFDesk is  compliant with the New Wage Code (Effective Nov 21, 2025), formalizing employment in the unorganized sector and providing robust $7A$ defense in the Rajasthan EPFO jurisdiction.",
       contact: "jaipur@pfconsultants.in",
     },
     pfComplianceJaipur: {
@@ -6632,9 +6632,9 @@ export const cityData = {
 
   lucknow: {
     pfLucknow: {
-      title: "EPF Consultants Lucknow",
-      subTitle: "We log into your portal and do it for you",
-      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      title: "PF Consultant in Lucknow",
+      subTitle: "Governing Compliance for The Administrative & Service Hub",
+      description: "India's and the UP-Central region's best EPF consultant. Essential PF, Gratuity, and New Wage Code implementation for Lucknow’s Government Contractors, IT/ITES (Gomti Nagar), Real Estate, and traditional 'Chikan' Handicrafts sectors. EPFDesk is  ready for the New Wage Code (Effective Nov 21, 2025), specializing in contractual liability defense against the rigorous UP EPFO enforcement.",
       contact: "lucknow@pfconsultants.in",
     },
     pfComplianceLucknow: {
@@ -6676,9 +6676,9 @@ export const cityData = {
 
   indore: {
     pfIndore: {
-      title: "EPF Consultants Indore",
-      subTitle: "We log into your portal and do it for you",
-      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      title: "PF Consultant in Indore",
+      subTitle: "Future-Proofing Central India’s Commercial Capital",
+      description: "India's and the Madhya Pradesh region's best EPF consultant. Specialized PF, Gratuity, and ESI compliance for Indore's booming IT/ITES (Super Corridor), Automobile/Ancillary (Pithampur SEZ), and Textile/Namkeen (traditional clusters) industries. EPFDesk is compliant with the New Wage Code (Effective Nov 21, 2025), ensuring payroll stability and robust defense against the rigorous MP EPFO jurisdiction.",
       contact: "indore@pfconsultants.in",
     },
     pfComplianceIndore: {
@@ -6720,9 +6720,9 @@ export const cityData = {
 
   coimbatore: {
     pfCoimbatore: {
-      title: "EPF Consultants Coimbatore",
-      subTitle: "We log into your portal and do it for you",
-      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      title: "PF Consultant in Coimbatore",
+      subTitle: "Securing Compliance for the ‘Manchester of South India",
+      description: "India's and the Tamil Nadu region's best EPF consultant. Specialized PF, Gratuity, and ESI compliance for Coimbatore's Textile Mills, Auto/Engineering Foundries, Pump Set Manufacturers, and Contract Labour sectors. EPFDesk is ready for the New Wage Code (Effective Nov 21, 2025), ensuring business continuity against aggressive EPFO attachment drives.",
       contact: "coimbatore@pfconsultants.in",
     },
     pfComplianceCoimbatore: {
@@ -6764,9 +6764,9 @@ export const cityData = {
 
   vadodara: {
     pfVadodara: {
-      title: "EPF Consultants Vadodara",
-      subTitle: "We log into your portal and do it for you",
-      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      title: "PF Consultant in Vadodara",
+      subTitle: "The New Wage Code Solution for Gujarat's Industrial Capital",
+      description: "India's and the Gujarat region's best EPF consultant. Specialized PF, Gratuity, and ESI compliance for Vadodara's massive Petrochemical, Pharmaceutical (Pharma), Engineering (MSME), and GIDC clusters. EPFDesk is compliant with the New Wage Code (Effective Nov 21, 2025), ensuring payroll stability and defense against Gujarat's stringent labor inspection regime.",
       contact: "vadodara@pfconsultants.in",
     },
     pfComplianceVadodara: {
@@ -6808,9 +6808,9 @@ export const cityData = {
 
   nagpur: {
     pfNagpur: {
-      title: "EPF Consultants Nagpur",
-      subTitle: "We log into your portal and do it for you",
-      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      title: "PF Consultant in Nagpur",
+      subTitle: "Compliance for MIDC, Coal, and The Orange City",
+      description: "India's and the Vidarbha region's best EPF consultant. Specialized PF, Gratuity, and ESI compliance for Nagpur's Butibori & Hingna MIDC (Engineering, Auto, Steel, FMCG), WCL Coal Mines, and the Food Processing sector. EPFDesk is ready for the New Wage Code (Effective Nov 21, 2025), tackling massive contract labour liability, municipal body defaults, and the mandatory $50\%$ Basic Wage rule.",
       contact: "nagpur@pfconsultants.in",
     },
     pfComplianceNagpur: {
@@ -6852,9 +6852,9 @@ export const cityData = {
 
   bhopal: {
     pfBhopal: {
-      title: "EPF Consultants Bhopal",
-      subTitle: "We log into your portal and do it for you",
-      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      title: "PF Consultant in Bhopal",
+      subTitle: "Navigating Pharmaceuticals, IT, and Infra Liability",
+      description: "India's and the Madhya Pradesh region's best EPF consultant. Specialized PF, Gratuity, and ESI compliance for Bhopal's Pharma (Lupin, Mandideep), Infrastructure (Dilip Buildcon), IT/Startup sector, and BHEL vendors. EPFDesk is ready for the New Wage Code (Effective Nov 21, 2025), eliminating $\mathbf{7A}$ liability on construction sites and ensuring NWC-compliant IT salary structures.",
       contact: "bhopal@pfconsultants.in",
     },
     pfComplianceBhopal: {
@@ -6896,9 +6896,9 @@ export const cityData = {
 
   kanpur: {
     pfKanpur: {
-      title: "EPF Consultants Kanpur",
-      subTitle: "We log into your portal and do it for you",
-      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      title: "PF Consultant in Kanpur",
+      subTitle: "Jajmau's Leather Crisis and the New Wage Code Shock",
+      description: "India's and the Uttar Pradesh region's best EPF consultant. Specialized PF, Gratuity, and ESI compliance for Kanpur's Leather (Jajmau/Unnao), Textile, and Defence ancillary sectors. EPFDesk is ready for the New Wage Code (Effective Nov 21, 2025), tackling massive $\mathbf{7A}$assessments on contract labor, managing the $\mathbf{50\%}$ statutory wage floor, and securing export-unit compliance.",
       contact: "kanpur@pfconsultants.in",
     },
     pfComplianceKanpur: {
@@ -7254,13 +7254,7 @@ The overall CTC remains the same, but the monthly take-home salary will be reduc
     answer: `This is a complex, high-risk area. The Karnataka High Court has struck down the special provisions that mandated PF on the full global salary of all IWs. However, the ruling is likely to be appealed by the EPFO.
 As of today, the safest, risk-mitigated strategy requires an assessment based on the employee's country (SSA vs. Non-SSA) and ensuring your contribution method aligns with the latest, but often conflicting, directives to protect your company from future litigation. We provide a definitive contribution strategy for your International Workers.`,
   },
-  {
-    question:
-      "We are a mid-size manufacturing unit in Peenya. What is our most immediate PF risk now?",
-    answer: `Your most immediate risks are:
-New Wage Code Restructuring: Ensuring your manual/shop-floor workers’ payroll meets the 50% wage floor, as manufacturing often utilizes allowance-heavy structures to reduce costs.
-Aadhaar-UAN Seeding: Failure to achieve 100% Aadhaar-UAN seeding for contract and temporary workers, which will prevent the ECR filing for all employees from the next filing cycle.`,
-  },
+
   {
     question:
       "The EPFO systems are often slow or down. How does EPFDesk ensure my ECR is filed on time and I avoid penalties?",
@@ -9746,70 +9740,51 @@ Our service stores everything securely for 5+ years with instant access during i
 ];
 export const sectionsPFCompliance = [
   {
-    title: "Understanding PF Compliance Requirements",
+    title: "EPF Compliance Localized to Bangalore's Economic Hubs",
     description:
-      "PF compliance isn't just filing returns. It's a comprehensive framework.",
+      "Bangalore's economy is compartmentalized, and compliance must be too. We address the specific risk profile of each major zone:",
     cards: [
       {
         color: "bg-white border-gray-300",
-        title: "Timely Filing",
+        title: "Electronic City",
         content:
-          "Monthly ECR filing by 15th. Annual returns (no separate filing—ECR is continuous). Never missing deadlines. Zero late fees.",
+          "A fast-paced hub for IT/ITES, electronics, and startups, where high attrition makes PF onboarding and exits challenging. We streamline compliance with automated Form 11 and UAN management, ensuring 99% accuracy in employee linking and transfer claims for a highly mobile workforce.",
       },
       {
         color: "bg-white border-gray-300",
-        title: "Accurate Contributions",
+        title: "Outer Ring Road (ORR)",
         content: (
           <>
             <p>
-              Correct PF calculation (12% employee + 12% employer). Proper wage
-              base (basic + DA only). EPF vs EPS split (3.67% + 8.33%). Wage
-              ceiling application (₹15,000 max).
+             Home to major tech parks and e-commerce firms, where complex CTC structures with high allowances face direct scrutiny under the New Wage Code’s 50% Wages rule. We provide proactive New Wage Code payroll restructuring to ensure Basic Wage ≥ 50% of CTC, reducing the risk of future retrospective PF and Gratuity liabilities.
             </p>
           </>
         ),
       },
       {
         color: "bg-white border-gray-300",
-        title: "Employee Coverage",
+        title: "Peenya Industrial Area",
         content:
-          "All eligible employees covered (earning <₹15,000 automatically). Proper UAN generation (within 1 month of joining). Aadhaar seeding and KYC completion. No employees missed.",
+          "A manufacturing-heavy zone with widespread use of contract labour, exposing Principal Employers to PF risks when contractors default. Our Contractor EPF Vetting system enforces real-time checks on vendor ECRs and challans before invoice processing, fully protecting the Principal Employer from compliance liability.",
       },
       {
         color: "bg-white border-gray-300",
-        title: "Record Maintenance",
+        title: "Whitefield / ITPB",
         content: (
           <>
             <p>
-              Statutory registers (Form 5, 6, 10, 12A, MW Register). ECR copies
-              stored (minimum 3 years). Payment proofs (challans, TRCP).
-              Digital/physical documentation organized.
+              A hub of large MNCs and R&D centers operating Exempted PF Trusts, which face stringent EPFO scrutiny and complex governance requirements. We provide specialized Exempted Trust audit and compliance support, ensuring smooth annual audits and strong trust governance to prevent any risk of de-recognition.
             </p>
           </>
         ),
       },
       {
         color: "bg-white border-gray-300",
-        title: "Statutory Compliance",
+        title: "Biocon Park / Jigani",
         content: (
           <>
             <p>
-              PF registration when threshold reached (20+ employees). DSC
-              (Digital Signature) maintained and renewed. Portal access active.
-              Authorized signatory updated with EPFO.
-            </p>
-          </>
-        ),
-      },
-      {
-        color: "bg-white border-gray-300",
-        title: "Employee Rights Protection",
-        content: (
-          <>
-            <p>
-              Timely PF transfers (Form 13 processed in 15 days). Quick
-              withdrawal processing (Form 19, 10C). Employee queries resolved.
-              PF passbook access enabled. UAN portal activated.
+             A key hub for biotech, pharma, and heavy engineering where production incentives and variable pay must be accurately classified under the New Wage Code. We deliver expert Variable Pay Compliance Mapping, ensuring every incentive aligns with the NWC definition of ‘Wages’ for accurate PF contributions and zero non-compliance risk.
             </p>
           </>
         ),
@@ -9817,102 +9792,34 @@ export const sectionsPFCompliance = [
     ],
   },
   {
-    title: "The Cost of PF Non-Compliance",
+    title: "EPFDesk: Your New Wage Code (2025) Compliance Shield",
     description:
-      "Non-compliance isn't just penalties. It impacts your entire business",
+      "The implementation of the Code on Wages, 2019 (expected November 2025) fundamentally changes how EPF is calculated, making most existing payrolls non-compliant. EPFDesk is already New Wage Code Ready.",
     cards: [
       {
         color: "bg-white border-gray-300",
-        title: "Financial Penalties",
+        title: "The Mandatory 50% 'Wages' Rule Mitigation",
         content:
-          "Damages: ₹5,000-1,00,000 per default. Interest: 12% p.a. on delayed payments. Late fees accumulate fast (₹50,000-5,00,000 annually for typical non-compliant company).",
+          "Under the New Wage Code, if allowances exceed 50% of total remuneration, the excess must be added back to ‘Wages’ (Basic + DA + Retaining Allowance), increasing PF liability. We run predictive payroll simulations for your Bangalore workforce to pinpoint the financial impact and enable proactive salary restructuring, safeguarding you from retrospective PF penalties.",
       },
       {
         color: "bg-white border-gray-300",
-        title: "Legal Prosecution",
+        title: "Fixed-Term Employee (FTE) Gratuity Management",
         content: (
           <>
             <p>
-              Criminal liability under Section 14 of EPF Act. Penalty up to
-              ₹10,000 + imprisonment up to 3 years. Company directors personally
-              liable. Court cases drain time and money.
+              The New Wage Code grants Gratuity after just one year of service, a major shift for Bangalore’s IT/ITeS sector that relies heavily on FTEs. We embed Gratuity provisioning into your compliance framework to ensure accurate balance-sheet liability recognition and eliminate future legal exposure.
             </p>
           </>
         ),
       },
       {
         color: "bg-white border-gray-300",
-        title: "EPFO Inspections",
+        title: "Simplified EPF Litigation & Audit",
         content:
-          "Random or complaint-triggered inspections. Full 3-year audit of all records. Penalties for every mistake found. ₹2-10 lakhs average penalty post-inspection.",
+          "The New Wage Code streamlines legal proceedings, meaning any lapse in compliance now exposes employers to faster penalties and quicker case closure. We provide full Inspector-cum-Facilitator audit support, preparing and delivering records in the new digital formats to ensure clean, efficient resolution of any EPF inquiry.",
       },
-      {
-        color: "bg-white border-gray-300",
-        title: "Employee Attrition",
-        content: (
-          <>
-            <p>
-              Delayed PF transfers = unhappy employees. 35% of employees cite
-              "PF hassle" as reason for leaving (exit interviews). Cost of
-              replacing one employee: ₹5-10 lakhs. Prevent 3-5 exits = ROI of
-              compliance investment.
-            </p>
-          </>
-        ),
-      },
-      {
-        color: "bg-white border-gray-300",
-        title: "Investor Due Diligence",
-        content: (
-          <>
-            <p>
-              Funding rounds delayed if PF non-compliant. Investors red-flag
-              statutory non-compliance. Valuation impacted (5-10% discount).
-              Term sheet can be withdrawn. We've seen ₹10+ crore funding held up
-              due to ₹5 lakh PF liability.
-            </p>
-          </>
-        ),
-      },
-      {
-        color: "bg-white border-gray-300",
-        title: "Recruitment Challenges",
-        content: (
-          <>
-            <p>
-              Talented candidates ask about PF compliance. Senior hires reject
-              offers if PF issues visible. Employer brand damage ("they don't
-              even pay PF properly"). Can't attract top talent.
-            </p>
-          </>
-        ),
-      },
-      {
-        color: "bg-white border-gray-300",
-        title: "Bank Loan Issues",
-        content: (
-          <>
-            <p>
-              Banks check statutory compliance for business loans. PF
-              non-compliance = loan rejection or higher interest rates. Working
-              capital limits affected. Business growth constrained.
-            </p>
-          </>
-        ),
-      },
-      {
-        color: "bg-white border-gray-300",
-        title: "Business Continuity Risk",
-        content: (
-          <>
-            <p>
-              EPFO can attach bank accounts for recovery. Court orders can
-              freeze operations. Directors barred from foreign travel (in
-              extreme cases). Reputational damage in market.
-            </p>
-          </>
-        ),
-      },
+      
     ],
   },
 ];
@@ -13300,5 +13207,1039 @@ EPFDesk Role:
 • We factually challenge incorrect allowance additions.  
 • We cite Telangana- and national-level judicial precedents to justify your wage structure.  
 • We negotiate and limit final dues, ensuring genuine contributions are paid promptly to reduce exposure to heavy 14B penalties.`,
+  },
+];
+
+export const sectionsPFConsultantsPune = [
+  {
+    title: "Pune and Maharashtra's Unique PF Compliance Ecosystem",
+    description:
+      "Maharashtra, particularly the Pune-Pimpri-Chinchwad (PCMC) belt, is a hub for two highly organized, yet compliance-sensitive, sectors: the Automobile/Manufacturing (Detroit of the East) and the Information Technology (IT/ITeS) sectors. The challenges here revolve around high-CTC, variable pay, and the large-scale use of contract and fixed-term employees.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "IT/ITeS Sector (Hinjewadi, Magarpatta): The Variable Pay Trap",
+        content:
+          "IT and ITeS companies in Pune traditionally minimise PF liability by keeping Basic Pay low and shifting compensation into PLIs, project bonuses, and other variable allowances. However, the Pune EPFO is actively invoking Section 7A to reclassify these recurring “variable” payouts as camouflaged wages, triggering retrospective PF demands along with heavy Section 14B damages. With the New Wage Code becoming effective on 21 November 2025, organisations must ensure that at least 50% of total remuneration qualifies as statutory ‘Wage’, compelling a significant increase in Basic Pay. This adjustment not only raises ongoing PF contributions but also causes a substantial one-time escalation in Gratuity liability across the entire employee base.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Automobile & Component Manufacturing (PCMC): Fixed-Term Employee Liability",
+        content: (
+          <>
+            <p>
+              The PCMC industrial belt depends extensively on fixed-term employees and contract labour to support fluctuating production demands. Under the New Wage Code, fixed-term employees become eligible for Gratuity after just one year of continuous service, a major shift from the earlier five-year requirement. This accelerated eligibility threshold creates an immediate and significant Gratuity liability for Pune’s auto and ancillary manufacturing units, which operate with a large FTE workforce and frequent contract renewals.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "EPFO's High Scrutiny and Fraud Detection (Maharashtra)",
+        content:
+          "Recent news from the Pune EPFO office highlights intensified vigilance against fraudulent claims and compliance errors (e.g., ABRY scheme fraud). This indicates a period of heightened scrutiny across all compliance filings, making clean records and robust documentation more critical than ever.",
+      },
+      
+    ],
+  },
+  {
+    title: "EPFDesk: NWC-Ready PF Compliance for Pune",
+    description:
+      "EPFDesk provides strategic, localized PF consultancy, focusing on mitigating the specific financial and legal risks faced by establishments operating under the Pune and Maharashtra RPFC jurisdictions.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "New Wage Code (NWC) Transition",
+        content:
+          "We help organisations transition smoothly to the New Wage Code by restructuring compensation to meet the mandatory 50% Wage Floor and correcting high-CTC salary models common in IT and Auto sectors. Our support includes conducting a precise Actuarial Valuation to properly recognise the retrospective Gratuity liability on your balance sheet in line with Ind AS 19 / AS 15. This prevents financial shocks by enabling accurate provisioning for the expected 25–50% rise in Gratuity liabilities, while also safeguarding you against retrospective PF under-contribution risks once the NWC becomes effective.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Variable Pay & $7A$Defense (IT/ITeS)",
+        content: (
+          <>
+            <p>
+              We provide specialised legal and compliance support for Section 7A proceedings in Pune, focusing on defending IT/ITeS employers against the retrospective inclusion of variable pay in PF wages. Using Supreme Court precedent on the principles of universality and consistency of payment, we clearly differentiate genuine PLIs, incentives, and performance-linked components from statutory ‘Wages.’ This approach significantly reduces exposure to large backdated PF assessments and helps mitigate multi-crore Section 14B damages arising from alleged camouflaged wage structures.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Fixed-Term/Contract Labour Management (PCMC)",
+        content:
+          "We help manufacturing units in the PCMC industrial belt manage the New Wage Code’s extended social security coverage for fixed-term employees. This includes designing robust pro-rata Gratuity policies, implementing systems to track FTE service continuity, and calculating the accelerated Gratuity liability that becomes payable after just one year of service. Our framework ensures full statutory compliance and protects Principal Employers from disputes, claims, and litigation arising from the NWC’s expanded benefits to fixed-term and contract labour.",
+      },
+       {
+        color: "bg-white border-gray-300",
+        title: "Exempted PF Trust Management",
+        content:
+          "We support Maharashtra’s numerous Exempted PF Trusts by ensuring flawless governance, compliance, and benefits administration. Our services include managing Higher Pension (EPS-95) applications, updating and aligning Trust Deeds with the latest Central EPFO circulars, and strengthening internal trustee processes. This guarantees that PF Trust operations remain fully compliant and resilient amid the EPFO’s rapidly increasing digital audits and regulatory scrutiny.",
+      },
+    ],
+  },
+];
+export const epfManagementFaqPune = [
+  {
+    question:
+      "Our IT company has a low Basic Pay (30% of CTC). How should we handle the Gratuity liability increase due to the NWC's 50% rule?",
+    answer: `The NWC, effective November 21, 2025, requires you to increase your PF 'Wage' base to at least 50% of total remuneration. The biggest impact is on Gratuity, which is calculated on the last drawn Basic Wage for the employee’s entire past service. This means your liability increases retrospectively.  
+You must immediately conduct an actuarial valuation to quantify the Past Service Cost and disclose it in your FY 2025–26 financial statements (as per Ind AS 19/AS 15). We manage the valuation, provisioning strategy, and accounting adjustments end-to-end.`,
+  },
+  {
+    question:
+      "We are an Auto Component Manufacturer in Pimpri facing a potential 7A audit on our production bonuses. What is the EPFO's view on bonuses in Pune?",
+    answer: `The Pune EPFO often attempts to classify all consistent and recurring payments as ‘wages’ for PF purposes. Your defense depends on proving that the production bonus is tied to specific, measurable production or efficiency targets—not a hidden substitute for Basic Pay.  
+We prepare the documentation, agreements, and legal reasoning needed to demonstrate that these are genuine incentive-linked payments and therefore not to be included in statutory PF wages.`,
+  },
+  {
+    question:
+      "With the NWC, our fixed-term employees are eligible for Gratuity after one year. Does this apply to all our contractual workers in Maharashtra?",
+    answer: `The one-year Gratuity eligibility applies strictly to Fixed-Term Employees (FTEs) hired directly by your company. Under the New Wage Code, FTEs must receive pro-rata Gratuity after completing one year of continuous service.  
+For workers engaged through contractors, the Principal Employer still carries indirect financial and legal exposure under the Contract Labour Act. We advise on restructuring FTE and contractor arrangements to control this new liability and maintain full compliance.`,
+  },
+
+  
+];
+
+export const sectionsPFConsultantsKolkata = [
+  {
+    title: "Kolkata’s Unique PF Compliance Landscape",
+    description:
+      "Kolkata’s industrial backbone—historically anchored by the Jute, Tea, Port/Dock, and large Engineering/Manufacturing units—presents a unique and often challenging PF compliance environment characterized by high union presence, legacy wage structures, and intense scrutiny from the West Bengal Labour Commissionerate.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "The Jute and Tea Industry Wage Challenge (Barrackpore, Hooghly Industrial Belt):",
+        content:
+          "The jute and tea industries in the Barrackpore–Hooghly belt traditionally follow tripartite wage agreements, resulting in complex, low-basic wage structures driven by cost pressures and legacy practices. With the New Wage Code becoming effective on November 21, 2025, employers must ensure that statutory ‘Wages’ (Basic Pay + eligible allowances) constitute at least 50% of total remuneration. This poses a major compliance and financial challenge: the shift to a higher Basic Pay will sharply increase ongoing PF contributions, and more critically, create a substantial retrospective rise in Gratuity liabilities. For labour-intensive units already operating on thin margins, this sudden liability spike can significantly impact profitability unless proactively managed through actuarial valuation and wage restructuring.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "High Industrial Relations (IR) Risk and Compliance Disputes",
+        content: (
+          <>
+            <p>
+              West Bengal’s industrial landscape is marked by strong labour union presence, making PF and Gratuity compliance a frequent trigger for industrial disputes and legal escalation. The Kolkata Regional EPFO, working closely with the State Labour Department, exercises strict oversight on statutory payments. Even minor disagreements—such as allowance classification or PF wage calculation—can rapidly escalate into conciliation proceedings, arbitration, or Section 7A inquiries, which in this region tend to be prolonged, highly scrutinized, and often politically sensitive. Organisations operating in the state must therefore adopt a robust, audit-ready compliance framework to avoid costly IR disruptions.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Digital Mandates vs. Traditional Workforce",
+        content:
+          "The EPFO’s mandatory Aadhaar–UAN seeding deadline of October 31, 2025 poses a major challenge for traditional, labour-intensive sectors such as jute, tea, and MSMEs. These industries depend heavily on large migrant and semi-formal workforces, where documentation gaps are common. Without 100% Aadhaar-UAN linkage, ECR filing becomes impossible, exposing employers to penalties, non-compliance classification, and wage-payment disruptions. This digital mandate requires immediate mobilisation of HR, contractor networks, and enrolment drives to avoid a complete breakdown in statutory compliance.",
+      },
+    ],
+  },
+  {
+    title: "EPFDesk: NWC-Ready PF Solutions for Kolkata",
+    description:
+      "EPFDesk is the best EPF consultant for West Bengal, specializing in navigating the state's specific labour laws, industrial relations dynamics, and ensuring seamless transition to the New Wage Code.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "New Wage Code (NWC) Restructuring",
+        content:
+          "We help Jute, Tea, and Engineering sector employers transition smoothly to the New Wage Code by implementing a strategic, phased shift toward the 50% Basic Pay requirement. Our approach includes detailed Gratuity liability quantification under AS 15 to assess and manage the retrospective financial impact, enabling companies to integrate the new wage structure without triggering industrial relations issues. This proactive restructuring significantly reduces the risk of retrospective PF and Gratuity demands, penalties, and compliance disputes arising from earlier allowance-heavy wage practices.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Jute & Tea Wage Agreement Analysis",
+        content: (
+          <>
+            <p>
+             We analyse existing Tripartite Wage Agreements in the Jute and Tea sectors to identify conflicts with the New Wage Code and protect employers during Section 7A proceedings in Kolkata. Our defense strategy focuses on clearly distinguishing non-statutory production incentives, service-related allowances, and legacy components from the statutory ‘Wages’ definition to prevent undue PF inclusion. This ensures that your PF calculations remain legally defensible in West Bengal’s high–industrial relations environment, reducing the risk of disputes, union escalations, and litigation.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Digital Compliance & Aadhaar-UAN",
+        content:
+          "We execute large-scale Aadhaar–UAN seeding and KYC verification drives for the high-volume, often migrant workforce across Kolkata’s industrial clusters. Our process includes data cleansing, bulk UAN correction, and on-ground documentation support to ensure full compliance with the October 31, 2025 mandatory Aadhaar-UAN linkage deadline. This guarantees uninterrupted ECR filing and prevents operational breakdowns, penalties, and employee unrest triggered by an employer’s inability to deposit statutory PF contributions.",
+      },
+        {
+        color: "bg-white border-gray-300",
+        title: "Local Labour Law & Audit Support",
+        content:
+          "We provide comprehensive compliance management across EPF, Professional Tax, and the West Bengal Labour Welfare Fund Act, 1974, ensuring seamless adherence to both Central and State labour laws. Our team prepares and maintains all statutory registers, challans, wage records, and contractor documentation to meet the standards of the joint, centralised inspections now frequently conducted by the State Labour Department. This end-to-end support ensures your establishment remains fully audit-ready, penalty-free, and compliant with all regulatory obligations unique to West Bengal.",
+      },
+    ],
+  },
+];
+
+export const sectionsPFConsultantsAhmedabad = [
+  {
+    title: "Ahmedabad’s Specific PF Compliance Challenges",
+    description:
+      "Ahmedabad, historically known as the 'Manchester of the East' and now a major hub for Pharma, Chemicals, and diversified manufacturing MSMEs, faces unique PF compliance challenges driven by cost-sensitive industries, high export dependency, and the upcoming shift under the New Wage Code (NWC).",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Textile and MSME Sector: The Low Basic Wage Legacy",
+        content:
+          "Textile and garment exporters, along with MSMEs in clusters such as Naroda, Vatva, and Odhav, have long relied on low Basic Pay structures to reduce PF, ESI, and Gratuity outflows and stay cost-competitive in global markets. However, the Ahmedabad Regional PF Office actively scrutinizes these allowance-heavy salary models, frequently treating recurring allowances as camouflaged wages. This often triggers Section 7A proceedings, resulting in substantial retrospective PF demands, interest, and penalties. Organisations in these sectors must review and restructure wage components to avoid costly compliance exposure.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Pharmaceutical and Chemical Industry: Variable and Performance Pay",
+        content: (
+          <>
+            <p>
+              Pharmaceutical and chemical companies—particularly those in the Gota and S.P. Ring Road industrial corridors—commonly use sophisticated CTC structures with significant Performance-Linked Incentives (PLI), sales bonuses, and productivity pay. These variable components are increasingly scrutinized by the EPFO, which examines whether they are paid consistently and universally, and therefore qualify as ‘Basic Wages’ for PF purposes. If classified as such, employers may face large retrospective PF liabilities, interest, and penalties. For high-skill, incentive-driven industries, proactive structuring and documentation are essential to prevent costly compliance exposure.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "The New Wage Code (NWC) Deadline Shock (Nov 21, 2025):",
+        content:
+          "The New Wage Code, effective November 21, 2025, requires that statutory ‘Wages’—used for PF, Gratuity, and ESI—must be at least 50% of total remuneration. This poses a major compliance shock for Ahmedabad’s textile and manufacturing units, which traditionally maintain very low Basic Pay to manage labour costs. Once implemented, the NWC will force an immediate increase in monthly PF contributions and create a substantial retrospective Gratuity liability, since Gratuity must be recalculated on the revised Basic Wage for the employee’s entire service tenure. For thousands of units across the region, this transition represents a significant financial and operational restructuring challenge.",
+      },
+     
+    ],
+  },
+  {
+    title: "EPFDesk: NWC-Ready PF Compliance for Gujarat",
+    description:
+      "EPFDesk provides strategic, localized PF consultancy, focusing on mitigating the specific financial and legal risks faced by establishments operating under the Ahmedabad RPFC jurisdiction.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "New Wage Code (NWC) Transition",
+        content:
+          "We help Textile and MSME units transition smoothly to the New Wage Code by redesigning low-basic wage structures to meet the mandatory 50% Wage Floor. Our team conducts detailed actuarial valuations as required under AS 15, enabling accurate provisioning for the substantial increase in Gratuity liability that results from this shift. This proactive restructuring prevents financial shocks and protects your organisation from NWC-related penalties, retrospective non-compliance risks, and sudden spikes in employee benefit cost.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Variable Pay & $7A$ Defense (Pharma/Chemical)",
+        content: (
+          <>
+            <p>
+             We provide specialised documentation support and legal representation for Section 7A proceedings involving Pharma and Chemical sector employers in Ahmedabad. Our approach focuses on clearly evidencing that Performance-Linked Incentives (PLI), sales commissions, and other variable allowances are non-universal and conditional, ensuring they are excluded from the PF wage base in line with established Supreme Court principles on universality and regularity of payment. This structured defense significantly reduces the risk of retrospective PF demands, including backdated contributions, 12% interest, and 25–100% penal damages, protecting your organisation from substantial financial exposure.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Compliance for MSMEs & New Units",
+        content:
+          "We deliver complete, end-to-end statutory compliance support for MSMEs and new establishments across GIDC hubs such as Vatva and Naroda. This includes timely ECR filing, full UAN/KYC seeding management, and adherence to the Gujarat Labour Welfare Fund (GLWF) and all state-specific labour regulations. By automating and managing these complex, recurring statutory processes, we ensure uninterrupted operations—allowing MSMEs to stay focused on production, exports, and growth without the risk of compliance lapses.",
+      },
+        {
+        color: "bg-white border-gray-300",
+        title: "Deducted but Not Deposited (DND) Cases",
+        content:
+          "We conduct detailed forensic audits and monthly reconciliations to eliminate Deducted but Not Deposited (DND) risks—an area under intense scrutiny by the Ahmedabad PF Commissionerate. Our process ensures every rupee deducted from employees’ salaries is correctly tracked, matched, and deposited on time, preventing the serious compliance failures that have led to high-profile enforcement actions in the region. This proactive approach protects directors and proprietors from criminal prosecution under IPC Sections 406/409 (Criminal Breach of Trust) and ensures your establishment remains fully compliant and audit-ready.",
+      },
+    ],
+  },
+];
+export const sectionsPFConsultantsSurat = [
+  {
+    title: "Surat’s Unique PF Compliance Crucible",
+    description:
+      "Surat's economy is powered by two massive, interconnected, and globally competitive industries: the Diamond Cutting & Polishing Hub (Varachha, Katargam) and the Man-Made Fabric (MMF) Textile & Power Loom clusters (Sachin GIDC, Pandesara). These sectors share a critical, deeply rooted compliance challenge: informality and a historical aversion to statutory wages.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "The Diamond Industry Piece-Rate Problem (Ratnakalakar Wages)",
+        content:
+          "Surat’s diamond industry relies heavily on piece-rate wages for Ratnakalakars, where earnings are based on carats polished and supplemented by large production incentives. These payments are often irregularly documented or intentionally structured outside the scope of ‘Basic Wages’ to limit statutory liabilities. The Surat Regional PF Office has long targeted this sector for widespread under-coverage and non-compliance. With the New Wage Code becoming effective on November 21, 2025, employers will be compelled to restructure wages so that at least 50% of total remuneration qualifies as Basic Pay. This will dramatically expand the statutory PF and Gratuity base, forcing a substantial portion of piece-rate and incentive income into compliable wages—resulting in sharp increases in monthly PF dues and a major retrospective Gratuity liability spike across the sector.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Textile and Power Loom Cost Structure Challenge",
+        content: (
+          <>
+            <p>
+              The MMF and Power Loom sector—characterized by thin margins, fragmented operations, and intense export pressure—traditionally minimizes statutory costs by keeping Basic Pay extremely low and loading wages with allowances. Under the New Wage Code, this model becomes unsustainable. If excluded allowances such as HRA, conveyance, or meal benefits exceed 50% of total remuneration, the excess must be added back into statutory ‘Wages’, instantly increasing the PF-liable base. This will cause a steep rise in monthly PF contributions and trigger a substantial Gratuity liability spike, putting severe financial pressure on thousands of MSMEs operating within Gujarat’s GIDC clusters.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "The High IR and Layoff Risk",
+        content:
+          "Surat's export-driven industries are sensitive to global demand (e.g., US tariffs, as reported in the news). During recent slowdowns, mass layoffs have been reported, often leading to workers demanding unpaid PF and Gratuity. The lack of proper statutory documentation in the past makes defending against these claims extremely difficult for employers in the Surat Labour Commissionerate and EPFO $7A$ hearings.",
+      },
+     
+    ],
+  },
+  {
+    title: "EPFDesk: NWC-Ready PF Solutions for Surat's Industrial Giants",
+    description:
+      "EPFDesk is the best EPF consultant for Surat, offering specialized expertise to address the complexity of piece-rate wages and managing the massive financial transition mandated by the New Wage Code.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "New Wage Code (NWC) Wage Structuring",
+        content:
+          "We design customised New Wage Code–compliant wage structures for Diamond and Textile sector employers, ensuring that statutory ‘Wages’ meet the mandatory 50% Basic Pay requirement. Our approach includes detailed modelling of the retrospective Gratuity liability created by the higher wage base, enabling accurate provisioning and financial planning. This proactive restructuring protects cost-sensitive industries from severe, unexpected backdated PF and Gratuity demands, safeguarding margins and ensuring full NWC compliance.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Diamond Piece-Rate/Incentive Compliance",
+        content: (
+          <>
+            <p>
+              We evaluate and document the wage structures used for Ratnakalakar piece-rate and production incentive payments, ensuring a clear legal distinction between genuinely variable earnings and components that may be construed as fixed wages. This distinction is critical during Section 7A inquiries, where the Surat Regional PF Office often attempts to classify the entire piece-rate income as PF-liable wages. Our structured analysis and documentation provide a strong, defensible framework that safeguards employers from high-value 7A assessments and prevents punitive inclusion of variable production income into the PF wage base.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Textile & Power Loom Contract Labour",
+        content:
+          "We conduct end-to-end audits and compliance oversight for contract labour in the Textile and Power Loom sectors, ensuring full adherence to PF regulations and the Gujarat Labour Welfare Fund (GLWF) requirements. Our service includes reviewing vendor agreements, verifying statutory deposits, and aligning contractor engagements with the New Wage Code’s stricter definitions of core vs. non-core activities. This protects Principal Employers from penal liability arising out of contractor non-compliance—an especially critical risk in Surat’s GIDC clusters—while strengthening overall supply chain stability and operational continuity.",
+      },
+       {
+        color: "bg-white border-gray-300",
+        title: "Labour Relations & Retrenchment Support",
+        content:
+          "We support employers in formalizing employee records—including appointment letters, wage slips, and statutory registers—to meet the documentation standards required under the New Wage Code. This foundation is essential for conducting legally defensible layoff and retrenchment processes, especially in industries prone to volatility and workforce fluctuations. By ensuring accurate calculation and proper documentation of all termination benefits (PF, Gratuity, Bonus, and others), we significantly reduce the risk of industrial disputes and IR-related litigation in high-turnover environments.",
+      },
+    ],
+  },
+];
+
+export const sectionsPFConsultantsGurgaon = [
+  {
+    title: "Gurugram’s Core PF Compliance Challenge: The $7A$ Risk on Variable Pay",
+    description:
+      "Gurugram (formerly Gurgaon), the financial and technology hub of the National Capital Region (NCR), is defined by its massive presence of Fortune 500 MNCs, IT/ITES companies (Cyber City, Sohna Road), BPOs, and the high-value Automotive cluster (Manesar). The city's PF challenges are not about evasion, but about the legal classification of sophisticated, modern compensation structures.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "IT/BPO Sector: The Non-Statutory Allowances and Performance Pay",
+        content:
+          "IT and BPO companies in Cyber Hub, Udyog Vihar, and Sector 44 commonly rely on low Basic Pay and a wide range of non-statutory allowances—such as Special Allowance, Project Allowance, and Retention Bonuses—to optimize tax and PF outflows. The Haryana Regional PF Office is now intensely examining these structures under Section 7A. Any allowance that appears universal, uniformly paid, or not tied to a genuine, specific reimbursement is reclassified as part of ‘Basic Wages’. This frequently results in substantial 7A demand notices, requiring employers to pay retrospective PF contributions, 12% interest, and penalties of up to 100% of the assessed arrears. Organisations must therefore review and document their CTC structures carefully to avoid major compliance exposure.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "MNC & Expatriate PF Compliance",
+        content: (
+          <>
+            <p>
+              Global Capability Centres (GCCs) and multinational companies frequently employ expatriate employees from countries that may or may not have a Social Security Agreement (SSA) with India. Missteps in correctly classifying these employees, misapplying or failing to obtain the Certificate of Coverage (CoC), or incorrectly computing PF liability for non-SSA nationals can trigger significant statutory violations. These errors often result in high-value PF demands, international compliance complications, and reputational risk. Proper documentation, treaty interpretation, and compliance structuring are essential to avoid costly penalties and cross-border regulatory disputes.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "The New Wage Code (NWC) Deadline Shock (Nov 21, 2025)",
+        content:
+          "The New Wage Code, becoming effective on November 21, 2025, caps all PF-excluded allowances at a maximum of 50% of total remuneration. This poses a major compliance shock for Gurugram’s IT, BPO, and Fintech companies, which traditionally operate with very low Basic Pay and high allowance-loaded CTC structures. Under the NWC, employers will be compelled to significantly increase the Basic Wage component, triggering an immediate rise in monthly PF and ESI contributions. More critically, the higher Basic Wage will create a large retrospective spike in Gratuity liability, as Gratuity must be recalculated on the revised wage base for the employee’s entire service period. This represents a substantial financial and operational shift for thousands of companies across the region.",
+      },
+      
+    ],
+  },
+  {
+    title: "EPFDesk: NWC-Ready PF Compliance for Gurugram’s Corporate Sector",
+    description:
+      "EPFDesk provides the specialized, high-stakes compliance and legal defense required by Gurugram's multinational and high-growth environment.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "New Wage Code (NWC) Structuring",
+        content:
+          "We specialise in high-value CTC restructuring for MNCs and IT firms to ensure full compliance with the New Wage Code’s requirement that PF-excluded allowances remain below the 50% threshold. Our modelling prevents the forced reclassification of allowances into Basic Pay, helping companies manage the resulting surge in PF and ESI contributions. We also quantify and plan for the retrospective Gratuity liability in accordance with AS 15, ensuring financial stability and 100% NWC compliance while protecting your organisation from significant penalties and compliance shocks.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Variable Pay and $7A$ Defense",
+        content: (
+          <>
+            <p>
+              We provide expert legal representation before the Gurugram EPFO to defend employers against Section 7A notices, which frequently challenge Performance Bonuses, PLIs, Special Allowances, and other variable pay components—especially in hubs like Sector 32 and Udyog Vihar. Our defence strategy relies on strong legal precedent to clearly distinguish genuinely variable, conditional payments from statutory ‘Wages,’ preventing them from being added to the PF wage base. This approach significantly reduces exposure to retrospective PF dues, interest, and heavy penalties, safeguarding companies from multi-million-rupee compliance liabilities.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Expatriate & Social Security Agreement (SSA) PF",
+        content:
+          "We provide specialised global mobility and expatriate PF compliance support for MNCs, ensuring accurate application of Certificates of Coverage (CoC) for employees from Social Security Agreement (SSA) countries such as the US, UK, and South Korea. Our service ensures correct PF contributions or exemptions for international assignees, preventing double social security taxation and aligning payroll practices with international treaty obligations. This end-to-end compliance framework protects organisations from complex cross-border legal, financial, and regulatory risks associated with expatriate workforce management.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Automotive & Manufacturing (Manesar/Dharuhera)",
+        content:
+          "Automotive & Manufacturing (Manesar/Dharuhera)	Contract Labour and Staffing Solutions: Comprehensive audit and compliance oversight for large manufacturing units, focusing on contractual employee PF coverage, ESI registration in Haryana, and robust documentation to prevent liabilities falling onto the principal employer.	Reduces Operational Risk:Ensures a clean supply chain compliance record, which is critical for large-scale, high-scrutiny manufacturing operations.",
+      },
+    ],
+  },
+];
+
+export const sectionsPFConsultantsNoida = [
+  {
+    title: "Noida’s Unique PF Landscape: Scale, Speed, and Statutory Risk",
+    description:
+      "Noida (New Okhla Industrial Development Authority) is an industrial and commercial powerhouse driven by a few dominant, high-growth sectors: Large-Scale Electronics Manufacturing (Samsung, Oppo, Vivo), IT/ITES/BPO (Sector 62, 132), and a vibrant Media and Startup ecosystem. The core challenge here is managing scale-up velocitywith rigorous UP-based statutory compliance.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Electronics Manufacturing: The Contractual Workforce Challenge",
+        content:
+          "Electronics manufacturing units and their supply-chain vendors in Greater Noida and YEIDA depend extensively on contract labour and fixed-term employment to handle rapid production cycles, especially in segments like mobile display assembly. A major compliance pitfall in this ecosystem is the Principal Employer’s liability for PF lapses committed by contractors. The Noida Regional PF Office rigorously enforces this obligation, frequently holding large manufacturers accountable for PF contributions across the entire on-site workforce. When contractors default, companies often face multi-crore Section 7A assessments, making robust contractor compliance monitoring and documentation essential for risk mitigation.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "IT/Startups/Media: The Low-Basic-Pay Model",
+        content: (
+          <>
+            <p>
+              Startups, IT firms, and media companies in hubs like Sector 16 and Film City traditionally use low Basic Pay and high allowances or special pay to maximise employee take-home salary and minimise PF and Gratuity outflow. Under the New Wage Code, effective November 21, 2025, this model becomes unsustainable. The Code mandates that at least 50% of Total Remuneration must qualify as statutory ‘Wage’, forcing a significant increase in the Basic Pay component. This will simultaneously raise monthly PF contributions and create a large retrospective Gratuity liability, as Gratuity must be recalculated on the new, higher wage base for the employee’s entire past service. For high-growth companies, this represents a major payroll restructuring and financial risk that must be proactively managed.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "UP Labour Laws and Retrenchment",
+        content:
+          "Noida operates under Uttar Pradesh labour law jurisdiction. High employee turnover, especially in BPOs and the startup sector, requires precise documentation for separations. Failure to correctly compute final dues (PF, Gratuity, and notice period pay) under the new, stricter NWC definitions leads to costly and drawn-out industrial disputes at the Noida Labour Commissionerate.",
+      },
+      
+    ],
+  },
+  {
+    title: "EPFDesk: NWC-Ready PF Solutions for Noida’s Rapid Growth",
+    description:
+      "EPFDesk is uniquely positioned to handle the complexities of PF compliance in Karnataka, combining legal expertise with an in-depth understanding of the state’s high-tech and industrial payroll dynamics.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "New Wage Code (NWC) Payroll Re-structuring",
+        content:
+          "We design customised New Wage Code–compliant payroll structures for IT, Media, and Startup companies, ensuring the mandatory 50% Basic Wage floor is fully achieved. Our service includes detailed modelling of the financial impact on Gratuity provisions in accordance with AS 15, along with comprehensive updates to all Uttar Pradesh employment contracts to reflect the new statutory requirements. This proactive restructuring prevents EPFO penalties for non-compliant wage models and ensures a smooth, controlled transition to the NWC regime while managing the inevitable rise in statutory payroll costs.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labour Liability & Audits",
+        content: (
+          <>
+            <p>
+              We provide comprehensive third-party PF compliance management for large electronics manufacturers in Greater Noida by conducting rigorous vendor PF audits and verifying timely, accurate contributions by all contractors. This ensures complete statutory adherence across the supply chain and protects the Principal Employer from being held liable under Section 7A for contractor non-compliance. By closing this critical risk gap, we safeguard manufacturers from multi-crore liabilities and strengthen overall compliance integrity in Noida’s high-volume manufacturing ecosystem.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PF $7A$Assessments & Legal Defence",
+        content:
+          "We offer specialised legal representation before the RPFC, Noida to defend employers against Section 7A under-contribution assessments. Our defence strategy is built on robust justification of allowance exclusions, precise wage-component analysis, and the latest legal interpretations of ‘Wages’. This approach significantly reduces exposure to retrospective PF dues, 12% interest, and heavy penalties. By mitigating these high-stakes financial risks, we help organisations protect capital, maintain compliance integrity, and ensure uninterrupted operations in the competitive NCR landscape.",
+      },
+        {
+        color: "bg-white border-gray-300",
+        title: "Fixed-Term Employee (FTE) Gratuity",
+        content:
+          "We help IT, BPO, and service-sector employers restructure their Fixed-Term Employment (FTE) contracts to comply with the New Wage Code requirement of pro-rata Gratuity after just one year of continuous service. Our support includes designing compliant FTE templates, updating policy frameworks, and accurately provisioning the accelerated Gratuity liability in line with the Code on Social Security. By integrating precise actuarial calculations into your financial statements, we ensure full compliance and prevent unexpected, unbudgeted expenses arising from the new FTE Gratuity mandate.",
+      },
+    ],
+  },
+];
+export const sectionsPFConsultantsJaipur = [
+  {
+    title: "Jaipur's Dual PF Challenge: Informal Labor & The New Wage Code",
+    description:
+      "Jaipur, the Pink City presents a unique duality in its labor market. Its economy is powered by traditional, labor-intensive industries (Gems & Jewellery, Handicrafts) often characterized by high volumes of unorganized and marginal workers, alongside a rapidly expanding formal IT/Fintech/Service sector located in areas like the Malviya Industrial Area and Mahindra World City SEZ.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "The Gems & Jewellery/Handicrafts Sector: Formalization Risk",
+        content:
+          "Jaipur’s Gems, Jewellery, and Handicrafts sector relies heavily on casual, piece-rate, and contract labour, particularly among artisans working with coloured gemstones. Many units operate with informal or partially documented workforces, leading to widespread misclassification and gaps in PF coverage. The Rajasthan Regional PF Office has intensified enforcement in this sector, closely examining payroll records and worker classification. For established exporters and large suppliers, this creates a substantial retrospective PF liability risk, as undocumented or misclassified workers can trigger large Section 7A assessments, interest, and penalties. Proactive documentation and compliance formalisation are essential to mitigate this growing regulatory exposure.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Tourism & Hospitality: Seasonal Employment and Gratuity",
+        content: (
+          <>
+            <p>
+              The tourism and hospitality sector—which depends heavily on seasonal staff and Fixed-Term Employees (FTEs) in hotels, resorts, and travel operations—has traditionally structured pay to minimize long-term benefit obligations. Under the New Wage Code (effective November 21, 2025), all FTEs become eligible for pro-rata Gratuity after just one year of continuous service. This marks a major policy shift that compels hotel chains, resorts, and tour operators to overhaul their HR frameworks and significantly increase Gratuity provisioning. For a sector with high workforce churn and seasonal hiring cycles, this creates a substantial new financial and compliance burden that must be proactively managed.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "MSME Compliance Burden",
+        content:
+          "MSMEs make up more than 90% of Rajasthan’s industrial base and already operate under heavy compliance pressure. The New Wage Code, with its mandatory 50% Basic Wage floor, now requires these units to completely overhaul their payroll structures—significantly increasing statutory costs and administrative workload. This transition poses major financial and operational challenges for small and mid-sized enterprises. EPFDesk helps MSMEs navigate this shift through expert wage restructuring, statutory alignment, and end-to-end compliance support, ensuring a smooth and fully compliant transition to the NWC regime.",
+      },
+     
+    ],
+  },
+  {
+    title: "EPFDesk: NWC-Ready PF Compliance for Rajasthan Businesses",
+    description:
+      "EPFDesk provides strategic PF advisory, legal defense, and seamless transition planning for the Jaipur market, focusing on formalizing the informal workforce and mitigating NWC financial shock.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Gems & Jewellery Sector Formalization",
+        content:
+          "We conduct detailed PF audits for Gems & Jewellery export units (EOUs) and manufacturers, mapping and documenting all categories of workers—including home-based artisans, job-workers, and informal labour—to ensure 100% statutory coverage. This comprehensive formalization prevents the severe financial consequences of Section 7A orders arising from undeclared or misclassified workers. By mitigating retrospective PF dues, interest, and penalties, we protect exporters’ liquidity and compliance integrity—critical for businesses navigating international trade pressures, tariff obligations, and demanding global supply chains.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC Payroll Restructuring",
+        content: (
+          <>
+            <p>
+             We provide end-to-end NWC-compliant payroll restructuring for IT, Fintech, retail, and other large employers, ensuring that PF-excluded allowances remain below the 50% cap mandated by the New Wage Code. Our modelling accurately captures the resulting increase in PF contributions and the significant Gratuity liability spike, since Gratuity must now be calculated on the higher NWC-defined wage base. We also update all statutory payroll records with the Rajasthan EPFO, ensuring full compliance and a smooth transition to the new wage framework.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Tourism & Hospitality FTE Liability",
+        content:
+          "We offer specialised 7A legal defence and appellate representation before the RPFC, Jaipur, addressing Show-Cause Notices and assessment orders issued by the Rajasthan PF Commissioner. Our defence focuses on robust legal justification for variable allowances, incentives, and bonus structures commonly used in competitive service industries, ensuring they are not wrongly included in the PF wage base. By challenging improper reclassifications and defending allowance structures with strong precedent, we help organisations avoid substantial arrears, 12% annual interest, and penal damages—effectively protecting capital and maintaining compliance stability.",
+      },
+  
+      
+    ],
+  },
+];
+export const sectionsPFConsultantsLucknow = [
+  {
+    title: "Lucknow’s Unique PF Landscape: Government Contracts and Evasion Risk",
+    description:
+      "As the administrative capital of Uttar Pradesh, Lucknow's economy is heavily driven by Government Contractors (in infrastructure, IT services, and logistics), the burgeoning IT/ITES sector (particularly around Gomti Nagar Extension, the proposed AI City, and Vibhuti Khand), and the highly decentralized Traditional/Handicraft industry (Chikankari).",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Government & PSU Contractors: The $\mathbf{7A}$ Liability Nightmare",
+        content:
+          "Contractors supplying manpower, security, housekeeping, and IT services to UP Government Departments, PSUs, and municipal bodies often operate through multi-layered vendor chains where wages are tightly cost-controlled. This frequently leads to PF under-deposits, delayed remittances, or miscalculations to stay competitive in low-budget tenders. The Lucknow Regional PF Office rigorously scrutinizes such contractors, and repeated CAG audit findings have highlighted chronic lapses in PF remittances across government-linked projects. These failures expose contractors—and, in many cases, the Principal Employer—to severe retrospective Section 7A assessments, interest, and penal damages. For businesses servicing the public sector, this represents a major compliance and financial risk requiring immediate, structured remediation.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "The New Wage Code (NWC) Shock for Service/IT Sector",
+        content: (
+          <>
+            <p>
+              Major service-sector employers in Lucknow—especially IT firms, real estate companies, and large corporates in Gomti Nagar—commonly structure salaries with a low Basic Pay (30–40% of CTC) to increase take-home pay and reduce PF and Gratuity outflow. The New Wage Code, effective November 21, 2025, makes this model unsustainable by enforcing a mandatory 50% Basic Wage floor. This will require a complete overhaul of payroll structures, sharply increasing monthly PF contributions and significantly raising long-term Gratuity provisioning costs for every major establishment in the region. Proactive modelling and restructuring are essential to avoid financial shocks and ensure seamless NWC compliance.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Traditional (Chikan) & MSME Sector Compliance",
+        content:
+          "Lucknow's famous Chikan work industry, like many regional handicrafts, relies on a vast, decentralized, and often informal workforce of artisans and home-based workers. Extending PF coverage to this skilled but unorganized sector is a major focus of formalization, demanding careful documentation and wage formalization to avoid punitive retrospective penalties.",
+      },
+      
+    ],
+  },
+  {
+    title: "EPFDesk:NWC-Ready PF Strategy for Lucknow’s Businesses",
+    description:
+      "EPFDesk delivers targeted, legal-backed PF consultancy, protecting established entities and high-growth sectors from the specialized compliance risks of the UP administrative zone",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Contractual Liability Defense (Government/PSU)",
+        content:
+          "We provide specialised Contract Labour PF compliance audits and 7A legal defence for firms engaged in UP Government and PSU tenders. Our service ensures full statutory compliance across all vendor layers, shielding the Principal Employer from massive retrospective Section 7A demands, 12% annual interest, and heavy penalties imposed by the Lucknow RPFC. By strengthening documentation, wage records, and contractor oversight, we also reduce exposure to corruption-linked scrutiny—particularly important in sectors repeatedly flagged for compliance gaps in recent CBI and CAG reports. This comprehensive framework safeguards financial stability and operational continuity for government-facing contractors.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC Payroll Redesign & Gratuity",
+        content: (
+          <>
+            <p>
+              We deliver comprehensive NWC-compliant payroll redesign for IT/ITES and Real Estate firms in the Gomti Nagar corridor, ensuring strict adherence to the New Wage Code’s 50% statutory ‘Wage’ definition. Our modelling covers the full financial impact— including the rise in PF contributions, the substantial increase in Gratuity liability, and the complete update of all employment and payroll documentation required for compliance. This proactive restructuring prevents retrospective wage reclassification, secures full NWC compliance before the deadline, and protects companies from major financial shocks once the Code becomes fully operational.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Handicraft/MSME Workforce Formalization",
+        content:
+          "We help Chikankari units, handicraft exporters, and MSMEs formalize their artisan and piece-rate workforce in line with statutory requirements. Our service includes accurate worker classification, PF eligibility mapping, documentation of home-based and job-work artisans, and end-to-end compliance setup—critically important as enforcement teams increasingly target the unorganized sector. This structured formalization builds a strong legal foundation for MSMEs, ensuring full alignment with the expanded definition of ‘Worker’ under the Code on Social Security and enabling sustainable growth without compliance disruptions.",
+      },
+    ],
+  },
+];
+export const sectionsPFConsultantsIndore = [
+  {
+    title: "Indore’s Dual PF Pressure: SEZ Growth vs. The Unorganized Sector",
+    description:
+      "Indore, often referred to as 'Mini Mumbai' and consistently ranked India's cleanest city, operates a high-growth, diversified economy. The city's primary PF compliance challenges arise from the stark contrast between its highly-formalized, rapid-growth sectors and its traditional, mass-employment manufacturing hubs",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "IT/ITES and Automobile Sector (Super Corridor & Pithampur SEZ): The New Wage Code (NWC) Disruption",
+        content:
+          "Indore’s IT/ITES hub (including Crystal IT Park) and the large-scale manufacturing ecosystem in Pithampur SEZ traditionally depend on CTC structures with low Basic Wages to minimise PF and Gratuity outflow while maximising employee take-home pay. The New Wage Code (effective November 21, 2025) fundamentally disrupts this model by mandating that statutory ‘Wages’ must form at least 50% of total remuneration. This forces every major employer to redesign salary structures, immediately raising the PF base and creating a substantial, long-term Gratuity liability spike across the workforce. Without expert financial modelling and phased restructuring, companies risk sudden, unbudgeted increases in payroll costs and major compliance exposure.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Textile, Food Processing, and Namkeen Clusters: Coverage and Arrear Risk",
+        content: (
+          <>
+            <p>
+              Indore’s textile, food processing, and iconic Namkeen manufacturing clusters rely heavily on contract, casual, and piece-rate workers—many of whom remain outside the PF system or are paid through misclassified wage components. Recognizing this gap, the Indore Regional PF Office has launched an aggressive Employees’ Enrolment Campaign, aiming to formalize over 50,000 new members from these sectors. This expansion drive signals heightened scrutiny of unorganized and semi-formal units, exposing numerous MSMEs to significant retrospective Section 7A liabilities for past non-compliance. Proactive workforce formalization and payroll restructuring are now essential to avoid large arrears, interest, and penalties.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Digital Filing and UAN Mismatch",
+        content:
+          "The EPFO’s digital push in the region, including mandatory Aadhaar-UAN seeding, still faces hurdles. Delayed Electronic Challan cum Return (ECR) filings and unresolved KYC mismatches are common, leading to unnecessary penalties and interest at p.a.",
+      },
+     
+    ],
+  },
+  {
+    title: "EPFDesk: New Wage Code Ready PF Solutions for Indore",
+    description:
+      "EPFDesk provides strategic, future-proof PF advisory, legal defense, and seamless transition services, specifically mitigating the complex risks faced by Madhya Pradesh's industrial heartland.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC Payroll Restructuring & Modeling",
+        content:
+          "We deliver comprehensive NWC-aligned payroll restructuring and financial modelling for high-salary industries such as IT/ITES, Pharma, and Auto Ancillary. Our analysis accurately quantifies the impact of the 50% Basic Wage floor on both PF contributions and Gratuity liabilities, helping organisations transition to the new structure with minimal disruption to employee take-home pay. By converting the mandatory rise in statutory costs into a planned, predictable financial provision, we protect employers from sudden payroll shocks and ensure full, future-proof compliance with the New Wage Code.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Pithampur SEZ Contract Labour Compliance",
+        content: (
+          <>
+            <p>
+             We conduct comprehensive PF audits across the multilayered contract labour networks within the Pithampur SEZ and Industrial Area, ensuring that every contract worker is properly covered and compliant under PF regulations. This protects Principal Employers from severe Section 7A demands and punitive damages regularly imposed by the RPFC for contractor defaults. Our compliance framework also prevents the retrospective application of the NWC’s higher 50% wage definition to undeclared or misclassified contract labour—safeguarding organisations from multi-million-rupee liabilities and strengthening overall corporate governance.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Textile & Namkeen Sector Formalization",
+        content:
+          "We manage end-to-end MSME workforce formalization for Indore’s Textile and Namkeen clusters under the EPFO’s Employees’ Enrolment Campaign 2025. Our process brings previously unregistered, casual, or piece-rate workers into the statutory system while leveraging the scheme’s reduced penal charge window to minimize historical PF exposure. This enables MSMEs to legally regularize their labour force, transforming informal workers into a fully compliant asset and aligning with the NWC’s expanded social security mandate—without facing crippling retrospective Section 7A demands.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "EPFO Digital Liaison & Claims",
+        content:
+          "We serve as your dedicated digital liaison with the Indore Regional PF Office, resolving bulk UAN, KYC, and Member Profile mismatches to ensure seamless ECR filing and fast, error-free claim settlements. By maintaining strong digital compliance hygiene, we prevent filing delays and system rejections that could trigger penalties—especially critical as PF dues will soon be calculated on the higher, NWC-defined statutory ‘Wage’. This ensures uninterrupted statutory operations and a smooth experience for both employers and employees.",
+      },
+    ],
+  },
+];
+export const sectionsPFConsultantsCoimbatore = [
+  {
+    title: "Coimbatore's Unique PF Challenges: The Mill-to-Foundry Compliance Matrix",
+    description:
+      "Coimbatore’s economy is dominated by the $\mathbf{Textile}$ industry (dubbed the ‘Manchester of South India’), the large-scale Engineering & Foundry sector, and the crucial Pump Set Manufacturing cluster. These labor-intensive industries face highly specific, high-risk compliance pressures from the Tamil Nadu EPFO and the imminent structural shift imposed by the New Wage Code.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Textile and Foundry Industry: The Contractual Labour-Cost Shock",
+        content:
+          "Textile mills and foundries across the Coimbatore–Tirupur–Palladam industrial belt rely heavily on contract labour and fixed-term staffing to manage seasonal fluctuations and contain wage costs—often by keeping the Basic Wage artificially low to reduce PF and Gratuity outflows. The Coimbatore Regional PF Office has adopted a strict, zero-tolerance enforcement posture, with multiple recent cases showing the EPFO actively invoking Section 8B recovery powers to attach and auction property of establishments that delay PF remittances—even for short default periods. This aggressive recovery environment creates immediate compliance risk for manufacturers, making timely remittances and airtight contractor compliance essential to avoid severe asset-attachment proceedings.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "The New Wage Code (NWC) Mandate (Effective Nov 21, 2025):",
+        content: (
+          <>
+            <p>
+              The New Wage Code, effective November 21, 2025, mandates that statutory ‘Wages’ must equal at least 50% of total remuneration. For Coimbatore’s labour-intensive textile, engineering, and foundry units—where Basic Wage typically sits at 30–40%—this triggers a major cost escalation across PF, ESI, and payroll budgets. Even more disruptive is the pro-rata Gratuity requirement for Fixed-Term Employees (FTEs) after just one year of service. This overturns the long-standing practice of maintaining large pools of 11-month contract workers, converting what was previously a temporary or seasonal cost into a permanent, compounding Gratuity liability. Without immediate modelling and restructuring, these changes pose a severe financial and operational shock for the region’s manufacturing ecosystem.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "MSME and Pump Set Sector: Power Crisis and Penalty Dues",
+        content:
+          "Small and Micro Enterprises (MSEs) in the engineering and pump manufacturing clusters are vulnerable due to high operating costs (e.g., electricity). When revenue falters, PF remittance often gets deferred. Deferred payment immediately triggers the 12% p.a. interest plus penal damages (up to 100% under Section , which is being vigorously enforced by the RPFC, turning temporary financial stress into crippling legal liability.",
+      },
+      
+    ],
+  },
+  {
+    title: "EPFDesk: NWC-Ready Compliance and Defense for Coimbatore",
+    description:
+      "EPFDesk provides expert PF legal, financial, and payroll services specifically tailored to navigate the rigorous compliance landscape of the Tamil Nadu industrial belt.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "New Wage Code Payroll Transition",
+        content:
+          "We conduct detailed NWC-focused payroll audits for textile and foundry units, accurately modelling the 12% to 25% increase in total employment cost resulting from the mandatory 50% Basic Wage floor and expanded Gratuity obligations. Our restructuring approach optimizes allowance components to maintain statutory compliance while minimizing disruption to employee take-home pay. By implementing NWC-compliant wage structures ahead of the deadline, we protect your establishment from severe retrospective PF and Gratuity demands, ensuring financial stability and full regulatory compliance.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "EPFO Recovery & Attachment Defense",
+        content: (
+          <>
+            <p>
+             We provide specialised legal defence against aggressive EPFO recovery actions under Sections 8B and 14B, including property attachment, bank account freezes, and penal damage proceedings initiated by the Recovery Officer (RO). Our team negotiates structured repayment plans, manages compliance documentation, and prevents operational disruption for businesses facing legacy PF defaults. This protection is especially critical ahead of the New Wage Code rollout, as settling historical Section 14B damages now prevents them from being recalculated on the significantly higher NWC-mandated wage base, safeguarding your assets and financial stability.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Fixed-Term Employment (FTE) Audit",
+        content:
+          "We conduct comprehensive audits of Fixed-Term Employment (FTE) arrangements for organisations that depend on large pools of contractual or fixed-term workers. Our analysis models the newly mandated pro-rata Gratuity provisioning requirement—triggered after just one year of continuous service under the New Wage Code—to identify hidden liabilities and ensure accurate budgeting. By converting unpredictable, unplanned Gratuity costs into clear, auditable financial provisions, we help companies maintain long-term financial stability while meeting global buyer expectations on social accountability, including emerging standards such as CSDDD.",
+      },
+       {
+        color: "bg-white border-gray-300",
+        title: "Textile & MSME Formalization",
+        content:
+          "We manage end-to-end worker enrollment and ECR compliance for textile units and MSMEs in the pump-set and ancillary manufacturing ecosystem. Leveraging EPFO initiatives such as the Employees’ Enrolment Campaign, we regularize past coverage gaps with minimal penalty exposure while onboarding previously informal or excluded workers. This formalization ensures every ‘Employee’ is correctly classified under the expanded NWC definition, significantly reducing the risk of RPFC scrutiny, non-coverage findings, and retrospective 7A assessments.",
+      },
+    ],
+  },
+];
+export const sectionsPFConsultantsVadodara = [
+  {
+    title: "Vadodara's Dual Compliance Threat: High-Value Industry & Contract Labour",
+    description:
+      "Vadodara, a vital node on the ‘Golden Corridor’ of Gujarat, is driven by massive public sector undertakings (like IPCL, Gujarat Refinery, GSFC) and a sprawling network of GIDC (Gujarat Industrial Development Corporation) estates (Makarpura, Por, Savli). This unique industrial ecosystem faces two critical PF compliance challenges",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Petrochemical, Pharma, and Engineering Giants (GIDC Clusters): The Basic Wage Shock",
+        content:
+          "Petrochemical, Pharma, and Engineering majors in Makarpura GIDC and nearby industrial clusters traditionally operate with low Basic Wage structures (35–40%) to minimise PF and long-term Gratuity outflow while maximising employee take-home pay. The New Wage Code, effective November 21, 2025, disrupts this model by mandating that statutory ‘Wages’ must constitute at least 50% of total remuneration. This forces every large employer to redesign its CTC framework, triggering an immediate and unplanned 10% to 25% increase in the PF and Gratuity calculation base. Without robust financial modelling and employee-communication planning, companies face significant payroll shocks and morale challenges.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contractual Labour & MSMEs: Hidden Liability and Arrear Risk",
+        content: (
+          <>
+            <p>
+              Vadodara’s power transmission, engineering ancillary units (800+ factories), and smaller textile manufacturers rely extensively on migrant and contract labour, many of whom work without proper payslips, PF coverage, or statutory documentation. This widespread under-compliance creates significant hidden PF and ESIC liabilities. Under the PF Act, the Principal Employer is fully responsible for any PF default committed by its contractors. The Vadodara Regional PF Office is aggressively enforcing this obligation, issuing large Section 7A assessments that hold major manufacturers liable for unremitted PF contributions across their entire outsourced workforce. This results in massive retrospective dues, 12% interest, and heavy penal damages—turning contractor non-compliance into a severe financial and legal risk for MSMEs and large corporations alike.
+            </p>
+          </>
+        ),
+      },
+     
+    ],
+  },
+  {
+    title: "EPFDesk: New Wage Code Ready PF Solutions for Vadodara",
+    description:
+      "EPFDesk delivers strategic PF consultancy and legal defense services that are specifically focused on the high-stakes, large-volume compliance requirements of Vadodara's industrial powerhouses.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC Payroll Restructuring & Cost Control",
+        content:
+          "We perform a detailed NWC financial stress test for organisations—especially in the Pharma, Petrochemical, and Engineering sectors—to quantify the exact impact of the 50% Basic Wage floor on payroll, PF contributions, and Gratuity provisioning. Based on this analysis, we implement a phased wage restructuring strategy that shifts select allowances into the Basic Wage component while maintaining overall cost control and ensuring 100% statutory compliance. This structured approach prevents sudden budget shocks, provides clear legal alignment with the New Wage Code, and enables companies to manage the inevitable rise in Gratuity and PF obligations in a predictable, financially stable manner.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labour Liability Shield",
+        content: (
+          <>
+            <p>
+             We conduct comprehensive Principal Employer risk audits across your contractor and third-party vendor ecosystem within GIDC estates, verifying that PF contributions are accurately deposited for every contract worker. This audit framework provides a strong legal defence against Section 7A assessments, where the PF department attempts to recover contractor defaults directly from the Principal Employer. By ensuring full statutory coverage and airtight documentation, we protect your supply chain from retrospective liability. Our approach also prevents the NWC’s stricter 50% ‘Wage’ definition and the 1-year Gratuity rule for Fixed-Term Employees from being retroactively applied to outsourced labour—saving your organisation from substantial penalties, interest, and compliance exposure.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "EPFO Assessment & Legal Defense",
+        content:
+          "We offer specialised legal representation before the Vadodara Regional PF Office for both Section 7A assessment hearings and Section 14B penal damage proceedings. Our team ensures accurate computation of historical dues, challenges improper wage reclassifications, and negotiates the minimum legally permissible penalties. By resolving current and past non-compliance issues before the New Wage Code takes effect, we help employers avoid far heavier penalties that would otherwise be calculated on the significantly higher NWC-mandated wage base. This proactive defence protects capital, safeguards assets, and stabilises long-term statutory compliance.",
+      },
+        {
+        color: "bg-white border-gray-300",
+        title: "Digital Compliance & KYC",
+        content:
+          "We handle bulk UAN–Aadhaar seeding, KYC updates, and error-resolution for organisations employing large migrant or contract-driven workforces—where mismatches are most common. By ensuring accurate, verified member data, we guarantee smooth and timely ECR filing, preventing costly late-filing penalties and system rejections. This digital compliance framework also maintains high operational efficiency, enabling seamless PF transfers and claim settlements for employees—especially important during the NWC-driven payroll restructuring that will increase statutory contribution volumes and scrutiny.",
+      },
+    ],
+  },
+];
+
+export const sectionsPFConsultantsVisakhapatnam = [
+  {
+    title: "Visakhapatnam's Dual Economy: Port Liability Meets Tech Payroll Shock",
+    description:
+      "Visakhapatnam (Vizag) is undergoing a massive economic transformation. While traditional mega-industries like the Steel Plant (RINL), Vizag Port, and Pharma clusters drive employment, the city is rapidly emerging as a Global Data Center Capital, fueled by investments from giants like Google (AI Data Center Campus) and Reliance-Brookfield.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "The New Tech Hub (IT, GCC, Data Centers): The NWC Payroll Reset",
+        content:
+          "Vizag’s emerging tech ecosystem—spanning IT parks, Global Capability Centers (GCCs), data centers, and the fast-growing Madhurawada–Anakapalli corridor—typically uses high-CTC salary models with Basic Wage well below 50% to minimize PF and Gratuity outflow. The New Wage Code, effective November 21, 2025, disrupts this approach entirely by mandating that statutory ‘Wages’ must form at least 50% of CTC. This triggers an immediate, organisation-wide payroll reset: PF contributions rise sharply, and Gratuity provisioning increases dramatically, as it must now be calculated on the higher 50% wage base irrespective of the PF ceiling. For high-skill engineering and tech roles, the challenge is twofold—managing the financial impact and effectively communicating the resulting reduction in employee take-home pay.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Traditional Heavy Industry (Steel, Port, Pharma): The Contract Liability Tsunami",
+        content: (
+          <>
+            <p>
+             Vizag’s traditional heavy industries—steel, port, logistics, and large pharma units—are facing a contract labour liability crisis, highlighted by long-standing disputes involving 14,000+ contract workers at the Vizag Steel Plant and associated port operations. Chronic issues such as PF non-payment, allowance disputes, wrongful terminations, and incomplete documentation have created massive compliance gaps. The Visakhapatnam Regional PF Office is now aggressively invoking Section 7A to hold Principal Employers directly liable for their contractors’ failures. As a result, large PSUs and port operators are receiving retrospective PF demands running into hundreds of crores, including interest and penal damages. Without immediate compliance correction and legal defence, organisations in these sectors face unprecedented financial and statutory exposure.
+            </p>
+          </>
+        ),
+      },
+      
+    ],
+  },
+  {
+    title: "EPFDesk: New Wage Code Ready PF Solutions for Vizag's New Economy",
+    description:
+      "EPFDesk provides strategic, future-ready PF consulting that addresses the high-stakes complexities of Visakhapatnam’s emerging and established industries.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Data Center & IT Payroll Transformation",
+        content:
+          "We specialise in implementing the New Wage Code’s 50% Wage Model for high-CTC employees in data centers, IT parks, and Global Capability Centers (GCCs). Our approach models the precise financial impact of shifting high-skill roles to a 50% (or higher) Basic Wage, enabling accurate Gratuity provisioning and controlled PF cost increases. We execute a phased, legally compliant payroll restructuring that avoids sudden budget shocks while aligning compensation structures with NWC requirements. This ensures that fast-scaling tech and data infrastructure firms—such as Google, Sify, and other major players—achieve full compliance before EPFO audits, preventing penalties and scrutiny on complex, globally integrated payroll systems.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Steel/Port Contract Labour Defense",
+        content: (
+          <>
+            <p>
+              We provide specialised Principal Employer defence for steel, port, logistics, and large industrial establishments facing Section 7A demands arising from contractor non-compliance—a recurring issue for major PSUs such as RINL. Our service includes comprehensive audits of all third-party contracts to ensure full PF coverage for contract labour, along with expert representation before the Vizag RPFC to minimise Section 14B penal damages. This defence framework shields heavy-industry employers from massive retrospective liability, particularly as the NWC’s 1-year Gratuity rule for Fixed-Term Employees significantly increases the compliance risks tied to outsourced and contractor-driven operations.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Fixed-Term Employee (FTE) Liability",
+        content:
+          "We calculate and provision the New Wage Code’s mandatory 1-year pro-rata Gratuity for Fixed-Term Employees (FTEs) across Pharma, Logistics, and Data Center construction and maintenance operations—industries that rely heavily on contractual staffing. Our modelling identifies and quantifies the full liability impact, converting what would otherwise be unpredictable and unbudgeted Gratuity costs into a transparent, auditable financial provision. This ensures accurate budgeting, full compliance, and long-term financial stability as the NWC becomes operational.",
+      },
+        {
+        color: "bg-white border-gray-300",
+        title: "Green Energy & Utility PF Audit",
+        content:
+          "We conduct comprehensive PF compliance audits for the extensive utility and green-energy workforce supporting large data centers—operations that often require 1-GW scale power infrastructure. Our workforce mapping ensures that all employees, including those engaged through utility and infrastructure contractors (power, water, cooling, renewable energy), are fully covered under PF regulations. This protects data center operators from supply chain PF liabilities and ensures uninterrupted operations. By maintaining strong digital compliance hygiene, we also enable smooth PF transfers and claim settlements for employees in this rapidly expanding sector.",
+      },
+    ],
+  },
+];
+export const sectionsPFConsultantsNagpur = [
+  {
+    title: "The Compliance Hot Zone: Nagpur's Industrial Landscape",
+    description:
+      "Nagpur, the geographic heart of India and the industrial powerhouse of the Vidarbha region, presents a unique and high-stakes PF compliance scenario driven by two major factors: the heavy manufacturing and mining base, and chronic issues within public sector employment.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "MIDC Mega-Clusters (Butibori & Hingna): The Contract Labour Risk",
+        content:
+          "The massive MIDC industrial clusters of Butibori and Hingna—home to leading Engineering, Steel, Foundry, and FMCG giants—operate through extensive networks of contractors and ancillary units. This heavy dependence on outsourced labour creates significant PF compliance vulnerability. The Nagpur Regional PF Office is aggressively invoking Section 7A to hold large Principal Employers directly liable for unpaid PF contributions of all contract workers, regardless of subcontracting layers. Recent news of contract labour disputes, widespread non-compliance, and even CBI searches involving EPFO offices underscores the heightened enforcement environment. In this climate of intense scrutiny, any lapse in contractor PF compliance can trigger massive retrospective liabilities, interest, and penal damages for major industrial establishments.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Public Sector and Mining Liability (WCL, NMC): Chronic Default",
+        content: (
+          <>
+            <p>
+              Nagpur’s public sector ecosystem faces chronic PF compliance failures that significantly elevate enforcement pressure on private industry. The Nagpur Municipal Corporation (NMC) has repeatedly been identified as one of the region’s largest PF defaulters, especially in relation to its contractual and temporary workforce, setting a stringent benchmark for PF enforcement across the district. Similarly, the WCL coal mining belt is burdened with long-standing PF disputes involving arrears settlement, complex worker histories, and high-stakes Higher Pension (EPS-95) claims—issues that have triggered substantial litigation and scrutiny from the Nagpur EPFO. This environment of persistent public-sector default and ongoing pension disputes amplifies the regulatory intensity applied to private employers, making airtight PF compliance essential for all establishments in the region.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Food Processing (Orange City): The New Wage Code Shock",
+        content:
+          "Nagpur’s signature fruit and food processing ecosystem—from orange-derived products to leading brands like Haldiram’s, Dinshaws, and Vicco—relies heavily on seasonal labour and allowance-loaded pay structures to control costs. The New Wage Code (effective November 21, 2025) significantly disrupts this model by mandating that statutory ‘Wages’—Basic + DA + Retaining Allowance—must form at least 50% of total remuneration. This shift will sharply increase mandatory PF contributions and trigger a major rise in Gratuity liability, particularly for MSMEs that have historically used variable or incentive-based pay to offset payroll expenses. For Nagpur’s labour-intensive processors, proactive restructuring and cost modelling are essential to avoid severe financial strain and compliance exposure.",
+      },
+    ],
+  },
+  {
+    title: "EPFDesk: NWC-Ready Compliance in Central India",
+    description:
+      "EPFDesk provides strategic advisory and forensic audit services tailored to the unique economic and regulatory environment of Nagpur.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Butibori/Hingna Principal Employer Defense",
+        content:
+          "We provide specialised Principal Employer defence for large MIDC units in Butibori and Hingna, protecting them from aggressive Section 7A and 14B demands issued by the Nagpur RPFC for PF defaults committed by contractors. Our service includes detailed audits of contractor wage and PF records, creation of airtight compliance documentation, and establishing legal firewalls that prevent liability from passing on to the Principal Employer. This proactive framework also safeguards organisations from the retrospective application of the New Wage Code, ensuring that the significantly higher PF and Gratuity costs mandated under the NWC are not unfairly imposed on past or current contract workers when liability is contested.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "New Wage Code Salary Restructuring",
+        content: (
+          <>
+            <p>
+              We provide comprehensive New Wage Code (NWC) salary restructuring for employers across Butibori, Hingna, and surrounding industrial zones—covering large manufacturers as well as MSMEs. Our financial modelling identifies the exact impact of implementing the mandatory 50% Basic Wage floor, and we redesign allowance structures to achieve compliance without triggering industrial unrest or sharp reductions in employee take-home pay. This ensures 100% NWC compliance, securing the correct statutory base for PF and Gratuity calculations under the new unified ‘Wage’ definition, and protecting employers from penalties, retrospective demands, and enforcement scrutiny.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "EPS-95 Higher Pension Claims Management",
+        content:
+          "We manage end-to-end EPS-95 Higher Pension claim processing for employees in mining, manufacturing, and heavy industry—sectors where contribution histories and arrears calculations are often complex. Our service includes reconstructing service records, correcting PF wage data, coordinating with the Nagpur EPFO, and ensuring applications meet all legal and procedural requirements. With the New Wage Code demanding precise and error-free employee data, resolving legacy pension issues now is essential. Our process restores data integrity, eliminates discrepancies, and prepares organisations for a smooth, compliant transition into the NWC regime.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Fixed-Term Employee (FTE) Liability Audit",
+        content:
+          "We conduct specialised audits of Fixed-Term Employment (FTE) arrangements to quantify and provision for the New Wage Code’s requirement of pro-rata Gratuity after just one year of continuous service. This is critical for seasonal and labour-intensive industries such as food processing, textiles, and MSMEs that rely heavily on short-term contracts. By converting unpredictable and unbudgeted Gratuity exposure into a clear, predictable financial provision, we help safeguard tight operating margins and ensure full compliance with the NWC’s expanded social security mandate.",
+      },
+    ],
+  },
+];
+export const sectionsPFConsultantsBhopal = [
+  {
+    title: "Bhopal's Economic Pillars: Navigating New Compliance Hot Zones",
+    description:
+      "Bhopal's compliance landscape extends beyond its historical heavy industry, driven by high-growth sectors with severe, yet distinct, statutory risks.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Infrastructure & Construction (DBL, Sagar Group): The Audit Threat",
+        content:
+          "Bhopal’s major infrastructure players—such as Dilip Buildcon (DBL) and Agrawal Builders (Sagar Group)—depend heavily on project-based, migrant contract labour for metro rail systems, highways, and large residential developments. This multi-layered contract ecosystem creates significant PF compliance exposure. The Bhopal Regional PF Office is aggressively invoking Section 7A, holding Principal Employers directly liable for any PF or ESI defaults committed by subcontractors across project sites. Inadequate documentation, incomplete wage records, or gaps in contractor compliance can trigger enormous retrospective 7A assessments, interest, and even criminal prosecution. For construction companies, airtight PF governance and contract-chain monitoring are now mission-critical to avoiding regulatory and financial shocks.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Pharmaceuticals & Manufacturing (Lupin, EEI, Mandideep): High-Accuracy Compliance",
+        content: (
+          <>
+            <p>
+              Mandideep’s major pharmaceutical and manufacturing units—such as Lupin Laboratories, EEI Capsules, and multiple biotech facilities—operate under strict regulatory environments (GMP, FDA, WHO audits), making error-free statutory compliance non-negotiable. The New Wage Code’s mandatory 50% Basic Wage rule poses a significant challenge, as many skilled operators, chemists, and technicians are currently paid through complex, allowance-heavy structures. We provide precision-driven payroll restructuring that brings compensation into full NWC compliance, accurately models the sharp increase in Gratuity liability, and ensures zero disruption to production, audits, or regulatory certifications. This protects high-risk, high-compliance industries from statutory penalties and operational instability.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "IT, Startups, & EdTech: The Highly Compensated Gratuity Bomb",
+        content:
+          "Bhopal's emerging economy is fueled by IT/Software firms (Netlink, Caresoft, TCS/Infosys presence) and EdTech/Digital Marketing startups (often operating from MP Nagar).",
+      },
+      
+    ],
+  },
+ 
+];
+
+export const sectionsPFConsultantsKanpur = [
+  {
+    title: "Kanpur's Industrial Reality: Export Stress Meets Compliance Overhaul",
+    description:
+      "Kanpur, the Manchester of the East, faces a unique dual challenge: economic pressure in its core export-oriented sectors (Leather, Textiles) and an impending statutory compliance revolution from the New Wage Code (NWC).",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Leather and Tannery Hub (Jajmau/Unnao): The Compliance Squeeze",
+        content:
+          "The leather and tannery ecosystem in Jajmau and Unnao faces intense operational pressures—from environmental restrictions (UPPCB/ZLD mandates) to volatile global export tariffs—resulting in high labour turnover and widespread outsourcing. These financial constraints often push units toward low-basic, allowance-heavy wage structures that expose them to significant statutory risk. The Kanpur Regional PF Office closely monitors this sector and routinely initiates aggressive Section 7A assessments for wage underreporting. When allowances are reclassified as ‘Wages’, employers face massive retrospective PF dues, 7Q interest, and 14B penal damages, which can severely threaten business viability. Proactive payroll restructuring and airtight compliance are essential to mitigate this escalating enforcement risk.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Textiles, Hosiery, and Cotton Mills: The Contract Labor Trap",
+        content: (
+          <>
+            <p>
+              Kanpur’s textile, hosiery, and cotton mill clusters—particularly in Dadanagar and Panki Industrial Area—operate with a heavily contracted and Fixed-Term Employment (FTE) workforce, using allowance-dominant pay structures to control labour costs. The New Wage Code (effective November 21, 2025) disrupts this model by requiring statutory ‘Wages’ to constitute at least 50% of total remuneration. For units where Basic Pay is currently far lower, this triggers a sharp, mandatory increase in PF contributions and an immediate, unbudgeted spike in Gratuity liability, especially for large pools of FTEs who will now receive pro-rata Gratuity after just one year. Without early restructuring and liability modelling, Kanpur’s textile and hosiery MSMEs face severe financial strain and high compliance exposure.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Defence and Ordnance Ancillaries: PSU Vendor Liability",
+        content:
+          "Kanpur’s defence manufacturing ecosystem—anchored by major Ordnance Factories—supports a dense network of MSME ancillary units in clusters such as Kalpi. These vendors face stringent compliance scrutiny due to their PSU linkage. Any lapse in PF contributions for contract or temporary workers can trigger severe consequences: PSU vendor blacklisting, disqualification from future tenders, and aggressive Section 7A retrospective liability when the PSU undergoes compliance audits. To operate sustainably in this ecosystem, MSME suppliers must maintain flawless PF documentation, contractor oversight, and statutory adherence.",
+      },
+      
+    ],
+  },
+  {
+    title: "EPFDesk: New Wage Code Ready PF Solutions for Kanpur",
+    description:
+      "EPFDesk offers localized strategic compliance services designed to protect Kanpur's key industries from retrospective fines and the shock of the New Wage Code.",
+    //   note: "NOTE: This is not a community for legal advice and on some range of topics (visas, harassment issues, compliance, etc.) the community members are not giving legal advice and should not be considered responsible for that advice. Community members are responsible for ensuring the content they post does not infringe upon the intellectual property rights of others.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Jajmau/Unnao Payroll Restructuring",
+        content:
+          "We conduct forensic wage audits for leather and export units in the Jajmau–Unnao belt to identify hidden Section 7A exposure arising from low-basic, allowance-heavy structures. Based on this audit, we design a fully compliant New Wage Code 50% Basic Wage model, restructuring pay in a way that minimizes the surge in Gratuity provisioning while ensuring statutory accuracy. This proactive transition prevents punitive reclassification by the RPFC and shields the establishment from retrospective 7A liabilities on past wage practices—protecting both financial stability and export competitiveness.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Textile/Hosiery Contract Management",
+        content: (
+          <>
+            <p>
+             We create NWC-compliant contractor and vendor agreements for textile, hosiery, and ancillary units to ensure contractors fully meet the 50% statutory Wage mandate for their workforce. This contract framework legally shifts primary PF/ESI compliance responsibility to the contractor and provides a strong defence in Section 7A proceedings, protecting the Principal Employer from retrospective liability. We also proactively structure Fixed-Term Employment (FTE) contracts to incorporate the NWC’s requirement of pro-rata Gratuity after just one year, a critical safeguard for seasonal and high-turnover textile/hosiery operations.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "EPFO Digital Compliance & Audit Defense",
+        content:
+          "A complete digital compliance desk covering Aadhaar–UAN seeding, ECR filing, and error-proof monthly submissions to avoid PF deposit rejections. We also provide expert representation for Section 7A/7B/7C proceedings in Karnataka, converting unpredictable retrospective liabilities into controlled, minimized compliance exposure.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PF Audit & Defense",
+        content:
+          "We provide aggressive PF audit and Section 7A defence for Kanpur-based textile, leather, and manufacturing units facing inspections triggered by worker complaints or government audits. Our legal strategy focuses on procedural challenges, documentation accuracy, and strong interpretation of wage components to significantly reduce assessed dues, 7Q interest, and 14B penal damages. Alongside defence, we help employers shift from outdated, allowance-heavy payroll models to the NWC’s standardized, transparent wage structure, ensuring full compliance and protecting against heightened scrutiny under the new code.",
+      },
+    ],
   },
 ];
