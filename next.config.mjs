@@ -9,7 +9,9 @@ const nextConfig = {
     ],
   },
  experimental: {
-  esmExternals: true
+  esmExternals: true,
+    optimizePackageImports: false,
+    swcMinify: true, // forces SWC instead of LightningCSS when needed
 }
 };
 
