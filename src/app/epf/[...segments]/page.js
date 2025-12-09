@@ -45,6 +45,25 @@ import {
   sectionsPFConsultantsNagpur,
   sectionsPFConsultantsBhopal,
   sectionsPFConsultantsKanpur,
+  sectionsPFComplianceMumbai,
+  sectionsPFComplianceDelhi,
+  sectionsPFComplianceChennai,
+  sectionsPFComplianceHyderabad,
+  sectionsPFCompliancePune,
+  sectionsPFComplianceKolkata,
+  sectionsPFComplianceAhmedabad,
+  sectionsPFComplianceSurat,
+  sectionsPFComplianceGurgaon,
+  sectionsPFComplianceNoida,
+  sectionsPFComplianceJaipur,
+  sectionsPFComplianceLucknow,
+  sectionsPFComplianceIndore,
+  sectionsPFComplianceCoimbatore,
+  sectionsPFComplianceVadodara,
+  sectionsPFComplianceVisakhapatnam,
+  sectionsPFComplianceNagpur,
+  sectionsPFComplianceBhopal,
+  sectionsPFComplianceKanpur,
 } from "@/utils/data";
 import { PerformanceSection } from "@/components/PerformanceSection";
 import Script from "next/script";
@@ -4859,19 +4878,11 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomSix.png'}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFCompliance} />
+            <CodeOfConduct sections={sectionsPFComplianceMumbai} />
           </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangalorePFCompliance}
-              />
-            </FadeInWhenVisible>
-          </FadeInWhenVisible>
-
           <FadeInWhenVisible>
             <FaqAccordion faqs={complianceFaqWithAddress} />
           </FadeInWhenVisible>
@@ -4934,17 +4945,10 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomFive.png'}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFCompliance} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangalorePFCompliance}
-              />
-            </FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFComplianceDelhi} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -5009,17 +5013,10 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomFour.png'}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFCompliance} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangalorePFCompliance}
-              />
-            </FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFComplianceChennai} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -5084,17 +5081,10 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomThree.png'}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFCompliance} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangalorePFCompliance}
-              />
-            </FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFComplianceHyderabad} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -5159,17 +5149,10 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomTwo.png'}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFCompliance} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangalorePFCompliance}
-              />
-            </FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFCompliancePune} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -5234,17 +5217,10 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomOne.png'}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFCompliance} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangalorePFCompliance}
-              />
-            </FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFComplianceKolkata} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -5309,17 +5285,10 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/random.png'}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFCompliance} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangalorePFCompliance}
-              />
-            </FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFComplianceAhmedabad} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -5384,17 +5353,10 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomSix.png'}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFCompliance} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangalorePFCompliance}
-              />
-            </FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFComplianceSurat} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -5459,17 +5421,10 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/gurgaon.png'}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFCompliance} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangalorePFCompliance}
-              />
-            </FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFComplianceGurgaon} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -5534,17 +5489,10 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomFive.png'}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFCompliance} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangalorePFCompliance}
-              />
-            </FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFComplianceNoida} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -5609,17 +5557,10 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomFour.png'}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFCompliance} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangalorePFCompliance}
-              />
-            </FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFComplianceJaipur} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -5684,17 +5625,10 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomThree.png'}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFCompliance} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangalorePFCompliance}
-              />
-            </FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFComplianceLucknow} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -5759,17 +5693,10 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomTwo.png'}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFCompliance} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangalorePFCompliance}
-              />
-            </FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFComplianceIndore} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -5834,17 +5761,10 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/coimbatore.png'}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFCompliance} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangalorePFCompliance}
-              />
-            </FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFComplianceCoimbatore} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -5909,17 +5829,10 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/vadodara.png'}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFCompliance} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangalorePFCompliance}
-              />
-            </FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFComplianceVadodara} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -5984,17 +5897,10 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/iamges/visakhapatnam.png'}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFCompliance} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangalorePFCompliance}
-              />
-            </FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFComplianceVisakhapatnam} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -6059,17 +5965,10 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/nagpur.png'}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFCompliance} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangalorePFCompliance}
-              />
-            </FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFComplianceNagpur} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -6134,17 +6033,10 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/bhopal.png'}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFCompliance} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangalorePFCompliance}
-              />
-            </FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFComplianceBhopal} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -6209,17 +6101,10 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/kanpur.png'}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
-            <CodeOfConduct sections={sectionsPFCompliance} />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <ThreeStepSection
-                cardsData={pastelCardsEpfoBangalorePFCompliance}
-              />
-            </FadeInWhenVisible>
+            <CodeOfConduct sections={sectionsPFComplianceKanpur} />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
