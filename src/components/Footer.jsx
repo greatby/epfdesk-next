@@ -212,6 +212,61 @@ const footerLinks = [
   { label: "About Us", url: "/aboutUs" },
 ];
 
+const industryLinks = [
+  {
+    label: "Automotive & Auto Ancillary",
+    url: "/automotive-and-auto-ancillary",
+  },
+  {
+    label: "Construction Sector Compliance",
+    url: "/construction-sector-compliance",
+  },
+  {
+    label: "eCommerce, Gig Economy & Cloud Kitchens",
+    url: "/eCommerce-gigEconomy-cloudKitchens-compliance",
+  },
+  {
+    label: "Education & Charitable Trust Compliance",
+    url: "/education-and-charitable-trust-compliance",
+  },
+  {
+    label: "Financial Services & Banking Sector Compliance",
+    url: "/financial-services-and-banking-sector-compliance",
+  },
+  { label: "Food & Beverage Compliance", url: "/food-and-bevarage-compliance" },
+  {
+    label: "Healthcare & Pharma Statutory Compliance",
+    url: "/healthcare-and-pharma-statutory-compliance",
+  },
+  {
+    label: "Hospitality & F&B Compliance",
+    url: "/hospitality-and-fb-compliance",
+  },
+  { label: "IT / ITES / GIC Compliance", url: "/it-ites-gic-compliance" },
+  {
+    label: "Logistics, Warehousing & Road Transport Compliance",
+    url: "/logistics-warehousing-roadTransport-compliance",
+  },
+  {
+    label: "Manufacturing & Factory Compliance",
+    url: "/manufacturing-and-factory-compliance",
+  },
+  {
+    label: "MSME Manufacturing & Trading Sector Compliance",
+    url: "/msme-manufacturing-trading-sector-compliance",
+  },
+  { label: "Retail Sector Compliance", url: "/retail-sector-compliance" },
+  { label: "SME / MSME Compliance", url: "/sme-msme-compliance" },
+  {
+    label: "Startup Labour & HR Compliance",
+    url: "/startup-labour-and-hr-compliance",
+  },
+  {
+    label: "Textile & Garments Compliance",
+    url: "/textile-and-garments-compliance",
+  },
+];
+
 export default function Footer() {
   return (
     <>
@@ -438,6 +493,100 @@ export default function Footer() {
                       className="hover:text-[#066] hover:underline"
                     >
                       {`${title} in ${city}`}
+                    </a>
+
+                    {i !== list.length - 1 && (
+                      <span className="px-2 text-gray-400">|</span>
+                    )}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="max-w-7xl mx-auto px-6 pb-10 space-y-6">
+          {[
+            {
+              title: "Industry Compliance",
+              list: [
+                {
+                  label: "Automotive & Auto Ancillary",
+                  slug: "automotive-and-auto-ancillary",
+                },
+                {
+                  label: "Construction Sector Compliance",
+                  slug: "construction-sector-compliance",
+                },
+                {
+                  label: "eCommerce, Gig Economy & Cloud Kitchens",
+                  slug: "eCommerce-gigEconomy-cloudKitchens-compliance",
+                },
+                {
+                  label: "Education & Charitable Trust Compliance",
+                  slug: "education-and-charitable-trust-compliance",
+                },
+                {
+                  label: "Financial Services & Banking Sector Compliance",
+                  slug: "financial-services-and-banking-sector-compliance",
+                },
+                {
+                  label: "Food & Beverage Compliance",
+                  slug: "food-and-bevarage-compliance",
+                },
+                {
+                  label: "Healthcare & Pharma Statutory Compliance",
+                  slug: "healthcare-and-pharma-statutory-compliance",
+                },
+                {
+                  label: "Hospitality & F&B Compliance",
+                  slug: "hospitality-and-fb-compliance",
+                },
+                {
+                  label: "IT / ITES / GIC Compliance",
+                  slug: "it-ites-gic-compliance",
+                },
+                {
+                  label: "Logistics, Warehousing & Road Transport Compliance",
+                  slug: "logistics-warehousing-roadTransport-compliance",
+                },
+                {
+                  label: "Manufacturing & Factory Compliance",
+                  slug: "manufacturing-and-factory-compliance",
+                },
+                {
+                  label: "MSME Manufacturing & Trading Sector Compliance",
+                  slug: "msme-manufacturing-trading-sector-compliance",
+                },
+                {
+                  label: "Retail Sector Compliance",
+                  slug: "retail-sector-compliance",
+                },
+                { label: "SME / MSME Compliance", slug: "sme-msme-compliance" },
+                {
+                  label: "Startup Labour & HR Compliance",
+                  slug: "startup-labour-and-hr-compliance",
+                },
+                {
+                  label: "Textile & Garments Compliance",
+                  slug: "textile-and-garments-compliance",
+                },
+              ],
+            },
+          ].map(({ title, list }) => (
+            <div key={title}>
+              <div className="text-sm font-semibold text-gray-900 uppercase mb-2">
+                {title}
+              </div>
+
+              <div className="flex flex-wrap gap-2 text-[12px] text-gray-700">
+                {list.map(({ label, slug }, i) => (
+                  <span key={slug} className="flex items-center">
+                    {/* ✔ CORRECT ROUTE FORMAT */}
+                    <a
+                      href={`/${slug}`}
+                      className="hover:text-[#066] hover:underline"
+                    >
+                      {label}
                     </a>
 
                     {i !== list.length - 1 && (
