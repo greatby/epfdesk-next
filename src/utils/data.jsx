@@ -18920,3 +18920,3774 @@ export const sectionsTextile = [
     ],
   },
 ];
+export const heroDataVadodaraDist = {
+  title:
+    "Vadodara EPF & ESIC Consultant: NWC 2025 Ready Compliance for GSFC, Nandesari GIDC, and the Petrochemical Corridor | EPFDesk",
+  subTitle: "The Petrochem & Engineering Powerhouse Compliance Hub",
+  description:
+    "EPFDesk offers EPF and ESIC compliance in Vadodara (Gujarat), specializing in NWC 2025 payroll restructuring for Petrochemical and Engineering firms. Ensure 100% adherence for PSUs in the PCC Area and GIDC Nandesari. Expert PF & ESI Audits.",
+};
+export const sectionsVadodaraDist = [
+  {
+    title: "The PSUs and PCC Challenge: EPF & ESIC Mastery in Vadodara",
+    description:
+      "Vadodara's industrial landscape, characterized by the Gujarat State Fertilizers & Chemicals (GSFC) and the vast industrial estates managed by GIDC (like Nandesari and Makarpura), operates under some of the most stringent labour laws, particularly concerning hazardous industries. The New Wage Code (NWC) 2025 is set to disrupt its long-standing pay structures.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "PSU/Large Corporate Payroll",
+        content:
+          "Large engineering and PSU entities often have defined benefit plans and complex allowance structures. The 50% 'Wages' rule is an immediate threat to the validity of these structures, exposing them to massive EPFO Section 7A demands.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Chemical/Hazard Pay",
+        content: (
+          <>
+            <p>
+              Compliance in Nandesari\GIDC requires specialized knowledge of
+              which allowances (e.g., Hazardous Duty Pay) must be included in
+              the EPF and ESIC 'Wages' base, a requirement the NWC clarifies and
+              reinforces.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Vadodara",
+    // description:
+    //   "We provide specialized compliance management that transforms the risks associated with high-volume, variable-pay workforces into seamless, audit-proof operations.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "PCC Area / GSFC (PSU Belt)",
+        content:
+          "The PCC Area and GSFC PSU belt, dominated by petrochemicals, oil & gas, fertilizers, and heavy engineering units, faces high compliance exposure due to highly structured payroll systems. Many employers rely on high allowances and low basic wages, which now fail the NWC 50% rule, creating significant EPF and Gratuity liabilities. PSU and MNC entities require strategic NWC payroll restructuring to preserve competitive CTCs while establishing a legally compliant EPF wages base.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Nandesari GIDC(Chemical Cluster)",
+        content: (
+          <>
+            <p>
+              Nandesari GIDC’s chemical, dyes, pharmaceutical, and engineering
+              MSME ecosystem faces high compliance vulnerability due to
+              hazard-linked allowances. Incorrect inclusion of statutory hazard
+              or risk allowances in the ESIC contribution base exposes employers
+              to ESIC Section 45A assessments. A specialized hazardous-industry
+              audit is essential to ensure all statutory, risk, and
+              process-linked allowances are accurately included in the ESIC and
+              EPF wages base as required under the NWC framework and local
+              factory regulations.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Waghodia GIDC(Automobile/Tech)",
+        content: (
+          <>
+            <p>
+              Waghodia GIDC’s automobile, auto-ancillary, MSME, and electronics
+              industries rely heavily on migrant contract labour, creating
+              complex PF and ESI compliance challenges. High worker turnover
+              demands precise tracking of contributions and statutory records.
+              Streamlined digital systems for UAN/IP generation and automated
+              ECR monitoring are essential to ensure fast, compliant onboarding
+              and offboarding while reducing contractor-related compliance risk.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataSuratDist = {
+  title:
+    "Surat's Expert EPF & ESIC Firm: NWC 2025 Ready Compliance for Sachin GIDC, Hazira Port, and the Diamond Sector | EPFDesk",
+  subTitle: "The Textile, Diamond, and Port-Logistics EPF/ESIC Challenge",
+  description:
+    "EPFDesk offers EPF and ESIC compliance in Surat, specializing in NWC 2025 payroll for the Textile and Gems industries. Ensure 100% adherence for firms in Pandesara and Hazira. Expert PF & ESI registration, audits, and SPREE 2025 advisory.",
+};
+export const sectionsSuratDist = [
+  {
+    title: "The Diamond & Power Loom Dilemma: EPF & ESIC in Surat",
+    description:
+      "Surat faces the most complex EPF/ESIC compliance situation in Gujarat due to the prevalence of piece-rate workers(Textiles) and the historical tendency towards informal employment in the Diamond Sector. The $\mathbf{NWC\ 2025}$ directly targets the formalization of this workforce.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "The Textile/Power Loom Belt Sachin/GIDC, Pandesara",
+        content:
+          "Compliance revolves around defining the 'Wages' for workers paid on a production or piece-rate basis. The NWC demands that these variable earnings are accounted for in the EPF/ESIC contribution base.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Hazira Port & Industrial Area",
+        content: (
+          <>
+            <p>
+              Home to large-scale infrastructure, steel, and power projects, the
+              focus here is on managing massive Principal\Employer liability for
+              contractors involved in construction and port logistics.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Surat",
+    // description:
+    //   "We provide specialized compliance management that transforms the risks associated with high-volume, variable-pay workforces into seamless, audit-proof operations.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Textile/Power Looms",
+        content:
+          "The Textile and Power Loom sector across Pandesara and Sachin GIDC—covering textiles, dyes, and MSMEs in spinning and weaving—faces major compliance risks due to piece-rate wage structures. Improper inclusion of variable piece-rate earnings in the EPF and ESIC wages base can trigger substantial arrears under NWC 2025 enforcement. A specialized piece-rate payroll algorithm is essential to accurately compute statutory wages for large MSME clusters, ensuring full EPF compliance for piece-rate workers.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Gems & Jewellery(Diamond Polishing)",
+        content: (
+          <>
+            <p>
+              Surat’s Gems and Jewellery industry—spanning diamond cutting,
+              polishing, and jewellery manufacturing—relies heavily on informal
+              labour, leaving a large portion of the workforce outside mandatory
+              ESIC coverage. Under the NWC framework, these workers must now be
+              formally brought into the ESIC system. EPFDesk provides
+              specialized ESIC SPREE 2025 amnesty advisory and implementation
+              support, enabling diamond units to complete formal registrations
+              and utilize the SPREE scheme to clear historical ESIC liabilities.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Hazira Industrial Area (Port/Heavy Industry)",
+        content: (
+          <>
+            <p>
+              The Hazira Industrial Area—home to major steel, power, shipping,
+              and port logistics operations—faces high EPF and ESIC exposure due
+              to extensive dependence on contract labour. Principal Employers
+              risk significant liabilities under EPF Section 7A and ESIC Section
+              45A if contractor contributions are inaccurate or unverified. A
+              dedicated third-party compliance vetting system is essential to
+              audit all vendors operating within Hazira, ensuring that every EPF
+              and ESIC contribution is correctly calculated, deposited, and
+              fully traceable.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataBharuchDist = {
+  title:
+    "Bharuch PF & ESI Expert: NWC 2025 Ready Compliance for Ankleshwar GIDC, Dahej SIR, and the PCPIR Corridor | EPFDesk",
+  subTitle: "The Dahej PCPIR & Ankleshwar Chemical Hub",
+  description:
+    "EPFDesk offers EPF and ESIC compliance in Bharuch, specializing in NWC 2025 payroll for MNCs in the PCPIR region. Ensure 100% adherence for pharma and chemical units in Ankleshwar and Dahej Port. Expert PF & ESI liability resolution services.",
+};
+export const sectionsBharuchDist = [
+  {
+    title: "The PCPIR Protocol: Navigating EPF & ESIC in Bharuch",
+    description:
+      "Bharuch's industries are characterized by global MNC, complex hazardous waste rules, and high capital investment. Compliance mistakes here carry extremely high financial and regulatory penalties.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Ankleshwar GIDC",
+        content:
+          "One of Asia's largest chemical clusters. The NWC 2025 impacts the payment structure for the thousands of workers involved in chemical and dye manufacturing, demanding strict inclusion of all statutory pay components in the PF/ESI base.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Dahej SIR/PCPIR",
+        content: (
+          <>
+            <p>
+              As a mega-development area, it generates massive temporary
+              project-based construction labour. Managing EPF and ESIC for this
+              temporary, high-volume workforce is the central challenge.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Bharuch",
+    // description:
+    //   "We provide specialized compliance management that transforms the risks associated with high-volume, variable-pay workforces into seamless, audit-proof operations.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Ankleshwar GIDC(Chemical Cluster)",
+        content:
+          "Ankleshwar GIDC’s chemical ecosystem—spanning bulk drugs, pharmaceuticals, dyes, specialty chemicals, and major MNC units—faces significant compliance exposure under the NWC 50% wages rule. Long-standing payroll structures now risk triggering substantial PF and ESI liabilities, especially for MNCs operating at scale. A comprehensive NWC 360° compliance audit is essential to review historical payroll design, establish a legally compliant PF/ESI wages base, minimize employer cost impact, and reduce EPFO 7A risk.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Dahej SIR/PCPIR(Investment Region)",
+        content: (
+          <>
+            <p>
+              Dahej SIR and the broader PCPIR region—home to petrochemicals,
+              large infrastructure projects, port-based logistics, and
+              construction—depend heavily on temporary project labour. Managing
+              EPF and ESIC registration, UAN portability, and ECR compliance for
+              thousands of short-term workers is a major operational challenge.
+              Specialized project-based compliance management is essential for
+              PCPIR contractors to ensure smooth multi-state PF transfers,
+              accurate EPF/ESIC onboarding, and site-specific ESIC medical
+              coverage throughout project lifecycles.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Panoli GIDC(Pharma/Chemicals)",
+        content: (
+          <>
+            <p>
+              Panoli GIDC’s pharma and bulk drug MSME ecosystem faces urgent
+              ESIC compliance pressure as the upcoming NWC framework will
+              significantly increase the financial burden of non-compliance.
+              Many MSMEs still operate with partially formalized or informal
+              workforces, making ESIC SPREE 2025 a critical opportunity. A
+              targeted SPREE implementation campaign in Panoli is essential to
+              help eligible MSMEs register their workers, clear historical dues,
+              and achieve full ESIC compliance under the amnesty window before
+              the NWC’s stricter wage and contribution mandates come into force.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataRajkotDist = {
+  title:
+    "Rajkot's Top EPF & ESIC Consultant: NWC 2025 Ready Compliance for GIDC Metoda, Shapar Veraval, and the MSME Cluster.",
+  subTitle: "Rajkot – The MSME Engineering and Casting Compliance Cluster",
+  description:
+    "EPFDesk offers EPF and ESIC compliance in Rajkot, specializing in NWC 2025 payroll restructuring for engineering and casting firms in Metoda and Shapar. Expert PF & ESI registration, audits, and MSME workforce formalization services.",
+};
+export const sectionsRajkotDist = [
+  {
+    title: "MSME Wage Shock: Navigating EPF & ESIC in Rajkot's Engineering Hub",
+    description:
+      "Rajkot’s industrial strength lies in its decentralized, highly competitive $\mathbf{MSME}$ ecosystem. These units typically utilize wage structures with minimal 'Basic Pay' to manage costs—a practice directly challenged by the New Wage Code (NWC) 2025 and its 50% 'Wages' floor.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 50% Rule for MSMEs",
+        content:
+          "Rajkot MSMEs in Metoda and Shapar/Veraval, the shift to the NWC's mandatory 50% statutory wage base will dramatically increase the EPF contribution liability, necessitating immediate payroll and accounting adjustments.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC for Small Units",
+        content: (
+          <>
+            <p>
+              The ESIC mandate is increasingly enforced across the MSME belt.
+              Many small units remain unregistered. The ESIC\ SPREE\
+              2025 amnesty scheme is a vital tool for EPFDesk to formalize these
+              units without massive historical penalties.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Rajkot",
+    // description:
+    //   "We provide specialized compliance management that transforms the risks associated with high-volume, variable-pay workforces into seamless, audit-proof operations.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Metoda GIDC",
+        content:
+          "Metoda GIDC, Rajkot’s core MSME hub for auto components, machine tools, diesel engines, and casting/foundry units, faces significant EPF Section 7A exposure. The traditionally used low-basic, high-allowance payroll structures across MSMEs are now at high risk of retrospective EPFO demands under the NWC framework. Tailored NWC payroll restructuring models are essential for MSMEs to achieve statutory compliance while minimizing cost impact and protecting small businesses from financial shocks.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Shapar Veraval(Ancillary Units)",
+        content: (
+          <>
+            <p>
+              Shapar Veraval’s ancillary manufacturing ecosystem—covering
+              forging, die-casting, and automobile component units—faces major
+              ESIC compliance gaps due to a high proportion of contract and
+              daily-wage workers who lack mandatory ESIC coverage. This exposes
+              employers to ESIC Section 45A penal damages and retrospective
+              liability. A focused ESIC SPREE implementation campaign is
+              essential to help unregistered Shapar Veraval units enroll their
+              workforce under the amnesty scheme, ensuring immediate compliance
+              and protection from future penalties.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Paddhari/Lodhika",
+        content: (
+          <>
+            <p>
+              Paddhari and Lodhika’s general engineering and agricultural
+              implements units—many of which are new or rapidly
+              expanding—require fast, accurate PF and ESIC registrations along
+              with reliable monthly ECR filing to avoid early-stage penalties.
+              Expedited statutory onboarding is essential, including quick EPF
+              and ESIC code acquisition and the setup of compliant ECR filing
+              systems tailored for new and emerging GIDC units.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataJamnagarDist = {
+  title:
+    "Jamnagar PF & ESI Consultant: NWC 2025 Compliance for Brass Industry, GIDC Jamnagar, and Reliance Refinery Contractors | EPFDesk",
+  subTitle: "The Brass, Oil, and Marine Engineering Compliance Node",
+  description:
+    "EPFDesk offers EPF and ESIC compliance in Jamnagar, specializing in NWC 2025 restructuring for the Brass Industry. We provide expert management of EPF Exempted Trust compliance for large Oil & Gas contractors and GIDC units.",
+};
+export const sectionsJamnagarDist = [
+  {
+    title: "Exempted Trust & Brass Components: EPF & ESIC in Jamnagar",
+    description:
+      "The compliance landscape in Jamnagar is bifurcated: managing the large MNC/PSU ecosystems (which often operate their own EPF Exempted Trusts) and the thousands of small, specialized Brass/Component manufacturers.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Brass Industry's Piece-Rate Pay",
+        content:
+          "The local brass industry relies heavily on piece-rate and production-linked pay. The NWC 2025 mandates the inclusion of these variable earnings in the EPF and ESIC, which necessitates complex payroll adjustments.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Exempted Trust Compliance",
+        content: (
+          <>
+            <p>
+              Contractors working for major refineries (like Reliance) often
+              need to adhere to the strict EPFO rules
+              governing Exempted/Trusts (Section 17). Failure to comply risks
+              the cancellation of the trust's exemption.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Jamnagar",
+    // description:
+    //   "We provide specialized compliance management that transforms the risks associated with high-volume, variable-pay workforces into seamless, audit-proof operations.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "GIDC Jamnagar",
+        content:
+          "GIDC Jamnagar (Phases I, II, and III) — home to brass parts, components, locks manufacturing, and engineering MSMEs — faces high ESIC exposure due to under-calculation of contributions on variable and production-linked wages. Many MSMEs rely heavily on incentive-based or piece-rate pay structures, which must now be fully included in the ESIC and EPF wage base under NWC requirements. Specialized piece-rate wage structuring and payroll consultation are essential to compute accurate EPF/ESIC contributions, prevent penalties, and ensure full compliance across the brass manufacturing cluster.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Refinery/Port Contractors(Near Sikka/Vadinar)",
+        content: (
+          <>
+            <p>
+              Refinery and port contractors operating near Sikka and
+              Vadinar—covering Oil & Gas operations, refinery maintenance,
+              marine logistics, and heavy construction—must comply with the EPF
+              Exempted Trust rules enforced by the principal employer. This
+              requires accurate UAN mapping, adherence to trust-specific
+              contribution rules, and strict documentation. Specialized
+              exempted-trust vetting and reporting services are essential to
+              help contractors maintain seamless EPF compliance within the
+              principal employer’s Exempted Trust framework, avoiding penalties
+              and operational disruptions.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Dhrol/Kalavad",
+        content: (
+          <>
+            <p>
+              Dhrol and Kalavad — emerging hubs for ancillary MSMEs and
+              food-processing units — are entering mandatory ESIC enforcement
+              zones as industrial activity expands. Newly covered units must
+              quickly obtain ESIC registration, enroll employees, and ensure
+              HR/admin teams understand statutory processes. Comprehensive ESIC
+              registration and training support is essential, including code
+              acquisition, employee onboarding, and hands-on guidance for
+              claims, benefits, and compliance management.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataGandhinagarDist = {
+  title:
+    "Gandhinagar's EPF & ESIC Consultant: NWC 2025 Compliance for GIFT City, IT/ITES SEZs, and Kalol Electronics | EPFDesk",
+  subTitle:
+    "The IT, Electronics, and Government Services Compliance Hub (GIFT City)",
+  description:
+    "EPFDesk offers EPF and ESIC compliance in Gandhinagar, specializing in NWC 2025 structuring for GIFT City firms and the IT/ITES sector. Expert advisory on fixed-term employment, high-CTC payroll compliance, and statutory benefits management.",
+};
+export const sectionsGandhinagarDist = [
+  {
+    title: "GIFT City & IT SEZs: EPF & ESIC in Gandhinagar",
+    description:
+      "Gandhinagar's compliance needs are driven by the new age of corporate and financial services. The focus is on implementing the NWC/2025 'Wages' definition for high-salary structures and managing new statutory worker categories.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "High-CTC NWC Compliance",
+        content:
+          "IT and GIFT City firms use flexible CTC models. The NWC 50% rule can significantly increase the employer's EPF burden for high-salary employees if allowances were previously too high.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Fixed-Term and Gig Worker Coverage",
+        content: (
+          <>
+            <p>
+              The NWC mandates EPF/ESIC coverage for fixed-term workers, a
+              common practice in the IT/ITES sector, requiring changes to
+              contract templates and HR policies.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Gandhinagar",
+    // description:
+    //   "We provide specialized compliance management that transforms the risks associated with high-volume, variable-pay workforces into seamless, audit-proof operations.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "GIFT City & SEZs",
+        content:
+          "GIFT City and the surrounding IT/ITES SEZs — home to financial services, fintech firms, global capability centers (GCCs), and multinational technology operations — face a significant compliance challenge under the NWC 50% rule. For high-CTC employees already above the ESIC threshold, mandatory PF contributions increase sharply, requiring sensitive salary restructuring, negotiation, and communication. A high-value payroll audit is essential for GIFT City MNCs to redesign compensation structures legally and efficiently, ensuring NWC compliance without creating disproportionate financial impact on employees.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Kalol GIDC",
+        content: (
+          <>
+            <p>
+              Kalol GIDC — home to major textile units (such as Arvind Mills and
+              Sintex), chemical manufacturing, and electronics industries —
+              relies heavily on traditional wage structures that are now
+              misaligned with the NWC framework. Older and large-scale units
+              face significant EPFO exposure due to non-compliant
+              basic-to-allowance ratios, making a complete payroll overhaul
+              unavoidable. A mass payroll transition project is essential to
+              move thousands of employees in Kalol’s manufacturing ecosystem to
+              an NWC-compliant wage model before the 2025 enforcement deadline,
+              ensuring statutory protection and minimizing retrospective
+              liability.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "IT/ITES Clusters(Infocity, TCS Garima Park)",
+        content: (
+          <>
+            <p>
+              The IT/ITES clusters in Gandhinagar—covering Infocity, TCS Garima
+              Park, software development centers, IT consulting firms, and
+              BPOs—face growing compliance obligations under the NWC framework.
+              Fixed-term employees must now receive correctly calculated EPF and
+              ESIC benefits, placing liability on employers who historically
+              used flexible or project-based contracts. A dedicated fixed-term
+              employment policy advisory is essential to help IT firms draft
+              NWC-compliant contracts, ensure accurate PF/ESI coverage, and
+              guarantee statutory Gratuity entitlement for fixed-term workers.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataKutchDist = {
+  title:
+    "Kutch's Top EPF & ESIC Consultant: NWC 2025 Ready Compliance for Kandla Port, Mundra SEZ, and Gandhidham | EPFDesk",
+  subTitle: "The Port-Logistics, SEZ, and Heavy Industry Compliance Frontier",
+  description:
+    "EPFDesk offers EPF and ESIC compliance in Kutch, specializing in NWC 2025 payroll for port logistics and heavy industries. We provide urgent advisory on ESIC implementation and contract labour liability management for Deen Dayal Port Trust and Mundra SEZ.",
+};
+export const sectionsKutchDist = [
+  {
+    title: "The Port & SEZ Risk: EPF & ESIC Mastery in Kutch",
+    description:
+      "Kutch's compliance environment is defined by its scale and its vulnerability to legal challenges regarding worker welfare. The non-notification of Kutch under ESIC has been a long-standing issue, which the NWC 2025's goal of universal social security coverage seeks to resolve.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Massive Contract Liability",
+        content:
+          "The ports of Kandla and Mundra handle millions of tonnes of cargo, relying on thousands of third-party contract workers. EPF/ESIC defaults by contractors translate directly into Principal Employer liability for the port trusts and large industrial firms.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Implementation Urgency",
+        content: (
+          <>
+            <p>
+              Given the potential for Kutch to be fully notified under
+              the ESIC Act following legal action and the NWC mandate, all
+              eligible employers face an imminent need for rapid registration
+              and historical liability clearance (where applicable).
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Kutch",
+    // description:
+    //   "We provide specialized compliance management that transforms the risks associated with high-volume, variable-pay workforces into seamless, audit-proof operations.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Kandla/Gandhidham(Port/Logistics)",
+        content:
+          "Kandla and Gandhidham — major hubs for port operations, timber processing, salt industries, heavy engineering, and large-scale warehousing — face extreme Principal Employer liability under EPF Section 7A and ESIC Section 45A. The high dependence on migrant and casual labour through hundreds of contractors creates substantial exposure if even a single contractor defaults on statutory contributions. Robust logistics vendor compliance management is essential, including strict Vendor Code Verification and end-to-end ECR tracking systems to protect the Principal Employer from contractor non-compliance and retrospective statutory demands.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Mundra SEZ/Port",
+        content: (
+          <>
+            <p>
+              Mundra SEZ and the adjoining port region—home to power plants,
+              cement units, marine chemical industries, textiles, and
+              export-oriented units—faces complex payroll and compliance
+              challenges under the NWC framework. SEZ and EOU employers must
+              correctly apply the NWC 50% wages rule to specialized allowance
+              structures and fixed-term contracts common in SEZ environments.
+              Expert SEZ/EOU payroll restructuring is essential to design
+              NWC-compliant CTC models for high-value salaries, ensuring full
+              EPF compliance while maintaining competitiveness and export-sector
+              incentives.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Bhuj/Anjar",
+        content: (
+          <>
+            <p>
+              Bhuj and Anjar — hubs for MSMEs, ceramics, building materials, and
+              rural engineering — are on the verge of full ESIC enforcement as
+              coverage expands across Kutch district. Units in these regions
+              must prepare for immediate statutory onboarding once notification
+              is issued. An ESIC Registration Readiness Package is essential,
+              including pre-emptive collection and verification of all documents
+              needed for fast-track ESIC code acquisition, ensuring compliance
+              the moment Kutch is formally brought under mandatory ESIC
+              coverage.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataSurendranagarDist = {
+  title:
+    "Surendranagar EPF & ESIC Consultant: NWC 2025 Ready Compliance for Wadhwan GIDC, Thangadh Ceramics, and Textile Mills | EPFDesk",
+  subTitle: "The Ceramics, Textiles, and Salt Industry Compliance Node",
+  description:
+    "EPFDesk offers EPF and ESIC compliance in Surendranagar, specializing in NWC 2025 payroll for ceramics and textile units in Wadhwan and Dhrangadhra. Expert PF & ESI registration and full Minimum Wage compliance support.",
+};
+export const sectionsSurendranagarDist = [
+  {
+    title: "Textile & Ceramics Wage Formalization: EPF & ESIC in Surendranagar",
+    description:
+      "Surendranagar's industrial backbone is its MSME base, particularly in the Ceramics and Textiles sector. These units often operate on razor-thin margins and utilize wage models that will directly violate the NWC 2025's core mandate for a 50% statutory wage base.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Minimum Wage & EPF Alignment",
+        content:
+          "The NWC 2025's floor wage will mandate an increase in the contribution base for EPF, immediately impacting the take-home pay and employer cost in the low-wage Wadhwan GIDC.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Piece-Rate & Seasonal Labour",
+        content: (
+          <>
+            <p>
+              Calculating and reporting accurate EPF and ESIC contributions for
+              piece-rate workers (common in textiles) and seasonal salt workers
+              is a complex administrative burden that requires specialized
+              payroll systems.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Surendranagar",
+    // description:
+    //   "We provide specialized compliance management that transforms the risks associated with high-volume, variable-pay workforces into seamless, audit-proof operations.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Wadhwan GIDC(Textiles/Food Processing)",
+        content:
+          "Wadhwan GIDC — home to cotton ginning units, spinning mills, food-processing factories, and general engineering MSMEs — faces significant cost pressure under the NWC 50% rule. The mandatory increase in PF and Gratuity wage bases threatens the financial stability of marginal MSMEs in the textile sector. Cost-optimized NWC structuring is essential, enabling businesses to legally comply with NWC requirements at the minimum possible cost while protecting themselves from EPFO Section 7A demands and retrospective liabilities.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Thangadh/Dhrangadhra(Ceramics/Salt)",
+        content: (
+          <>
+            <p>
+              Thangadh and Dhrangadhra — key hubs for ceramics (sanitaryware,
+              tiles), salt production, and mining — face chronic ESIC and PF
+              under-coverage due to extremely high worker turnover and seasonal
+              employment cycles. This leads to widespread non-registration,
+              under-reporting, and the risk of significant ESIC damages and PF
+              liabilities. A bulk UAN/IP and ECR formalization drive is
+              essential to fully register the workforce, generate UAN and IP
+              numbers at scale, and implement accurate ECR filing systems
+              tailored to seasonal and rotating labour.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Limbdi/Sayla",
+        content: (
+          <>
+            <p>
+              Limbdi and Sayla — anchored by general MSMEs, agro-based
+              industries, and local trade — are seeing a surge in first-time
+              statutory compliance requirements as digital governance expands.
+              Many small businesses need initial EPF and ESIC registration along
+              with clear guidance on maintaining statutory records under the new
+              digital compliance regime. A comprehensive statutory setup service
+              is essential, covering end-to-end EPF and ESIC registration,
+              system configuration, and training on maintaining digital records
+              and filing monthly returns for first-time compliers.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataGujaratDist = {
+  title:
+    "Ahmedabad's Top EPF & ESIC Consultant: NWC 2025 Ready Compliance for GIDC Naroda, Sanand Auto Hub, and the DMIC Corridor | EPFDesk",
+  subTitle: "EPF & ESIC Mastery under the New Wage Code 2025 for Ahmedabad",
+  description:
+    "EPFDesk offers EPF and ESIC compliance in Ahmedabad, specializing in NWC 2025 payroll restructuring. Ensure 100% adherence for pharma firms in Vatva and auto OEMs in Sanand. Expert PF & ESI registration, audits, and ECR filing services.",
+};
+export const sectionsGujaratDist = [
+  {
+    title:
+      "The Gujarat Growth Model: Navigating EPF & ESIC in Ahmedabad’s Industrial Ecosystem",
+    description:
+      "Ahmedabad, the economic heart of Gujarat and a flagbearer for the state's ambitious 1 Trillion manufacturing vision, stands at the confluence of India's oldest and newest industries. This includes the traditional Textileand Chemical sectors, the booming Pharmaceuticals and Automotive clusters, and its crucial role as a node on the Delhi-Mumbai Industrial Corridor (DMIC).",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title:
+          "High-Value Manufacturing & IT Hubs Sanand Auto Hub, Gandhinagar IT",
+        content:
+          "Characterized by Original Equipment Manufacturers (OEMs), large MNCs, and high-CTC corporate roles. The NWC 50% 'Wages' rule demands immediate and proactive salary restructuring here.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Traditional & Chemical Zones (Vatva GIDC, Naroda GIDC)",
+        content: (
+          <>
+            <p>
+              Dominated by MSMEs in chemicals, textiles, and food processing.
+              These units rely heavily on contract and migrant labour,
+              increasing the Principal Employer Liability risk
+              for EPF and ESIC defaults under the new code.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title:
+      "The NWC 2025 'Wages' Redefinition: A Challenge to Gujarat's Efficiency",
+    description:
+      "The NWC 2025 provision stipulating that non-statutory allowances cannot exceed 50% of total remuneration is a direct compliance shock for Ahmedabad's employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "EPF Impact",
+        content:
+          "Many GIDC textile and engineering units use a minimal EPF contribution base. This structure is now highly exposed. Failure to comply risks retrospective EPFO demands (Section 7A, potentially running into crores for large establishments.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Impact",
+        content: (
+          <>
+            <p>
+              For the Sanand Auto Hub's contract workforce, the expanded 'Wages'
+              definition ensures broader ESIC coverage, shifting the compliance
+              and financial burden directly onto the principal company if the
+              contractor defaults.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Ahmedabad’s Industrial Hubs",
+    description:
+      "Our services are custom-designed to manage the critical compliance requirements and risks within Ahmedabad's specific industrial estates",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Sanand Industrial Estate (Auto Corridor)",
+        content:
+          "Sanand Industrial Estate — Gujarat’s core automotive corridor hosting major OEMs, ancillary suppliers, and heavy engineering units — faces substantial EPF and ESIC exposure due to its heavy dependence on contract labour. Under NWC 2025, the Principal Employer’s liability for contractor defaults becomes even stricter, creating significant compliance risks if PF and ESIC contributions are not accurately deposited. Rigorous contractor and vendor compliance audits are essential, including verification of PF sub-codes, ESIC adherence, and statutory coverage for all fixed-term and third-party employees.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Vatva GIDC & Naroda GIDC",
+        content: (
+          <>
+            <p>
+              Vatva GIDC and Naroda GIDC — major hubs for chemicals,
+              pharmaceuticals, dyes, textiles, and MSMEs — face significant
+              compliance exposure under the NWC 50% wages rule. Many units
+              continue to operate with low-basic, high-allowance payroll
+              structures that fail the statutory threshold, increasing the risk
+              of large EPF demands and widespread ESIC under-contribution. A
+              statutory payroll overhaul is essential to legally redefine
+              ‘Wages,’ ensure accurate ECR filing, and protect units from
+              backdated EPFO and ESIC liabilities.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Sachana / Kadi(Logistics & Warehousing)",
+        content: (
+          <>
+            <p>
+              Sachana and Kadi — growing hubs for e-commerce, logistics,
+              warehousing, and FMCG distribution — face significant compliance
+              challenges during rapid expansion. New large-scale warehouses
+              often encounter delays in securing initial PF and ESIC
+              registrations, while high-volume onboarding demands fast,
+              error-free statutory processing. Expedited registration and bulk
+              UAN/IP generation services are essential to quickly obtain EPF and
+              ESIC establishment codes and create accurate UAN (PF) and new IP
+              (ESI) numbers for large batches of newly hired workers.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "DMIC Influence Zone",
+        content: (
+          <>
+            <p>
+              The DMIC Influence Zone, anchored by Dholera SIR, is driven by
+              mega projects, smart-city development, and large-scale
+              infrastructure works. These projects rely heavily on short-term
+              and rotating labour, creating complex EPF and ESIC compliance
+              challenges under strict DMIC timelines. Project-specific EPF
+              compliance solutions are essential, including temporary code
+              acquisition, site-specific ECR management, and specialized
+              advisory for large construction and infrastructure contractors to
+              ensure seamless statutory adherence throughout the project
+              lifecycle.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "EPFDesk Comprehensive EPF & ESIC Employer Services in Ahmedabad",
+    // description:
+    //   "Our services are custom-designed to manage the critical compliance requirements and risks within Ahmedabad's specific industrial estates",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Statutory Registration & Onboarding (PF & ESI)",
+        content:
+          "A comprehensive statutory onboarding solution covering fast EPF and ESIC establishment registration, along with bulk UAN and IP number generation. Designed for high-turnover industries such as textiles, logistics, and warehousing, this service ensures error-free PF/ESI setup, instant employee coverage, and full compliance from day one.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Monthly Compliance & ECR Filing (PF & ESI)",
+        content: (
+          <>
+            <p>
+              A complete monthly PF and ESIC compliance service that ensures
+              accurate NWC-based contribution calculations, timely challan
+              generation, and flawless ECR filing. This prevents late-payment
+              interest, eliminates filing errors, and provides strong protection
+              against EPFO and ESIC penalties.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Audit Defense and NWC 2025 Advisory",
+        content: (
+          <>
+            <p>
+              Comprehensive audit defense and NWC 2025 compliance advisory,
+              including expert representation during EPFO (7A) and ESIC (45A)
+              audits, strategic guidance on utilizing the ESIC SPREE 2025
+              amnesty for MSMEs, and specialized advisory for logistics and
+              e-commerce companies on PF/ESI coverage for fixed-term and gig
+              workers.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "DMIC Influence Zone",
+        content: (
+          <>
+            <p>
+              The DMIC Influence Zone, anchored by Dholera SIR, is driven by
+              mega projects, smart-city development, and large-scale
+              infrastructure works. These projects rely heavily on short-term
+              and rotating labour, creating complex EPF and ESIC compliance
+              challenges under strict DMIC timelines. Project-specific EPF
+              compliance solutions are essential, including temporary code
+              acquisition, site-specific ECR management, and specialized
+              advisory for large construction and infrastructure contractors to
+              ensure seamless statutory adherence throughout the project
+              lifecycle.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const gujaratDistFAQ = [
+  {
+    question:
+      "We are a Pharma company in Vatva GIDC. Our CTC is structured with minimal Basic Pay. What is our EPF risk under NWC 2025?",
+    answer:
+      "Your risk is high. If your non-statutory allowances (such as special pay or conveyance) exceed 50% of your CTC, the excess is treated as EPF Wages. This allows the EPFO to demand retrospective contributions for up to 5 years. We immediately audit and legally restructure your payroll to ensure NWC compliance and prevent backdated liabilities.",
+  },
+  {
+    question:
+      "My textile unit in Naroda never registered for ESIC. Is the SPREE 2025 Scheme relevant for me?",
+    answer:
+      "Yes, it is critical for you. The SPREE 2025 Scheme is likely the final opportunity to register your unit and employees without facing demands for historical ESIC dues. Ignoring it now exposes you to full penalties once NWC 2025 becomes mandatory.",
+  },
+  {
+    question:
+      "Our new Sanand facility uses manpower vendors. What is our liability for their EPF?",
+    answer:
+      "As the Principal Employer, you remain ultimately responsible for the EPF and ESIC compliance of your contractors. We implement robust Vendor Compliance Management Systems to verify timely deposits and correct ECR filings by all vendors, protecting your company from statutory risk.",
+  },
+  {
+    question:
+      "Our EPF returns have been delayed. We fear a 7A inquiry. Can EPFDesk help?",
+    answer:
+      "Yes. We specialize in handling EPFO 7A inquiries, which arise due to delays or discrepancies in contributions. We prepare all required documentation, file pending ECRs, calculate correct interest, and represent you before the authorities to mitigate damages and secure a closure order.",
+  },
+];
+export const heroDataChennaiDist = {
+  title:
+    "Chennai EPF & ESIC Consultant: NWC 2025 Compliance for IT Corridor, Guindy, and Ambattur | EPFDesk",
+  subTitle: "The IT/ITES, Services, and Corporate Headquarters Compliance Hub",
+  description:
+    "EPFDesk provides EPF and ESIC compliance in Chennai, specializing in NWC 2025 payroll structuring for IT/ITES and financial services companies. We offer expert defense against EPFO 7A claims and manage high-CTC salary restructuring across OMR, Guindy, and Ambattur.",
+};
+export const sectionsChennaiDist = [
+  {
+    title: "Litigation Risk & NWC Compliance in Chennai",
+    description:
+      "The Chennai compliance landscape is dominated by two factors: the high scrutiny from the nearby EPFO Zonal Office (Royapettah) and the necessity for restructuring high-CTC salaries in the IT/ITES sector to comply with the NWC's 50% wage floor rule.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "High-Wage Restructuring",
+        content:
+          "IT/ITES, finance, and corporate services firms must legally restructure high salaries to manage the increased EPF liability and tax implications arising from the NWC's inclusion of allowances into the 'Wages' definition.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Corporate Litigation",
+        content: (
+          <>
+            <p>
+              The proximity of the EPFO Appellate Tribunal (CGIT) and the
+              Chennai High Court makes this area a hotspot for EPF Section
+              7A assessment proceedings and litigation.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Chennai",
+    description:
+      "The NWC 2025 provision stipulating that non-statutory allowances cannot exceed 50% of total remuneration is a direct compliance shock for Ahmedabad's employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "OMR/Tidel Park(IT Corridor)",
+        content:
+          "OMR and Tidel Park — Chennai’s core IT Corridor hosting IT/ITES, software development, BPO, and financial services firms — face high-cost EPF exposure under the NWC 50% Basic/DA rule. Complex IT pay structures often lead to incorrect wage classification, resulting in massive unplanned employer liabilities. C-suite–level NWC payroll optimization is essential to legally restructure high-CTC salaries, minimize financial impact, and maintain compliance without disrupting employee retention strategies.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Ambattur/Guindy",
+        content: (
+          <>
+            <p>
+              Ambattur and Guindy — major hubs for electrical and electronics
+              manufacturing, general engineering, MSME services, and auto
+              ancillary units — operate under fully implemented EPF and ESIC
+              compliance regimes. These dense industrial clusters face
+              significant risk if even minor reporting or filing errors occur,
+              leading to penalties and statutory notices. End-to-end compliance
+              outsourcing is essential, including accurate EPF/ESIC filing,
+              timely remittances, and thorough audit preparation to ensure zero
+              penalties and uninterrupted operations.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Chennai Port",
+        content: (
+          <>
+            <p>
+              Chennai Port — a major hub for shipping, logistics, warehousing,
+              and trade — faces high Principal Employer liability due to its
+              dependence on large volumes of contract and port labour.
+              Inaccurate or missed PF/ESI deposits by contractors can result in
+              substantial Section 7A demands on the Principal Employer. A
+              logistics contractor management system is essential, enabling
+              real-time tracking of EPF and ESIC deposits by all port-linked
+              agencies to ensure full statutory compliance and protect against
+              retrospective liabilities.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataKanchipuramDist = {
+  title:
+    "Kanchipuram EPF & ESIC Expert: NWC 2025 Payroll for Oragadam Automotive and Sriperumbudur SEZ Manufacturing | EPFDesk",
+  subTitle: "The Automotive, Electronic Hardware, and SEZ Compliance Hub",
+  description:
+    "EPFDesk specializes in EPF and ESIC compliance for Kanchipuram’s automotive ancillaries and electronics SEZs. We provide critical support for managing high contract-labour volumes and integrating NWC 2025 rules into SIPCOT industrial payrolls.",
+};
+export const sectionsKanchipuramDist = [
+  {
+    title: "Auto-Ancillary & SEZ Workforce Management",
+    description:
+      "Compliance in Kanchipuram is uniquely challenging due to the tiered supplier structure of the automotive sector and the special regulations governing SEZs. The NWC forces a review of the pay structure for all blue-collar workers in these global supply chains.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Tiered Supplier Liability",
+        content:
+          "Large OEMs (Original Equipment Manufacturers) must mitigate PF/ESI liability across their vast network of Tier 1, Tier 2, and Tier 3 suppliers, primarily operating on strict contract labour models in the Oragadam corridor.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "SEZ Payroll Rules",
+        content: (
+          <>
+            <p>
+              Units in SEZs (e.g., in Sriperumbudur) require expert advice on
+              how the NWC 2025 impacts employees under the SEZ Act and the NWC's
+              definition of 'Wages'.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Kanchipuram",
+    description:
+      "The NWC 2025 provision stipulating that non-statutory allowances cannot exceed 50% of total remuneration is a direct compliance shock for Ahmedabad's employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Oragadam (Automotive Hub)",
+        content:
+          "Oragadam — home to major automotive OEMs such as Hyundai and Renault-Nissan, along with a vast network of auto ancillaries and heavy engineering units — relies heavily on contract workers across its assembly and manufacturing lines. This creates significant Principal Employer liability under EPF Section 7A, especially when contractor contributions are inaccurate or unverified. An Automotive Vendor Compliance Matrix is essential, providing a structured EPF/ESIC tracking and scoring system for all vendors and manpower contractors operating in the Oragadam cluster.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Sriperumbudur",
+        content: (
+          <>
+            <p>
+              Sriperumbudur — a major SEZ and electronics manufacturing hub with
+              export units, footwear clusters, and large multinational plants —
+              faces significant NWC 2025 implications, even for high-wage and
+              expatriate employees. The new wage definition impacts complex SEZ
+              allowance structures and high-CTC payrolls, requiring full
+              statutory alignment. A focused SEZ NWC restructuring and audit
+              service is essential to ensure that all allowances, contracts, and
+              payroll frameworks comply with NWC requirements and associated tax
+              and statutory mandates.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Kanchipuram Town",
+        content: (
+          <>
+            <p>
+              Kanchipuram Town — known for silk weaving, textiles, and MSME
+              trade — faces a major compliance challenge as large segments of
+              its workforce operate in unorganized, piece-rate, or home-based
+              settings. Formalizing these workers under the EPF and ESIC
+              framework is now essential under NWC 2025. Specialized advisory is
+              required to legally convert piece-rate earnings into an
+              NWC-compliant wage base, enabling accurate statutory EPF/ESIC
+              contributions and ensuring full social-security coverage for
+              traditional textile workers.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataTiruvallurDist = {
+  title:
+    "Tiruvallur EPF & ESIC Compliance: NWC 2025 Ready for Gummidipoondi SIPCOT, Ennore Port & Heavy Engineering | EPFDesk",
+  subTitle: "The Heavy Industry, Port, and Logistics Compliance Corridor",
+  description:
+    "EPFDesk is the trusted partner for EPF and ESIC compliance in Tiruvallur’s heavy industry and logistics sectors. We specialize in NWC 2025 implementation for Gummidipoondi SIPCOT and ESIC compliance management for the Port Trust and ancillary industrial units.",
+};
+export const sectionsTiruvallurDist = [
+  {
+    title: "Heavy Industry & Logistics Risk Mitigation",
+    description:
+      "The key challenge in Tiruvallur is the combination of highly regulated EPF compliance for large public/private sector heavy industries and the complex ESIC compliance requirements in the densely populated industrial estates.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Massive Construction/Project Labour",
+        content:
+          "Large construction and infrastructure projects, particularly around the ports and power plants, generate enormous EPF/ESIC liabilities for the Contract Labour engaged.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Universal Coverage",
+        content: (
+          <>
+            <p>
+              Given the industrial density (Vichoor, Kakkalur, Ambattur
+              Industrial Estates), the district requires aggressive and
+              meticulous ESIC compliance to avoid heavy penalties and damages
+              Section 45A/45B.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Tiruvallur",
+    description:
+      "The NWC 2025 provision stipulating that non-statutory allowances cannot exceed 50% of total remuneration is a direct compliance shock for Ahmedabad's employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Gummidipoondi (SIPCOT)",
+        content:
+          "Gummidipoondi SIPCOT — a major hub for general engineering, MSME manufacturing, plastics, and packaging — faces significant ESIC enforcement pressure due to historically low compliance levels. With NWC 2025 accelerating statutory scrutiny, MSME units in this region are at high risk of retrospective ESIC damages and show-cause notices. Expert ESIC penalty mitigation and appeal support is essential, including legal guidance, documentation review, and representation to contest unjust damage demands and ensure compliant operations going forward.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Ennore/Kattupalli Port",
+        content: (
+          <>
+            <p>
+              Ennore and Kattupalli Port — critical hubs for port operations,
+              power generation, petrochemicals, and logistics — rely heavily on
+              contract labour for high-risk activities. This creates substantial
+              statutory exposure for Principal Employers under both the Contract
+              Labour (Regulation & Abolition) Act and EPF/ESIC laws. An
+              integrated CLRA and PF/ESI compliance framework is essential to
+              ensure that all contractors meet statutory obligations,
+              contributions are accurately deposited, and Principal Employers
+              are fully protected from liabilities and enforcement actions.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Ambattur IE/Avadi",
+        content: (
+          <>
+            <p>
+              Ambattur Industrial Estate and Avadi — major centers for heavy
+              engineering, defence manufacturing, railways, and auto ancillary
+              units — face significant statutory wage compliance requirements
+              under NWC 2025. These organized sectors must ensure that all
+              allowances are correctly included in the NWC-compliant wage base,
+              especially where complex CTC structures exist. A proactive NWC
+              allowance audit is essential to review and restructure Basic/DA
+              components, ensuring full compliance before NWC implementation and
+              preventing future EPF/ESIC liabilities.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataTiruppurDist = {
+  title:
+    "Tiruppur EPF & ESIC Compliance: NWC 2025 Payroll for Knitwear, Garment Exporters & Piece-Rate Workers | EPFDesk",
+  subTitle: "The Knitwear, Garment Export, and High-Volume Contract Labour Hub",
+  description:
+    "EPFDesk provides specialized EPF and ESIC compliance for Tiruppur’s knitwear and garment export units, including TEA members. We focus on NWC 2025 transition, piece-rate wage restructuring, and statutory onboarding for migrant labour.",
+};
+export const sectionsTiruppurDist = [
+  {
+    title: "NWC & Piece-Rate Wage Crisis",
+    description:
+      "The most significant risk in Tiruppur is the potential for retrospective EPFO assessments Section 7A if the prevailing piece-rate compensation structure is not immediately reformed to comply with the NWC 50% basic wage rule.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Migrant Worker Documentation",
+        content:
+          "Ensuring that the vast numbers of seasonal and contract migrant workers, particularly from northern and eastern states, have correct UAN, Aadhaar seeding, and documented employment terms for EPF/ESIC.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Piece-Rate System Reform",
+        content: (
+          <>
+            <p>
+              Most workers are paid based on production. The NWC requires a
+              minimum Basic Wage component, making the current system
+              non-compliant and liable for massive damages.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Tiruppur",
+    description:
+      "The NWC 2025 provision stipulating that non-statutory allowances cannot exceed 50% of total remuneration is a direct compliance shock for Ahmedabad's employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "SIPCOT & Major Mills",
+        content:
+          "SIPCOT and major mills in Tiruppur — including large garment exporters and dyeing/processing units — face stringent social compliance requirements from international buyers in the EU and US. These audits, including SA8000 and other global standards, rely heavily on accurate and fully compliant EPF and ESIC records. An integrated social compliance audit is essential, aligning EPF/ESIC documentation with international social accountability expectations and ensuring export units remain eligible for major global orders.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "All MSME Units (Tiruppur Town, Palladam)",
+        content: (
+          <>
+            <p>
+              MSME units across Tiruppur Town and Palladam — including small
+              knitwear, hosiery, and finishing units — face significant NWC 2025
+              and EPF Section 7A exposure. Most operate with legacy low-basic
+              pay structures that no longer meet statutory wage definitions,
+              making them prime targets for EPFO assessments. A mass NWC payroll
+              restructuring service is essential to rapidly redesign MSME
+              payrolls so they legally meet the 50% Basic Wage requirement and
+              avoid retrospective liabilities.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labour Sites",
+        content: (
+          <>
+            <p>
+              Contract labour sites across Tiruppur—spanning construction,
+              logistics, and export packaging—face persistent EPF compliance
+              risks due to high labour turnover and frequent contractor
+              defaults. These gaps directly expose the Principal Employer to
+              statutory liability. A migrant labour UAN onboarding system is
+              essential, enabling fast-track UAN creation and KYC completion for
+              transient workers, minimizing non-compliant employment days and
+              ensuring full EPF coverage from the first day of work.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataCoimbatoreDist = {
+  title:
+    "Coimbatore EPF & ESIC Solutions: NWC 2025 for Spinning Mills, Pump Manufacturing & IT SEZs | EPFDesk",
+  subTitle: "The Engineering, Textile Spinning, and IT/Education Hub",
+  description:
+    "EPFDesk offers expert EPF and ESIC compliance in Coimbatore for SIMA spinning mills, CODISSIA engineering firms, and IT SEZ units. We specialize in Section 7A defense, wage restructuring under NWC 2025, and accurate Bonus/Gratuity calculations under the new labour codes.",
+};
+export const sectionsCoimbatoreDist = [
+  {
+    title: "Spinning Mills & Engineering MSME Liability",
+    description:
+      "The spinning sector is characterized by massive factory-based employment and historic labor practices that are incompatible with the NWC. The engineering sector demands precise compliance due to its organized nature.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Spinning Mill Workforce Compliance",
+        content:
+          "The mill sector requires a complete overhaul of its compensation structure, including the management of benefits like subsidized housing and food, to align with the NWC definition of 'Wages'.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Section 7A Defence",
+        content: (
+          <>
+            <p>
+              As a major EPFO jurisdiction, the organized engineering and
+              textile sectors require robust documentation and legal defense
+              against inevitable EPFO assessment and penalty proceedings.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Coimbatore",
+    // description:
+    //   "The NWC 2025 provision stipulating that non-statutory allowances cannot exceed 50% of total remuneration is a direct compliance shock for Ahmedabad's employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "SIPCOT/Sulur/Karumathampatti",
+        content:
+          "SIPCOT–Sulur–Karumathampatti — home to SIMA spinning mills, foundries, and engineering units — faces a major compliance challenge under NWC 2025 due to the requirement to include non-monetary benefits such as housing and food in the EPF ‘Wages’ definition. Many mills still provide significant in-kind benefits, which must now be properly valued and reported. An NWC Benefit Monetization Advisory is essential to help units accurately assess, record, and, where required, convert these allowances into compliant wage components to ensure full EPF alignment.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Gandhipuram/Peelamedu",
+        content: (
+          <>
+            <p>
+              Gandhipuram and Peelamedu — key hubs for IT/ITES companies,
+              educational institutions, and CODISSIA-affiliated pump and motor
+              manufacturers — face increasing compliance pressure under NWC
+              2025. High-CTC service-sector employees require correct EPF/ESIC
+              coverage and precise salary structuring to avoid unintended
+              statutory liabilities. A focused IT/ITES wage-component review is
+              essential to legally classify and cap allowances outside the NWC
+              wage limit, ensuring full compliance while controlling employer
+              cost impact.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Overall District",
+        content: (
+          <>
+            <p>
+              Coimbatore’s district-wide MSME engineering and foundry clusters
+              are now subject to mandatory ESIC coverage, creating an urgent
+              need for accurate registration and correct contribution filing.
+              Many small units are onboarding ESIC for the first time and
+              require clear guidance to avoid penalties. A dedicated ESIC setup
+              and training service ensures rapid ESIC code acquisition, complete
+              employee registration, and hands-on training for MSME payroll
+              teams to maintain ongoing statutory compliance.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataErodeDist = {
+  title:
+    "Erode EPF & ESIC Consultant: NWC 2025 for Powerloom, Processing Mills & Handloom Cooperatives | EPFDesk",
+  subTitle: "The Powerloom, Handloom, and Textile Processing Hub",
+  description:
+    "EPFDesk provides EPF and ESIC compliance services for Erode’s powerloom weavers and textile processing units. We specialize in NWC 2025 wage formalization for weavers and statutory due diligence for cooperative societies.",
+};
+export const sectionsErodeDist = [
+  {
+    title: "Fragmented Industry & Wage Formalization",
+    description:
+      "Erode's challenge lies in the sheer number of small powerloom sheds and dyeing units, many of which evade EPF/ESIC coverage by artificially keeping employee counts below the statutory threshold. The NWC aims to close these loopholes.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Powerloom Unit Formalization",
+        content:
+          "The high proportion of small powerloom operations needs to be brought into the statutory fold, requiring education and simplified compliance pathways.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Dyeing/Processing Unit Pollution & Labour Risk",
+        content: (
+          <>
+            <p>
+              These high-risk units face increased scrutiny from government
+              agencies, making impeccable EPF/ESIC compliance a necessity for
+              business continuity.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Erode",
+    // description:
+    //   "The NWC 2025 provision stipulating that non-statutory allowances cannot exceed 50% of total remuneration is a direct compliance shock for Ahmedabad's employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Bhavani/Pallipalayam",
+        content:
+          "Bhavani and Pallipalayam — major hubs for powerlooms, fabric weaving, and dyeing mills — face a unique EPF compliance risk because the EPFO frequently aggregates multiple small units under the same ownership for statutory applicability. This can trigger large retrospective PF demands if the units are treated as a single establishment. An EPF Applicability Review is essential to determine whether small units can be legally recognized as separate entities, protecting owners from aggregation-based liabilities.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Erode Town/Perundurai",
+        content: (
+          <>
+            <p>
+              Erode Town and Perundurai — key centers for textile processing and
+              turmeric/agro-processing — rely heavily on seasonal labour, making
+              statutory compliance complex. Frequent short-term employment
+              requires precise management of EPF and ESIC contributions to avoid
+              errors and unintended liabilities. A dedicated seasonal ECR
+              management system is essential to automatically calculate
+              contributions, file accurate monthly returns, and ensure that EPF
+              liability remains minimal for highly seasonal workforces.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Handloom Cooperatives",
+        content: (
+          <>
+            <p>
+              Handloom cooperatives — comprising member-weavers and
+              administrative staff — face unique statutory challenges in
+              determining who falls under mandatory EPF coverage. Correctly
+              distinguishing employee wages from member-based payments is
+              essential to avoid misclassification and compliance disputes. A
+              dedicated cooperative statutory advisory helps cooperatives
+              classify workers accurately, apply EPF obligations where required,
+              and maintain clean statutory records that withstand departmental
+              scrutiny.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataMaduraiDist = {
+  title: "Madurai Labour Compliance Analysis",
+  subTitle: "Risk in Granite, Textiles, and MSME EPF/ESIC Adherence",
+  description:
+    "Navigate Madurai's complex labour landscape. Critical compliance factors for the Granite, Textile, and MSME sectors, plus hyper-local strategies for EPF, ESIC, and New Wage Code (NWC 2025) preparedness.",
+};
+export const sectionsMaduraiDist = [
+  {
+    title: "Critical Compliance Factors",
+    // description:
+    //   "Erode's challenge lies in the sheer number of small powerloom sheds and dyeing units, many of which evade EPF/ESIC coverage by artificially keeping employee counts below the statutory threshold. The NWC aims to close these loopholes.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Granite/Quarrying Sector Risk",
+        content:
+          "This sector faces high regulatory scrutiny regarding safety standards, minimum wage adherence, and child labour prevention. The primary risk is often unaccounted-for contract labour, leading to major liabilities under the Contract Labour Act and failure to provide mandatory EPF/ESIC benefits.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Informal Textile/MSME Risk",
+        content: (
+          <>
+            <p>
+              While less concentrated than in the Coimbatore-Tiruppur region,
+              Madurai's smaller textile units and printing presses often operate
+              on thin margins. The key compliance challenge is the threshold
+              breach—MSMEs crossing the 20-employee EPF/10-employee ESIC limits
+              without formal registration, often under-reporting headcount.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 2025 Impact",
+        content: (
+          <>
+            <p>
+              The mandatory 50% wages in CTC rule will drastically impact the
+              Granite and MSME sectors, where low basic pay and high
+              allowance/informal cash components are common. Reclassification of
+              wages will increase EPF liability and necessitate a complete
+              overhaul of current payroll structures.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-local EPF & ESIC Strategy: Madurai",
+    // description:
+    //   "The NWC 2025 provision stipulating that non-statutory allowances cannot exceed 50% of total remuneration is a direct compliance shock for Ahmedabad's employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labour Management (Granite)",
+        content:
+          "The granite industry in Madurai relies heavily on unorganised, migratory labour, creating significant EPF and ESIC liability for the Principal Employer. Ensuring statutory compliance across all contractors is critical. Mandatory contractor vetting is essential—engaging only those registered under the Contract Labour Act and EPF/ESIC, and requiring monthly proof of statutory filings before any invoice is approved or paid. This safeguards the Principal Employer from backdated liabilities and Section 7A/45A actions.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "MSME/Textile Sector Headcount",
+        content: (
+          <>
+            <p>
+              MSME and textile units in Madurai often keep their workforce
+              numbers just below statutory EPF/ESIC thresholds, exposing
+              themselves to compliance risk during inspections or
+              worker-triggered inquiries. Proactive voluntary registration is
+              the safest strategy — enabling units to adopt EPF/ESIC even before
+              crossing mandatory limits. ESIC’s e-Pehchan Card can also be used
+              as a recruitment and retention incentive, strengthening employee
+              benefits while ensuring full statutory readiness under NWC 2025.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 2025 Implementation",
+        content: (
+          <>
+            <p>
+              Many informal and service-sector establishments in Madurai
+              maintain artificially low Basic Pay to reduce statutory
+              contributions, creating major compliance risk under NWC 2025. A
+              staged payroll restructuring approach is essential—implemented in
+              three phases—gradually raising Basic Pay toward the mandatory 50%
+              threshold. Clear communication with employees about the long-term
+              benefits of higher retirement savings through EPF helps manage
+              resistance caused by temporary reductions in take-home pay.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataTrichyDist = {
+  title: "Trichy Labour Compliance Analysis",
+  subTitle: "BHEL Contract Labour, Fabrication, and Gem Industry EPF/ESIC Risk",
+  description:
+    "Essential compliance guide for Trichy's heavy engineering and fabrication hub. Focus on Contract Labour Act 1970 adherence, principal employer risk, and implementing the New Wage Code 2025 in the ancillary units.",
+};
+export const sectionsTrichyDist = [
+  {
+    title: "Critical Compliance Factors",
+    // description:
+    //   "Erode's challenge lies in the sheer number of small powerloom sheds and dyeing units, many of which evade EPF/ESIC coverage by artificially keeping employee counts below the statutory threshold. The NWC aims to close these loopholes.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labour Scrutiny (BHEL Ecosystem)",
+        content:
+          "Due to the presence of Bharat Heavy Electricals Limited (BHEL) and other large PSUs, the entire ancillary and fabrication ecosystem is under intense scrutiny regarding the Contract Labour Act, 1970. The risk of principal employer liability for unpaid EPF/ESIC/Wages is extremely high if contractors default.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Fabrication Sector Safety & ESIC",
+        content: (
+          <>
+            <p>
+              High-risk working environment necessitates strict adherence
+              to Factories Act safety protocols. ESIC compliance is vital not
+              just for legal requirement but for effective risk
+              mitigation against workplace accidents. Failure to ensure ESIC
+              coverage is a severe violation in this sector.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Gem/Informal Sector Compliance",
+        content: (
+          <>
+            <p>
+              The unorganized gem and agro-processing sectors are notorious for
+              paying low, often daily wages. The primary compliance risk is
+              the misclassification of workers as "daily wagers" to avoid
+              EPF/ESIC registration, which can lead to large, retrospective
+              demands during an audit.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 2025 Impact",
+        content: (
+          <>
+            <p>
+              The NWC will centralize the definition of 'wages', eliminating
+              loopholes used by contractors and ancillary units to reduce
+              EPF/ESIC contribution bases. The statutory 50% basic pay will
+              directly increase the compliance cost for every contractor
+              supplying labour to BHEL and similar major players.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-local EPF & ESIC Strategy: Trichy",
+    // description:
+    //   "The NWC 2025 provision stipulating that non-statutory allowances cannot exceed 50% of total remuneration is a direct compliance shock for Ahmedabad's employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Principal Employer Liability",
+        content:
+          "Ancillary units and fabrication contractors linked to BHEL and other heavy engineering clusters in Trichy face significant Principal Employer liability for any contractor default in wages, EPF, or ESIC compliance. Even when contractors fail to deposit contributions, the liability legally shifts to the Principal Employer, resulting in large retrospective demands. A Tripartite Compliance Agreement is essential—establishing joint and several liability among the company, contractor, and worker. Additionally, holding back 2–3 months of EPF/ESIC contributions in an escrow account until verified compliance reports are submitted ensures protection against default and eliminates statutory exposure.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "High-Risk ESIC Compliance (Fabrication)",
+        content: (
+          <>
+            <p>
+              Fabrication and welding units in Trichy experience a high
+              incidence of workplace injuries, making ESIC compliance extremely
+              sensitive and closely monitored. Frequent claims increase the risk
+              of inspections and penalties if even a single temporary or
+              contract worker is unregistered or under-reported. A quarterly
+              ESIC safety audit is essential—verifying ESIC registration proof
+              for every temporary and contract employee, ensuring contributions
+              are deposited correctly, and mandating the public display of ESIC
+              dispensary and hospital contact details at all worksites to meet
+              statutory safety and social security requirements.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Gem/Agro-Processing Wages",
+        content: (
+          <>
+            <p>
+              The gem polishing and agro-processing sectors in Trichy rely
+              heavily on informal and daily-wage workers, often to avoid
+              statutory EPF/ESIC coverage. This creates significant compliance
+              risk, especially under NWC 2025 and during ESIC inspections.
+              Systematic worker categorisation is essential—any worker engaged
+              for more than 60 days in a year should be treated as a permanent
+              or fixed-term employee and immediately registered under EPF and
+              ESIC, regardless of whether they are paid daily or monthly. This
+              approach eliminates under-coverage, reduces legal exposure, and
+              ensures full statutory protection for workers.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataSalemDist = {
+  title: "Salem Labour Law Compliance",
+  subTitle:
+    "Risk Profile for Steel Plant Contractors, Powerlooms, and Sago Factories",
+  description:
+    "Comprehensive analysis of EPF, ESIC, and Wage Code risks in Salem's key industries: Steel, Powerlooms, and Sago. Ensure NWC 2025 readiness for the informal workforce.",
+};
+export const sectionsSalemDist = [
+  {
+    title: "Critical Compliance Factors",
+    // description:
+    //   "Erode's challenge lies in the sheer number of small powerloom sheds and dyeing units, many of which evade EPF/ESIC coverage by artificially keeping employee counts below the statutory threshold. The NWC aims to close these loopholes.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Contractor Risk in Steel Ancillaries",
+        content:
+          "Similar to Trichy, the Salem Steel Plant (SSP) ecosystem creates a high-risk environment for Contract Labour and Principal Employer liability. The non-core activities outsourced by SSP must have guaranteed, audited labour compliance, especially for EPF/ESIC.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Powerloom & Handloom Wage Practices",
+        content: (
+          <>
+            <p>
+              This sector is characterized by low wages, piece-rate work, and
+              often poor working conditions. The main compliance risk is the
+              failure to meet the State Minimum Wage floor and the use of
+              the piece-rate system to escape accurate EPF/ESIC calculation,
+              often in violation of the legal definition of 'wages'.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Sago & Silver Cottage Industry Compliance",
+        content: (
+          <>
+            <p>
+              The Sago processing and Silver anklet (Sankagiri) industries are
+              deeply entrenched in the unorganized and cottage industry space.
+              The challenge is establishing the employer-employee relationship
+              and enforcing statutory contributions where work is often
+              performed at home or in very small, non-factory establishments.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 2025 Impact",
+        content: (
+          <>
+            <p>
+              The NWC will specifically target the widespread practice in the
+              Powerloom sector of structuring low basic wages. The new
+              definition of 'wages' will force piece-rate wages to be calculated
+              upwards for EPF/ESIC purposes, dramatically increasing
+              contribution costs and leading to significant operational changes.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-local EPF & ESIC Strategy: Salem",
+    // description:
+    //   "The NWC 2025 provision stipulating that non-statutory allowances cannot exceed 50% of total remuneration is a direct compliance shock for Ahmedabad's employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Powerloom Wage Structure",
+        content:
+          "Powerloom units in Salem commonly use piece-rate systems and extremely low basic pay to minimise EPF and ESIC liability—an approach that becomes non-compliant under NWC 2025. To avoid Section 7A and 45A exposure, a clear and documented piece-rate EPF harmonisation formula is essential. This formula must convert actual piece-rate earnings into an equivalent Basic Wage that meets the 50% NWC threshold, ensuring that monthly EPF and ESIC contributions are calculated on a higher, fully compliant wage base.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contractor Compliance Audit (Steel)",
+        content: (
+          <>
+            <p>
+              Steel plants and ancillary units in Salem depend heavily on
+              contract labour for maintenance, material handling, and logistics,
+              making them highly vulnerable to EPF and ESIC non-compliance by
+              contractors. To prevent retrospective liabilities for the
+              Principal Employer, a Bi-Annual EPF/ESIC Health Check is
+              essential. Every labour contractor should undergo an external
+              compliance audit twice a year, with the report submitted directly
+              to the Principal Employer. Any contractor failing to meet
+              statutory requirements should face immediate contract suspension
+              or termination, ensuring a zero-tolerance compliance environment.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Sago/Cottage Industry Outreach",
+        content: (
+          <>
+            <p>
+              Salem’s sago and cottage industry sectors include hundreds of
+              small, home-based, and unregistered units that struggle to meet
+              EPF and ESIC registration requirements. Extending statutory
+              coverage to these micro-units is essential under NWC 2025 but
+              administratively difficult for individual workshops. A Cluster
+              Registration Model solves this problem by working with local
+              industrial associations—such as sago producers—to create a “Common
+              Code” or “Master Group” registration. This allows dozens of tiny
+              units to be brought under a single administrative umbrella,
+              simplifying compliance, streamlining filings, and ensuring
+              statutory coverage for an otherwise informal workforce.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataThoothukudiDist = {
+  title: "Thoothukudi EPF & ESIC Compliance",
+  subTitle:
+    "NWC 2025 for Port Labour, Chemical Units, and Salt Pan Seasonal Workers | EPFDesk",
+  description:
+    "EPFDesk specializes in Thoothukudi compliance, tackling Port Trust labour laws, seasonal workforce documentation in salt pans, and ensuring NWC 2025 readiness for chemical industry payrolls. Expert in high-risk principal employer liability.",
+};
+export const sectionsThoothukudiDist = [
+  {
+    title: "Critical Compliance Factors",
+    // description:
+    //   "Erode's challenge lies in the sheer number of small powerloom sheds and dyeing units, many of which evade EPF/ESIC coverage by artificially keeping employee counts below the statutory threshold. The NWC aims to close these loopholes.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Port & Logistics Contract Labour",
+        content:
+          "The port economy relies heavily on specialized contract workers (stevedores, handling, clearing). The major risk is the Principal Employer liability for mandatory EPF/ESIC/Gratuity if the contractors default, which is common in high-turnover logistics.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal Labour in Salt Pans",
+        content: (
+          <>
+            <p>
+              Salt production is highly seasonal and uses a transient workforce,
+              often paid on piece-rate. Compliance is extremely difficult as
+              units attempt to bypass registration by under-reporting employment
+              days. The NWC definition of wages will require formalizing their
+              pay.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Chemical/Petrochemical Safety",
+        content: (
+          <>
+            <p>
+              These units face stringent environmental and labour inspections.
+              Meticulous ESIC coverage is non-negotiable due to high
+              occupational hazard risk.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataVelloreDist = {
+  title: "Vellore EPF & ESIC Solutions",
+  subTitle:
+    "NWC 2025 for Leather, Tanning & Footwear Exports | Ambur & Ranipet Labour Compliance | EPFDesk",
+  description:
+    "EPFDesk provides specialized Vellore compliance for Leather Export units. Focused on restructuring tanning and finishing piece-rate wages to meet NWC 2025 Basic Pay norms and managing ESIC compliance in high-risk processing environments.",
+};
+export const sectionsVelloreDist = [
+  {
+    title: "Critical Compliance Factors",
+    // description:
+    //   "Erode's challenge lies in the sheer number of small powerloom sheds and dyeing units, many of which evade EPF/ESIC coverage by artificially keeping employee counts below the statutory threshold. The NWC aims to close these loopholes.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Tannery Piece-Rate Reform",
+        content:
+          "Many workers are paid by the quantity of leather processed. Similar to textiles, the NWC's 50% basic pay rule renders current low-basic pay structures non-compliant, necessitating a complete payroll overhaul to avoid massive Section 7A (EPFO) assessments.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Environmental Scrutiny",
+        content: (
+          <>
+            <p>
+              The tanning industry is under constant pressure regarding
+              pollution. Labour compliance (EPF/ESIC) is often a secondary focus
+              but its failure can lead to punitive action, particularly for
+              units already facing environment-related closures.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Coverage in Chemical Processing",
+        content: (
+          <>
+            <p>
+              Workers are exposed to chemicals in the tanning process. Ensuring
+              universal, accurate ESIC coverage is critical for both statutory
+              compliance and ethical labour practices.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataTanjavurDist = {
+  title: "Thanjavur EPF & ESIC Compliance",
+  subTitle:
+    "NWC 2025 for Rice Mills, Agro-Processing & Seasonal Labour | Delta Statutory Solutions | EPFDesk",
+  description:
+    "EPFDesk offers Thanjavur expertise for Agro-processing and Rice Milling EPF/ESIC compliance. Specialized services for seasonal worker UAN/KYC registration and transitioning informal pay systems to meet NWC 2025 formal wage mandates.",
+};
+export const sectionsThanjavurDist = [
+  {
+    title: "Critical Compliance Factors",
+    // description:
+    //   "Erode's challenge lies in the sheer number of small powerloom sheds and dyeing units, many of which evade EPF/ESIC coverage by artificially keeping employee counts below the statutory threshold. The NWC aims to close these loopholes.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal/Contractual Workforce",
+        content:
+          "Operations are highly dependent on harvesting and processing cycles, leading to large, fluctuating workforces. The key risk is failing to provide statutory benefits (EPF/ESIC) to workers who are only employed for a few months a year, but still qualify for coverage.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Rural Unit Applicability",
+        content: (
+          <>
+            <p>
+              Many rice mills and small units operate in rural areas, often
+              leveraging the ambiguity of statutory thresholds (10 or 20
+              employees). EPFO audits often retrospectively apply coverage to
+              aggregated units under common ownership.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Wages and Minimum Wage",
+        content: (
+          <>
+            <p>
+              Compliance often defaults to the Minimum Wages Act, but
+              the NWC demands a clear segregation and contribution on a much
+              higher basic wage, requiring reform even for lower-skilled
+              agricultural processing labour.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataCuddaloreDist = {
+  title: "Cuddalore EPF & ESIC Compliance",
+  subTitle:
+    "NWC 2025 for SIPCOT Chemical, Pharma & Heavy Industry | Principal Employer Liability | EPFDesk",
+  description:
+    "EPFDesk provides specialized compliance for Cuddalore SIPCOT units (Chemical, Pharma, Fertilizer). Focused on reducing Principal Employer risk for contract labour and ensuring NWC 2025 payroll conformity for highly regulated sectors.",
+};
+export const sectionsCuddaloreDist = [
+  {
+    title: "Critical Compliance Factors",
+    // description:
+    //   "Erode's challenge lies in the sheer number of small powerloom sheds and dyeing units, many of which evade EPF/ESIC coverage by artificially keeping employee counts below the statutory threshold. The NWC aims to close these loopholes.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Principal Employer Risk (Contract Labour): ",
+        content:
+          "Large plants rely heavily on contract labour for maintenance, security, and cleaning. The principal employer's liability for Contractor EPF/ESIC defaults is the single largest financial risk, especially in an organized industrial park environment.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "High-Risk Industrial ESIC",
+        content: (
+          <>
+            <p>
+              Due to the hazardous nature of chemical manufacturing,
+              perfect ESIC coverage and timely filing are paramount. Any lapse
+              in ESIC can lead to severe regulatory and legal action following
+              an industrial accident.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Documentation & Audit",
+        content: (
+          <>
+            <p>
+              Units in SIPCOT are often subsidiaries of national or global
+              corporations, demanding a zero-tolerance policy for EPF/ESIC
+              non-compliance to meet internal audit and Corporate Social
+              Responsibility (CSR) standards.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataKancheepuramDist = {
+  title: "The Auto-Ancillary, Electronics, and Specialized Silk Hub",
+  // subTitle: "NWC 2025 for SIPCOT Chemical, Pharma & Heavy Industry | Principal Employer Liability | EPFDesk",
+  description:
+    "Kancheepuram, particularly the areas like Oragadam and Sriperumbudur, is critical as it forms the southern backbone of the Chennai-Automotive corridor. ",
+};
+export const sectionsKancheepuramDist = [
+  {
+    title: "Critical Compliance Factors",
+    // description:
+    //   "Erode's challenge lies in the sheer number of small powerloom sheds and dyeing units, many of which evade EPF/ESIC coverage by artificially keeping employee counts below the statutory threshold. The NWC aims to close these loopholes.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labour Concentration",
+        content:
+          "This area has an extremely high reliance on contract labour for auto-component and electronics assembly, and logistics within large industrial parks. The risk of Principal Employer Liability for EPF/ESIC non-compliance by contractors is the single greatest compliance exposure.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Wage Structure Complexity (NWC)",
+        content: (
+          <>
+            <p>
+              Many ancillary units use complex, multi-layered Cost-to-Company
+              (CTC) structures to minimize statutory costs. The New Wage Code
+              (NWC) 2025 demanding 50% basic pay will force a fundamental
+              re-engineering of the payroll for the entire supply chain,
+              directly impacting EPF and ESIC contribution bases.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Silk Handloom Sector",
+        content: (
+          <>
+            <p>
+              While a small component, the traditional silk handloom sector
+              still exists, operating largely informally. Any attempt to
+              formalize the employment of power-loom/handloom workers can
+              trigger complex compliance obligations under the Factories
+              Act and Minimum Wages Act, requiring expert segregation of
+              piece-rate wages.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-local EPF & ESIC Strategy: Kancheepuram",
+    // description:
+    //   "Erode's challenge lies in the sheer number of small powerloom sheds and dyeing units, many of which evade EPF/ESIC coverage by artificially keeping employee counts below the statutory threshold. The NWC aims to close these loopholes.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Principal Employer Liability",
+        content:
+          "Kancheepuram’s automotive and electronics manufacturing ecosystem relies on massive contract labour pools serving OEMs and Tier-1 suppliers. This creates high Principal Employer liability if contractors fail to deposit EPF or ESIC contributions. An Integrated Compliance Checkpoint is essential: contractors’ monthly ECR and ESIC remittances must be cross-verified and approved by the Principal Employer’s HR/Finance team before any contractor invoice is processed. This system prevents backdated liabilities, ensures statutory transparency, and protects OEMs and ancillary units from large-scale compliance exposure.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC Payroll Restructuring",
+        content: (
+          <>
+            <p>
+              Ancillary units in Kancheepuram’s automotive and electronics
+              clusters often maintain high allowance components and very low
+              Basic Pay to suppress EPF/ESIC liability—an approach that becomes
+              fully non-compliant under NWC 2025. Proactive NWC Modeling is
+              essential. Employers should immediately simulate the financial
+              impact of the 50% Basic Wage rule across all wage tiers and
+              contractor categories. Beginning 2025, every new contractor
+              agreement should include a mandatory “Basic Pay Enhancement”
+              clause to gradually align wages with NWC requirements, ensuring a
+              smooth and legally compliant transition without sudden cost
+              shocks.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataKarurDist = {
+  title: "The Home Textile, Export, and Paper Manufacturing Hub",
+  // subTitle: "NWC 2025 for SIPCOT Chemical, Pharma & Heavy Industry | Principal Employer Liability | EPFDesk",
+  description:
+    "Karur is globally famous as the primary cluster for Home Textiles (bed linen, curtains, etc.) and is also a significant hub for Paper manufacturing and Bus Body Building. The EPF compliance challenges mirror the textile industry's export pressures. ",
+};
+export const sectionsKarurDist = [
+  {
+    title: "Critical Compliance Factors",
+    // description:
+    //   "Erode's challenge lies in the sheer number of small powerloom sheds and dyeing units, many of which evade EPF/ESIC coverage by artificially keeping employee counts below the statutory threshold. The NWC aims to close these loopholes.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Export-Driven Wage Structure",
+        content:
+          "The home textile industry is highly price-sensitive and export-driven. Like Tiruppur, many units use low basic wages coupled with high allowances/HRA to suppress EPF/ESIC liability. This makes the entire sector highly vulnerable to the NWC 2025's 50% basic pay rule.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Subcontracting & Job Work Risk",
+        content: (
+          <>
+            <p>
+              The entire textile value chain (weaving, dyeing, stitching,
+              finishing) operates on extensive subcontracting (job work).
+              Principal employers must be exceptionally diligent about the EPF
+              compliance of their numerous small and micro-subcontractors to
+              mitigate Principal Employer Liability.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Formalizing Small Units (Paper/Bus Body)",
+        content: (
+          <>
+            <p>
+              The paper and bus body industries involve numerous small
+              fabrication/assembly units that often attempt to remain below the
+              20-employee threshold for EPF
+              applicability. Aggregating/clubbing multiple small units under
+              common ownership remains a key audit risk.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataVirudhunagarDist = {
+  title: "The Fireworks, Textile, and Emerging Mega Textile Park Hub",
+  // subTitle: "NWC 2025 for SIPCOT Chemical, Pharma & Heavy Industry | Principal Employer Liability | EPFDesk",
+  description:
+    "Virudhunagar is historically known for its Fireworks and Matchbox industries but is emerging as a major industrial area due to the new PM MITRA Mega Textile Park (E. Kumaralingapuram). Its profile blends traditional high-risk industries with future mega-scale textile manufacturing.",
+};
+export const sectionsVirudhunagarDist = [
+  {
+    title: "Critical Compliance Factors",
+    // description:
+    //   "Erode's challenge lies in the sheer number of small powerloom sheds and dyeing units, many of which evade EPF/ESIC coverage by artificially keeping employee counts below the statutory threshold. The NWC aims to close these loopholes.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "High-Risk Industry ESIC",
+        content:
+          "The fireworks sector has historically faced intense scrutiny regarding safety and child labour. While compliance has improved, ensuring universal and correct ESIC coverage is critical for all workers due to the inherent occupational hazards.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PM MITRA Park Wage Standards",
+        content: (
+          <>
+            <p>
+              The new Mega Textile Park will attract large, national, and
+              international investors. These large-scale units will be held to
+              a higher standard of statutory compliance from day one.
+              Non-compliant local practices (like low basic pay) will not be
+              acceptable in the new park's ecosystem.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal Matchbox Labour",
+        content: (
+          <>
+            <p>
+              Similar to the salt pans of Thoothukudi, the matchbox industry
+              employs a large number of rural and seasonal workers, often paid
+              in cash or piece-rate. Bringing this entire workforce into the
+              formal EPF/ESIC UAN system is a massive, immediate administrative
+              challenge for the district.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataHyderabadDist = {
+  title:
+    "Hyderabad's Top EPF & ESIC Consultant: NWC 2025 Ready Compliance for HITEC City, Financial District & Core Services | EPFDesk",
+  // subTitle: "NWC 2025 for SIPCOT Chemical, Pharma & Heavy Industry | Principal Employer Liability | EPFDesk",
+  description:
+    "EPFDesk offers EPF and ESIC compliance in Hyderabad, specializing in NWC 2025 payroll restructuring. Ensure 100% adherence for IT/ITeS firms in Gachibowli and Corporate Offices. Expert PF and ESI Registration, Audits, and ECR Filing.",
+};
+
+export const sectionsHyderabadDist = [
+  {
+    title:
+      "The Cyberabad Growth Model: Navigating EPF & ESIC in Hyderabad’s Service Ecosystem",
+    description:
+      "Hyderabad, the capital of Telangana, is globally recognized as Cyberabad, a leading hub for Information Technology (IT), ITeS, Financial Services, and Corporate R&D. This ecosystem is defined by high-CTC (Cost to Company) salary structures and an extensive reliance on outsourced contract labour for non-core functions.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title:
+          "IT & Financial Services Hubs HITEC City, Gachibowli, Financial District",
+        content:
+          "IT and Financial Services hubs such as HITEC City, Gachibowli, and the Financial District face significant compliance pressure under the NWC 2025 norms. These areas are dominated by MNCs, tech companies, and high-wage employees, where payroll structures traditionally rely on a low Basic Pay and high allowances. The new 50% Wages rule disrupts this model, requiring restructuring to ensure statutory compliance without inflating employer costs or violating PF and ESIC obligations.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title:
+          "Core Services & Commercial Centers Secunderabad, Begumpet, Corporate Offices",
+        content: (
+          <>
+            <p>
+              Core commercial hubs such as Secunderabad, Begumpet, and major
+              corporate office zones host large BPOs, shared service centers,
+              and high-volume commercial operations. These units depend
+              extensively on outsourced security, facility management, and
+              housekeeping staff. Under NWC 2025, the compliance burden
+              increases sharply because any lapse by third-party vendors
+              directly impacts the Principal Employer, exposing companies to
+              significant EPF and ESIC liability risks.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title:
+      "The NWC 2025 'Wages' Redefinition: The IT Sector's Biggest Challenge",
+    description:
+      "The NWC 2025 mandate stipulating that non-statutory allowances cannot exceed 50% of total remuneration creates a direct compliance shock for Hyderabad’s service sector",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "EPF Impact",
+        content:
+          "Many IT/ITeS companies have Basic Pay less than 30% of CTC. This structure is now non-compliant. Failure to restructure risks massive retrospective EPFO demands (Section 7A for up to 5 years, potentially running into hundreds of crores due to the high average CTC base.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Impact",
+        content: (
+          <>
+            <p>
+              The expanded 'Wages' definition ensures broader ESIC coverage for
+              the vast contingent of contract staff. The financial and
+              compliance burden for a contractor's default (e.g., failure to
+              cover staff or remit contributions) shifts directly onto
+              the Principal Employer.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Hyderabad’s Commercial Hubs",
+    // description:
+    //   "The NWC 2025 mandate stipulating that non-statutory allowances cannot exceed 50% of total remuneration creates a direct compliance shock for Hyderabad’s service sector",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Gachibowli/HITEC City (IT Corridor)",
+        content:
+          "Gachibowli and HITEC City, the core IT corridor, house IT/ITeS companies, software exporters, and MNC captive centers. These units face high NWC payroll exposure due to high-CTC compensation structures built on non-compliant Basic Pay components, creating the risk of large retrospective EPF liabilities. An immediate statutory payroll overhaul is essential to legally redefine ‘Wages,’ ensure accurate ECR filing, and prepare the organization for 7A audit scrutiny across all high-value employee segments.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Banjara Hills/Jubilee Hills",
+        content: (
+          <>
+            <p>
+              Banjara Hills and Jubilee Hills host corporate headquarters,
+              financial services firms, and consulting companies that depend
+              heavily on outsourced staff such as security, facility management,
+              and administrative teams. This creates significant Principal
+              Employer liability because any EPF or ESIC default by a vendor
+              legally shifts the entire burden onto the corporate headquarters.
+              Strong vendor compliance management is essential, including due
+              diligence, verification of PF sub-codes, and continuous monitoring
+              of ESIC adherence to safeguard the Principal Employer.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Uppal/Tarnaka(East Corridor)",
+        content: (
+          <>
+            <p>
+              Uppal and Tarnaka in the East Corridor are fast-growing hubs for
+              IT/ITeS firms, printing and packaging units, and BPO operations.
+              Many smaller establishments in this belt suppress the wage base by
+              excluding performance bonuses and incentives from EPF and ESIC
+              calculations, creating a risk of under-contribution and future
+              liability. A comprehensive audit defense is crucial, including
+              full legal representation during EPFO (7A) and ESIC (45A)
+              inquiries, along with proper documentation to reduce potential
+              damages, penalties, and interest charges.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "EPFDesk Comprehensive EPF & ESIC Employer Services in Hyderabad",
+    // description:
+    //   "The NWC 2025 mandate stipulating that non-statutory allowances cannot exceed 50% of total remuneration creates a direct compliance shock for Hyderabad’s service sector",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 2025 Payroll Restructuring",
+        content:
+          "Expert analysis to adjust your Basic Pay (Wages) component to meet the statutory 50% threshold, mitigating future EPF demands.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Principal Employer Risk Mitigation",
+        content: (
+          <>
+            <p>
+              Implementing a robust system for Contractor/Vendor Compliance
+              Audits, ensuring your third-party vendors
+              remit EPF and ESIC correctly, shielding the principal company from
+              vicarious liability.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Statutory Audit Representation",
+        content: (
+          <>
+            <p>
+              Professional defense during EPFO 7A and ESIC 45A audits, including
+              documentation, calculation of interest 7Q, and penalty mitigation
+              14B.
+            </p>
+          </>
+        ),
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Bulk UAN & IP Creation",
+        content: (
+          <>
+            <p>
+              Efficient, large-scale onboarding for new projects and
+              high-turnover service sectors by generating error-free UAN (PF)
+              and New IP Numbers (ESI).
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+];
+export const heroDataMedchalDist = {
+  title:
+    "Medchal-Malkajgiri EPF & ESIC Consultant: NWC 2025 Ready Compliance for Genome Valley, Keesara IT Park & IDA Jeedimetla | EPFDesk",
+
+  description:
+    "EPFDesk offers EPF and ESIC compliance in Medchal-Malkajgiri, specializing in NWC 2025 payroll restructuring. Ensure 100% adherence for Pharma R&D in Genome Valley and Logistics Hubs. Expert PF and ESI Registration, Audits, and ECR Filing.",
+};
+export const sectionsMedchalDist = [
+  {
+    title:
+      "The Life Sciences & Manufacturing Gateway: EPF & ESIC in Medchal-Malkajgiri",
+    description:
+      "Medchal-Malkajgiri is a critical district along the ORR, serving as the hub for Life Sciences, Pharmaceutical R&D, Biotech, and medium-scale manufacturing. Compliance risks stem from complex wage structures for research staff and the dense concentration of MSMEs operating in high-risk industrial environments.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Genome Valley & Biotech (Shamirpet, Turkapally)",
+        content:
+          "Genome Valley hosts global biotech R&D labs and pharmaceutical units where stipend-based compensation for research staff creates a high-risk EPF and ESIC environment. The NWC 2025 ‘Wages’ rule requires proper classification of stipends, trainee allowances, and research grants to avoid retrospective PF liability.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title:
+          "Industrial & Logistics Hubs (IDA Jeedimetla, IDA Mallapur, Kompally)",
+        content:
+          "Engineering, chemical, auto component, and warehousing units in these hubs face intense scrutiny regarding contractor compliance. Failure to provide timely ESIC coverage for industrial workers exposes employers to severe statutory risk in the event of workplace accidents or medical emergencies.",
+      },
+    ],
+  },
+
+  {
+    title: "The NWC 2025 ‘Wages’ Redefinition: R&D and Stipend Scrutiny",
+    description:
+      "The NWC 2025 mandate requires all remuneration qualifying as wages—including stipends used as compensation—to be evaluated for EPF and ESIC applicability. This has major compliance implications for R&D institutions and manufacturing zones.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "EPF Impact: Stipend Misclassification",
+        content:
+          "Payments labeled as stipends, trainee allowances, or research grants for R&D staff may require EPF contributions if these payments compensate work. Misclassification exposes companies to large retrospective 7A inquiries from the EPFO.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Impact: Industrial Hazard Coverage",
+        content:
+          "Industrial hubs like Jeedimetla must ensure mandatory ESIC coverage for all eligible workers, including contract and temporary labour. Non-compliance in high-risk environments leads to major liabilities during accidents or medical claims.",
+      },
+    ],
+  },
+
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Medchal-Malkajgiri Hubs",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Genome Valley (Shamirpet, Turkapally)",
+        content:
+          "Biotech and R&D labs face NWC stipend and grant classification challenges. EPFDesk provides scientific payroll restructuring to correctly define the EPF wage component and ensure 7A audit readiness.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "IDA Jeedimetla / IDA Mallapur",
+        content:
+          "MSMEs in manufacturing and chemicals often face clubbing under EPFO rules due to shared ownership. EPFDesk enables ESIC SPREE 2025 registration for eligible units to avoid historical dues and compliance disputes.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Keesara / Logistics Zones",
+        content:
+          "Logistics and warehousing hubs face rapid hiring cycles, leading to delays in UAN and IP generation. EPFDesk fast-tracks EPF and ESIC code acquisition and ensures bulk onboarding without compliance lapses.",
+      },
+    ],
+  },
+
+  {
+    title:
+      "EPFDesk Comprehensive EPF & ESIC Employer Services in Medchal-Malkajgiri",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC SPREE 2025 Implementation",
+        content:
+          "Advisory support to register unregistered units and employees under ESIC SPREE 2025 without backdated penalties, protecting MSMEs in high-risk industries.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "R&D Payroll Audit",
+        content:
+          "Specialized NWC audit for research institutions to correctly assess stipends, research incentives, project bonuses, and other payments for EPF contribution applicability.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PF Code Acquisition & Mapping",
+        content:
+          "Fast and accurate EPFO registration and mapping of PF Sub-Codes for principal employers managing multiple contractors in industrial estates.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Bulk UAN & IP Creation",
+        content:
+          "Efficient large-scale onboarding for logistics and manufacturing units by generating error-free UANs (PF) and New IP Numbers (ESI) for new workers.",
+      },
+    ],
+  },
+];
+export const heroDataSangareddyDist = {
+  title:
+    "Sangareddy EPF & ESIC Compliance Expert: NWC 2025 Ready Payroll for IDA Bollaram, Pashamylaram & Patancheru Manufacturing | EPFDesk",
+
+  description:
+    "EPFDesk offers EPF and ESIC compliance in Sangareddy, specializing in NWC 2025 payroll restructuring. Ensure 100% adherence for heavy manufacturing, chemicals, and pharma units in major industrial development areas. Expert PF and ESI Registration, Audits, and ECR Filing.",
+};
+export const sectionsSangareddyDist = [
+  {
+    title:
+      "The Industrial Corridor Challenge: EPF & ESIC in Sangareddy’s Manufacturing Hub",
+    description:
+      "Sangareddy forms a key segment of the Hyderabad Industrial Corridor, home to dense clusters of manufacturing, chemicals, pharmaceuticals, and engineering units across IDA Bollaram, Pashamylaram, and Patancheru. Compliance risks arise from heavy contract labour dependency and the financial impact of NWC 2025 on wage structures.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Heavy Industry & Chemicals (Patancheru, IDA Bollaram)",
+        content:
+          "These zones host core manufacturing and hazardous industries. The 50% Wages rule directly impacts payroll costs for permanent staff, while the Social Security Code mandates ESIC coverage even for a single employee working in hazardous operations.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "MSMEs & Ancillary Units (IDA Pashamylaram, Rudraram)",
+        content:
+          "MSMEs in these industrial belts rely heavily on contract labour. Principal Employer Liability for non-compliance by contractors represents the highest statutory risk, requiring extensive due diligence and real-time oversight of PF and ESIC remittances.",
+      },
+    ],
+  },
+
+  {
+    title:
+      "The NWC 2025 ‘Wages’ Redefinition: The Contract Labour Liability Shock",
+    description:
+      "The standardized wage definition under NWC 2025, along with Social Security Code provisions, places significant responsibility on industrial employers to ensure that both direct and contract workers are fully compliant under EPF and ESIC.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Principal Employer Liability",
+        content:
+          "Under the Contract Labour Act, the Principal Employer is fully liable for a contractor’s failure to remit EPF and ESIC contributions. In Sangareddy’s high-density industrial zones, this results in EPFO and ESIC issuing notices directly to the manufacturing company.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Manufacturing Payroll Restructuring",
+        content:
+          "Factories must align Basic Pay with the 50% Wages rule for all permanent employees. Non-compliance exposes companies to retrospective EPF liabilities covering production workers, technicians, and supervisory staff.",
+      },
+    ],
+  },
+
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Sangareddy’s Industrial Hubs",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "IDA Bollaram / Patancheru",
+        content:
+          "Chemicals, engineering, and pharma bulk drug units must ensure every worker in hazardous operations is covered under ESIC from day one. EPFDesk conducts hazardous occupation audits to prevent Section 45A demands during inspections.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "IDA Pashamylaram",
+        content:
+          "Auto component and general manufacturing units face contractor non-compliance risk. EPFDesk audits and monitors monthly EPF ECR and ESIC filings across all vendors using PF sub-codes and ESIC registration numbers.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Gaddapotharam / Sultanpur",
+        content:
+          "New industrial units often delay EPF and ESIC registrations, leading to liability accumulation. EPFDesk fast-tracks EPFO and ESIC code acquisition and clears early-period filing backlogs to legalize operations quickly.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Comprehensive EPF & ESIC Employer Services in Sangareddy",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Contractor Compliance Vetting",
+        content:
+          "Implementation of a mandatory compliance checklist for all contractors, including UAN/IP verification, muster roll scrutiny, and monthly challan validation to protect the Principal Employer.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "EPF Audit Defense (Section 7A)",
+        content:
+          "Full legal and technical representation during EPFO inspections, challenging inflated assessments and ensuring liability is calculated strictly on actual statutory requirements.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Factory-Level Records Management",
+        content:
+          "Digitization and maintenance of statutory registers such as Form XII and Form VI-A to ensure audit readiness under the latest labour codes.",
+      },
+    ],
+  },
+];
+export const heroDataSiddipetDist = {
+  title:
+    "Siddipet EPF & ESIC Consultant: NWC 2025 Agro-Industrial Compliance for Biotech Park Mulugu, Nangnoor Industrial Park & Gajwel Agri-Units | EPFDesk",
+
+  description:
+    "EPFDesk ensures EPF and ESIC compliance in Siddipet, with a focus on NWC 2025 structures for Agro-Processing, Seed and Cotton Ginning, and emerging IT/Biotech sectors. Expert PF and ESI compliance management for MSMEs and seasonal workforce operations.",
+};
+export const sectionsSiddipetDist = [
+  {
+    title: "The Emerging Agro-Industrial Hub: EPF & ESIC in Siddipet",
+    description:
+      "Siddipet is a growing agro-industrial district with strong clusters in seed processing, cotton ginning, rice mills, cold storage, and poultry feed, along with biotech activity in Mulugu and a rising IT presence at Siddipet IT Tower. The district relies heavily on MSMEs and a seasonal or migrant workforce, creating unique EPF and ESIC compliance challenges.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Agro-Processing & Ginning (Siddipet Rural, Gajwel, Wargal)",
+        content:
+          "Agricultural processing units such as rice mills, cotton ginning, and seed-processing facilities face difficulty applying the 50% Wages rule due to widespread use of daily-wage and piece-rate workers. Clear classification of seasonal labour payments is essential for EPF and ESIC applicability.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Biotech & IT Pockets (Mulugu Biotech Park, Siddipet IT Tower)",
+        content:
+          "Biotech, pharmaceuticals, and IT/ITES units face compliance risk in structuring salaries for skilled staff. Incentives, bonuses, and other complex pay elements must align with NWC 2025 to avoid PF under-contribution and future audit demands.",
+      },
+    ],
+  },
+
+  {
+    title: "The NWC 2025 Seasonal Labour Scrutiny: Compliance for Agro-MSMEs",
+    description:
+      "Siddipet’s agro-MSMEs must comply with EPF and ESIC thresholds even if workforce size fluctuates during agricultural peak seasons. Mismanagement of seasonal labour records is one of the biggest statutory risks.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "EPF & ESIC Applicability During Peak Seasons",
+        content:
+          "Under CSS 2025, EPF and ESIC thresholds apply if the establishment crosses the minimum employee count at any time during the year, including through contract or casual labour. Many ginning and seed units unknowingly trigger mandatory registration during harvest seasons.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Wages Definition for Piece-Rate Workers",
+        content:
+          "The Code on Wages standardizes wage calculations for piece-rate and daily-wage workers. Incorrect calculation or non-contribution exposes MSMEs to retrospective PF liability during EPFO 7A audits, especially in high-turnover agro units.",
+      },
+    ],
+  },
+
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Siddipet Hubs",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Agri-Processing Clusters (Gajwel, Siddipet)",
+        content:
+          "Cotton ginning, seed processing, and rice mills risk crossing employee thresholds during peak seasons, triggering sudden PF and ESIC obligations. EPFDesk offers threshold monitoring and guides MSMEs through ESIC SPREE 2025 registration for compliance without penalties.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Mulugu Biotech Park (Karakapatla)",
+        content:
+          "Biotech and pharmaceutical R&D units risk misclassification of allowances, incentives, and specialized pay, leading to PF under-contribution. EPFDesk provides NWC-compliant wage structure audits for research and technical teams.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Siddipet IT Tower / Nangnoor Industrial Park",
+        content:
+          "New IT and manufacturing units often delay EPF and ESIC code acquisition, resulting in backdated liability. EPFDesk fast-tracks EPFO and ESIC registrations and ensures immediate UAN and IP number generation for new employees.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Comprehensive EPF & ESIC Employer Services in Siddipet",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Agro-Unit ECR Audits",
+        content:
+          "Specialized audits of ECR filings to ensure accurate contribution calculations for piece-rate and daily-wage workers, aligned with the Code on Wages definition of ‘Wages’.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Coverage Mapping",
+        content:
+          "On-site assessments for MSMEs to confirm ESIC applicability based on employee count, power usage, and activity type, followed by a structured registration plan.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "IT/ITES Payroll Restructuring",
+        content:
+          "Comprehensive salary component review for IT and service-sector firms to meet the mandatory 50% Wages requirement under NWC 2025 and avoid PF demands on allowances.",
+      },
+    ],
+  },
+];
+export const heroDataYadadriDist = {
+  title:
+    "Yadadri EPF & ESIC Compliance: NWC 2025 for Pochampally Handloom, Bhongir IP Chemicals & Dandumalkapur MSME Park | EPFDesk",
+
+  description:
+    "EPFDesk offers EPF and ESIC compliance in Yadadri Bhuvanagiri, specializing in NWC 2025 wage alignment for Handloom, Chemical, Pharma, and MSME units. Expert PF audits, ESIC registration, contractor compliance, and piece-rate worker contribution management.",
+};
+export const sectionsYadadriDist = [
+  {
+    title: "The Dual Economy Challenge: EPF & ESIC in Yadadri Bhuvanagiri",
+    description:
+      "Yadadri Bhuvanagiri district combines a traditional handloom economy in Pochampally with formal chemical, pharmaceutical, and MSME clusters in Bhongir Industrial Park and Dandumalkapur. The biggest compliance challenge is applying statutory wage and contribution rules to piece-rate and home-based workers while managing structured payrolls and contractor liabilities in the industrial zones.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Handloom & Textile Sector (Pochampally)",
+        content:
+          "Pochampally’s Ikkat weaving economy relies heavily on home-based, piece-rate artisans. Under NWC 2025 and the Social Security Code, these workers must be evaluated for EPF and ESIC applicability. Formalizing variable earnings into a statutory wage base is the core compliance challenge.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Industrial Cluster (Bhongir IP, Dandumalkapur, Choutuppal)",
+        content:
+          "Chemical, pharma, engineering, and stone crusher units must comply with the 50% Wages rule and manage contractor liabilities. Principal Employers face high exposure if vendors fail to remit PF or ESIC dues on time.",
+      },
+    ],
+  },
+
+  {
+    title: "The NWC 2025 Handloom Formalization Challenge: Piece-Rate Wages",
+    description:
+      "Applying statutory EPF and ESIC provisions to handloom and cottage industries requires converting fluctuating piece-rate earnings into a standardized wage base. CSS 2020 mandates that unorganized workers must be covered under structured social security schemes.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Wages for Piece-Rate Workers",
+        content:
+          "The Code on Wages requires that all remuneration paid to piece-rate or home-based workers be assessed to determine statutory contributions. For weavers paid per yard, earnings must be mapped into a monthly wage structure for EPF and ESIC calculations.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Unorganized Worker Social Security",
+        content:
+          "Handloom MSMEs must choose between formal factory registration or compliance under the Social Security Fund for unorganized workers. Proper classification is essential to avoid future EPF or ESIC liabilities.",
+      },
+    ],
+  },
+
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Yadadri Bhuvanagiri Hubs",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Pochampally",
+        content:
+          "Handloom and cottage industries often miscalculate EPF for piece-rate earnings. EPFDesk designs systems to convert piece-rate income into a defensible EPF wage base and minimize retrospective liability.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Bhongir Industrial Park",
+        content:
+          "Industrial units dependent on contract labour face vicarious liability for vendor non-compliance. EPFDesk provides monthly EPF ECR vetting, ESIC challan audits, and contract indemnity frameworks.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Dandumalkapur MSME Park",
+        content:
+          "New MSMEs often delay EPF and ESIC registrations, resulting in accrued penalties. EPFDesk fast-tracks statutory registration and configures HRMS systems to comply with NWC 2025 wage rules from day one.",
+      },
+    ],
+  },
+
+  {
+    title:
+      "EPFDesk Comprehensive EPF & ESIC Employer Services in Yadadri Bhuvanagiri",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Pochampally Artisan Formalization",
+        content:
+          "Consultation for master weavers and handloom societies to assess home-based workers’ legal status and implement a social security model aligned with the Social Security Code provisions.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Industrial Park EPF Audit (7A/14B)",
+        content:
+          "Representation and defense against EPFO notices during Section 7A and 14B proceedings, specializing in aligning allowance structures with NWC 2025 to minimize liability.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Regional Compliance",
+        content:
+          "Ensuring ESIC coverage for all eligible employees in industrial zones, including handling IP generation, accident report submissions, and occupational disease filings.",
+      },
+    ],
+  },
+];
+export const heroDataKhammamDist = {
+  title:
+    "Khammam EPF & ESIC Consultant: NWC 2025 for SCCL Mining Contractors, Rice Mills & Transport Logistics | EPFDesk",
+
+  description:
+    "EPFDesk manages EPF and ESIC compliance in Khammam, specializing in NWC 2025 liability for Contract Labour in the Mining supply chain (SCCL/CMPS), Agro-Processing units, Rice Mills, and Transport/Logistics. Expert PF audits and ESIC coverage mapping for major industrial hubs.",
+};
+export const sectionsKhammamDist = [
+  {
+    title: "The Core Sector Conflict: EPF & ESIC in Khammam",
+    description:
+      "Khammam’s economy is shaped heavily by the mining supply chain linked to SCCL operations and the extensive agro-processing belt dominated by rice, maize, and pulse mills. The major compliance risks involve managing contractor liability in mining logistics and ensuring statutory coverage in seasonal agro units.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Mining Supply Chain & Transport",
+        content:
+          "Transporters, logistics operators, and maintenance contractors serving SCCL and related industrial activity face complex compliance due to the OSH Code’s restrictions on contract labour in core activities. Contractors connected to SCCL may fall under CMPS rather than EPF, requiring specialized scheme compliance.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Agro-Processing & Ginning",
+        content:
+          "Rice mills, solvent extraction units, and cotton or seed processing plants often exceed EPF and ESIC thresholds during seasonal peaks. Applying the 50% Wages rule becomes challenging for daily-wage and piece-rate workers, risking retrospective PF contribution demands.",
+      },
+    ],
+  },
+
+  {
+    title: "The NWC 2025 Contractor Liability Trap: Mining & Industrial Belt",
+    description:
+      "Contract labour deployment in Khammam’s industrial ecosystem carries significant statutory liability. NWC 2025, combined with Social Security and OSH Code provisions, makes the Principal Employer accountable for contractor-level EPF and ESIC defaults.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Principal Employer Liability",
+        content:
+          "Large transport operators and industrial units are vicariously liable if contractors fail to remit EPF or ESIC dues. NWC 2025 strengthens worker entitlement norms, increasing scrutiny and audit frequency for PE-managed supply chains.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "CMPS vs. EPF Compliance",
+        content:
+          "Contractors working inside the SCCL supply chain may fall under CMPS rather than EPF. Contribution rates, record formats, and compliance rules differ significantly. Ensuring the correct scheme is applied is essential to avoid penalties during inspections.",
+      },
+    ],
+  },
+
+  {
+    title: "Hyper-Local EPF & ESIC Strategy for Khammam Hubs",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Industrial/Mining Logistics (Khammam City, Transport Hubs)",
+        content:
+          "Contract labour used in core activity roles may trigger regularization claims under the OSH Code. EPFDesk audits job roles to establish core vs. non-core classification, while ensuring correct CMPS or EPF application for all contractors.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Agro-Processing Belt (Madhira, Wyra)",
+        content:
+          "Seasonal workforce expansion complicates wage compliance under NWC. EPFDesk designs simplified payroll models for temporary and piece-rate labour to satisfy the 50% Wages rule and prevent retrospective PF liability.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "General Manufacturing Units",
+        content:
+          "Small-scale factories often delay EPF or ESIC registrations and become exposed during 7A audits based on electricity consumption or trade license data. EPFDesk assists with voluntary disclosures and amnesty navigation to reduce penalties.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Comprehensive EPF & ESIC Employer Services in Khammam",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Contractor Liability Shield",
+        content:
+          "EPFDesk creates a robust framework of contract clauses, compliance tracking, challan verification, and payment holds to ensure contractors deposit EPF and ESIC correctly, protecting the Principal Employer from statutory liability.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "CMPS Advisory",
+        content:
+          "Specialized compliance guidance for entities interacting with SCCL, ensuring correct treatment under the Coal Mines Provident Fund Scheme versus the general EPF Act, including accurate contribution filings.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC Payroll Impact Analysis",
+        content:
+          "Detailed modeling of the 50% Wages rule on CTC structures for manufacturing and transport companies, forecasting cost implications and designing compliant alternatives that minimize disruption to take-home pay.",
+      },
+    ],
+  },
+];
+// utils/data.js additions (Visakhapatnam)
+export const heroDataVisakhapatnamDist = {
+  title:
+    "Visakhapatnam EPF & ESIC Consultant: NWC 2025 for Port Logistics, Pharma, Heavy Engineering & IT | EPFDesk",
+  description:
+    "EPFDesk provides EPF and ESIC compliance services in Visakhapatnam, specializing in contractor audits for port logistics, payroll restructuring for pharma and IT clusters, OSH/ESIC integration, and full ECR filing support.",
+};
+
+export const sectionsVisakhapatnamDist = [
+  {
+    title: "Visakhapatnam District Compliance Gateway",
+    description:
+      "Visakhapatnam combines port logistics, naval defence supply chains, heavy engineering and pharmaceutical clusters with a growing IT/ITES sector. The key compliance challenges are contractor classification at ports, high-salary payroll restructuring for pharma/IT, and integrated OSH/ESIC obligations for heavy industry.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Port & Shipping Logistics",
+        content:
+          "High usage of contract labour for core loading/unloading and logistics functions raises the risk of regularization claims under the OSH Code. EPFDesk performs core activity audits of service agreements and implements a compliant contractor engagement model.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Pharma & IT High-Salary Payrolls",
+        content:
+          "Pharma clusters and high-value IT/R&D roles require restructuring of CTC components to meet the 50% wages definition. EPFDesk provides NWC CTC modelling to preserve take-home pay while ensuring correct PF contribution bases.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC & Industrial Safety Integration",
+        content:
+          "Manufacturing and heavy industry units must meet OSH Code health and safety obligations alongside ESIC coverage. EPFDesk offers integrated OSH and ESI audits to reduce exposure to prosecution and fines.",
+      },
+    ],
+  },
+
+  {
+    title: "Visakhapatnam: Targeted Compliance Services",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Core Activity Audit",
+        content:
+          "Detailed review of port and logistics contracts against OSH Code listings to categorize core and non-core roles and avoid inadvertent contract worker usage in restricted functions.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC CTC Modelling",
+        content:
+          "Restructuring executive and R&D pay components to align with the new wages definition and minimize employer PF exposure while optimizing take-home pay.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Integrated OSH/ESIC Audit",
+        content:
+          "Joint audit of ESI facilities, occupational safety registers, and statutory health checks to ensure holistic statutory compliance for heavy industry employers.",
+      },
+    ],
+  },
+];
+// utils/data.js additions (Guntur)
+export const heroDataGunturDist = {
+  title:
+    "Guntur EPF & ESIC Consultant: NWC 2025 Seasonal & Agri-Processing Compliance | EPFDesk",
+  description:
+    "EPFDesk supports Guntur's agro-processing, cold storage, and seasonal labour markets with NWC 2025 payroll restructuring, seasonal registration frameworks, and unorganized sector compliance mapping.",
+};
+
+export const sectionsGunturDist = [
+  {
+    title: "Guntur District Compliance Gateway",
+    description:
+      "Guntur is a major agro-processing hub — tobacco, chillies, turmeric, cotton ginning and warehousing — with large seasonal workforce swings. Key compliance issues are seasonal EPF/ESIC thresholds, piece-rate wage calculations, and mapping unorganized/gig workers under the Social Security Code.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal Agro-Processing",
+        content:
+          "Fluctuating workforce sizes during harvest and processing can push establishments over EPF and ESIC thresholds. EPFDesk implements seasonal compliance frameworks to register and suspend coverage correctly and maintain NWC-aligned payroll for piece-rate workers.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Unorganized Sector Coverage",
+        content:
+          "The Social Security Code expands coverage to gig and platform workers. EPFDesk maps logistics, cold storage and trading operations to identify new contribution obligations and advise on practical compliance steps.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Minimum Wage & Floor Wage",
+        content:
+          "Guntur’s low-margin sectors must prepare for the national floor wage. EPFDesk conducts wage gap audits and models the impact on basic pay across large low-wage employee pools.",
+      },
+    ],
+  },
+
+  {
+    title: "Guntur: Targeted Compliance Services",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal Compliance Framework",
+        content:
+          "Systems for proactive EPF/ESIC registration, suspension and payroll processing for transient and piece-rate seasonal workers to avoid retrospective dues.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Unorganized Sector Mapping",
+        content:
+          "Detailed mapping of gig, platform and informal workers across the supply chain to identify obligations under the Social Security Code and design pragmatic compliance solutions.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Minimum Wage Audit",
+        content:
+          "A wage gap analysis against the expected national floor wage and modelling of required basic pay increases for low-wage segments.",
+      },
+    ],
+  },
+];
+export const heroDataTirupatiDist = {
+  title:
+    "Tirupati EPF & ESIC Consultant: NWC 2025 for Hospitality, Education & Electronics Manufacturing | EPFDesk",
+
+  description:
+    "EPFDesk delivers EPF and ESIC compliance in Tirupati, focusing on hospitality, educational institutions, and Sri City electronics units. Services include NWC payroll restructuring, PF audits, ESIC coverage, and fixed-term employment structuring.",
+};
+export const sectionsTirupatiDist = [
+  {
+    title:
+      "Tirupati Compliance Gateway: Hospitality, Education & Electronics Manufacturing",
+    description:
+      "Tirupati’s economy is dominated by hospitality, education and Sri City electronics manufacturing. NWC 2025 reshapes payroll calculations, while OSH Code restrictions increase compliance pressure on contract labour usage.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Hospitality & Catering",
+        content:
+          "Hotels, dharmashalas and catering contractors rely heavily on allowances and low basic pay. The National Floor Wage under NWC 2025 will require higher basic wages, increasing EPF and ESIC liabilities. EPFDesk restructures payroll to meet the 50% wages rule and avoid PF back-dated dues.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Education Sector (Schools & Colleges)",
+        content:
+          "Many institutions fail to register eligible teaching and non-teaching staff under ESIC. Under NWC, fixed-term employees become eligible for gratuity after one year. EPFDesk models gratuity costs and ensures timely ESIC coverage.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Sri City Electronics Manufacturing",
+        content:
+          "Electronics factories frequently deploy contract labour for assembly. The OSH Code restricts contract labour in core activities, risking regularization claims. EPFDesk vets labour contracts and converts essential roles into compliant fixed-term positions.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Services for Tirupati Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Service Sector CTC Restructuring",
+        content:
+          "Comprehensive restructuring of wages and allowances to comply with the NWC 50% rule, especially for hotels and catering units.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "FTE & Gratuity Liability Modeling",
+        content:
+          "Detailed analysis of gratuity liabilities for fixed-term teachers and staff, and implementation of compliant HR policies.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labour & Core Activity Vetting",
+        content:
+          "Audit of contractor deployment in electronics units to ensure compliance with OSH Code restrictions on core activity outsourcing.",
+      },
+    ],
+  },
+];
+export const heroDataChittoorDist = {
+  title:
+    "Chittoor EPF & ESIC Consultant: NWC 2025 for Agro-Processing, Dairy & Textile Industries | EPFDesk",
+
+  description:
+    "EPFDesk supports Chittoor’s agro-processing, dairy and textile units with NWC-compliant payroll structuring, seasonal workforce registration systems, OSH welfare compliance audits and PF/ESIC risk mitigation.",
+};
+export const sectionsChittoorDist = [
+  {
+    title: "Chittoor Compliance Gateway: Agro-Processing, Dairy & Textiles",
+    description:
+      "Chittoor's economy is powered by agro-processing, dairy and textile production. Labour-intensive units face significant compliance risks under NWC 2025 and the OSH Code due to piece-rate wages, seasonal labour and mandatory welfare facilities.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Textile & Weaving Units",
+        content:
+          "Piece-rate wages frequently fall below statutory minimum wages. The OSH Code mandates creches, washrooms and welfare facilities for women workers. EPFDesk performs minimum wage gap audits and OSH facility verification.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Dairy & Agro-Processing",
+        content:
+          "Seasonal workforce expansion triggers EPF (20 employees) and ESIC (10/20 employees) obligations. EPFDesk builds systems that automatically activate statutory registration, UAN/IP creation and compliance tracking.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Overtime & Working Hours",
+        content:
+          "The NWC requires overtime to be paid at twice the regular wage rate. Many agro units under-track overtime. EPFDesk audits T&A systems and ensures compliant overtime calculation.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Services for Chittoor Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Minimum Wage & Floor Wage Alignment",
+        content:
+          "Alignment of piece-rate and daily wage structures with the upcoming National Floor Wage to prevent PF/ESIC liabilities.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal Workforce Compliance Systems",
+        content:
+          "Automated statutory registration and withdrawal systems for fluctuating labour counts in agro-processing units.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "OSH Welfare Facility Audit",
+        content:
+          "Verification and certification of OSH-mandated welfare facilities for high-density labour zones in textile and agro clusters.",
+      },
+    ],
+  },
+];
+export const heroDataKrishnaDist = {
+  title:
+    "Krishna (Vijayawada) EPF & ESIC Consultant: NWC 2025 for Logistics, Transport, Construction & Commercial Establishments | EPFDesk",
+
+  description:
+    "EPFDesk specializes in EPF and ESIC compliance for Krishna District (Vijayawada), covering logistics hubs, transport contractors, warehousing, infrastructure development, retail and commercial sectors. Services include NWC 2025 payroll restructuring, migrant workforce compliance, contractor vetting, and BOCW cess management.",
+};
+export const sectionsKrishnaDist = [
+  {
+    title: "Vijayawada Logistics, Transport & Warehousing Sector",
+    description:
+      "Krishna District’s logistics ecosystem is driven by its highway network, railway junction and large warehousing corridors. Compliance risks revolve around migrant worker documentation, core activity restrictions for contract labour and payroll restructuring under the NWC 2025 rules.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Inter-State Migrant Workers",
+        content:
+          "The Social Security Code mandates full EPF, ESIC and gratuity coverage for inter-state migrant workers, along with annual travel allowance requirements. EPFDesk builds a digital migrant worker system to track headcount, contributions, contractor responsibilities and welfare cess obligations.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labour in Core Activities",
+        content:
+          "Logistics and warehousing operations often engage contract workers in perennial functions such as truck driving, loading and handling. Under the IR Code, misclassification can render the Principal Employer the statutory employer. EPFDesk audits core vs. non-core activities and transitions high-risk roles to Fixed-Term Employment with statutory benefits.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Wage & Allowance Restructuring",
+        content:
+          "Transport and warehousing firms typically pay high allowances relative to basic wages. Under the NWC 50% rule, excess allowance amounts are reclassified as Wages, increasing PF and gratuity liabilities. EPFDesk recalibrates pay structures to maintain Basic Pay + DA at 50% of gross salary.",
+      },
+    ],
+  },
+
+  {
+    title: "Infrastructure & Construction Sector",
+    description:
+      "Massive construction projects across Vijayawada require strict adherence to BOCW, EPF, ESIC and NWC norms. High worker turnover and layered contracting create substantial compliance risks.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "BOCW Cess Compliance",
+        content:
+          "Developers and contractors must pay a mandatory cess of 1% or more on construction cost. Many sub-contractors underpay or omit this payment. EPFDesk builds a BOCW Cess Management Framework to ensure proper remittance and worker coverage under the welfare board.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal Workforce EPF/ESIC Registration",
+        content:
+          "Construction workforce turnover is extremely high. EPFDesk implements a digital onboarding system that issues UANs, ESIC IP numbers and compliance documents within the worker’s first week, preventing back-dated liabilities.",
+      },
+    ],
+  },
+
+  {
+    title: "Trade, Banking & Commercial Establishments",
+    description:
+      "Vijayawada hosts a dense commercial and financial services sector where minimum wage compliance, gender safety norms and extended hours of work are major compliance areas under the new labor codes.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Universal Minimum Wage Enforcement",
+        content:
+          "Many small shops and offices still pay below category-wise minimum wages. The Code on Wages introduces a National Floor Wage that overrules lower state wages. EPFDesk conducts Minimum Wage Floor Checks to avoid back-wage claims and penalties.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Gender Equality & Working Hours Compliance",
+        content:
+          "The OSH Code permits women to work night shifts in shops and offices, provided mandatory safety, transportation and facility protocols are implemented. EPFDesk drafts compliant night-shift policies and updates Shops & Establishments records.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Comprehensive Compliance Services for Krishna District",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Migrant Workforce Digital Compliance",
+        content:
+          "Systems for registration, tracking, EPF/ESIC contribution mapping and welfare benefits for inter-state migrant workers.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 2025 Payroll Restructuring",
+        content:
+          "Recalibrating wages and allowances to maintain the statutory 50% Wages threshold across logistics, retail and warehousing enterprises.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "BOCW Cess & Construction Compliance",
+        content:
+          "Full lifecycle management of BOCW cess payments, welfare board registration and EPF/ESIC compliance for construction workers.",
+      },
+    ],
+  },
+];
+export const heroDataKakinadaDist = {
+  title:
+    "Kakinada EPF & ESIC Consultant: NWC 2025 Ready Compliance for Ports, Petrochemicals & Contract Labour | EPFDesk",
+
+  description:
+    "EPFDesk delivers end-to-end EPF and ESIC compliance for Kakinada’s Port, SEZ logistics, petrochemical, fertilizer, oil and gas industries. We support contractor audits, ESIC for hazardous workplaces, NWC 2025 wage restructuring, and PF/ESI risk mitigation for complex industrial operations.",
+};
+export const sectionsKakinadaDist = [
+  {
+    title: "Port & SEZ Logistics Compliance in Kakinada",
+    description:
+      "Kakinada’s Deep Water Port and SEZ zone depend heavily on contract labour for cargo handling, warehousing, marine logistics, and container operations. This creates high exposure under EPF, ESIC, and NWC 2025 norms, with Principal Employer liability being the biggest risk.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Principal Employer Liability for Contract Workers",
+        content:
+          "Port authorities and logistics operators are jointly and severally liable for contractor defaults in EPF and ESIC remittances. EPFDesk establishes a mandatory deduction-and-remittance system where statutory dues are withheld from contractor invoices, preventing retrospective audits and penalties.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Applicability in Ports",
+        content:
+          "Port Trust establishments are covered under Central Government notifications, making ESIC mandatory for all eligible direct and indirect employees. EPFDesk enforces a zero-tolerance ESIC registration framework to ensure complete statutory coverage within port-linked operations.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Shift & Overtime Wages under NWC 2025",
+        content:
+          "Port environments rely heavily on overtime and shift allowances. The NWC’s expanded definition of 'Wages' may include these allowances, increasing PF and gratuity liability. EPFDesk audits all variable pay components and realigns them to maintain the statutory 50% Wages rule.",
+      },
+    ],
+  },
+
+  {
+    title: "Petrochemicals, Fertilizers & Hazardous Industries",
+    description:
+      "Kakinada is home to fertilizer plants, petrochemical units, and oil & gas infrastructure. These sectors fall under strict ESIC and OSH scrutiny due to hazardous operations and high occupational health risks.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC for Hazardous Establishments",
+        content:
+          "Under the Social Security Code, all hazardous industry employees must be covered under ESIC irrespective of employee count. EPFDesk ensures complete ESIC enrollment and alignment with special provisions applicable to chemical, fertilizer, and gas-based units.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Integrated ESIC & Health Compliance",
+        content:
+          "Chemical and fertilizer industries experience high ESIC utilization rates, often triggering inspections. EPFDesk conducts integrated OSH and ESIC audits to synchronize payroll, health records, and statutory compliance to reduce inspection risk.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "EPF for Inter-Unit Transfers",
+        content:
+          "Large public sector and private companies in Kakinada frequently transfer employees between units nationwide. EPFDesk establishes a seamless Online Transfer Claim (OTCP) process to maintain clean UAN histories and eliminate PF transfer delays.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Comprehensive Compliance Services for Kakinada",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 2025 Payroll Structuring",
+        content:
+          "Recalibration of allowances, shift pay, and overtime-linked pay to maintain the statutory 50% Wages rule for PF and gratuity liability.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contractor Compliance Monitoring",
+        content:
+          "Monthly EPF/ESIC ECR vetting for all port, SEZ, and petrochemical contractors, shielding the Principal Employer from statutory exposure.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Hazardous Industry ESIC Mapping",
+        content:
+          "Mandatory ESIC coverage mapping for chemical, fertilizer, and gas units with documented OSH compliance to reduce penalties and inspection notices.",
+      },
+    ],
+  },
+];
+export const kakinandaDistFAQ = [
+  {
+    question:
+      "Does our aquaculture unit need to cover its seasonal workers under ESIC in Kakinada?",
+    answer: `Yes. If your total employee count—including seasonal, temporary, or contract labour—crosses the ESIC threshold (10 or 20 employees, depending on the state notification) at any point during the year, all eligible employees must be covered. ESIC applicability is triggered even if the increased headcount is temporary.`,
+  },
+  {
+    question:
+      "What is the biggest EPF risk for Oil & Gas contractors near Kakinada Port?",
+    answer: `The biggest risk is wage suppression—treating high field or site allowances as non-PFable. EPFO frequently conducts Section 7A audits in this region and reclassifies excluded allowances as 'Wages,' demanding retrospective contributions plus interest and damages.`,
+  },
+  {
+    question:
+      "Can we claim EPF exemption for contract workers in Kakinada Port if the contractor has their own PF code?",
+    answer: `Not automatically. The Principal Employer (PE) is still jointly and severally liable for any non-compliance by the contractor. Liability shifts only if the contractor provides verifiable proof of timely EPF remittance. Our compliance system ensures documentation, challan tracking, and audit trails that legally protect the PE.`,
+  },
+  {
+    question:
+      "What are the current ESIC contribution rates for employees in Kakinada?",
+    answer: `The current ESIC contribution rates are: Employee: 0.75% of wages, Employer: 3.25% of wages (a total of 4%). These rates apply to all employees earning up to ₹21,000 per month who are working in coverable establishments.`,
+  },
+];
+
+export const gunturDistFAQ = [
+  {
+    question:
+      "Is the Principal Employer (PE) in Guntur Construction liable if the contractor fails to pay EPF?",
+    answer: `Yes. Under the EPF Act, the Principal Employer is jointly and severally liable for contractor defaults. If the contractor fails to remit PF, the EPFO can directly recover dues from the Principal Employer. EPFDesk builds strong due-diligence and vendor-vetting systems to protect the PE from this statutory risk.`,
+  },
+  {
+    question:
+      "Are Tobacco re-drying units in Guntur considered ‘Seasonal Factories’ and exempt from ESIC?",
+    answer: `Exemption status depends on current State Government notifications and continuity of employment. Although tobacco re-drying may qualify as seasonal, ESIC inspections often find workers employed year-round, nullifying exemption claims. We help verify eligibility, documentation, and ensure compliant ESIC classification based on actual operations.`,
+  },
+  {
+    question:
+      "How do we handle EPF for casual workers who work only 2–3 months on a Guntur construction site?",
+    answer: `Once an establishment crosses the EPF threshold, every eligible employee—including short-term, casual or temporary workers—must be covered from their date of joining. PF contribution is mandatory for the entire period of their employment, regardless of duration.`,
+  },
+  {
+    question: "Where is the nearest EPFO office for Guntur district?",
+    answer: `The Regional Office (RO) of EPFO serving Guntur is located in Guntur city itself (3rd Lane, Krishna Nagar, Guntur – 522006). All inspections, hearings, compliance, and legal proceedings for the district are handled here.`,
+  },
+];
+export const heroDataPrakasamDist = {
+  title:
+    "Prakasam EPF & ESIC Compliance for Granite Mining, Stone Processing & Aqua Units | EPFDesk",
+
+  description:
+    "EPFDesk specializes in statutory compliance for Granite Mining and Processing units in Chimakurthy, seasonal Aqua Processing units along the Prakasam coast, and Tobacco factories. We offer EPF, ESIC, hazardous industry compliance, PF wage structuring, and 7A audit defense.",
+};
+export const sectionsPrakasamDist = [
+  {
+    title: "Prakasam’s Industrial Profile: Granite, Mining & Aqua Processing",
+    description:
+      "Prakasam District is defined by heavy-labour Granite Mining and Stone Processing operations around Chimakurthy, seasonal aquaculture processing along the coastline, and tobacco re-drying units. Each sector faces unique compliance risks under EPF, ESIC and the upcoming NWC 2025 framework.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Granite Mining & Stone Processing",
+        content:
+          "Chimakurthy’s granite belt employs large volumes of contract and migrant labor in hazardous stone cutting, polishing and quarrying environments. EPFDesk ensures continuous PF coverage, UAN management, and ESIC compliance for occupational risks such as silicosis, which inspectors frequently audit.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Aquaculture Units & Seasonal Labour",
+        content:
+          "Shrimp and fish processing units in Singarayakonda and coastal belts rely heavily on seasonal workers. ESIC applicability depends on the duration and continuity of operations. EPFDesk assesses whether a unit qualifies as a seasonal factory and ensures legally defensible compliance or exemption.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Tobacco Processing & Re-Drying Units",
+        content:
+          "Prakasam hosts several tobacco re-drying and leaf processing units, requiring accurate ESIC applicability checks due to variable employment cycles. EPFDesk audits workforce patterns and remittance practices to minimize exposure to ESIC penalties.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Prakasam",
+    description:
+      "The district’s dual nature of hazardous mining and seasonal coastal operations creates complex compliance scenarios requiring sector-specific expertise.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC in Hazardous Industries",
+        content:
+          "Mining and stone processing units must maintain 100% ESIC coverage for all eligible workers due to high occupational health risks. ESIC inspectors closely scrutinize health documentation, accident logs, and wage records for compliance.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "EPF for Contract & Migrant Labour",
+        content:
+          "Contract labour in granite quarries is highly mobile. EPFDesk sets up continuous UAN registration, compliance tracking and documentation alignment to prevent retrospective liabilities during Section 7A audits.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal Factory Classification (Aqua Units)",
+        content:
+          "Aqua processing units may qualify as seasonal factories only if operations cease entirely for part of the year. EPFDesk evaluates operational cycles, maintenance activity and worker deployment to establish valid ESIC applicability.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Prakasam",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Hazardous Industry ESIC Compliance",
+        content:
+          "Full mapping of ESIC for mining and granite processing units, ensuring compliance with occupational disease and accident coverage mandates.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PF for Mining Workforce",
+        content:
+          "Management of PF contributions, UAN creation, contractor verification and evidence trails for highly mobile mining labour.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal Labour Compliance Advisory",
+        content:
+          "Legal assessment of seasonal factory status for aqua units with guidance on ESIC registration, exemption, and contribution correctness.",
+      },
+    ],
+  },
+];
+export const prakasamFAQ = [
+  {
+    question:
+      "What is the primary ESIC requirement for Granite Mining and Processing units in Prakasam?",
+    answer: `Due to high exposure to silica dust, ESIC mandates full medical and health coverage for all eligible employees, including contract workers. Inspectors focus heavily on occupational disease risks like silicosis, making 100% ESIC compliance critical.`,
+  },
+  {
+    question:
+      "Does EPF cover daily-wage contract workers in Chimakurthy granite quarries?",
+    answer: `Yes. Once an establishment meets the PF threshold, every worker paid directly or indirectly for work connected to the establishment must be covered, regardless of being daily-wage, casual, or contractor-supplied.`,
+  },
+  {
+    question:
+      "Our aqua processing unit in Ongole is seasonal. Do we need to register under ESIC?",
+    answer: `Possibly. ESIC allows exemption for strictly seasonal factories operating less than seven months a year. If work continues beyond this period, even maintenance work, the exemption may not apply. EPFDesk provides verification of seasonal status and compliance guidance.`,
+  },
+  {
+    question:
+      "Who is responsible for ESIC compliance for migrant labor working in Prakasam’s industries?",
+    answer: `The Principal Employer holds the legal responsibility for ensuring ESIC coverage for all workers, whether hired directly or through contractors. This responsibility cannot be fully outsourced and is a major focus during ESIC inspections.`,
+  },
+];
+export const chittorDistFAQ = [
+  {
+    question:
+      "What specific wage components in Sri City's payroll are subject to EPF deduction?",
+    answer: `Recent Supreme Court rulings clarify that EPF must be calculated on all cash allowances that are universally and uniformly paid to employees, as these form part of basic remuneration. Only allowances tied strictly to incentives, overtime, performance, or statutory exclusions such as HRA may be exempt. We specialize in structuring Sri City payrolls to withstand Section 7A audit scrutiny.`,
+  },
+  {
+    question:
+      "Our dairy plant runs 24/7 operations in three shifts. How does this affect ESIC compliance?",
+    answer: `Continuous 24/7 operations mean that every shift and every hour of work falls under ESIC coverage. ESIC wages must include shift allowances, and all employees—including temporary or peak-season labour—must be registered immediately and issued E-Pehchan Cards. Delays may trigger ESIC inspections or backdated contribution demands.`,
+  },
+  {
+    question:
+      "As a Principal Employer in Sri City, what is my liability for contractor non-compliance?",
+    answer: `Your liability is absolute. Under the EPF Act (Para 30 and 39) and the ESIC Act (Section 40), the Principal Employer is legally responsible for ensuring contractors deposit PF and ESIC contributions correctly. If a contractor defaults, the EPFO or ESIC can recover the dues, penalties, and damages directly from the Principal Employer, including through attachment of assets.`,
+  },
+  {
+    question:
+      "Do EPF and ESIC rules change for units operating inside the Sri City Special Economic Zone (SEZ)?",
+    answer: `No. Although SEZ units receive tax and customs benefits, they must fully comply with all Central Labour Laws, including the EPF & MP Act, 1952 and the ESIC Act, 1948. SEZ status does not exempt any establishment from statutory PF or ESIC obligations.`,
+  },
+];
+export const vizagDistFAQ = [
+  {
+    question:
+      "What is the biggest EPF non-compliance risk for the Visakhapatnam Port Authority (VPA)?",
+    answer: `The biggest risk is failing to calculate PF on all cash allowances paid to contract labour involved in cargo handling and logistics. The EPFO holds VPA, as the Principal Employer, responsible for the contractor’s omission. This regularly leads to large Section 7A demand notices covering several past years when PF is not calculated on the actual wage.`,
+  },
+  {
+    question:
+      "How does the ESIC compliance requirement change for a unit inside Pharma City?",
+    answer: `Pharma City establishments must comply with ESIC rules and also the Factories Act and AP Factories Rules due to their hazardous processes. This includes maintaining medical examination registers, health and safety documentation, process-related hazard reporting, and ensuring fast ESIC claim processing due to higher injury and occupational disease risk.`,
+  },
+  {
+    question:
+      "Our company has many long-term employees at Vizag Steel. What is the status of the EPS-95 Higher Pension application?",
+    answer: `Higher Pension applications require verification of historical payroll records where wages exceeded old EPF ceilings (₹5,000, ₹6,500, or ₹15,000). We assist in validating and submitting joint option forms, coordinating with the Vizag Regional PF Office, and preparing the documentation required for actuarial assessment under the EPS-95 Higher Pension scheme.`,
+  },
+  {
+    question:
+      "Is the Principal Employer responsible if the contractor in the shipyard has a separate PF code?",
+    answer: `Yes. EPFO circulars clearly state that the Principal Employer—such as Hindustan Shipyard Ltd. or VSP—remains fully responsible for PF compliance of all contract workers, even if the contractor has an independent PF code. Payments to contractors should be released only after verifying PF and ESIC compliance through official EPFO and ESIC portals.`,
+  },
+];
+export const heroDataKurnoolDist = {
+  title:
+    "Kurnool EPF & ESIC Compliance for Cement, Quarrying & Renewable Energy",
+  description:
+    "Specialized statutory compliance for Kurnool’s Cement Plants, Limestone Quarries, and Solar/Wind Energy Projects. We safeguard employers from EPF Section 7A liability, ensure ESIC accident readiness, and manage large-scale contractor compliance in high OHS-risk environments.",
+  highlights: [
+    "Cement & Limestone Mining Compliance",
+    "Solar & Wind Project Contractor PF/ESI Monitoring",
+    "Migrant Workforce Registration & Documentation",
+    "NWC 2025 Payroll Restructuring for Heavy Industry",
+  ],
+};
+export const sectionsKurnoolDist = [
+  {
+    title: "Kurnool’s Industrial Profile: Cement, Quarrying & Renewable Energy",
+    description:
+      "Kurnool District—especially Nandyal, Kolimigundla, and Bethamcherla—forms the core of Andhra Pradesh's Cement and Limestone Mining economy, supported by massive Solar and Wind Energy projects. These sectors face heavy EPF liability due to contractor dependence and high ESIC scrutiny due to occupational risks.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Cement Plants & Limestone Quarrying",
+        content:
+          "Cement units (UltraTech, JSW, Ramco, Prism Johnson) and limestone quarries operate in high OHS-risk environments involving heavy machinery, blasting, and dust exposure. EPFDesk ensures strict PF coverage for all contract labour, full ECR verification, and ESIC compliance for occupational disease risks such as silicosis.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Renewable Energy: Solar & Wind Projects",
+        content:
+          "The Kurnool Ultra Mega Solar Park and surrounding Wind Projects employ hundreds of contractors for civil, electrical, and maintenance works. EPFDesk provides real-time PF/ESI compliance dashboards, EPC contractor audits, and NWC-aligned payroll structures for large-scale project labour.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "EPC & Contractor Management",
+        content:
+          "Cement and energy sectors rely heavily on EPC contractors, creating massive Principal Employer liability for incorrect PF wage definitions. EPFDesk audits contractor returns, verifies PF on full actual wages (including site, dust, and heat allowances), and prevents Section 7A retrospective dues.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Kurnool",
+    description:
+      "The combination of hazardous mining environments, migrant labour influx, and large EPC-driven infrastructure projects creates intense compliance scrutiny from both EPFO and ESIC in Kurnool District.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC in High-Risk & Hazardous Units",
+        content:
+          "Cement plants and quarries face strict ESIC enforcement due to frequent accidents and exposure-related diseases. EPFDesk ensures immediate ESIC registration, accident log maintenance, and compliance with medical examination mandates under Factories and Mines Regulations.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "EPF for Migrant & Contract Labour",
+        content:
+          "Kurnool industries depend heavily on migrant workers from Odisha, Bihar, Telangana, and Karnataka. EPFDesk handles fast UAN creation, documentation under the Inter-State Migrant Workmen Act, and ensures continuous PF compliance despite short-term or mobile workforce deployment.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 2025 Wage Definition Impact",
+        content:
+          "Common mining allowances—shift allowance, heat allowance, dust allowance—may fall under the 'Wages' definition if universally paid. EPFDesk structures NWC-compliant payrolls to avoid sudden PF base hikes and retrospective EPFO demands.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Kurnool District",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Hazardous Industry ESIC Compliance",
+        content:
+          "Comprehensive ESIC mapping for cement plants and quarries, covering accident documentation, occupational disease compliance, and mandatory PPE-linked record validation.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PF Compliance for Mining & EPC Workforce",
+        content:
+          "Full EPF lifecycle management: UAN creation, PF on actual wages, contractor verification, and legally defensible documents for Section 7A audits targeting mining and solar/wind contractors.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Migrant Worker Compliance & ISMWA Documentation",
+        content:
+          "Registration under the Inter-State Migrant Workmen Act, displacement allowance validation, journey allowance compliance, and seamless integration with PF/ESIC systems.",
+      },
+    ],
+  },
+];
+
+export const kurnoolFAQ = [
+  {
+    question:
+      "What is the primary ESIC concern for a limestone quarry operator in Kurnool?",
+    answer: `The biggest ESIC concern is Occupational Health Surveillance (OHS) and the rising number of claims for diseases such as silicosis and pneumoconiosis due to exposure to stone dust. ESIC inspectors closely verify medical examinations, PPE usage, and accident documentation. Non-compliance results in severe penalties and liability during claims.`,
+  },
+  {
+    question:
+      "As a Principal Employer for a Solar Power Project in Kurnool, how can I mitigate EPF risk from my EPC contractor?",
+    answer: `Include a mandatory real-time wage audit clause in every EPC contract. Use the EPFO Principal Employer Interface to verify monthly ECR filings and ensure the contractor is paying PF on the full wage paid per worker—not just minimum wages. This prevents retrospective Section 7A liabilities.`,
+  },
+  {
+    question:
+      "Are truck drivers and transportation staff handling cement or clinker covered under ESIC and EPF?",
+    answer: `Yes. Drivers, helpers, and transport staff employed directly or indirectly in connection with the cement plant or quarry’s operations must be covered under PF and ESIC. This includes those working on internal or captive routes. Coverage depends on the employer–employee relationship, not the job title.`,
+  },
+  {
+    question:
+      "What labour law applies to migrant workers at the Kurnool solar park site?",
+    answer: `The Inter-State Migrant Workmen Act, 1979 applies. The Principal Employer must obtain PE Registration, and contractors must obtain a Contractor Licence. This law mandates displacement allowance, journey allowance, medical facilities, and wage protection — all of which connect directly to EPF and ESIC documentation requirements.`,
+  },
+];
+export const heroDataKadapaDist = {
+  title:
+    "Kadapa EPF & ESIC Compliance: Temple Trusts, Barytes Mining & Seasonal Agri-Processing | EPFDesk",
+  description:
+    "EPFDesk provides specialized EPF and ESIC compliance services for Kadapa’s unique sectors—Barytes and Limestone Mining, Temple Trust Employees, and Groundnut/Cotton Processing Units. Expert support for occupational disease ESIC risks, PF liability for religious institutions, and seasonal labour compliance.",
+};
+export const sectionsKadapaDist = [
+  {
+    title:
+      "Kadapa’s Unique Workforce Profile: Mining, Temple Trusts & Agri-Processing",
+    description:
+      "YSR Kadapa District combines high-risk mining operations, temple trust employment models, and seasonal agricultural processing—creating unique EPF and ESIC compliance challenges that require sector-specific expertise.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Barytes, Limestone & Quarry Mining Units",
+        content:
+          "Mining operations in Proddatur and Yerraguntla involve high dust exposure and accident risks. EPFDesk ensures 100% PF/ESI coverage for all mine workers, including contractors, with documented compliance for Silicosis and occupational disease risk.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Temple Trusts & Religious Hospitality Workforce",
+        content:
+          "Temple trusts must comply with PF/ESI once employee thresholds are crossed. EPFDesk helps establish defensible staff classification, payroll applicability, and statutory coverage for choultry, sanitation, ticketing, and hospitality workers.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Groundnut Oil Mills & Seasonal Agri-Processing",
+        content:
+          "Agri-processing units often cross PF/ESI thresholds only during harvest months. EPFDesk ensures continuous statutory compliance, correct seasonal factory assessment, and accurate PF calculation for daily/piece-rate workers.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Kadapa District",
+    description:
+      "Mining hazards, temple trust employee structures, and fluctuating agri-workforce numbers create complex compliance obligations under EPF, ESIC, and the new wage code.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "EPF Applicability for Temple & Trust Employees",
+        content:
+          "Religious or charitable status does not exempt PF applicability. Any trust employing 20+ staff must comply. EPFDesk builds robust employee documentation and compliance mapping for trust-based institutions.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Coverage for Hazardous Mining Labour",
+        content:
+          "Mining workers must receive ESIC coverage from day one due to high exposure risks. EPFDesk ensures ESIC accident reporting, medical record compliance, and documentation that protects employers from compensation liability.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal Labour Threshold Compliance",
+        content:
+          "Agri-units crossing PF/ESI thresholds even once become permanently covered. EPFDesk manages continuous filings, preventing retrospective demands during EPFO/ESIC audits.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for YSR Kadapa Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Temple Trust Statutory Compliance",
+        content:
+          "Specialized PF/ESI frameworks for religious institutions, including role classification, payroll structuring, and compliance documentation.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Mining Workforce PF & ESIC Management",
+        content:
+          "Comprehensive PF/ESI compliance for mining units, accident documentation, and occupational disease coverage under ESIC norms.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal Agri-Processing Labour Compliance",
+        content:
+          "Full-cycle compliance for groundnut oil mills and seasonal units—threshold calculation, ESIC applicability, PF-on-piece-rate calculations, and exemption evaluation.",
+      },
+    ],
+  },
+];
+export const kadapaFAQ = [
+  {
+    question:
+      "Does a major Temple Trust in Kadapa need to comply with EPF and ESIC?",
+    answer:
+      "Yes. Religious or charitable institutions are not exempt. Once a trust employs 20+ workers for PF or 10+ for ESIC, compliance becomes mandatory. Eligibility is based on the nature of employment, not the nature of the institution.",
+  },
+  {
+    question:
+      "Our groundnut oil mill operates only 6–8 months a year. Do we still need to pay PF?",
+    answer:
+      "Yes. If your employee count crossed the PF threshold at any point during the season, the establishment becomes permanently covered. You must continue PF filings even during off-season months where fewer workers remain.",
+  },
+  {
+    question:
+      "What is the biggest ESIC risk for Barytes mining units in Kadapa?",
+    answer:
+      "Occupational disease liability. Silicosis and Asbestosis cases lead to high compensation payouts. Without ESIC registration for all workers, the employer becomes directly liable. ESIC coverage is the only legal protection.",
+  },
+  {
+    question:
+      "How should a slab polishing unit in Yerraguntla handle PF for piece-rate workers?",
+    answer:
+      "Piece-rate earnings are treated as wages for PF. PF must be calculated on the actual monthly gross derived from output slabs, not on a notional basic pay. EPFDesk structures correct payroll frameworks for such units.",
+  },
+];
+export const nelloreFAQ = [
+  {
+    question:
+      "How does EPF liability apply to a Principal Employer at Krishnapatnam Port?",
+    answer:
+      "The PE is fully responsible for ensuring contractors pay PF on full actual wages. Under Section 7A of the EPF Act, EPFO can recover all dues and damages directly from the PE if any contractor under-reports wages or defaults. Continuous monitoring of contractor ECR filings is essential.",
+  },
+  {
+    question:
+      "Are workers in prawn peeling and cleaning sections covered by ESIC?",
+    answer:
+      "Yes. Prawn, shrimp, and seafood processing units are considered factories once thresholds are met. All workers earning up to ₹21,000, including contract staff involved in cleaning, sorting, and packing, must be registered under ESIC.",
+  },
+  {
+    question:
+      "What is the main compliance issue during thermal power plant construction?",
+    answer:
+      "Mandatory compliance with the BOCW Act—worker registration and cess payment. Non-compliance leads to penalties, stop-work notices, and parallel PF/ESI inspections using the same worker data. EPC contractors must strictly maintain all records.",
+  },
+  {
+    question:
+      "Is PF applicable on ‘Dirty Work Allowance’ or similar payments for power-plant maintenance staff?",
+    answer:
+      "Yes. Any allowance paid universally or ordinarily to employees forms part of PF wages. Supreme Court judgments mandate PF contribution on recurring allowances unless they are variable, incentive-based, or reimbursement in nature.",
+  },
+];
+export const sectionsNelloreDist = [
+  {
+    title:
+      "Nellore’s Industrial Landscape: Ports, Aquaculture & Thermal Energy",
+    description:
+      "Nellore District is driven by Krishnapatnam Port operations, large thermal power plants, and India’s leading aquaculture hubs. EPF & ESIC compliance must adapt to high contractor dependency, seasonal workforce variation, and strict food-processing safety standards.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Krishnapatnam Port & Logistics Workforce",
+        content:
+          "Port operations depend on large volumes of contract workers for cargo handling, stevedoring, and maintenance. EPFDesk ensures Principal Employer protection by auditing contractor ECR filings and wage declarations to avoid Section 7A PF liabilities.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Aquaculture Processing & Cold-Chain Units",
+        content:
+          "Prawn and shrimp processing units in Gudur, Kavali, and coastal belts require precise ESIC compliance. Seasonal and shift-based staffing patterns demand accurate ESIC registration and wage definition for factory workers, especially cleaners and packers.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Thermal Power Plants & EPC Contractors",
+        content:
+          "Thermal power plants rely heavily on EPC contractors for construction and maintenance. EPFDesk manages PF applicability on allowances such as shift, heat and dirty-work allowance, ensuring compliance for thousands of contract workers.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Nellore",
+    description:
+      "The district’s heavy reliance on contract labour across ports, power plants, and food processing creates ongoing PF/ESI risks, requiring strict Principal Employer oversight.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Port & Power Plant Principal Employer Liability",
+        content:
+          "EPFO aggressively enforces Section 7A liability on Krishnapatnam Port and thermal power project employers if contractors fail to pay PF on full actual wages. EPFDesk builds monthly evidence trails to legally safeguard PEs.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC for Aquaculture & Food Processing Units",
+        content:
+          "Food-processing workers must be covered under ESIC once thresholds are crossed. EPFDesk ensures hygienic-condition compliance, shift-wage mapping, and end-to-end ESIC documentation for export audits.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "BOCW Cess Compliance for Construction Projects",
+        content:
+          "Massive port expansion and power-plant construction require mandatory BOCW registration and cess remittance. EPFDesk audits construction records to prevent stop-work notices and linked PF/ESI inspections.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Nellore Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labour Compliance for Port & EPC Contractors",
+        content:
+          "Real-time PF/ESI monitoring systems, monthly contractor verification, and Principal Employer interface alignment for Krishnapatnam Port and power projects.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Management for Aquaculture Processing Units",
+        content:
+          "Factory-grade ESIC implementation including worker onboarding, shift allowance integration, export-audit documentation, and medical claim facilitation.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "BOCW & Migrant Labour Compliance Framework",
+        content:
+          "Full compliance for construction-phase projects—cess calculation, registration, migrant worker documentation, and linkage with PF/ESI statutory filings.",
+      },
+    ],
+  },
+];
+export const heroDataNelloreDist = {
+  title:
+    "Nellore EPF & ESIC Compliance: Krishnapatnam Port, Aquaculture Processing & Thermal Power Projects | EPFDesk",
+  description:
+    "EPFDesk provides specialized EPF and ESIC compliance for Nellore’s aquaculture processing units, Krishnapatnam Port contractors, and thermal power plant EPC workforce. Expertise in contract labour risk mitigation, ESIC for food processing units, and BOCW compliance.",
+};

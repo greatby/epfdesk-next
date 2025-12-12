@@ -598,6 +598,188 @@ export default function Footer() {
             </div>
           ))}
         </div>
+        <div className="max-w-7xl mx-auto px-6 pb-10 space-y-6">
+          {[
+            {
+              title: "District EPF & ESIC Compliance",
+              list: [
+                {
+                  label: "Vadodara EPF & ESIC Compliance",
+                  slug: "vadodara-epf-esic-compliance",
+                },
+                {
+                  label: "Surat EPF & ESIC Compliance",
+                  slug: "surat-epf-esic-compliance",
+                },
+                {
+                  label: "Bharuch EPF & ESIC Compliance",
+                  slug: "bharuch-epf-esic-compliance",
+                },
+                {
+                  label: "Rajkot EPF & ESIC Compliance",
+                  slug: "rajkot-epf-esic-compliance",
+                },
+                {
+                  label: "Jamnagar EPF & ESIC Compliance",
+                  slug: "jamnagar-epf-esic-compliance",
+                },
+                {
+                  label: "Gandhinagar EPF & ESIC Compliance",
+                  slug: "gandhinagar-epf-esic-compliance",
+                },
+                {
+                  label: "Kutch EPF & ESIC Compliance",
+                  slug: "kutch-epf-esic-compliance",
+                },
+                {
+                  label: "Surendranagar EPF & ESIC Compliance",
+                  slug: "surendranagar-epf-esic-compliance",
+                },
+                {
+                  label: "Ahmedabad EPF & ESIC Compliance",
+                  slug: "ahmedabad-epf-esic-compliance",
+                },
+
+                {
+                  label: "Chennai EPF & ESIC Compliance",
+                  slug: "chennai-epf-esic-compliance",
+                },
+                {
+                  label: "Kanchipuram EPF & ESIC Compliance",
+                  slug: "kanchipuram-epf-esic-compliance",
+                },
+                {
+                  label: "Tiruvallur EPF & ESIC Compliance",
+                  slug: "tiruvallur-epf-esic-compliance",
+                },
+                {
+                  label: "Tiruppur EPF & ESIC Compliance",
+                  slug: "tiruppur-epf-esic-compliance",
+                },
+                {
+                  label: "Coimbatore EPF & ESIC Compliance",
+                  slug: "coimbatore-epf-esic-compliance",
+                },
+                {
+                  label: "Erode EPF & ESIC Compliance",
+                  slug: "erode-epf-esic-compliance",
+                },
+                {
+                  label: "Madurai EPF & ESIC Compliance",
+                  slug: "madurai-epf-esic-compliance",
+                },
+                {
+                  label: "Trichy EPF & ESIC Compliance",
+                  slug: "trichy-epf-esic-compliance",
+                },
+                {
+                  label: "Salem EPF & ESIC Compliance",
+                  slug: "salem-epf-esic-compliance",
+                },
+                {
+                  label: "Thoothukudi EPF & ESIC Compliance",
+                  slug: "thoothukudi-epf-esic-compliance",
+                },
+                {
+                  label: "Vellore EPF & ESIC Compliance",
+                  slug: "vellore-epf-esic-compliance",
+                },
+                {
+                  label: "Thanjavur EPF & ESIC Compliance",
+                  slug: "thanjavur-epf-esic-compliance",
+                },
+                {
+                  label: "Cuddalore EPF & ESIC Compliance",
+                  slug: "cuddalore-epf-esic-compliance",
+                },
+                // {
+                //   label: "Kancheepuram EPF & ESIC Compliance",
+                //   slug: "kancheepuram-epf-esic-compliance",
+                // },
+                {
+                  label: "Karur EPF & ESIC Compliance",
+                  slug: "karur-epf-esic-compliance",
+                },
+                {
+                  label: "Virudhunagar EPF & ESIC Compliance",
+                  slug: "virudhunagar-epf-esic-compliance",
+                },
+
+                {
+                  label: "Guntur EPF & ESIC Compliance",
+                  slug: "guntur-epf-esic-compliance",
+                },
+                {
+                  label: "Kurnool EPF & ESIC Compliance",
+                  slug: "kurnool-epf-esic-compliance",
+                },
+                {
+                  label: "Kadapa EPF & ESIC Compliance",
+                  slug: "kadapa-epf-esic-compliance",
+                },
+                {
+                  label: "Nellore EPF & ESIC Compliance",
+                  slug: "nellore-epf-esic-compliance",
+                },
+                {
+                  label: "Prakasam EPF & ESIC Compliance",
+                  slug: "prakasam-epf-esic-compliance",
+                },
+                {
+                  label: "Kakinada EPF & ESIC Compliance",
+                  slug: "kakinada-epf-esic-compliance",
+                },
+                {
+                  label: "Visakhapatnam EPF & ESIC Compliance",
+                  slug: "visakhapatnam-epf-esic-compliance",
+                },
+                {
+                  label: "Krishna EPF & ESIC Compliance",
+                  slug: "krishna-epf-esic-compliance",
+                },
+
+                {
+                  label: "Yadadri-Bhuvanagiri EPF & ESIC Compliance",
+                  slug: "yadadri-bhuvanagiri-epf-esic-compliance",
+                },
+                {
+                  label: "Khammam EPF & ESIC Compliance",
+                  slug: "khammam-epf-esic-compliance",
+                },
+                {
+                  label: "Tirupati EPF & ESIC Compliance",
+                  slug: "tirupati-epf-esic-compliance",
+                },
+                {
+                  label: "Chittoor EPF & ESIC Compliance",
+                  slug: "chittoor-epf-esic-compliance",
+                },
+              ],
+            },
+          ].map(({ title, list }) => (
+            <div key={title}>
+              <div className="text-sm font-semibold text-gray-900 uppercase mb-2">
+                {title}
+              </div>
+
+              <div className="flex flex-wrap gap-2 text-[12px] text-gray-700">
+                {list.map(({ label, slug }, i) => (
+                  <span key={slug} className="flex items-center">
+                    <a
+                      href={`/${slug}`}
+                      className="hover:text-[#066] hover:underline"
+                    >
+                      {label}
+                    </a>
+                    {i !== list.length - 1 && (
+                      <span className="px-2 text-gray-400">|</span>
+                    )}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
 
         <hr className="border-t border-gray-200" />
         <div className="text-sm my-5 text-center text-[#6b7280]">
