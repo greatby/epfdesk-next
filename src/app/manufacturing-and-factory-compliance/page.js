@@ -4,13 +4,126 @@ import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import ThreeStepSection from "@/components/ThreeStepSection";
 import FaqAccordion from "@/components/faqAccordian";
-
+import Head from "next/head";
 import Script from "next/script";
 import { heroDataManufacturing, sectionsManufacturing } from "@/utils/data";
+export const metadata = {
+  title:
+    "Manufacturing & Factory EPF & ESIC Compliance India | Factories Act, NWC 2025 | EPFDesk",
+
+  description:
+    "EPFDesk provides EPF & ESIC compliance services for manufacturing units and factories across India. Expertise in Factories Act compliance, contract labour management, NWC 2025 wage structuring, PF/ESI registration, statutory audits, and monthly ECR filings.",
+
+  keywords: [
+    "manufacturing EPF compliance India",
+    "factory PF ESIC compliance",
+    "Factories Act labour compliance",
+    "contract labour compliance manufacturing",
+    "NWC 2025 factory payroll",
+    "shop floor worker PF ESIC",
+    "industrial unit PF audit",
+    "ESIC compliance factory workers",
+    "PF ESIC audit manufacturing sector",
+    "EPFDesk India",
+  ],
+
+  alternates: {
+    canonical: "https://epfdesk.com/manufacturing-and-factory-compliance",
+  },
+
+  openGraph: {
+    title:
+      "Manufacturing & Factory EPF & ESIC Compliance | PAN India | EPFDesk",
+
+    description:
+      "PF & ESIC compliance for manufacturing plants and factories across India. Contract labour audits, Factories Act alignment, NWC 2025 payroll restructuring, and end-to-end statutory compliance.",
+
+    url: "https://epfdesk.com/manufacturing-and-factory-compliance",
+    siteName: "EPFDesk",
+
+    images: [
+      {
+        url: "https://epfdesk.com/images/logo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "EPFDesk Manufacturing and Factory EPF ESIC Compliance India",
+      },
+    ],
+
+    locale: "en_IN",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Manufacturing & Factory EPF ESIC Compliance | India | EPFDesk",
+
+    description:
+      "EPF & ESIC compliance for manufacturing units and factories across India. Factories Act, contract labour compliance, NWC 2025 payroll structuring, and monthly statutory filings handled by experts.",
+
+    images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+};
 
 const page = () => {
   return (
     <>
+      <Head>
+        <title>
+          Manufacturing & Factory EPF & ESIC Compliance India | Factories Act &
+          NWC 2025 | EPFDesk
+        </title>
+
+        <meta
+          name="description"
+          content="EPFDesk provides EPF & ESIC compliance services for manufacturing units and factories across India. Support includes Factories Act compliance, contract labour management, NWC 2025 wage structuring, PF/ESI registration, audits, and monthly statutory filings."
+        />
+
+        <meta
+          name="keywords"
+          content="manufacturing EPF compliance India, factory PF ESIC, Factories Act compliance, contract labour manufacturing, NWC 2025 factory payroll, EPFDesk India"
+        />
+
+        <link
+          rel="canonical"
+          href="https://epfdesk.com/manufacturing-and-factory-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Manufacturing & Factory EPF & ESIC Compliance | PAN India | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for manufacturing plants and factories across India. Contract labour audits, Factories Act alignment, and end-to-end statutory compliance."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/manufacturing-and-factory-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Manufacturing & Factory EPF ESIC Compliance | India | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="EPF & ESIC compliance for manufacturing units and factories across India. Factories Act, contract labour compliance, and statutory advisory handled end-to-end."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+      </Head>
       <Script
         id="schema-sme-msme"
         type="application/ld+json"

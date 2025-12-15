@@ -4,13 +4,132 @@ import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import ThreeStepSection from "@/components/ThreeStepSection";
 import FaqAccordion from "@/components/faqAccordian";
-
+import Head from "next/head";
 import Script from "next/script";
-import { heroDataConstruction, heroDataFinancial, sectionsFinancial } from "@/utils/data";
+import {
+  heroDataConstruction,
+  heroDataFinancial,
+  sectionsFinancial,
+} from "@/utils/data";
+export const metadata = {
+  title:
+    "Financial Services & Banking Sector EPF & ESIC Compliance India | NBFCs, FinTech & Banks | EPFDesk",
+
+  description:
+    "EPFDesk provides EPF & ESIC compliance services for banks, NBFCs, FinTech companies, insurance firms, and financial service providers across India. Expertise in statutory audits, contractor and sales-force compliance, PF/ESI registration, and ongoing monthly filings.",
+
+  keywords: [
+    "financial services EPF compliance India",
+    "banking sector PF ESIC",
+    "NBFC EPF ESIC compliance",
+    "FinTech labour compliance India",
+    "insurance company PF ESIC",
+    "sales staff PF ESIC compliance",
+    "contractor compliance financial sector",
+    "PF audit financial services",
+    "ESIC compliance banking sector",
+    "EPFDesk India",
+  ],
+
+  alternates: {
+    canonical:
+      "https://epfdesk.com/financial-services-and-banking-sector-compliance",
+  },
+
+  openGraph: {
+    title:
+      "Financial Services & Banking Sector EPF & ESIC Compliance | PAN India | EPFDesk",
+
+    description:
+      "PF & ESIC compliance for banks, NBFCs, FinTechs, insurance companies, and financial service providers across India. Statutory audits, contractor labour compliance, and end-to-end EPF/ESIC operations handled by experts.",
+
+    url: "https://epfdesk.com/financial-services-and-banking-sector-compliance",
+    siteName: "EPFDesk",
+
+    images: [
+      {
+        url: "https://epfdesk.com/images/logo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "EPFDesk Financial Services and Banking Sector EPF ESIC Compliance India",
+      },
+    ],
+
+    locale: "en_IN",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title:
+      "Financial Services & Banking Sector EPF ESIC Compliance | India | EPFDesk",
+
+    description:
+      "EPF & ESIC compliance for banks, NBFCs, FinTechs, and financial service providers across India. Registration, audits, contractor compliance, and monthly statutory filings.",
+
+    images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+};
 
 const page = () => {
   return (
     <>
+      <Head>
+        <title>
+          Financial Services & Banking Sector EPF & ESIC Compliance India |
+          NBFCs, FinTech & Banks | EPFDesk
+        </title>
+
+        <meta
+          name="description"
+          content="EPFDesk provides EPF & ESIC compliance services for banks, NBFCs, FinTech companies, insurance firms, and financial service providers across India. Support includes PF/ESI registration, audits, contractor compliance, and monthly statutory filings."
+        />
+
+        <meta
+          name="keywords"
+          content="financial services EPF compliance India, banking sector PF ESIC, NBFC EPF ESIC, FinTech labour compliance, insurance PF ESIC, sales staff PF ESIC, EPFDesk India"
+        />
+
+        <link
+          rel="canonical"
+          href="https://epfdesk.com/financial-services-and-banking-sector-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Financial Services & Banking Sector EPF & ESIC Compliance | PAN India | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for banks, NBFCs, FinTechs, and financial service providers across India. Statutory audits, contractor labour compliance, and ongoing EPF/ESIC operations."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/financial-services-and-banking-sector-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Financial Services & Banking Sector EPF ESIC Compliance | India | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="EPF & ESIC compliance for banks, NBFCs, FinTechs, and financial service providers across India. End-to-end statutory compliance and advisory."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+      </Head>
       <Script
         id="schema-sme-msme"
         type="application/ld+json"

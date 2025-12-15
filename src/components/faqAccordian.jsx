@@ -50,7 +50,7 @@ export default function FaqAccordion({ faqs, title = "Frequently Asked Questions
                 aria-expanded={isOpen}
                 aria-controls={`faq-${index}`}
               >
-                <span className="text-[1rem] font-[500] tracking-[-.024em]">{faq.question}</span>
+                <span className="text-[1rem] font-medium tracking-[-.024em]">{faq.question}</span>
 
                 {/* ---- Custom Plus-to-Minus Icon (pure CSS) ---- */}
                 <span
@@ -60,12 +60,12 @@ export default function FaqAccordion({ faqs, title = "Frequently Asked Questions
                 >
                   {/* horizontal bar (always visible) */}
                   <span
-                    className={`absolute block w-3 h-[2px] bg-current transition-colors duration-300`}
+                    className={`absolute block w-3 h-0.5 bg-current transition-colors duration-300`}
                     aria-hidden="true"
                   />
                   {/* vertical bar (scales to 0 when open) */}
                   <span
-                    className={`absolute block h-3 w-[2px] bg-current transform transition-transform duration-300 origin-center ${
+                    className={`absolute block h-3 w-0.5 bg-current transform transition-transform duration-300 origin-center ${
                       isOpen ? "scale-y-0" : "scale-y-100"
                     }`}
                     aria-hidden="true"

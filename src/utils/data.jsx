@@ -22691,3 +22691,3750 @@ export const heroDataNelloreDist = {
   description:
     "EPFDesk provides specialized EPF and ESIC compliance for Nellore’s aquaculture processing units, Krishnapatnam Port contractors, and thermal power plant EPC workforce. Expertise in contract labour risk mitigation, ESIC for food processing units, and BOCW compliance.",
 };
+export const heroDataBlrUrban = {
+  title: "India’s IT, Biotech, GCC & Aerospace Capital",
+  description:
+    "Bengaluru Urban hosts India’s largest concentration of IT, GCC, Biotech and Aerospace firms. Compliance challenges arise from high-salary workforces, International Worker PF requirements, extensive vendor ecosystems, and ESIC Principal Employer risks.",
+};
+export const sectionsBlrUrban = [
+  {
+    title: "Bengaluru’s High-Stakes Compliance Landscape",
+    description:
+      "Bengaluru Urban hosts India’s largest IT, GCC, Biotech, Fintech, and Aerospace workforce. High salaries, International Worker rules, and extensive contractor ecosystems create complex PF & ESIC obligations for employers.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Technology & GCC Industrial Zones",
+        content:
+          "Electronics City, Whitefield, ORR, Hebbal and A&D Park host thousands of IT, Biotech, Aerospace and Global Capability Center units. Each zone demands strict PF/ESIC coverage for both high-skilled staff and extensive outsourced support teams.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "High-Salary Workforce & Global Payrolls",
+        content:
+          "IT and GCC firms employ high-compensation staff requiring PF on full salary. Complex payroll structures, stock options, global allowances and variable incentives require compliant PF treatment to avoid retrospective 7A liabilities.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "International Worker (IW) Obligations",
+        content:
+          "Despite Karnataka HC striking down certain IW PF rules, uncertainty remains until the Supreme Court verdict. Employers must manage global salary PF applicability, withdrawal restrictions, CoC verification and documentation safeguards.",
+      },
+    ],
+  },
+
+  {
+    title: "Core EPF & ESIC Compliance Challenges in Bengaluru",
+    description:
+      "Bengaluru’s IT/GCC ecosystem depends heavily on variable-pay structures, global mobility employees, and a vast network of contractors—leading to PF and ESIC risk exposure.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Variable Pay Suppression & NWC 2025",
+        content:
+          "IT/GCC firms often use high allowances and performance incentives to reduce PF base wages. Under NWC 2025, Basic Pay + DA must form 50% of wages, significantly increasing PF liability unless restructuring is done.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Coverage for Support Staff",
+        content:
+          "Security, housekeeping, transport and catering workers are ESIC-eligible even when deployed at premium IT campuses. If contractors default, the Principal Employer (IT/GCC company) is liable for arrears, damages and medical costs.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "7A PF Investigations & Litigation",
+        content:
+          "EPFO frequently audits IT/GCC companies for variable pay suppression, contractor PF evasion, IW contributions and wage misclassification. Robust documentation and audit trails are essential to defend 7A inquiries.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Exempted PF Trust Management",
+        content:
+          "Large IT firms maintain private PF Trusts requiring strict adherence to investment norms, member-wise transfer management, and updated Trust Rules aligned to NWC’s wage definition. Non-compliance risks trust cancellation.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Solutions for Bengaluru Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "International Worker PF Advisory",
+        content:
+          "We manage global salary PF compliance, SSA mapping, CoC verification, withdrawal rules, expatriate onboarding and litigation preparedness for complex IW cases.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 2025 Payroll Structuring for IT/GCC",
+        content:
+          "We provide modelling frameworks that restructure allowances without violating statutory wage rules—reducing PF cost impact while maintaining compliance and employee satisfaction.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Contractor Compliance & PE Audit Framework",
+        content:
+          "A monthly Principal Employer audit system validates contractor ESIC payments, wage declarations and worker deployment to protect IT campuses from heavy liabilities.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Exempted Trust Governance & Annual Audit",
+        content:
+          "We handle quarterly returns, investment compliance, employee-level PF transfers, Trust Rule updates and EPFO inspection readiness for large exempted establishments.",
+      },
+    ],
+  },
+];
+
+export const faqBlrUrban = [
+  {
+    question:
+      "What is the current status of EPF contributions for International Workers (IW) in Bengaluru IT/GCC companies?",
+    answer:
+      "The Karnataka High Court recently struck down special PF provisions for IWs from non-SSA countries. However, until the Supreme Court gives final clarity, most companies maintain contributions to avoid future liabilities. EPFDesk provides real-time advisory on contribution base, withdrawal eligibility, CoC validation, and documentation management.",
+  },
+  {
+    question:
+      "Will the New Wage Code 2025 force my IT/GCC company to increase PF contribution on high salaries?",
+    answer:
+      "Yes. Under the NWC 2025, Basic Pay + DA must constitute at least 50% of total remuneration. If your payroll has high allowances and low basic, the excess allowance will be added to the PF wage base. We provide payroll restructuring models to legally control PF cost while maintaining compliance.",
+  },
+  {
+    question:
+      "As a GCC on ORR, what is my ESIC risk for facility management and outsourced support staff?",
+    answer:
+      "Your biggest risk is Principal Employer Liability. If the vendor does not contribute ESIC for eligible workers (earning ≤ ₹21,000), ESIC will recover arrears, damages, and medical expenses directly from your company. EPFDesk sets up PE audit systems to verify contractor compliance before invoice clearance.",
+  },
+  {
+    question:
+      "Our early-stage startup just crossed 20 employees in Bengaluru. What is the deadline for EPF registration?",
+    answer:
+      "EPF registration becomes mandatory within 30 days from the date your employee count crosses 20. Delays result in interest under Section 7Q and damages under Section 14B, calculated from the date of applicability — not the registration date.",
+  },
+  {
+    question:
+      "Do high-salary IT employees need to contribute PF on full salary or only on ₹15,000?",
+    answer:
+      "If PF is voluntarily restricted to ₹15,000, the employer must maintain consistent policy, signed opt-out forms, and proof that the employee was above the threshold at the time of joining. For International Workers and certain GCC policies, PF may be mandated on full salary.",
+  },
+  {
+    question:
+      "Are IT/GCC companies responsible for EPF compliance of gig workers, contractors, and freelancers?",
+    answer:
+      "Yes, in many cases. If the contractor’s employees work under your supervision, direction, or control, or if manpower supply is involved, Principal Employer Liability applies. EPF inspectors frequently club manpower vendors with the PE during 7A inquiries.",
+  },
+];
+export const heroDataTumakuruDist = {
+  title: "Heavy Engineering, Auto Components & CBIC Manufacturing Hub",
+  description:
+    "Tumakuru is emerging as Karnataka's major factory district with VNA Industrial Area, cement plants, auto component units and CBIC corridor industries. Compliance revolves around ESIC accident management, Principal Employer PF liability and NWC 2025 wage restructuring.",
+};
+export const sectionsTumakuruDist = [
+  {
+    title: "Tumakuru’s Industrial Landscape: Heavy Engineering, Auto Components & CBIC Node",
+    description:
+      "Tumakuru’s economy is powered by large factories, Vasanthanarasapura Industrial Area (VNA), cement plants and the CBIC corridor. PF & ESIC compliance must address factory accident exposure, contractor-heavy operations and high-volume ESIC workforce coverage.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "VNA Industrial Area & Heavy Engineering Units",
+        content:
+          "Large metal, engineering and automotive plants in VNA employ thousands of workers through contractors. EPFDesk safeguards Principal Employers against retrospective PF liabilities through structured contractor audits and documentation trails.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Cement, Food Processing & Auto Components",
+        content:
+          "Cement plants (ACC, Lafarge), oil mills, and auto component factories require high ESIC coverage accuracy due to accident-prone operations, dust exposure and rotating-shift workforces.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "CBIC Corridor Strategic Position",
+        content:
+          "Tumakuru’s location on the Chennai–Bengaluru Industrial Corridor brings fast-expanding EPC, construction, logistics and warehouse units, demanding strict PF/ESI compliance control.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Tumakuru",
+    description:
+      "Factory law integration, contractor dependency and accident-heavy industries make Tumakuru one of Karnataka’s most sensitive districts for PF/ESI enforcement.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "High Factory Accident & ESIC Claim Risk",
+        content:
+          "Manufacturing and cement units report higher accident and occupational disease risks. Immediate ESIC registration ensures medical liability shifts from employer to ESIC, protecting factories during inspections.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Principal Employer PF Liability in VNA",
+        content:
+          "EPFO frequently targets VNA Principal Employers for contractor PF defaults. Retrospective 7A orders demand PF arrears, interest and damages unless PE maintains strong monthly compliance evidence.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 2025 Wage Definition Enforcement",
+        content:
+          "SMEs suppress PF by keeping Basic Pay low and Special Allowance high. Under NWC 2025, EPFO will reclassify excess allowances as wages and raise retrospective PF demands.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "CLRA Act & Contract Worker Integration",
+        content:
+          "Contract labour PF/ESI compliance must be aligned with CLRA rules. Improper deployment in core manufacturing activities may result in workers claiming deemed-permanent status.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Tumakuru Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Vendor Compliance Management System (VCMS)",
+        content:
+          "EPFDesk implements monthly PF/ESI contractor monitoring, contractor vetting, Principal Employer Interface audits, and payment-hold mechanisms to prevent Section 7A liabilities.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Factory ESIC Coverage & Accident Claim Support",
+        content:
+          "We ensure immediate ESIC onboarding for factory workers, integration with wage structures, accident claim documentation, medical benefit coordination and employer liability protection.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 2025 Payroll & Allowance Restructuring",
+        content:
+          "We restructure manufacturing payrolls so Basic Pay meets the 50% rule while minimizing PF cost escalation and preventing retrospective PF demands.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PF/ESI Compliance for SMEs & Auto Component Units",
+        content:
+          "EPFDesk builds statutory frameworks for small and mid-size factories, covering PF wage definition, shift allowance classification, attendance bonus PF rules and EPFO inspection readiness.",
+      },
+    ],
+  },
+];
+export const faqTumakuru = [
+  {
+    question:
+      "As a Principal Employer in VNA, what steps must I take to avoid liability for contractors’ PF non-compliance?",
+    answer:
+      "Implement a Vendor Compliance Management System (VCMS): 1) Vet contractor PF/ESI registration, 2) Monitor monthly ECR filings via the EPFO PE Interface, 3) Withhold payment until statutory proof is furnished. Principal Employers are liable for contractors under Section 7A.",
+  },
+  {
+    question:
+      "Does ESIC apply to drivers and loaders working for a cement factory in Tumakuru?",
+    answer:
+      "Yes. If drivers and loaders are employed directly or through contractors for activities connected to the factory’s business, ESIC coverage applies for wages ≤ ₹21,000 per month.",
+  },
+  {
+    question:
+      "My SME in Tumakuru pays low Basic Pay to minimize PF. How will NWC 2025 impact this?",
+    answer:
+      "The NWC mandates that Basic + DA must be at least 50% of gross wages. Any excess allowance becomes PF-liable. EPFO may raise retrospective PF, interest and damages under Section 7A unless payroll is restructured immediately.",
+  },
+  {
+    question:
+      "Which EPFO office has jurisdiction over Tumakuru district?",
+    answer:
+      "Tumakuru has a dedicated Regional/Sub-Regional EPFO office. All PF compliance, inspections, 7A inquiries and legal matters for Tumakuru manufacturing units fall under this jurisdiction.",
+  },
+];
+export const heroDataBelagaviDist = {
+  title: "India’s Foundry & Heavy Engineering Powerhouse",
+  description:
+    "Belagavi is India’s Foundry and Heavy Engineering Hub, with high ESIC accident exposure, intense OHS compliance requirements, and significant PF liabilities from large-scale contract labour deployment.",
+};
+export const sectionsBelagaviDist = [
+  {
+    title: "Belagavi’s Industrial Landscape: Foundries, Auto Components & Heavy Engineering",
+    description:
+      "Belagavi is one of India’s most important foundry clusters with machine-tool, hydraulics, auto components and agro-processing units. PF & ESIC compliance must account for hazardous processes, contract-heavy operations and OHS documentation requirements.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Foundry & Heavy Engineering Clusters",
+        content:
+          "High-temperature melting, machining and hydraulic operations create elevated ESIC/OHS risks. EPFDesk ensures immediate ESIC enrolment, factory register accuracy and accident claim readiness.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Auto Components & Machine Tools",
+        content:
+          "Auto component factories in Belagavi rely on contract workers for material movement, furnace support and finishing tasks. PF wage compliance is frequently scrutinized under Section 7A.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "BMIC Industrial Corridor Node",
+        content:
+          "Belagavi’s position on the Bengaluru–Mumbai Industrial Corridor draws EPC, logistics, engineering and food processing units—each requiring integrated PF/ESI and OHS frameworks.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Belagavi",
+    description:
+      "Foundries and engineering units face the highest ESIC accident scrutiny in Karnataka, along with contractor PF liability and NWC 2025 wage restructuring risks.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Hazardous Industry ESIC Coverage",
+        content:
+          "Foundries have high accident rates from heat, machinery and dust exposure. ESIC courts strictly enforce coverage; any lapse shifts full medical liability and compensation burden to the employer.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Principal Employer PF Liability for Contractors",
+        content:
+          "Factories depend on contract workers for maintenance and material handling. If contractors under-report PF wages below actual or below Minimum Wages Act levels, EPFO recovers full dues from the Principal Employer.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 2025 Wage Definition Enforcement",
+        content:
+          "Many SMEs artificially suppress PF wages by paying low Basic Wage. Under NWC 2025, allowances exceeding 50% will be reclassified as PF wages, leading to retrospective PF, interest and damages.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Inter-State Worker PF/ESI (Maharashtra Border)",
+        content:
+          "Belagavi's workforce includes daily commuters and seasonal migrants from Maharashtra. PF UAN portability, inter-state ESIC benefit coordination and documentation alignment are essential.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Belagavi Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Hazardous Industry ESIC & OHS Compliance",
+        content:
+          "Accident reporting, ESIC claim management, immediate worker onboarding, OHS register maintenance and exposure documentation for foundries and machine shops.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labour PF Compliance Framework",
+        content:
+          "Monthly contractor monitoring, PF wage benchmarking using Minimum Wages Act, PE interface audits and evidence trails to prevent Section 7A liabilities.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 2025 PF Wage Structuring for SMEs",
+        content:
+          "Restructuring wage components to ensure Basic = 50% of Wages while minimizing PF cost escalation and protecting SMEs from retrospective PF liabilities.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Multi-State PF/ESI Worker Management",
+        content:
+          "Managing PF UAN portability, ESIC inter-state benefits, migrant worker onboarding and compliance for Maharashtra border labour flows.",
+      },
+    ],
+  },
+];
+export const faqBelagavi = [
+  {
+    question:
+      "Our foundry hires temporary contract workers for a few weeks. Do they need ESIC coverage?",
+    answer:
+      "Yes. In hazardous industries like foundries, ESIC coverage is mandatory for all eligible workers regardless of duration. Failure to enroll even a temporary worker can result in the employer bearing full medical expenses and penalties.",
+  },
+  {
+    question:
+      "How does EPFO typically audit contractor wages in Belagavi's engineering cluster?",
+    answer:
+      "EPFO compares declared PF wages with sector-specific Minimum Wages. If the contractor reports PF wages below minimum wage, EPFO assumes wage suppression and raises retrospective PF, interest and damages against the Principal Employer.",
+  },
+  {
+    question:
+      "What is the risk of not complying with the NWC 2025 '50% Wages' rule in Belagavi factories?",
+    answer:
+      "Non-compliance triggers retrospective PF liability. EPFO may reclassify allowances exceeding 50% as Basic Wages and demand PF arrears for up to five years, severely impacting SME cash flow.",
+  },
+  {
+    question:
+      "Which EPFO office has jurisdiction over Belagavi district?",
+    answer:
+      "PF matters for Belagavi district are handled by the Regional Office, Belagavi, including inspections, 7A inquiries and litigation.",
+  },
+];
+export const heroDataHubballiDharwadDist = {
+  title: "SME Manufacturing, Textiles & Emerging Electronics SEZ Hub",
+  description:
+    "Hubballi-Dharwad is a growing industrial cluster powered by SME manufacturing, traditional textiles, auto ancillaries and the new Electronics SEZ near Dharwad. Compliance demands include ESIC enforcement for high-volume SME workers, PF wage structuring in auto ancillaries, and statutory setup for ESDM/SEZ units.",
+};
+export const sectionsHubballiDharwadDist = [
+  {
+    title:
+      "Hubballi-Dharwad’s Industrial Landscape: SME Manufacturing, Textiles & Electronics SEZ",
+    description:
+      "Hubballi-Dharwad hosts diverse industries including SME engineering, traditional textiles, auto ancillaries and a fast-growing ESDM ecosystem anchored by the new Electronics SEZ and Aequs Durable Goods Cluster.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "KIADB Industrial Areas & SME Manufacturing",
+        content:
+          "Belur and Rayapur Industrial Areas house SME auto parts, engineering and ancillary units. These factories face recurring PF/ESI compliance challenges due to fragmented documentation and contract labour dependency.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Traditional Textile & Khadi Units",
+        content:
+          "Textile mills and khadi units employ large numbers of low-wage workers, requiring accurate ESIC headcount determination and careful PF/ESI calculation when piece-rate wages are used.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Electronics SEZ & Aequs Durable Goods Cluster",
+        content:
+          "The upcoming Electronics SEZ and Aequs cluster require early-stage PF/ESI registration, contract labour compliance, and adaptation to SEZ-specific state-law variations without compromising central PF/ESI duties.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Hubballi-Dharwad",
+    description:
+      "The region’s diverse mix of SME, textile and high-tech SEZ units introduces unique PF/ESI complexities, especially around ESIC threshold enforcement and NWC 2025 wage structuring.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Threshold Enforcement for SMEs",
+        content:
+          "Many SMEs attempt to stay below the 10-employee ESIC threshold. Hubballi SRO actively audits such units, demanding strict evidence of headcount, wage registers and employment patterns.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Auto Ancillary PF Wage Suppression",
+        content:
+          "SME auto ancillary units frequently rely on high allowances to reduce PF liability. Under NWC 2025, PF must be calculated on at least 50% of wages, exposing these units to retrospective 7A liabilities.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "New Electronics SEZ Statutory Setup",
+        content:
+          "New SEZ units must register for PF/ESI from day one. While SEZs provide state-level exemptions, they do not exempt central PF/ESI laws, requiring early compliance alignment.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Unionized Labour Environment",
+        content:
+          "Hubballi-Dharwad’s strong traditional industrial base increases risk of union disputes if PF/ESI filings are incorrect. Precision in statutory returns and wage calculations is essential.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Hubballi-Dharwad Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Enforcement Defence & Headcount Compliance",
+        content:
+          "We prepare SMEs for ESIC inspections, validate headcount documentation, manage threshold compliance and create defensible wage and attendance records.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 2025-Compliant PF Wage Structuring",
+        content:
+          "We restructure SME wages to align with the 50% Basic Pay rule while preventing excessive PF cost escalation under the new mandate.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "SEZ PF/ESI Registration & Contract Labour Frameworks",
+        content:
+          "EPFDesk manages PF/ESI registration, compliance systems, contractor audits and SEZ documentation for new ESDM units.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Piece-Rate PF/ESI Calculation Support",
+        content:
+          "We implement systems for precise PF/ESI calculation on piece-rate wages, preventing disputes and retrospective PF demands.",
+      },
+    ],
+  },
+];
+export const faqHubballiDharwad = [
+  {
+    question:
+      "Where is the ESIC SRO for Hubballi-Dharwad and what is its enforcement focus?",
+    answer:
+      "The ESIC Sub Regional Office is located in Navanagar, Hubballi. It prioritizes enforcement in SME manufacturing and textile units, especially those attempting to remain below the 10-employee ESIC threshold.",
+  },
+  {
+    question:
+      "Our textile unit pays piece-rate wages. How should PF and ESIC be calculated?",
+    answer:
+      "PF and ESIC must be calculated on total actual earnings from piece-rate productivity—not on notional Basic Pay. EPFO may reassess wages and raise retrospective PF demands if registers are inaccurate.",
+  },
+  {
+    question:
+      "Does the NWC 2025 ‘50% Wages’ rule apply to SME auto ancillary units in Dharwad?",
+    answer:
+      "Yes. The NWC applies universally to all sizes of companies. If Basic Pay is less than 50% of gross wages, the unit is exposed to PF audits and retrospective liabilities.",
+  },
+  {
+    question:
+      "Is the new Electronics SEZ near Dharwad exempt from PF/ESIC?",
+    answer:
+      "No. PF and ESIC are central laws and mandatory for all SEZ units. State-level SEZ exemptions do not override PF/ESI compliance requirements.",
+  },
+];
+export const heroDataDakshinaKannadaDist = {
+  title: "Port, Banking, Education & Petrochemical Compliance Hub",
+  description:
+    "Dakshina Kannada’s compliance landscape includes New Mangalore Port’s contract labour, MRPL petrochemicals, high-wage banking sector PF, and mandatory ESIC coverage for hospitals and educational institutions in Mangaluru.",
+};
+export const sectionsDakshinaKannadaDist = [
+  {
+    title:
+      "Dakshina Kannada’s Industrial & Service Sector Landscape",
+    description:
+      "The district blends high-risk port logistics, petrochemical operations and service-sector institutions like banks, hospitals and colleges—each with unique PF/ESIC compliance demands.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "New Mangalore Port & Marine Logistics",
+        content:
+          "Port operations rely heavily on contract stevedores, loaders and marine labour. These zones face intense PF audits due to Principal Employer liability on full, actual wages.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Hospitals & Educational Institutions",
+        content:
+          "Private hospitals, colleges and schools must mandatorily register under ESIC upon reaching 10+ employees. ESIC enforcement is particularly high for non-teaching staff and technicians.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Petrochemicals, Refineries & Fertilizers",
+        content:
+          "MRPL and related chemical units face hazardous industry obligations, including ESIC accident reporting, occupational disease documentation and chemical exposure compliance.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Dakshina Kannada",
+    description:
+      "Port operations, the banking salary structure and mandatory ESIC coverage for service institutions create intense PF/ESI scrutiny in the district.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Port & Logistics Contractor PF Liability",
+        content:
+          "EPFO regularly audits stevedoring and cargo-handling contractors. Port authorities (Principal Employers) are liable for unpaid PF on full wages of contract workers.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Mandatory ESIC for Hospitals & Colleges",
+        content:
+          "Educational trusts and private hospitals face heavy ESIC penalties for failing to cover eligible staff. Enforcement is particularly strict for junior faculty, lab technicians and non-teaching staff.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Banking Sector PF Wage Misclassification",
+        content:
+          "Banks often classify large Special Allowances as non-PFable. Under NWC 2025, EPFO will include them in PF wages, creating massive retrospective liabilities.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Petrochemical Hazardous Industry ESIC",
+        content:
+          "Chemical exposure, refinery operations and fire hazards mandate strict ESIC compliance. Delays in accident reporting can shift liability to the employer.",
+      },
+    ],
+  },
+
+  {
+    title:
+      "EPFDesk Compliance Services for Dakshina Kannada Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Port Contractor PF Compliance Systems",
+        content:
+          "We implement Principal Employer Interface systems to monitor contractor PF filings, ensuring liability protection for NMP port operators.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Hospital & College ESIC Registration & Defence",
+        content:
+          "End-to-end ESIC applicability, worker categorization, payroll mapping, penalty defence and compliance restoration for educational institutions and hospitals.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Banking PF Wage Structuring & NWC 2025 Advisory",
+        content:
+          "We restructure banking/financial sector salary components to comply with the 50% Basic Wage rule and avoid retrospective PF demands.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Petrochemical ESIC Hazard Compliance",
+        content:
+          "Accident documentation, chemical exposure records, ESIC reporting systems and compliance for MRPL-linked units.",
+      },
+    ],
+  },
+];
+export const faqDakshinaKannada = [
+  {
+    question:
+      "Our private college in Mangaluru does not cover teachers under ESIC. Is this compliant?",
+    answer:
+      "No. ESIC is mandatory for all employees of educational institutions employing ≥10 persons. Failure to cover faculty and non-teaching staff can lead to severe retrospective ESIC demands on full eligible wages.",
+  },
+  {
+    question:
+      "How can a Port Authority reduce PF liability for stevedoring contractors?",
+    answer:
+      "By using the EPFO Principal Employer Interface to verify contractor ECR filings monthly and ensuring PF is paid on full actual wages before processing invoices.",
+  },
+  {
+    question:
+      "What is the major PF risk for Mangaluru’s banking sector?",
+    answer:
+      "Banks often misclassify Special Allowances as non-PFable. Under NWC 2025, EPFO may include these components in PF wages, causing large retrospective liabilities.",
+  },
+  {
+    question:
+      "Which ESIC office has jurisdiction over Dakshina Kannada?",
+    answer:
+      "Dakshina Kannada is served by the ESIC office in Mangaluru, with additional oversight historically linked to Mysuru SRO. Most compliance actions are handled locally in Mangaluru.",
+  },
+];
+export const heroDataBallariDist = {
+  title: "India’s Mining-to-Steel Industrial Powerhouse",
+  description:
+    "Ballari is dominated by mining, steel and thermal power operations with massive PF liabilities for contract labour and mandatory ESIC coverage in hazardous high-risk environments.",
+};
+export const sectionsBallariDist = [
+  {
+    title: "Ballari’s Mining, Steel & Thermal Power Landscape",
+    description:
+      "Ballari and Vijayanagara form India’s largest mining-to-steel belt, with thousands of contract workers, hazardous processes and intense PF/ESI enforcement.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Mining Operations & Lease Areas",
+        content:
+          "Sandur and Hospet’s mining clusters deploy large contractor workforces for excavation, loading and transport—creating high PF liability for Principal Employers.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Steel Plants & Ancillary Factories",
+        content:
+          "JSW Steel and surrounding units rely heavily on outsourced labour. EPFO routinely audits PF wage suppression and headcount discrepancies.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Thermal Power & Energy Projects",
+        content:
+          "Thermal plants and renewable energy projects must maintain ESIC compliance for accident-prone environments and contractor-heavy operations.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Ballari",
+    description:
+      "Hazardous industry operations, massive outsourced labour and wage suppression expose Ballari employers to continuous PF/ESI litigation.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Mining Contract Worker Wage Suppression",
+        content:
+          "Contractors often under-report wages/headcount. EPFO raises 7A assessments using mining output and manpower estimates, recovering PF from Steel Plants/Mines as Principal Employers.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Hazardous Industry ESIC Liability",
+        content:
+          "Mining, steel and power sectors must ensure immediate ESIC enrolment. Accident or exposure without ESIC coverage results in full liability for treatment and compensation.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "BOCW Cess Enforcement for Industrial Projects",
+        content:
+          "Steel plant expansion, furnace construction and thermal plant builds require BOCW registration. Missing cess payments trigger Labour Department inspections and PF/ESI scrutiny.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Minimum Wages Benchmarking for PF",
+        content:
+          "EPFO compares declared PF wages with the specialised Mining Minimum Wages schedule. Any lower wage is treated as suppression and triggers retrospective PF demands.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Ballari Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Mining Contractor PF Compliance Audit",
+        content:
+          "Evidence-based PF verification using headcount validation, muster roll analysis and EPFO-grade documentation aligned with mining output.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Hazardous Industry ESIC & Accident Compliance",
+        content:
+          "ESIC onboarding, accident register management, C-18 tracking and occupational disease documentation for steel, mining and power units.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "BOCW Cess Advisory for Industrial Construction",
+        content:
+          "Cess calculation, registration, remittance and linkage with PF/ESI filings to prevent litigation during new plant construction.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PF Wage Structuring & 7A Defence",
+        content:
+          "Minimising PF liability by aligning wages with NWC and Minimum Wages while preparing strong statutory defences for Section 7A audits.",
+      },
+    ],
+  },
+];
+export const faqBallari = [
+  {
+    question:
+      "What is the most common PF evasion tactic by mining contractors in Ballari?",
+    answer:
+      "Mining contractors frequently classify workers as 'casual' or 'daily wage' and report low PF wages. EPFO uses 7A assessments to prove the work is perennial and demands PF on full minimum wages from the Principal Employer.",
+  },
+  {
+    question:
+      "How can Steel Plants ensure contractors comply with ESIC?",
+    answer:
+      "Steel Plants must mandate valid ESIC codes, monitor C-18 statements and withhold contractor payments until proof of ESIC contribution is furnished to mitigate PE liability.",
+  },
+  {
+    question:
+      "Does BOCW Cess apply to new furnace or power plant construction?",
+    answer:
+      "Yes. All industrial construction projects must remit BOCW Cess. Failure triggers Labour Department scrutiny and often exposes parallel PF/ESI non-compliance.",
+  },
+  {
+    question:
+      "Which EPFO office has jurisdiction over Ballari and Vijayanagara?",
+    answer:
+      "PF matters are handled by the Regional Office for Ballari/Hubballi, which specialises in mining and steel sector compliance.",
+  },
+];
+export const heroDataRaichurDist = {
+  title: "Power Generation, Gold Mining & Agro-Processing Compliance Hub",
+  description:
+    "Raichur’s economy is driven by RTPS thermal power, Hutti Gold Mines and large rice mills—each requiring strict PF/ESIC management for high-risk and seasonal workforces.",
+};
+export const sectionsRaichurDist = [
+  {
+    title: "Raichur’s Power, Mining & Agro-Processing Landscape",
+    description:
+      "Raichur requires high-intensity PF/ESI compliance due to hazardous power and mining operations, along with seasonal agro-processing units employing large temporary labour.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "RTPS Thermal Power Station (KPCL)",
+        content:
+          "Thousands of contract workers in coal handling, maintenance and security make RTPS one of Karnataka’s most scrutinised PF zones, with heavy Section 7A exposure.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Hutti Gold Mines",
+        content:
+          "A high-risk underground mining environment requiring strict ESIC coverage for occupational diseases, accidents and exposure-related illnesses.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Rice Mills & Agro-Processing Belts",
+        content:
+          "Sindhanur and Manvi rice mills rely on seasonal labour. EPFO/ESIC conduct retrospective audits to enforce year-round applicability once thresholds are crossed during peak season.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Raichur",
+    description:
+      "Raichur’s mixed workforce—hazardous industry + seasonal workers—creates unique PF/ESI liability risks for employers and contractors.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "RTPS Principal Employer Liability",
+        content:
+          "EPFO Raichur SRO enforces PF on full, actual wages for all KPCL contractors. PE liability applies if contractors fail to deposit contributions.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Hazardous Industry ESIC for Mining & Power",
+        content:
+          "Mining and power plant workers must be covered under ESIC to shift liability for accidents and occupational diseases away from employers.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal Workforce PF/ESI Applicability",
+        content:
+          "Rice mills often cross thresholds only during harvest season. Once applicable, PF/ESI applies permanently—even in off-season—requiring continuous compliance.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PF on Daily/Piece-Rate Wages",
+        content:
+          "EPF must be calculated on total actual earnings, not nominal basic wages. Incorrect wage definitions trigger large retrospective PF demands.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Raichur Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "RTPS Contractor PF Compliance Framework",
+        content:
+          "Monthly PF monitoring, manpower validation and PE Interface audits to safeguard KPCL contractors from 7A assessments.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Hazardous Industry ESIC & Accident Documentation",
+        content:
+          "End-to-end ESIC compliance for mining/power workers: onboarding, C-18 support, accident reporting and claim facilitation.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal Industry PF/ESI Advisory",
+        content:
+          "Policy design for rice mills and agro-units to manage peak-season thresholds, off-season filing and statutory continuity.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PF Wage Structuring & Section 7A Defence",
+        content:
+          "Audit-ready wage mapping, minimum wage alignment and strong defence documentation for PF enquiries.",
+      },
+    ],
+  },
+];
+export const faqRaichur = [
+  {
+    question:
+      "We are a KPCL contractor at RTPS. What is the biggest PF risk?",
+    answer:
+      "Wage suppression. If PF is reported on ₹10,000 while employees earn ₹25,000, EPFO Raichur will demand arrears on the full difference plus damages. KPCL, as Principal Employer, may also be held liable.",
+  },
+  {
+    question:
+      "Does ESIC apply to workers at Hutti Gold Mines?",
+    answer:
+      "Yes. Due to hazardous mining operations, ESIC is effectively mandatory to transfer liability for accidents and occupational diseases.",
+  },
+  {
+    question:
+      "Our rice mill operates only 6 months. Do we need to pay PF all year?",
+    answer:
+      "Yes, if the 20-employee PF threshold is crossed during peak season. The mill becomes permanently covered and must maintain PF compliance even during off-season.",
+  },
+  {
+    question:
+      "Where is the EPFO office for Raichur district?",
+    answer:
+      "Raichur is served by the EPFO Sub-Regional Office (SRO) located at Garladinni Complex, Saath Kacheri Road.",
+  },
+];
+export const heroDataHaveriDist = {
+  title: "Textile, Cotton Ginning & Seasonal Agro-Processing Hub",
+  description:
+    "Haveri’s industrial base depends on textile mills, cotton ginning and agro-processing units, all of which employ large seasonal and piece-rate workforces requiring strict PF/ESIC compliance.",
+};
+export const sectionsHaveriDist = [
+  {
+    title: "Haveri’s Textile & Agro-Processing Landscape",
+    description:
+      "Haveri’s economy blends traditional textile activity with high-volume agro-processing, creating complex PF/ESIC requirements for seasonal and productivity-based workers.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Textile Mills & Cotton Ginning Clusters",
+        content:
+          "Piece-rate payment systems and fluctuating headcount make PF/ESIC compliance challenging, particularly during ginning and harvest seasons.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Agro-Processing Industries",
+        content:
+          "Oil mills, rice mills and spice-processing units rely on seasonal labour. Even short-term threshold crossings trigger year-round PF/ESI applicability.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "SME Processing Units",
+        content:
+          "Historically informal units are now covered due to modernization. This demands full PF/ESIC registration, attendance records, and statutory wage structures.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Haveri",
+    description:
+      "The combination of seasonal operations and piece-rate wage structures creates persistent compliance vulnerabilities for Haveri employers.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Piece-Rate PF Wage Suppression",
+        content:
+          "EPFO includes actual total earnings—not nominal basic wages—when evaluating PF liability, making piece-rate under-reporting a major audit issue.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal ESIC Threshold Crossing",
+        content:
+          "Even temporary labour expansion triggers ESIC applicability. Audits frequently impose contributions for the entire year based on a single seasonal threshold breach.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 2025 Production Incentive PF Impact",
+        content:
+          "Allowances exceeding 50% of gross wages must be PF-eligible, significantly affecting textile and ginning unit payrolls.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Formalization of Small Units",
+        content:
+          "Growing SMEs must go from informal to fully documented PF/ESI compliance, including registers, wage mapping and contractor oversight.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Haveri Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Piece-Rate PF Calculation & Audit Defence",
+        content:
+          "We map actual productivity earnings to ensure audit-ready PF calculations aligned with EPFO norms.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal Worker PF/ESI Framework",
+        content:
+          "Customised compliance systems to manage seasonal applicability, threshold monitoring and off-season filings.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC Wage Structuring for Textile Units",
+        content:
+          "Payroll restructuring to align with the NWC 2025 50% Wages rule and prevent retrospective PF liability.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "SME Compliance & Documentation Setup",
+        content:
+          "Full statutory setup for growing SME units—registers, attendance systems, wage classification and monthly PF/ESI filings.",
+      },
+    ],
+  },
+];
+export const faqHaveri = [
+  {
+    question:
+      "Does EPF apply to higher piece-rate earnings in Haveri textile units?",
+    answer:
+      "Yes. EPFO calculates PF on the actual total wages earned through piece-rate output, not a nominal basic wage. This is the most frequent cause of 7A demands in Haveri’s textile and ginning units.",
+  },
+  {
+    question:
+      "Our cotton ginning unit runs only 5 months. Do we have ESIC liability for the whole year?",
+    answer:
+      "If the employee threshold (≥10) is crossed at any point, ESIC can enforce year-round compliance unless the unit is officially classified as a seasonal factory. Many units face retrospective ESIC demands during audits.",
+  },
+  {
+    question:
+      "What is the main PF compliance risk for Haveri rice mills?",
+    answer:
+      "Under-reporting headcount. EPFO estimates required manpower based on turnover and production capacity. If the reported PF employee count is too low, 7A demands are raised for concealed labour.",
+  },
+  {
+    question:
+      "Where is the EPFO jurisdiction for Haveri District?",
+    answer:
+      "Haveri is typically covered by the EPFO Regional Office, Hubballi, which oversees PF compliance and audits for the textile and agro-processing sectors.",
+  },
+];
+export const heroDataKoppalDist = {
+  title: "Rice Mills, Agro-Processing & MSME Manufacturing Hub",
+  description:
+    "Koppal’s economy depends on seasonal rice mills, agro-processing units and MSME industries in Gangavathi, requiring strict PF/ESIC compliance for piece-rate and temporary workers.",
+};
+export const sectionsKoppalDist = [
+  {
+    title: "Koppal’s Agro-Processing & MSME Industrial Landscape",
+    description:
+      "Koppal’s seasonal rice mills, oilseed units and MSME clusters drive complex PF/ESIC obligations due to fluctuating workforce size and piece-rate payment systems.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Rice Mills of Gangavathi",
+        content:
+          "Known as the 'Rice Bowl', Gangavathi mills employ large seasonal labour, making PF/ESI threshold compliance critical during peak months.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Agro-Processing Units",
+        content:
+          "Oilseed, paddy and cotton processing units rely heavily on daily-wage and piece-rate labourers, often causing statutory under-reporting.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "KSSIDC MSME Cluster",
+        content:
+          "Small engineering and fabrication units frequently delay PF/ESIC registration despite crossing labour thresholds, leading to retrospective liability.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Koppal",
+    description:
+      "Seasonal operations and piece-rate wages create major compliance risks across Koppal’s agro and MSME workforce.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal PF Threshold Crossings",
+        content:
+          "Crossing 20 employees even once mandates year-round PF compliance, irrespective of off-season downsizing.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Piece-Rate ESIC Wage Under-Reporting",
+        content:
+          "ESIC must be paid on total actual wages, including per-bag output. Under-reporting invites severe penalties.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "MSME Formalization & Registration",
+        content:
+          "Unregistered units face retrospective PF/ESIC demands during audits, often spanning multiple financial years.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 2025 Allowance Inclusion",
+        content:
+          "Allowances exceeding 50% of gross wages will be treated as PF wages, impacting low-wage MSMEs significantly.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Koppal Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal Worker PF/ESIC Framework",
+        content:
+          "Monitoring thresholds, maintaining registers and ensuring compliance continuity for seasonal units.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Piece-Rate Wage PF/ESI Audit Support",
+        content:
+          "Mapping actual productivity earnings to enforce accurate PF/ESIC calculations and defend Section 7A audits.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "MSME Labour Law Setup",
+        content:
+          "End-to-end statutory registration, payroll structuring and contractor compliance for new MSME units.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC Payroll Restructuring",
+        content:
+          "Aligning wage structures to meet the upcoming NWC 2025 requirements for PF wage definitions.",
+      },
+    ],
+  },
+];
+export const faqKoppal = [
+  {
+    question:
+      "Our rice mill operates only 7 months. Is it exempt from PF?",
+    answer:
+      "No. If your workforce crossed 20 employees during peak season, PF applies permanently. You must continue filing ECRs even during the off-season.",
+  },
+  {
+    question:
+      "How does ESIC apply to piece-rate workers in Koppal mills?",
+    answer:
+      "ESIC must be calculated on total gross wages, including per-bag piece-rate earnings. Reporting only a nominal basic wage leads to retrospective ESIC demands.",
+  },
+  {
+    question:
+      "How do MSMEs count employees for PF coverage?",
+    answer:
+      "All workers—permanent, temporary, and contractor labour—must be counted. Crossing 20 workers triggers mandatory PF registration.",
+  },
+  {
+    question:
+      "Which EPFO office covers Koppal district?",
+    answer:
+      "Koppal typically falls under the EPFO Regional/Sub-Regional Office of Ballari or Hubballi, which handles audits and compliance for agro-processing and MSME clusters.",
+  },
+];
+export const heroDataKalaburagiDist = {
+  title: "Cement Manufacturing, Dal Mills & Education Hub",
+  description:
+    "Kalaburagi’s industrial base spans hazardous cement plants, a massive pulse processing cluster and large educational institutions—each requiring strict PF/ESI compliance.",
+};
+export const sectionsKalaburagiDist = [
+  {
+    title: "Kalaburagi’s Cement & Agro-Industrial Landscape",
+    description:
+      "The district combines heavy industry with large-scale agro-processing and a growing education sector, each with unique PF/ESI compliance demands.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Cement Plants & Quarry Operations",
+        content:
+          "Sedam and Chittapur host major cement units where ESIC enforcement is strict due to dust exposure (silicosis risk) and heavy machinery operations.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Dal Mills & Pulse Processing Cluster",
+        content:
+          "Over 500 dal mills employ seasonal and piece-rate workers, creating complex PF wage calculation challenges and frequent Section 7A audits.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Educational Institutions",
+        content:
+          "The region’s universities, colleges and private schools must comply with mandatory EPF and ESIC coverage for teaching and non-teaching staff.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Kalaburagi",
+    description:
+      "Hazardous environments and unorganized-sector labour create a high audit risk across cement, agro-processing and education sectors.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Cement & Stone Hazard ESIC Monitoring",
+        content:
+          "ESIC Medical College ensures strict monitoring of coverage gaps for quarry and cement workers, making non-enrolment extremely risky.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Piece-Rate PF Suppression in Dal Mills",
+        content:
+          "EPFO demands PF on actual productivity earnings, not nominal wages—making under-reporting a major source of retrospective demands.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labour PF Liability in Cement Plants",
+        content:
+          "Principal Employers are routinely held liable for PF shortfalls by contractors in maintenance, transport and quarry operations.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Educational Sector ESIC Enforcement",
+        content:
+          "Private colleges and schools with ≥10 employees must comply with ESIC—non-teaching staff and eligible faculty must be mandatorily covered.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Kalaburagi Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "PF/ESIC for Cement & Quarry Labour",
+        content:
+          "Accident-risk industry compliance with PF, ESIC and documentation support for hazardous operations.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Piece-Rate PF Calculation for Dal Mills",
+        content:
+          "Accurate mapping of productivity wages for EPF compliance and defence during Section 7A enquiries.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Educational Institution PF/ESIC Setup",
+        content:
+          "Full statutory coverage for teaching & non-teaching staff, payroll structuring, and audit readiness.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labour Compliance Framework",
+        content:
+          "End-to-end contractor PF/ESIC monitoring systems for cement and agro-processing industries.",
+      },
+    ],
+  },
+];
+export const faqKalaburagi = [
+  {
+    question: "Is my Dal Mill required to pay PF on full piece-rate wages?",
+    answer:
+      "Yes. PF must be calculated on the actual total earnings, including productivity-based wages. Reporting only a low basic wage is a common violation that leads to major 7A demands.",
+  },
+  {
+    question:
+      "Who is liable if a contractor in a cement factory defaults on ESIC?",
+    answer:
+      "The Principal Employer (cement factory) is liable for all ESIC dues, penalties and accident-related medical costs. Hazardous industry enforcement is very strict in Kalaburagi.",
+  },
+  {
+    question:
+      "Does the ESIC Medical College increase enforcement in Kalaburagi?",
+    answer:
+      "Yes. Regions with ESIC hospitals and medical colleges receive higher scrutiny, and compliance lapses are aggressively penalized.",
+  },
+  {
+    question:
+      "Are private colleges and universities in Kalaburagi covered under PF and ESIC?",
+    answer:
+      "Yes. All institutions crossing the PF (20 employees) or ESIC (10 employees) thresholds must cover teaching and non-teaching staff mandatorily.",
+  },
+];
+export const heroDataVijayapuraDist = {
+  title: "Sugar Mills, Agro-Processing & Expanding Education Hub",
+  description:
+    "Vijayapura’s industrial economy spans sugar and grape processing, wine units, cotton mills and a rapidly growing education/medical sector—each requiring precise PF & ESIC compliance.",
+};
+export const sectionsVijayapuraDist = [
+  {
+    title: "Vijayapura’s Agro-Industrial & Education Landscape",
+    description:
+      "The district’s economic drivers—sugar mills, grape processing, wineries and private educational institutions—create unique PF/ESIC compliance challenges.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Sugar & Agro-Processing Mills",
+        content:
+          "Massive seasonal labour deployment creates high PF and ESIC exposure, often triggering retrospective audit demands.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Grape/Pomegranate Processing & Wineries",
+        content:
+          "Piece-rate and daily-wage systems require accurate PF/ESIC calculation on actual monthly earnings.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Educational & Medical Institutions",
+        content:
+          "Colleges, universities and hospitals must comply with mandatory ESIC coverage and PF obligations for eligible staff.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Vijayapura",
+    description:
+      "Seasonal employment, piece-rate wages and rapid institutional expansion create complex statutory risks.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal PF Threshold Risk",
+        content:
+          "Crossing the PF threshold even once makes mills permanently covered, triggering year-round statutory obligations.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Enforcement in Colleges & Hospitals",
+        content:
+          "Teaching and non-teaching staff must be covered if eligible—non-compliance attracts heavy penalties.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PF on Daily & Piece-Rate Wages",
+        content:
+          "EPFO demands PF contribution on actual productivity wages, not nominal basic—frequent target of wage audits.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "MSME Statutory Onboarding",
+        content:
+          "Delayed PF/ESIC registration results in major retrospective liability for units in industrial estates.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Vijayapura Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal Labour PF/ESIC Management",
+        content:
+          "Frameworks for peak-season headcount mapping, threshold tracking and statutory coverage.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PF Wage Structuring for Grape & Agro Units",
+        content:
+          "Accurate wage-base mapping for piece-rate and daily workers to avoid retrospective 7A demands.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "College/Hospital PF & ESIC Setup",
+        content:
+          "Full compliance for staff across private educational and medical institutions.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "MSME Compliance Onboarding",
+        content:
+          "Early PF/ESIC code registration and audit-proof documentation for fabrication and engineering units.",
+      },
+    ],
+  },
+];
+export const faqVijayapura = [
+  {
+    question:
+      "Our Sugar Mill operates only during the crushing season. Do we have PF liability during the off-season?",
+    answer:
+      "Yes. If your mill crossed the 20-employee PF threshold during the season, PF coverage becomes permanent. You must file ECRs and remit PF for permanent staff year-round.",
+  },
+  {
+    question:
+      "Are all staff in a private degree college in Vijayapura covered by ESIC?",
+    answer:
+      "Yes. ESIC is mandatory for institutions employing ≥10 people. All eligible teaching and non-teaching staff must be covered, including clerical staff, technical staff and security.",
+  },
+  {
+    question:
+      "How can MSMEs in Vijayapura avoid retrospective PF penalties?",
+    answer:
+      "Register for PF and ESIC immediately upon crossing the threshold. Maintain accurate wage records and proactively obtain statutory codes to prevent retrospective liability.",
+  },
+  {
+    question:
+      "Where is the EPFO office jurisdiction for Vijayapura district?",
+    answer:
+      "Vijayapura is typically served by the Regional/Sub-Regional EPFO offices of Hubballi or Belagavi, which handle audits and legal matters for agro-industrial and MSME sectors.",
+  },
+];
+export const heroDataHassanDist = {
+  title: "Coffee Plantations, Food Processing & Engineering MSME Hub",
+  description:
+    "Hassan’s economy spans coffee and spice plantations, curing units, food processing factories and MSME engineering clusters. PF & ESIC compliance requires precise control over seasonal labour, piece-rate wages and factory floor statutory coverage.",
+};
+export const sectionsHassanDist = [
+  {
+    title: "Hassan’s Plantation & MSME Industrial Landscape",
+    description:
+      "Coffee estates, curing units, food processing factories and engineering MSMEs define Hassan’s compliance challenges, especially around seasonal labour and wage reporting.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Coffee & Spice Plantations",
+        content:
+          "PF compliance applies to curing, processing and non-agricultural roles. Seasonal labour headcount is a key audit focus.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Food Processing Units",
+        content:
+          "Mandatory ESIC coverage for factories with ≥10 workers. High-risk sector due to machinery and continuous processing shifts.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Engineering & MSME Workshops",
+        content:
+          "Delayed PF/ESI registration is a major compliance issue. EPFDesk structures early statutory onboarding and audit-proof documentation.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Hassan",
+    description:
+      "Plantation PF, factory ESIC enforcement and output-based wage systems require strict documentation and statutory accuracy.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Plantation PF Applicability",
+        content:
+          "PF applies to curing/processing workers even if plantation harvesting is seasonal. Full headcount scrutiny is common in audits.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC for Food & Engineering MSMEs",
+        content:
+          "Factories must ensure ESIC registration from day one. Non-registration leads to retrospective dues and liability for injuries.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PF on Daily & Piece-Rate Earnings",
+        content:
+          "EPFO demands PF on actual monthly earnings, not nominal wages. Frequent target for 7A wage-suppression inquiries.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contract Labour in Mining/Transport",
+        content:
+          "Mining/quarry contractors must maintain PF/ESI compliance. PE liability triggers retrospective statutory demands.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Hassan Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Plantation PF & Seasonal Labour Framework",
+        content:
+          "Mapping curing/processing roles, seasonal headcount tracking and statutory applicability audits.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Food Processing & MSME ESIC Setup",
+        content:
+          "End-to-end factory ESIC registration, accident coverage compliance and statutory documentation.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PF Wage Structuring for Piece-Rate Units",
+        content:
+          "Monthly wage consolidation and PF alignment to avoid suppression-related retrospective demands.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contractor Compliance for Mining/Transport",
+        content:
+          "PE-side monitoring of contractor PF/ESI filings to prevent Section 7A liabilities.",
+      },
+    ],
+  },
+];
+export const faqHassan = [
+  {
+    question:
+      "Does EPF apply to daily-wage harvest workers in Hassan coffee plantations?",
+    answer:
+      "Yes, if the plantation has ≥20 employees. Workers in curing and processing must mandatorily be covered, even if seasonal. EPFO often clubs all categories to establish applicability.",
+  },
+  {
+    question:
+      "Does our engineering workshop in Arsikere with 15 employees require ESIC?",
+    answer:
+      "Yes. ESIC registration is compulsory for factories/MSMEs with ≥10 employees in Karnataka. Non-registration exposes the unit to retrospective dues and liability for injuries.",
+  },
+  {
+    question:
+      "How does EPFO check PF compliance for piece-rate labour in Hassan’s food sector?",
+    answer:
+      "EPFO compares PF wage declarations with total production-linked payments. PF must be calculated on full monthly earnings, not a nominal basic wage.",
+  },
+  {
+    question:
+      "Which EPFO office has jurisdiction over Hassan district?",
+    answer:
+      "Hassan typically falls under the EPFO Regional Office in Mysuru or Bengaluru, which handles plantation and MSME audit actions.",
+  },
+];
+export const heroDataShivamoggaDist = {
+  title: "Foundries, Heavy Engineering & Malnad Agro-Industrial Hub",
+  description:
+    "Shivamogga’s industrial landscape spans hazardous foundries, engineering MSMEs, rice mills, arecanut processing units and PSU-linked contractor ecosystems. PF & ESIC compliance requires precision and audit-proof wage structuring.",
+};
+export const sectionsShivamoggaDist = [
+  {
+    title: "Shivamogga’s Manufacturing & Agro-Industrial Landscape",
+    description:
+      "The district is driven by engineering-heavy foundries, agro-processing clusters and PSU-linked contractor ecosystems, each facing different statutory risks.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Foundry & Engineering Clusters",
+        content:
+          "High-risk casting, machining and grinding operations require strict ESIC compliance and documentation.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Rice & Arecanut Processing",
+        content:
+          "Seasonal and daily-wage labour must be fully covered under PF/ESI once thresholds are met.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "VISL & MPM Contractor Ecosystem",
+        content:
+          "Large workforce under multiple contractors attracts EPF audits for wage suppression and enrolment lapses.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Shivamogga",
+    description:
+      "Hazardous industry ESIC, contractor PF liability and piece-rate wage systems are key enforcement triggers.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC in Hazardous Foundry Operations",
+        content:
+          "Strict medical and accident liability enforcement due to dust, heat and machinery exposure.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contractor PF Liability for VISL/MPM",
+        content:
+          "Principal Employers are held responsible for contractor defaults under Section 7A.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PF on Daily & Piece-Rate Wages",
+        content:
+          "EPFO demands PF on actual monthly earnings in rice/areca units, not nominal wages.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "MSME Threshold Compliance",
+        content:
+          "Small workshops frequently delay PF/ESI registration and face retrospective dues.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Shivamogga Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Foundry ESIC Compliance Framework",
+        content:
+          "Hazardous industry coverage, accident documentation and ESI wage validations.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contractor PF Risk Control for VISL",
+        content:
+          "Contractor audits, wage proofing and PE-side compliance monitoring.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PF Wage Structuring for Agro-Processing",
+        content:
+          "Daily/piece-rate consolidation and PF alignment to avoid suppression-based 7A demands.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "MSME Full Compliance Onboarding",
+        content:
+          "Threshold tracking, wage register setup and statutory filings from day one.",
+      },
+    ],
+  },
+];
+export const faqShivamogga = [
+  {
+    question: "What is the biggest ESIC risk for Shivamogga’s foundry cluster?",
+    answer:
+      "Occupational health liability. Foundries have high accident and silicosis risk. Delayed or missing ESIC coverage makes employers liable for lifelong medical and compensation costs.",
+  },
+  {
+    question:
+      "Does EPF apply to daily-wage labourers in Shivamogga’s Rice Mills?",
+    answer:
+      "Yes. If the mill has ≥20 employees, PF must be calculated on the actual total monthly wages, not a nominal basic wage. EPFO frequently issues 7A notices for wage suppression.",
+  },
+  {
+    question:
+      "How can VISL contractors protect themselves from EPF audit risk?",
+    answer:
+      "By ensuring transparent wage structures aligned with Minimum Wages, enrolling all long-term staff, and avoiding suppression of allowances. VISL, as PE, will face liability if contractors default.",
+  },
+  {
+    question:
+      "Are employees at the new Nidhige IT Park covered under ESIC?",
+    answer:
+      "Yes. ESIC is mandatory for IT/service establishments with ≥10 employees in Karnataka, covering all staff earning ≤ ₹21,000 per month.",
+  },
+];
+export const heroDataDavanagereDist = {
+  title: "Textile Mills, Agro-Processing & Education Hub",
+  description:
+    "Davanagere’s economy revolves around textile factories, gherkin/maize processing and a major educational cluster. PF & ESIC compliance requires precision in piece-rate wage calculation, seasonal workforce management, and mandatory ESIC for private institutions.",
+};
+export const sectionsDavanagereDist = [
+  {
+    title: "Davanagere’s Industrial & Service Landscape",
+    description:
+      "A textile-dominant district with high agro-processing activity and a large educational services ecosystem, each requiring sector-specific PF/ESIC compliance.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Textile & Ginning Sector",
+        content:
+          "Spinning mills, power looms and ginning units demand strict PF/ESIC compliance for large factory workforces.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Agro-Processing Units",
+        content:
+          "Gherkin, maize and paddy processing rely heavily on seasonal contract labour requiring precise PF/ESIC structuring.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Education & Service Sector",
+        content:
+          "Large private colleges/schools must mandatorily comply with EPF & ESIC thresholds.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Davanagere",
+    description:
+      "Piece-rate wages, educational institution ESIC applicability and contractor PF liability are top enforcement triggers.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC for Textile Workers",
+        content:
+          "Mandatory ESIC coverage for large factory workforces exposed to dust and machinery risks.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PF on Piece-Rate Wages",
+        content:
+          "EPFO enforces PF on actual monthly earnings in textile/agro units, not nominal wages.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC for Educational Institutions",
+        content:
+          "Private colleges/schools must cover non-teaching and eligible teaching staff once ≥10 employees.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal Contractor Compliance",
+        content:
+          "Principal Employers face high liability during peak agricultural processing seasons.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Davanagere Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Textile Factory PF/ESIC Framework",
+        content:
+          "End-to-end PF/ESI implementation, factory documentation and wage mapping.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Piece-Rate Wage PF Structuring",
+        content:
+          "Ensuring PF calculation on actual output-based earnings to avoid 7A wage-suppression notices.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Education Sector ESIC Compliance",
+        content:
+          "Mandatory ESIC coverage, payroll correction and staff eligibility verification.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contractor & Seasonal Worker Compliance",
+        content:
+          "Peak-season labour onboarding, contractor audits and monthly PF/ESI monitoring.",
+      },
+    ],
+  },
+];
+export const faqDavanagere = [
+  {
+    question:
+      "Does EPF apply to piece-rate workers in Davanagere's textile and spinning mills?",
+    answer:
+      "Yes. PF must be calculated on actual total wages, including all piece-rate earnings. Reporting only a nominal basic wage leads to Section 7A retrospective PF demands.",
+  },
+  {
+    question:
+      "Are private schools and colleges in Davanagere mandated to provide ESIC benefits?",
+    answer:
+      "Yes. ESIC is mandatory if the institution employs ≥10 persons. Non-compliance leads to retrospective contribution demands and penalties for all eligible staff.",
+  },
+  {
+    question:
+      "What is the main EPF risk for Gherkin Processing units in Davanagere?",
+    answer:
+      "Seasonal workforce compliance. If worker count crosses PF threshold during peak season, EPFO may enforce coverage for the entire year, including off-season periods.",
+  },
+  {
+    question:
+      "Which EPFO office has jurisdiction over Davanagere district?",
+    answer:
+      "Davanagere is generally served by the EPFO Regional Office in Shivamogga or Tumakuru, which handles factory and agro-processing sector compliance.",
+  },
+];
+export const heroDataBidarDist = {
+  title: "Sugar Mills, Garments & Agro-Processing Hub",
+  description:
+    "Bidar’s economy revolves around sugar factories, garment MSMEs and pulses/oilseed mills. PF & ESIC compliance requires managing seasonal labour in sugar mills, enforcing ESIC in garment clusters and accurate wage reporting for piece-rate workers.",
+};
+export const sectionsBidarDist = [
+  {
+    title: "Bidar’s Seasonal & Industrial Compliance Landscape",
+    description:
+      "Bidar’s sugar mills, garment MSMEs and agro-processing units require sector-specific PF and ESIC strategies due to seasonal labour and low-wage employment patterns.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Sugar & Agro-Processing Sector",
+        content:
+          "Seasonal sugar crushing and agro-processing units employ thousands of workers, demanding accurate classification and PF/ESIC applicability.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Garment & Textile MSMEs",
+        content:
+          "Large number of low-wage garment workers require strict ESIC enforcement and PF compliance on actual earnings.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Backward Region Industrial Development",
+        content:
+          "BRGF-linked industrial estates face increased PF/ESIC scrutiny to uplift labour standards in Kalyana Karnataka.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Bidar",
+    description:
+      "Seasonal headcounts, wage suppression and non-registration are top triggers for PF/ESIC audits in Bidar.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal PF Liability in Sugar Mills",
+        content:
+          "Crossing the 20-employee PF threshold even once makes the mill permanently covered, creating year-round PF liability.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Enforcement in Garment MSMEs",
+        content:
+          "Garment units cannot suppress headcount to avoid ESIC. All eligible workers must be mandatorily covered.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PF on Piece-Rate or Daily Wages",
+        content:
+          "PF must be calculated on actual monthly earnings, not nominal basic wages—frequent cause of 7A notices.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Legacy & Revival Liability",
+        content:
+          "New management in leased cooperative units must ensure old PF/ESIC dues are legally segregated to avoid inherited liability.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Bidar Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Sugar Factory PF/ESIC Structuring",
+        content:
+          "Seasonal worker onboarding, PF applicability validation, off-season payroll compliance & audit defence.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Garment MSME ESIC Coverage",
+        content:
+          "Mandatory ESIC registration, wage mapping, contractor worker verification & monthly compliance.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Piece-Rate Wage PF Calculation",
+        content:
+          "Accurate PF calculation on piece-rate earnings for Dal Mills & garment units to avoid suppression.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Industrial Estate MSME Compliance",
+        content:
+          "Ensuring timely PF/ESI code registration for MSMEs as soon as they cross statutory thresholds.",
+      },
+    ],
+  },
+];
+export const faqBidar = [
+  {
+    question: "Our Sugar Mill operates for less than 7 months. Are we exempt from EPF?",
+    answer:
+      "No. EPF has no seasonal exemption. If the mill exceeded 20 workers during crushing, it becomes permanently covered and must pay PF year-round, including off-season retaining allowance.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for a garment factory with 12 workers in Bidar?",
+    answer:
+      "Yes. Garment manufacturing is a factory activity. With 10 or more employees, ESIC registration is compulsory and non-compliance results in penalties and liability for medical costs.",
+  },
+  {
+    question:
+      "How does EPFO audit piece-rate workers in Bidar Dal Mills?",
+    answer:
+      "EPFO compares reported PF wages with actual gross wages (including piece-rate earnings). Any unreported differential is treated as unpaid PF contributions and attracts 14B damages.",
+  },
+  {
+    question: "Which EPFO office handles Bidar district?",
+    answer:
+      "Bidar has a local EPFO Branch Office, but major audits, 7A inquiries and legal matters are handled by the Sub-Regional Office in Kalaburagi.",
+  },
+];
+export const heroDataUdupiDist = {
+  title: "Educational, Medical & Coastal Tourism Hub",
+  description:
+    "Udupi’s Manipal medical/educational institutions, coastal tourism, fisheries and UPCL power plant demand robust PF & ESIC compliance, especially for seasonal, service-sector and contract workers.",
+};
+export const sectionsUdupiDist = [
+  {
+    title: "Udupi’s Service Sector & Coastal Compliance Landscape",
+    description:
+      "With Manipal’s massive educational and medical institutions and a thriving coastal tourism economy, PF & ESIC compliance is mission-critical for employers in Udupi.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Manipal Medical & Educational Institutions",
+        content:
+          "Hospitals and colleges employ thousands of nurses, lab staff and administrative employees—strict PF/ESIC enforcement applies across all categories.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Coastal Tourism & Hospitality",
+        content:
+          "Resorts, hotels and restaurants must manage PF/ESI for seasonal staff, high attrition and split shifts.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Coastal & Agri-Processing Units",
+        content:
+          "Fisheries, cashew-processing and textile/handloom units rely on contract labour requiring accurate PF/ESI wage mapping.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Udupi",
+    description:
+      "High-compliance sectors such as hospitals, education, tourism and power plants require strict wage and labour documentation.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Mandatory ESIC for Hospitals & Colleges",
+        content:
+          "ESIC coverage is compulsory for all institutions with ≥10 employees—nurses, technicians, non-teaching staff must be enrolled.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PF Applicability for Support & Outsourced Staff",
+        content:
+          "EPFO targets trusts that suppress PF by misclassifying employees or ignoring contractor liability.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal Tourism Workforce Compliance",
+        content:
+          "Hotels and resorts must maintain PF/ESI for casual, part-time and high-turnover staff.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "UPCL Contractor PF/ESIC Liability",
+        content:
+          "Power plant contractors must ensure absolute wage transparency—Principal Employer bears liability for all defaults.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Udupi Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Hospital & Educational Trust Compliance",
+        content:
+          "Full PF/ESI onboarding, wage classification, staff eligibility mapping and inspection defence.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Tourism & Hospitality PF/ESI Framework",
+        content:
+          "Seasonal staffing compliance, contractor alignment, shift & wage documentation and ECR accuracy.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Fisheries & Cashew Unit Compliance",
+        content:
+          "PF/ESI classification for piece-rate and daily-wage workers, export-audit documentation and contractor verification.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "UPCL Contractor Compliance Management",
+        content:
+          "Principal Employer liability protection through monthly PF/ESI contractor audits and wage transparency systems.",
+      },
+    ],
+  },
+];
+export const faqUdupi = [
+  {
+    question:
+      "Our private hospital in Manipal is run by a Trust. Are we exempt from ESIC?",
+    answer:
+      "No. ESIC is mandatory for all medical institutions employing ≥10 persons. Non-compliance attracts retrospective contributions and heavy penalties, especially in a medical hub like Manipal.",
+  },
+  {
+    question:
+      "How does EPF apply to seasonal workers in Udupi’s tourism and resort sector?",
+    answer:
+      "If the establishment has ≥20 employees, PF is mandatory for all eligible staff, including seasonal and part-time workers. High attrition requires strict ECR and UAN management.",
+  },
+  {
+    question:
+      "What is the main PF risk for contractors working for UPCL?",
+    answer:
+      "Principal Employer Liability. UPCL is legally liable for contractor PF defaults. Contractors must maintain transparent payroll documentation to prevent recovery of arrears and penalties.",
+  },
+  {
+    question:
+      "Does Udupi’s new PF/ESI enforcement for Gram Panchayat staff affect private businesses?",
+    answer:
+      "Yes, indirectly. The district administration’s strong focus on social security enforcement signals higher scrutiny on private establishments for uniform PF/ESI compliance.",
+  },
+];
+export const heroDataMandyaDist = {
+  title: "Sugar Mills, Distilleries & Textile Industry Hub",
+  description:
+    "Mandya’s agro-industrial base demands strong PF & ESIC compliance for seasonal sugar mill labour, distillery workers, textile units and plantation workforce.",
+};
+export const sectionsMandyaDist = [
+  {
+    title: "Mandya’s Seasonal Sugar & Industrial Compliance Landscape",
+    description:
+      "Sugar, distillery and textile industries drive Mandya’s labour environment, requiring strict EPF/ESIC compliance for factory workers and seasonal contract labour.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Sugar Mills & Crushing Season Workforce",
+        content:
+          "Massive seasonal labour requires accurate contractor compliance, wage tracking and proper PF eligibility classification.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Distilleries & Ethanol Production Units",
+        content:
+          "Factory-floor workers, boiler staff and maintenance teams require mandatory ESIC and PF compliance under strict enforcement.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Textile & Agro-Processing Units",
+        content:
+          "Piece-rate and daily-wage employees require accurate PF wage mapping to avoid suppressed wage audits.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Mandya",
+    description:
+      "Seasonal labour, Principal Employer liability and mixed plantation–processing operations increase Mandya’s compliance complexity.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal PF Compliance for Sugar Mills",
+        content:
+          "EPFO enforces PF for the full year once the establishment crosses the 20-employee threshold during crushing season.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Enforcement for Factory Workers",
+        content:
+          "ESIC applies to permanent and contract workers in mills and distilleries; under-reporting shift allowances is a common audit finding.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Plantation Worker PF Applicability",
+        content:
+          "PF is mandatory for plantations with 20+ employees; EPFO frequently clubs field and processing workers for coverage.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Revival/Privatization Compliance Risks",
+        content:
+          "New management must prove separation from legacy PF/ESI arrears or risk inheriting past statutory liabilities.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Mandya Employers",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Sugar Mill Seasonal Workforce Compliance",
+        content:
+          "End-to-end PF/ESI classification, contractor audits, wage evidence trails and off-season filing management.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Distillery & Ethanol Plant Compliance",
+        content:
+          "Complete ESIC onboarding, shift allowance mapping, accident compliance framework and PF applicability checks.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Textiles & Agro-Processing PF Systems",
+        content:
+          "Accurate PF on piece-rate/daily wages with payroll restructuring to meet NWC 2025 wage rules.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Plantation PF Compliance Management",
+        content:
+          "Clear headcount verification, PF eligibility identification and documentation for labour deployed across plantation + processing activities.",
+      },
+    ],
+  },
+];
+export const faqMandya = [
+  {
+    question:
+      "Our Sugar Mill is seasonal. How do we avoid paying PF for the entire year?",
+    answer:
+      "PF Act does not allow seasonal exemption. Once the mill crosses 20 employees during the crushing season, PF coverage becomes permanent. PF must be paid for permanent staff and ECRs must be filed even during the off-season.",
+  },
+  {
+    question:
+      "Does EPF apply to sugarcane plantation workers in Mandya?",
+    answer:
+      "Yes. Plantations with ≥20 workers must comply with EPF. EPFO often clubs agricultural, harvesting and processing staff under one establishment for coverage.",
+  },
+  {
+    question:
+      "What is the PF/ESI risk for contract maintenance staff at a Mandya Distillery?",
+    answer:
+      "Principal Employer Liability. If contractors fail to pay PF/ESI, the distillery is liable for retrospective contributions, damages and medical costs.",
+  },
+  {
+    question:
+      "Which EPFO office has jurisdiction over Mandya district?",
+    answer:
+      "Mandya is covered by the EPFO Regional Office, Mysuru, which manages PF audits and legal proceedings for sugar and agro-industrial sectors.",
+  },
+];
+export const heroDataKolarDist = {
+  title: "Auto EMC, Sericulture & MSME Industrial Hub",
+  description:
+    "Kolar’s Auto OEM ecosystem and traditional sericulture base demand strong PF & ESIC compliance for vendors, contractors, and factory workforces.",
+};
+export const sectionsKolarDist = [
+  {
+    title: "Kolar’s Manufacturing & Sericulture Compliance Landscape",
+    description:
+      "The rise of large OEMs and the long-standing silk industry makes Kolar a high-risk district for PF/ESIC enforcement.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Auto EMC & Honda Vendor Ecosystem",
+        content:
+          "Large OEMs rely on multiple vendors whose PF/ESI non-compliance creates massive Principal Employer liability.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Sericulture & Silk Weaving Units",
+        content:
+          "Silk reeling, twisting, and weaving employ low-wage workers who must be mandatorily covered under ESIC.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "MSME Industrial Cluster (Malur/Narasapura)",
+        content:
+          "Many vendor units under-report wages or delay PF/ESI registration, resulting in retrospective liabilities.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Kolar",
+    description:
+      "OEM-driven ecosystems, multi-state labour, and MSME wage suppression elevate statutory risks.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Principal Employer PF Liability – Honda & Tier-1 Suppliers",
+        content:
+          "EPFO audits target OEMs for their contractors' PF defaults, demanding arrears on suppressed wage components.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Enforcement for Traditional Silk Workforce",
+        content:
+          "Most sericulture units fall under ESIC due to power usage and headcount; non-compliance attracts heavy penalties.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 2025 Wage Code Impact",
+        content:
+          "Basic Pay must be ≥50% of gross wages; MSMEs heavily relying on allowances face sharp PF increases.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Multi-State Migrant Labour Compliance",
+        content:
+          "UAN portability and inter-state PF/ESI documentation require strict HR/contractor process alignment.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Kolar Industries",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "OEM & Vendor PF/ESI Audits",
+        content:
+          "Compliance due diligence for Honda vendors, manpower agencies and outsourced manufacturing units.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Sericulture Unit PF & ESIC Management",
+        content:
+          "Wage structuring, ESIC onboarding and piece-rate PF mapping for silk reeling and weaving units.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "MSME Payroll Compliance (NWC 2025 Ready)",
+        content:
+          "Restructuring payrolls to match 50% Basic Pay rule while avoiding retrospective PF liabilities.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contractor Compliance Monitoring",
+        content:
+          "PE liability protection through contractor PF/ESI verification, challan tracking and wage-register audits.",
+      },
+    ],
+  },
+];
+export const faqKolar = [
+  {
+    question:
+      "As an Auto Component supplier in Narasapura, what is my biggest PF risk?",
+    answer:
+      "The biggest risk is retrospective PF liability due to wage suppression—especially Special Allowances and production/attendance bonuses that must be treated as Basic Wages. EPFO raises Section 7A demands on these suppressed components.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for Sericulture (Silk Reeling) units in Kolar?",
+    answer:
+      "Yes. Sericulture units using power and employing ≥10 persons fall under mandatory ESIC coverage. Reeling, twisting and weaving workers typically fall under the wage ceiling and must be insured.",
+  },
+  {
+    question:
+      "How will the New Wage Code 2025 affect MSMEs in Kolar?",
+    answer:
+      "If Basic Pay is below 50% of Gross Wages, EPFO will convert allowances into PF-eligible wages, drastically increasing contribution liability. Payroll restructuring is mandatory to avoid arrears.",
+  },
+  {
+    question:
+      "Which EPFO office has jurisdiction over Kolar district?",
+    answer:
+      "Kolar district comes under the EPFO Regional Office, Bengaluru, which handles compliance for the Auto EMC, CBIC corridor, and MSME clusters.",
+  },
+];
+export const heroDataGadagDist = {
+  title: "Cotton Ginning, Textiles & Agro-Processing Hub",
+  description:
+    "Gadag’s ginning mills and textile–agro industries require strict PF & ESIC compliance for seasonal and piece-rate workers.",
+};
+export const sectionsGadagDist = [
+  {
+    title: "Gadag’s Textile & Agro-Processing Compliance Landscape",
+    description:
+      "Seasonality, piece-rate work, and low-wage labour create high PF/ESI compliance risk across Gadag’s mills and MSMEs.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Cotton Ginning & Textile Mills",
+        content:
+          "Large seasonal workforces and output-based wages demand accurate PF/ESI calculation and documentation.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Agro-Processing & Oil Mills",
+        content:
+          "Groundnut, sunflower and food-processing units face EPFO scrutiny for wage suppression and late registration.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "MSME Fabrication & Engineering Units",
+        content:
+          "Many small units cross the PF/ESI threshold unnoticed, leading to retrospective statutory liabilities.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Gadag",
+    description:
+      "Seasonal labour and piece-rate structures are the main triggers for PF/ESI audits in Gadag.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Piece-Rate Wage PF Suppression",
+        content:
+          "EPFO demands PF on full earnings including productivity-based wages; nominal Basic Wages are heavily penalised.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Coverage for Seasonal Ginning Mills",
+        content:
+          "Crossing 10 workers even briefly can trigger mandatory ESIC applicability for the entire year.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 2025 Wage Definition Compliance",
+        content:
+          "Allowances exceeding 50% of wages will become PF-eligible, increasing contribution liabilities for mills.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "MSME Registration & Threshold Crossing",
+        content:
+          "Delays in PF/ESI code registration expose units to multi-year retrospective demands and Section 14B damages.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Gadag",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "PF/ESI Audits for Ginning & Textile Mills",
+        content:
+          "End-to-end compliance checks covering registers, piece-rate wage mapping and ECR accuracy.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal Workforce ESIC Management",
+        content:
+          "Accurate ESIC applicability tracking for mills operating in peak seasons to prevent year-round liability.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "MSME Payroll & NWC 2025 Alignment",
+        content:
+          "Restructuring wage components to comply with 50% Basic Pay rules and avoid PF arrears.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contractor & Vendor Liability Protection",
+        content:
+          "Verification of PF/ESI filings for outsourced labour to safeguard Principal Employers from Section 7A demands.",
+      },
+    ],
+  },
+];
+export const faqGadag = [
+  {
+    question:
+      "Is EPF mandatory for piece-rate workers in Gadag's Ginning Mills?",
+    answer:
+      "Yes. PF must be paid on the actual total wages earned, including all piece-rate earnings. Suppression of PF wages is the most common reason for Section 7A demands in Gadag.",
+  },
+  {
+    question:
+      "Our engineering unit has 12 employees. Is ESIC mandatory?",
+    answer:
+      "Yes. Any manufacturing unit with 10 or more persons must register under ESIC. Non-compliance results in retrospective dues and full liability for workplace accidents.",
+  },
+  {
+    question:
+      "What is the biggest PF risk for a seasonal Cotton Ginning Mill?",
+    answer:
+      "Retrospective liability. If your mill crosses the PF threshold even briefly during the season, EPFO may treat the establishment as permanently covered for the entire year.",
+  },
+  {
+    question:
+      "Which EPFO office oversees Gadag district?",
+    answer:
+      "Gadag is served by the EPFO Regional Office, Hubballi, which handles audits, compliance, and Section 7A proceedings for the district.",
+  },
+];
+export const heroDataBagalkotDist = {
+  title: "Sugar, Cement & Agro-Processing Compliance Hub",
+  description:
+    "Bagalkot’s seasonal sugar factories and hazardous cement plants require strict PF & ESIC enforcement, especially for contract and daily-wage workers.",
+};
+export const sectionsBagalkotDist = [
+  {
+    title: "Bagalkot’s Industrial Compliance Landscape",
+    description:
+      "Seasonality, hazardous environments, and large contract labour pools make Bagalkot a high-risk PF/ESI district.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Sugar Mills & Distilleries",
+        content:
+          "Massive seasonal workforce and contractor dependence create high PF/ESI liability risk.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Cement Plants & Quarries",
+        content:
+          "Hazardous operations trigger strict ESIC coverage requirements and PE liability checks.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Spinning, Ginning & MSME Units",
+        content:
+          "Daily-wage and piece-rate structures require accurate PF & ESIC wage calculation.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Bagalkot",
+    description:
+      "Sugar and cement sectors face the most aggressive statutory enforcement in North Karnataka.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Seasonal PF Liability (Sugar Mills)",
+        content:
+          "Crossing 20 workers during the crushing season triggers year-round PF coverage, even in off-season.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC for Hazardous Environments",
+        content:
+          "Cement and sugar mills require full ESIC coverage for all eligible workers due to high accident risk.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "NWC 2025 Wage Compliance",
+        content:
+          "Daily/piece-rate wage earners must have PF calculated on full monthly earnings, not nominal wages.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "PE Liability for Contractors",
+        content:
+          "Cement plants and sugar mills face 7A demands for contractor wage suppression and non-enrolment.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Bagalkot",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "PF & ESIC Audits for Sugar Mills",
+        content:
+          "Seasonal workforce mapping, crushing-period attendance validation, and PE liability shielding.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Cement Sector Compliance Management",
+        content:
+          "ESIC enforcement readiness and PF audits for quarrying & transport contractors.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Payroll Structuring for NWC Alignment",
+        content:
+          "Wage restructuring to comply with the 50% Basic Pay rule and avoid PF arrears.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contractor Due Diligence",
+        content:
+          "Verifying PF/ESI remittances for outsourced labour to protect PEs from retrospective dues.",
+      },
+    ],
+  },
+];
+export const faqBagalkot = [
+  {
+    question:
+      "Our Sugar Mill is seasonal. Can we stop paying PF in the off-season?",
+    answer:
+      "No. Once 20 workers are employed during the crushing season, PF coverage becomes permanent. PF must be paid for all permanent staff and those receiving retaining allowance throughout the year.",
+  },
+  {
+    question:
+      "What is the biggest PF risk for a Cement Plant in Bagalkot?",
+    answer:
+      "Principal Employer Liability. PE is responsible for contractors failing to enrol quarry and plant workers or paying PF on suppressed wages.",
+  },
+  {
+    question:
+      "Does ESIC apply to daily-wage labourers in Bagalkot’s mills?",
+    answer:
+      "Yes. Any factory with 10 or more employees must provide ESIC coverage to all eligible workers earning ≤ ₹21,000/month.",
+  },
+  {
+    question:
+      "Which EPFO office handles Bagalkot district?",
+    answer:
+      "Bagalkot falls under the jurisdiction of the EPFO Regional/Sub-Regional Office for North Karnataka, typically Hubballi or Belagavi.",
+  },
+];
+export const heroDataVijayanagaraDist = {
+  title: "Steel, Mining & Heavy Industry Compliance Hub",
+  description:
+    "Vijayanagara’s industrial belt demands high-standard PF/ESIC compliance due to hazardous steel and mining operations and large contractor ecosystems.",
+};
+export const sectionsVijayanagaraDist = [
+  {
+    title: "Vijayanagara’s Heavy Industry Compliance Landscape",
+    description:
+      "JSW Steel, mining leases and large-scale industrial construction make Vijayanagara a high-risk compliance zone.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Steel Plants & Blast Furnace Operations",
+        content:
+          "Hazardous environments require strict ESIC coverage and contractor PF compliance.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Mining CLRA Workforce",
+        content:
+          "Large contractor ecosystems face high PF enforcement, especially for suppressed wages.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Construction & BOCW Projects",
+        content:
+          "Continuous expansion requires mandatory BOCW Cess and PF/ESI coverage for construction staff.",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Vijayanagara",
+    description:
+      "The district demands the strongest compliance systems in Karnataka’s heavy industry belt.",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "Principal Employer PF Liability",
+        content:
+          "JSW Steel and mining companies are liable for contractors who suppress wages or avoid PF.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Hazardous Industry ESIC Enforcement",
+        content:
+          "Heat, dust, blast furnace and mining risks make ESIC mandatory for all eligible staff.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "BOCW Cess & Construction Workforce",
+        content:
+          "Large infrastructure projects must comply with BOCW Cess rules or face immediate audits.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Minimum Wage Benchmarking",
+        content:
+          "PF reported below mining/steel sector minimum wages triggers automatic 7A assessments.",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Vijayanagara",
+    cards: [
+      {
+        color: "bg-white border-gray-300",
+        title: "PF Audits for Steel & Mining Vendors",
+        content:
+          "Wage analysis, contractor validation and 7A defence for JSW ecosystem vendors.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "ESIC Coverage for Hazard Zones",
+        content:
+          "Ensuring compliant ESIC processes for high-risk plant areas and accident-prone roles.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "BOCW & Construction Compliance",
+        content:
+          "End-to-end cess registration, remittance and workforce compliance for expansion projects.",
+      },
+      {
+        color: "bg-white border-gray-300",
+        title: "Contractor PF/ESI Due Diligence",
+        content:
+          "Verifying remittances to shield Principal Employers from retrospective liability.",
+      },
+    ],
+  },
+];
+export const faqVijayanagara = [
+  {
+    question:
+      "What is the biggest EPF liability for JSW Steel in Vijayanagara?",
+    answer:
+      "The largest risk is retrospective PF liability for contractors who under-report actual wages. EPFO directly targets the Principal Employer under Section 7A.",
+  },
+  {
+    question:
+      "Does ESIC cover workers in hazardous steel plant zones?",
+    answer:
+      "Yes. ESIC is mandatory for all eligible workers (≤ ₹21,000). If a contractor fails to register them, the Principal Employer becomes fully liable for medical and compensation costs.",
+  },
+  {
+    question:
+      "Is BOCW Cess mandatory for construction contractors working inside JSW premises?",
+    answer:
+      "Yes. Any industrial construction exceeding the notification threshold must pay BOCW Cess (1–2%). Non-payment triggers cross-audits by Labour, EPFO and ESIC.",
+  },
+  {
+    question:
+      "Which EPFO office handles Vijayanagara district?",
+    answer:
+      "Vijayanagara (Hosapete region) is served by the EPFO Office in Ballari, specializing in steel, mining and heavy industry compliance.",
+  },
+];
+export const heroDataChamarajanagarDist = {
+  title: "Textile, Agro-Processing & Rural Compliance Hub",
+  description:
+    "Chamarajanagar's textile, agro-processing and rural service sectors require strong PF/ESIC systems due to seasonal labor, piece-rate payments and remote workforce challenges.",
+};
+export const sectionsChamarajanagarDist = [
+  {
+    title: "Chamarajanagar’s Textile & Agro Compliance Landscape",
+    description:
+      "A fragmented MSME ecosystem with high turnover and piece-rate wages makes statutory compliance crucial.",
+    cards: [
+      {
+        title: "Textile & Silk Weaving Units",
+        content:
+          "High-volume piece-rate workforce makes PF wage suppression a top audit risk in Chamarajanagar and Kollegal.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Turmeric & Agro-Processing Units",
+        content:
+          "Daily-wage and seasonal labor must be brought under PF/ESIC once threshold coverage applies.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "MSMEs in Kollegal & Gundlupet",
+        content:
+          "Many units attempt to stay informal to avoid ESIC compliance — a major enforcement target.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Chamarajanagar",
+    description:
+      "The district faces intense scrutiny due to wage suppression and threshold evasion practices.",
+    cards: [
+      {
+        title: "Piece-Rate PF Suppression",
+        content:
+          "EPFO demands PF on the full piece-rate earnings, not on a nominal basic wage.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "ESIC Threshold Violations",
+        content:
+          "Units with 10–19 workers often suppress headcount. ESIC audits aggressively target this pattern.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Principal Employer Liability",
+        content:
+          "Large garment/textile PEs are liable for the PF/ESI lapses of small finishing contractors.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Rural Hospitals & NGOs",
+        content:
+          "Health institutions must cover eligible staff under PF/ESI; non-compliance is heavily penalized.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Chamarajanagar",
+    cards: [
+      {
+        title: "PF for Piece-Rate Textile Workers",
+        content:
+          "We correct wage structures, ensure full PF reporting, and defend 7A wage audits.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "ESIC Registration for MSMEs",
+        content:
+          "Quick setup for garment, agro-processing and silk units crossing the 10-employee mark.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "PE Liability Defence for Garment Units",
+        content:
+          "Vendor compliance checks, wage validation and contractor PF/ESI audits.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Compliance for Remote Health Institutions",
+        content:
+          "Support for rural clinics, NGOs and care facilities operating in remote pockets.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+];
+export const faqChamarajanagar = [
+  {
+    question:
+      "Is EPF required for daily-wage workers in Chamarajanagar’s Turmeric Processing units?",
+    answer:
+      "Yes. If the establishment has 20 or more employees, PF is mandatory for all workers connected to the work, including daily-wage and piece-rate staff. PF must be paid on the actual total wages earned.",
+  },
+  {
+    question:
+      "How can a garment factory with 15 employees avoid ESIC penalties in Kollegal?",
+    answer:
+      "The only safe route is immediate ESIC registration upon crossing 10 employees and filing contributions monthly. Headcount suppression is a major audit trigger.",
+  },
+  {
+    question:
+      "Where is the EPFO jurisdiction for Chamarajanagar district?",
+    answer:
+      "Chamarajanagar is served by the EPFO Regional Office, Mysuru, which covers Southern Karnataka’s textile and agro-industrial sector.",
+  },
+  {
+    question:
+      "Does a private clinic with 11 staff need ESIC?",
+    answer:
+      "Yes. Medical institutions with 10 or more employees are mandatorily ESIC-covered, including nurses, technicians and support staff.",
+  },
+];
+export const heroDataChitradurgaDist = {
+  title: "Renewable Energy, Defence & Agro-Industrial Compliance Hub",
+  description:
+    "Chitradurga's solar/wind infrastructure and DRDO-linked industries demand strict PF/ESIC systems for EPC contractors, construction crews and agro-processing MSMEs.",
+};
+export const sectionsChitradurgaDist = [
+  {
+    title: "Chitradurga’s Renewable Energy & Defence Compliance Landscape",
+    description:
+      "Large-scale energy projects and DRDO-linked establishments demand rigorous social security compliance due to high contractor dependency.",
+    cards: [
+      {
+        title: "Solar & Wind Infrastructure Workforce",
+        content:
+          "EPC contractors deploy hundreds of construction workers; PF/ESI applicability is absolute once thresholds are crossed.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "DRDO ATR & Ancillary Units (Challakere)",
+        content:
+          "Research-linked fabrication and support units must ensure PF/ESI compliance for all technical and contract staff.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Agro-Processing & Ginning Mills",
+        content:
+          "Daily-wage and seasonal labor in ginning and rice mills require correct PF calculation on total real wages.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Chitradurga",
+    description:
+      "EPC contractors, DRDO vendors, and agro-processing MSMEs face heightened wage and workforce scrutiny.",
+    cards: [
+      {
+        title: "EPC Contractor PF Liability",
+        content:
+          "Project developers are held liable for PF defaults of solar/wind EPC contractors under Section 7A.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Remote ESIC Coverage",
+        content:
+          "Wind/solar sites face accident risk; ESIC must cover all eligible workers to avoid massive employer liability.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "BOCW Cess Enforcement",
+        content:
+          "Large construction zones trigger mandatory BOCW cess — non-payment leads to PF/ESI and labour audits.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "PF on Daily Wages (Agro MSMEs)",
+        content:
+          "EPFO demands PF on actual total monthly earnings for ginning/rice mill workers, not nominal basic wages.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Chitradurga",
+    cards: [
+      {
+        title: "Solar/Wind Project Compliance",
+        content:
+          "Full PF/ESI contractor audits, wage verification, PE liability reduction and ECR monitoring.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "DRDO Contractor Support",
+        content:
+          "Compliance systems for fabrication, testing, and technical service vendors linked to ATR facilities.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "BOCW Cess & Construction Compliance",
+        content:
+          "We manage cess filings, workforce documentation and labour audit defense for EPC/infra projects.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Agro-Processing MSME PF/ESI Setup",
+        content:
+          "Registration, wage structuring, and statutory filings for ginning mills, rice units, and oil mills.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+];
+export const faqChitradurga = [
+  {
+    question:
+      "What is the biggest PF liability for a Solar Farm developer in Chitradurga?",
+    answer:
+      "The primary risk is Principal Employer liability for EPC contractors’ failures to enrol all workers or report full wages. EPFO recovers arrears directly from the developer under Section 7A.",
+  },
+  {
+    question:
+      "Does ESIC apply to temporary construction workers on wind energy sites?",
+    answer:
+      "Yes. If the EPC contractor employs 10 or more persons, ESIC coverage is mandatory. Construction accidents create massive liability without ESIC coverage.",
+  },
+  {
+    question:
+      "Is BOCW Cess mandatory for DRDO ATR construction contractors?",
+    answer:
+      "Yes. All construction projects—government, private, or defence—must remit BOCW Cess on project cost. Non-payment triggers additional PF/ESI audits.",
+  },
+  {
+    question:
+      "Where is the EPFO jurisdiction for Chitradurga district?",
+    answer:
+      "Chitradurga is served by the EPFO offices of Davanagere or Tumakuru, depending on the establishment category.",
+  },
+];
+export const heroDataChikkamagaluruDist = {
+  title: "Coffee Plantations, Tourism & Agro-Processing Compliance Hub",
+  description:
+    "Chikkamagaluru’s plantation and hospitality ecosystem demands strict PF for plantation workers and ESIC compliance for resorts, homestays, and hotels.",
+};
+export const sectionsChikkamagaluruDist = [
+  {
+    title: "Chikkamagaluru’s Plantation & Hospitality Landscape",
+    description:
+      "A dual-sector economy requiring strict PF enforcement for plantation labor and ESIC compliance for its booming tourism industry.",
+    cards: [
+      {
+        title: "Coffee Plantations & Estate Workforce",
+        content:
+          "EPF applies to plantations with ≥20 workers. Seasonal harvesting and curing staff require correct PF enrolment.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Tourism & Resorts Workforce",
+        content:
+          "Hotels, homestays, resorts, and restaurants must provide ESIC coverage for all eligible staff (≥10 workers).",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Agro-Processing & Curing Units",
+        content:
+          "Coffee curing, spice drying, and processing units must calculate PF on actual daily/piece-rate wages.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Chikkamagaluru",
+    description:
+      "Plantations, tourism establishments, and agro-processing units face high scrutiny on wage and workforce reporting.",
+    cards: [
+      {
+        title: "Plantation PF Applicability",
+        content:
+          "EPFO audits check full headcount, including seasonal pickers; curing and processing workers must be PF-covered.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "ESIC Enforcement for Resorts & Hotels",
+        content:
+          "Hospitality units often fail to cover kitchen, housekeeping, and service staff—leading to retrospective ESIC demands.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "PF on Daily / Piece-Rate Wages",
+        content:
+          "Coffee harvesting and processing wages must be PF-eligible on total actual earnings, not nominal wages.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Seasonal & Migrant Workforce",
+        content:
+          "High-turnover seasonal labor requires accurate onboarding/offboarding in EPFO & ESIC systems.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Chikkamagaluru",
+    cards: [
+      {
+        title: "Plantation PF Compliance Management",
+        content:
+          "End-to-end PF compliance for estate owners—worker categorization, wage audits, and seasonal staff onboarding.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Resort & Hospitality ESIC Compliance",
+        content:
+          "Full ESIC setup, staff eligibility mapping, contribution filing, and accident claim management.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Agro-Processing Unit PF/ESI Setup",
+        content:
+          "Registration, payroll structuring, and statutory filings for curing works, spice units, and agro-MSMEs.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Seasonal Workforce Compliance System",
+        content:
+          "UAN/ESI number management, joining/exit compliance, and real-wage reporting for high-churn worker groups.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+];
+export const faqChikkamagaluru = [
+  {
+    question:
+      "Is EPF mandatory for all workers on a coffee estate, including field laborers?",
+    answer:
+      "EPF is mandatory if the plantation employs ≥20 persons. Workers involved in curing, pulping, grading, and processing must be covered. EPFO often clubs field workers with factory workers during audits, making full coverage safer.",
+  },
+  {
+    question: "Is ESIC required for resorts or homestays with 15 employees?",
+    answer:
+      "Yes. ESIC applies to all Shops & Establishments—including resorts, homestays, hotels—that employ ≥10 workers in notified areas. All eligible staff must be enrolled.",
+  },
+  {
+    question:
+      "How does EPFO audit wages paid for coffee harvesting (piece-rate)?",
+    answer:
+      "EPFO checks production and curing logs to determine actual earnings. PF must be paid on the full piece-rate wages, not a nominal basic wage.",
+  },
+  {
+    question:
+      "Which EPFO office has jurisdiction over Chikkamagaluru district?",
+    answer:
+      "Chikkamagaluru comes under the EPFO Regional Office, Mysuru, which manages plantation and industrial compliance.",
+  },
+];
+export const heroDataKodaguDist = {
+  title: "Coffee Plantations, Tourism & Agro-Processing Compliance Hub",
+  description:
+    "Kodagu’s plantation and tourism sectors require strict PF for plantation labor and ESIC compliance for resorts, homestays, and hotels.",
+};
+export const sectionsKodaguDist = [
+  {
+    title: "Kodagu’s Plantation & Hospitality Landscape",
+    description:
+      "A dual-sector economy requiring PF enforcement for plantation labor and ESIC compliance for its rapidly growing tourism sector.",
+    cards: [
+      {
+        title: "Coffee Plantations & Workforce",
+        content:
+          "EPF is mandatory for plantations employing ≥20 workers. Curing/processing staff must be fully PF-covered.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Tourism, Resorts & Homestays",
+        content:
+          "Hotels, resorts, homestays, and restaurants must provide ESIC coverage to all eligible workers (≥10 employees).",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Agro-Processing & Curing Units",
+        content:
+          "Coffee curing and spice processing units must contribute PF on actual daily/piece-rate wages.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Kodagu",
+    description:
+      "Plantations, hospitality, and agro-processing units face high scrutiny on workforce reporting and wage transparency.",
+    cards: [
+      {
+        title: "Plantation PF Applicability",
+        content:
+          "EPFO reviews total estate headcount, including seasonal harvest labor, to enforce PF coverage.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "ESIC for Resorts & Homestays",
+        content:
+          "ESIC enforcement is strict in Madikeri/Virajpet; non-registration triggers retrospective penalties.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "PF on Daily / Piece-Rate Wages",
+        content:
+          "PF must be paid on total earnings, including higher seasonal harvesting wages.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Seasonal & Migrant Workforce",
+        content:
+          "High-turnover migrant labor requires accurate EPFO/ESIC joining & exit compliance.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Kodagu",
+    cards: [
+      {
+        title: "Plantation PF Compliance Management",
+        content:
+          "End-to-end PF compliance for estate owners: worker categorization, wage audits, seasonal labor onboarding.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Tourism & Hospitality ESIC Compliance",
+        content:
+          "Setup and manage ESIC for homestays, hotels, and resorts — including staff eligibility mapping and claims.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Agro-Processing Unit Compliance",
+        content:
+          "PF/ESI registration + monthly filings for curing works, spice units, and agro-MSMEs.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Seasonal Workforce Compliance System",
+        content:
+          "UAN/ESI management for migrant and high-churn labor groups with real-wage reporting.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+];
+export const faqKodagu = [
+  {
+    question:
+      "Is EPF mandatory for all workers on a large coffee estate in Kodagu?",
+    answer:
+      "Yes. EPF applies if the plantation employs ≥20 workers. Workers in curing, pulping, grading, and processing must definitely be covered. EPFO often clubs field labor with processing labor during audits.",
+  },
+  {
+    question: "Does a homestay/resort with 12 employees need ESIC coverage?",
+    answer:
+      "Yes. ESIC is mandatory for commercial establishments (resorts/hotels/homestays) employing ≥10 persons in notified areas of Karnataka.",
+  },
+  {
+    question:
+      "How does EPFO audit wages paid for coffee harvesting (piece-rate)?",
+    answer:
+      "EPFO examines production logs and actual cash earnings. PF must be paid on full piece-rate wages, not on a low nominal basic wage.",
+  },
+  {
+    question: "Which EPFO office manages Kodagu district?",
+    answer:
+      "Kodagu falls under the EPFO Regional Office, Mysuru, which handles plantation and industrial compliance.",
+  },
+];
+export const heroDataYadgirDist = {
+  title: "Agro-Processing, Textiles & MSME Compliance Hub",
+  description:
+    "Yadgir’s seasonal agro industries and growing MSME sector require strict PF and ESIC compliance to avoid retrospective liability.",
+};
+export const sectionsYadgirDist = [
+  {
+    title: "Yadgir’s Agro & Manufacturing Landscape",
+    description:
+      "A district driven by Dal Mills, Cotton Ginning, Oilseed Processing, Textile units, and emerging MSMEs in KIADB estates.",
+    cards: [
+      {
+        title: "Seasonal Agro-Processing Units",
+        content:
+          "Dal/Cotton Mills cross PF thresholds during peak season, triggering mandatory PF coverage.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Textile & Garment MSMEs",
+        content:
+          "Textile units must comply with ESIC for all eligible workers, including piece-rate earners.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Cement & Quarry Ancillary Workforce",
+        content:
+          "Contract labor in cement/quarry supply chains must be PF/ESI covered under PE liability.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Yadgir",
+    description:
+      "Seasonal hiring, wage suppression, and MSME threshold evasion create high audit exposure.",
+    cards: [
+      {
+        title: "Seasonal PF Liability for Dal/Cotton Mills",
+        content:
+          "EPFO enforces PF for the full year if the unit crossed ≥20 workers even once in the season.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Piece-Rate Wage Under-Reporting",
+        content:
+          "PF/ESI must be based on total piece-rate earnings, not on a low nominal basic wage.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "MSME Registration Delays",
+        content:
+          "Small factories delaying PF/ESI registration face retrospective dues with damages.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Minimum Wage Alignment",
+        content:
+          "EPFO compares PF wages to Minimum Wages; under-reporting triggers Section 7A inquiries.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Yadgir",
+    cards: [
+      {
+        title: "Seasonal Workforce PF/ESI Management",
+        content:
+          "Complete onboarding–exit cycle management for agro-season labor with wage transparency.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Textile & Garment ESIC Compliance",
+        content:
+          "Mandatory ESIC registration + monthly filing support for weaving and stitching units.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "MSME Compliance Setup",
+        content:
+          "PF/ESI registration, UAN mapping, and statutory monthly compliance for KIADB/KSSIDC units.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Wage Audit & Section 7A Defense",
+        content:
+          "Defending PF/ESI demands arising from piece-rate under-reporting or seasonal headcount jumps.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+];
+export const faqYadgir = [
+  {
+    question:
+      "Our Dal Mill has a seasonal workforce. How do we avoid PF for the whole year?",
+    answer:
+      "Once the mill crosses ≥20 workers during any season, the EPF Act treats it as permanently covered. PF must be paid for permanent staff, and seasonal workers must be enrolled/terminated accurately to limit liability.",
+  },
+  {
+    question:
+      "Does ESIC apply to textile weaving units with 12 employees in Yadgir?",
+    answer:
+      "Yes. ESIC is mandatory for factories employing ≥10 persons in Karnataka. All eligible workers must be covered from day one.",
+  },
+  {
+    question:
+      "How does EPFO audit piece-rate wages in agro-processing units?",
+    answer:
+      "EPFO checks total cash/piece-rate earnings and demands PF on the full wage. Reporting PF on nominal wages results in arrears under Section 7A.",
+  },
+  {
+    question:
+      "Which EPFO office has jurisdiction over Yadgir district?",
+    answer:
+      "Yadgir falls under the Regional/Sub-Regional EPFO office at Kalaburagi, covering the Kalyana Karnataka industrial belt.",
+  },
+];
+export const heroDataUttaraKannadaDist = {
+  title: "Strategic Projects, Heavy Industry & Plantation Compliance",
+  description:
+    "Uttara Kannada’s Kaiga, Naval Base, Paper Mill & Plantation sectors require stringent PF/ESI compliance and airtight Principal Employer safeguards.",
+};
+export const sectionsUttaraKannadaDist = [
+  {
+    title: "Uttara Kannada’s Strategic & Industrial Landscape",
+    description:
+      "From nuclear energy and naval defense to plantations and hazardous manufacturing, the district operates under intense statutory scrutiny.",
+    cards: [
+      {
+        title: "Kaiga & Naval Base Contract Workforce",
+        content:
+          "Large workforce contractors face high PF/ESI liability under Principal Employer obligations.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Dandeli Paper & Chemical Mills",
+        content:
+          "Hazardous industry requiring strict ESIC coverage for factory and contract workers.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Arecanut & Spice Plantations",
+        content:
+          "Large estates must comply with PF for plantation and processing staff when ≥20 workers.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Uttara Kannada",
+    description:
+      "Strategic projects and hazardous industries face intense enforcement from EPFO & ESIC.",
+    cards: [
+      {
+        title: "Strategic Project PE Liability",
+        content:
+          "EPFO audits Kaiga, Naval Base & WCPM for contractor wage suppression and non-enrolment under Section 7A.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "ESIC for Hazardous Paper Mills",
+        content:
+          "Chemical exposure and large machinery make ESIC compliance mandatory for all eligible staff.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "PF for Arecanut Plantation Workers",
+        content:
+          "Distinguishing field vs. curing/processing staff for PF coverage is a major audit focus.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "BOCW Cess for Defence/Power Projects",
+        content:
+          "Non-payment triggers BOCW violations and linked PF/ESI workforce audits.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Uttara Kannada",
+    cards: [
+      {
+        title: "Contractor PF/ESI Due Diligence (Kaiga/Naval Base)",
+        content:
+          "Full wage audit, UAN mapping & PE liability shielding for strategic project contractors.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Hazard Industry ESIC Compliance (WCPM)",
+        content:
+          "ESI onboarding, wage mapping and accident liability mitigation for Paper/Chemical units.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Plantation PF Compliance Framework",
+        content:
+          "PF coverage for field/processing workers, seasonal workforce and curing operations.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Construction & BOCW Compliance",
+        content:
+          "Cess calculation, registration and PF/ESI filings for defence/power infrastructure contractors.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+];
+export const faqUttaraKannada = [
+  {
+    question:
+      "Our company provides security/maintenance to the Naval Base. What is our biggest PF risk?",
+    answer:
+      "Wage suppression. EPFO assumes all workers on defence premises receive at least minimum wages. If PF is calculated on a low nominal wage, EPFO treats it as suppression and raises retrospective Section 7A demands. The Naval Base (Principal Employer) will recover these dues from you.",
+  },
+  {
+    question:
+      "Does ESIC apply to workers at the West Coast Paper Mill in Dandeli?",
+    answer:
+      "Yes. WCPM is a hazardous factory and ESIC coverage is mandatory. Chemical exposure and machinery risk make immediate ESIC enrollment essential. Contractors must also ensure coverage for their workers.",
+  },
+  {
+    question:
+      "Is EPF mandatory for Arecanut plantation workers in Sirsi?",
+    answer:
+      "Yes. Plantations employing ≥20 workers fall under EPF. EPFO audits verify whether all processing/curing workers and seasonal labor have been properly enrolled.",
+  },
+  {
+    question:
+      "Which EPFO office has jurisdiction over Uttara Kannada?",
+    answer:
+      "The district is served by the EPFO Regional Office at Hubballi, handling PF/ESI compliance for Karwar, Dandeli, Sirsi, Ankola and surrounding regions.",
+  },
+];
+export const heroDataChikkaballapurDist = {
+  title: "Pharma SEZ, Garment & Sericulture Compliance",
+  description:
+    "Chikkaballapur’s high-growth sectors demand strict PF/ESI enforcement, especially for Garments, Sericulture and the new Pharma SEZ.",
+};
+export const sectionsChikkaballapurDist = [
+  {
+    title: "Chikkaballapur’s Industrial Landscape: Garments, Sericulture & Pharma SEZ",
+    description:
+      "A mix of traditional textile/agro sectors and modern pharmaceutical SEZ units drives compliance complexity.",
+    cards: [
+      {
+        title: "Sericulture & Silk Weaving (Sidlaghatta)",
+        content:
+          "Large piece-rate workforce requires accurate PF/ESI on full output-based earnings.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Garments & Textiles (Raymonds, Preccot)",
+        content:
+          "High-volume factory floor labor triggers strict ESIC enforcement and PF wage definition audits.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Pharmaceutical SEZ (New Cluster)",
+        content:
+          "Immediate PF/ESIC implementation for all staff and contractors—SEZ exemptions do not apply.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Challenges in Chikkaballapur",
+    description:
+      "Piece-rate wages, seasonal headcount fluctuations and SEZ statutory obligations create high audit risk.",
+    cards: [
+      {
+        title: "ESIC for Piece-Rate Garment Workers",
+        content:
+          "ESIC requires contributions on actual piece-rate earnings—a major enforcement focus in textiles.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "EPF for Seasonal Agro-Processing Units",
+        content:
+          "Crossing the ≥20 threshold even once triggers full-year PF applicability and retrospective liability.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Pharma SEZ Statutory Setup",
+        content:
+          "New Pharma units must comply with PF/ESI from day one, including for contract support staff.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "PF Wage Definition (NWC 2025)",
+        content:
+          "EPFO mandates PF on actual total wages (daily/piece rate), not a nominal declared figure.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Chikkaballapur Employers",
+    cards: [
+      {
+        title: "Garment & Textile PF/ESI Compliance",
+        content:
+          "Piece-rate wage audits, ESIC coverage mapping and full PF wage definition alignment.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Pharma SEZ PF/ESI Onboarding",
+        content:
+          "Complete statutory setup, contractor compliance integration and pharma-grade documentation.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Sericulture Worker Compliance Framework",
+        content:
+          "PF/ESI implementation for reeling/weaving units with large seasonal workforce turnover.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Agro-Processing PF Enforcement",
+        content:
+          "Daily/piece-rate PF implementation and seasonal workforce documentation for audit protection.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+];
+export const faqChikkaballapur = [
+  {
+    question:
+      "Our garment factory uses contract piece-rate workers. Do we have to pay PF on their full earnings?",
+    answer:
+      "Yes. PF must be paid on the actual total earnings including piece-rate output wages. Declaring PF on a low basic wage is wage suppression and results in Section 7A retrospective demands.",
+  },
+  {
+    question:
+      "Is the new Pharmaceutical SEZ exempt from PF and ESIC?",
+    answer:
+      "No. PF and ESIC are Central Acts and fully applicable inside SEZs. Units must register immediately and comply for all direct and contract workers.",
+  },
+  {
+    question:
+      "What is the main ESIC risk for a garment factory in Chikkaballapur?",
+    answer:
+      "The high number of eligible workers and the common failure to enroll piece-rate workers or pay contributions on full earnings. ESIC audits actively target this sector.",
+  },
+  {
+    question:
+      "Which EPFO office handles Chikkaballapur district?",
+    answer:
+      "Chikkaballapur is under the EPFO Regional Office, Bengaluru, which oversees compliance for the northern industrial corridor.",
+  },
+];
+export const heroDataBengaluruRuralDist = {
+  title: "A&D SEZ, Airport Logistics & Warehousing Compliance",
+  description:
+    "Bengaluru Rural’s strategic ecosystem around KIA demands strong PF/ESI systems for logistics, warehousing, A&D contractors and SEZ units.",
+};
+export const sectionsBengaluruRuralDist = [
+  {
+    title:
+      "Bengaluru Rural’s Industrial Landscape: A&D, Logistics & SEZ Ecosystem",
+    description:
+      "The district’s proximity to KIA creates large-scale PF/ESIC requirements for contractors supporting A&D units and logistics hubs.",
+    cards: [
+      {
+        title: "Aerospace & Defence (Devanahalli A&D Park)",
+        content:
+          "High compliance risk due to sophisticated manufacturing and dense contractor networks.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Airport Logistics & Warehousing (KIA Belt)",
+        content:
+          "Large outsourced loading/unloading and security workforce demands strict PF/ESIC controls.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Horticulture/Floriculture & FMCG Distribution",
+        content:
+          "Daily-wage and seasonal workers require accurate PF wage definition and ESIC coverage.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Risks in Bengaluru Rural",
+    description:
+      "The logistics-A&D ecosystem brings extremely high PE liability for PF/ESI enforcement.",
+    cards: [
+      {
+        title: "A&D / Logistics Contract Labour PF Risk",
+        content:
+          "EPFO audits PE directly for contractor wage suppression and PF short payment.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Warehouse ESIC Coverage Gaps",
+        content:
+          "Outsourced security, cleaners and loading staff often remain uninsured—major liability during accidents.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "NWC 2025: Payroll Restructuring",
+        content:
+          "A&D ancillaries must restructure allowances to meet the 50% Basic rule.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "BOCW Cess for Warehouse Construction",
+        content:
+          "Non-payment triggers joint Labour, PF and ESIC inspections for all construction workers.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title:
+      "EPFDesk Compliance Services for Bengaluru Rural Employers",
+    cards: [
+      {
+        title: "A&D SEZ Contractor Compliance",
+        content:
+          "PF/ESI due diligence, contractor payroll audits and complete PE liability mitigation.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Logistics & Warehouse PF/ESI Management",
+        content:
+          "Full-cycle compliance for loaders, drivers, warehousemen, security and cleaners.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "SEZ Unit PF/ESI Onboarding",
+        content:
+          "Complete statutory setup and compliance automation for Devanahalli SEZ operators.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Horticulture/Agro PF Wage Protection",
+        content:
+          "PF on daily-rated workforce and audit-proof documentation for seasonal employment.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+];
+export const faqBengaluruRural = [
+  {
+    question:
+      "As a logistics park owner, am I liable if my transport contractor doesn't pay PF for the drivers?",
+    answer:
+      "Yes. If drivers perform work connected to your operations, the Principal Employer is liable for contractor PF default. EPFO recovers arrears, interest and damages from the PE.",
+  },
+  {
+    question:
+      "Does ESIC apply to the massive warehouses being built in Hoskote?",
+    answer:
+      "Yes. ESIC is mandatory for warehouses with ≥10 staff, and all construction workers must also be covered. BOCW Cess is compulsory for the project.",
+  },
+  {
+    question:
+      "How does EPFO audit wages of security guards supplied to A&D units?",
+    answer:
+      "EPFO compares declared PF wages with statutory Minimum Wages for Security Personnel. Any wage below that baseline is treated as suppression, triggering a full Section 7A demand.",
+  },
+  {
+    question:
+      "Which EPFO office has jurisdiction over Bengaluru Rural district?",
+    answer:
+      "Bengaluru Rural is covered by the EPFO Regional Office, Bengaluru, which manages compliance for the logistics corridor and A&D SEZ belt.",
+  },
+];
+export const heroDataRamanagaraDist = {
+  title: "Silk Sericulture, Auto Manufacturing & Harohalli Industrial Hubs",
+  description:
+    "Ramanagara’s unique mix of global manufacturing (Bidadi), traditional sericulture, and high-volume MSMEs creates complex PF/ESI compliance challenges.",
+};
+export const sectionsRamanagaraDist = [
+  {
+    title:
+      "Ramanagara’s Industrial Landscape: Bidadi Auto Cluster, Sericulture & Harohalli MSMEs",
+    description:
+      "The district’s blend of global Auto/FMCG companies and traditional silk/timber industries demands specialized PF/ESI governance systems.",
+    cards: [
+      {
+        title: "Bidadi Auto & FMCG Manufacturing (Toyota, Coca-Cola)",
+        content:
+          "High contract labour deployment leads to strict EPF oversight and PE liability under Section 7A.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Sericulture & Silk Reeling Sector",
+        content:
+          "Asia’s largest cocoon market with massive piece-rate and home-based labour requiring accurate PF/ESI mapping.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Harohalli KIADB MSME Hub",
+        content:
+          "Large engineering, fabrication, and chemicals MSMEs under increasing PF/ESI and NWC enforcement pressure.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Risks in Ramanagara",
+    description:
+      "A district with extreme contrasts—global automotive factories and highly fragmented traditional industries—creates dual statutory risks.",
+    cards: [
+      {
+        title: "Bidadi Principal Employer PF Liability",
+        content:
+          "EPFO audits Toyota/Coca-Cola and other OEMs for contractor wage suppression, demanding retrospective PF contributions from the PE.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Sericulture Piece-Rate ESIC Enforcement",
+        content:
+          "ESIC mandates contribution on full piece-rate earnings for silk reeling and Channapatna toy workers crossing the 10-employee threshold.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "NWC 2025 Wage Structuring Risk",
+        content:
+          "Harohalli MSMEs must restructure Basic Pay to meet the 50% rule or face PF arrears and penalties under the new wage code.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Resort & Tourism Sector Compliance",
+        content:
+          "Over 100 resorts must ensure PF/ESI for high-turnover hospitality staff, including housekeeping, kitchen and security workers.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title:
+      "EPFDesk Compliance Services for Ramanagara Employers",
+    cards: [
+      {
+        title: "Bidadi Auto Cluster Contractor Compliance",
+        content:
+          "Vendor audits, PE liability mitigation, monthly ECR validation and Section 7A defence for global manufacturers.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Harohalli MSME PF/ESI Management",
+        content:
+          "End-to-end payroll structuring, NWC compliance, contractor onboarding and statutory documentation audits.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Sericulture & Piece-Rate Workforce Compliance",
+        content:
+          "PF/ESI mapping for silk reeling, weaving, and Channapatna toy workers based on actual earnings.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Resort & Hospitality Workforce Compliance",
+        content:
+          "Seasonal labour onboarding, ESI coverage, wage definition audits and ECR lifecycle management.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+];
+export const faqRamanagara = [
+  {
+    question:
+      "As an OEM in Bidadi, how can I audit my service contractor’s PF compliance effectively?",
+    answer:
+      "Implement a Vendor Compliance Management System (VCMS) and use the EPFO Principal Employer Interface to verify monthly ECR filings. Always ensure PF is paid on full minimum wages or actual payments before clearing contractor invoices.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for small, home-based Silk Reeling units in Ramanagara?",
+    answer:
+      "Yes. If the unit performs factory-like activity and employs ≥10 people, ESIC is mandatory. ESIC demands contribution on full piece-rate earnings, not nominal basic wages, especially for vulnerable low-wage sericulture workers.",
+  },
+  {
+    question:
+      "How will the NWC 2025 50% Wages rule affect MSMEs in Harohalli?",
+    answer:
+      "MSMEs using low Basic Pay and high allowances must restructure payroll to ensure Basic equals at least 50% of gross wages. Otherwise they face PF arrears, interest and damages during EPFO audit.",
+  },
+  {
+    question:
+      "Which EPFO office has jurisdiction over Ramanagara district?",
+    answer:
+      "Ramanagara falls under the EPFO Regional Office, Bengaluru, which handles compliance for the Bidadi, Harohalli and Kanakapura industrial zones.",
+  },
+];
+// ---------------------------------------------
+// DHARWAD — HERO SECTION
+// ---------------------------------------------
+export const heroDataDharwadDist = {
+  title:
+    "Educational Hub, IT/ESDM & Auto Ancillaries — High-Risk EPF & ESIC Compliance Zone",
+  description:
+    "Dharwad’s economy is powered by large educational institutions, IT/ESDM units and auto ancillary MSMEs. Compliance risks include ESIC for educational staff, PF enforcement for IIT contractors, and NWC 2025 wage restructuring for MSMEs.",
+};
+
+// ---------------------------------------------
+// DHARWAD — 3 KEY SECTIONS (CodeOfConduct)
+// ---------------------------------------------
+export const sectionsDharwadDist = [
+  {
+    title:
+      "Dharwad’s Institutional & Industrial Landscape: Education Hub, IIT Campus & Emerging ESDM Units",
+    description:
+      "Dharwad is one of Karnataka’s largest education and service hubs, with a rapidly growing IT/ESDM ecosystem and strong linkage to Hubballi’s industrial belt. This blend makes PF/ESI compliance especially critical for institutions, contractors and MSMEs.",
+    cards: [
+      {
+        title: "Educational Institutions & University Ecosystem",
+        content:
+          "Private colleges, universities, and schools form the backbone of Dharwad’s economy, requiring strict PF/ESI compliance for teaching and non-teaching staff.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "IIT Dharwad & Large Campus Contractor Network",
+        content:
+          "Major campus infrastructure creates high Principal Employer liability for outsourced security, housekeeping and transport contractors.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Auto Ancillaries & ESDM Manufacturing Units",
+        content:
+          "A fast-growing cluster of MSMEs involved in electronics, fabrication and automotive components with rising PF/ESI scrutiny.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title: "EPF & ESIC Compliance Risks in Dharwad",
+    description:
+      "Dharwad faces stringent PF/ESI enforcement due to its dense educational network, campus-based contract labour, and MSME manufacturing belt linked to Hubballi.",
+    cards: [
+      {
+        title: "Mandatory ESIC for Education & Healthcare",
+        content:
+          "Private colleges, schools and hospitals (≥10 employees) must enrol all eligible teaching and non-teaching staff earning ≤ ₹21,000. Retrospective ESIC demands are common due to under-reporting.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Educational Trust PF Coverage & Contractor Liability",
+        content:
+          "EPF applies to institutions employing ≥20 persons. Support staff hired through contractors must be PF-covered, making trusts liable for contractor non-compliance.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "IIT Dharwad Principal Employer PF Exposure",
+        content:
+          "EPFO targets IIT Dharwad for Section 7A liability if contractor staff are under-reported or paid PF below statutory minimum wages.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "MSME PF Wage Suppression & NWC 2025 Impact",
+        content:
+          "Auto ancillary and ESDM MSMEs often use high allowances and low Basic Pay. The NWC 2025 50% rule will force PF restructuring and increase statutory liabilities.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+
+  {
+    title: "EPFDesk Compliance Services for Dharwad Employers",
+    cards: [
+      {
+        title: "Educational Trust PF/ESI Management",
+        content:
+          "End-to-end PF/ESIC onboarding for teaching and non-teaching staff, trust-wide audits, ECR validation and retrospective liability defence.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "IIT Dharwad Contractor Compliance",
+        content:
+          "Contractor onboarding, wage audits, PE liability safeguards, monthly ECR verification and Section 7A defence for campus service providers.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Auto Ancillary & ESDM MSME Compliance",
+        content:
+          "Payroll restructuring for NWC 2025, PF wage definition audits, minimum wage alignment and vendor compliance systems.",
+        color: "bg-white border-gray-300",
+      },
+      {
+        title: "Industrial Area PF/ESI Compliance (KIADB)",
+        content:
+          "Factory setup compliance, PF/ESI code registration, labour documentation audits and high-turnover workforce management.",
+        color: "bg-white border-gray-300",
+      },
+    ],
+  },
+];
+
+
+// ---------------------------------------------
+// DHARWAD — FAQ
+// ---------------------------------------------
+export const faqDharwad = [
+  {
+    question:
+      "Is ESIC mandatory for teachers and non-teaching staff in private colleges in Dharwad?",
+    answer:
+      "Yes. If the institution employs 10 or more people, ESIC is mandatory for all eligible staff earning ≤ ₹21,000. Karnataka has strong enforcement in the education sector, making non-compliance a high-risk area.",
+  },
+  {
+    question:
+      "How can Auto Ancillary MSMEs prepare for the NWC 2025 50% Wages rule?",
+    answer:
+      "By conducting an immediate payroll diagnostic. If Basic Pay is below 50% of gross wages, restructuring is mandatory to avoid retrospective PF liability on allowances.",
+  },
+  {
+    question:
+      "What is the main PF risk for contractors supplying labour to IIT Dharwad?",
+    answer:
+      "Wage suppression. EPFO audits compare PF wages with statutory minimum wages. Any lower amount triggers Section 7A action against both the contractor and possibly the IIT as Principal Employer.",
+  },
+  {
+    question:
+      "Which EPFO office has jurisdiction over Dharwad district?",
+    answer:
+      "Dharwad district is covered by the EPFO Regional Office, Hubballi, which manages audits and compliance for educational institutions and manufacturing units across North Karnataka.",
+  },
+];

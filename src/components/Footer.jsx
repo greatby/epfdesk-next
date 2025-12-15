@@ -754,6 +754,138 @@ export default function Footer() {
                   label: "Chittoor EPF & ESIC Compliance",
                   slug: "chittoor-epf-esic-compliance",
                 },
+                {
+                  label: "Bengaluru Urban EPF & ESIC Compliance",
+                  slug: "bengaluru-urban-epf-esic-compliance",
+                },
+                {
+                  label: "Bengaluru Rural EPF & ESIC Compliance",
+                  slug: "bengaluru-rural-epf-esic-compliance",
+                },
+                {
+                  label: "Ramanagara EPF & ESIC Compliance",
+                  slug: "ramanagara-epf-esic-compliance",
+                },
+                {
+                  label: "Chikkaballapur EPF & ESIC Compliance",
+                  slug: "chikkaballapur-epf-esic-compliance",
+                },
+                {
+                  label: "Kolar EPF & ESIC Compliance",
+                  slug: "kolar-epf-esic-compliance",
+                },
+
+                // {
+                //   label: "Mysuru EPF & ESIC Compliance",
+                //   slug: "mysuru-epf-esic-compliance",
+                // },
+                {
+                  label: "Mandya EPF & ESIC Compliance",
+                  slug: "mandya-epf-esic-compliance",
+                },
+                {
+                  label: "Chamarajanagar EPF & ESIC Compliance",
+                  slug: "chamarajanagar-epf-esic-compliance",
+                },
+                {
+                  label: "Hassan EPF & ESIC Compliance",
+                  slug: "hassan-epf-esic-compliance",
+                },
+
+                {
+                  label: "Dakshina Kannada EPF & ESIC Compliance",
+                  slug: "dakshina-kannada-epf-esic-compliance",
+                },
+                {
+                  label: "Udupi EPF & ESIC Compliance",
+                  slug: "udupi-epf-esic-compliance",
+                },
+                {
+                  label: "Uttara Kannada EPF & ESIC Compliance",
+                  slug: "uttara-kannada-epf-esic-compliance",
+                },
+                {
+                  label: "Chikkamagaluru EPF & ESIC Compliance",
+                  slug: "chikkamagaluru-epf-esic-compliance",
+                },
+                {
+                  label: "Kodagu EPF & ESIC Compliance",
+                  slug: "kodagu-epf-esic-compliance",
+                },
+                {
+                  label: "Shivamogga EPF & ESIC Compliance",
+                  slug: "shivamogga-epf-esic-compliance",
+                },
+
+                {
+                  label: "Dharwad EPF & ESIC Compliance",
+                  slug: "dharwad-epf-esic-compliance",
+                },
+                {
+                  label: "Hubballi-Dharwad EPF & ESIC Compliance",
+                  slug: "hubballi-dharwad-epf-esic-compliance",
+                },
+                {
+                  label: "Belagavi EPF & ESIC Compliance",
+                  slug: "belagavi-epf-esic-compliance",
+                },
+                {
+                  label: "Gadag EPF & ESIC Compliance",
+                  slug: "gadag-epf-esic-compliance",
+                },
+                {
+                  label: "Haveri EPF & ESIC Compliance",
+                  slug: "haveri-epf-esic-compliance",
+                },
+                {
+                  label: "Vijayapura EPF & ESIC Compliance",
+                  slug: "vijayapura-epf-esic-compliance",
+                },
+                {
+                  label: "Bagalkot EPF & ESIC Compliance",
+                  slug: "bagalkot-epf-esic-compliance",
+                },
+                {
+                  label: "Ballari EPF & ESIC Compliance",
+                  slug: "ballari-epf-esic-compliance",
+                },
+                {
+                  label: "Koppal EPF & ESIC Compliance",
+                  slug: "koppal-epf-esic-compliance",
+                },
+                {
+                  label: "Raichur EPF & ESIC Compliance",
+                  slug: "raichur-epf-esic-compliance",
+                },
+                {
+                  label: "Kalaburagi EPF & ESIC Compliance",
+                  slug: "kalaburagi-epf-esic-compliance",
+                },
+                {
+                  label: "Yadgir EPF & ESIC Compliance",
+                  slug: "yadgir-epf-esic-compliance",
+                },
+                {
+                  label: "Bidar EPF & ESIC Compliance",
+                  slug: "bidar-epf-esic-compliance",
+                },
+                {
+                  label: "Vijayanagara EPF & ESIC Compliance",
+                  slug: "vijayanagara-epf-esic-compliance",
+                },
+
+                {
+                  label: "Chitradurga EPF & ESIC Compliance",
+                  slug: "chitradurga-epf-esic-compliance",
+                },
+                {
+                  label: "Davanagere EPF & ESIC Compliance",
+                  slug: "davanagere-epf-esic-compliance",
+                },
+                {
+                  label: "Tumakuru EPF & ESIC Compliance",
+                  slug: "tumakuru-epf-esic-compliance",
+                },
               ],
             },
           ].map(({ title, list }) => (

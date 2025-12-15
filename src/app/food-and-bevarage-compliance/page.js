@@ -4,13 +4,125 @@ import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import ThreeStepSection from "@/components/ThreeStepSection";
 import FaqAccordion from "@/components/faqAccordian";
-
+import Head from "next/head";
 import Script from "next/script";
 import { heroDataFoodAndBevarage, sectionsFoodAndBevarage } from "@/utils/data";
+export const metadata = {
+  title:
+    "Food & Beverage Sector EPF & ESIC Compliance India | Restaurants, Hotels & Food Processing | EPFDesk",
+
+  description:
+    "EPFDesk provides EPF & ESIC compliance services for food and beverage businesses across India. Specialized support for restaurants, hotels, cloud kitchens, breweries, food processing units, and QSR chains including PF/ESI registration, contractor compliance, statutory audits, and monthly ECR filings.",
+
+  keywords: [
+    "food and beverage EPF compliance India",
+    "restaurant PF ESIC compliance",
+    "hotel EPF ESIC India",
+    "cloud kitchen PF ESIC",
+    "food processing PF ESIC",
+    "brewery EPF compliance",
+    "QSR labour compliance India",
+    "contractor compliance food industry",
+    "PF audit food sector",
+    "EPFDesk India",
+  ],
+
+  alternates: {
+    canonical: "https://epfdesk.com/food-and-bevarage-compliance",
+  },
+
+  openGraph: {
+    title: "Food & Beverage Sector EPF & ESIC Compliance | PAN India | EPFDesk",
+
+    description:
+      "PF & ESIC compliance for restaurants, hotels, cloud kitchens, breweries, and food processing units across India. End-to-end statutory compliance including registrations, audits, contractor labour management, and ongoing EPF/ESIC operations.",
+
+    url: "https://epfdesk.com/food-and-bevarage-compliance",
+    siteName: "EPFDesk",
+
+    images: [
+      {
+        url: "https://epfdesk.com/images/logo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "EPFDesk Food and Beverage Sector EPF ESIC Compliance India",
+      },
+    ],
+
+    locale: "en_IN",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Food & Beverage EPF ESIC Compliance | India | EPFDesk",
+
+    description:
+      "EPF & ESIC compliance for restaurants, hotels, cloud kitchens, breweries, and food processing businesses across India. Registration, audits, and monthly statutory filings handled by experts.",
+
+    images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+};
 
 const page = () => {
   return (
     <>
+      <Head>
+        <title>
+          Food & Beverage Sector EPF & ESIC Compliance India | Restaurants,
+          Hotels & Food Processing | EPFDesk
+        </title>
+
+        <meta
+          name="description"
+          content="EPFDesk provides EPF & ESIC compliance services for food and beverage businesses across India. Support for restaurants, hotels, cloud kitchens, breweries, and food processing units including PF/ESI registration, audits, contractor compliance, and monthly statutory filings."
+        />
+
+        <meta
+          name="keywords"
+          content="food and beverage EPF compliance India, restaurant PF ESIC, hotel EPF ESIC, cloud kitchen PF ESIC, food processing PF ESIC, brewery EPF compliance, EPFDesk India"
+        />
+
+        <link
+          rel="canonical"
+          href="https://epfdesk.com/food-and-bevarage-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Food & Beverage Sector EPF & ESIC Compliance | PAN India | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for restaurants, hotels, cloud kitchens, breweries, and food processing units across India. End-to-end statutory compliance and advisory."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/food-and-bevarage-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Food & Beverage EPF ESIC Compliance | India | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="EPF & ESIC compliance for food and beverage businesses across India. Restaurants, hotels, cloud kitchens, breweries, and food processing units supported end-to-end."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+      </Head>
       <Script
         id="schema-sme-msme"
         type="application/ld+json"

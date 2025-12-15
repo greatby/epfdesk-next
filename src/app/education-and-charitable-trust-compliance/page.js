@@ -4,13 +4,126 @@ import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import ThreeStepSection from "@/components/ThreeStepSection";
 import FaqAccordion from "@/components/faqAccordian";
-
+import Head from "next/head";
 import Script from "next/script";
 import { heroDataEducation, sectionsEducationCharitable } from "@/utils/data";
+export const metadata = {
+  title:
+    "Education & Charitable Trust EPF & ESIC Compliance India | Schools, Colleges, NGOs | EPFDesk",
+
+  description:
+    "EPFDesk provides EPF & ESIC compliance services for educational institutions and charitable trusts across India. Specialized support for schools, colleges, universities, hospitals, and NGOs including PF/ESI registration, statutory audits, contractor compliance, and monthly ECR filings.",
+
+  keywords: [
+    "education EPF compliance India",
+    "charitable trust PF ESIC",
+    "school PF ESIC compliance",
+    "college EPF ESIC registration",
+    "NGO PF compliance India",
+    "hospital trust ESIC compliance",
+    "educational institution labour compliance",
+    "PF audit for schools",
+    "ESIC compliance charitable trust",
+    "EPFDesk India",
+  ],
+
+  alternates: {
+    canonical: "https://epfdesk.com/education-and-charitable-trust-compliance",
+  },
+
+  openGraph: {
+    title:
+      "Education & Charitable Trust EPF & ESIC Compliance | PAN India | EPFDesk",
+
+    description:
+      "PF & ESIC compliance for schools, colleges, universities, hospitals, and charitable trusts across India. Expert handling of statutory registration, audits, contractor labour compliance, and ongoing EPF/ESIC operations.",
+
+    url: "https://epfdesk.com/education-and-charitable-trust-compliance",
+    siteName: "EPFDesk",
+
+    images: [
+      {
+        url: "https://epfdesk.com/images/logo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "EPFDesk Education and Charitable Trust EPF ESIC Compliance India",
+      },
+    ],
+
+    locale: "en_IN",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Education & Charitable Trust EPF ESIC Compliance | India | EPFDesk",
+
+    description:
+      "EPF & ESIC compliance for schools, colleges, NGOs, hospitals, and charitable trusts across India. Registration, audits, contractor compliance, and monthly statutory filings handled end-to-end.",
+
+    images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+};
 
 const page = () => {
   return (
     <>
+      <Head>
+        <title>
+          Education & Charitable Trust EPF & ESIC Compliance India | Schools,
+          Colleges & NGOs | EPFDesk
+        </title>
+
+        <meta
+          name="description"
+          content="EPFDesk provides EPF & ESIC compliance services for educational institutions and charitable trusts across India. Support for schools, colleges, universities, hospitals, and NGOs including PF/ESI registration, audits, contractor compliance, and monthly statutory filings."
+        />
+
+        <meta
+          name="keywords"
+          content="education EPF compliance India, charitable trust PF ESIC, school PF ESIC, college EPF ESIC, NGO PF compliance, hospital trust ESIC compliance, educational institution labour compliance, EPFDesk India"
+        />
+
+        <link
+          rel="canonical"
+          href="https://epfdesk.com/education-and-charitable-trust-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Education & Charitable Trust EPF & ESIC Compliance | PAN India | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for schools, colleges, universities, hospitals, and charitable trusts across India. Registration, audits, contractor labour compliance, and ongoing EPF/ESIC support."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/education-and-charitable-trust-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Education & Charitable Trust EPF ESIC Compliance | India | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="EPF & ESIC compliance for schools, colleges, NGOs, hospitals, and charitable trusts across India. End-to-end statutory compliance and advisory."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+      </Head>
       <Script
         id="schema-sme-msme"
         type="application/ld+json"
