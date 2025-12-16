@@ -471,7 +471,6 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        {/* --- ESIC BOOKMYSHOW STYLE LISTS --- */}
         <div className="max-w-7xl mx-auto px-6 pb-10 space-y-6">
           {[
             { title: "ESIC Consultants", list: esicCities.consultants },
@@ -692,10 +691,6 @@ export default function Footer() {
                   label: "Cuddalore EPF & ESIC Compliance",
                   slug: "cuddalore-epf-esic-compliance",
                 },
-                // {
-                //   label: "Kancheepuram EPF & ESIC Compliance",
-                //   slug: "kancheepuram-epf-esic-compliance",
-                // },
                 {
                   label: "Karur EPF & ESIC Compliance",
                   slug: "karur-epf-esic-compliance",
@@ -704,7 +699,6 @@ export default function Footer() {
                   label: "Virudhunagar EPF & ESIC Compliance",
                   slug: "virudhunagar-epf-esic-compliance",
                 },
-
                 {
                   label: "Guntur EPF & ESIC Compliance",
                   slug: "guntur-epf-esic-compliance",
@@ -774,11 +768,6 @@ export default function Footer() {
                   label: "Kolar EPF & ESIC Compliance",
                   slug: "kolar-epf-esic-compliance",
                 },
-
-                // {
-                //   label: "Mysuru EPF & ESIC Compliance",
-                //   slug: "mysuru-epf-esic-compliance",
-                // },
                 {
                   label: "Mandya EPF & ESIC Compliance",
                   slug: "mandya-epf-esic-compliance",
@@ -791,7 +780,6 @@ export default function Footer() {
                   label: "Hassan EPF & ESIC Compliance",
                   slug: "hassan-epf-esic-compliance",
                 },
-
                 {
                   label: "Dakshina Kannada EPF & ESIC Compliance",
                   slug: "dakshina-kannada-epf-esic-compliance",
@@ -816,7 +804,6 @@ export default function Footer() {
                   label: "Shivamogga EPF & ESIC Compliance",
                   slug: "shivamogga-epf-esic-compliance",
                 },
-
                 {
                   label: "Dharwad EPF & ESIC Compliance",
                   slug: "dharwad-epf-esic-compliance",
@@ -873,7 +860,6 @@ export default function Footer() {
                   label: "Vijayanagara EPF & ESIC Compliance",
                   slug: "vijayanagara-epf-esic-compliance",
                 },
-
                 {
                   label: "Chitradurga EPF & ESIC Compliance",
                   slug: "chitradurga-epf-esic-compliance",
@@ -885,6 +871,90 @@ export default function Footer() {
                 {
                   label: "Tumakuru EPF & ESIC Compliance",
                   slug: "tumakuru-epf-esic-compliance",
+                },
+                {
+                  label: "Nanded EPF & ESIC Compliance",
+                  slug: "nanded-epf-esic-compliance",
+                },
+                {
+                  label: "Jalna EPF & ESIC Compliance",
+                  slug: "jalna-epf-esic-compliance",
+                },
+                {
+                  label: "Parbhani EPF & ESIC Compliance",
+                  slug: "parbhani-epf-esic-compliance",
+                },
+                {
+                  label: "Hingoli EPF & ESIC Compliance",
+                  slug: "hingoli-epf-esic-compliance",
+                },
+                {
+                  label: "Beed EPF & ESIC Compliance",
+                  slug: "beed-epf-esic-compliance",
+                },
+                {
+                  label: "Dharashiv (Osmanabad) EPF & ESIC Compliance",
+                  slug: "dharashiv-osmanabad-epf-esic-compliance",
+                },
+                {
+                  label: "Solapur EPF & ESIC Compliance",
+                  slug: "solapur-epf-esic-compliance",
+                },
+                {
+                  label: "Satara EPF & ESIC Compliance",
+                  slug: "satara-epf-esic-compliance",
+                },
+                {
+                  label: "Sangli EPF & ESIC Compliance",
+                  slug: "sangli-epf-esic-compliance",
+                },
+                {
+                  label: "Kolhapur EPF & ESIC Compliance",
+                  slug: "kolhapur-epf-esic-compliance",
+                },
+                {
+                  label: "Ahmednagar EPF & ESIC Compliance",
+                  slug: "ahmednagar-epf-esic-compliance",
+                },
+                {
+                  label: "Jalgaon EPF & ESIC Compliance",
+                  slug: "jalgaon-epf-esic-compliance",
+                },
+                {
+                  label: "Dhule EPF & ESIC Compliance",
+                  slug: "dhule-epf-esic-compliance",
+                },
+                {
+                  label: "Nandurbar EPF & ESIC Compliance",
+                  slug: "nandurbar-epf-esic-compliance",
+                },
+                {
+                  label: "Sindhudurg EPF & ESIC Compliance",
+                  slug: "sindhudurg-epf-esic-compliance",
+                },
+                {
+                  label: "Mumbai Suburban EPF & ESIC Compliance",
+                  slug: "mumbai-suburban-epf-esic-compliance",
+                },
+                {
+                  label: "Gadchiroli EPF & ESIC Compliance",
+                  slug: "gadchiroli-epf-esic-compliance",
+                },
+                {
+                  label: "Chandrapur EPF & ESIC Compliance",
+                  slug: "chandrapur-epf-esic-compliance",
+                },
+                {
+                  label: "Bhandara EPF & ESIC Compliance",
+                  slug: "bhandara-epf-esic-compliance",
+                },
+                {
+                  label: "Gondia EPF & ESIC Compliance",
+                  slug: "gondia-epf-esic-compliance",
+                },
+                {
+                  label: "Washim EPF & ESIC Compliance",
+                  slug: "washim-epf-esic-compliance",
                 },
               ],
             },
