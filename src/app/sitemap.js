@@ -1512,12 +1512,6 @@ export default function sitemap() {
       priority: 0.7,
     },
     {
-      url: `${base}/dhamtari-mahasamund-epf-esic-compliance`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
       url: `${base}/chhattisgarh-emerging-districts-epf-esic-compliance`,
       lastModified: new Date(),
       changeFrequency: "monthly",
