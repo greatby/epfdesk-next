@@ -956,6 +956,98 @@ export default function Footer() {
                   label: "Washim EPF & ESIC Compliance",
                   slug: "washim-epf-esic-compliance",
                 },
+                {
+                  label: "Latur EPF & ESIC Compliance",
+                  slug: "latur-epf-esic-compliance",
+                },
+                {
+                  label: "Yavatmal EPF & ESIC Compliance",
+                  slug: "yavatmal-epf-esic-compliance",
+                },
+                {
+                  label: "Aurangabad EPF & ESIC Compliance",
+                  slug: "aurangabad-epf-esic-compliance",
+                },
+                {
+                  label: "Noida EPF & ESIC Compliance",
+                  slug: "noida-epf-esic-compliance",
+                },
+                {
+                  label: "Ghaziabad EPF & ESIC Compliance",
+                  slug: "ghaziabad-epf-esic-compliance",
+                },
+                {
+                  label: "Kanpur EPF & ESIC Compliance",
+                  slug: "kanpur-epf-esic-compliance",
+                },
+                {
+                  label: "Lucknow EPF & ESIC Compliance",
+                  slug: "lucknow-epf-esic-compliance",
+                },
+                {
+                  label: "Varanasi EPF & ESIC Compliance",
+                  slug: "varanasi-epf-esic-compliance",
+                },
+                {
+                  label: "Agra EPF & ESIC Compliance",
+                  slug: "agra-epf-esic-compliance",
+                },
+                {
+                  label: "Meerut EPF & ESIC Compliance",
+                  slug: "meerut-epf-esic-compliance",
+                },
+                {
+                  label: "Aligarh EPF & ESIC Compliance",
+                  slug: "aligarh-epf-esic-compliance",
+                },
+                {
+                  label: "Prayagraj EPF & ESIC Compliance",
+                  slug: "prayagraj-epf-esic-compliance",
+                },
+                {
+                  label: "Gorakhpur EPF & ESIC Compliance",
+                  slug: "gorakhpur-epf-esic-compliance",
+                },
+                {
+                  label: "Moradabad EPF & ESIC Compliance",
+                  slug: "moradabad-epf-esic-compliance",
+                },
+                {
+                  label: "Bareilly EPF & ESIC Compliance",
+                  slug: "bareilly-epf-esic-compliance",
+                },
+                {
+                  label: "Azamgarh EPF & ESIC Compliance",
+                  slug: "azamgarh-epf-esic-compliance",
+                },
+                {
+                  label: "Saharanpur EPF & ESIC Compliance",
+                  slug: "saharanpur-epf-esic-compliance",
+                },
+                {
+                  label: "Mathura EPF & ESIC Compliance",
+                  slug: "mathura-epf-esic-compliance",
+                },
+                {
+                  label: "Jhansi EPF & ESIC Compliance",
+                  slug: "jhansi-epf-esic-compliance",
+                },
+                {
+                  label: "Muzaffarnagar EPF & ESIC Compliance",
+                  slug: "muzaffarnagar-epf-esic-compliance",
+                },
+                {
+                  label: "Firozabad EPF & ESIC Compliance",
+                  slug: "firozabad-epf-esic-compliance",
+                },
+                {
+                  label: "Budaun EPF & ESIC Compliance",
+                  slug: "budaun-epf-esic-compliance",
+                },
+                {
+                  label: "Bijnor EPF & ESIC Compliance",
+                  slug: "bijnor-epf-esic-compliance",
+                },
               ],
             },
           ].map(({ title, list }) => (
