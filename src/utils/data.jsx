@@ -26624,8 +26624,7 @@ export const faqMumbaiCity = [
       "As the Principal Employer, your company is legally liable for the contractor’s PF and ESIC defaults, including arrears, interest, and damages, which the EPFO will recover directly from you.",
   },
   {
-    question:
-      "Which EPFO office has jurisdiction over BKC and South Mumbai?",
+    question: "Which EPFO office has jurisdiction over BKC and South Mumbai?",
     answer:
       "Mumbai City falls under major EPFO Regional Offices such as RO Mumbai-I or RO Mumbai-II, depending on the specific establishment location and pin code.",
   },
@@ -26738,8 +26737,7 @@ export const faqThaneDistrict = [
       "Yes. All factories employing 10 or more persons are mandatorily covered under ESIC. Non-compliance exposes the employer to full medical and compensation liability.",
   },
   {
-    question:
-      "How will NWC 2025 impact MIDC manufacturing MSMEs in Thane?",
+    question: "How will NWC 2025 impact MIDC manufacturing MSMEs in Thane?",
     answer:
       "Allowance-heavy salary structures will need restructuring, as the New Wage Code mandates at least 50% of wages to be PF-eligible.",
   },
@@ -26970,14 +26968,12 @@ export const faqRaigadDistrict = [
       "Yes. As the Principal Employer, you are legally liable for the PF compliance of stevedoring and other port contractors. This is a high-risk audit area requiring continuous VCMS monitoring.",
   },
   {
-    question:
-      "Is ESIC coverage sufficient for chemical factories in Raigad?",
+    question: "Is ESIC coverage sufficient for chemical factories in Raigad?",
     answer:
       "ESIC coverage is mandatory and transfers statutory liability for eligible workers. However, for employees above the ESIC wage ceiling or highly hazardous roles, additional insurance is often advisable.",
   },
   {
-    question:
-      "What is the impact of NWC 2025 on Taloja MIDC factories?",
+    question: "What is the impact of NWC 2025 on Taloja MIDC factories?",
     answer:
       "Factories must restructure wages so that at least 50% of gross salary qualifies as wages, increasing PF liability if current structures rely on high allowances.",
   },
@@ -27095,8 +27091,7 @@ export const faqPuneDistrict = [
       "You must implement a strict VCMS process, verify monthly EPF filings of contractors, link payments to compliance, and enforce strong indemnity clauses.",
   },
   {
-    question:
-      "Is ESIC mandatory for auto ancillary units in Pimpri-Chinchwad?",
+    question: "Is ESIC mandatory for auto ancillary units in Pimpri-Chinchwad?",
     answer:
       "Yes. All factories employing 10 or more persons are mandatorily covered under ESIC. Non-compliance exposes employers to full medical and compensation liability.",
   },
@@ -27208,14 +27203,12 @@ export const faqNagpurDistrict = [
       "Yes. SEZ benefits are fiscal in nature and do not exempt companies from Central Labour Laws. Full EPF and ESIC compliance is mandatory for all eligible employees.",
   },
   {
-    question:
-      "What is the risk of non-compliant contractors in Butibori MIDC?",
+    question: "What is the risk of non-compliant contractors in Butibori MIDC?",
     answer:
       "Factories are held liable as Principal Employers for PF/ESIC defaults of contractors. Recent safety-focused inspections increase the likelihood of ESIC audits and penalties.",
   },
   {
-    question:
-      "How will the NWC 2025 50% wages rule affect MSMEs in Hingna?",
+    question: "How will the NWC 2025 50% wages rule affect MSMEs in Hingna?",
     answer:
       "MSMEs using allowance-heavy wage structures will see increased PF liability unless payrolls are restructured to meet the 50% wage threshold.",
   },
@@ -27339,8 +27332,7 @@ export const faqSambhajinagarDistrict = [
       "Auto MSMEs must increase the PF-eligible Basic Wage component to at least 50% of gross salary, raising employer contribution costs.",
   },
   {
-    question:
-      "Which EPFO office governs Chhatrapati Sambhajinagar district?",
+    question: "Which EPFO office governs Chhatrapati Sambhajinagar district?",
     answer:
       "The district is governed by the Regional Office (RO) Aurangabad, which handles all EPF compliance, audits, and litigation for the Marathwada region.",
   },
@@ -27459,8 +27451,7 @@ export const faqNashikDistrict = [
       "MSMEs using low basic wages and high allowances will face a significant increase in PF liability, requiring payroll restructuring or acceptance of higher statutory costs.",
   },
   {
-    question:
-      "Which EPFO office governs Nashik district?",
+    question: "Which EPFO office governs Nashik district?",
     answer:
       "Nashik district is governed by the dedicated Sub-Regional Office (SRO) Nashik, located in Satpur MIDC.",
   },
@@ -27579,8 +27570,7 @@ export const faqAkolaDistrict = [
       "Wage suppression below statutory minimums triggers Section 7A demands against both the contractor and the Principal Employer.",
   },
   {
-    question:
-      "Which EPFO office governs Akola district?",
+    question: "Which EPFO office governs Akola district?",
     answer:
       "Akola is governed by the dedicated Sub-Regional Office (SRO) Akola located at Civil Lines.",
   },
@@ -27699,8 +27689,7 @@ export const faqAmravatiDistrict = [
       "Yes. Institutions with 10 or more employees must cover all eligible teaching and non-teaching staff earning up to ₹21,000 under ESIC.",
   },
   {
-    question:
-      "Which EPFO office governs Amravati district?",
+    question: "Which EPFO office governs Amravati district?",
     answer:
       "Amravati is governed by the dedicated Sub-Regional Office (SRO) Amravati handling all EPF compliance and audits.",
   },
@@ -27819,8 +27808,7 @@ export const faqLaturDistrict = [
       "EPFO will issue a determination order demanding arrears, interest under Section 7Q, and possible damages under Section 14B. The order can be appealed before the EPF Appellate Tribunal.",
   },
   {
-    question:
-      "Which EPFO office governs Latur district?",
+    question: "Which EPFO office governs Latur district?",
     answer:
       "Latur is generally governed by the Regional Office (RO) Aurangabad (Chhatrapati Sambhajinagar) for EPF compliance and audits.",
   },
@@ -27927,8 +27915,7 @@ export const faqNandedDistrict = [
       "Yes. As the Principal Employer, the sugar mill is ultimately liable for PF and ESIC compliance of contractor-managed cane harvest workers.",
   },
   {
-    question:
-      "Do small powerloom units in Nanded require ESIC coverage?",
+    question: "Do small powerloom units in Nanded require ESIC coverage?",
     answer:
       "Yes. Powerlooms are factories. If they employ 10 or more workers, ESIC is mandatory and contributions must be paid on full piece-rate earnings.",
   },
@@ -27939,8 +27926,7 @@ export const faqNandedDistrict = [
       "The biggest risk is non-coverage of outsourced staff and eligible teaching/non-teaching employees, which attracts EPFO action under Section 7A.",
   },
   {
-    question:
-      "Which EPFO office governs Nanded district?",
+    question: "Which EPFO office governs Nanded district?",
     answer:
       "Nanded is typically governed by the Regional Office (RO) Aurangabad (Chhatrapati Sambhajinagar) for EPF compliance and audits.",
   },
@@ -28020,8 +28006,7 @@ export const sectionsJalnaDistrict = [
       },
       {
         title: "Seed & Agro Piece-Rate Wage Structuring",
-        content:
-          "PF/ESI alignment for seasonal and piece-rate wage models.",
+        content: "PF/ESI alignment for seasonal and piece-rate wage models.",
         color: "bg-white border-gray-300",
       },
       {
@@ -28053,14 +28038,12 @@ export const faqJalnaDistrict = [
       "Accident liability. If ESIC contributions are not current, the employer bears 100% of medical and compensation costs in a high-risk environment.",
   },
   {
-    question:
-      "How will the NWC 2025 50% wage rule affect steel MSMEs?",
+    question: "How will the NWC 2025 50% wage rule affect steel MSMEs?",
     answer:
       "Steel MSMEs using high allowances must restructure wages so at least 50% is PF-eligible basic pay, significantly increasing contribution costs.",
   },
   {
-    question:
-      "Which EPFO office governs Jalna district?",
+    question: "Which EPFO office governs Jalna district?",
     answer:
       "Jalna is governed by the Regional Office (RO) Aurangabad (Chhatrapati Sambhajinagar) for EPF compliance and audits.",
   },
@@ -28152,8 +28135,7 @@ export const sectionsSolapurDistrict = [
       },
       {
         title: "EPFO Section 7A Representation",
-        content:
-          "End-to-end defence before RO Solapur including appeals.",
+        content: "End-to-end defence before RO Solapur including appeals.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -28179,8 +28161,7 @@ export const faqSolapurDistrict = [
       "By enforcing a strong Vendor Compliance Management System (VCMS), ensuring contractors have independent PF codes and report wages at statutory minimum levels.",
   },
   {
-    question:
-      "Which EPFO office governs Solapur district?",
+    question: "Which EPFO office governs Solapur district?",
     answer:
       "Solapur is governed by the dedicated Regional Office (RO) Solapur, known for intensive and localized enforcement.",
   },
@@ -28298,8 +28279,7 @@ export const faqSataraDistrict = [
       "Yes. Non-seasonal factories employing 10 or more workers are mandatorily covered under ESIC.",
   },
   {
-    question:
-      "Which EPFO office governs Satara district?",
+    question: "Which EPFO office governs Satara district?",
     answer:
       "Satara falls under the EPFO Maharashtra Zone (excluding Mumbai), with high-value audits and litigation routed through the Pune Regional Office.",
   },
@@ -28373,8 +28353,7 @@ export const sectionsSangliDistrict = [
     cards: [
       {
         title: "Retention Allowance PF Structuring",
-        content:
-          "Legally compliant treatment of seasonal retention payments.",
+        content: "Legally compliant treatment of seasonal retention payments.",
         color: "bg-white border-gray-300",
       },
       {
@@ -28405,8 +28384,7 @@ export const faqSangliDistrict = [
       "Generally no, as sugar factories are classified as seasonal under the ESI Act. However, any non-seasonal unit like distillery or co-generation may attract ESIC separately.",
   },
   {
-    question:
-      "What is the biggest ESIC risk for Kupwad MIDC foundries?",
+    question: "What is the biggest ESIC risk for Kupwad MIDC foundries?",
     answer:
       "Accident and occupational disease liability. Foundries are high-risk environments, and without ESIC, the employer bears 100% medical and compensation costs.",
   },
@@ -28417,8 +28395,7 @@ export const faqSangliDistrict = [
       "Retention Allowance is PF-eligible. PF must be paid monthly during the off-season; failure commonly results in Section 7A demands.",
   },
   {
-    question:
-      "Which EPFO office governs Sangli district?",
+    question: "Which EPFO office governs Sangli district?",
     answer:
       "Sangli falls under RO Solapur or RO Kolhapur, with zonal appeals routed through Pune, covering the Southern Maharashtra industrial belt.",
   },
@@ -28519,26 +28496,22 @@ export const sectionsKolhapurDistrict = [
 ];
 export const faqKolhapurDistrict = [
   {
-    question:
-      "Is ESIC mandatory for foundries in Gokul Shirgaon MIDC?",
+    question: "Is ESIC mandatory for foundries in Gokul Shirgaon MIDC?",
     answer:
       "Yes. Foundries are high-hazard factories. If 10 or more workers are employed, ESIC is mandatory. Non-compliance exposes the employer to full accident and occupational disease liability.",
   },
   {
-    question:
-      "What is the biggest PF risk for sugar mills in Kolhapur?",
+    question: "What is the biggest PF risk for sugar mills in Kolhapur?",
     answer:
       "Retention Allowance audits. RO Kolhapur actively demands PF on Retention Allowance paid during the off-season, often covering multiple past years.",
   },
   {
-    question:
-      "How will NWC 2025 affect MSME foundries?",
+    question: "How will NWC 2025 affect MSME foundries?",
     answer:
       "The 50% wage rule will force allowance-heavy salary structures into the PF base, significantly increasing employer contribution costs.",
   },
   {
-    question:
-      "Which EPFO office governs Kolhapur district?",
+    question: "Which EPFO office governs Kolhapur district?",
     answer:
       "Kolhapur is governed by its dedicated Regional Office (RO) Kolhapur, located at Tarabai Park, handling all audits and litigation locally.",
   },
@@ -28657,8 +28630,7 @@ export const faqAhmednagarDistrict = [
       "By implementing a strict Vendor Compliance Management System (VCMS), ensuring contractors deposit PF on minimum wages and maintaining monthly ECR verification.",
   },
   {
-    question:
-      "Which EPFO office governs Ahmednagar district?",
+    question: "Which EPFO office governs Ahmednagar district?",
     answer:
       "Ahmednagar is governed by a dedicated EPFO office located in Savedi, Ahmednagar, indicating localized and intensive audit enforcement.",
   },
@@ -28725,8 +28697,7 @@ export const sectionsDharashivDistrict = [
     cards: [
       {
         title: "Piece-Rate Wage Structuring",
-        content:
-          "PF-compliant wage models for garment and textile units.",
+        content: "PF-compliant wage models for garment and textile units.",
       },
       {
         title: "Sugar Industry Contractor Governance",
@@ -28735,39 +28706,33 @@ export const sectionsDharashivDistrict = [
       },
       {
         title: "ESIC Registration & Defence",
-        content:
-          "Coverage assessment and accident liability protection.",
+        content: "Coverage assessment and accident liability protection.",
       },
       {
         title: "RO Aurangabad Audit Representation",
-        content:
-          "Section 7A defence and appellate representation.",
+        content: "Section 7A defence and appellate representation.",
       },
     ],
   },
 ];
 export const faqDharashivDistrict = [
   {
-    question:
-      "Is piece-rate wage paid to garment workers PF-eligible?",
+    question: "Is piece-rate wage paid to garment workers PF-eligible?",
     answer:
       "Yes. Courts and EPFO consistently hold that piece-rate earnings are part of basic wages if they form the primary earning component. PF must be paid on total piece-rate income.",
   },
   {
-    question:
-      "Does ESIC apply to Dal Mills in Dharashiv?",
+    question: "Does ESIC apply to Dal Mills in Dharashiv?",
     answer:
       "Yes, if the area is notified and the mill employs 10 or more workers. Dal Mills are factories and ESIC compliance is mandatory in notified zones.",
   },
   {
-    question:
-      "Is PF applicable on Retention Allowance paid by Sugar Mills?",
+    question: "Is PF applicable on Retention Allowance paid by Sugar Mills?",
     answer:
       "Yes. The Bombay High Court confirmed that Retention Allowance (retaining fee) is PF-eligible and must be contributed monthly.",
   },
   {
-    question:
-      "Which EPFO office governs Dharashiv district?",
+    question: "Which EPFO office governs Dharashiv district?",
     answer:
       "Dharashiv (Osmanabad) falls under the Regional Office Aurangabad (Chhatrapati Sambhajinagar), which handles all audits and litigation for Marathwada.",
   },
@@ -28863,8 +28828,7 @@ export const faqBeedDistrict = [
       "Yes. The Sugar Mill is the Principal Employer and is the primary recovery target for EPFO when mukadams are unlicensed or non-compliant. PF, interest and penalties can be demanded directly from the mill.",
   },
   {
-    question:
-      "Does a Dal Mill in Beed require ESIC if workers are seasonal?",
+    question: "Does a Dal Mill in Beed require ESIC if workers are seasonal?",
     answer:
       "Yes. Dal Mills are factories. If 10 or more workers are employed during peak season, ESIC is mandatory for that period, and non-compliance exposes the employer to full accident liability.",
   },
@@ -28875,8 +28839,7 @@ export const faqBeedDistrict = [
       "EPFO treats retention allowance paid to retain key seasonal staff as part of basic wages. Monthly PF contribution is mandatory, and failure results in large retrospective Section 7A demands.",
   },
   {
-    question:
-      "Which EPFO office governs Beed district?",
+    question: "Which EPFO office governs Beed district?",
     answer:
       "Beed falls under the Regional Office Aurangabad (Chhatrapati Sambhajinagar), which handles all audits, recovery and litigation for the district.",
   },
@@ -28943,31 +28906,26 @@ export const sectionsParbhaniDistrict = [
     cards: [
       {
         title: "Piece-Rate Wage Structuring",
-        content:
-          "PF-compliant wage models for Dal and Cotton Ginning units.",
+        content: "PF-compliant wage models for Dal and Cotton Ginning units.",
       },
       {
         title: "Seasonal Workforce Documentation",
-        content:
-          "Audit-ready records to manage headcount-based PF liability.",
+        content: "Audit-ready records to manage headcount-based PF liability.",
       },
       {
         title: "ESIC Registration & Defence",
-        content:
-          "Coverage planning and accident risk mitigation.",
+        content: "Coverage planning and accident risk mitigation.",
       },
       {
         title: "RO Aurangabad Audit Representation",
-        content:
-          "Section 7A defence and appellate proceedings.",
+        content: "Section 7A defence and appellate proceedings.",
       },
     ],
   },
 ];
 export const faqParbhaniDistrict = [
   {
-    question:
-      "Is the piece-rate wage paid to Dal Mill workers PF-eligible?",
+    question: "Is the piece-rate wage paid to Dal Mill workers PF-eligible?",
     answer:
       "Yes. EPFO and courts treat piece-rate earnings as part of basic wages. PF must be paid on the full piece-rate amount, not a reduced nominal wage.",
   },
@@ -28984,8 +28942,7 @@ export const faqParbhaniDistrict = [
       "Yes. If the establishment crosses the 20-employee threshold even once during the season, EPFO can enforce PF coverage for the entire year.",
   },
   {
-    question:
-      "Which EPFO office governs Parbhani district?",
+    question: "Which EPFO office governs Parbhani district?",
     answer:
       "Parbhani falls under the Regional Office Aurangabad (Chhatrapati Sambhajinagar), which handles audits, recovery and litigation for the district.",
   },
@@ -29052,49 +29009,41 @@ export const sectionsHingoliDistrict = [
     cards: [
       {
         title: "ESIC Registration for Newly Notified Units",
-        content:
-          "Immediate onboarding and retrospective exposure mitigation.",
+        content: "Immediate onboarding and retrospective exposure mitigation.",
       },
       {
         title: "Piece-Rate Wage Structuring",
-        content:
-          "PF-compliant models for Cotton Ginning and Dal Mills.",
+        content: "PF-compliant models for Cotton Ginning and Dal Mills.",
       },
       {
         title: "Seasonal Workforce Documentation",
-        content:
-          "Audit-proof headcount and engagement records.",
+        content: "Audit-proof headcount and engagement records.",
       },
       {
         title: "RO Aurangabad Audit Defence",
-        content:
-          "Section 7A representation and appeal management.",
+        content: "Section 7A representation and appeal management.",
       },
     ],
   },
 ];
 export const faqHingoliDistrict = [
   {
-    question:
-      "Since when is ESIC mandatory in Hingoli district?",
+    question: "Since when is ESIC mandatory in Hingoli district?",
     answer:
       "ESIC became mandatory from the district notification date. All factories and eligible establishments employing 10 or more people must register and comply from that date to avoid retrospective liability.",
   },
   {
-    question:
-      "Is piece-rate wage paid to Cotton Ginning workers PF-eligible?",
+    question: "Is piece-rate wage paid to Cotton Ginning workers PF-eligible?",
     answer:
       "Yes. EPFO treats piece-rate earnings as basic wages. PF must be paid on the full output-based earnings, not a suppressed nominal wage.",
   },
   {
-    question:
-      "Do seasonal agro-units need to pay PF for the whole year?",
+    question: "Do seasonal agro-units need to pay PF for the whole year?",
     answer:
       "Yes. If the establishment crosses the 20-employee threshold even once during the season, EPFO can enforce PF applicability for the entire year.",
   },
   {
-    question:
-      "Which EPFO office governs Hingoli district?",
+    question: "Which EPFO office governs Hingoli district?",
     answer:
       "Hingoli falls under the Regional Office Aurangabad (Chhatrapati Sambhajinagar), which handles all audits, recovery and litigation for the district.",
   },
@@ -29122,8 +29071,7 @@ export const sectionsJalgaonDistrict = [
       },
       {
         title: "Dal Mills & Oil Mills",
-        content:
-          "Piece-rate wage suppression and ESIC audit exposure.",
+        content: "Piece-rate wage suppression and ESIC audit exposure.",
       },
       {
         title: "Bhusawal Railway Cluster",
@@ -29135,8 +29083,7 @@ export const sectionsJalgaonDistrict = [
 
   {
     title: "Core EPF & ESIC Risks in Jalgaon",
-    description:
-      "Seasonality + hazardous manufacturing + SRO scrutiny.",
+    description: "Seasonality + hazardous manufacturing + SRO scrutiny.",
     cards: [
       {
         title: "Seasonal PF Threshold Crossing",
@@ -29166,49 +29113,41 @@ export const sectionsJalgaonDistrict = [
     cards: [
       {
         title: "SRO Jalgaon Audit Defence",
-        content:
-          "Section 7A representation and recovery mitigation.",
+        content: "Section 7A representation and recovery mitigation.",
       },
       {
         title: "Seasonal Workforce Structuring",
-        content:
-          "Legally defensible PF & ESIC onboarding models.",
+        content: "Legally defensible PF & ESIC onboarding models.",
       },
       {
         title: "PVC MIDC ESIC Risk Transfer",
-        content:
-          "Ensuring uninterrupted ESIC coverage in hazardous factories.",
+        content: "Ensuring uninterrupted ESIC coverage in hazardous factories.",
       },
       {
         title: "Vendor Compliance Management",
-        content:
-          "Shifting PF/ESIC risk away from Principal Employers.",
+        content: "Shifting PF/ESIC risk away from Principal Employers.",
       },
     ],
   },
 ];
 export const faqJalgaonDistrict = [
   {
-    question:
-      "Is PF required for seasonal workers in Banana Processing units?",
+    question: "Is PF required for seasonal workers in Banana Processing units?",
     answer:
       "Yes. If your establishment crosses the 20-employee threshold even temporarily, PF coverage applies. Contributions must be paid for all workers during their employment period.",
   },
   {
-    question:
-      "Does a PVC Pipe manufacturing unit in Jalgaon MIDC need ESIC?",
+    question: "Does a PVC Pipe manufacturing unit in Jalgaon MIDC need ESIC?",
     answer:
       "Yes, mandatorily. PVC and Chemical units are hazardous factories. If 10 or more employees are engaged, ESIC is compulsory and non-compliance creates full accident liability.",
   },
   {
-    question:
-      "Why is SRO Jalgaon considered a high-risk EPFO jurisdiction?",
+    question: "Why is SRO Jalgaon considered a high-risk EPFO jurisdiction?",
     answer:
       "A dedicated Sub-Regional Office means localized, aggressive enforcement. Agro-processing, MIDC factories and high-volume contractors are routinely targeted for Section 7A audits.",
   },
   {
-    question:
-      "Which EPFO office governs Jalgaon district?",
+    question: "Which EPFO office governs Jalgaon district?",
     answer:
       "Jalgaon district is governed by the Sub-Regional Office (SRO) Jalgaon, which handles registrations, audits, recovery and litigation.",
   },
@@ -29231,8 +29170,7 @@ export const sectionsDhuleDistrict = [
       },
       {
         title: "Textile Powerlooms",
-        content:
-          "Piece-rate wage structures attracting EPFO 7A audits.",
+        content: "Piece-rate wage structures attracting EPFO 7A audits.",
       },
       {
         title: "Dhule MIDC MSMEs",
@@ -29241,16 +29179,14 @@ export const sectionsDhuleDistrict = [
       },
       {
         title: "Logistics & Transport Hub",
-        content:
-          "NH junction increases contractor and security PE exposure.",
+        content: "NH junction increases contractor and security PE exposure.",
       },
     ],
   },
 
   {
     title: "Core EPF & ESIC Risks in Dhule",
-    description:
-      "Piece-rate wages, seasonality and contractor dependence.",
+    description: "Piece-rate wages, seasonality and contractor dependence.",
     cards: [
       {
         title: "Textile Piece-Rate Wage Suppression",
@@ -29259,8 +29195,7 @@ export const sectionsDhuleDistrict = [
       },
       {
         title: "Seasonal PF Coverage Enforcement",
-        content:
-          "Crossing 20 employees once triggers year-round PF liability.",
+        content: "Crossing 20 employees once triggers year-round PF liability.",
       },
       {
         title: "Mandatory ESIC for Powerlooms",
@@ -29280,23 +29215,19 @@ export const sectionsDhuleDistrict = [
     cards: [
       {
         title: "SRO Jalgaon Audit Defence",
-        content:
-          "Section 7A handling and recovery mitigation for Dhule units.",
+        content: "Section 7A handling and recovery mitigation for Dhule units.",
       },
       {
         title: "Piece-Rate Wage Structuring",
-        content:
-          "Legally defensible PF & ESIC wage models.",
+        content: "Legally defensible PF & ESIC wage models.",
       },
       {
         title: "Seasonal Workforce Compliance",
-        content:
-          "Controlled onboarding and exit documentation.",
+        content: "Controlled onboarding and exit documentation.",
       },
       {
         title: "Vendor Compliance Management",
-        content:
-          "Reducing Principal Employer exposure in MIDC.",
+        content: "Reducing Principal Employer exposure in MIDC.",
       },
     ],
   },
@@ -29309,14 +29240,12 @@ export const faqDhuleDistrict = [
       "Yes. PF and ESIC apply irrespective of payment mode. EPFO requires contributions on the full piece-rate earnings, not a suppressed basic wage. This is a major audit risk in Dhule.",
   },
   {
-    question:
-      "What is the main ESIC risk for Cotton Ginning units in Dhule?",
+    question: "What is the main ESIC risk for Cotton Ginning units in Dhule?",
     answer:
       "Cotton Ginning units are factories and mandatorily ESIC covered if they employ 10 or more workers. Non-compliance leaves the employer fully liable for accident and medical costs.",
   },
   {
-    question:
-      "Which EPFO office governs Dhule district?",
+    question: "Which EPFO office governs Dhule district?",
     answer:
       "Dhule district falls under the jurisdiction of the Sub-Regional Office (SRO) Jalgaon, which handles compliance, audits and legal proceedings for the Khandesh region.",
   },
@@ -29350,13 +29279,11 @@ export const sectionsNandurbarDistrict = [
       },
       {
         title: "Tribal & Migrant Workforce",
-        content:
-          "High UAN/KYC challenges and documentation exposure.",
+        content: "High UAN/KYC challenges and documentation exposure.",
       },
       {
         title: "New ESIC Notification (May 2025)",
-        content:
-          "Previously exempt units now mandatorily covered under ESIC.",
+        content: "Previously exempt units now mandatorily covered under ESIC.",
       },
     ],
   },
@@ -29373,13 +29300,11 @@ export const sectionsNandurbarDistrict = [
       },
       {
         title: "Seasonal PF Coverage Enforcement",
-        content:
-          "Crossing 20 workers once triggers year-round PF liability.",
+        content: "Crossing 20 workers once triggers year-round PF liability.",
       },
       {
         title: "Piece-Rate Wage Suppression",
-        content:
-          "EPFO demands PF on actual earnings, not nominal wages.",
+        content: "EPFO demands PF on actual earnings, not nominal wages.",
       },
       {
         title: "Agro Contractor PE Liability",
@@ -29394,37 +29319,31 @@ export const sectionsNandurbarDistrict = [
     cards: [
       {
         title: "ESIC Notification Onboarding",
-        content:
-          "Immediate registration & retrospective risk mitigation.",
+        content: "Immediate registration & retrospective risk mitigation.",
       },
       {
         title: "Seasonal Labour PF Structuring",
-        content:
-          "Legally defensible onboarding & exit workflows.",
+        content: "Legally defensible onboarding & exit workflows.",
       },
       {
         title: "Tribal Worker UAN/KYC Support",
-        content:
-          "Identity-linked compliance stabilization.",
+        content: "Identity-linked compliance stabilization.",
       },
       {
         title: "SRO Jalgaon Audit Defence",
-        content:
-          "Section 7A handling for Khandesh region units.",
+        content: "Section 7A handling for Khandesh region units.",
       },
     ],
   },
 ];
 export const faqNandurbarDistrict = [
   {
-    question:
-      "Since when is ESIC mandatory for businesses in Nandurbar?",
+    question: "Since when is ESIC mandatory for businesses in Nandurbar?",
     answer:
       "The extension of ESIC medical benefits effective May 1, 2025 is the critical compliance trigger. All eligible factories and establishments with 10 or more employees must register and contribute from this date.",
   },
   {
-    question:
-      "Does my small Dal Mill using tribal labour require EPF?",
+    question: "Does my small Dal Mill using tribal labour require EPF?",
     answer:
       "Yes. EPF applicability depends solely on headcount. If the seasonal peak workforce reaches 20 or more, PF registration and contribution become mandatory irrespective of worker category.",
   },
@@ -29435,8 +29354,7 @@ export const faqNandurbarDistrict = [
       "EPFO treats the full piece-rate earnings as PF-eligible wages. Reporting only a nominal basic wage attracts high-value retrospective Section 7A demands.",
   },
   {
-    question:
-      "Which EPFO office governs Nandurbar district?",
+    question: "Which EPFO office governs Nandurbar district?",
     answer:
       "Nandurbar district falls under the jurisdiction of the Sub-Regional Office (SRO) Jalgaon, which oversees compliance, audits and legal proceedings for the Khandesh region.",
   },
@@ -29487,8 +29405,7 @@ export const sectionsSindhudurgDistrict = [
       },
       {
         title: "Seasonal PF Threshold Breach",
-        content:
-          "Crossing 20 workers once creates full-year PF liability.",
+        content: "Crossing 20 workers once creates full-year PF liability.",
       },
       {
         title: "Mandatory ESIC Coverage",
@@ -29508,18 +29425,15 @@ export const sectionsSindhudurgDistrict = [
     cards: [
       {
         title: "Hospitality Payroll Structuring",
-        content:
-          "NWC-ready wage modelling for hotels & resorts.",
+        content: "NWC-ready wage modelling for hotels & resorts.",
       },
       {
         title: "Seasonal Labour PF Management",
-        content:
-          "Legally defensible onboarding & exit compliance.",
+        content: "Legally defensible onboarding & exit compliance.",
       },
       {
         title: "Cashew Unit ESIC Registration",
-        content:
-          "Factory classification & worker coverage support.",
+        content: "Factory classification & worker coverage support.",
       },
       {
         title: "RO Kolhapur Audit Defence",
@@ -29537,20 +29451,17 @@ export const faqSindhudurgDistrict = [
       "Yes. Hotels and Resorts are commercial establishments. If the total staff strength (direct + contract) reaches 20 or more, PF is mandatory. Suppressing service charges or allowances is a major audit risk.",
   },
   {
-    question:
-      "Is a Cashew Processing unit considered a factory under ESIC?",
+    question: "Is a Cashew Processing unit considered a factory under ESIC?",
     answer:
       "Yes. Cashew processing involves machinery and qualifies as factory activity. If 10 or more workers are employed, ESIC registration and contribution are mandatory.",
   },
   {
-    question:
-      "Will the New Wage Code (NWC 2025) impact hotel payrolls?",
+    question: "Will the New Wage Code (NWC 2025) impact hotel payrolls?",
     answer:
       "Yes. The 50% Basic Wage rule will force restructuring of high-allowance hospitality payrolls, increasing PF cost but reducing long-term litigation risk.",
   },
   {
-    question:
-      "Which EPFO office governs Sindhudurg district?",
+    question: "Which EPFO office governs Sindhudurg district?",
     answer:
       "Sindhudurg district falls under the jurisdiction of the Regional Office (RO) Kolhapur, which manages compliance, audits and litigation for Southern Maharashtra and Konkan.",
   },
@@ -29562,8 +29473,7 @@ export const heroDataMumbaiSuburbanDistrict = {
 };
 export const sectionsMumbaiSuburbanDistrict = [
   {
-    title:
-      "Mumbai Suburban’s IT, Finance & Film Industry Landscape",
+    title: "Mumbai Suburban’s IT, Finance & Film Industry Landscape",
     description:
       "A dense, high-value service economy with intense audit scrutiny.",
     cards: [
@@ -29574,13 +29484,11 @@ export const sectionsMumbaiSuburbanDistrict = [
       },
       {
         title: "Film & Entertainment Industry",
-        content:
-          "Production houses, studios and transient cine workers.",
+        content: "Production houses, studios and transient cine workers.",
       },
       {
         title: "Retail & E-commerce Support",
-        content:
-          "Warehousing, logistics, call centers and staffing agencies.",
+        content: "Warehousing, logistics, call centers and staffing agencies.",
       },
       {
         title: "High Workforce Churn",
@@ -29591,8 +29499,7 @@ export const sectionsMumbaiSuburbanDistrict = [
   },
 
   {
-    title:
-      "Core EPF & ESIC Compliance Risks in Mumbai Suburban",
+    title: "Core EPF & ESIC Compliance Risks in Mumbai Suburban",
     description:
       "Allowance suppression and contractor PE liability dominate audits.",
     cards: [
@@ -29603,40 +29510,33 @@ export const sectionsMumbaiSuburbanDistrict = [
       },
       {
         title: "Film Industry PE Liability",
-        content:
-          "Production houses liable for PF/ESI of cine contractors.",
+        content: "Production houses liable for PF/ESI of cine contractors.",
       },
       {
         title: "UAN & KYC Compliance Risk",
-        content:
-          "Face authentication and KYC failures block contributions.",
+        content: "Face authentication and KYC failures block contributions.",
       },
       {
         title: "NWC 2025 Payroll Exposure",
-        content:
-          "50% Basic Wage rule impacts IT/BPO salary structures.",
+        content: "50% Basic Wage rule impacts IT/BPO salary structures.",
       },
     ],
   },
 
   {
-    title:
-      "EPFDesk Compliance Support for Mumbai Suburban",
+    title: "EPFDesk Compliance Support for Mumbai Suburban",
     cards: [
       {
         title: "Allowance Audit & Restructuring",
-        content:
-          "Legal classification of allowances before EPFO action.",
+        content: "Legal classification of allowances before EPFO action.",
       },
       {
         title: "Film Industry Contractor Defence",
-        content:
-          "PE liability mitigation & consolidated service defence.",
+        content: "PE liability mitigation & consolidated service defence.",
       },
       {
         title: "High-Volume UAN/KYC Management",
-        content:
-          "Bulk onboarding, correction and compliance continuity.",
+        content: "Bulk onboarding, correction and compliance continuity.",
       },
       {
         title: "RO Bandra Audit Representation",
@@ -29648,26 +29548,22 @@ export const sectionsMumbaiSuburbanDistrict = [
 ];
 export const faqMumbaiSuburbanDistrict = [
   {
-    question:
-      "Is my Goregaon BPO exposed to PF risk from allowance payments?",
+    question: "Is my Goregaon BPO exposed to PF risk from allowance payments?",
     answer:
       "Yes. Fixed allowances such as Special, Conveyance and Food Allowance are frequently reclassified as Basic Wages by RO Bandra. Proactive restructuring is critical before a Section 7A audit.",
   },
   {
-    question:
-      "Does ESIC apply to Film and Entertainment Industry workers?",
+    question: "Does ESIC apply to Film and Entertainment Industry workers?",
     answer:
       "Yes. Workers earning ₹21,000 or below in notified establishments are ESIC covered. Production Houses are treated as Principal Employers for contract cine workers.",
   },
   {
-    question:
-      "How does UAN Face Authentication affect staffing agencies?",
+    question: "How does UAN Face Authentication affect staffing agencies?",
     answer:
       "It is a major compliance bottleneck. Missing Aadhaar-linked mobile numbers or KYC blocks ECR filing and triggers EPFO scrutiny for high-volume employers.",
   },
   {
-    question:
-      "Which EPFO office governs Mumbai Suburban district?",
+    question: "Which EPFO office governs Mumbai Suburban district?",
     answer:
       "Mumbai Suburban establishments fall under the Regional Office (RO) Bandra, located at Kalanagar, Bandra East.",
   },
@@ -29679,8 +29575,7 @@ export const heroDataGadchiroliDistrict = {
 };
 export const sectionsGadchiroliDistrict = [
   {
-    title:
-      "Gadchiroli’s Forest, Mining & LWE Industrial Landscape",
+    title: "Gadchiroli’s Forest, Mining & LWE Industrial Landscape",
     description:
       "A contractor-driven economy with intense statutory and environmental scrutiny.",
     cards: [
@@ -29691,27 +29586,22 @@ export const sectionsGadchiroliDistrict = [
       },
       {
         title: "Infrastructure & Public Works",
-        content:
-          "NH roads, police/security infrastructure in LWE zones.",
+        content: "NH roads, police/security infrastructure in LWE zones.",
       },
       {
         title: "Mining & Minor Minerals",
-        content:
-          "Mining contracts with layered contractor engagement.",
+        content: "Mining contracts with layered contractor engagement.",
       },
       {
         title: "High CLRA Exposure",
-        content:
-          "Seasonal, undocumented and transient labour deployment.",
+        content: "Seasonal, undocumented and transient labour deployment.",
       },
     ],
   },
 
   {
-    title:
-      "Core EPF, ESIC & CLRA Compliance Risks in Gadchiroli",
-    description:
-      "Principal Employer liability dominates enforcement.",
+    title: "Core EPF, ESIC & CLRA Compliance Risks in Gadchiroli",
+    description: "Principal Employer liability dominates enforcement.",
     cards: [
       {
         title: "CLRA Principal Employer Liability",
@@ -29720,45 +29610,37 @@ export const sectionsGadchiroliDistrict = [
       },
       {
         title: "Seasonal Forest Worker PF Risk",
-        content:
-          "Tendu & bamboo workers consolidated to meet EPF thresholds.",
+        content: "Tendu & bamboo workers consolidated to meet EPF thresholds.",
       },
       {
         title: "BOCW Cess Exposure",
-        content:
-          "Mandatory 1% welfare cess on infrastructure project cost.",
+        content: "Mandatory 1% welfare cess on infrastructure project cost.",
       },
       {
         title: "Labour Camp & Forest Law Risk",
-        content:
-          "Labour camps linked to environmental and forest violations.",
+        content: "Labour camps linked to environmental and forest violations.",
       },
     ],
   },
 
   {
-    title:
-      "EPFDesk Compliance Support for Gadchiroli",
+    title: "EPFDesk Compliance Support for Gadchiroli",
     cards: [
       {
         title: "CLRA & PE Liability Defence",
-        content:
-          "Audit defence for government agencies and prime contractors.",
+        content: "Audit defence for government agencies and prime contractors.",
       },
       {
         title: "Seasonal Workforce Structuring",
-        content:
-          "Piece-rate wage audit and contractor consolidation defence.",
+        content: "Piece-rate wage audit and contractor consolidation defence.",
       },
       {
         title: "BOCW Registration & Cess Advisory",
-        content:
-          "Project registration, cess calculation and compliance.",
+        content: "Project registration, cess calculation and compliance.",
       },
       {
         title: "RO Nagpur Audit Representation",
-        content:
-          "Section 7A defence, CLRA prosecution mitigation and appeals.",
+        content: "Section 7A defence, CLRA prosecution mitigation and appeals.",
       },
     ],
   },
@@ -29771,8 +29653,7 @@ export const faqGadchiroliDistrict = [
       "Yes. Under CLRA, the Principal Employer must ensure PF, ESIC and minimum wage compliance. The PE is also responsible for BOCW registration and cess payment on the entire project cost.",
   },
   {
-    question:
-      "Does Tendu Leaf or Bamboo processing require EPF registration?",
+    question: "Does Tendu Leaf or Bamboo processing require EPF registration?",
     answer:
       "Yes. If 20 or more workers are engaged during peak season, directly or through contractors, EPF becomes mandatory. EPFO often consolidates workers across contractors to meet the threshold.",
   },
@@ -29783,8 +29664,7 @@ export const faqGadchiroliDistrict = [
       "Labour camps on forest land are prohibited. Failure to provide alternate fuel links labour law non-compliance with Forest Act and environmental violations, escalating legal exposure.",
   },
   {
-    question:
-      "Which EPFO office governs Gadchiroli district?",
+    question: "Which EPFO office governs Gadchiroli district?",
     answer:
       "Gadchiroli falls under the jurisdiction of the Regional Office (RO) Nagpur, which handles compliance, audits and legal proceedings for Vidarbha.",
   },
@@ -29796,37 +29676,31 @@ export const heroDataChandrapurDistrict = {
 };
 export const sectionsChandrapurDistrict = [
   {
-    title:
-      "Chandrapur’s Power, Mining & Heavy Industrial Landscape",
+    title: "Chandrapur’s Power, Mining & Heavy Industrial Landscape",
     description:
       "A PSU-dominated industrial ecosystem with zero tolerance for labour law lapses.",
     cards: [
       {
         title: "Thermal Power Generation",
-        content:
-          "CSTPS (MAHAGENCO) with thousands of contract workers.",
+        content: "CSTPS (MAHAGENCO) with thousands of contract workers.",
       },
       {
         title: "Coal Mining Operations",
-        content:
-          "WCL mines, washeries and coal handling systems.",
+        content: "WCL mines, washeries and coal handling systems.",
       },
       {
         title: "Cement & Heavy Manufacturing",
-        content:
-          "High dust, heat and accident exposure industries.",
+        content: "High dust, heat and accident exposure industries.",
       },
       {
         title: "Specialised Contract Labour",
-        content:
-          "Ash handling, coal handling, shutdown and maintenance crews.",
+        content: "Ash handling, coal handling, shutdown and maintenance crews.",
       },
     ],
   },
 
   {
-    title:
-      "Core EPF, ESIC & CLRA Compliance Risks in Chandrapur",
+    title: "Core EPF, ESIC & CLRA Compliance Risks in Chandrapur",
     description:
       "Principal Employer liability and catastrophic hazard exposure dominate enforcement.",
     cards: [
@@ -29842,8 +29716,7 @@ export const sectionsChandrapurDistrict = [
       },
       {
         title: "NWC 2025 Wage Suppression Risk",
-        content:
-          "Contractors’ low basic wages increase PE exposure.",
+        content: "Contractors’ low basic wages increase PE exposure.",
       },
       {
         title: "BOCW Cess Compliance",
@@ -29854,28 +29727,23 @@ export const sectionsChandrapurDistrict = [
   },
 
   {
-    title:
-      "EPFDesk Compliance Support for Chandrapur",
+    title: "EPFDesk Compliance Support for Chandrapur",
     cards: [
       {
         title: "PSU Contractor Compliance Audits",
-        content:
-          "Zero-defect VCMS for CSTPS & WCL contractors.",
+        content: "Zero-defect VCMS for CSTPS & WCL contractors.",
       },
       {
         title: "Hazard & ESIC Risk Mitigation",
-        content:
-          "Coverage validation for high-risk industrial roles.",
+        content: "Coverage validation for high-risk industrial roles.",
       },
       {
         title: "BOCW Registration & Cess Advisory",
-        content:
-          "Project registration, cess computation and audit defence.",
+        content: "Project registration, cess computation and audit defence.",
       },
       {
         title: "RO Nagpur Representation",
-        content:
-          "Section 7A defence, PE liability mitigation and appeals.",
+        content: "Section 7A defence, PE liability mitigation and appeals.",
       },
     ],
   },
@@ -29894,14 +29762,12 @@ export const faqChandrapurDistrict = [
       "Occupational disease exposure. Coal dust and silica can cause long-term illness. If ESIC contributions are deficient, the employer bears 100% of medical and compensation liability.",
   },
   {
-    question:
-      "Does the Mines Act replace EPF and ESIC obligations?",
+    question: "Does the Mines Act replace EPF and ESIC obligations?",
     answer:
       "No. The Mines Act governs safety (DGMS), while EPF and ESIC govern social security. All statutes apply simultaneously and must be complied with together.",
   },
   {
-    question:
-      "Which EPFO office governs Chandrapur district?",
+    question: "Which EPFO office governs Chandrapur district?",
     answer:
       "Chandrapur is governed by the Regional Office (RO) Nagpur, which handles compliance, audits and legal proceedings for the Vidarbha region.",
   },
@@ -29913,44 +29779,37 @@ export const heroDataBhandaraDistrict = {
 };
 export const sectionsBhandaraDistrict = [
   {
-    title:
-      "Bhandara’s Rice Mill & Agro-Processing Landscape",
+    title: "Bhandara’s Rice Mill & Agro-Processing Landscape",
     description:
       "A seasonal, piece-rate driven industrial ecosystem with strict wage law applicability.",
     cards: [
       {
         title: "Rice Milling Industry",
-        content:
-          "Primary employer cluster with scheduled minimum wages.",
+        content: "Primary employer cluster with scheduled minimum wages.",
       },
       {
         title: "Tendu Leaf Processing",
-        content:
-          "Seasonal collection and processing via contractors.",
+        content: "Seasonal collection and processing via contractors.",
       },
       {
         title: "Seasonal Workforce",
-        content:
-          "High peak-season headcount crossing PF/ESI thresholds.",
+        content: "High peak-season headcount crossing PF/ESI thresholds.",
       },
       {
         title: "MIDC MSMEs",
-        content:
-          "Engineering and small agro-processing units.",
+        content: "Engineering and small agro-processing units.",
       },
     ],
   },
 
   {
-    title:
-      "Core EPF, ESIC & Wage Law Risks in Bhandara",
+    title: "Core EPF, ESIC & Wage Law Risks in Bhandara",
     description:
       "Rice mills face combined PF, ESIC and Minimum Wages Act scrutiny.",
     cards: [
       {
         title: "Piece-Rate Wage Suppression",
-        content:
-          "Actual output-based wages often under-reported for PF/ESI.",
+        content: "Actual output-based wages often under-reported for PF/ESI.",
       },
       {
         title: "Minimum Wages Act Violations",
@@ -29959,40 +29818,33 @@ export const sectionsBhandaraDistrict = [
       },
       {
         title: "Seasonal PF Threshold Risk",
-        content:
-          "Once 20 workers are employed, PF applies year-round.",
+        content: "Once 20 workers are employed, PF applies year-round.",
       },
       {
         title: "Tendu Leaf PE Liability",
-        content:
-          "Principal Employers liable for contractor non-compliance.",
+        content: "Principal Employers liable for contractor non-compliance.",
       },
     ],
   },
 
   {
-    title:
-      "EPFDesk Compliance Support for Bhandara",
+    title: "EPFDesk Compliance Support for Bhandara",
     cards: [
       {
         title: "Rice Mill Payroll Audits",
-        content:
-          "Piece-rate validation against minimum wage schedules.",
+        content: "Piece-rate validation against minimum wage schedules.",
       },
       {
         title: "PF & ESIC Threshold Planning",
-        content:
-          "Seasonal headcount compliance strategies.",
+        content: "Seasonal headcount compliance strategies.",
       },
       {
         title: "Contractor Compliance (VCMS)",
-        content:
-          "PF, ESIC and wage verification for tendu contractors.",
+        content: "PF, ESIC and wage verification for tendu contractors.",
       },
       {
         title: "RO Nagpur Representation",
-        content:
-          "Section 7A defence and audit handling.",
+        content: "Section 7A defence and audit handling.",
       },
     ],
   },
@@ -30011,28 +29863,24 @@ export const faqBhandaraDistrict = [
       "Generally yes. Once an establishment employs 20 or more workers even once, PF coverage continues. Permanent staff remain covered year-round, and seasonal staff during their employment period.",
   },
   {
-    question:
-      "What is the biggest compliance risk in Tendu Leaf processing?",
+    question: "What is the biggest compliance risk in Tendu Leaf processing?",
     answer:
       "Principal Employer liability. The entity engaging contractors can be held liable for PF, ESIC and Minimum Wages Act violations committed by the contractor or Mukadam.",
   },
   {
-    question:
-      "Which EPFO office governs Bhandara district?",
+    question: "Which EPFO office governs Bhandara district?",
     answer:
       "Bhandara falls under the Regional Office (RO) Nagpur, which handles compliance, audits and legal proceedings for the Vidarbha region.",
   },
 ];
 export const heroDataGondiaDistrict = {
-  title:
-    "Vidarbha’s Rice Mill & Interstate Agro-Labour Gateway",
+  title: "Vidarbha’s Rice Mill & Interstate Agro-Labour Gateway",
   description:
     "Gondia’s rice milling and agro-processing economy depends heavily on seasonal and interstate labour, triggering EPF, ESIC, ISMWA and Minimum Wages Act exposure.",
 };
 export const sectionsGondiaDistrict = [
   {
-    title:
-      "Gondia’s Rice Mill & Agro-Processing Landscape",
+    title: "Gondia’s Rice Mill & Agro-Processing Landscape",
     description:
       "A border-district industrial ecosystem with high seasonal and interstate labour dependence.",
     cards: [
@@ -30043,74 +29891,61 @@ export const sectionsGondiaDistrict = [
       },
       {
         title: "Tendu Leaf Processing",
-        content:
-          "Seasonal collection with interstate labour inflow.",
+        content: "Seasonal collection with interstate labour inflow.",
       },
       {
         title: "Interstate Workforce",
-        content:
-          "Workers sourced from Chhattisgarh and Madhya Pradesh.",
+        content: "Workers sourced from Chhattisgarh and Madhya Pradesh.",
       },
       {
         title: "MIDC MSMEs",
-        content:
-          "Engineering and agro-based manufacturing units.",
+        content: "Engineering and agro-based manufacturing units.",
       },
     ],
   },
 
   {
-    title:
-      "Core EPF, ESIC & ISMWA Risks in Gondia",
+    title: "Core EPF, ESIC & ISMWA Risks in Gondia",
     description:
       "Rice mills face overlapping PF, ESIC, Minimum Wages and ISMWA enforcement.",
     cards: [
       {
         title: "Piece-Rate Wage Suppression",
-        content:
-          "Actual output wages under-reported for PF/ESIC.",
+        content: "Actual output wages under-reported for PF/ESIC.",
       },
       {
         title: "Minimum Wages Act Breach",
-        content:
-          "Mandatory Basic + Special Allowance often violated.",
+        content: "Mandatory Basic + Special Allowance often violated.",
       },
       {
         title: "ISMWA Non-Compliance",
-        content:
-          "Interstate workers require registration and welfare.",
+        content: "Interstate workers require registration and welfare.",
       },
       {
         title: "Seasonal PF Threshold Risk",
-        content:
-          "Once 20 workers are engaged, PF applies year-round.",
+        content: "Once 20 workers are engaged, PF applies year-round.",
       },
     ],
   },
 
   {
-    title:
-      "EPFDesk Compliance Support for Gondia",
+    title: "EPFDesk Compliance Support for Gondia",
     cards: [
       {
         title: "Rice Mill Wage Audits",
-        content:
-          "Piece-rate validation against minimum wage schedules.",
+        content: "Piece-rate validation against minimum wage schedules.",
       },
       {
         title: "ISMWA Registration & Compliance",
-        content:
-          "Interstate labour licensing and allowance structuring.",
+        content: "Interstate labour licensing and allowance structuring.",
       },
       {
         title: "PF & ESIC Threshold Planning",
-        content:
-          "Seasonal and interstate workforce compliance.",
+        content: "Seasonal and interstate workforce compliance.",
       },
       {
         title: "RO Nagpur Representation",
-        content:
-          "Section 7A defence and audit handling.",
+        content: "Section 7A defence and audit handling.",
       },
     ],
   },
@@ -30135,100 +29970,83 @@ export const faqGondiaDistrict = [
       "Generally yes. Once the PF threshold of 20 workers is crossed even once, the establishment remains covered. Permanent staff are covered year-round and seasonal staff during employment.",
   },
   {
-    question:
-      "Which EPFO office governs Gondia district?",
+    question: "Which EPFO office governs Gondia district?",
     answer:
       "Gondia falls under the Regional Office (RO) Nagpur, which handles all EPF and ESIC compliance, audits and litigation for the Vidarbha region.",
   },
 ];
 export const heroDataWashimDistrict = {
-  title:
-    "Vidarbha’s Cotton Ginning & Zone-3 Agro-Processing Belt",
+  title: "Vidarbha’s Cotton Ginning & Zone-3 Agro-Processing Belt",
   description:
     "Washim’s economy is dominated by cotton ginning, oil mills and seasonal agro-processing units governed by Zone-3 minimum wages and strict EPF/ESIC thresholds.",
 };
 export const sectionsWashimDistrict = [
   {
-    title:
-      "Washim’s Agro-Industrial Landscape",
+    title: "Washim’s Agro-Industrial Landscape",
     description:
       "A seasonal cotton and oil-based industrial belt operating primarily under Zone-3 wage classification.",
     cards: [
       {
         title: "Cotton Ginning & Pressing",
-        content:
-          "Primary seasonal employer cluster in Washim.",
+        content: "Primary seasonal employer cluster in Washim.",
       },
       {
         title: "Oil Mills (Soybean)",
-        content:
-          "High seasonal headcount during crushing season.",
+        content: "High seasonal headcount during crushing season.",
       },
       {
         title: "Dal & Agro Mills",
-        content:
-          "Scheduled employments under Minimum Wages Act.",
+        content: "Scheduled employments under Minimum Wages Act.",
       },
       {
         title: "Washim MIDC",
-        content:
-          "Small MSME manufacturing and service units.",
+        content: "Small MSME manufacturing and service units.",
       },
     ],
   },
 
   {
-    title:
-      "Core EPF, ESIC & Minimum Wage Risks",
+    title: "Core EPF, ESIC & Minimum Wage Risks",
     description:
       "Seasonal labour and piece-rate payments trigger repeated audits.",
     cards: [
       {
         title: "Piece-Rate Wage Suppression",
-        content:
-          "Actual output earnings excluded from PF/ESIC base.",
+        content: "Actual output earnings excluded from PF/ESIC base.",
       },
       {
         title: "Zone-3 Minimum Wage Violations",
-        content:
-          "Basic + Special Allowance not fully paid.",
+        content: "Basic + Special Allowance not fully paid.",
       },
       {
         title: "Seasonal PF Threshold Risk",
-        content:
-          "Crossing 20 workers once triggers PF coverage.",
+        content: "Crossing 20 workers once triggers PF coverage.",
       },
       {
         title: "Contract Labour PE Liability",
-        content:
-          "Principal Employer liable for contractor defaults.",
+        content: "Principal Employer liable for contractor defaults.",
       },
     ],
   },
 
   {
-    title:
-      "EPFDesk Compliance Support for Washim",
+    title: "EPFDesk Compliance Support for Washim",
     cards: [
       {
         title: "Zone-3 Wage Audits",
-        content:
-          "Validation of cotton and oil mill payrolls.",
+        content: "Validation of cotton and oil mill payrolls.",
       },
       {
         title: "Seasonal PF Structuring",
-        content:
-          "Threshold planning and retrospective risk control.",
+        content: "Threshold planning and retrospective risk control.",
       },
       {
         title: "Contractor Compliance Management",
-        content:
-          "PF/ESIC monitoring for mill contractors.",
+        content: "PF/ESIC monitoring for mill contractors.",
       },
       {
         title: "RO Akola Representation",
-        content:
-          "Section 7A audit defence and liaison.",
+        content: "Section 7A audit defence and liaison.",
       },
     ],
   },
@@ -30241,20 +30059,17 @@ export const faqWashimDistrict = [
       "Yes. Piece-rate wages are permitted, but total earnings must at least equal the mandated Minimum Wage (Basic + Special Allowance) for Zone-3 scheduled employment. Paying less is a direct violation.",
   },
   {
-    question:
-      "My Oil Mill operates only for six months. Is PF still required?",
+    question: "My Oil Mill operates only for six months. Is PF still required?",
     answer:
       "Yes. If the establishment employed 20 or more workers at any point, PF coverage applies. PF must be paid for all workers during their employment period and compliance must be maintained year-round.",
   },
   {
-    question:
-      "What is the risk of Washim being classified under Zone-3 wages?",
+    question: "What is the risk of Washim being classified under Zone-3 wages?",
     answer:
       "Zone-3 has lower minimum wages, but compliance is still mandatory. RO Akola audits specifically verify that even Zone-3 rates and Special Allowance components are fully paid.",
   },
   {
-    question:
-      "Which EPFO office governs Washim district?",
+    question: "Which EPFO office governs Washim district?",
     answer:
       "Washim falls under the Regional Office (RO) Akola, which handles all EPF and ESIC compliance, audits and litigation for this Vidarbha region.",
   },
@@ -30367,14 +30182,12 @@ export const faqYavatmal = [
       "Yes. If the establishment employed 20 or more persons at any point, PF coverage becomes permanent. Compliance must be maintained year-round.",
   },
   {
-    question:
-      "Which EPFO office has jurisdiction over Yavatmal district?",
+    question: "Which EPFO office has jurisdiction over Yavatmal district?",
     answer:
       "Yavatmal is governed by the Regional Office (RO) Nagpur, which handles compliance, audits, Section 7A proceedings, and litigation for the Vidarbha region.",
   },
   {
-    question:
-      "What is the biggest ESIC risk for Cotton Ginning units?",
+    question: "What is the biggest ESIC risk for Cotton Ginning units?",
     answer:
       "As factories employing 10 or more workers, ESIC is mandatory. Non-compliance exposes the employer to full medical and compensation liability in case of workplace injury or occupational disease.",
   },
@@ -30481,20 +30294,17 @@ export const faqAurangabad = [
       "Yes. As the Principal Employer, your unit is legally liable for all PF/ESI defaults of contractors. RO Aurangabad enforces this strictly.",
   },
   {
-    question:
-      "What is the main ESIC risk for Pharma and Brewing factories?",
+    question: "What is the main ESIC risk for Pharma and Brewing factories?",
     answer:
       "These are high-hazard industries. ESIC is mandatory to transfer accident and occupational disease risk. Non-compliance exposes the employer to massive financial liability.",
   },
   {
-    question:
-      "How does the NWC 2025 50% wage rule affect Auto Ancillaries?",
+    question: "How does the NWC 2025 50% wage rule affect Auto Ancillaries?",
     answer:
       "It forces inclusion of fixed allowances into basic wages, increasing PF contribution base and PE exposure for contract labour.",
   },
   {
-    question:
-      "Which EPFO office has jurisdiction over Aurangabad district?",
+    question: "Which EPFO office has jurisdiction over Aurangabad district?",
     answer:
       "Aurangabad is governed by the dedicated Regional Office (RO) Aurangabad located in CIDCO, Sambhaji Nagar.",
   },
@@ -30574,8 +30384,7 @@ export const sectionsNoidaDist = [
       },
       {
         title: "Contract Labour PE Shielding",
-        content:
-          "VCMS, contractor audits, and CLRA risk mitigation.",
+        content: "VCMS, contractor audits, and CLRA risk mitigation.",
         color: "bg-white border-gray-300",
       },
       {
@@ -30586,8 +30395,7 @@ export const sectionsNoidaDist = [
       },
       {
         title: "NWC 2025 Payroll Readiness",
-        content:
-          "Wage restructuring for IT and electronics employers.",
+        content: "Wage restructuring for IT and electronics employers.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -30607,14 +30415,12 @@ export const faqNoida = [
       "Contractors failing to pay Minimum Wages and correct PF/ESI. The Principal Employer is held liable for all arrears, interest, and penalties.",
   },
   {
-    question:
-      "Which EPFO office governs Gautam Buddha Nagar district?",
+    question: "Which EPFO office governs Gautam Buddha Nagar district?",
     answer:
       "Gautam Buddha Nagar is governed by the dedicated Regional Office (RO) Noida, which enforces centralized and aggressive compliance for NCR.",
   },
   {
-    question:
-      "How will the NWC 2025 50% wage rule impact Noida IT salaries?",
+    question: "How will the NWC 2025 50% wage rule impact Noida IT salaries?",
     answer:
       "It will mandate restructuring of high-allowance salary models, increasing the PF contribution base and statutory costs.",
   },
@@ -30692,26 +30498,22 @@ export const sectionsGhaziabadDist = [
     cards: [
       {
         title: "Contract Labour PE Risk Shielding",
-        content:
-          "VCMS, contractor audits and liability mitigation.",
+        content: "VCMS, contractor audits and liability mitigation.",
         color: "bg-white border-gray-300",
       },
       {
         title: "ESIC Hazard Compliance",
-        content:
-          "Risk-transfer focused ESIC compliance for heavy industries.",
+        content: "Risk-transfer focused ESIC compliance for heavy industries.",
         color: "bg-white border-gray-300",
       },
       {
         title: "RO Ghaziabad Audit & 7A Defence",
-        content:
-          "Representation for inspections, notices and appeals.",
+        content: "Representation for inspections, notices and appeals.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Minimum Wage & Payroll Structuring",
-        content:
-          "Wage alignment to avoid retrospective PF/ESIC demands.",
+        content: "Wage alignment to avoid retrospective PF/ESIC demands.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -30735,14 +30537,12 @@ export const faqGhaziabad = [
       "Hazard liability. ESIC is mandatory for factories with 10 or more workers. Non-compliance exposes the employer to full medical and compensation costs for workplace injuries.",
   },
   {
-    question:
-      "Which EPFO office governs Ghaziabad district?",
+    question: "Which EPFO office governs Ghaziabad district?",
     answer:
       "Ghaziabad is governed by the dedicated Regional Office (RO) Ghaziabad, located in Sahibabad, ensuring localized NCR enforcement.",
   },
   {
-    question:
-      "Does RO Ghaziabad audit minimum wage compliance?",
+    question: "Does RO Ghaziabad audit minimum wage compliance?",
     answer:
       "Yes. Minimum Wage records are cross-checked during PF/ESI audits to establish the true wage base for retrospective contributions.",
   },
@@ -30776,8 +30576,7 @@ export const sectionsKanpurDist = [
       },
       {
         title: "Textile & Engineering MSMEs",
-        content:
-          "Allowance suppression and piece-rate wage audits are common.",
+        content: "Allowance suppression and piece-rate wage audits are common.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -30820,14 +30619,12 @@ export const sectionsKanpurDist = [
     cards: [
       {
         title: "Leather & Chemical ESIC Compliance",
-        content:
-          "Risk-transfer focused ESIC compliance for high-hazard units.",
+        content: "Risk-transfer focused ESIC compliance for high-hazard units.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Defence Contractor PE Shielding",
-        content:
-          "CLRA licensing, VCMS and audit defence for PSU contractors.",
+        content: "CLRA licensing, VCMS and audit defence for PSU contractors.",
         color: "bg-white border-gray-300",
       },
       {
@@ -30863,14 +30660,12 @@ export const faqKanpur = [
       "Yes. RO Kanpur strictly enforces CLRA and PF/ESI compliance for defence contractors. Any default can result in PE liability proceedings.",
   },
   {
-    question:
-      "Which EPFO office governs Kanpur Nagar district?",
+    question: "Which EPFO office governs Kanpur Nagar district?",
     answer:
       "Kanpur Nagar is governed by the dedicated Regional Office (RO) Kanpur, a major enforcement centre for Central UP.",
   },
   {
-    question:
-      "Are piece-rate wages in the textile sector subject to PF?",
+    question: "Are piece-rate wages in the textile sector subject to PF?",
     answer:
       "Yes. Piece-rate earnings are treated as basic wages. EPFO audits frequently target suppression of PF contribution base in textile payrolls.",
   },
@@ -30913,8 +30708,7 @@ export const sectionsLucknowDist = [
 
   {
     title: "Core EPF & ESIC Compliance Risks in Lucknow",
-    description:
-      "RO Lucknow is a major enforcement hub for Central UP.",
+    description: "RO Lucknow is a major enforcement hub for Central UP.",
     cards: [
       {
         title: "Principal Employer Liability (CLRA)",
@@ -30960,8 +30754,7 @@ export const sectionsLucknowDist = [
       },
       {
         title: "RO Lucknow Inspection & 7A Defence",
-        content:
-          "Handling inspections, notices and appellate proceedings.",
+        content: "Handling inspections, notices and appellate proceedings.",
         color: "bg-white border-gray-300",
       },
       {
@@ -30997,8 +30790,7 @@ export const faqLucknow = [
       "Yes. Any educational institution employing 20 or more persons must comply with EPF, including eligible teaching and non-teaching staff.",
   },
   {
-    question:
-      "Which EPFO office governs Lucknow district?",
+    question: "Which EPFO office governs Lucknow district?",
     answer:
       "Lucknow is governed by the dedicated Regional Office (RO) Lucknow, a major enforcement hub for Central UP.",
   },
@@ -31032,8 +30824,7 @@ export const sectionsVaranasiDist = [
       },
       {
         title: "Educational & Coaching Institutions",
-        content:
-          "Mandatory PF/ESIC coverage with frequent allowance audits.",
+        content: "Mandatory PF/ESIC coverage with frequent allowance audits.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -31046,8 +30837,7 @@ export const sectionsVaranasiDist = [
     cards: [
       {
         title: "Handloom Piece-Rate PF Liability",
-        content:
-          "EPFO demands PF on full piece-rate earnings of weavers.",
+        content: "EPFO demands PF on full piece-rate earnings of weavers.",
         color: "bg-white border-gray-300",
       },
       {
@@ -31064,8 +30854,7 @@ export const sectionsVaranasiDist = [
       },
       {
         title: "Unorganized Labour Risk",
-        content:
-          "Merchants and exporters are treated as de facto employers.",
+        content: "Merchants and exporters are treated as de facto employers.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -31076,26 +30865,22 @@ export const sectionsVaranasiDist = [
     cards: [
       {
         title: "Handloom & Piece-Rate Audit Defence",
-        content:
-          "Wage structuring and representation for weaver PF disputes.",
+        content: "Wage structuring and representation for weaver PF disputes.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Tourism Sector PE Shielding",
-        content:
-          "VCMS and CLRA compliance for hotels and hospitals.",
+        content: "VCMS and CLRA compliance for hotels and hospitals.",
         color: "bg-white border-gray-300",
       },
       {
         title: "RO Varanasi Audit & 7A Defence",
-        content:
-          "Handling inspections, notices and appellate proceedings.",
+        content: "Handling inspections, notices and appellate proceedings.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Service Establishment ESIC Compliance",
-        content:
-          "Registration, contribution and ongoing ESIC management.",
+        content: "Registration, contribution and ongoing ESIC management.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -31113,20 +30898,17 @@ export const faqVaranasi = [
       "Yes. RO Varanasi treats weavers as eligible employees of the exporter or merchant and demands PF on the full piece-rate earnings, not nominal wages.",
   },
   {
-    question:
-      "What is the main PE risk for hotels in Varanasi?",
+    question: "What is the main PE risk for hotels in Varanasi?",
     answer:
       "Liability for security and housekeeping contractors. The hotel is responsible for ensuring correct PF/ESI and Minimum Wage compliance.",
   },
   {
-    question:
-      "Is ESIC mandatory for private hospitals in Varanasi?",
+    question: "Is ESIC mandatory for private hospitals in Varanasi?",
     answer:
       "Yes. Hospitals and service establishments with 10 or more employees are mandatorily covered under ESIC in UP.",
   },
   {
-    question:
-      "Which EPFO office governs Varanasi district?",
+    question: "Which EPFO office governs Varanasi district?",
     answer:
       "Varanasi is governed by the dedicated Regional Office (RO) Varanasi, the main enforcement authority for Eastern UP.",
   },
@@ -31169,8 +30951,7 @@ export const sectionsAgraDist = [
 
   {
     title: "Core EPF & ESIC Compliance Risks in Agra",
-    description:
-      "RO Agra is the primary enforcement authority for Western UP.",
+    description: "RO Agra is the primary enforcement authority for Western UP.",
     cards: [
       {
         title: "Footwear Piece-Rate PF Liability",
@@ -31204,26 +30985,22 @@ export const sectionsAgraDist = [
     cards: [
       {
         title: "Footwear & Piece-Rate Audit Defence",
-        content:
-          "Wage restructuring and PF defense for footwear exporters.",
+        content: "Wage restructuring and PF defense for footwear exporters.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Leather & Chemical ESIC Compliance",
-        content:
-          "Risk-transfer focused ESIC registration and management.",
+        content: "Risk-transfer focused ESIC registration and management.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Tourism Sector PE Shielding",
-        content:
-          "VCMS and CLRA compliance for hotels and resorts.",
+        content: "VCMS and CLRA compliance for hotels and resorts.",
         color: "bg-white border-gray-300",
       },
       {
         title: "RO Agra Inspection & 7A Defence",
-        content:
-          "Handling inspections, notices and appellate proceedings.",
+        content: "Handling inspections, notices and appellate proceedings.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -31241,20 +31018,17 @@ export const faqAgra = [
       "Yes. RO Agra treats piece-rate footwear workers as eligible employees and demands PF on total earnings, not nominal wages.",
   },
   {
-    question:
-      "Is ESIC mandatory for a footwear factory with 15 workers?",
+    question: "Is ESIC mandatory for a footwear factory with 15 workers?",
     answer:
       "Yes. Factories with 10 or more workers are mandatorily covered under ESIC in UP. Non-compliance is extremely risky due to chemical and machinery hazards.",
   },
   {
-    question:
-      "What is the main PE risk for hotels in Agra?",
+    question: "What is the main PE risk for hotels in Agra?",
     answer:
       "Liability for housekeeping and security contractors. The hotel is financially responsible for PF/ESI and Minimum Wage compliance.",
   },
   {
-    question:
-      "Which EPFO office governs Agra district?",
+    question: "Which EPFO office governs Agra district?",
     answer:
       "Agra is governed by the dedicated Regional Office (RO) Agra, the main enforcement authority for Western UP.",
   },
@@ -31297,8 +31071,7 @@ export const sectionsMeerutDist = [
 
   {
     title: "Core EPF & ESIC Compliance Risks in Meerut",
-    description:
-      "RO Meerut is a major enforcement authority for Western UP.",
+    description: "RO Meerut is a major enforcement authority for Western UP.",
     cards: [
       {
         title: "Sports Goods Piece-Rate PF Liability",
@@ -31308,8 +31081,7 @@ export const sectionsMeerutDist = [
       },
       {
         title: "Seasonal Sugar Mill PF Audits",
-        content:
-          "Crossing the PF threshold once triggers year-round coverage.",
+        content: "Crossing the PF threshold once triggers year-round coverage.",
         color: "bg-white border-gray-300",
       },
       {
@@ -31320,8 +31092,7 @@ export const sectionsMeerutDist = [
       },
       {
         title: "Minimum Wage Cross-Checks",
-        content:
-          "PF records are audited against scheduled employment wages.",
+        content: "PF records are audited against scheduled employment wages.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -31338,20 +31109,17 @@ export const sectionsMeerutDist = [
       },
       {
         title: "Seasonal Sugar Mill Compliance",
-        content:
-          "PF strategy for seasonal headcount and retaining allowance.",
+        content: "PF strategy for seasonal headcount and retaining allowance.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Engineering PE Risk Shielding",
-        content:
-          "VCMS, CLRA licensing and contractor audit support.",
+        content: "VCMS, CLRA licensing and contractor audit support.",
         color: "bg-white border-gray-300",
       },
       {
         title: "RO Meerut Inspection & 7A Defence",
-        content:
-          "Handling inspections, notices and appellate proceedings.",
+        content: "Handling inspections, notices and appellate proceedings.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -31369,20 +31137,17 @@ export const faqMeerut = [
       "Yes. Piece-rate earnings are treated as basic wages. RO Meerut audits demand PF on total piece-rate earnings, not nominal wages.",
   },
   {
-    question:
-      "Does a seasonal sugar mill need to pay PF for the full year?",
+    question: "Does a seasonal sugar mill need to pay PF for the full year?",
     answer:
       "Yes. Once the PF threshold is crossed, the establishment remains covered. Audits also check PF on retaining allowance during the off-season.",
   },
   {
-    question:
-      "What is the main PE risk for engineering units in Meerut?",
+    question: "What is the main PE risk for engineering units in Meerut?",
     answer:
       "Liability for security, maintenance and production contractors. The Principal Employer is responsible for PF/ESI and Minimum Wage compliance.",
   },
   {
-    question:
-      "Which EPFO office governs Meerut district?",
+    question: "Which EPFO office governs Meerut district?",
     answer:
       "Meerut is governed by the dedicated Regional Office (RO) Meerut, a major enforcement hub for Western UP.",
   },
@@ -31416,8 +31181,7 @@ export const sectionsAligarhDist = [
       },
       {
         title: "Hardware & Job-Work MSMEs",
-        content:
-          "Outsourced processes create PE liability for manufacturers.",
+        content: "Outsourced processes create PE liability for manufacturers.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -31442,14 +31206,12 @@ export const sectionsAligarhDist = [
       },
       {
         title: "Job-Work PE Liability",
-        content:
-          "Manufacturers are liable for PF/ESI of off-site job workers.",
+        content: "Manufacturers are liable for PF/ESI of off-site job workers.",
         color: "bg-white border-gray-300",
       },
       {
         title: "MSME Threshold Audits",
-        content:
-          "EPFO checks workforce splitting to evade PF/ESI coverage.",
+        content: "EPFO checks workforce splitting to evade PF/ESI coverage.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -31460,26 +31222,22 @@ export const sectionsAligarhDist = [
     cards: [
       {
         title: "Piece-Rate Audit Defence",
-        content:
-          "Wage restructuring and PF defence for lock & hardware units.",
+        content: "Wage restructuring and PF defence for lock & hardware units.",
         color: "bg-white border-gray-300",
       },
       {
         title: "ESIC Hazard Risk Management",
-        content:
-          "Mandatory ESIC setup and accident liability shielding.",
+        content: "Mandatory ESIC setup and accident liability shielding.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Job-Work & PE Compliance",
-        content:
-          "CLRA licensing and contractor PF/ESI verification.",
+        content: "CLRA licensing and contractor PF/ESI verification.",
         color: "bg-white border-gray-300",
       },
       {
         title: "RO Aligarh Inspection & 7A Defence",
-        content:
-          "Handling notices, inspections and appellate proceedings.",
+        content: "Handling notices, inspections and appellate proceedings.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -31497,20 +31255,17 @@ export const faqAligarh = [
       "Yes. If the manufacturer controls raw material, design or output quality, RO Aligarh treats home-based piece-rate workers as eligible employees and demands PF on total earnings.",
   },
   {
-    question:
-      "What is the biggest ESIC risk for a brass foundry?",
+    question: "What is the biggest ESIC risk for a brass foundry?",
     answer:
       "Occupational disease and accident liability. Without ESIC, the employer bears 100% of long-term medical and compensation costs.",
   },
   {
-    question:
-      "Is PF mandatory if our MSME has only 18 permanent workers?",
+    question: "Is PF mandatory if our MSME has only 18 permanent workers?",
     answer:
       "Yes, if total headcount including casual or contract workers reaches 20 on any day. RO Aligarh audits total manpower, not just permanent staff.",
   },
   {
-    question:
-      "Which EPFO office governs Aligarh district?",
+    question: "Which EPFO office governs Aligarh district?",
     answer:
       "Aligarh is governed by the dedicated Regional Office (RO) Aligarh, which conducts localized enforcement for the lock and brass industry.",
   },
@@ -31532,14 +31287,12 @@ export const sectionsPrayagrajDist = [
     cards: [
       {
         title: "Schools & Coaching Centers",
-        content:
-          "Mandatory PF coverage for teaching and non-teaching staff.",
+        content: "Mandatory PF coverage for teaching and non-teaching staff.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Hospitals & Service Establishments",
-        content:
-          "ESIC registration compulsory for all eligible service staff.",
+        content: "ESIC registration compulsory for all eligible service staff.",
         color: "bg-white border-gray-300",
       },
       {
@@ -31558,8 +31311,7 @@ export const sectionsPrayagrajDist = [
     cards: [
       {
         title: "Educational PF Mandate",
-        content:
-          "Retrospective PF demanded for teachers and staff.",
+        content: "Retrospective PF demanded for teachers and staff.",
         color: "bg-white border-gray-300",
       },
       {
@@ -31570,8 +31322,7 @@ export const sectionsPrayagrajDist = [
       },
       {
         title: "High Court & PSU PE Liability",
-        content:
-          "Principal Employers liable for contractor PF/ESI defaults.",
+        content: "Principal Employers liable for contractor PF/ESI defaults.",
         color: "bg-white border-gray-300",
       },
       {
@@ -31588,8 +31339,7 @@ export const sectionsPrayagrajDist = [
     cards: [
       {
         title: "Educational PF Audit Defence",
-        content:
-          "Handling retrospective PF demands for schools and colleges.",
+        content: "Handling retrospective PF demands for schools and colleges.",
         color: "bg-white border-gray-300",
       },
       {
@@ -31600,14 +31350,12 @@ export const sectionsPrayagrajDist = [
       },
       {
         title: "PE & CLRA Compliance for Contractors",
-        content:
-          "VCMS, licensing and contractor PF/ESI monitoring.",
+        content: "VCMS, licensing and contractor PF/ESI monitoring.",
         color: "bg-white border-gray-300",
       },
       {
         title: "RO Prayagraj Inspection & 7A Defence",
-        content:
-          "Complete handling of inspections, notices and appeals.",
+        content: "Complete handling of inspections, notices and appeals.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -31631,14 +31379,12 @@ export const faqPrayagraj = [
       "If a contractor fails to comply with PF/ESI or Minimum Wages, RO Prayagraj will pursue the Principal Employer (government office or PSU) for full liability.",
   },
   {
-    question:
-      "Is ESIC mandatory for a coaching center with 15 employees?",
+    question: "Is ESIC mandatory for a coaching center with 15 employees?",
     answer:
       "Yes. Coaching centers and other service establishments with 10 or more employees are mandatorily covered under the ESI Act in UP.",
   },
   {
-    question:
-      "Which EPFO office governs Prayagraj district?",
+    question: "Which EPFO office governs Prayagraj district?",
     answer:
       "Prayagraj is governed by the dedicated Regional Office (RO) Prayagraj, which acts as a major enforcement hub for the region.",
   },
@@ -31666,8 +31412,7 @@ export const sectionsGorakhpurDist = [
       },
       {
         title: "Fertilizer & Chemical Plants",
-        content:
-          "High-hazard operations make ESIC mandatory and critical.",
+        content: "High-hazard operations make ESIC mandatory and critical.",
         color: "bg-white border-gray-300",
       },
       {
@@ -31681,25 +31426,21 @@ export const sectionsGorakhpurDist = [
 
   {
     title: "Core EPF & ESIC Compliance Risks in Gorakhpur",
-    description:
-      "RO Gorakhpur actively enforces compliance across Purvanchal.",
+    description: "RO Gorakhpur actively enforces compliance across Purvanchal.",
     cards: [
       {
         title: "Seasonal PF & Retaining Allowance",
-        content:
-          "PF demanded on retaining allowance paid during off-season.",
+        content: "PF demanded on retaining allowance paid during off-season.",
         color: "bg-white border-gray-300",
       },
       {
         title: "PSU & Fertilizer PE Liability",
-        content:
-          "Principal Employers liable for contractor PF/ESI defaults.",
+        content: "Principal Employers liable for contractor PF/ESI defaults.",
         color: "bg-white border-gray-300",
       },
       {
         title: "ESIC Hazard Exposure",
-        content:
-          "Chemical and fertilizer units face catastrophic ESIC risk.",
+        content: "Chemical and fertilizer units face catastrophic ESIC risk.",
         color: "bg-white border-gray-300",
       },
       {
@@ -31716,26 +31457,22 @@ export const sectionsGorakhpurDist = [
     cards: [
       {
         title: "Seasonal Sugar Mill PF Defence",
-        content:
-          "Managing headcount audits and retaining allowance PF risk.",
+        content: "Managing headcount audits and retaining allowance PF risk.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Fertilizer & PSU PE Compliance",
-        content:
-          "VCMS, CLRA licensing and contractor PF/ESI audits.",
+        content: "VCMS, CLRA licensing and contractor PF/ESI audits.",
         color: "bg-white border-gray-300",
       },
       {
         title: "ESIC Hazard Risk Management",
-        content:
-          "Mandatory ESIC setup and accident liability shielding.",
+        content: "Mandatory ESIC setup and accident liability shielding.",
         color: "bg-white border-gray-300",
       },
       {
         title: "RO Gorakhpur Inspection & 7A Defence",
-        content:
-          "Complete handling of inspections, notices and appeals.",
+        content: "Complete handling of inspections, notices and appeals.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -31759,14 +31496,12 @@ export const faqGorakhpur = [
       "If a contractor fails to comply with PF/ESI or Minimum Wages, RO Gorakhpur will pursue the Principal Employer (PSU/fertilizer unit) for full liability.",
   },
   {
-    question:
-      "Is ESIC mandatory for a small dal mill in Gorakhpur?",
+    question: "Is ESIC mandatory for a small dal mill in Gorakhpur?",
     answer:
       "Yes, if it is a factory using power with 10 or more workers. Most dal mills qualify as factories and are mandatorily covered under ESIC.",
   },
   {
-    question:
-      "Which EPFO office governs Gorakhpur district?",
+    question: "Which EPFO office governs Gorakhpur district?",
     answer:
       "Gorakhpur is governed by the dedicated Regional Office (RO) Gorakhpur, which acts as a major enforcement hub for Purvanchal (Eastern UP).",
   },
@@ -31788,8 +31523,7 @@ export const sectionsMoradabadDist = [
     cards: [
       {
         title: "Brassware & Handicraft Units",
-        content:
-          "Extensive use of piece-rate and home-based artisans.",
+        content: "Extensive use of piece-rate and home-based artisans.",
         color: "bg-white border-gray-300",
       },
       {
@@ -31800,8 +31534,7 @@ export const sectionsMoradabadDist = [
       },
       {
         title: "Foundries & Plating Units",
-        content:
-          "High ESIC hazard due to chemicals, dust and metal fumes.",
+        content: "High ESIC hazard due to chemicals, dust and metal fumes.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -31809,8 +31542,7 @@ export const sectionsMoradabadDist = [
 
   {
     title: "Core EPF & ESIC Compliance Risks in Moradabad",
-    description:
-      "RO Moradabad enforces supply-chain level compliance.",
+    description: "RO Moradabad enforces supply-chain level compliance.",
     cards: [
       {
         title: "Piece-Rate PF Exposure",
@@ -31826,14 +31558,12 @@ export const sectionsMoradabadDist = [
       },
       {
         title: "ESIC Hazard Liability",
-        content:
-          "Foundries and plating units face catastrophic ESIC risk.",
+        content: "Foundries and plating units face catastrophic ESIC risk.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Unorganized Sector Formalization",
-        content:
-          "Large exporters targeted as compliance anchors.",
+        content: "Large exporters targeted as compliance anchors.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -31844,26 +31574,22 @@ export const sectionsMoradabadDist = [
     cards: [
       {
         title: "Piece-Rate PF Audit Defence",
-        content:
-          "Managing retrospective PF demands on artisans and job work.",
+        content: "Managing retrospective PF demands on artisans and job work.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Export PE Liability Shield",
-        content:
-          "VCMS, CLRA licensing and contractor compliance audits.",
+        content: "VCMS, CLRA licensing and contractor compliance audits.",
         color: "bg-white border-gray-300",
       },
       {
         title: "ESIC Hazard Compliance",
-        content:
-          "Mandatory ESIC setup and accident liability mitigation.",
+        content: "Mandatory ESIC setup and accident liability mitigation.",
         color: "bg-white border-gray-300",
       },
       {
         title: "RO Moradabad Inspection & 7A Defence",
-        content:
-          "Complete handling of notices, inspections and appeals.",
+        content: "Complete handling of notices, inspections and appeals.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -31881,20 +31607,17 @@ export const faqMoradabad = [
       "Yes. RO Moradabad treats export houses as Principal Employers. If job-work units fail in PF/ESI or Minimum Wages, liability is extended to the exporter.",
   },
   {
-    question:
-      "Is PF applicable to piece-rate artisans working from home?",
+    question: "Is PF applicable to piece-rate artisans working from home?",
     answer:
       "Yes. If control over raw material, pricing and quality exists, EPFO mandates PF on full piece-rate earnings irrespective of work location.",
   },
   {
-    question:
-      "What is the main ESIC risk for brass foundries?",
+    question: "What is the main ESIC risk for brass foundries?",
     answer:
       "Occupational disease and injury liability due to metal dust, fumes and chemicals. Non-compliance exposes the employer to 100% medical and compensation cost.",
   },
   {
-    question:
-      "Which EPFO office governs Moradabad district?",
+    question: "Which EPFO office governs Moradabad district?",
     answer:
       "Moradabad is governed by the dedicated Regional Office (RO) Moradabad, which acts as a primary enforcement hub for the export and handicraft sector.",
   },
@@ -31922,14 +31645,12 @@ export const sectionsBareillyDist = [
       },
       {
         title: "Sugar & Agro-Processing Mills",
-        content:
-          "Seasonal workforce with PF on retaining allowance exposure.",
+        content: "Seasonal workforce with PF on retaining allowance exposure.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Defence & Government Contractors",
-        content:
-          "High Principal Employer liability under CLRA.",
+        content: "High Principal Employer liability under CLRA.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -31942,26 +31663,22 @@ export const sectionsBareillyDist = [
     cards: [
       {
         title: "Furniture Piece-Rate PF Risk",
-        content:
-          "PF demanded on full piece-rate earnings of artisans.",
+        content: "PF demanded on full piece-rate earnings of artisans.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Seasonal PF Liability",
-        content:
-          "Sugar mills audited for retaining allowance PF.",
+        content: "Sugar mills audited for retaining allowance PF.",
         color: "bg-white border-gray-300",
       },
       {
         title: "ESIC Hazard Exposure",
-        content:
-          "Wood dust, chemicals and machinery accidents.",
+        content: "Wood dust, chemicals and machinery accidents.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Defence PE Liability",
-        content:
-          "Contractor non-compliance transferred to PE.",
+        content: "Contractor non-compliance transferred to PE.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -31972,8 +31689,7 @@ export const sectionsBareillyDist = [
     cards: [
       {
         title: "Piece-Rate PF Audit Defence",
-        content:
-          "Managing retrospective PF demands on furniture workers.",
+        content: "Managing retrospective PF demands on furniture workers.",
         color: "bg-white border-gray-300",
       },
       {
@@ -31984,14 +31700,12 @@ export const sectionsBareillyDist = [
       },
       {
         title: "ESIC Hazard Compliance",
-        content:
-          "Mandatory ESIC setup and accident liability mitigation.",
+        content: "Mandatory ESIC setup and accident liability mitigation.",
         color: "bg-white border-gray-300",
       },
       {
         title: "RO Bareilly Inspection & 7A Defence",
-        content:
-          "Complete handling of notices, inspections and appeals.",
+        content: "Complete handling of notices, inspections and appeals.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32003,8 +31717,7 @@ export const sectionsBareillyDist = [
 =========================== */
 export const faqBareilly = [
   {
-    question:
-      "Is PF applicable on piece-rate wages in the furniture industry?",
+    question: "Is PF applicable on piece-rate wages in the furniture industry?",
     answer:
       "Yes. RO Bareilly treats piece-rate earnings as part of basic wages and demands PF on the total amount paid to carpenters and polishers.",
   },
@@ -32015,14 +31728,12 @@ export const faqBareilly = [
       "Yes. PF remains applicable once coverage is triggered, and retaining allowance paid during the off-season is audited for PF compliance.",
   },
   {
-    question:
-      "What is the main ESIC risk for wood-based factories?",
+    question: "What is the main ESIC risk for wood-based factories?",
     answer:
       "Respiratory disease and machinery injury liability due to dust and equipment. Non-compliance exposes the employer to 100% medical and compensation cost.",
   },
   {
-    question:
-      "Which EPFO office governs Bareilly district?",
+    question: "Which EPFO office governs Bareilly district?",
     answer:
       "Bareilly is governed by the dedicated Regional Office (RO) Bareilly, serving as the enforcement authority for the Rohilkhand region.",
   },
@@ -32050,14 +31761,12 @@ export const sectionsAzamgarhDist = [
       },
       {
         title: "Hospitals & Service Sector",
-        content:
-          "High PE liability for security and housekeeping contractors.",
+        content: "High PE liability for security and housekeeping contractors.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Trade & MSMEs",
-        content:
-          "Headcount dilution and PF/ESIC coverage audits.",
+        content: "Headcount dilution and PF/ESIC coverage audits.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32070,26 +31779,22 @@ export const sectionsAzamgarhDist = [
     cards: [
       {
         title: "Educational PF Audits",
-        content:
-          "Retrospective PF demands on teachers and staff.",
+        content: "Retrospective PF demands on teachers and staff.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Hospital PE Liability",
-        content:
-          "Contractor non-compliance transferred to Principal Employer.",
+        content: "Contractor non-compliance transferred to Principal Employer.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Mandatory ESIC Coverage",
-        content:
-          "Service establishments with 10+ workers.",
+        content: "Service establishments with 10+ workers.",
         color: "bg-white border-gray-300",
       },
       {
         title: "MSME Headcount Scrutiny",
-        content:
-          "Detection of workforce splitting to evade coverage.",
+        content: "Detection of workforce splitting to evade coverage.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32106,20 +31811,17 @@ export const sectionsAzamgarhDist = [
       },
       {
         title: "Service Sector PE Shield",
-        content:
-          "CLRA licensing and Zero-Defect VCMS implementation.",
+        content: "CLRA licensing and Zero-Defect VCMS implementation.",
         color: "bg-white border-gray-300",
       },
       {
         title: "ESIC Registration & Filing",
-        content:
-          "Hospitals, clinics and service establishments.",
+        content: "Hospitals, clinics and service establishments.",
         color: "bg-white border-gray-300",
       },
       {
         title: "RO Varanasi Inspection & 7A Defence",
-        content:
-          "Complete handling of notices, inspections and appeals.",
+        content: "Complete handling of notices, inspections and appeals.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32131,14 +31833,12 @@ export const sectionsAzamgarhDist = [
 =========================== */
 export const faqAzamgarh = [
   {
-    question:
-      "Is PF mandatory for teachers in private schools in Azamgarh?",
+    question: "Is PF mandatory for teachers in private schools in Azamgarh?",
     answer:
       "Yes. Any private school, college or coaching center with 20 or more employees is mandatorily covered under EPF, including eligible teaching and non-teaching staff.",
   },
   {
-    question:
-      "What is the main PE risk for hospitals in Azamgarh?",
+    question: "What is the main PE risk for hospitals in Azamgarh?",
     answer:
       "Hospitals are liable as Principal Employers for PF/ESIC and Minimum Wage compliance of security and housekeeping contractors.",
   },
@@ -32149,8 +31849,7 @@ export const faqAzamgarh = [
       "Yes. Shops and service establishments with 10 or more employees are mandatorily covered under the ESIC Act in Uttar Pradesh.",
   },
   {
-    question:
-      "Which EPFO office has jurisdiction over Azamgarh district?",
+    question: "Which EPFO office has jurisdiction over Azamgarh district?",
     answer:
       "Azamgarh falls under the jurisdiction of the Regional Office (RO) Varanasi, which handles all EPF enforcement for the district.",
   },
@@ -32172,20 +31871,17 @@ export const sectionsSaharanpurDist = [
     cards: [
       {
         title: "Wood Carving & Furniture",
-        content:
-          "Unorganized, piece-rate labour and home-based artisans.",
+        content: "Unorganized, piece-rate labour and home-based artisans.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Paper & Pulp Mills",
-        content:
-          "High ESIC hazard exposure and PE liability for contractors.",
+        content: "High ESIC hazard exposure and PE liability for contractors.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Sugar & Agro-Processing",
-        content:
-          "Seasonal headcount audits and PF on retaining allowance.",
+        content: "Seasonal headcount audits and PF on retaining allowance.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32198,26 +31894,22 @@ export const sectionsSaharanpurDist = [
     cards: [
       {
         title: "Piece-Rate PF Suppression",
-        content:
-          "Retrospective PF demands on full wood carving earnings.",
+        content: "Retrospective PF demands on full wood carving earnings.",
         color: "bg-white border-gray-300",
       },
       {
         title: "ESIC Hazard Liability",
-        content:
-          "Chemical and machinery risks in paper & pulp mills.",
+        content: "Chemical and machinery risks in paper & pulp mills.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Seasonal PF Enforcement",
-        content:
-          "Sugar mills audited for retaining allowance PF.",
+        content: "Sugar mills audited for retaining allowance PF.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Contract Labour PE Risk",
-        content:
-          "Paper mills liable for contractor PF/ESIC failures.",
+        content: "Paper mills liable for contractor PF/ESIC failures.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32228,26 +31920,22 @@ export const sectionsSaharanpurDist = [
     cards: [
       {
         title: "Piece-Rate PF Audit Defence",
-        content:
-          "Wood carving and furniture sector PF litigation handling.",
+        content: "Wood carving and furniture sector PF litigation handling.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Paper Mill ESIC Hazard Shield",
-        content:
-          "Accident liability mitigation and ESIC compliance systems.",
+        content: "Accident liability mitigation and ESIC compliance systems.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Seasonal Sugar Mill Compliance",
-        content:
-          "Headcount tracking and retaining allowance PF defence.",
+        content: "Headcount tracking and retaining allowance PF defence.",
         color: "bg-white border-gray-300",
       },
       {
         title: "RO Saharanpur Inspection & 7A Defence",
-        content:
-          "Complete notice, inspection and appeal representation.",
+        content: "Complete notice, inspection and appeal representation.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32271,14 +31959,12 @@ export const faqSaharanpur = [
       "Chemical and machinery hazard liability. Non-compliance exposes the employer to 100% financial liability for industrial accidents and occupational diseases.",
   },
   {
-    question:
-      "Does a Sugar Mill in Saharanpur need to pay PF year-round?",
+    question: "Does a Sugar Mill in Saharanpur need to pay PF year-round?",
     answer:
       "Yes. Once the PF threshold is crossed, coverage continues. Audits specifically check PF on Retaining Allowance paid during the off-season.",
   },
   {
-    question:
-      "Which EPFO office has jurisdiction over Saharanpur district?",
+    question: "Which EPFO office has jurisdiction over Saharanpur district?",
     answer:
       "Saharanpur is governed by the dedicated Regional Office (RO) Saharanpur, which handles all EPF enforcement for the district.",
   },
@@ -32332,8 +32018,7 @@ export const sectionsMathuraDist = [
       },
       {
         title: "Catastrophic ESIC Hazard Risk",
-        content:
-          "100% employer liability in case of accidents if ESIC lapses.",
+        content: "100% employer liability in case of accidents if ESIC lapses.",
         color: "bg-white border-gray-300",
       },
       {
@@ -32344,8 +32029,7 @@ export const sectionsMathuraDist = [
       },
       {
         title: "Minimum Wage Cross-Checks",
-        content:
-          "PF records matched against refinery contract wage schedules.",
+        content: "PF records matched against refinery contract wage schedules.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32356,8 +32040,7 @@ export const sectionsMathuraDist = [
     cards: [
       {
         title: "Refinery Contractor Compliance Shield",
-        content:
-          "Zero-Defect VCMS and CLRA audit defence for IOCL vendors.",
+        content: "Zero-Defect VCMS and CLRA audit defence for IOCL vendors.",
         color: "bg-white border-gray-300",
       },
       {
@@ -32368,14 +32051,12 @@ export const sectionsMathuraDist = [
       },
       {
         title: "Service Sector PF Restructuring",
-        content:
-          "Allowance rationalisation and wage code alignment.",
+        content: "Allowance rationalisation and wage code alignment.",
         color: "bg-white border-gray-300",
       },
       {
         title: "RO Agra 7A & Inspection Defence",
-        content:
-          "Complete representation during inspections and assessments.",
+        content: "Complete representation during inspections and assessments.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32405,8 +32086,7 @@ export const faqMathura = [
       "Catastrophic financial liability. In a high-hazard petrochemical environment, non-compliance makes the employer fully liable for medical costs and compensation.",
   },
   {
-    question:
-      "Which EPFO office has jurisdiction over Mathura district?",
+    question: "Which EPFO office has jurisdiction over Mathura district?",
     answer:
       "Mathura falls under the jurisdiction of the Regional Office (RO) Agra, which handles all EPF enforcement for the district.",
   },
@@ -32434,8 +32114,7 @@ export const sectionsJhansiDist = [
       },
       {
         title: "Agro-Processing & Dal Mills",
-        content:
-          "Seasonal workforce triggering PF/ESIC threshold audits.",
+        content: "Seasonal workforce triggering PF/ESIC threshold audits.",
         color: "bg-white border-gray-300",
       },
       {
@@ -32454,20 +32133,17 @@ export const sectionsJhansiDist = [
     cards: [
       {
         title: "Railway & Defence PE Liability",
-        content:
-          "Contractor PF/ESIC lapses transferred to Principal Employer.",
+        content: "Contractor PF/ESIC lapses transferred to Principal Employer.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Seasonal PF Enforcement",
-        content:
-          "Retroactive PF demands once threshold is crossed.",
+        content: "Retroactive PF demands once threshold is crossed.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Mandatory ESIC for Services",
-        content:
-          "Hospitals and schools covered at 10+ workers.",
+        content: "Hospitals and schools covered at 10+ workers.",
         color: "bg-white border-gray-300",
       },
       {
@@ -32484,26 +32160,22 @@ export const sectionsJhansiDist = [
     cards: [
       {
         title: "Railway & Defence Contractor Shield",
-        content:
-          "Zero-Defect VCMS and CLRA PE liability protection.",
+        content: "Zero-Defect VCMS and CLRA PE liability protection.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Seasonal Workforce Compliance",
-        content:
-          "PF structuring for agro and cold storage units.",
+        content: "PF structuring for agro and cold storage units.",
         color: "bg-white border-gray-300",
       },
       {
         title: "ESIC Registration & Audit Defence",
-        content:
-          "Mandatory ESIC coverage and inspection handling.",
+        content: "Mandatory ESIC coverage and inspection handling.",
         color: "bg-white border-gray-300",
       },
       {
         title: "RO Jhansi 7A Proceedings",
-        content:
-          "Complete representation during EPFO assessments.",
+        content: "Complete representation during EPFO assessments.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32521,20 +32193,17 @@ export const faqJhansi = [
       "Principal Employer liability. RO Jhansi will hold the Railway or Defence unit responsible for your PF/ESIC lapses, resulting in heavy chargebacks and potential blacklisting.",
   },
   {
-    question:
-      "Is PF mandatory for teachers in private schools in Jhansi?",
+    question: "Is PF mandatory for teachers in private schools in Jhansi?",
     answer:
       "Yes. Any school or college employing 20 or more persons is mandatorily covered under the EPF Act, including eligible teaching and non-teaching staff.",
   },
   {
-    question:
-      "Is ESIC mandatory for a Dal Mill with 15 workers?",
+    question: "Is ESIC mandatory for a Dal Mill with 15 workers?",
     answer:
       "Yes. Most Dal Mills are treated as factories and are mandatorily covered under ESIC if they employ 10 or more workers using power.",
   },
   {
-    question:
-      "Which EPFO office has jurisdiction over Jhansi district?",
+    question: "Which EPFO office has jurisdiction over Jhansi district?",
     answer:
       "Jhansi is governed by the dedicated Regional Office (RO) Jhansi, which handles all EPF enforcement for the district.",
   },
@@ -32562,14 +32231,12 @@ export const sectionsMuzaffarnagarDist = [
       },
       {
         title: "Paper & Chemical Industries",
-        content:
-          "High ESIC hazard liability and PE exposure.",
+        content: "High ESIC hazard liability and PE exposure.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Agro-Processing & Cold Storages",
-        content:
-          "Seasonal workforce compliance and headcount audits.",
+        content: "Seasonal workforce compliance and headcount audits.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32582,26 +32249,22 @@ export const sectionsMuzaffarnagarDist = [
     cards: [
       {
         title: "Retaining Allowance PF Liability",
-        content:
-          "Mandatory PF even during non-operational season.",
+        content: "Mandatory PF even during non-operational season.",
         color: "bg-white border-gray-300",
       },
       {
         title: "ESIC Hazard Exposure",
-        content:
-          "Paper and chemical factories face catastrophic risk.",
+        content: "Paper and chemical factories face catastrophic risk.",
         color: "bg-white border-gray-300",
       },
       {
         title: "PE Liability for Contractors",
-        content:
-          "Sugar and Paper Mills held liable for vendor lapses.",
+        content: "Sugar and Paper Mills held liable for vendor lapses.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Minimum Wage Cross-Checks",
-        content:
-          "PF records verified against UP wage notifications.",
+        content: "PF records verified against UP wage notifications.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32612,26 +32275,22 @@ export const sectionsMuzaffarnagarDist = [
     cards: [
       {
         title: "Sugar Mill PF Structuring",
-        content:
-          "Seasonal PF and Retaining Allowance compliance.",
+        content: "Seasonal PF and Retaining Allowance compliance.",
         color: "bg-white border-gray-300",
       },
       {
         title: "ESIC Hazard Risk Mitigation",
-        content:
-          "Mandatory ESIC coverage and inspection handling.",
+        content: "Mandatory ESIC coverage and inspection handling.",
         color: "bg-white border-gray-300",
       },
       {
         title: "CLRA & PE Liability Shield",
-        content:
-          "Zero-Defect VCMS for contractors.",
+        content: "Zero-Defect VCMS for contractors.",
         color: "bg-white border-gray-300",
       },
       {
         title: "RO Meerut 7A Defence",
-        content:
-          "Full representation during PF/ESIC assessments.",
+        content: "Full representation during PF/ESIC assessments.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32649,20 +32308,17 @@ export const faqMuzaffarnagar = [
       "Yes. RO Meerut treats Retaining Allowance as a fixed wage component on which PF is mandatory, even during non-operational periods.",
   },
   {
-    question:
-      "What is the biggest ESIC risk for Paper or Chemical factories?",
+    question: "What is the biggest ESIC risk for Paper or Chemical factories?",
     answer:
       "Hazard liability. Non-compliance exposes the employer to 100% medical and compensation costs for industrial accidents or occupational diseases.",
   },
   {
-    question:
-      "What is the main PE liability risk for Sugar Mills?",
+    question: "What is the main PE liability risk for Sugar Mills?",
     answer:
       "Liability for loading, transport and maintenance contractors. The Mill is fully responsible for their PF/ESIC compliance.",
   },
   {
-    question:
-      "Which EPFO office governs Muzaffarnagar district?",
+    question: "Which EPFO office governs Muzaffarnagar district?",
     answer:
       "Muzaffarnagar falls under the jurisdiction of the Regional Office (RO) Meerut.",
   },
@@ -32684,20 +32340,17 @@ export const sectionsFirozabadDist = [
     cards: [
       {
         title: "Glass & Bangle Units",
-        content:
-          "Heavy reliance on piece-rate artisans and job-work units.",
+        content: "Heavy reliance on piece-rate artisans and job-work units.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Furnace-Based Manufacturing",
-        content:
-          "Extreme ESIC hazard risk due to heat and glass dust.",
+        content: "Extreme ESIC hazard risk due to heat and glass dust.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Ancillary MSMEs",
-        content:
-          "Maintenance, transport and finishing contractors.",
+        content: "Maintenance, transport and finishing contractors.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32705,13 +32358,11 @@ export const sectionsFirozabadDist = [
 
   {
     title: "Core EPF & ESIC Compliance Risks",
-    description:
-      "RO Agra aggressively enforces PF, ESIC and CLRA obligations.",
+    description: "RO Agra aggressively enforces PF, ESIC and CLRA obligations.",
     cards: [
       {
         title: "Piece-Rate PF Evasion",
-        content:
-          "PF demanded on full piece-rate earnings of artisans.",
+        content: "PF demanded on full piece-rate earnings of artisans.",
         color: "bg-white border-gray-300",
       },
       {
@@ -32722,14 +32373,12 @@ export const sectionsFirozabadDist = [
       },
       {
         title: "PE Liability (CLRA)",
-        content:
-          "Manufacturers liable for all contractor defaults.",
+        content: "Manufacturers liable for all contractor defaults.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Labour Dept Cross-Audits",
-        content:
-          "Child Labour inspections often trigger PF/ESIC audits.",
+        content: "Child Labour inspections often trigger PF/ESIC audits.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32740,26 +32389,22 @@ export const sectionsFirozabadDist = [
     cards: [
       {
         title: "Piece-Rate Wage Defence",
-        content:
-          "Audit-proof PF structuring for glass artisans.",
+        content: "Audit-proof PF structuring for glass artisans.",
         color: "bg-white border-gray-300",
       },
       {
         title: "ESIC Furnace Risk Shield",
-        content:
-          "Mandatory ESIC coverage and accident liability mitigation.",
+        content: "Mandatory ESIC coverage and accident liability mitigation.",
         color: "bg-white border-gray-300",
       },
       {
         title: "CLRA & PE Liability Control",
-        content:
-          "Zero-Defect VCMS for all job-work contractors.",
+        content: "Zero-Defect VCMS for all job-work contractors.",
         color: "bg-white border-gray-300",
       },
       {
         title: "RO Agra 7A Representation",
-        content:
-          "End-to-end defence during PF & ESIC assessments.",
+        content: "End-to-end defence during PF & ESIC assessments.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32771,26 +32416,22 @@ export const sectionsFirozabadDist = [
 =========================== */
 export const faqFirozabad = [
   {
-    question:
-      "Is PF mandatory on piece-rate wages of bangle makers?",
+    question: "Is PF mandatory on piece-rate wages of bangle makers?",
     answer:
       "Yes. RO Agra treats piece-rate earnings as wages and demands PF on the full amount, including for home-based artisans.",
   },
   {
-    question:
-      "What is the biggest ESIC risk for Glass factories?",
+    question: "What is the biggest ESIC risk for Glass factories?",
     answer:
       "Catastrophic hazard liability. Burns, furnace accidents and silicosis can result in unlimited employer liability if ESIC compliance lapses.",
   },
   {
-    question:
-      "What PE liability do large Bangle exporters face?",
+    question: "What PE liability do large Bangle exporters face?",
     answer:
       "Exporters are fully liable for PF/ESIC compliance of polishing, finishing and packaging contractors involved in the core production process.",
   },
   {
-    question:
-      "Which EPFO office governs Firozabad district?",
+    question: "Which EPFO office governs Firozabad district?",
     answer:
       "Firozabad falls under the jurisdiction of the Regional Office (RO) Agra.",
   },
@@ -32812,20 +32453,17 @@ export const sectionsBudaunDist = [
     cards: [
       {
         title: "Dal Mills & Cold Storages",
-        content:
-          "Seasonal workforce with PF and ESIC threshold risks.",
+        content: "Seasonal workforce with PF and ESIC threshold risks.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Trading & MSMEs",
-        content:
-          "High headcount under-reporting and coverage evasion.",
+        content: "High headcount under-reporting and coverage evasion.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Contract Labour Usage",
-        content:
-          "Loading, handling and transport contractors.",
+        content: "Loading, handling and transport contractors.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32833,31 +32471,26 @@ export const sectionsBudaunDist = [
 
   {
     title: "Core EPF & ESIC Compliance Risks",
-    description:
-      "RO Bareilly conducts aggressive seasonal and MSME audits.",
+    description: "RO Bareilly conducts aggressive seasonal and MSME audits.",
     cards: [
       {
         title: "Seasonal PF Enforcement",
-        content:
-          "PF triggered once 20-worker threshold is crossed.",
+        content: "PF triggered once 20-worker threshold is crossed.",
         color: "bg-white border-gray-300",
       },
       {
         title: "MSME Coverage Audits",
-        content:
-          "Hidden workers and splitting of workforce targeted.",
+        content: "Hidden workers and splitting of workforce targeted.",
         color: "bg-white border-gray-300",
       },
       {
         title: "ESIC Factory Coverage",
-        content:
-          "Dal Mills treated as factories (≥10 workers).",
+        content: "Dal Mills treated as factories (≥10 workers).",
         color: "bg-white border-gray-300",
       },
       {
         title: "PE Liability (CLRA)",
-        content:
-          "Cold Storages liable for contractor PF/ESI defaults.",
+        content: "Cold Storages liable for contractor PF/ESI defaults.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32868,26 +32501,22 @@ export const sectionsBudaunDist = [
     cards: [
       {
         title: "Seasonal PF Audit Defence",
-        content:
-          "Employee threshold and engagement period analysis.",
+        content: "Employee threshold and engagement period analysis.",
         color: "bg-white border-gray-300",
       },
       {
         title: "MSME Coverage Risk Control",
-        content:
-          "Headcount mapping and retrospective exposure control.",
+        content: "Headcount mapping and retrospective exposure control.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Zero-Defect VCMS",
-        content:
-          "Contractor PF/ESI monitoring for PE protection.",
+        content: "Contractor PF/ESI monitoring for PE protection.",
         color: "bg-white border-gray-300",
       },
       {
         title: "RO Bareilly 7A Representation",
-        content:
-          "End-to-end handling of PF & ESIC assessments.",
+        content: "End-to-end handling of PF & ESIC assessments.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32911,14 +32540,12 @@ export const faqBudaun = [
       "ESIC registration is mandatory (≥10 workers). PF becomes mandatory once total employee count reaches 20, including hidden or contract workers.",
   },
   {
-    question:
-      "What is the main PE risk for Cold Storages in Budaun?",
+    question: "What is the main PE risk for Cold Storages in Budaun?",
     answer:
       "Liability for loading, handling and security contractors. The Principal Employer is strictly responsible for PF/ESI compliance of contractors.",
   },
   {
-    question:
-      "Which EPFO office governs Budaun district?",
+    question: "Which EPFO office governs Budaun district?",
     answer:
       "Budaun falls under the jurisdiction of the Regional Office (RO) Bareilly.",
   },
@@ -32946,14 +32573,12 @@ export const sectionsBijnorDist = [
       },
       {
         title: "Paper & Chemical Industries",
-        content:
-          "High-hazard ESIC liability and contractor dependency.",
+        content: "High-hazard ESIC liability and contractor dependency.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Agro-Processing & Cold Storage",
-        content:
-          "Seasonal labour and contract workforce risks.",
+        content: "Seasonal labour and contract workforce risks.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32966,26 +32591,22 @@ export const sectionsBijnorDist = [
     cards: [
       {
         title: "Seasonal PF Enforcement",
-        content:
-          "PF triggered once 20-worker threshold is crossed.",
+        content: "PF triggered once 20-worker threshold is crossed.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Retaining Allowance PF",
-        content:
-          "Mandatory PF during off-season for skilled staff.",
+        content: "Mandatory PF during off-season for skilled staff.",
         color: "bg-white border-gray-300",
       },
       {
         title: "ESIC Hazard Liability",
-        content:
-          "Paper/Chemical accidents lead to 100% employer liability.",
+        content: "Paper/Chemical accidents lead to 100% employer liability.",
         color: "bg-white border-gray-300",
       },
       {
         title: "PE Liability (CLRA)",
-        content:
-          "Sugar & Paper Mills liable for contractor PF/ESI defaults.",
+        content: "Sugar & Paper Mills liable for contractor PF/ESI defaults.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -32996,26 +32617,22 @@ export const sectionsBijnorDist = [
     cards: [
       {
         title: "Seasonal PF Audit Defence",
-        content:
-          "Threshold tracking and engagement-period analysis.",
+        content: "Threshold tracking and engagement-period analysis.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Retaining Allowance Structuring",
-        content:
-          "PF exposure modeling and compliance correction.",
+        content: "PF exposure modeling and compliance correction.",
         color: "bg-white border-gray-300",
       },
       {
         title: "Zero-Defect VCMS",
-        content:
-          "Contractor PF/ESI compliance monitoring for PE safety.",
+        content: "Contractor PF/ESI compliance monitoring for PE safety.",
         color: "bg-white border-gray-300",
       },
       {
         title: "RO Moradabad 7A Representation",
-        content:
-          "End-to-end handling of PF & ESIC assessments.",
+        content: "End-to-end handling of PF & ESIC assessments.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -33039,14 +32656,12 @@ export const faqBijnor = [
       "Hazard liability. Non-compliance exposes the employer to 100% medical and compensation costs for accidents or occupational diseases.",
   },
   {
-    question:
-      "What is the main PE risk for Sugar Mills in Bijnor?",
+    question: "What is the main PE risk for Sugar Mills in Bijnor?",
     answer:
       "Liability for loading, unloading, cleaning and transport contractors. The Sugar Mill is strictly responsible for PF/ESI compliance.",
   },
   {
-    question:
-      "Which EPFO office governs Bijnor district?",
+    question: "Which EPFO office governs Bijnor district?",
     answer:
       "Bijnor falls under the jurisdiction of the Regional Office (RO) Moradabad.",
   },
@@ -33134,26 +32749,22 @@ export const sectionsAyodhyaDistrict = [
 
 export const faqAyodhyaDistrict = [
   {
-    question:
-      "Is PF/ESI mandatory for a 10-room guest house in Ayodhya?",
+    question: "Is PF/ESI mandatory for a 10-room guest house in Ayodhya?",
     answer:
       "Yes. For Hotel License approval, PF and ESIC registration is expected. ESIC becomes mandatory at 10 employees and EPF at 20. Many guest houses are audited for artificial staff splitting.",
   },
   {
-    question:
-      "Are temple project workers covered under ESIC?",
+    question: "Are temple project workers covered under ESIC?",
     answer:
       "Pure construction workers may fall under BOCW, but administrative staff or work inside notified establishments attracts mandatory ESIC, creating PE liability if ignored.",
   },
   {
-    question:
-      "Which EPFO office governs Ayodhya?",
+    question: "Which EPFO office governs Ayodhya?",
     answer:
       "Ayodhya falls under the Regional Office (RO) Lucknow. All audits, 7A proceedings and appeals are handled there.",
   },
   {
-    question:
-      "How does face authentication affect Ayodhya contractors?",
+    question: "How does face authentication affect Ayodhya contractors?",
     answer:
       "High-volume contractors must use face authentication for UAN seeding. Failures can block ECR filing and trigger penalties.",
   },
@@ -33253,14 +32864,12 @@ export const faqMainpuriDistrict = [
       "If your establishment touches 20 employees on even a single day during peak season, EPF coverage becomes permanent, regardless of off-season reductions.",
   },
   {
-    question:
-      "Which EPFO office has jurisdiction over Mainpuri?",
+    question: "Which EPFO office has jurisdiction over Mainpuri?",
     answer:
       "Mainpuri falls under EPFO Regional Office (RO) Agra, located at Hariparwat. All 7A inquiries are handled there.",
   },
   {
-    question:
-      "Does PF apply to daily wagers in the Bewar agro belt?",
+    question: "Does PF apply to daily wagers in the Bewar agro belt?",
     answer:
       "Yes. If the establishment is covered, PF must be deducted and paid on statutory wages for all eligible workers, including daily wagers.",
   },
@@ -33354,14 +32963,12 @@ export const faqSonbhadraDistrict = [
       "You are directly liable as the contractor. However, if you default, NTPC can recover the dues from your bills and may blacklist your firm. Monthly ECR compliance is mandatory.",
   },
   {
-    question:
-      "Is ESIC mandatory for stone crushing units in Sonbhadra?",
+    question: "Is ESIC mandatory for stone crushing units in Sonbhadra?",
     answer:
       "Yes. If 10 or more workers are employed, ESIC is mandatory. Given the high risk of accidents and silicosis, ESIC is the only statutory risk shield.",
   },
   {
-    question:
-      "Which EPFO office governs Shaktinagar and Renukoot?",
+    question: "Which EPFO office governs Shaktinagar and Renukoot?",
     answer:
       "Both fall under EPFO Regional Office (RO) Varanasi, which handles all inspections and legal proceedings.",
   },
@@ -33455,14 +33062,12 @@ export const sectionsMirzapurDistrict = [
 
 export const faqMirzapurDistrict = [
   {
-    question:
-      "Are piece-rate carpet weavers eligible for PF?",
+    question: "Are piece-rate carpet weavers eligible for PF?",
     answer:
       "Yes. Payment mode is irrelevant. If the weaver works under your control or for your export house, PF must be paid on weaving charges.",
   },
   {
-    question:
-      "Is ESIC mandatory for a brass foundry with 12 workers?",
+    question: "Is ESIC mandatory for a brass foundry with 12 workers?",
     answer:
       "Yes. Mirzapur is fully notified. Any unit with 10 or more workers must register under ESIC.",
   },
@@ -33473,8 +33078,7 @@ export const faqMirzapurDistrict = [
       "The higher ceiling will bring most skilled carpet and brass workers under mandatory ESIC coverage, expanding employer liability.",
   },
   {
-    question:
-      "Which office governs Chunar mining units?",
+    question: "Which office governs Chunar mining units?",
     answer:
       "All Mirzapur district units fall under EPFO Regional Office (RO) Varanasi.",
   },
@@ -33562,26 +33166,22 @@ export const sectionsUPThrustZones = [
 
 export const faqUPThrustZones = [
   {
-    question:
-      "How does the 5-year limitation period affect PF 7A inquiries?",
+    question: "How does the 5-year limitation period affect PF 7A inquiries?",
     answer:
       "The Social Security Code introduces a 5-year limitation. PF inquiries cannot be initiated beyond five years from the alleged default, offering major relief to older MSMEs.",
   },
   {
-    question:
-      "Is ESIC now mandatory for all districts in UP?",
+    question: "Is ESIC now mandatory for all districts in UP?",
     answer:
       "As of March 2025, 74 out of 75 districts are notified under ESIC, including Ambedkar Nagar and Kushinagar.",
   },
   {
-    question:
-      "What is the Employees’ Enrolment Campaign (EEC-2025)?",
+    question: "What is the Employees’ Enrolment Campaign (EEC-2025)?",
     answer:
       "EEC-2025 is an EPFO drive to identify and enroll workers in new industrial corridors between Nov 2025 and Mar 2026.",
   },
   {
-    question:
-      "Are appointment letters mandatory for daily wagers?",
+    question: "Are appointment letters mandatory for daily wagers?",
     answer:
       "Yes. Under the New Labour Codes, written appointment letters are mandatory for every worker, including daily wagers.",
   },
@@ -33681,14 +33281,12 @@ export const faqIndoreDistrict = [
       "Employers can register excluded workers from July 2017 to Oct 2025 by paying only ₹100 per year as penal charges, provided registration is completed by April 30, 2026.",
   },
   {
-    question:
-      "Is it mandatory for SEZ units to use the SEZ Online portal?",
+    question: "Is it mandatory for SEZ units to use the SEZ Online portal?",
     answer:
       "Yes. SEZ operational approvals use the SEZ Online portal, but PF and ESIC contributions must still be deposited through their respective statutory portals.",
   },
   {
-    question:
-      "Which office governs factories in Pithampur (Dhar district)?",
+    question: "Which office governs factories in Pithampur (Dhar district)?",
     answer:
       "Although Pithampur is in Dhar district, EPF & ESIC jurisdiction is handled by Regional Office (RO) Indore.",
   },
@@ -33800,8 +33398,7 @@ export const faqBhopalDistrict = [
       "Excess allowances will be automatically treated as wages, leading to retrospective PF liability with 12% interest and damages up to 12%.",
   },
   {
-    question:
-      "Is there a time limit for EPF audits under the new 2025 laws?",
+    question: "Is there a time limit for EPF audits under the new 2025 laws?",
     answer:
       "Yes. The Social Security Code introduces a 5-year limitation period. PF inquiries cannot be initiated beyond five years from the relevant period.",
   },
@@ -33812,8 +33409,7 @@ export const faqBhopalDistrict = [
       "Aggregators must contribute 1–2% of annual turnover to a dedicated Social Security Fund to cover life and disability benefits.",
   },
   {
-    question:
-      "Which office has jurisdiction over Mandideep-based units?",
+    question: "Which office has jurisdiction over Mandideep-based units?",
     answer:
       "Although Mandideep is in Raisen district, EPF & ESIC jurisdiction is primarily handled by Regional Office (RO) Bhopal with support from Itarsi district offices.",
   },
@@ -33907,26 +33503,22 @@ export const sectionsJabalpurDistrict = [
 
 export const faqJabalpurDistrict = [
   {
-    question:
-      "Where is the EPFO Regional Office in Jabalpur located?",
+    question: "Where is the EPFO Regional Office in Jabalpur located?",
     answer:
       "The EPFO Regional Office is located at Vijay Nagar Colony, Jabalpur – 482002.",
   },
   {
-    question:
-      "Can mining firms under a 7A inquiry participate in EEC-2025?",
+    question: "Can mining firms under a 7A inquiry participate in EEC-2025?",
     answer:
       "Yes. Even establishments facing Section 7A inquiries can participate, with damages capped at the nominal ₹100 penalty.",
   },
   {
-    question:
-      "What is the benefit of the ESIC Amnesty Scheme 2025?",
+    question: "What is the benefit of the ESIC Amnesty Scheme 2025?",
     answer:
       "It allows settlement of court cases and withdrawal of prosecutions by paying only contribution and interest, with damages fully waived for eligible units.",
   },
   {
-    question:
-      "Is ESIC mandatory for mine-site labourers in Jabalpur?",
+    question: "Is ESIC mandatory for mine-site labourers in Jabalpur?",
     answer:
       "Mine sites generally fall under the Mines Act with WC policies, but any processing unit or office in a notified area must have mandatory ESIC coverage for 10+ employees.",
   },
@@ -33981,8 +33573,7 @@ export const sectionsGwaliorDistrict = [
       },
       {
         title: "Stone Clusters",
-        content:
-          "Ghatigaon and Dabra sandstone mining and processing units.",
+        content: "Ghatigaon and Dabra sandstone mining and processing units.",
         color: "bg-white border-gray-300",
       },
       {
@@ -34020,8 +33611,7 @@ export const sectionsGwaliorDistrict = [
 
 export const faqGwaliorDistrict = [
   {
-    question:
-      "Where is the EPFO Regional Office in Gwalior located?",
+    question: "Where is the EPFO Regional Office in Gwalior located?",
     answer:
       "The EPFO Regional Office is located at Jayendraganj, Lashkar, Gwalior – 474009.",
   },
@@ -34133,20 +33723,17 @@ export const sectionsUjjainDistrict = [
 
 export const faqUjjainDistrict = [
   {
-    question:
-      "Where is the EPFO Regional Office in Ujjain located?",
+    question: "Where is the EPFO Regional Office in Ujjain located?",
     answer:
       "The EPFO Regional Office is located at 7, Bharatpuri Administrative Area, Dewas Road, Ujjain – 456010.",
   },
   {
-    question:
-      "Can Medical Devices Park units participate in EEC-2025?",
+    question: "Can Medical Devices Park units participate in EEC-2025?",
     answer:
       "Yes. All establishments can enroll left-out workers for the 2017–2025 period until April 2026 by paying a nominal ₹100 penalty.",
   },
   {
-    question:
-      "What is the SPREE 2025 scheme for Ujjain businesses?",
+    question: "What is the SPREE 2025 scheme for Ujjain businesses?",
     answer:
       "SPREE allows unregistered firms to register under ESIC by December 31, 2025 with no retrospective liability for the prior period.",
   },
@@ -34246,20 +33833,17 @@ export const sectionsDharDistrict = [
 
 export const faqDharDistrict = [
   {
-    question:
-      "Which EPFO office has jurisdiction over Pithampur units?",
+    question: "Which EPFO office has jurisdiction over Pithampur units?",
     answer:
       "Pithampur and the entire Dhar district are governed by the Regional Office (RO) Indore, supported by the ESIC Regional Office Indore.",
   },
   {
-    question:
-      "Can Pithampur SEZ units opt for the ESIC Amnesty Scheme 2025?",
+    question: "Can Pithampur SEZ units opt for the ESIC Amnesty Scheme 2025?",
     answer:
       "Yes. The scheme applies to SEZ and non-SEZ units alike for disputes pending as of March 31, 2025, allowing settlement with full waiver of damages.",
   },
   {
-    question:
-      "What is the benefit of EEC-2025 for small vendors in Dhar?",
+    question: "What is the benefit of EEC-2025 for small vendors in Dhar?",
     answer:
       "It allows registration of left-out employees from the past eight years with a nominal ₹100 penalty and waiver of the employee share if not deducted earlier.",
   },
@@ -34359,8 +33943,7 @@ export const sectionsDewasDistrict = [
 
 export const faqDewasDistrict = [
   {
-    question:
-      "Which EPFO office governs Dewas factories?",
+    question: "Which EPFO office governs Dewas factories?",
     answer:
       "Dewas district is governed by the Regional Office (RO) Ujjain located at Bharatpuri, Dewas Road, Ujjain.",
   },
@@ -34371,8 +33954,7 @@ export const faqDewasDistrict = [
       "Yes. The scheme is open until September 2026 for settling court cases pending as of March 31, 2025, with a 100% waiver of damages.",
   },
   {
-    question:
-      "What is the benefit of EEC-2025 for Dewas MSMEs?",
+    question: "What is the benefit of EEC-2025 for Dewas MSMEs?",
     answer:
       "It allows registration of left-out employees from 2017–2025 with a nominal ₹100 penalty and waiver of the employee share if it was not deducted earlier.",
   },
@@ -34484,14 +34066,12 @@ export const faqRatlamDistrict = [
       "Yes. Under the Code on Social Security, hazardous process units require mandatory ESIC coverage from the first employee.",
   },
   {
-    question:
-      "Which EPFO office has jurisdiction over Ratlam businesses?",
+    question: "Which EPFO office has jurisdiction over Ratlam businesses?",
     answer:
       "Ratlam district falls under the Regional Office (RO) Ujjain located at Bharatpuri, Ujjain.",
   },
   {
-    question:
-      "How does the 50% Wage Rule affect Ratlam’s pharma sector?",
+    question: "How does the 50% Wage Rule affect Ratlam’s pharma sector?",
     answer:
       "Basic + DA must form at least 50% of total remuneration. Excess allowances are added back for PF calculation, increasing contribution liability if not structured correctly.",
   },
@@ -34534,8 +34114,7 @@ export const sectionsBurhanpurDistrict = [
     cards: [
       {
         title: "Burhanpur City & Nimarkhedi",
-        content:
-          "Power looms, spinning mills and integrated textile units.",
+        content: "Power looms, spinning mills and integrated textile units.",
         color: "bg-white border-gray-300",
       },
       {
@@ -34591,8 +34170,7 @@ export const faqBurhanpurDistrict = [
       "Yes. Piece-rate pay is treated as wages. Under EEC-2025, you can regularize workers for the 2017–2025 period with only a ₹100 penalty.",
   },
   {
-    question:
-      "Which EPFO office governs Burhanpur establishments?",
+    question: "Which EPFO office governs Burhanpur establishments?",
     answer:
       "Burhanpur district is governed by the Regional Office (RO) Indore located at Race Course Road, Indore.",
   },
@@ -34713,7 +34291,8 @@ export const faqAlwarBhiwadi = [
       "It allows enrolment of left-out employees from 2017–2025 with a nominal ₹100 penalty and waiver of employee contribution if not earlier deducted.",
   },
   {
-    question: "Is ESIC mandatory for chemical units with fewer than 10 workers?",
+    question:
+      "Is ESIC mandatory for chemical units with fewer than 10 workers?",
     answer:
       "Yes. Under the Code on Social Security, hazardous process units require mandatory ESIC coverage from the first employee.",
   },
@@ -34818,8 +34397,7 @@ export const faqJaipurDistrict = [
       "Yes. SPREE-2025 allows ESIC registration with no retrospective liability for periods prior to the declaration date.",
   },
   {
-    question:
-      "What is the benefit of EEC-2025 for gem exporters in Sitapura?",
+    question: "What is the benefit of EEC-2025 for gem exporters in Sitapura?",
     answer:
       "It allows registration of left-out artisans from 2017–2025 with a nominal ₹100 penalty, avoiding interest and damages.",
   },
@@ -34864,7 +34442,8 @@ export const sectionsRajasthanThrustZones = [
     ],
   },
   {
-    title: "Core EPF & ESIC Compliance Challenges in Western & Southern Rajasthan",
+    title:
+      "Core EPF & ESIC Compliance Challenges in Western & Southern Rajasthan",
     cards: [
       {
         title: "EEC-2025 for Textile & Solar Workforce",
@@ -34890,8 +34469,7 @@ export const sectionsRajasthanThrustZones = [
 
 export const faqRajasthanThrustZones = [
   {
-    question:
-      "Do we need PF for temporary workers at solar plants in Phalodi?",
+    question: "Do we need PF for temporary workers at solar plants in Phalodi?",
     answer:
       "Yes. All workers engaged in construction or O&M are eligible. EEC-2025 allows regularization with a ₹100 penalty.",
   },
@@ -34902,14 +34480,12 @@ export const faqRajasthanThrustZones = [
       "Western districts fall under RO Jodhpur, while southern districts including Udaipur and Bhilwara fall under RO Udaipur.",
   },
   {
-    question:
-      "Is ESIC mandatory for marble mines in Rajsamand?",
+    question: "Is ESIC mandatory for marble mines in Rajsamand?",
     answer:
       "Yes. Any processing unit or office in a notified area must have ESIC coverage, especially for hazardous processes.",
   },
   {
-    question:
-      "What is the 50% Wage Rule for Bhilwara textile units?",
+    question: "What is the 50% Wage Rule for Bhilwara textile units?",
     answer:
       "From Nov 2025, Basic + DA must be at least 50% of gross salary, preventing allowance-based wage suppression.",
   },
@@ -34970,8 +34546,7 @@ export const sectionsKotaDistrict = [
       },
       {
         title: "Statutory Authority",
-        content:
-          "Regional Office (RO) Kota and ESIC Sub-Regional Office Kota.",
+        content: "Regional Office (RO) Kota and ESIC Sub-Regional Office Kota.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -35087,26 +34662,22 @@ export const sectionsNorthEastRajasthan = [
 
 export const faqNorthEastRajasthan = [
   {
-    question:
-      "Do we need PF for seasonal workers in our Bikaner warehouse?",
+    question: "Do we need PF for seasonal workers in our Bikaner warehouse?",
     answer:
       "Yes. Any engaged worker is eligible. Under EEC-2025, seasonal workers can be regularized with a ₹100 penalty.",
   },
   {
-    question:
-      "Which EPFO offices govern these districts?",
+    question: "Which EPFO offices govern these districts?",
     answer:
       "Northern districts fall under RO Ajmer, while eastern districts such as Bharatpur and Dholpur fall under RO Jaipur.",
   },
   {
-    question:
-      "Is ESIC mandatory for foundries in Bharatpur?",
+    question: "Is ESIC mandatory for foundries in Bharatpur?",
     answer:
       "Yes. Foundries are hazardous processes, requiring ESIC coverage from the first employee regardless of headcount.",
   },
   {
-    question:
-      "How does the 50% Wage Rule affect Dholpur manufacturing units?",
+    question: "How does the 50% Wage Rule affect Dholpur manufacturing units?",
     answer:
       "From Nov 2025, Basic + DA must be at least 50% of gross salary to prevent wage splitting and statutory evasion.",
   },
@@ -35178,20 +34749,17 @@ export const faqJPUB = [
       "Yes. Under the 2025 wage definition, piece-rate earnings are treated as basic wages. Use EEC-2025 to regularize artisans with a ₹100 penalty.",
   },
   {
-    question:
-      "Which EPFO offices govern Jodhpur, Pali, Udaipur and Bhilwara?",
+    question: "Which EPFO offices govern Jodhpur, Pali, Udaipur and Bhilwara?",
     answer:
       "Western districts fall under RO Jodhpur, while southern districts including Udaipur and Bhilwara fall under RO Udaipur.",
   },
   {
-    question:
-      "Is ESIC mandatory for stone mines in Udaipur?",
+    question: "Is ESIC mandatory for stone mines in Udaipur?",
     answer:
       "Yes. Mining and stone processing are hazardous processes requiring ESIC coverage from the first employee.",
   },
   {
-    question:
-      "How does the 50% Wage Rule affect Bhilwara textile units?",
+    question: "How does the 50% Wage Rule affect Bhilwara textile units?",
     answer:
       "From Nov 2025, Basic + DA must be at least 50% of gross salary to prevent wage splitting and PF/ESI evasion.",
   },
@@ -35257,26 +34825,22 @@ export const sectionsSJAN = [
 
 export const faqSJAN = [
   {
-    question:
-      "Do we need PF for cleaning staff in our Sikar coaching center?",
+    question: "Do we need PF for cleaning staff in our Sikar coaching center?",
     answer:
       "Yes. Any engaged worker, even through a contractor, is eligible if the establishment is covered. EEC-2025 allows regularization with a ₹100 penalty.",
   },
   {
-    question:
-      "Which EPFO office governs Sikar, Jhunjhunu, Ajmer and Nagaur?",
+    question: "Which EPFO office governs Sikar, Jhunjhunu, Ajmer and Nagaur?",
     answer:
       "All these districts fall under the jurisdiction of the Regional Office (RO) Ajmer.",
   },
   {
-    question:
-      "Is ESIC mandatory for cement ancillary units in Beawar?",
+    question: "Is ESIC mandatory for cement ancillary units in Beawar?",
     answer:
       "Yes. Cement manufacturing is a hazardous process, requiring ESIC coverage from the first employee.",
   },
   {
-    question:
-      "How does the 50% Wage Rule affect Ajmer’s service sector?",
+    question: "How does the 50% Wage Rule affect Ajmer’s service sector?",
     answer:
       "From Nov 2025, Basic + DA must be at least 50% of gross salary, preventing allowance-based wage suppression.",
   },
@@ -35342,8 +34906,7 @@ export const sectionsBBJDT = [
 
 export const faqBBJDT = [
   {
-    question:
-      "Do we need PF for seasonal workers in our Bundi rice mill?",
+    question: "Do we need PF for seasonal workers in our Bundi rice mill?",
     answer:
       "Yes. Any engaged worker, even through a contractor, is eligible. EEC-2025 allows regularization with a ₹100 penalty.",
   },
@@ -35354,14 +34917,12 @@ export const faqBBJDT = [
       "Hadoti districts fall under RO Kota, while Dausa and Tonk fall under RO Jaipur.",
   },
   {
-    question:
-      "Is ESIC mandatory for stone units in Dausa?",
+    question: "Is ESIC mandatory for stone units in Dausa?",
     answer:
       "Yes. Stone mining and carving are hazardous processes requiring ESIC coverage from the first employee.",
   },
   {
-    question:
-      "How does the 50% Wage Rule affect Dausa’s manufacturing sector?",
+    question: "How does the 50% Wage Rule affect Dausa’s manufacturing sector?",
     answer:
       "From Nov 2025, Basic + DA must be at least 50% of gross salary to prevent wage splitting and statutory evasion.",
   },
@@ -35465,14 +35026,12 @@ export const faqRaipurDistrict = [
       "Yes. Eligible units can settle pending disputes with a 100% waiver of damages under the ESIC Amnesty Scheme 2025.",
   },
   {
-    question:
-      "Is ESIC mandatory for small-scale rolling mills in Urla?",
+    question: "Is ESIC mandatory for small-scale rolling mills in Urla?",
     answer:
       "Yes. Most metal-working units are classified as hazardous processes, requiring ESIC coverage from the first employee.",
   },
   {
-    question:
-      "What happens if a contractor fails to pay PF in Siltara?",
+    question: "What happens if a contractor fails to pay PF in Siltara?",
     answer:
       "The Principal Employer is legally liable. RO Raipur can recover dues directly from the employer’s bank account or freeze ECR access.",
   },
@@ -35533,8 +35092,7 @@ export const sectionsKorbaDistrict = [
       },
       {
         title: "Statutory Authority",
-        content:
-          "Regional Office (RO) Bilaspur and ESIC Branch Office Korba.",
+        content: "Regional Office (RO) Bilaspur and ESIC Branch Office Korba.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -35566,20 +35124,17 @@ export const sectionsKorbaDistrict = [
 
 export const faqKorbaDistrict = [
   {
-    question:
-      "Which EPFO office handles Korba-based establishments?",
+    question: "Which EPFO office handles Korba-based establishments?",
     answer:
       "Korba falls under the jurisdiction of the Regional Office (RO) Bilaspur.",
   },
   {
-    question:
-      "Is ESIC mandatory for coal-transport contractors in Korba?",
+    question: "Is ESIC mandatory for coal-transport contractors in Korba?",
     answer:
       "Yes. For hazardous coal-handling zones, ESIC is being enforced from the first employee under the Social Security Code 2025.",
   },
   {
-    question:
-      "Can Korba contractors use the nominal penalty under EEC-2025?",
+    question: "Can Korba contractors use the nominal penalty under EEC-2025?",
     answer:
       "Yes. Workers engaged between July 2017 and Oct 2025 can be regularized with a ₹100 penalty if done before April 30, 2026.",
   },
@@ -35680,20 +35235,17 @@ export const sectionsRaigarhDistrict = [
 
 export const faqRaigarhDistrict = [
   {
-    question:
-      "Which EPFO Regional Office has jurisdiction over Raigarh?",
+    question: "Which EPFO Regional Office has jurisdiction over Raigarh?",
     answer:
       "Raigarh district is governed by the Regional Office (RO) Bilaspur.",
   },
   {
-    question:
-      "Is ESIC mandatory for small fabrication units in Punjipathra?",
+    question: "Is ESIC mandatory for small fabrication units in Punjipathra?",
     answer:
       "Yes. For hazardous processes, ESIC coverage is mandatory from the first employee under the Social Security Code 2025.",
   },
   {
-    question:
-      "What is the main benefit of EEC-2025 for Raigarh contractors?",
+    question: "What is the main benefit of EEC-2025 for Raigarh contractors?",
     answer:
       "It allows contractors to regularize left-out workers with a ₹100 penalty, ensuring continued eligibility to work with large steel and power plants.",
   },
@@ -35770,8 +35322,7 @@ export const faqCGBalanceDistricts = [
       "Yes. Any engaged worker is eligible. Under EEC-2025 (ending April 2026), you can regularize them with a ₹100 penalty per year.",
   },
   {
-    question:
-      "Which EPFO office handles compliance for Kawardha (Kabirdham)?",
+    question: "Which EPFO office handles compliance for Kawardha (Kabirdham)?",
     answer:
       "Kawardha falls under the jurisdiction of the Regional Office (RO) Raipur.",
   },
@@ -35782,8 +35333,7 @@ export const faqCGBalanceDistricts = [
       "Yes. Being part of a hazardous industrial chain, ESIC is mandatory from the first employee under the Social Security Code 2025.",
   },
   {
-    question:
-      "How does the 50% Wage Rule affect cement plants?",
+    question: "How does the 50% Wage Rule affect cement plants?",
     answer:
       "From late 2025, Basic + DA must be at least 50% of gross salary, preventing wage splitting to suppress PF contributions.",
   },
@@ -35932,8 +35482,7 @@ export const faqCGEmergingDistricts = [
       "Yes. Any worker engaged even for a single day is eligible. EEC-2025 allows cleanup of old defaults with minimal penalty.",
   },
   {
-    question:
-      "Which EPFO office handles Kanker and Gariaband?",
+    question: "Which EPFO office handles Kanker and Gariaband?",
     answer:
       "Both districts fall under the jurisdiction of the Regional Office (RO) Raipur.",
   },
@@ -35998,26 +35547,22 @@ export const sectionsCGBalanceNSDistricts = [
 
 export const faqCGBalanceNSDistricts = [
   {
-    question:
-      "Which office handles compliance for the new MCB district?",
+    question: "Which office handles compliance for the new MCB district?",
     answer:
       "Manendragarh-Chirmiri-Bharatpur falls under the jurisdiction of the Regional Office (RO) Bilaspur.",
   },
   {
-    question:
-      "Is ESIC mandatory for Ethanol plants in Kabirdham (Kawardha)?",
+    question: "Is ESIC mandatory for Ethanol plants in Kabirdham (Kawardha)?",
     answer:
       "Yes. Ethanol production is a hazardous chemical process, requiring ESIC coverage from the first employee.",
   },
   {
-    question:
-      "How can MSMEs in Gariaband use EEC-2025?",
+    question: "How can MSMEs in Gariaband use EEC-2025?",
     answer:
       "They can register left-out employees from 2017–2025 with a ₹100 penalty, avoiding heavy interest and damages.",
   },
   {
-    question:
-      "What is the main compliance risk in the Bastar–Kondagaon belt?",
+    question: "What is the main compliance risk in the Bastar–Kondagaon belt?",
     answer:
       "ISMW compliance. Contractors moving labour from Odisha or Andhra Pradesh require special registration along with PF and ESIC.",
   },
@@ -36076,14 +35621,12 @@ export const sectionsCGFinalEmergingDistricts = [
 
 export const faqCGFinalEmergingDistricts = [
   {
-    question:
-      "Which office handles compliance for the new Sakti district?",
+    question: "Which office handles compliance for the new Sakti district?",
     answer:
       "Sakti falls under the jurisdiction of the Regional Office (RO) Bilaspur.",
   },
   {
-    question:
-      "Is ESIC mandatory for small rice mills in Mungeli?",
+    question: "Is ESIC mandatory for small rice mills in Mungeli?",
     answer:
       "Yes, if they employ 10 or more workers. In hazardous process zones, ESIC applies from the first employee.",
   },
@@ -36094,8 +35637,7 @@ export const faqCGFinalEmergingDistricts = [
       "It allows regularization of workers from 2017–2025 with a ₹100 penalty, ensuring eligibility for PSU and NMDC contracts.",
   },
   {
-    question:
-      "How does the 50% Wage Rule affect Bastar belt contractors?",
+    question: "How does the 50% Wage Rule affect Bastar belt contractors?",
     answer:
       "From late 2025, Basic + DA must be at least 50% of gross salary, preventing suppression of statutory contributions.",
   },
@@ -36166,8 +35708,7 @@ export const sectionsJharsugudaDistrict = [
 
 export const faqJharsugudaDistrict = [
   {
-    question:
-      "Which EPFO office handles Jharsuguda establishments?",
+    question: "Which EPFO office handles Jharsuguda establishments?",
     answer:
       "Jharsuguda falls under the jurisdiction of the Regional Office (RO) Sambalpur.",
   },
@@ -36178,14 +35719,12 @@ export const faqJharsugudaDistrict = [
       "Yes. Under the 2025 hazardous process notification, coal handling requires ESIC from the first employee.",
   },
   {
-    question:
-      "What is the main risk for Vedanta vendors during PF audits?",
+    question: "What is the main risk for Vedanta vendors during PF audits?",
     answer:
       "Headcount mismatch. RO Sambalpur compares billing, gate-entry and PF ECR data. Any gap triggers a Section 7A inquiry involving the Principal Employer.",
   },
   {
-    question:
-      "How does the 50% Wage Rule affect Jharsuguda industries?",
+    question: "How does the 50% Wage Rule affect Jharsuguda industries?",
     answer:
       "From late 2025, Basic + DA must be at least 50% of gross salary, preventing PF suppression through excessive allowances.",
   },
@@ -36256,20 +35795,17 @@ export const sectionsJajpurDistrict = [
 
 export const faqJajpurDistrict = [
   {
-    question:
-      "Which EPFO office handles Kalinganagar and Jajpur Road units?",
+    question: "Which EPFO office handles Kalinganagar and Jajpur Road units?",
     answer:
       "These areas fall under the jurisdiction of the Regional Office (RO) Keonjhar.",
   },
   {
-    question:
-      "Is ESIC mandatory for small fabrication workshops in Jajpur?",
+    question: "Is ESIC mandatory for small fabrication workshops in Jajpur?",
     answer:
       "Yes. If the activity involves metal cutting, welding or fabrication, ESIC is mandatory from the first employee under the 2025 hazardous process notifications.",
   },
   {
-    question:
-      "How does the 50% Wage Rule affect Jajpur industries?",
+    question: "How does the 50% Wage Rule affect Jajpur industries?",
     answer:
       "From late 2025, Basic + DA must be at least 50% of gross salary, preventing PF/ESI suppression through excessive allowances.",
   },
@@ -36340,8 +35876,7 @@ export const sectionsKeonjharDistrict = [
 
 export const faqKeonjharDistrict = [
   {
-    question:
-      "Which EPFO office handles Barbil and Joda mining areas?",
+    question: "Which EPFO office handles Barbil and Joda mining areas?",
     answer:
       "All mining and industrial activities in Keonjhar district are governed by the Regional Office (RO) Keonjhar.",
   },
@@ -36352,8 +35887,7 @@ export const faqKeonjharDistrict = [
       "Yes. Mining-related transport is part of a hazardous industrial chain, so ESIC is mandatory from the first employee in Keonjhar.",
   },
   {
-    question:
-      "How does the 50% Wage Rule affect mining workers?",
+    question: "How does the 50% Wage Rule affect mining workers?",
     answer:
       "From late 2025, Basic + DA must be at least 50% of gross salary. This increases statutory savings but may marginally reduce take-home pay if wages were allowance-heavy.",
   },
@@ -36436,20 +35970,17 @@ export const faqKhordhaDistrict = [
       "All establishments in Khordha district, including Infocity, fall under the jurisdiction of the Regional Office (RO) Bhubaneswar.",
   },
   {
-    question:
-      "Is ESIC mandatory for IT startups with remote employees?",
+    question: "Is ESIC mandatory for IT startups with remote employees?",
     answer:
       "Yes. If the establishment is in a notified area like Bhubaneswar and has 10 or more employees (including remote staff), ESIC is mandatory.",
   },
   {
-    question:
-      "What is the benefit of EEC-2025 for Bhubaneswar MSMEs?",
+    question: "What is the benefit of EEC-2025 for Bhubaneswar MSMEs?",
     answer:
       "It allows registration of employees missed since 2017 with a nominal ₹100 penalty, avoiding 100% damages during inspections.",
   },
   {
-    question:
-      "How does the 50% Wage Rule affect high-salary IT professionals?",
+    question: "How does the 50% Wage Rule affect high-salary IT professionals?",
     answer:
       "While PF above ₹15,000 is optional, the New Labour Code requires wages to be at least 50% of CTC to avoid disputes during audits.",
   },
@@ -36588,8 +36119,7 @@ export const sectionsAngulDistrict = [
       },
       {
         title: "Aluminum Belt",
-        content:
-          "NALCO Smelter & CPP – hazardous process ESIC enforcement.",
+        content: "NALCO Smelter & CPP – hazardous process ESIC enforcement.",
         color: "bg-white border-gray-300",
       },
       {
@@ -36600,8 +36130,7 @@ export const sectionsAngulDistrict = [
       },
       {
         title: "Statutory Authority",
-        content:
-          "Regional Office (RO) Sambalpur and ESIC Branch Office Angul.",
+        content: "Regional Office (RO) Sambalpur and ESIC Branch Office Angul.",
         color: "bg-white border-gray-300",
       },
     ],
@@ -36628,8 +36157,7 @@ export const faqAngulDistrict = [
       "High risk. NTPC and NALCO insist on site-specific codes. Using a general code leads to bill blocks and Section 7A proceedings.",
   },
   {
-    question:
-      "How does the 50% Wage Rule affect Angul’s industrial labor?",
+    question: "How does the 50% Wage Rule affect Angul’s industrial labor?",
     answer:
       "From late 2025, Basic + DA must be at least 50% of Gross Salary, preventing suppression of PF contributions through excessive allowances.",
   },
@@ -36700,8 +36228,7 @@ export const sectionsJagatsinghpurDistrict = [
 
 export const faqJagatsinghpurDistrict = [
   {
-    question:
-      "Which EPFO office handles Paradip and Jagatsinghpur companies?",
+    question: "Which EPFO office handles Paradip and Jagatsinghpur companies?",
     answer:
       "All establishments in Jagatsinghpur district fall under the jurisdiction of Regional Office (RO) Bhubaneswar.",
   },
@@ -36712,14 +36239,12 @@ export const faqJagatsinghpurDistrict = [
       "Yes. Paradip is a notified hazardous industrial zone, requiring ESIC coverage from the first employee under 2025 guidelines.",
   },
   {
-    question:
-      "What is the risk of not having a site-specific PF code at IOCL?",
+    question: "What is the risk of not having a site-specific PF code at IOCL?",
     answer:
       "Very high. Without a Paradip site sub-code, IOCL cannot verify your filings on the PE portal, leading to work-order freezes.",
   },
   {
-    question:
-      "How can Paradip C&F agents benefit from EEC-2025?",
+    question: "How can Paradip C&F agents benefit from EEC-2025?",
     answer:
       "They can formalize high-turnover labor from 2017–2025 with a ₹100 penalty, ensuring audit-ready compliance for PSU tenders.",
   },
@@ -36790,20 +36315,17 @@ export const sectionsBalasoreDistrict = [
 
 export const faqBalasoreDistrict = [
   {
-    question:
-      "Which EPFO office oversees industrial units in Balasore?",
+    question: "Which EPFO office oversees industrial units in Balasore?",
     answer:
       "Balasore district is governed by the Regional Office (RO) Bhubaneswar.",
   },
   {
-    question:
-      "Is ESIC mandatory for plastic units with only 7 workers?",
+    question: "Is ESIC mandatory for plastic units with only 7 workers?",
     answer:
       "Yes. Plastic manufacturing involves hazardous chemical processes, requiring ESIC coverage from the first employee under late-2025 enforcement.",
   },
   {
-    question:
-      "How does the 50% Wage Rule affect MSMEs in the NOCCI cluster?",
+    question: "How does the 50% Wage Rule affect MSMEs in the NOCCI cluster?",
     answer:
       "From late 2025, Basic + DA must be at least 50% of Gross Salary, preventing suppression of PF contributions through excessive allowances.",
   },
@@ -36880,8 +36402,7 @@ export const sectionsGanjamDistrict = [
 
 export const faqGanjamDistrict = [
   {
-    question:
-      "Which EPFO office handles companies in Berhampur and Chatrapur?",
+    question: "Which EPFO office handles companies in Berhampur and Chatrapur?",
     answer:
       "All industrial and commercial establishments in Ganjam district are governed by the Regional Office (RO) Berhampur.",
   },
@@ -36961,8 +36482,7 @@ export const sectionsOdishaBalance = [
 
 export const faqOdishaBalance = [
   {
-    question:
-      "Which office handles compliance for bauxite mines in Koraput?",
+    question: "Which office handles compliance for bauxite mines in Koraput?",
     answer:
       "Koraput, Rayagada and Kalahandi fall under the jurisdiction of Regional Office (RO) Berhampur.",
   },
@@ -36973,14 +36493,12 @@ export const faqOdishaBalance = [
       "Yes, if heavy machinery or hazardous processing is involved, ESIC is mandatory from the first employee under the 2025 Code.",
   },
   {
-    question:
-      "What is the main compliance risk at Lanjigarh refinery sites?",
+    question: "What is the main compliance risk at Lanjigarh refinery sites?",
     answer:
       "Principal Employer liability. Vedanta or NALCO may block vendor payments if ECR filings do not match gate attendance.",
   },
   {
-    question:
-      "How can MSMEs in Balangir benefit from EEC-2025?",
+    question: "How can MSMEs in Balangir benefit from EEC-2025?",
     answer:
       "They can regularize past employees with a ₹100 penalty per year, avoiding the 100% damages regime of Section 14B.",
   },
@@ -37129,20 +36647,17 @@ export const faqHowrah = [
       "Most industrial and manufacturing establishments in Howrah district fall under the jurisdiction of Regional Office (RO) Howrah.",
   },
   {
-    question:
-      "Is ESIC mandatory for a small foundry with only 6 workers?",
+    question: "Is ESIC mandatory for a small foundry with only 6 workers?",
     answer:
       "Yes. Under the 2025 hazardous process classification, foundries and forging units must have ESIC from the first employee.",
   },
   {
-    question:
-      "Can penalties and damages on old PF defaults be waived?",
+    question: "Can penalties and damages on old PF defaults be waived?",
     answer:
       "Yes. Eligible running units may seek waiver of Section 14B damages by settling principal dues and interest within prescribed timelines.",
   },
   {
-    question:
-      "How does EEC-2025 help Howrah MSMEs?",
+    question: "How does EEC-2025 help Howrah MSMEs?",
     answer:
       "EEC-2025 allows registration of workers missed since 2017 with a nominal ₹100 penalty, preventing retrospective enforcement actions.",
   },
@@ -37222,8 +36737,7 @@ export const faqKharagpur = [
       "High. Major plants require site-specific PF codes. Using a generic code can lead to bill blocks and Section 7A inquiries.",
   },
   {
-    question:
-      "How does the 50% Wage Rule affect factory workers in Kharagpur?",
+    question: "How does the 50% Wage Rule affect factory workers in Kharagpur?",
     answer:
       "Effective late 2025, Basic + DA must be at least 50% of Gross Salary, preventing suppression of PF and ESIC contributions through excessive allowances.",
   },
@@ -37303,8 +36817,7 @@ export const faqPaschimBardhaman = [
       "High risk. PSUs like SAIL and ECL demand site-specific PF codes. Using a generic code can result in bill blocks and Section 7A inquiries.",
   },
   {
-    question:
-      "How does the 50% Wage Rule impact factory workers in Raniganj?",
+    question: "How does the 50% Wage Rule impact factory workers in Raniganj?",
     answer:
       "From late 2025, Basic + DA must constitute at least 50% of Gross Salary. This rule is being strictly audited to prevent suppression of PF and ESIC contributions.",
   },
@@ -37366,8 +36879,7 @@ export const sectionsHaldia = [
 
 export const faqHaldia = [
   {
-    question:
-      "Which EPFO office governs companies in Haldia and Tamluk?",
+    question: "Which EPFO office governs companies in Haldia and Tamluk?",
     answer:
       "Most industrial establishments in Purba Medinipur district are administered by the Regional Office (RO) Haldia.",
   },
@@ -37384,8 +36896,7 @@ export const faqHaldia = [
       "High. Major companies like HPL and IOCL require site-specific PF codes. Using a generic code leads to bill blocks and automated audit triggers.",
   },
   {
-    question:
-      "How does the 50% Wage Rule affect port-sector workers?",
+    question: "How does the 50% Wage Rule affect port-sector workers?",
     answer:
       "From late 2025, Basic + DA must be at least 50% of Gross Salary, preventing suppression of PF contributions through transport or hardship allowances.",
   },
@@ -37447,8 +36958,7 @@ export const sectionsNorth24Parganas = [
 
 export const faqNorth24Parganas = [
   {
-    question:
-      "Which EPFO office handles companies in Salt Lake Sector V?",
+    question: "Which EPFO office handles companies in Salt Lake Sector V?",
     answer:
       "Establishments in Sector V generally fall under the jurisdiction of Regional Office (RO) Kolkata, while most other areas of the district are managed by RO Barrackpore.",
   },
@@ -37459,8 +36969,7 @@ export const faqNorth24Parganas = [
       "Yes. Establishments with 10 or more employees must register under ESIC. Under the 2025 Code, even remote employees may be covered under the same registration.",
   },
   {
-    question:
-      "What is the benefit of EEC-2025 for MSMEs in Barasat?",
+    question: "What is the benefit of EEC-2025 for MSMEs in Barasat?",
     answer:
       "The Employees’ Enrolment Campaign 2025 allows MSMEs to regularize workers missed in the past 8 years with a nominal ₹100 penalty, cleaning records before future audits.",
   },
@@ -37528,8 +37037,7 @@ export const sectionsWestBengal = [
 
 export const faqWestBengal = [
   {
-    question:
-      "Which EPFO office governs establishments in Siliguri?",
+    question: "Which EPFO office governs establishments in Siliguri?",
     answer:
       "Most establishments in Siliguri and surrounding North Bengal districts are administered by the Regional Office (RO) Jalpaiguri.",
   },
@@ -37540,8 +37048,7 @@ export const faqWestBengal = [
       "Yes. If the unit falls under hazardous processes due to mechanized dryers or chemical treatments, ESIC is mandatory from the first employee under 2025 rules.",
   },
   {
-    question:
-      "What is the benefit of EEC-2025 for tea garden owners?",
+    question: "What is the benefit of EEC-2025 for tea garden owners?",
     answer:
       "EEC-2025 allows tea estates to regularize temporary and casual workers missed between 2017–2025 with a nominal ₹100 penalty, preventing severe 7A and 14B actions.",
   },
@@ -37550,5 +37057,2475 @@ export const faqWestBengal = [
       "How does the 50% Wage Rule affect MSMEs in Nadia and Murshidabad?",
     answer:
       "All MSMEs must ensure Basic + DA is at least 50% of Gross Salary. ROs are actively auditing allowance-heavy payrolls to detect contribution suppression.",
+  },
+];
+export const heroDataJamshedpur = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Jamshedpur’s Steel & Auto Hub",
+  description:
+    "In 2025, compliance enforcement in Jamshedpur is driven by TATA Group vendor controls, hazardous process mandates, and aggressive RO Jamshedpur audits.",
+};
+
+export const sectionsJamshedpur = [
+  {
+    title: "TATA Group Vendor Compliance & PE Liability",
+    cards: [
+      {
+        title: "Gate-Pass vs ECR Reconciliation Audits",
+        content:
+          "RO Jamshedpur is issuing notices where TATA Steel gate-pass entries exceed monthly ECR headcount. Vendors must perform site-wise reconciliation to prevent bill blocking and PE exposure.",
+      },
+      {
+        title: "Mandatory Site-Specific Sub-Codes",
+        content:
+          "TATA Steel and TATA Motors require sub-code based filings. Using a general EPF code results in compliance rejection and payment holds by principal employers.",
+      },
+    ],
+  },
+  {
+    title: "Adityapur Hazardous ESIC Enforcement",
+    cards: [
+      {
+        title: "ESIC from First Employee (2025 Rule)",
+        content:
+          "Forging, heat-treatment, casting, and machining units in Adityapur are classified as hazardous processes, making ESIC mandatory from the first worker.",
+      },
+      {
+        title: "Owner Liability for Workplace Injuries",
+        content:
+          "Failure to register under ESIC exposes MSME owners to personal liability for medical and compensation claims during accidents.",
+      },
+    ],
+  },
+  {
+    title: "EEC-2025 Amnesty & Audit Defense",
+    cards: [
+      {
+        title: "EEC-2025 for Fabrication & Machining Shops",
+        content:
+          "The Employees’ Enrolment Campaign 2025 allows regularization of missed workers with a nominal ₹100 penalty, avoiding severe 14B damages.",
+      },
+      {
+        title: "RO Jamshedpur 7A & 14B Proceedings",
+        content:
+          "RO Jamshedpur is known for aggressive enforcement. Structured responses and payroll corrections are critical to mitigate interest and penalties.",
+      },
+    ],
+  },
+];
+
+export const faqJamshedpur = [
+  {
+    question: "Which EPFO office governs Adityapur and Gamharia units?",
+    answer:
+      "All industrial establishments in East Singhbhum and Seraikela-Kharsawan districts fall under the Regional Office (RO) Jamshedpur.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for small machining units with only 7 workers?",
+    answer:
+      "Yes. Due to hazardous machinery usage, ESIC is mandatory from the first employee under the 2025 enforcement framework.",
+  },
+  {
+    question:
+      "What is the risk of using a general EPF code for TATA Steel site work?",
+    answer:
+      "High risk. TATA Steel mandates site-specific sub-codes. Filing under a general code leads to non-verification and withholding of vendor payments.",
+  },
+  {
+    question: "Can old 14B damages be waived in Jharkhand?",
+    answer:
+      "Yes. Under the ESIC Amnesty 2025, units clearing principal dues can apply for waiver of penal damages through formal petitions at RO Jamshedpur.",
+  },
+];
+export const heroDataRanchi = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Ranchi’s Service & Industrial Hub",
+  description:
+    "Ranchi’s 2025 enforcement focus is driven by New Wage Code payroll audits, PE liability in hospitals, and EEC-2025 regularization for emerging MSMEs.",
+};
+
+export const sectionsRanchi = [
+  {
+    title: "IT & ITeS Payroll Compliance (New Wage Code)",
+    cards: [
+      {
+        title: "50% Basic + DA Wage Audits",
+        content:
+          "RO Ranchi is auditing IT and BPO payrolls in STPI Ranchi and the Namkum corridor to ensure Basic + DA meets the mandatory 50% of Gross Salary threshold.",
+      },
+      {
+        title: "Allowance-Heavy CTC Risk",
+        content:
+          "Startups using inflated allowances are triggering automated 7A notices. Structured payroll realignment is critical to avoid retrospective liabilities.",
+      },
+    ],
+  },
+  {
+    title: "Healthcare & Education PE Liability",
+    cards: [
+      {
+        title: "Contract Labour Compliance",
+        content:
+          "Private hospitals and colleges in Ranchi face strict scrutiny for nurses, security, and housekeeping staff supplied through contractors.",
+      },
+      {
+        title: "Principal Employer Accountability",
+        content:
+          "If manpower vendors default on PF/ESIC, the primary institution is held liable under PE provisions, including interest and penalties.",
+      },
+    ],
+  },
+  {
+    title: "EEC-2025 Amnesty & MSME Regularization",
+    cards: [
+      {
+        title: "Tupudana & Tatisilwai MSMEs",
+        content:
+          "EEC-2025 allows MSMEs to regularize workers missed between 2017–2025 with a nominal ₹100 penalty per case.",
+      },
+      {
+        title: "Pre-2026 Enforcement Shield",
+        content:
+          "Timely filing under EEC-2025 protects businesses from aggressive inspections planned under the 2026 labour enforcement cycle.",
+      },
+    ],
+  },
+];
+
+export const faqRanchi = [
+  {
+    question: "Which EPFO office governs Namkum and Tupudana establishments?",
+    answer:
+      "All establishments in Ranchi district and nearby central Jharkhand regions fall under the jurisdiction of the Regional Office (RO) Ranchi.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for a coaching institute in Ranchi with 12 employees?",
+    answer:
+      "Yes. ESIC is mandatory for establishments with 10 or more employees. ESIC Hospital Namkum provides full coverage for service sector staff.",
+  },
+  {
+    question:
+      "What is the risk of allowance splitting for Ranchi IT companies?",
+    answer:
+      "High risk. RO Ranchi is flagging payrolls where the PF/ESIC base is significantly lower than gross salary. Non-compliance leads to 7A assessments.",
+  },
+  {
+    question: "How can EEC-2025 be used by Ranchi businesses?",
+    answer:
+      "EEC-2025 allows employers to regularize past non-enrolment with a ₹100 penalty instead of full damages, provided filings are completed before April 2026.",
+  },
+];
+export const heroDataDhanbad = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Dhanbad’s Coal & Mining Ecosystem",
+  description:
+    "In 2025, Dhanbad enforcement is driven by PSU vendor audits, hazardous process mandates, and aggressive RO Dhanbad action under Sections 7A and 14B.",
+};
+
+export const sectionsDhanbad = [
+  {
+    title: "BCCL & PSU Vendor Compliance Framework",
+    cards: [
+      {
+        title: "Mandatory Site-Specific Sub-Codes",
+        content:
+          "RO Dhanbad now mandates site-specific EPF sub-codes for BCCL and CIMFR vendors to track labour deployment at individual collieries and mines.",
+      },
+      {
+        title: "Billing vs ECR Headcount Reconciliation",
+        content:
+          "PSU finance audits cross-check tonnage and man-day billing with PF ECR filings. Any mismatch can lead to immediate payment holds and 7A inquiries.",
+      },
+    ],
+  },
+  {
+    title: "Hazardous ESIC Enforcement for Coke & Mining Units",
+    cards: [
+      {
+        title: "ESIC from First Employee (2025 Rule)",
+        content:
+          "All hard coke and soft coke plants in Govindpur and Barwadda are classified as hazardous processes, making ESIC mandatory from the first worker.",
+      },
+      {
+        title: "Protection from Mines Act Liabilities",
+        content:
+          "ESIC coverage shields owners from massive financial exposure arising from respiratory diseases, accidents, and Mines Act compensation claims.",
+      },
+    ],
+  },
+  {
+    title: "EEC-2025 Mining Amnesty & Audit Defense",
+    cards: [
+      {
+        title: "Coal Transport & Screening Contractors",
+        content:
+          "EEC-2025 allows contractors to regularize workers missed since 2017 with a nominal ₹100 penalty per case, valid until April 30, 2026.",
+      },
+      {
+        title: "Section 7A & 14B Risk Mitigation",
+        content:
+          "Failure to utilize EEC-2025 exposes firms to 100% damages under Section 14B. Structured representation before RO Dhanbad is critical.",
+      },
+    ],
+  },
+];
+
+export const faqDhanbad = [
+  {
+    question: "Which EPFO office governs Govindpur and Nirsa establishments?",
+    answer:
+      "All industrial and mining establishments across Dhanbad district fall under the jurisdiction of the Regional Office (RO) Dhanbad.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for a coal transport firm with only 6 workers?",
+    answer:
+      "Yes. Coal handling and mining-related transport are classified as hazardous processes, making ESIC mandatory from the first employee in 2025.",
+  },
+  {
+    question: "What is the risk of headcount mismatch for BCCL contractors?",
+    answer:
+      "Very high. RO Dhanbad cross-verifies billing data with PF ECR filings. Any mismatch triggers an immediate Section 7A inquiry involving BCCL as Principal Employer.",
+  },
+  {
+    question: "Can old PF penalties be reduced in Dhanbad?",
+    answer:
+      "Yes. Under ESIC Amnesty 2025 and EPF settlement provisions, firms clearing principal dues may petition for reduction of damages under Section 14B.",
+  },
+];
+export const heroDataBokaro = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Bokaro’s Steel & Engineering Belt",
+  description:
+    "In 2025, Bokaro enforcement is driven by SAIL vendor audits, hazardous process ESIC mandates, and aggressive RO Bokaro action under Sections 7A and 14B.",
+};
+
+export const sectionsBokaro = [
+  {
+    title: "SAIL-BSL Vendor & PE Liability Compliance",
+    cards: [
+      {
+        title: "Gate-Pass vs ECR Reconciliation",
+        content:
+          "RO Bokaro cross-verifies SAIL-BSL gate-pass data with monthly PF ECR filings. Any mismatch triggers stop-payment orders and immediate Section 7A inquiries.",
+      },
+      {
+        title: "Mandatory Site-Specific PF Codes",
+        content:
+          "SAIL-BSL requires Bokaro-specific PF codes. Using Ranchi or Dhanbad codes prevents verification and results in bill holds by the principal employer.",
+      },
+    ],
+  },
+  {
+    title: "Balidih Hazardous ESIC Enforcement",
+    cards: [
+      {
+        title: "ESIC from First Employee (2025 Rule)",
+        content:
+          "Fabrication, forging, welding, and oxygen plant units in Balidih Industrial Area are classified as hazardous processes, mandating ESIC from the first worker.",
+      },
+      {
+        title: "Accident & Legal Risk Shield",
+        content:
+          "ESIC coverage protects owners from severe financial exposure arising from workplace injuries and heavy engineering accidents.",
+      },
+    ],
+  },
+  {
+    title: "EEC-2025 Steel Belt Amnesty & Audit Defense",
+    cards: [
+      {
+        title: "Engineering Ancillary Regularization",
+        content:
+          "EEC-2025 allows Bokaro’s engineering MSMEs to regularize workers missed during 2017–2025 with a nominal ₹100 penalty per case.",
+      },
+      {
+        title: "Section 7A & 14B Risk Mitigation",
+        content:
+          "Non-compliance exposes units to 100% damages under Section 14B. Timely filing and structured representation before RO Bokaro is critical.",
+      },
+    ],
+  },
+];
+
+export const faqBokaro = [
+  {
+    question: "Which EPFO office governs Balidih and Chandrapura units?",
+    answer:
+      "Most industrial and PSU-linked establishments in Bokaro district fall under the jurisdiction of the Regional Office (RO) Bokaro.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for a fabrication unit with only 6 workers in Balidih?",
+    answer:
+      "Yes. Under the 2025 hazardous process classification, ESIC is mandatory from the first employee for fabrication and welding units.",
+  },
+  {
+    question:
+      "What is the risk of using a non-Bokaro PF code for SAIL projects?",
+    answer:
+      "High risk. SAIL-BSL requires Bokaro-specific site codes. Using external codes leads to bill blocks and Section 7A inquiries.",
+  },
+  {
+    question: "How does the 50% wage rule impact Bokaro factory workers?",
+    answer:
+      "From late 2025, Basic + DA must be at least 50% of gross salary, preventing PF and ESIC contribution suppression through allowances.",
+  },
+];
+export const heroDataJharkhandBalance = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Jharkhand’s Mining & Santal Pargana Hubs",
+  description:
+    "Late-2025 enforcement across Jharkhand’s balance districts is driven by hazardous process mandates, mining PE liability, and aggressive RO Dhanbad and RO Ranchi audits.",
+};
+
+export const sectionsJharkhandBalance = [
+  {
+    title: "Mining & Mineral Corridor Enforcement",
+    cards: [
+      {
+        title: "Hazardous ESIC for Sponge Iron & Mining Units",
+        content:
+          "Ramgarh, Giridih, and Koderma host sponge iron and rolling mills classified as hazardous processes. ESIC is mandatory from the first employee under the Social Security Code 2025.",
+      },
+      {
+        title: "CCL Vendor PE Liability",
+        content:
+          "Mining vendors servicing Central Coalfields (CCL) in Hazaribagh face bill blocks if site-specific PF sub-codes are not updated and reconciled monthly.",
+      },
+    ],
+  },
+  {
+    title: "Santal Pargana & Logistics Gateway Compliance",
+    cards: [
+      {
+        title: "Deoghar MSME Headcount Audits",
+        content:
+          "RO Ranchi is using GST and electricity data mapping to detect unregistered establishments and suppressed headcounts in Deoghar’s tourism and MSME sector.",
+      },
+      {
+        title: "Sahibganj Port & Logistics PE Risk",
+        content:
+          "Jetty, transport, and warehouse contractors face high PE liability for dock and logistics labour, requiring strict PF and ESIC reconciliation.",
+      },
+    ],
+  },
+  {
+    title: "Palamu Division Cement & Mining PE Risk",
+    cards: [
+      {
+        title: "Vendor Compliance Systems for Cement Units",
+        content:
+          "Large cement plants in Palamu, Garhwa, and Latehar act as Principal Employers for mining and truck-loading labour, requiring structured vendor compliance controls.",
+      },
+      {
+        title: "EEC-2025 Amnesty Utilization",
+        content:
+          "EEC-2025 allows MSMEs across these districts to regularize workers missed since 2017 with a nominal ₹100 penalty, avoiding 100% damages under Section 14B.",
+      },
+    ],
+  },
+];
+
+export const faqJharkhandBalance = [
+  {
+    question: "Which EPFO office governs Ramgarh and Giridih districts?",
+    answer:
+      "Ramgarh, Giridih, and other mining belt districts fall under the jurisdiction of the Regional Office (RO) Dhanbad.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for small rolling mills in Ramgarh with 7 workers?",
+    answer:
+      "Yes. Rolling mills are classified as hazardous processes under the Social Security Code 2025, making ESIC mandatory from the first employee.",
+  },
+  {
+    question: "How does EEC-2025 help Deoghar hotel and MSME owners?",
+    answer:
+      "EEC-2025 allows regularization of staff missed between 2017–2025 with a nominal ₹100 penalty, avoiding high interest and Section 14B damages.",
+  },
+  {
+    question: "Can old PF penalties be reduced for Hazaribagh mining vendors?",
+    answer:
+      "Yes. Under 2025 EPF settlement provisions, firms clearing principal dues can apply for reduction of damages. We represent clients at RO Dhanbad hearings.",
+  },
+];
+export const heroDataPatna = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Patna’s Service & Logistics Hub",
+  description:
+    "In 2025, Patna enforcement is driven by the 50% Wage Rule, gig workforce formalization, and aggressive RO Patna audits across IT, logistics, and service sectors.",
+};
+
+export const sectionsPatna = [
+  {
+    title: "IT & Service Sector Wage Code Enforcement",
+    cards: [
+      {
+        title: "50% Basic + DA Wage Audits",
+        content:
+          "RO Patna is auditing IT, BPO, banking, and service-sector payrolls in Patliputra and Bihar IT Park to ensure Basic + DA meets the mandatory 50% of Gross Salary threshold.",
+      },
+      {
+        title: "Allowance Splitting Risk",
+        content:
+          "Allowance-heavy CTC structures are triggering automated 7A notices. Strategic payroll restructuring is essential to remain compliant without inflating employee tax burden.",
+      },
+    ],
+  },
+  {
+    title: "Bihta & Fatuha Logistics PE Liability",
+    cards: [
+      {
+        title: "Warehouse & Logistics Vendor Compliance",
+        content:
+          "Bihta and Fatuha logistics parks face high PE liability for loading, unloading, security, and transport vendors. Contractor defaults directly impact the principal employer.",
+      },
+      {
+        title: "Vendor Compliance Systems",
+        content:
+          "We implement monthly PF–ESIC reconciliation systems to prevent secondary liability, bill holds, and inspection escalations.",
+      },
+    ],
+  },
+  {
+    title: "EEC-2025 Amnesty & Retail Expansion Risk",
+    cards: [
+      {
+        title: "Retail Chains & MSME Regularization",
+        content:
+          "EEC-2025 allows Patna’s MSMEs and retail chains to regularize workers missed during post-2020 expansion with a nominal ₹100 penalty per case.",
+      },
+      {
+        title: "Protection from 14B Damages",
+        content:
+          "Timely filing under EEC-2025 protects businesses from the 100% damages regime that RO Patna is enforcing aggressively in late 2025.",
+      },
+    ],
+  },
+];
+
+export const faqPatna = [
+  {
+    question: "Which EPFO office governs Bihta and Fatuha establishments?",
+    answer:
+      "All industrial and commercial establishments in Patna district, including Bihta and Fatuha, fall under the jurisdiction of the Regional Office (RO) Patna.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for a small IT firm in Patna with 12 employees?",
+    answer:
+      "Yes. ESIC is mandatory for establishments with 10 or more employees. Even remote employees can be covered under the Patna registration.",
+  },
+  {
+    question: "What is the risk of allowance splitting for Patna-based firms?",
+    answer:
+      "High. RO Patna is issuing notices where the PF/ESIC contribution base is significantly lower than gross salary. Non-compliance leads to Section 7A assessments.",
+  },
+  {
+    question: "How can EEC-2025 be used by Patna businesses?",
+    answer:
+      "EEC-2025 allows regularization of past non-enrolment with a ₹100 penalty instead of full damages, provided filings are completed before April 2026.",
+  },
+];
+export const heroDataBegusarai = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Begusarai’s Industrial & Petrochemical Hub",
+  description:
+    "In 2025, Begusarai enforcement is driven by PSU vendor compliance scorecards, hazardous process ESIC mandates, and aggressive PE liability audits overseen by RO Patna.",
+};
+
+export const sectionsBegusarai = [
+  {
+    title: "PSU Vendor Compliance & PE Liability",
+    cards: [
+      {
+        title: "IOCL / NTPC / HURL Compliance Scorecards",
+        content:
+          "RO Patna audits site-specific PF and ESIC sub-codes for contractors working at Barauni Refinery, NTPC, and HURL. Billing is blocked if gate-pass and ECR headcounts do not match.",
+      },
+      {
+        title: "Automated Vendor Reconciliation",
+        content:
+          "We implement monthly reconciliation systems aligning gate entries, contractor manpower, and statutory filings to prevent PSU payment holds.",
+      },
+    ],
+  },
+  {
+    title: "Petrochemical Hazardous ESIC Enforcement",
+    cards: [
+      {
+        title: "ESIC from First Employee (2025 Rule)",
+        content:
+          "Oil refining, fertilizer, and chemical handling units in Begusarai are classified as hazardous processes, mandating ESIC coverage from the first worker.",
+      },
+      {
+        title: "Industrial Accident Risk Shield",
+        content:
+          "Mandatory ESIC protects employers from massive legal exposure arising from petrochemical accidents and occupational health claims.",
+      },
+    ],
+  },
+  {
+    title: "EEC-2025 Industrial Amnesty & Audit Defense",
+    cards: [
+      {
+        title: "Fabrication & Engineering MSME Regularization",
+        content:
+          "EEC-2025 allows Begusarai MSMEs to regularize workers missed during the Barauni expansion phases (2017–2025) with a nominal ₹100 penalty.",
+      },
+      {
+        title: "Section 7A & 14B Risk Mitigation",
+        content:
+          "Failure to utilize EEC-2025 exposes firms to 100% damages under Section 14B. Timely filing and structured representation before RO Patna is critical.",
+      },
+    ],
+  },
+];
+
+export const faqBegusarai = [
+  {
+    question: "Which EPFO office governs Barauni and Bihat establishments?",
+    answer:
+      "All industrial and commercial establishments in Begusarai district fall under the jurisdiction of the Regional Office (RO) Patna.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for chemical transport contractors with only 5 workers?",
+    answer:
+      "Yes. Chemical and petroleum handling units are classified as hazardous processes in 2025, making ESIC mandatory from the first employee.",
+  },
+  {
+    question:
+      "What is the risk of using a general PF code at Barauni Refinery?",
+    answer:
+      "High risk. IOCL and NTPC require site-specific sub-codes. Using a generic code leads to bill blocks and automated Section 7A inquiries.",
+  },
+  {
+    question: "Can old 14B damages be waived in Begusarai?",
+    answer:
+      "Yes. Under ESIC Amnesty 2025, firms clearing principal dues can apply for waiver or reduction of penal damages through formal petitions.",
+  },
+];
+export const heroDataMuzaffarpur = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Muzaffarpur’s Industrial & Textile Hub",
+  description:
+    "In 2025, Muzaffarpur enforcement is driven by export-grade textile audits, PE liability in food parks, hazardous ESIC mandates for leather units, and strict RO Muzaffarpur inspections.",
+};
+
+export const sectionsMuzaffarpur = [
+  {
+    title: "Textile & Apparel Export Compliance (Bela Cluster)",
+    cards: [
+      {
+        title: "50% Wage Rule & Social Compliance Audits",
+        content:
+          "RO Muzaffarpur audits textile payrolls to ensure Basic + DA meets the 50% threshold and that overtime or production incentives do not suppress PF and ESIC contributions.",
+      },
+      {
+        title: "Buyer & Export Inspection Readiness",
+        content:
+          "We conduct social compliance audits aligned with global apparel brand requirements to help units pass buyer inspections and retain export orders.",
+      },
+    ],
+  },
+  {
+    title: "Motipur Food Park PE Liability Management",
+    cards: [
+      {
+        title: "Seasonal Workforce Compliance",
+        content:
+          "Motipur Mega Food Park units employ large seasonal workforces. Anchor units face joint liability if cold-storage or packaging contractors default on PF/ESIC.",
+      },
+      {
+        title: "Contractor Reconciliation Systems",
+        content:
+          "We implement monthly PF-ESIC reconciliation to protect principal employers from inspection escalation and secondary liability.",
+      },
+    ],
+  },
+  {
+    title: "Leather Industry Hazardous ESIC Enforcement",
+    cards: [
+      {
+        title: "ESIC from First Employee (2025 Rule)",
+        content:
+          "Leather tanning and processing units are classified as hazardous processes, mandating ESIC coverage from the first employee regardless of workforce size.",
+      },
+      {
+        title: "Accident & Compensation Risk Shield",
+        content:
+          "Mandatory ESIC coverage protects owners from severe financial exposure arising from chemical handling and workplace injuries.",
+      },
+    ],
+  },
+];
+
+export const faqMuzaffarpur = [
+  {
+    question: "Which EPFO office governs Bela and Motipur units?",
+    answer:
+      "The Regional Office (RO) Muzaffarpur oversees all establishments in the district and several surrounding North Bihar areas.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for a garment startup in Bela with only 8 workers?",
+    answer:
+      "Yes. Garment and leather units are under high scrutiny, and ESIC registration from the first employee is strongly enforced for workplace safety.",
+  },
+  {
+    question: "How does EEC-2025 help Motipur food processors?",
+    answer:
+      "EEC-2025 allows regularization of seasonal and casual workers missed in previous years with a nominal ₹100 penalty, aiding FSSAI and export compliance.",
+  },
+  {
+    question: "How does the 50% Wage Rule affect garment units?",
+    answer:
+      "Basic + DA must be at least 50% of gross salary, ensuring that production incentives do not reduce statutory PF and ESIC benefits.",
+  },
+];
+export const heroDataBiharBalance = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Bihar’s Regional Industrial Clusters",
+  description:
+    "Late-2025 enforcement across Bihar’s balance districts is driven by ethanol expansion, hazardous process mandates, and intensified RO Bhagalpur and RO Patna audits.",
+};
+
+export const sectionsBiharBalance = [
+  {
+    title: "Eastern Silk & Textile Hub Compliance",
+    cards: [
+      {
+        title: "Handloom to Powerloom Formalization",
+        content:
+          "RO Bhagalpur is auditing silk and textile units transitioning from handloom to powerloom operations. Registration and wage compliance are mandatory under the Social Security Code 2025.",
+      },
+      {
+        title: "Social Compliance for Export Readiness",
+        content:
+          "We assist Bhagalpur exporters and weaver cooperatives in meeting social compliance benchmarks required by international buyers.",
+      },
+    ],
+  },
+  {
+    title: "Southern Cement & Agri-Industrial PE Liability",
+    cards: [
+      {
+        title: "Cement Plant Vendor Compliance",
+        content:
+          "Large cement plants in Rohtas and Aurangabad act as Principal Employers for transport and loading contractors, creating high PE liability exposure.",
+      },
+      {
+        title: "Hazardous ESIC Mandate",
+        content:
+          "Cement grinding, stone crushing, and mechanical rice mills are classified as hazardous processes, mandating ESIC coverage from the first employee.",
+      },
+    ],
+  },
+  {
+    title: "North-Eastern Ethanol & Logistics Frontier",
+    cards: [
+      {
+        title: "Ethanol Plant Hazard Classification",
+        content:
+          "Ethanol production units in Purnia are categorized as hazardous, requiring 100% ESIC coverage from day one for all workers.",
+      },
+      {
+        title: "Warehouse & Logistics Labor Audits",
+        content:
+          "Katihar and Kishanganj face high scrutiny for warehouse and railway-linked labor, with strict PF and ESIC reconciliation.",
+      },
+    ],
+  },
+];
+
+export const faqBiharBalance = [
+  {
+    question: "Which EPFO office governs establishments in Purnia and Katihar?",
+    answer:
+      "These districts fall under the jurisdiction of the Regional Office (RO) Patna, though inspections are often carried out by local enforcement squads.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for small rice mills in Aurangabad with 9 workers?",
+    answer:
+      "Yes. Mechanized rice mills are classified as hazardous processes under the Social Security Code 2025, making ESIC mandatory from the first employee.",
+  },
+  {
+    question: "How does EEC-2025 benefit Bhagalpur garment units?",
+    answer:
+      "EEC-2025 allows workforce regularization for a nominal ₹100 penalty, which is essential for accessing industrial subsidies and export incentives.",
+  },
+  {
+    question: "How does the 50% Wage Rule affect hotels in Bodhgaya?",
+    answer:
+      "Hotels must ensure Basic + DA is at least 50% of gross salary, preventing excessive allowance-based structures that suppress PF contributions.",
+  },
+];
+export const heroDataGurugram = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Gurugram’s IT & Automotive Powerhouse",
+  description:
+    "In 2025, Gurugram enforcement is driven by the 50% Wage Rule, PE liability in auto supply chains, faceless digital inspections, and local hiring compliance.",
+};
+
+export const sectionsGurugram = [
+  {
+    title: "IT & MNC Wage Code Enforcement",
+    cards: [
+      {
+        title: "50% Basic + DA Payroll Restructuring",
+        content:
+          "RO Gurugram is auditing MNC and IT salary structures where special allowances dominate the CTC. Firms must align Basic + DA to at least 50% of gross salary under the New Labour Code.",
+      },
+      {
+        title: "High-Income Tax Optimization",
+        content:
+          "We help MNCs restructure payrolls to remain compliant without triggering excessive tax burdens for senior and expatriate employees.",
+      },
+    ],
+  },
+  {
+    title: "Auto Hub PE Liability & Contractor Oversight",
+    cards: [
+      {
+        title: "Manesar & Udyog Vihar Contractor Risk",
+        content:
+          "Auto and auto-ancillary units serving Maruti and Honda face joint and several liability for contractor defaults under PE provisions.",
+      },
+      {
+        title: "Digital Compliance Dashboards",
+        content:
+          "Large factories must now maintain digital dashboards to track PF and ESIC compliance for thousands of contractual workers in real time.",
+      },
+    ],
+  },
+  {
+    title: "Local Hiring Law & Digital Inspection Risk",
+    cards: [
+      {
+        title: "Haryana Local Employment Reporting",
+        content:
+          "Companies must align PF, ESIC, and payroll records with filings under the Haryana State Employment of Local Candidates Act to avoid data mismatches.",
+      },
+      {
+        title: "Faceless Audit Triggers",
+        content:
+          "In 2025, inspections are data-driven. High GST turnover with low PF contribution is a key red flag triggering automated scrutiny.",
+      },
+    ],
+  },
+];
+
+export const faqGurugram = [
+  {
+    question: "Which EPFO office governs IMT Manesar establishments?",
+    answer:
+      "Most units in IMT Manesar and Udyog Vihar fall under RO Gurugram (West), while newer sectors fall under RO Gurugram (East).",
+  },
+  {
+    question: "Is ESIC mandatory for a tech startup with 12 remote employees?",
+    answer:
+      "Yes. ESIC is mandatory for establishments with 10 or more employees. Remote or WFH employees are tagged to the HQ location for compliance.",
+  },
+  {
+    question: "What is the digital inspection system used in Gurugram?",
+    answer:
+      "The department uses faceless, data-driven inspections by cross-referencing GST turnover with PF and ESIC contribution data to identify under-reporting.",
+  },
+  {
+    question: "How does EEC-2025 help Gurugram startups?",
+    answer:
+      "EEC-2025 allows startups to regularize early-stage employees with a ₹100 penalty instead of full damages, provided filings are completed before April 2026.",
+  },
+];
+export const heroDataFaridabad = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Faridabad’s Manufacturing & Engineering Hub",
+  description:
+    "In 2025, Faridabad enforcement is driven by hazardous process ESIC mandates, PSU-grade PE liability audits, and aggressive RO Faridabad action under Sections 7A and 14B.",
+};
+
+export const sectionsFaridabad = [
+  {
+    title: "Engineering & Hazardous Process ESIC Enforcement",
+    cards: [
+      {
+        title: "ESIC from First Employee (2025 Rule)",
+        content:
+          "Forging, casting, surface treatment, and chemical processing units in Sectors 24, 25, and 58 are classified as hazardous processes, mandating ESIC coverage from day one.",
+      },
+      {
+        title: "Pollution Board–Linked Audits",
+        content:
+          "RO Faridabad cross-references pollution control board registrations to identify units that have failed to transition to mandatory ESIC coverage.",
+      },
+    ],
+  },
+  {
+    title: "IMT Faridabad & PSU Vendor PE Liability",
+    cards: [
+      {
+        title: "Zero-Defect Compliance for Anchor Clients",
+        content:
+          "PSU and MNC-linked vendors in IMT Faridabad face zero-tolerance audits from clients like Escorts Kubota and JCB, where any contractor default triggers joint liability.",
+      },
+      {
+        title: "Principal Employer Shield Systems",
+        content:
+          "We implement monthly contractor reconciliation systems to protect anchor units from secondary liability and bill holds.",
+      },
+    ],
+  },
+  {
+    title: "EEC-2025 Legacy MSME Amnesty",
+    cards: [
+      {
+        title: "Seasonal Labour Regularization",
+        content:
+          "EEC-2025 allows Faridabad’s legacy MSMEs to regularize workers missed since 2017 with a nominal ₹100 penalty per case.",
+      },
+      {
+        title: "Protection from 2026 Digital Sweeps",
+        content:
+          "Timely filing under EEC-2025 shields businesses from large-scale digital inspections and 100% damages under Section 14B.",
+      },
+    ],
+  },
+];
+
+export const faqFaridabad = [
+  {
+    question: "Which EPFO office governs Ballabgarh and IMT Faridabad units?",
+    answer:
+      "All establishments in Faridabad district, including Ballabgarh and IMT Faridabad, fall under the jurisdiction of the Regional Office (RO) Faridabad.",
+  },
+  {
+    question: "Is ESIC mandatory for a forging unit with only 7 workers?",
+    answer:
+      "Yes. Forging and metal-work units are classified as hazardous processes, making ESIC mandatory from the first employee under 2025 rules.",
+  },
+  {
+    question: "What triggers headcount mismatch audits in Faridabad?",
+    answer:
+      "RO Faridabad cross-references GST turnover and ESIC medical claims with PF ECR filings. Discrepancies trigger automated Section 7A inquiries.",
+  },
+  {
+    question: "Can old 14B damages be waived in Faridabad?",
+    answer:
+      "Yes. Under ESIC Amnesty 2025, firms clearing principal dues can apply for waiver or reduction of penal damages through formal petitions at RO Faridabad.",
+  },
+];
+export const heroDataPanipat = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Panipat’s Textile & Petrochemical Hub",
+  description:
+    "In 2025, Panipat enforcement is driven by export-grade textile audits, IOCL refinery PE liability, hazardous ESIC mandates, and strict RO Karnal inspections.",
+};
+
+export const sectionsPanipat = [
+  {
+    title: "Export-Ready Textile & Handloom Compliance",
+    cards: [
+      {
+        title: "50% Wage Rule & Buyer Audit Readiness",
+        content:
+          "RO Karnal audits textile exporters to ensure Basic + DA meets the 50% threshold and that production incentives do not suppress PF and ESIC contributions.",
+      },
+      {
+        title: "Global Social Compliance Alignment",
+        content:
+          "We align PF/ESI records with factory floor manpower to help Panipat exporters pass buyer audits from global brands like IKEA and Walmart.",
+      },
+    ],
+  },
+  {
+    title: "IOCL Refinery & Petrochemical PE Liability",
+    cards: [
+      {
+        title: "Site-Specific Sub-Code Enforcement",
+        content:
+          "Contractors at the IOCL Panipat Refinery must maintain site-specific PF and ESIC sub-codes matching gate-entry data to avoid payment blocks.",
+      },
+      {
+        title: "Statutory Clearance Certification",
+        content:
+          "We manage monthly statutory clearance certificates required for digital billing clearance at the refinery.",
+      },
+    ],
+  },
+  {
+    title: "EEC-2025 Weaver & MSME Amnesty",
+    cards: [
+      {
+        title: "Handloom & Powerloom Regularization",
+        content:
+          "EEC-2025 allows Panipat’s handloom and powerloom units to regularize workers missed since 2017 with a nominal ₹100 penalty.",
+      },
+      {
+        title: "Protection from 2026 Digital Audits",
+        content:
+          "Timely filing under EEC-2025 shields units from 100% damages and large-scale digital inspection sweeps.",
+      },
+    ],
+  },
+];
+
+export const faqPanipat = [
+  {
+    question: "Which EPFO office governs industrial units in Panipat?",
+    answer:
+      "Most industrial units in Panipat fall under the jurisdiction of the Regional Office (RO) Karnal, which has a dedicated enforcement wing for the Panipat clusters.",
+  },
+  {
+    question: "Is ESIC mandatory for a small dyeing unit with only 8 workers?",
+    answer:
+      "Yes. Chemical dyeing and textile processing are classified as hazardous processes, making ESIC mandatory from the first employee.",
+  },
+  {
+    question: "What triggers headcount mismatch audits for exporters?",
+    answer:
+      "RO Karnal cross-references electricity consumption and export turnover with PF ECR data. Discrepancies trigger automated Section 7A inquiries.",
+  },
+  {
+    question: "How does EEC-2025 help Panipat textile units?",
+    answer:
+      "EEC-2025 allows regularization of past worker defaults with a ₹100 penalty, avoiding 100% damages under Section 14B.",
+  },
+];
+export const heroDataJhajjar = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Jhajjar’s Footwear & MET City Hub",
+  description:
+    "In 2025, Jhajjar enforcement is driven by footwear sector wage audits, PE liability in MET City, and aggressive RO Rohtak action on piece-rate labour practices.",
+};
+
+export const sectionsJhajjar = [
+  {
+    title: "Footwear Industry Wage & Attendance Audits",
+    cards: [
+      {
+        title: "Attendance-to-Contribution Ratio Scrutiny",
+        content:
+          "RO Rohtak audits footwear units in Bahadurgarh by matching attendance records with PF and ESIC contributions, targeting under-reporting in piece-rate systems.",
+      },
+      {
+        title: "Piece-Rate to EPF-Compliant Wages",
+        content:
+          "We help footwear manufacturers transition from informal piece-rate payments to structured EPF-compliant salary models without disrupting productivity.",
+      },
+    ],
+  },
+  {
+    title: "MET City PE Liability & Vendor Oversight",
+    cards: [
+      {
+        title: "Global Supply Chain Compliance",
+        content:
+          "Anchor units in MET City face joint and several liability for logistics, facility, and maintenance contractors under Principal Employer provisions.",
+      },
+      {
+        title: "Cloud-Based Vendor Compliance Systems",
+        content:
+          "We deploy real-time compliance dashboards to monitor contractor PF/ESIC filings and prevent secondary liability.",
+      },
+    ],
+  },
+  {
+    title: "EEC-2025 Amnesty for Casual & Off-Roll Labour",
+    cards: [
+      {
+        title: "Footwear Sector Regularization",
+        content:
+          "EEC-2025 allows Jhajjar footwear units to regularize casual and temporary workers missed since 2017 with a nominal ₹100 penalty.",
+      },
+      {
+        title: "Protection from 14B Damages",
+        content:
+          "Timely use of EEC-2025 shields businesses from retrospective demands and 100% damages during 2026 digital inspections.",
+      },
+    ],
+  },
+];
+
+export const faqJhajjar = [
+  {
+    question: "Which EPFO office governs Bahadurgarh and MET City units?",
+    answer:
+      "All establishments in Jhajjar district, including Bahadurgarh and MET City, fall under the jurisdiction of the Regional Office (RO) Rohtak.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for a shoe-component unit with only 8 workers?",
+    answer:
+      "Yes. Units involving chemical bonding, rubber processing, or vulcanization are classified as hazardous processes, requiring ESIC from the first employee.",
+  },
+  {
+    question:
+      "What is the risk of paying footwear workers on a piece-rate basis?",
+    answer:
+      "High. RO Rohtak treats piece-rate workers as regular employees. Non-remittance of PF/ESIC leads to large retrospective demands and penalties.",
+  },
+  {
+    question: "How does EEC-2025 help Jhajjar footwear units?",
+    answer:
+      "EEC-2025 allows regularization of off-roll workers for a ₹100 penalty, enabling a clean compliance record before 2026 audit drives.",
+  },
+];
+export const heroDataHaryanaBalance = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Haryana’s Industrial & Agri-Hub Frontiers",
+  description:
+    "Late-2025 enforcement across Haryana’s balance districts is driven by global supply-chain standards, hazardous process ESIC mandates, and aggressive RO Karnal and RO Gurugram audits.",
+};
+
+export const sectionsHaryanaBalance = [
+  {
+    title: "Agri-Food & Footwear Corridor Compliance (Sonipat)",
+    cards: [
+      {
+        title: "Seasonal Labour Formalization",
+        content:
+          "RO Karnal is focusing on cold storages and food processing units in Rai and Kundli to ensure seasonal and migrant workers are fully enrolled under PF and ESIC.",
+      },
+      {
+        title: "EEC-2025 for Food & Footwear MSMEs",
+        content:
+          "EEC-2025 allows Sonipat-based MSMEs to regularize migrant labour with a nominal ₹100 penalty, preventing retrospective liabilities during 2026 digital inspections.",
+      },
+    ],
+  },
+  {
+    title: "Mega Auto & Electronics Hub PE Liability (Rewari–Bawal)",
+    cards: [
+      {
+        title: "MNC-Grade Vendor Compliance",
+        content:
+          "Auto and electronics vendors in Bawal and Dharuhera face extreme PE liability from MNCs like YKK and Musashi, requiring flawless statutory records.",
+      },
+      {
+        title: "Site-Specific Sub-Code Enforcement",
+        content:
+          "RO Gurugram mandates site-specific PF and ESIC sub-codes for Bawal projects. Using generic Delhi or Gurgaon codes results in immediate payment holds.",
+      },
+    ],
+  },
+  {
+    title: "Manufacturing & Plywood Frontier Enforcement",
+    cards: [
+      {
+        title: "Hazardous Process ESIC Mandate",
+        content:
+          "Plywood, resin, and chemical-based units in Yamunanagar are classified as hazardous processes, mandating ESIC coverage from the first employee.",
+      },
+      {
+        title: "Cluster-Level Audit Readiness",
+        content:
+          "Ambala and Hisar units face cross-department data matching (pollution, GST, and PF) to identify headcount suppression.",
+      },
+    ],
+  },
+];
+
+export const faqHaryanaBalance = [
+  {
+    question: "Which EPFO office governs Sonipat and Kundli units?",
+    answer:
+      "Establishments in Sonipat, Rai, and Kundli fall under the jurisdiction of the Regional Office (RO) Karnal.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for small plywood units in Yamunanagar with 6 workers?",
+    answer:
+      "Yes. Plywood manufacturing involves hazardous chemicals and machinery, making ESIC mandatory from the first employee under late-2025 updates.",
+  },
+  {
+    question: "What is the risk of headcount mismatch for Bawal vendors?",
+    answer:
+      "High. MNCs in Bawal cross-verify gate attendance with monthly PF ECR filings. Any mismatch results in invoice holds and audit escalation.",
+  },
+  {
+    question:
+      "How does the 50% Wage Rule affect electronics units in Dharuhera?",
+    answer:
+      "Basic + DA must be at least 50% of gross salary. Excessive allowance structures are being actively audited to prevent contribution suppression.",
+  },
+];
+export const heroDataLudhiana = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Ludhiana’s Industrial Powerhouse",
+  description:
+    "Late-2025 enforcement in Ludhiana is driven by textile formalization, buyer-driven social audits, and strict RO Ludhiana scrutiny on wage structures and contractor compliance.",
+};
+
+export const sectionsLudhiana = [
+  {
+    title: "Textile & Hosiery Compliance Enforcement (2025)",
+    cards: [
+      {
+        title: "50% Wage Rule & Incentive Audits",
+        content:
+          "RO Ludhiana is auditing hosiery and knitwear units to ensure production-linked incentives and attendance bonuses are included correctly under the New Labour Code 2025 wage definition.",
+      },
+      {
+        title: "Buyer & Export Audit Readiness",
+        content:
+          "Global and domestic buyers now require clean PF/ESI records. We conduct social compliance audits to ensure Ludhiana exporters pass buyer inspections without shipment delays.",
+      },
+    ],
+  },
+  {
+    title: "Cycle Parts & Engineering PE Liability",
+    cards: [
+      {
+        title: "Vendor Gate-Pass & Digital Verification",
+        content:
+          "Large factories supplying to Hero, Avon, and OEMs use digital vendor portals to verify PF/ESI payment before releasing bills. Any contractor default leads to payment blocks.",
+      },
+      {
+        title: "Contractor Compliance Management",
+        content:
+          "We implement structured contractor compliance systems to protect MSME vendors from Principal Employer (PE) liability escalation.",
+      },
+    ],
+  },
+  {
+    title: "EEC-2025 Amnesty for Migrant Workforce",
+    cards: [
+      {
+        title: "Seasonal & Migrant Worker Regularization",
+        content:
+          "The EEC-2025 scheme allows knitwear and dyeing units to regularize off-the-roll workers missed since 2017 with a nominal ₹100 penalty.",
+      },
+      {
+        title: "14B Damage Risk Mitigation",
+        content:
+          "Using the amnesty window prevents the severe Section 14B damages that RO Ludhiana is known for enforcing in retrospective audits.",
+      },
+    ],
+  },
+];
+
+export const faqLudhiana = [
+  {
+    question:
+      "Which EPFO office handles industrial units in Focal Point and Gill Road?",
+    answer:
+      "All industrial establishments in Ludhiana district fall under the jurisdiction of the Regional Office (RO) Ludhiana.",
+  },
+  {
+    question: "Is ESIC mandatory for a small dyeing unit with only 8 workers?",
+    answer:
+      "Yes. Under the 2025 hazardous process classification, chemical dyeing and heat-treatment units must have ESIC from the first employee.",
+  },
+  {
+    question: "What is the risk of season-based labour hiring without PF?",
+    answer:
+      "High. RO Ludhiana treats seasonal workers as entitled to social security if minimum wage thresholds are met. Non-compliance triggers Section 7A inquiries.",
+  },
+  {
+    question: "How can we get a waiver on old 14B damages in Ludhiana?",
+    answer:
+      "Under the ESIC Amnesty 2025, units clearing principal dues can apply for waiver or reduction of penal damages. We assist with formal representation at RO Ludhiana.",
+  },
+];
+export const heroDataJalandhar = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Jalandhar’s Sports & Engineering Hub",
+  description:
+    "Late-2025 enforcement in Jalandhar is driven by buyer-led social compliance audits, hazardous process ESIC mandates, and strict RO Jalandhar scrutiny on piece-rate and contract labour.",
+};
+
+export const sectionsJalandhar = [
+  {
+    title: "Sports Goods Social Compliance Audits (2025)",
+    cards: [
+      {
+        title: "Piece-Rate to Monthly Wage Conversion",
+        content:
+          "RO Jalandhar is auditing sports goods exporters to ensure piece-rate workers are correctly converted into monthly wage structures compliant with the 50% Wage Rule under the New Labour Code 2025.",
+      },
+      {
+        title: "Buyer & Export Audit Readiness",
+        content:
+          "Global brands require clean PF/ESI records. We conduct vendor social audits to protect Jalandhar exporters from buyer blacklisting and shipment delays.",
+      },
+    ],
+  },
+  {
+    title: "Foundry & Leather Hazardous Process Enforcement",
+    cards: [
+      {
+        title: "Day-One ESIC Mandate",
+        content:
+          "Tanneries, chrome-plating units, and foundries in Jalandhar are classified as hazardous processes, mandating ESIC coverage from the first employee.",
+      },
+      {
+        title: "Personal Liability Risk Mitigation",
+        content:
+          "Failure to register exposes owners to personal liability for occupational injuries and long-term health claims. We ensure full statutory coverage.",
+      },
+    ],
+  },
+  {
+    title: "EEC-2025 Amnesty for Artisanal MSMEs",
+    cards: [
+      {
+        title: "Legacy Labour Regularization",
+        content:
+          "EEC-2025 allows MSMEs in Old Industrial Area and Gadaipur to regularize casual and artisanal workers missed since 2017 with a nominal ₹100 penalty.",
+      },
+      {
+        title: "14B Damage Protection",
+        content:
+          "Using the amnesty window prevents the severe Section 14B damages commonly imposed during RO Jalandhar inspections.",
+      },
+    ],
+  },
+];
+
+export const faqJalandhar = [
+  {
+    question:
+      "Which EPFO office handles companies in the Leather Complex and Focal Point?",
+    answer:
+      "All industrial units in Jalandhar district fall under the jurisdiction of the Regional Office (RO) Jalandhar.",
+  },
+  {
+    question: "Is ESIC mandatory for a small hand-tool unit with 6 workers?",
+    answer:
+      "Yes. Foundries and forging units involve hazardous machinery and high temperatures, making ESIC mandatory from the first employee as of late 2025.",
+  },
+  {
+    question:
+      "What is the risk of home-based or contract stitching for sports goods?",
+    answer:
+      "High. RO Jalandhar treats outer-workers and contract stitchers as employees entitled to social security, and non-compliance can trigger multi-year retrospective PF demands.",
+  },
+  {
+    question: "How can we utilize the EEC-2025 Scheme in Jalandhar?",
+    answer:
+      "The scheme allows MSMEs to regularize artisanal workers with a nominal ₹100 penalty, preventing heavy Section 14B damages during inspections.",
+  },
+];
+export const heroDataMohali = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Mohali’s IT & Tech Powerhouse",
+  description:
+    "Late-2025 enforcement in Mohali is driven by New Wage Code implementation, ESIC threshold tracking, and RO Chandigarh’s digital audits of IT and service-sector payrolls.",
+};
+
+export const sectionsMohali = [
+  {
+    title: "IT & ITeS Wage Code Enforcement (2025)",
+    cards: [
+      {
+        title: "50% Wage Rule & Payroll Restructuring",
+        content:
+          "RO Chandigarh is auditing Mohali IT firms to ensure Basic + DA forms at least 50% of Gross Salary. Allowance-heavy CTCs are triggering automated scrutiny under the New Labour Code 2025.",
+      },
+      {
+        title: "Startup & MNC Payroll Optimization",
+        content:
+          "We help Mohali startups and MNCs restructure salary components to meet statutory thresholds while controlling take-home impact and ESOP-linked compensation risks.",
+      },
+    ],
+  },
+  {
+    title: "ESIC Coverage for Service & Tech Workforce",
+    cards: [
+      {
+        title: "Threshold Tracking for IT Employees",
+        content:
+          "ESIC is mandatory for units with 10+ employees where wages fall below the notified limit. RO Chandigarh is issuing notices for non-registration of junior developers and support staff.",
+      },
+      {
+        title: "Digital ESIC Filings & Compliance",
+        content:
+          "We manage ESIC registrations, IP onboarding, and digital filings to ensure uninterrupted medical coverage and inspection readiness.",
+      },
+    ],
+  },
+  {
+    title: "EEC-2025 Amnesty for High-Growth Startups",
+    cards: [
+      {
+        title: "Past Employee Regularization",
+        content:
+          "EEC-2025 allows Mohali startups to regularize left-out employees from early funding stages for a nominal ₹100 penalty.",
+      },
+      {
+        title: "VC & Due-Diligence Risk Shield",
+        content:
+          "Using the amnesty window prevents adverse findings during investor due-diligence, mergers, or overseas expansion audits.",
+      },
+    ],
+  },
+];
+
+export const faqMohali = [
+  {
+    question: "Which EPFO office oversees companies in Mohali (SAS Nagar)?",
+    answer:
+      "Most establishments in Mohali fall under the jurisdiction of the Regional Office (RO) Chandigarh, located in Sector 17.",
+  },
+  {
+    question: "Is ESIC mandatory for an IT startup with only 11 employees?",
+    answer:
+      "Yes. In Punjab, ESIC becomes mandatory at 10 employees if any staff earn below the prescribed wage threshold.",
+  },
+  {
+    question: "What is the digital audit risk for Mohali-based MNCs?",
+    answer:
+      "In 2025, EPFO uses API-based data matching with MCA filings. A mismatch between reported headcount and PF returns triggers automated inquiries.",
+  },
+  {
+    question: "How can startups utilize the EEC-2025 Scheme in Mohali?",
+    answer:
+      "Startups can regularize left-out employees from previous years for a flat ₹100 penalty, ensuring clean statutory records for future funding rounds.",
+  },
+];
+export const heroDataPunjabBalance = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Punjab’s Regional Industrial & Energy Hubs",
+  description:
+    "Late-2025 enforcement across Punjab’s balance districts is driven by hazardous process ESIC mandates, site-specific contractor audits, and aggressive RO Bathinda and RO Amritsar inspections.",
+};
+
+export const sectionsPunjabBalance = [
+  {
+    title: "Energy & Petrochemical Corridor Compliance (Bathinda)",
+    cards: [
+      {
+        title: "HMEL Refinery Site-Specific Audits",
+        content:
+          "RO Bathinda is strictly enforcing site-specific PF and ESIC sub-codes for contractors working at the HMEL Refinery. Any mismatch between gate-entry data and monthly ECR leads to immediate bill holds.",
+      },
+      {
+        title: "Hazardous Process ESIC Mandate",
+        content:
+          "All ethanol, chemical, and power units in Bathinda, Mansa, and Barnala are classified as hazardous processes, requiring ESIC coverage from the first employee under the Social Security Code 2025.",
+      },
+    ],
+  },
+  {
+    title: "Border Trade & Seasonal Labour Formalization",
+    cards: [
+      {
+        title: "Basmati Rice Mill Compliance",
+        content:
+          "RO Amritsar is focusing on formalizing seasonal labour in rice mills and agri-export units, with strict scrutiny of attendance, wage registers, and PF coverage.",
+      },
+      {
+        title: "EEC-2025 Amnesty for SMEs",
+        content:
+          "EEC-2025 provides Amritsar and border-district SMEs a critical window to regularize off-the-roll workers with a nominal ₹100 penalty before 2026 enforcement.",
+      },
+    ],
+  },
+  {
+    title: "Pharma, Logistics & Steel Belt Enforcement",
+    cards: [
+      {
+        title: "PE Liability in Rajpura Pharma Hub",
+        content:
+          "Pharma and logistics units in Rajpura face high Principal Employer liability for laboratory, sanitation, and warehouse vendors. Compliance failures now trigger joint liability.",
+      },
+      {
+        title: "Steel & Foundry ESIC Surveillance",
+        content:
+          "Mandi Gobindgarh furnace and casting units are under ESIC surveillance to ensure accident coverage and hazardous process compliance.",
+      },
+    ],
+  },
+];
+
+export const faqPunjabBalance = [
+  {
+    question:
+      "Which EPFO office handles compliance for establishments in Bathinda and Mansa?",
+    answer:
+      "These districts fall under the jurisdiction of the Regional Office (RO) Bathinda.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for a small rice mill in Amritsar with 8 workers?",
+    answer:
+      "Yes. Under the Social Security Code 2025, rice mills using mechanical shelling and polishing are classified as hazardous processes, requiring ESIC from the first employee.",
+  },
+  {
+    question:
+      "What is the risk of headcount mismatch for HMEL refinery vendors?",
+    answer:
+      "High. HMEL cross-verifies RFID gate-pass data with monthly PF ECR filings. Any discrepancy results in immediate invoice withholding and audit escalation.",
+  },
+  {
+    question: "How does the 50% Wage Rule affect the pharma sector in Rajpura?",
+    answer:
+      "Pharma companies must ensure Basic + DA is at least 50% of gross salary. Excessive research or travel allowances are being audited to prevent contribution suppression.",
+  },
+];
+export const heroDataGuwahati = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Guwahati’s Industrial & Commercial Hub",
+  description:
+    "Late-2025 enforcement in Guwahati is driven by NEIDS subsidy linkage, contractor digitization, migrant labour formalization, and strict RO Guwahati payroll audits.",
+};
+
+export const sectionsGuwahati = [
+  {
+    title: "NEIDS & Subsidy-Linked Compliance (2025)",
+    cards: [
+      {
+        title: "Subsidy-Ready Compliance Audits",
+        content:
+          "Under NEIDS 2025 and Assam Industrial Policy, GST and capital subsidies are released only after a statutory clean chit. Any PF/ESI default at RO Guwahati leads to immediate suspension of incentives.",
+      },
+      {
+        title: "Clean Chit & Departmental Cross-Checks",
+        content:
+          "Industries Department now cross-verifies EPFO and ESIC data digitally before approving subsidy disbursements.",
+      },
+    ],
+  },
+  {
+    title: "Manufacturing & Logistics PE Liability",
+    cards: [
+      {
+        title: "North Guwahati & Rani Industrial Belt",
+        content:
+          "Units in Amingaon, North Guwahati, and Rani rely heavily on manpower contractors. Under the Social Security Code 2025, Principal Employers are digitally tracked for contractor defaults.",
+      },
+      {
+        title: "Contractor Risk Mitigation",
+        content:
+          "We implement contractor compliance systems to prevent PE liability escalation and work-stoppage risks.",
+      },
+    ],
+  },
+  {
+    title: "EEC-2025 Amnesty & Migrant Labour Compliance",
+    cards: [
+      {
+        title: "Legacy Labour Regularization",
+        content:
+          "EEC-2025 allows MSMEs in Kalapahar and Bamunimaidam to regularize casual and migrant workers missed since 2017 with a nominal ₹100 penalty.",
+      },
+      {
+        title: "ISMW & PF/ESI Alignment",
+        content:
+          "We align Inter-State Migrant Workmen (ISMW) compliance with PF/ESI filings to prevent state labour department stoppage notices.",
+      },
+    ],
+  },
+];
+
+export const faqGuwahati = [
+  {
+    question:
+      "Which office handles compliance for industrial units in Amingaon?",
+    answer:
+      "All establishments in Kamrup (Metro) and Kamrup (Rural) districts fall under the jurisdiction of the Regional Office (RO) Guwahati at Bhangagarh.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for a retail showroom on GS Road with 11 staff?",
+    answer:
+      "Yes. In Assam, ESIC becomes mandatory once an establishment employs 10 or more employees.",
+  },
+  {
+    question:
+      "How does the 50% Wage Rule affect tea blending and packaging units?",
+    answer:
+      "Basic + DA must be at least 50% of gross salary. RO Guwahati audits payrolls to ensure production bonuses are not used to suppress PF contributions.",
+  },
+  {
+    question: "What is the risk of migrant labour non-compliance in Guwahati?",
+    answer:
+      "High. Non-compliance with ISMW rules along with PF/ESI can lead to work-stoppage notices and penalties from the Assam Labour Department.",
+  },
+];
+export const heroDataSikkim = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Sikkim’s Pharmaceutical Powerhouse",
+  description:
+    "Late-2025 enforcement in Sikkim is driven by Pharma Wage Code audits, COI-linked employment scrutiny, hazardous process ESIC mandates, and SRO Gangtok inspections.",
+};
+
+export const sectionsSikkim = [
+  {
+    title: "Pharma Wage Code & Payroll Restructuring (2025)",
+    cards: [
+      {
+        title: "50% Wage Rule Enforcement",
+        content:
+          "Pharma units in Sikkim often use Mountain, Hardship, and Special Allowances. Under the Social Security Code 2025, SRO Gangtok is strictly auditing that Basic + DA is at least 50% of Gross Salary.",
+      },
+      {
+        title: "CTC-Neutral Compliance Modeling",
+        content:
+          "We restructure pharma payrolls to comply with the Wage Code without inflating employer CTC or triggering employee attrition.",
+      },
+    ],
+  },
+  {
+    title: "COI (Certificate of Identification) & Local Employment Alignment",
+    cards: [
+      {
+        title: "COI-Based Employment Scrutiny",
+        content:
+          "Sikkim’s special status mandates close tracking of COI holders. EPF/ESIC data is now cross-verified with State Labour Department records.",
+      },
+      {
+        title: "Incentive & Subsidy Protection",
+        content:
+          "Mismatch between statutory filings and COI employment ratios can lead to suspension of state industrial incentives and approvals.",
+      },
+    ],
+  },
+  {
+    title: "Hazardous Process ESIC & EEC-2025 Amnesty",
+    cards: [
+      {
+        title: "ESIC from Day One",
+        content:
+          "Pharmaceutical manufacturing is a notified hazardous process. ESIC is mandatory from the first employee for units in Rangpo, Mamring, and Majitar.",
+      },
+      {
+        title: "EEC-2025 Regularization Window",
+        content:
+          "The Employees’ Enrolment Campaign 2025 allows MSME ancillaries to regularize past workers for a nominal ₹100 penalty, protecting eligibility for central capital subsidies.",
+      },
+    ],
+  },
+];
+
+export const faqSikkim = [
+  {
+    question:
+      "Which office handles EPF compliance for Rangpo and Mamring units?",
+    answer:
+      "All establishments in Sikkim fall under the Sub-Regional Office (SRO) Gangtok, which reports administratively to the Regional Office (RO) Siliguri.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for pharma units with fewer than 10 employees?",
+    answer:
+      "Yes. Pharmaceutical manufacturing is classified as a hazardous process, making ESIC mandatory from the first employee under the 2025 guidelines.",
+  },
+  {
+    question: "How does local candidate (COI) preference affect PF filings?",
+    answer:
+      "EPF ECR data is cross-verified with the Sikkim Labour Department’s portal to ensure correct reporting of COI-holder employment percentages.",
+  },
+  {
+    question: "What is the benefit of EEC-2025 for Sikkim MSMEs?",
+    answer:
+      "EEC-2025 allows smaller units to regularize past workers for a ₹100 penalty, which is crucial for maintaining eligibility for central and state industrial subsidies.",
+  },
+];
+export const heroDataMeghalaya = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Meghalaya’s Industrial & Resource Corridors",
+  description:
+    "Late-2025 enforcement in Meghalaya is driven by hazardous-process ESIC mandates, cement-sector PE liability, ADC regulatory overlap, and SRO Shillong inspections.",
+};
+
+export const sectionsMeghalaya = [
+  {
+    title: "Byrnihat Hazardous Process & ESIC Enforcement (2025)",
+    cards: [
+      {
+        title: "ESIC from the First Employee",
+        content:
+          "Byrnihat’s sponge iron, ferroalloy, steel, and coke units are classified as hazardous processes. ESIC is mandatory from employee #1 under the Social Security Code 2025.",
+      },
+      {
+        title: "Contractual Labor Coverage Audits",
+        content:
+          "SRO Shillong is auditing manual and contractual labor deployment to ensure no worker is left outside ESIC coverage, a common trigger for accident liability cases.",
+      },
+    ],
+  },
+  {
+    title: "Cement Sector PE Liability & Mining Workforce Risk",
+    cards: [
+      {
+        title: "Principal Employer Exposure",
+        content:
+          "Large cement plants in East Jaintia Hills face joint and several liability for mining, loading, and transport contractors if PF/ESI filings are incomplete.",
+      },
+      {
+        title: "Vendor Compliance & Site Mapping",
+        content:
+          "We implement site-wise PF code mapping and contractor reconciliation to prevent RO-triggered 7A inquiries and payment blocks.",
+      },
+    ],
+  },
+  {
+    title: "ADC Norms, EEC-2025 & Subsidy Protection",
+    cards: [
+      {
+        title: "Sixth Schedule & ADC Overlap",
+        content:
+          "Umiam and Shillong MSMEs often face conflicts between State labor laws and Autonomous District Council trade licenses. Statutory misalignment invites inspections.",
+      },
+      {
+        title: "EEC-2025 Amnesty Window",
+        content:
+          "The Employees’ Enrolment Campaign 2025 allows regularization of past workers for ₹100 per employee, ensuring eligibility for MIIPP 2024-25 and power subsidies.",
+      },
+    ],
+  },
+];
+
+export const faqMeghalaya = [
+  {
+    question: "Which EPFO office handles units in Byrnihat?",
+    answer:
+      "Most industrial establishments in Meghalaya fall under the Sub-Regional Office (SRO) Shillong, which operates under the Regional Office (RO) Guwahati.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for MSMEs in Umiam with fewer than 10 workers?",
+    answer:
+      "Yes. If the unit involves hazardous processes such as metal work, chemical mixing, or coke handling, ESIC is mandatory from the first employee as per 2025 rules.",
+  },
+  {
+    question:
+      "How does the Inter-State Migrant Workmen (ISMW) Act affect Byrnihat units?",
+    answer:
+      "Byrnihat’s border location means hiring labor from Assam requires ISMW registration along with EPF/ESIC. Non-compliance can lead to stop-work orders.",
+  },
+  {
+    question: "What is the benefit of EEC-2025 for coke and steel plants?",
+    answer:
+      "EEC-2025 allows regularization of workers missed during peak production years with a nominal penalty, safeguarding power tariff benefits and industrial subsidy renewals.",
+  },
+];
+export const heroDataNE = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for the Northeast Frontier States",
+  description:
+    "Late-2025 enforcement across Northeast India is driven by hazardous-process formalization, infrastructure PE liability, ISMW audits, and NEIDS-linked compliance.",
+};
+
+export const sectionsNE = [
+  {
+    title: "Tripura – Rubber, Bamboo & Energy Compliance (Agartala)",
+    cards: [
+      {
+        title: "Rubber Smoke House & ESIC Audits",
+        content:
+          "Tripura’s rubber processing units employ seasonal and chemical-exposed labor. SRO Agartala is auditing ESIC registration for smoke houses and processing clusters.",
+      },
+      {
+        title: "Subsidy-Linked Compliance",
+        content:
+          "Under the Tripura Industrial Investment Promotion Incentive Scheme 2025, EPF/ESIC compliance is mandatory for power and employment cost subsidies.",
+      },
+    ],
+  },
+  {
+    title: "Nagaland – Logistics, Trade & ISMW Risk (Dimapur)",
+    cards: [
+      {
+        title: "Inter-State Migrant Workmen Mapping",
+        content:
+          "Dimapur-based logistics and trade firms face scrutiny for ISMW compliance as labor is sourced from Assam and Manipur. PF defaults trigger joint liability.",
+      },
+      {
+        title: "EEC-2025 for Trade Firms",
+        content:
+          "The Employees’ Enrolment Campaign 2025 allows Nagaland MSMEs to regularize workers missed post-pandemic for ₹100 per employee, clearing tender eligibility.",
+      },
+    ],
+  },
+  {
+    title: "Arunachal, Manipur & Mizoram – Infrastructure PE Liability",
+    cards: [
+      {
+        title: "Hydropower & BRO Project Risk",
+        content:
+          "Large hydro and road projects in Arunachal Pradesh face extreme PE liability. We implement site-wise PF code tracking for tunnel and road workers.",
+      },
+      {
+        title: "Border Trade & Logistics Formalization",
+        content:
+          "Trade corridors at Moreh (Manipur) and Zokhawthar (Mizoram) are being brought under Social Security Code enforcement due to cross-border logistics expansion.",
+      },
+    ],
+  },
+];
+
+export const faqNE = [
+  {
+    question: "Which office handles compliance for Itanagar-based firms?",
+    answer:
+      "Establishments in Arunachal Pradesh are governed by Sub-Regional Office (SRO) Itanagar, which reports to the Regional Office (RO) Guwahati.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for a small rubber unit in Tripura with 8 workers?",
+    answer:
+      "Yes. Rubber processing involves chemical exposure and is classified as hazardous, making ESIC mandatory from employee #1 under the 2025 rules.",
+  },
+  {
+    question: "What is the benefit of EEC-2025 for Nagaland-based trade firms?",
+    answer:
+      "EEC-2025 allows regularization of missed workers for a nominal ₹100 penalty, which is essential for government tenders and subsidy eligibility.",
+  },
+  {
+    question:
+      "How can hydro-project contractors manage PF for remote site workers?",
+    answer:
+      "We deploy mobile-based attendance systems integrated with the EPF portal to ensure real-time contribution tracking for workers in remote Himalayan locations.",
+  },
+];
+export const heroDataHaridwar = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Haridwar’s SIDCUL Industrial Hub",
+  description:
+    "Late-2025 enforcement in Haridwar is driven by PE liability audits, hazardous-process ESIC mandates, and real-time contractor reconciliation at SIDCUL.",
+};
+
+export const sectionsHaridwar = [
+  {
+    title: "SIDCUL PE Liability & FMCG Vendor Risk (2025)",
+    cards: [
+      {
+        title: "Principal Employer (PE) Exposure",
+        content:
+          "Anchor units like Hero MotoCorp, ITC, and Havells are jointly liable for PF/ESI defaults by manpower, security, and housekeeping contractors under the Social Security Code 2025.",
+      },
+      {
+        title: "Vendor Compliance Audits",
+        content:
+          "We conduct site-wise contractor audits to ensure ECR, gate-entry, and billing data are perfectly aligned, preventing business-halting notices.",
+      },
+    ],
+  },
+  {
+    title: "Hazardous Process ESIC Mandate",
+    cards: [
+      {
+        title: "ESIC from the First Employee",
+        content:
+          "Chemical processing, metal casting, and large food machinery units in SIDCUL are classified as hazardous, mandating ESIC coverage from employee #1.",
+      },
+      {
+        title: "Factory License Cross-Verification",
+        content:
+          "SRO Haridwar is cross-checking Factory Licenses against ESIC registrations to identify non-compliant manufacturing units.",
+      },
+    ],
+  },
+  {
+    title: "EEC-2025 & Seasonal Workforce Regularization",
+    cards: [
+      {
+        title: "Industrial Amnesty Window",
+        content:
+          "The Employees’ Enrolment Campaign 2025 allows SIDCUL MSMEs to regularize seasonal and packaging workers missed since 2017 for ₹100 per employee.",
+      },
+      {
+        title: "Penalty & 14B Risk Mitigation",
+        content:
+          "Timely use of EEC-2025 prevents catastrophic interest and 14B damages commonly imposed during Haridwar industrial inspections.",
+      },
+    ],
+  },
+];
+
+export const faqHaridwar = [
+  {
+    question: "Which office handles EPF for units in IIE SIDCUL Haridwar?",
+    answer:
+      "All industrial units in Haridwar are governed by the Sub-Regional Office (SRO) Haridwar, which is dedicated to this heavy industrial belt.",
+  },
+  {
+    question: "Is ESIC mandatory for small MSMEs in Haridwar with 8 workers?",
+    answer:
+      "Yes. Manufacturing units in Uttarakhand face aggressive ESIC enforcement, and registration from the first employee is strongly recommended under the 2025 code.",
+  },
+  {
+    question:
+      "What is the risk for BHEL vendors regarding sub-contracted labor?",
+    answer:
+      "High. BHEL requires a Compliance Clearance Certificate before releasing payments. Site-specific PF codes are essential to avoid bill blocks and 7A inquiries.",
+  },
+  {
+    question: "How can we get a waiver on old PF penalties in Haridwar?",
+    answer:
+      "Under the ESIC Amnesty 2025, firms clearing principal dues can apply for waiver or reduction of penal damages. We represent clients at SRO Haridwar.",
+  },
+];
+export const heroDataPantnagar = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Pantnagar’s Automotive & Industrial Hub",
+  description:
+    "Late-2025 enforcement in Udham Singh Nagar is driven by auto-OEM PE liability, hazardous-process ESIC mandates, and RO Haldwani’s digital headcount reconciliation.",
+};
+
+export const sectionsPantnagar = [
+  {
+    title: "Auto OEM PE Liability Chain (Pantnagar–Rudrapur)",
+    cards: [
+      {
+        title: "Tier-1 & Tier-2 Vendor Exposure",
+        content:
+          "Anchor OEMs like Tata Motors, Ashok Leyland, and Bajaj Auto are treated as Principal Employers. If a small vendor defaults on PF/ESI, RO Haldwani initiates joint liability proceedings.",
+      },
+      {
+        title: "Gold-Standard Compliance Audits",
+        content:
+          "We align ECR filings, contractor registers, and OEM gate-entry data to ensure uninterrupted supply orders and zero payment holds.",
+      },
+    ],
+  },
+  {
+    title: "Hazardous Process ESIC Mandate (Sitarganj & Gadarpur)",
+    cards: [
+      {
+        title: "ESIC from Employee #1",
+        content:
+          "Plastic processing, allied manufacturing, and chemical-linked units in Sitarganj Phase-II are classified as hazardous, mandating ESIC coverage from the first employee.",
+      },
+      {
+        title: "Safety Audit & Power Subsidy Linkage",
+        content:
+          "Incorrect ESIC classification now directly impacts industrial power subsidy eligibility and SIDCUL approvals.",
+      },
+    ],
+  },
+  {
+    title: "Logistics, Warehousing & EEC-2025 Amnesty",
+    cards: [
+      {
+        title: "Gate Entry vs PF ECR Reconciliation",
+        content:
+          "Pantnagar’s logistics hubs face intense scrutiny. A mismatch between warehouse gate logs and PF returns is the most common trigger for Section 7A inquiries.",
+      },
+      {
+        title: "EEC-2025 Regularization Window",
+        content:
+          "MSMEs can regularize workers missed during production peaks for ₹100 per employee, critical for SIDCUL lease renewals and state incentives.",
+      },
+    ],
+  },
+];
+
+export const faqPantnagar = [
+  {
+    question:
+      "Which office handles compliance for industrial units in Pantnagar and Rudrapur?",
+    answer:
+      "Pantnagar, Rudrapur, Sitarganj, and Kashipur fall under the jurisdiction of the Regional Office (RO) Haldwani, which manages the entire Kumaon industrial belt.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for an engineering unit in Sitarganj with 7 workers?",
+    answer:
+      "Yes. Units involving power, machinery, plastics, or chemicals are treated as hazardous processes, requiring ESIC from employee #1 under the 2025 rules.",
+  },
+  {
+    question:
+      "What is the risk of headcount mismatch for auto-component vendors?",
+    answer:
+      "Critical. OEMs digitally reconcile invoice manpower with PF ECR. Any mismatch leads to automatic payment withholding and RO escalation.",
+  },
+  {
+    question: "How can Rudrapur MSMEs benefit from EEC-2025?",
+    answer:
+      "EEC-2025 allows MSMEs to regularize past workers for a nominal ₹100 penalty, essential for SIDCUL lease renewals, subsidy continuity, and audit protection.",
+  },
+];
+export const heroDataUKHills = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Dehradun & Uttarakhand Hill Clusters",
+  description:
+    "Late-2025 enforcement in Uttarakhand is driven by pharma wage-code audits, environmental compliance linkage, and subsidy-conditional EPF/ESIC certification for hill MSMEs.",
+};
+
+export const sectionsUKHills = [
+  {
+    title: "Pharma & Education Hub Compliance (Dehradun – Selaqui)",
+    cards: [
+      {
+        title: "50% Wage Rule – Pharma & MRs",
+        content:
+          "RO Dehradun is auditing allowance-heavy salary structures for factory staff and medical representatives. Basic + DA must be at least 50% of Gross to avoid retrospective PF demands.",
+      },
+      {
+        title: "Hazardous Process ESIC Mandate",
+        content:
+          "All pharmaceutical formulation units in Selaqui are classified as hazardous. ESIC coverage is mandatory from the first employee due to chemical exposure risks.",
+      },
+    ],
+  },
+  {
+    title: "Foothills Logistics & Trading Gateway (Haldwani – Lalkuan)",
+    cards: [
+      {
+        title: "Principal Employer Liability",
+        content:
+          "Warehousing and transport-heavy units face PE liability for loading, unloading, and driver labor. Gate-entry vs PF ECR mismatch is a key 7A trigger in 2025.",
+      },
+      {
+        title: "EEC-2025 Amnesty Window",
+        content:
+          "Trading and logistics firms can regularize casual and seasonal staff for ₹100 per employee, critical for avoiding multi-year retrospective demands.",
+      },
+    ],
+  },
+  {
+    title: "Hill MSME & Tourism Compliance (Almora, Pauri, Tehri)",
+    cards: [
+      {
+        title: "Subsidy-Linked Compliance",
+        content:
+          "Under the Hill MSME Policy 2025, state subsidies are released only after EPF/ESIC clean certification. Non-compliance directly blocks capital and interest subsidies.",
+      },
+      {
+        title: "Kotdwar (Sigaddi) Industrial Surveillance",
+        content:
+          "Engineering and fabrication units in Kotdwar are under labor safety and ESIC scrutiny due to power-driven machinery usage.",
+      },
+    ],
+  },
+];
+
+export const faqUKHills = [
+  {
+    question:
+      "Which EPFO office handles compliance for Selaqui and Dehradun city?",
+    answer:
+      "Dehradun city and Selaqui Industrial Area fall under the jurisdiction of the Regional Office (RO) Dehradun, located at Kanwali Road.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for a small wellness center in Almora with 8 workers?",
+    answer:
+      "Yes. If power or machinery is used, wellness and hospitality units are prioritized for ESIC coverage from employee #1 under the 2025 framework.",
+  },
+  {
+    question:
+      "What is the benefit of EEC-2025 for Selaqui-based pharma ancillaries?",
+    answer:
+      "EEC-2025 allows regularization of past workers for ₹100 per employee, preventing multi-lakh penalty notices and protecting future drug-license renewals.",
+  },
+  {
+    question: "How does the 50% Wage Rule affect IT firms in Dehradun?",
+    answer:
+      "IT firms must ensure Basic + DA equals at least 50% of Gross Salary. RO Dehradun is auditing allowance-heavy CTC structures to prevent PF suppression.",
+  },
+];
+export const heroDataBaddi = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for the BBN Industrial Powerhouse",
+  description:
+    "Late-2025 enforcement in Baddi-Barotiwala-Nalagarh is driven by pharma wage-code audits, hazardous-process ESIC mandates, and contractor-linked PE liability.",
+};
+
+export const sectionsBaddi = [
+  {
+    title: "Pharma Wage Code & Social Audit Risk (Baddi – Barotiwala)",
+    cards: [
+      {
+        title: "50% Wage Rule Enforcement",
+        content:
+          "SRO Baddi is strictly auditing pharma salary structures involving hill, shift, and hardship allowances. Basic + DA must be at least 50% of Gross Salary to avoid multi-year retrospective PF demands.",
+      },
+      {
+        title: "Export & Buyer Audit Alignment",
+        content:
+          "BBN pharma exporters must maintain PF/ESI records that align with buyer social audits. Any discrepancy can lead to export-order suspension or compliance downgrades.",
+      },
+    ],
+  },
+  {
+    title: "Principal Employer Liability & GST/Subsidy Risk",
+    cards: [
+      {
+        title: "BBN PE Shield for Anchor Units",
+        content:
+          "Anchor factories face joint liability if even one manpower contractor defaults. In 2025, contractor non-compliance can stall GST refunds and state industrial subsidies.",
+      },
+      {
+        title: "Digital Contractor Auditing",
+        content:
+          "We implement real-time contractor compliance tracking to ensure zero-defect PF/ESI filings across Nalagarh and Barotiwala vendor ecosystems.",
+      },
+    ],
+  },
+  {
+    title: "Hazardous Process & ESIC Safety Net",
+    cards: [
+      {
+        title: "ESIC from Employee #1",
+        content:
+          "API, chemical, and formulation units are classified as hazardous. ESIC coverage is mandatory from the first employee to shield owners from high-value accident and disability claims.",
+      },
+      {
+        title: "Accident Data Cross-Verification",
+        content:
+          "ESIC Hospital Baddi now cross-verifies industrial accident records with ESI registration data, triggering penalties and inspections for uncovered units.",
+      },
+    ],
+  },
+];
+
+export const faqBaddi = [
+  {
+    question: "Does my unit in Nalagarh fall under SRO Baddi or RO Shimla?",
+    answer:
+      "All establishments in the Baddi-Barotiwala-Nalagarh (BBN) corridor fall under the jurisdiction of Sub-Regional Office (SRO) Baddi.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for an API unit in Baddi with only 6 employees?",
+    answer:
+      "Yes. Pharmaceutical and chemical manufacturing units are classified as hazardous processes, requiring ESIC coverage from employee #1 under the 2025 framework.",
+  },
+  {
+    question: "What is the risk of headcount mismatch for BBN vendors?",
+    answer:
+      "Critical. SRO Baddi uses GST turnover and electricity-consumption analytics to estimate manpower. Large mismatches trigger automated Section 7A inquiries.",
+  },
+  {
+    question: "How does EEC-2025 help Baddi MSMEs?",
+    answer:
+      "EEC-2025 allows MSMEs to regularize past workers for ₹100 per employee, which is essential for retaining state industrial subsidies and avoiding 14B damages.",
+  },
+];
+export const heroDataSirmaur = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for the Sirmaur Industrial Belt",
+  description:
+    "Late-2025 enforcement in Paonta Sahib and Kala Amb is driven by hazardous-process ESIC mandates, pharma wage-code audits, and inter-state labour PE liability.",
+};
+
+export const sectionsSirmaur = [
+  {
+    title: "Hazardous Process ESIC Enforcement (Kala Amb)",
+    cards: [
+      {
+        title: "ESIC from Employee #1",
+        content:
+          "Steel rolling, chemical processing, and paper units in Kala Amb are classified as hazardous processes. ESIC is mandatory from the first employee, overriding the old 10-worker threshold.",
+      },
+      {
+        title: "Legacy Unit Audit Risk",
+        content:
+          "Many Kala Amb units still operate on outdated coverage assumptions. In 2025, SRO-led inspections are issuing immediate ESIC back-dated demands and accident-liability notices.",
+      },
+    ],
+  },
+  {
+    title: "Pharma Wage Code & Allowance Scrutiny (Paonta Sahib)",
+    cards: [
+      {
+        title: "50% Wage Rule Enforcement",
+        content:
+          "RO Shimla is auditing pharma payrolls to ensure Basic + DA is at least 50% of Gross Salary. Production and performance allowances are under specific scrutiny.",
+      },
+      {
+        title: "MR & Factory Staff Coverage",
+        content:
+          "Medical Representatives and contract manufacturing staff are being reclassified for PF contribution purposes, increasing retrospective liability exposure.",
+      },
+    ],
+  },
+  {
+    title: "Inter-State Labour & PE Liability",
+    cards: [
+      {
+        title: "Cross-Border Workforce Risk",
+        content:
+          "Large sections of the Sirmaur workforce commute from Haryana (Naraingarh) and Uttarakhand (Vikasnagar). PF/ESI data is now cross-verified with ISMW records.",
+      },
+      {
+        title: "Contractor Reconciliation",
+        content:
+          "Mismatch between labour department filings and EPF ECRs triggers Section 7A inquiries and PE liability notices for anchor units.",
+      },
+    ],
+  },
+];
+
+export const faqSirmaur = [
+  {
+    question:
+      "Which EPFO office handles compliance for Paonta Sahib and Kala Amb?",
+    answer:
+      "Overall jurisdiction lies with Regional Office (RO) Shimla, while much of the on-ground enforcement and inspections are coordinated through the SRO Baddi ecosystem.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for a small chemical unit in Kala Amb with 7 workers?",
+    answer:
+      "Yes. Chemical and metal processing units are hazardous processes, requiring ESIC coverage from employee #1 under the 2025 enforcement framework.",
+  },
+  {
+    question:
+      "What is the risk of hiring day-wage labour from neighboring states?",
+    answer:
+      "High. Inter-state labour data is digitally cross-verified with PF/ESI filings. Any omission can trigger automated Section 7A inquiries and labour department action.",
+  },
+  {
+    question: "How does EEC-2025 help Paonta Sahib industrial units?",
+    answer:
+      "EEC-2025 allows units to regularize past unregistered workers for ₹100 per employee, which is critical for retaining GST reimbursements and state incentive eligibility.",
+  },
+];
+export const heroDataHP = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Himachal’s Agri-FMCG & Tourism Hubs",
+  description:
+    "Late-2025 enforcement in Una, Kangra, and Himachal’s hill districts is driven by seasonal labour audits, tourism formalization, and agro-industrial incentive linkage.",
+};
+
+export const sectionsHP = [
+  {
+    title: "FMCG & Food Processing Compliance (Una – Tahliwal Belt)",
+    cards: [
+      {
+        title: "Seasonal Labour Headcount Audits",
+        content:
+          "FMCG and food-processing units in Tahliwal and Mehatpur rely heavily on peak-season labour. SRO Dharamshala is cross-verifying production volumes with PF ECR headcounts.",
+      },
+      {
+        title: "EEC-2025 Regularization Window",
+        content:
+          "EEC-2025 is the final opportunity for Una-based food units to regularize casual and contract workers for ₹100 per employee, preventing retrospective PF/ESI liabilities.",
+      },
+    ],
+  },
+  {
+    title: "Border MSMEs & ISMW Risk (Kangra – Damtal Corridor)",
+    cards: [
+      {
+        title: "Inter-State Migrant Workmen Compliance",
+        content:
+          "Units in Damtal and Sansarpur Terrace frequently hire labour from Punjab districts. ISMW registration must match PF/ESI filings to avoid cross-border audit notices.",
+      },
+      {
+        title: "Engineering & Electrical MSME Exposure",
+        content:
+          "Small engineering and electrical units face PE-style liability when contractors default, especially during short-term production spikes.",
+      },
+    ],
+  },
+  {
+    title: "Tourism & Hospitality Formalization (Shimla, Kullu, Manali)",
+    cards: [
+      {
+        title: "Gratuity & Maternity Benefit Scrutiny",
+        content:
+          "Under the Social Security Code 2025, hotels and resorts are under audit for gratuity eligibility, maternity benefits, and correct classification of seasonal staff.",
+      },
+      {
+        title: "Factory vs Establishment Classification",
+        content:
+          "Use of power in kitchens, laundries, or spas can classify resorts as factories, triggering ESIC obligations at lower thresholds.",
+      },
+    ],
+  },
+];
+
+export const faqHP = [
+  {
+    question:
+      "Which EPFO office handles compliance for Una and Kangra districts?",
+    answer:
+      "Una and Kangra fall under the jurisdiction of the Sub-Regional Office (SRO) Dharamshala, which specializes in compliance for the Kangra division.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for a small resort in Manali with 10 employees?",
+    answer:
+      "Yes. As of late 2025, ESIC applies at 10 employees. If power is used in kitchens or laundries, the unit may be classified as a factory, increasing compliance obligations.",
+  },
+  {
+    question:
+      "What is the risk of headcount mismatch for Una-based FMCG vendors?",
+    answer:
+      "High. Major FMCG brands cross-verify security gate data with PF ECR filings. Any mismatch can result in invoice holds or contract suspension.",
+  },
+  {
+    question: "How does the 50% Wage Rule affect hotels in Shimla?",
+    answer:
+      "Hotels must ensure Basic + DA equals at least 50% of Gross Salary. Service charges and tips are being scrutinized to prevent suppression of PF contributions.",
+  },
+];
+export const heroDataKochi = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Kochi’s IT & Industrial Powerhouse",
+  description:
+    "Late-2025 enforcement in Ernakulam is driven by IT wage-code audits, maritime PE liability, KINFRA hazardous-process scrutiny, and Kerala welfare-board reconciliation.",
+};
+
+export const sectionsKochi = [
+  {
+    title: "IT & ITeS Wage-Code Audits (Kakkanad – InfoPark & SmartCity)",
+    cards: [
+      {
+        title: "50% Wage Rule Enforcement",
+        content:
+          "RO Kochi is strictly auditing allowance-heavy CTCs in IT and ITeS firms. Variable pay, performance bonuses, and flexible benefit plans must not suppress the PF contribution base below 50% of gross salary.",
+      },
+      {
+        title: "Junior Staff & ESIC Threshold Risk",
+        content:
+          "Many IT firms fail to track employees who temporarily fall below the ESIC wage ceiling. Non-registration of support staff and fresh hires is a major notice trigger in 2025.",
+      },
+    ],
+  },
+  {
+    title: "Maritime, Refinery & PE Liability (Port & Shipyard Vendors)",
+    cards: [
+      {
+        title: "Principal Employer Invoice Blocking",
+        content:
+          "Cochin Port, BPCL Kochi Refinery, and Cochin Shipyard mandate real-time PF/ESI verification before releasing contractor invoices. Any vendor default creates joint liability for the anchor unit.",
+      },
+      {
+        title: "Automated Vendor Compliance",
+        content:
+          "We implement digital vendor audits and site-specific sub-code validation to ensure zero-defect compliance for maritime and refinery contractors.",
+      },
+    ],
+  },
+  {
+    title: "KINFRA, CSEZ & Hazardous Process ESIC",
+    cards: [
+      {
+        title: "ESIC from Employee #1",
+        content:
+          "Units in KINFRA Hi-Tech Park (Kalamassery) and CSEZ often qualify as hazardous due to chemical handling or precision manufacturing, requiring ESIC coverage from the first employee.",
+      },
+      {
+        title: "Export & Incentive Linkage",
+        content:
+          "Non-compliance can lead to suspension of KINFRA land allotments, SEZ benefits, and KSIDC incentives during inspections.",
+      },
+    ],
+  },
+  {
+    title: "Kerala Welfare Fund Board (WWFB) Reconciliation Risk",
+    cards: [
+      {
+        title: "PF vs Welfare Board Mismatch",
+        content:
+          "Kerala cross-verifies welfare fund contributions with EPF ECR data. Any headcount mismatch can trigger a joint inspection involving EPFO and the State Labour Department.",
+      },
+    ],
+  },
+];
+
+export const faqKochi = [
+  {
+    question:
+      "Which EPFO office handles compliance for companies in Kakkanad and InfoPark?",
+    answer:
+      "All establishments in Ernakulam district fall under the jurisdiction of the Regional Office (RO) Kochi, located at Kaloor.",
+  },
+  {
+    question: "Is ESIC mandatory for a startup in SmartCity with 12 employees?",
+    answer:
+      "Yes. In Kerala, ESIC applies from 10 employees. If any employee earns below the wage ceiling (₹21,000), registration and monthly filing are compulsory.",
+  },
+  {
+    question: "What is the risk of Kerala Welfare Fund Board vs PF mismatch?",
+    answer:
+      "High. In 2025, the state cross-verifies welfare fund payments with PF filings. Any discrepancy in worker count can lead to joint inspections and back-dated demands.",
+  },
+  {
+    question: "How can Kochi firms use the EEC-2025 Scheme?",
+    answer:
+      "EEC-2025 allows Kochi-based firms to regularize missed employees from prior years for a nominal ₹100 penalty, which is critical for maintaining KINFRA and KSIDC approvals.",
+  },
+];
+export const heroDataTrivandrum = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Thiruvananthapuram’s IT & Space-Tech Powerhouse",
+  description:
+    "Late-2025 enforcement in Thiruvananthapuram is driven by Technopark wage-code audits, space-tech and electronics hazardous-process ESIC mandates, KINFRA vendor compliance, and white-collar payroll scrutiny under RO Trivandrum.",
+};
+
+export const sectionsTrivandrum = [
+  {
+    title: "Technopark Wage-Code Audits (Phases I–IV)",
+    cards: [
+      {
+        title: "50% Wage Rule Enforcement",
+        content:
+          "RO Thiruvananthapuram is strictly auditing allowance-heavy salary structures in Technopark companies. Flexible benefit plans and variable pay must not reduce the PF contribution base below 50% of gross salary under the Social Security Code 2025.",
+      },
+      {
+        title: "White-Collar ESIC Tracking Risk",
+        content:
+          "Junior developers, support staff, and contract engineers often fall below the ESIC wage ceiling. Non-registration of such employees is a major notice trigger in 2025.",
+      },
+    ],
+  },
+  {
+    title: "Space-Tech, Defense & Hazardous Process ESIC",
+    cards: [
+      {
+        title: "ESIC from Employee #1",
+        content:
+          "Electronics assembly, aerospace components, and precision manufacturing units serving VSSC (ISRO) and KSpace are classified as hazardous processes, requiring ESIC coverage from the first employee.",
+      },
+      {
+        title: "Defense Vendor Compliance",
+        content:
+          "Non-compliance by small vendors can result in blacklisting or suspension from PSU and defense procurement panels.",
+      },
+    ],
+  },
+  {
+    title: "KINFRA Video Park & Creative Industry Payroll Risks",
+    cards: [
+      {
+        title: "Freelancer to Employee Misclassification",
+        content:
+          "Project-based workers, animators, and VFX artists are often treated as freelancers. RO Trivandrum treats long-term project staff as employees for PF/ESI purposes.",
+      },
+      {
+        title: "Gig-Worker Compliance Mapping",
+        content:
+          "We implement structured onboarding to ensure creative professionals are correctly mapped under EPF and ESIC, avoiding retrospective liabilities.",
+      },
+    ],
+  },
+  {
+    title: "State Subsidy & Employment Data Reconciliation",
+    cards: [
+      {
+        title: "Employment Exchange vs PF Cross-Verification",
+        content:
+          "Kerala cross-verifies Employment Exchange data with EPF ECR filings. Any mismatch can lead to suspension of Technopark or KINFRA incentives.",
+      },
+    ],
+  },
+];
+
+/* ============================
+   FAQ
+============================ */
+export const faqTrivandrum = [
+  {
+    question:
+      "Which EPFO office handles compliance for Technopark Phase III and IV?",
+    answer:
+      "All IT and industrial units in Thiruvananthapuram district fall under the jurisdiction of the Regional Office (RO) Thiruvananthapuram, located at Pattom.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for an electronics startup with only 9 employees?",
+    answer:
+      "Yes. Electronics and hardware assembly units are classified as hazardous processes in Kerala, making ESIC mandatory from employee #1 under the 2025 guidelines.",
+  },
+  {
+    question: "How does local employment reporting align with PF filings?",
+    answer:
+      "Employment Exchange and state labor data are cross-verified with EPF ECR filings. Any discrepancy can result in suspension of KINFRA or Technopark-linked benefits.",
+  },
+  {
+    question: "What is the benefit of EEC-2025 for Trivandrum startups?",
+    answer:
+      "EEC-2025 allows startups to regularize past employees for a nominal ₹100 penalty, which is critical during Series A/B funding due diligence and statutory audits.",
+  },
+];
+export const heroDataKeralaBalance = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Kerala’s Regional Industrial Hubs",
+  description:
+    "Late-2025 enforcement across Kozhikode, Kollam, and Thrissur is driven by IT wage-code audits at Cyberpark, cashew and coir sector formalization, hazardous-process ESIC mandates, gold and retail PE liability, and Kerala welfare-board reconciliation.",
+};
+
+export const sectionsKeralaBalance = [
+  {
+    title: "IT & Startup Wage-Code Audits (Kozhikode & Malappuram)",
+    cards: [
+      {
+        title: "50% Wage Rule Enforcement",
+        content:
+          "RO Kozhikode is strictly auditing allowance-heavy CTC structures in Cyberpark startups. Basic + DA must form at least 50% of gross salary to prevent PF suppression.",
+      },
+      {
+        title: "EEC-2025 for F&B & Tech Units",
+        content:
+          "Food & Beverage businesses and startups can regularize missed staff for a ₹100 penalty under EEC-2025, avoiding retrospective 14B damages.",
+      },
+    ],
+  },
+  {
+    title: "Cashew, Coir & Maritime Compliance (Kollam & Alappuzha)",
+    cards: [
+      {
+        title: "Piece-Rate to Continuous PF Coverage",
+        content:
+          "RO Kollam is focusing on seasonal cashew workers. Piece-rate and intermittent employment must still reflect continuous PF contributions under the 2025 code.",
+      },
+      {
+        title: "Hazardous Process ESIC Mandate",
+        content:
+          "Cashew shell liquid processing and allied units are classified as hazardous, requiring ESIC coverage from the first employee.",
+      },
+    ],
+  },
+  {
+    title: "Gold, Retail & NBFC PE Liability (Thrissur)",
+    cards: [
+      {
+        title: "Jewellery Manufacturing ESIC Coverage",
+        content:
+          "Small and mid-sized gold manufacturing units in Thrissur are being brought under ESIC due to workplace safety and chemical exposure risks.",
+      },
+      {
+        title: "Retail & NBFC Contractor Liability",
+        content:
+          "Large retail chains and NBFCs face Principal Employer liability for outsourced security and sales staff, with invoice blocking becoming common in audits.",
+      },
+    ],
+  },
+  {
+    title: "Kerala Welfare Fund Board (WWFB) Reconciliation",
+    cards: [
+      {
+        title: "PF vs Welfare Board Mismatch",
+        content:
+          "The Kerala government cross-verifies Cashew, Coir, and other welfare fund payments with EPF ECR data. Headcount mismatches can trigger joint EPFO–State inspections.",
+      },
+    ],
+  },
+];
+export const faqKeralaBalance = [
+  {
+    question:
+      "Which EPFO office handles compliance for Kozhikode and Malappuram?",
+    answer:
+      "Establishments in Kozhikode and Malappuram fall under the jurisdiction of the Regional Office (RO) Kozhikode, located at Eranhipalam.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for a retail jewelry shop in Thrissur with 11 employees?",
+    answer:
+      "Yes. In Kerala, ESIC applies from 10 employees. Retail jewelry and manufacturing units must register and file ESIC if the threshold is crossed.",
+  },
+  {
+    question: "What is the welfare fund mismatch risk for Kollam cashew units?",
+    answer:
+      "High. Cashew and coir welfare fund contributions are cross-verified with EPF filings. Any mismatch in worker count can lead to joint audits and backdated demands.",
+  },
+  {
+    question: "How does the 50% Wage Rule affect Kozhikode startups?",
+    answer:
+      "Startups must ensure Basic + DA forms at least 50% of gross salary. RO Kozhikode is auditing allowance-heavy CTC structures common in tech companies.",
   },
 ];

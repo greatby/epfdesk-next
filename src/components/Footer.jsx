@@ -1127,19 +1127,19 @@ export default function Footer() {
                   slug: "jharsuguda-epf-esic-compliance",
                 },
                 {
-                  label: "Jajpur (Kalinganagar) EPF & ESIC",
+                  label: "Jajpur (Kalinganagar) EPF & ESIC Compliance",
                   slug: "jajpur-epf-esic-compliance",
                 },
                 {
-                  label: "Keonjhar Mining EPF & ESIC",
+                  label: "Keonjhar Mining EPF & ESIC Compliance",
                   slug: "keonjhar-epf-esic-compliance",
                 },
                 {
-                  label: "Bhubaneswar (Khordha) EPF & ESIC",
+                  label: "Bhubaneswar (Khordha) EPF & ESIC Compliance",
                   slug: "khordha-bhubaneswar-epf-esic-compliance",
                 },
                 {
-                  label: "Rourkela (Sundargarh) EPF & ESIC",
+                  label: "Rourkela (Sundargarh) EPF & ESIC Compliance",
                   slug: "sundargarh-rourkela-epf-esic-compliance",
                 },
                 {
@@ -1147,7 +1147,7 @@ export default function Footer() {
                   slug: "angul-epf-esic-compliance",
                 },
                 {
-                  label: "Paradip (Jagatsinghpur) EPF & ESIC",
+                  label: "Paradip (Jagatsinghpur) EPF & ESIC Compliance",
                   slug: "jagatsinghpur-paradip-epf-esic-compliance",
                 },
                 {
@@ -1155,7 +1155,7 @@ export default function Footer() {
                   slug: "balasore-epf-esic-compliance",
                 },
                 {
-                  label: "Ganjam (Berhampur & Gopalpur) EPF & ESIC",
+                  label: "Ganjam (Berhampur & Gopalpur) EPF & ESIC Compliance",
                   slug: "ganjam-berhampur-gopalpur-epf-esic-compliance",
                 },
                 {
@@ -1167,24 +1167,148 @@ export default function Footer() {
                   slug: "howrah-epf-esic-compliance",
                 },
                 {
-                  label: "Kharagpur (Paschim Medinipur) EPF & ESIC",
+                  label: "Kharagpur (Paschim Medinipur) EPF & ESIC Compliance",
                   slug: "kharagpur-epf-esic-compliance",
                 },
                 {
-                  label: "Durgapur EPF & ESIC",
+                  label: "Durgapur EPF & ESIC Compliance",
                   slug: "durgapur-asansol-epf-esic-compliance",
                 },
                 {
-                  label: "Haldia EPF & ESIC",
+                  label: "Haldia EPF & ESIC Compliance",
                   slug: "haldia-epf-esic-compliance",
                 },
                 {
-                  label: "North 24 parganas EPF & ESIC",
+                  label: "North 24 parganas EPF & ESIC Compliance",
                   slug: "north-24-parganas-epf-esic-compliance",
                 },
                 {
-                  label: "West Bengal EPF & ESIC",
+                  label: "West Bengal EPF & ESIC Compliance",
                   slug: "west-bengal-epf-esic-compliance",
+                },
+                {
+                  label: "Bokaro EPF & ESIC Compliance",
+                  slug: "bokaro-epf-esic-compliance",
+                },
+                {
+                  label: "Dhanbad EPF & ESIC Compliance",
+                  slug: "dhanbad-epf-esic-compliance",
+                },
+                {
+                  label: "Jamshedpur EPF & ESIC Compliance",
+                  slug: "jamshedpur-epf-esic-compliance",
+                },
+                {
+                  label: "Jharkand districts EPF & ESIC Compliance",
+                  slug: "jharkhand-balance-districts-epf-esic-compliance",
+                },
+                {
+                  label: "Ranchi EPF & ESIC Compliance",
+                  slug: "ranchi-epf-esic-compliance",
+                },
+                {
+                  label: "Patna EPF & ESIC Compliance",
+                  slug: "patna-epf-esic-compliance",
+                },
+                {
+                  label: "Begusarai EPF & ESIC Compliance",
+                  slug: "begusarai-epf-esic-compliance",
+                },
+                {
+                  label: "Muzaffarpur EPF & ESIC",
+                  slug: "muzaffarpur-epf-esic-compliance",
+                },
+                {
+                  label: "Bihar districts EPF & ESIC Compliance",
+                  slug: "bihar-balance-districts-epf-esic-compliance",
+                },
+                {
+                  label: "Gurugram EPF & ESIC Compliance",
+                  slug: "gurugram-epf-esic-compliance",
+                },
+                {
+                  label: "Faridabad EPF & ESIC Compliance",
+                  slug: "faridabad-epf-esic-compliance",
+                },
+                {
+                  label: "Panipat EPF & ESIC Compliance",
+                  slug: "panipat-epf-esic-compliance",
+                },
+                {
+                  label: "Jhajjar EPF & ESIC Compliance",
+                  slug: "jhajjar-epf-esic-compliance",
+                },
+                {
+                  label: "Haryana districts EPF & ESIC Compliance",
+                  slug: "haryana-balance-districts-epf-esic-compliance",
+                },
+                {
+                  label: "Ludiana EPF & ESIC Compliance",
+                  slug: "ludhiana-epf-esic-compliance",
+                },
+                {
+                  label: "Jalandhar EPF & ESIC Compliance",
+                  slug: "jalandhar-epf-esic-compliance",
+                },
+                {
+                  label: "Mohali EPF & ESIC Compliance",
+                  slug: "mohali-epf-esic-compliance",
+                },
+                {
+                  label: "Punjab districts EPF & ESIC Compliance",
+                  slug: "punjab-balance-districts-epf-esic-compliance",
+                },
+                {
+                  label: "Guwahati EPF & ESIC Compliance",
+                  slug: "guwahati-epf-esic-compliance",
+                },
+                {
+                  label: "Sikkim EPF & ESIC Compliance",
+                  slug: "sikkim-epf-esic-compliance",
+                },
+                {
+                  label: "Meghalaya EPF & ESIC Compliance",
+                  slug: "meghalaya-epf-esic-compliance",
+                },
+                {
+                  label: "Northeast India EPF & ESIC Compliance",
+                  slug: "northeast-india-epf-esic-compliance",
+                },
+                {
+                  label: "Haridwar EPF & ESIC Compliance",
+                  slug: "haridwar-epf-esic-compliance",
+                },
+                {
+                  label: "Pantnagar EPF & ESIC Compliance",
+                  slug: "pantnagar-epf-esic-compliance",
+                },
+                {
+                  label: "Uttarakand hill districts EPF & ESIC Compliance",
+                  slug: "uttarakhand-hill-districts-epf-esic-compliance",
+                },
+                {
+                  label: "Baddi EPF & ESIC Compliance",
+                  slug: "baddi-epf-esic-compliance",
+                },
+                {
+                  label: "Paonta Sahib Kala AMB EPF & ESIC Compliance",
+                  slug: "paonta-sahib-kala-amb-epf-esic-compliance",
+                },
+                {
+                  label: "Himachal districts EPF & ESIC Compliance",
+                  slug: "himachal-final-balance-epf-esic-compliance",
+                },
+                {
+                  label: "Kochi EPF & ESIC Compliance",
+                  slug: "kochi-ernakulam-epf-esic-compliance",
+                },
+                {
+                  label: "Thiruvananthapuram EPF & ESIC Compliance",
+                  slug: "thiruvananthapuram-epf-esic-compliance",
+                },
+                {
+                  label: "Kerala EPF & ESIC Compliance",
+                  slug: "kerala-balance-epf-esic-compliance",
                 },
               ],
             },
