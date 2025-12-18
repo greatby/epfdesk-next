@@ -37228,3 +37228,327 @@ export const faqKharagpur = [
       "Effective late 2025, Basic + DA must be at least 50% of Gross Salary, preventing suppression of PF and ESIC contributions through excessive allowances.",
   },
 ];
+export const heroDataPaschimBardhaman = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for the Asansol–Durgapur Industrial Belt",
+  description:
+    "The Asansol–Durgapur belt is a high-scrutiny PSU-driven industrial zone where PF and ESIC defaults can result in immediate blacklisting from steel and coal tenders.",
+};
+
+export const sectionsPaschimBardhaman = [
+  {
+    title: "PSU Vendor Compliance & Site-Specific Code Enforcement",
+    cards: [
+      {
+        title: "SAIL, DSP & ECL Contractor Audits",
+        content:
+          "Contractors serving Durgapur Steel Plant (DSP), IISCO (Asansol), and Eastern Coalfields (ECL) are evaluated on monthly digital compliance scores. RO Durgapur strictly enforces site-specific PF codes; using a Kolkata central code often results in PSU payment freezes.",
+      },
+      {
+        title: "Immediate Tender & Billing Risk",
+        content:
+          "Even minor PF or ESIC mismatches can trigger bill holds, debarment from future tenders, and retrospective Section 7A assessments.",
+      },
+    ],
+  },
+  {
+    title: "EEC-2025 Amnesty for Coal & Steel Ancillaries",
+    cards: [
+      {
+        title: "Mining & Metal Amnesty Window",
+        content:
+          "The Employees’ Enrolment Campaign 2025 is active until April 30, 2026. Contractors can regularize workers missed since 2017 with a nominal ₹100 penalty, avoiding crippling 14B damages common in Paschim Bardhaman.",
+      },
+      {
+        title: "Audit Shield for PSU Vendors",
+        content:
+          "EEC-2025 registration provides clean compliance certificates essential for continued eligibility in SAIL, ECL, and NTPC vendor panels.",
+      },
+    ],
+  },
+  {
+    title: "Hazardous Process ESIC Mandate (2025)",
+    cards: [
+      {
+        title: "Sponge Iron, Rolling Mills & Coal Handling",
+        content:
+          "Units in Raniganj and Jamuria belts are classified as hazardous processes. ESIC coverage is mandatory from the first employee, regardless of total headcount.",
+      },
+      {
+        title: "Industrial Accident Liability Protection",
+        content:
+          "Full ESIC compliance transfers high-cost medical and disability liabilities from the employer to the ESI Corporation, a critical safeguard in coal and steel operations.",
+      },
+    ],
+  },
+];
+
+export const faqPaschimBardhaman = [
+  {
+    question:
+      "Which EPFO office governs establishments in Asansol and Raniganj?",
+    answer:
+      "Most industrial units in Paschim Bardhaman are administered by the Regional Office (RO) Durgapur, which handles audits for steel, coal, and heavy manufacturing sectors.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for coal-handling contractors with only 5 workers?",
+    answer:
+      "Yes. Under the 2025 hazardous process notifications, coal and metal-handling units require ESIC from the first employee to mitigate high accident liability risks.",
+  },
+  {
+    question:
+      "What happens if a Kolkata PF code is used for a Durgapur project?",
+    answer:
+      "High risk. PSUs like SAIL and ECL demand site-specific PF codes. Using a generic code can result in bill blocks and Section 7A inquiries.",
+  },
+  {
+    question:
+      "How does the 50% Wage Rule impact factory workers in Raniganj?",
+    answer:
+      "From late 2025, Basic + DA must constitute at least 50% of Gross Salary. This rule is being strictly audited to prevent suppression of PF and ESIC contributions.",
+  },
+];
+export const heroDataHaldia = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for Haldia’s Maritime & Petrochemical Hub",
+  description:
+    "Compliance in Haldia is high-stakes due to hazardous petrochemical processes, port operations, and the massive scale of contractual labor.",
+};
+
+export const sectionsHaldia = [
+  {
+    title: "Hazardous Process ESIC Mandate (2025)",
+    cards: [
+      {
+        title: "Petrochemical & Refinery Units",
+        content:
+          "Under late-2025 notifications, nearly all units in the Haldia Industrial Area are classified as hazardous processes. ESIC coverage is mandatory from the first employee, protecting employers from multi-crore accident and medical liabilities.",
+      },
+      {
+        title: "RO Haldia Strict Enforcement",
+        content:
+          "RO Haldia actively audits hazardous process declarations to ensure employers cannot evade ESIC obligations through headcount manipulation.",
+      },
+    ],
+  },
+  {
+    title: "Port, Refinery & PSU Vendor Compliance",
+    cards: [
+      {
+        title: "IOCL, HPL & Port Trust Audits",
+        content:
+          "Contractors serving IOCL, HPL, and the Haldia Dock Complex are subject to Statutory Green-Channel billing. Any PF or ESIC mismatch immediately blocks payments.",
+      },
+      {
+        title: "Site-Specific PF Code Management",
+        content:
+          "We implement site-specific PF code structures aligned with gate-pass and attendance systems, ensuring contractor bills are never held due to compliance mismatches.",
+      },
+    ],
+  },
+  {
+    title: "EEC-2025 Amnesty for Logistics & Stevedoring",
+    cards: [
+      {
+        title: "Daily-Wage Labour Regularization",
+        content:
+          "The Employees’ Enrolment Campaign 2025 allows logistics and port-handling firms to register workers missed since 2017 with a nominal ₹100 penalty.",
+      },
+      {
+        title: "Protection from 100% Damages",
+        content:
+          "Using EEC-2025 shields employers from the 100% penal damages routinely imposed by RO Haldia during retrospective PF audits.",
+      },
+    ],
+  },
+];
+
+export const faqHaldia = [
+  {
+    question:
+      "Which EPFO office governs companies in Haldia and Tamluk?",
+    answer:
+      "Most industrial establishments in Purba Medinipur district are administered by the Regional Office (RO) Haldia.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for a logistics vendor with only 8 workers in Haldia?",
+    answer:
+      "Yes. As a notified hazardous petrochemical zone, ESIC is mandatory from the first employee under the late-2025 updates.",
+  },
+  {
+    question:
+      "What is the risk of using a Kolkata PF code for an HPL Haldia project?",
+    answer:
+      "High. Major companies like HPL and IOCL require site-specific PF codes. Using a generic code leads to bill blocks and automated audit triggers.",
+  },
+  {
+    question:
+      "How does the 50% Wage Rule affect port-sector workers?",
+    answer:
+      "From late 2025, Basic + DA must be at least 50% of Gross Salary, preventing suppression of PF contributions through transport or hardship allowances.",
+  },
+];
+export const heroDataNorth24Parganas = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for North 24 Parganas IT & Industrial Corridor",
+  description:
+    "North 24 Parganas is a hybrid compliance zone where high-value IT services coexist with legacy manufacturing and large-scale logistics operations.",
+};
+
+export const sectionsNorth24Parganas = [
+  {
+    title: "IT & ITeS Wage Structure Audits (Sector V)",
+    cards: [
+      {
+        title: "50% Wage Rule Enforcement",
+        content:
+          "With the New Labour Code 2025 fully integrated, RO Kolkata is actively auditing IT and ITeS companies in Salt Lake Sector V to ensure Basic + DA forms at least 50% of total CTC.",
+      },
+      {
+        title: "High-CTC Payroll Restructuring",
+        content:
+          "We restructure allowance-heavy IT salary models to meet statutory norms without significantly increasing employer costs or destabilizing take-home pay.",
+      },
+    ],
+  },
+  {
+    title: "Barrackpore Industrial Legacy Defense",
+    cards: [
+      {
+        title: "BT Road Manufacturing Belt",
+        content:
+          "Legacy jute, engineering, and chemical units from Sodpur to Naihati face aggressive Section 7A and 14B proceedings by RO Barrackpore for historic arrears.",
+      },
+      {
+        title: "ESIC Amnesty 2025",
+        content:
+          "Eligible units can use the ESIC Amnesty 2025 to obtain damage waivers and clean compliance certificates before intensified enforcement cycles.",
+      },
+    ],
+  },
+  {
+    title: "Logistics & Principal Employer Liability",
+    cards: [
+      {
+        title: "Barasat & Madhyamgram Warehousing",
+        content:
+          "As a key logistics corridor for North Bengal trade, these zones employ thousands of contractual workers, making PE liability a major audit trigger.",
+      },
+      {
+        title: "Vendor Compliance Management",
+        content:
+          "We implement contractor compliance dashboards to ensure your vendors’ PF and ESIC defaults do not cascade into secondary liabilities for your business.",
+      },
+    ],
+  },
+];
+
+export const faqNorth24Parganas = [
+  {
+    question:
+      "Which EPFO office handles companies in Salt Lake Sector V?",
+    answer:
+      "Establishments in Sector V generally fall under the jurisdiction of Regional Office (RO) Kolkata, while most other areas of the district are managed by RO Barrackpore.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for a software startup in Sector V with 12 employees?",
+    answer:
+      "Yes. Establishments with 10 or more employees must register under ESIC. Under the 2025 Code, even remote employees may be covered under the same registration.",
+  },
+  {
+    question:
+      "What is the benefit of EEC-2025 for MSMEs in Barasat?",
+    answer:
+      "The Employees’ Enrolment Campaign 2025 allows MSMEs to regularize workers missed in the past 8 years with a nominal ₹100 penalty, cleaning records before future audits.",
+  },
+  {
+    question:
+      "How does the 50% Wage Rule affect IT professionals’ take-home pay?",
+    answer:
+      "While PF and ESIC contributions increase (improving long-term savings), monthly take-home may reduce slightly if the earlier structure relied heavily on allowances.",
+  },
+];
+export const heroDataWestBengal = {
+  title:
+    "Statutory EPF and ESIC Compliance & Consultancy for West Bengal’s Agri-Industrial & North Bengal Frontiers",
+  description:
+    "Late-2025 enforcement across West Bengal is driven by North Bengal logistics growth and intensified audits in agri-processing and tea-based industries.",
+};
+
+export const sectionsWestBengal = [
+  {
+    title: "North Bengal Gateway Compliance (Siliguri–Jalpaiguri)",
+    cards: [
+      {
+        title: "Tea Estates & Wage Definition Audits",
+        content:
+          "RO Jalpaiguri is closely scrutinizing tea gardens for correct wage calculation under the Social Security Code 2025, especially the treatment of in-kind benefits like housing and food for PF and ESIC purposes.",
+      },
+      {
+        title: "Siliguri Logistics & PE Liability",
+        content:
+          "The warehousing and transport boom has created massive Principal Employer liability for loading and unloading labour, triggering frequent PF and ESIC audits.",
+      },
+    ],
+  },
+  {
+    title: "Digital Compliance Transition for Tea Sector",
+    cards: [
+      {
+        title: "UAN-Linked Workforce Systems",
+        content:
+          "Legacy tea estates are being pushed to migrate from manual muster rolls to fully digital, UAN-linked systems to retain subsidy eligibility and avoid inspection penalties.",
+      },
+      {
+        title: "Migrant & Seasonal Worker Coverage",
+        content:
+          "Special focus is placed on enrolling migrant and casual workers to prevent retrospective liabilities during RO Jalpaiguri inspections.",
+      },
+    ],
+  },
+  {
+    title: "Central Agri-Industrial Belt Enforcement",
+    cards: [
+      {
+        title: "Hooghly, Nadia & Murshidabad MSMEs",
+        content:
+          "RO Kolkata and Howrah are using electricity and GST data mapping to identify ghost establishments, particularly in jute diversification and rice milling units.",
+      },
+      {
+        title: "Hazardous Process & Cold Storage Audits",
+        content:
+          "Chemical dye units in Nadia and mechanized cold storages are now required to implement ESIC from the first employee under the 2025 hazardous process mandates.",
+      },
+    ],
+  },
+];
+
+export const faqWestBengal = [
+  {
+    question:
+      "Which EPFO office governs establishments in Siliguri?",
+    answer:
+      "Most establishments in Siliguri and surrounding North Bengal districts are administered by the Regional Office (RO) Jalpaiguri.",
+  },
+  {
+    question:
+      "Is ESIC mandatory for rice mills in Hooghly with only 8 workers?",
+    answer:
+      "Yes. If the unit falls under hazardous processes due to mechanized dryers or chemical treatments, ESIC is mandatory from the first employee under 2025 rules.",
+  },
+  {
+    question:
+      "What is the benefit of EEC-2025 for tea garden owners?",
+    answer:
+      "EEC-2025 allows tea estates to regularize temporary and casual workers missed between 2017–2025 with a nominal ₹100 penalty, preventing severe 7A and 14B actions.",
+  },
+  {
+    question:
+      "How does the 50% Wage Rule affect MSMEs in Nadia and Murshidabad?",
+    answer:
+      "All MSMEs must ensure Basic + DA is at least 50% of Gross Salary. ROs are actively auditing allowance-heavy payrolls to detect contribution suppression.",
+  },
+];

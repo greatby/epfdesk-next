@@ -36,7 +36,7 @@ export default function CommunityGuidelines({ sections }) {
               {section.cards.map((card, idx) => (
                 <div
                   key={idx}
-                  className={`border rounded-2xl p-6 transition-all duration-300 hover:shadow-md ${card.color}`}
+                  className={`border rounded-2xl p-6 transition-all duration-300 hover:shadow-md border-gray-300`}
                 >
                   <h3 className="text-[1.4em] font-semibold text-[#001f1f] mb-3">
                     {card.title}

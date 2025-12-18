@@ -638,7 +638,6 @@ export default function Footer() {
                   label: "Ahmedabad EPF & ESIC Compliance",
                   slug: "ahmedabad-epf-esic-compliance",
                 },
-
                 {
                   label: "Chennai EPF & ESIC Compliance",
                   slug: "chennai-epf-esic-compliance",
@@ -731,7 +730,6 @@ export default function Footer() {
                   label: "Krishna EPF & ESIC Compliance",
                   slug: "krishna-epf-esic-compliance",
                 },
-
                 {
                   label: "Yadadri-Bhuvanagiri EPF & ESIC Compliance",
                   slug: "yadadri-bhuvanagiri-epf-esic-compliance",
@@ -1108,71 +1106,86 @@ export default function Footer() {
                   label: "UP Thrust Zones EPF & ESIC Compliance",
                   slug: "up-thrust-zones-epf-esic-compliance",
                 },
-                // {
-                //   label: "Korba EPF & ESIC Compliance",
-                //   slug: "korba-epf-esic-compliance",
-                // },
-                // {
-                //   label: "Raigarh EPF & ESIC Compliance",
-                //   slug: "raigarh-epf-esic-compliance",
-                // },
-               
-                // {
-                //   label: "Chhattisgarh Districts EPF & ESIC",
-                //   slug: "chhattisgarh-emerging-districts-epf-esic-compliance",
-                // },
-                // {
-                //   label: "Chhattisgarh New Districts EPF & ESIC",
-                //   slug: "chhattisgarh-new-districts-epf-esic-compliance",
-                // },
-                // {
-                //   label: "Jharsuguda EPF & ESIC Compliance",
-                //   slug: "jharsuguda-epf-esic-compliance",
-                // },
-                // {
-                //   label: "Jajpur (Kalinganagar) EPF & ESIC",
-                //   slug: "jajpur-epf-esic-compliance",
-                // },
-                // {
-                //   label: "Keonjhar Mining EPF & ESIC",
-                //   slug: "keonjhar-epf-esic-compliance",
-                // },
-                // {
-                //   label: "Bhubaneswar (Khordha) EPF & ESIC",
-                //   slug: "khordha-bhubaneswar-epf-esic-compliance",
-                // },
-                // {
-                //   label: "Rourkela (Sundargarh) EPF & ESIC",
-                //   slug: "sundargarh-rourkela-epf-esic-compliance",
-                // },
-                // {
-                //   label: "Angul EPF & ESIC Compliance",
-                //   slug: "angul-epf-esic-compliance",
-                // },
-                // {
-                //   label: "Paradip (Jagatsinghpur) EPF & ESIC",
-                //   slug: "jagatsinghpur-paradip-epf-esic-compliance",
-                // },
-                // {
-                //   label: "Balasore EPF & ESIC Compliance",
-                //   slug: "balasore-epf-esic-compliance",
-                // },
-                // {
-                //   label: "Ganjam (Berhampur & Gopalpur) EPF & ESIC",
-                //   slug: "ganjam-berhampur-gopalpur-epf-esic-compliance",
-                // },
-                // {
-                //   label: "Kolkata & Rajarhat EPF & ESIC Compliance",
-                //   slug: "kolkata-rajarhat-epf-esic-compliance",
-                // },
-                // {
-                //   label: "Howrah EPF & ESIC Compliance",
-                //   slug: "howrah-epf-esic-compliance",
-                // },
-                // {
-                //   label: "Kharagpur (Paschim Medinipur) EPF & ESIC",
-                //   slug: "kharagpur-epf-esic-compliance",
-                // },
+                {
+                  label: "Korba EPF & ESIC Compliance",
+                  slug: "korba-epf-esic-compliance",
+                },
+                {
+                  label: "Raigarh EPF & ESIC Compliance",
+                  slug: "raigarh-epf-esic-compliance",
+                },
+                {
+                  label: "Chhattisgarh Districts EPF & ESIC",
+                  slug: "chhattisgarh-emerging-districts-epf-esic-compliance",
+                },
+                {
+                  label: "Chhattisgarh New Districts EPF & ESIC",
+                  slug: "chhattisgarh-new-districts-epf-esic-compliance",
+                },
+                {
+                  label: "Jharsuguda EPF & ESIC Compliance",
+                  slug: "jharsuguda-epf-esic-compliance",
+                },
+                {
+                  label: "Jajpur (Kalinganagar) EPF & ESIC",
+                  slug: "jajpur-epf-esic-compliance",
+                },
+                {
+                  label: "Keonjhar Mining EPF & ESIC",
+                  slug: "keonjhar-epf-esic-compliance",
+                },
+                {
+                  label: "Bhubaneswar (Khordha) EPF & ESIC",
+                  slug: "khordha-bhubaneswar-epf-esic-compliance",
+                },
+                {
+                  label: "Rourkela (Sundargarh) EPF & ESIC",
+                  slug: "sundargarh-rourkela-epf-esic-compliance",
+                },
+                {
+                  label: "Angul EPF & ESIC Compliance",
+                  slug: "angul-epf-esic-compliance",
+                },
+                {
+                  label: "Paradip (Jagatsinghpur) EPF & ESIC",
+                  slug: "jagatsinghpur-paradip-epf-esic-compliance",
+                },
+                {
+                  label: "Balasore EPF & ESIC Compliance",
+                  slug: "balasore-epf-esic-compliance",
+                },
+                {
+                  label: "Ganjam (Berhampur & Gopalpur) EPF & ESIC",
+                  slug: "ganjam-berhampur-gopalpur-epf-esic-compliance",
+                },
+                {
+                  label: "Kolkata & Rajarhat EPF & ESIC Compliance",
+                  slug: "kolkata-rajarhat-epf-esic-compliance",
+                },
+                {
+                  label: "Howrah EPF & ESIC Compliance",
+                  slug: "howrah-epf-esic-compliance",
+                },
+                {
+                  label: "Kharagpur (Paschim Medinipur) EPF & ESIC",
+                  slug: "kharagpur-epf-esic-compliance",
+                },
+                {
+                  label: "Durgapur EPF & ESIC",
+                  slug: "durgapur-asansol-epf-esic-compliance",
+                },
+                {
+                  label: "Haldia EPF & ESIC",
+                  slug: "haldia-epf-esic-compliance",
+                },
+                {
+                  label: "North 24 parganas EPF & ESIC",
+                  slug: "north-24-parganas-epf-esic-compliance",
+                },
+                {
+                  label: "West Bengal EPF & ESIC",
+                  slug: "west-bengal-epf-esic-compliance",
+                },
               ],
             },
           ].map(({ title, list }) => (

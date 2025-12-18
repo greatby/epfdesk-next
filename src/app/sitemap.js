@@ -1605,5 +1605,29 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${base}/durgapur-asansol-epf-esic-compliance`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/haldia-epf-esic-compliance`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/north-24-parganas-epf-esic-compliance`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/west-bengal-epf-esic-compliance`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
   ];
 }
