@@ -286,7 +286,7 @@ export default function Footer() {
                   height={100}
                 />
 
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-row gap-3">
                   {[
                     {
                       label: "YOUTUBE",
@@ -314,10 +314,10 @@ export default function Footer() {
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 border border-gray-200 rounded-full px-5 py-3 text-sm justify-center hover:bg-gray-50"
+                      className="flex gap-3 text-sm hover:bg-gray-50"
                     >
                       <Icon />
-                      <span>{label}</span>
+                      {/* <span>{label}</span> */}
                     </a>
                   ))}
                 </div>
