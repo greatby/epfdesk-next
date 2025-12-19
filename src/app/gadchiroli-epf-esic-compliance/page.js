@@ -30,12 +30,10 @@ export const metadata = {
     "LWE area labour compliance",
   ],
   alternates: {
-    canonical:
-      "https://epfdesk.com/gadchiroli-epf-esic-compliance",
+    canonical: "https://epfdesk.com/gadchiroli-epf-esic-compliance",
   },
   openGraph: {
-    title:
-      "Gadchiroli EPF & ESIC Compliance | Forest & LWE Contractors",
+    title: "Gadchiroli EPF & ESIC Compliance | Forest & LWE Contractors",
     description:
       "EPF & ESIC compliance for Gadchiroli forest contractors, mining projects and LWE infrastructure works.",
     url: "https://epfdesk.com/gadchiroli-epf-esic-compliance",
@@ -60,17 +58,57 @@ const page = () => {
       ============================ */}
       <Head>
         <title>
-          Gadchiroli EPF & ESIC Compliance for Forest & LWE Projects | EPFDesk
+          Gadchiroli EPF & ESIC Compliance: Forest Contractors, Mining & LWE
+          Infrastructure Projects | EPFDesk
         </title>
 
         <meta
           name="description"
-          content="Expert EPF & ESIC defence for Gadchiroli forest contractors, Tendu leaf processing units, mining and LWE infrastructure projects."
+          content="EPF & ESIC compliance defence for Gadchiroli forest contractors, tendu leaf processing units, mining operations and LWE infrastructure projects. Contractor PF liability, remote-site ESIC coverage and inspections handled."
+        />
+
+        <meta
+          name="keywords"
+          content="Gadchiroli PF consultant, Gadchiroli ESIC consultant, forest contractor PF ESIC, tendu leaf labour compliance, mining PF ESIC Gadchiroli, LWE project labour laws, contractor PF liability Gadchiroli, NWC 2025 wage restructuring Gadchiroli"
         />
 
         <link
           rel="canonical"
           href="https://epfdesk.com/gadchiroli-epf-esic-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Gadchiroli EPF & ESIC Consultant | Forest, Mining & LWE Projects | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for Gadchiroli forest contractors, mining units and LWE infrastructure projects."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/gadchiroli-epf-esic-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Gadchiroli EPF & ESIC Compliance | Forest & LWE Projects | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="PF & ESIC services for Gadchiroli forest contractors, mining and LWE infrastructure projects — PF liability and audits handled."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
         />
       </Head>
 
@@ -85,14 +123,12 @@ const page = () => {
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
 
-            name:
-              "Gadchiroli EPF & ESIC Compliance Service | EPFDesk",
+            name: "Gadchiroli EPF & ESIC Compliance Service | EPFDesk",
             alternateName:
               "EPFDesk – Forest & Infrastructure Labour Law Consultants Gadchiroli",
 
             image: "https://epfdesk.com/images/logo.jpg",
-            url:
-              "https://epfdesk.com/gadchiroli-epf-esic-compliance",
+            url: "https://epfdesk.com/gadchiroli-epf-esic-compliance",
             telephone: "+91-9945933333",
 
             /* ✅ ADDRESS KEPT SAME AS BANGALORE */
@@ -137,15 +173,11 @@ const page = () => {
           CONTENT
       ============================ */}
       <FadeInWhenVisible>
-        <PerformanceSectionIndustry
-          data={heroDataGadchiroliDistrict}
-        />
+        <PerformanceSectionIndustry data={heroDataGadchiroliDistrict} />
       </FadeInWhenVisible>
 
       <FadeInWhenVisible>
-        <CodeOfConduct
-          sections={sectionsGadchiroliDistrict}
-        />
+        <CodeOfConduct sections={sectionsGadchiroliDistrict} />
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqGadchiroliDistrict} />

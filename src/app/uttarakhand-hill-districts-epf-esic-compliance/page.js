@@ -13,18 +13,32 @@ import { faqUKHills, heroDataUKHills, sectionsUKHills } from "@/utils/data";
 ============================ */
 export const metadata = {
   title:
-    "Dehradun & Hill Districts EPF ESIC Consultants: Pharma & MSME Experts | EPFDesk",
+    "Dehradun & Hill Districts EPF & ESIC Compliance: Selaqui Pharma, Hill MSMEs & PE Liability | EPFDesk",
+
   description:
-    "Specialized EPF & ESIC consultancy for Selaqui Pharma Hub, Dehradun IT firms, and Uttarakhand Hill MSMEs. Navigate RO Dehradun audits, EEC-2025, and hill subsidies.",
+    "High-risk EPF & ESIC compliance defence for Dehradun and Uttarakhand hill districts — Selaqui pharma manufacturers, Dehradun IT firms, wellness resorts, logistics gateways and hill MSMEs. Experts in RO Dehradun enforcement, EEC-2025 filings, contractor audits and Principal Employer liability.",
+
+  keywords: [
+    "Dehradun PF consultant",
+    "Dehradun ESIC consultant",
+    "Selaqui pharma PF ESIC compliance",
+    "Uttarakhand hill MSME labour compliance",
+    "Wellness resort PF ESIC Uttarakhand",
+    "RO Dehradun EPFO jurisdiction",
+    "Principal Employer liability Uttarakhand",
+    "EEC 2025 PF ESIC hill districts",
+  ],
+
   alternates: {
     canonical:
       "https://epfdesk.com/uttarakhand-hill-districts-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Uttarakhand Hill Districts EPF & ESIC Compliance | Dehradun Pharma & MSMEs",
+      "Dehradun & Hill Districts EPF & ESIC Compliance | Pharma & Hill MSMEs",
     description:
-      "Statutory PF & ESIC compliance for Dehradun Selaqui pharma units, hill MSMEs, wellness resorts, and logistics gateways.",
+      "PF & ESIC specialists for Selaqui pharma units, Dehradun IT firms, hill MSMEs, wellness resorts and logistics hubs across Uttarakhand.",
     url: "https://epfdesk.com/uttarakhand-hill-districts-epf-esic-compliance",
     images: [
       {
@@ -37,6 +51,15 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Dehradun & Hill Districts EPF & ESIC Compliance | Pharma & MSMEs | EPFDesk",
+    description:
+      "Expert PF & ESIC compliance for Dehradun Selaqui pharma units, hill MSMEs, wellness resorts and logistics contractors.",
+    images: ["https://epfdesk.com/images/logo.jpg"],
+  },
 };
 
 /* ============================
@@ -47,15 +70,57 @@ const page = () => {
     <>
       <Head>
         <title>
-          Dehradun & Hill Districts EPF ESIC Compliance | EPFDesk
+          Dehradun & Hill Districts EPF & ESIC Compliance: Selaqui Pharma, Hill
+          MSMEs & PE Liability | EPFDesk
         </title>
+
         <meta
           name="description"
-          content="PF & ESIC compliance consultants for Dehradun Selaqui pharma hub, hill MSMEs, wellness resorts, and Uttarakhand logistics gateways."
+          content="EPF & ESIC compliance defence for Dehradun and Uttarakhand hill districts — Selaqui pharma manufacturers, Dehradun IT firms, wellness resorts, logistics gateways and hill MSMEs. RO Dehradun audits, EEC-2025 filings and Principal Employer liability handled."
         />
+
+        <meta
+          name="keywords"
+          content="Dehradun PF consultant, Dehradun ESIC consultant, Selaqui pharma PF ESIC compliance, Uttarakhand hill MSME labour laws, wellness resort PF ESIC Uttarakhand, RO Dehradun EPFO jurisdiction, Principal Employer liability hill districts, EEC 2025 PF ESIC Uttarakhand"
+        />
+
         <link
           rel="canonical"
           href="https://epfdesk.com/uttarakhand-hill-districts-epf-esic-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Dehradun & Hill Districts EPF & ESIC Consultant | Pharma & Hill MSMEs | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for Selaqui pharma units, hill MSMEs, wellness resorts and logistics contractors across Uttarakhand."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/uttarakhand-hill-districts-epf-esic-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Dehradun & Hill Districts EPF & ESIC Compliance | Pharma & MSMEs | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="PF & ESIC services for Selaqui pharma units, hill MSMEs and wellness resorts in Uttarakhand."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
         />
       </Head>
 
@@ -67,8 +132,7 @@ const page = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
-            name:
-              "Dehradun & Uttarakhand Hill Districts EPF ESIC Consultants | EPFDesk",
+            name: "Dehradun & Uttarakhand Hill Districts EPF ESIC Consultants | EPFDesk",
             image: "https://epfdesk.com/images/logo.jpg",
             url: "https://epfdesk.com/uttarakhand-hill-districts-epf-esic-compliance",
             telephone: "+91-9945933333",

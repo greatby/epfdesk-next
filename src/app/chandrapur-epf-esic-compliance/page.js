@@ -30,12 +30,10 @@ export const metadata = {
     "RO Nagpur EPFO defence",
   ],
   alternates: {
-    canonical:
-      "https://epfdesk.com/chandrapur-epf-esic-compliance",
+    canonical: "https://epfdesk.com/chandrapur-epf-esic-compliance",
   },
   openGraph: {
-    title:
-      "Chandrapur EPF & ESIC Compliance | Power, Mining & PSU Contractors",
+    title: "Chandrapur EPF & ESIC Compliance | Power, Mining & PSU Contractors",
     description:
       "EPF & ESIC compliance for Chandrapur coal, power, cement and heavy industrial contractors.",
     url: "https://epfdesk.com/chandrapur-epf-esic-compliance",
@@ -60,17 +58,57 @@ const page = () => {
       ============================ */}
       <Head>
         <title>
-          Chandrapur EPF & ESIC Compliance for WCL & CSTPS Contractors | EPFDesk
+          Chandrapur EPF & ESIC Compliance: WCL Coal Mines, CSTPS Power Plant &
+          PE Liability | EPFDesk
         </title>
 
         <meta
           name="description"
-          content="Expert EPF & ESIC defence for Chandrapur coal mining, CSTPS power plant contractors, cement factories and hazardous industries."
+          content="EPF & ESIC compliance defence for Chandrapur’s WCL coal mines, CSTPS power plant contractors, cement factories and hazardous industries. Principal Employer liability, contractor PF audits and ESIC accident compliance handled."
+        />
+
+        <meta
+          name="keywords"
+          content="Chandrapur PF consultant, Chandrapur ESIC consultant, WCL coal mine PF ESIC, CSTPS contractor compliance, hazardous industry ESIC Chandrapur, Principal Employer liability Chandrapur, contractor PF audits Chandrapur, NWC 2025 wage restructuring Chandrapur"
         />
 
         <link
           rel="canonical"
           href="https://epfdesk.com/chandrapur-epf-esic-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Chandrapur EPF & ESIC Consultant | Coal Mines & Power Plant Contractors | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance specialists for Chandrapur’s WCL coal mines, CSTPS power plant and hazardous industrial units."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/chandrapur-epf-esic-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Chandrapur EPF & ESIC Compliance | WCL & CSTPS Contractors | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="PF & ESIC services for Chandrapur coal mines, CSTPS contractors and hazardous industries — PE liability and inspections handled."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
         />
       </Head>
 
@@ -85,14 +123,12 @@ const page = () => {
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
 
-            name:
-              "Chandrapur EPF & ESIC Compliance Service | EPFDesk",
+            name: "Chandrapur EPF & ESIC Compliance Service | EPFDesk",
             alternateName:
               "EPFDesk – Power, Mining & PSU Labour Law Consultants Chandrapur",
 
             image: "https://epfdesk.com/images/logo.jpg",
-            url:
-              "https://epfdesk.com/chandrapur-epf-esic-compliance",
+            url: "https://epfdesk.com/chandrapur-epf-esic-compliance",
             telephone: "+91-9945933333",
 
             /* ✅ ADDRESS KEPT SAME AS BANGALORE */
@@ -137,15 +173,11 @@ const page = () => {
           CONTENT
       ============================ */}
       <FadeInWhenVisible>
-        <PerformanceSectionIndustry
-          data={heroDataChandrapurDistrict}
-        />
+        <PerformanceSectionIndustry data={heroDataChandrapurDistrict} />
       </FadeInWhenVisible>
 
       <FadeInWhenVisible>
-        <CodeOfConduct
-          sections={sectionsChandrapurDistrict}
-        />
+        <CodeOfConduct sections={sectionsChandrapurDistrict} />
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqChandrapurDistrict} />

@@ -13,29 +13,49 @@ import { faqKochi, heroDataKochi, sectionsKochi } from "@/utils/data";
 ============================ */
 export const metadata = {
   title:
-    "Kochi EPF & ESIC Consultants: IT, Maritime & Industrial Compliance | EPFDesk",
+    "Kochi EPF & ESIC Compliance: IT Parks, Cochin Port Contractors & PE Liability | EPFDesk",
+
   description:
-    "Expert EPF & ESIC consultancy for Kochi InfoPark, SmartCity, KINFRA units, and Cochin Port contractors. Navigate RO Kochi audits, New Wage Code, and PE liability.",
+    "High-risk EPF & ESIC compliance defence for Kochi (Ernakulam) — InfoPark & SmartCity IT companies, KINFRA industrial units, Cochin Port contractors and maritime service providers. Experts in RO Kochi enforcement, Principal Employer liability, New Wage Code restructuring and Kerala labour-law reconciliation.",
+
+  keywords: [
+    "Kochi PF consultant",
+    "Ernakulam ESIC consultant",
+    "InfoPark PF ESIC compliance",
+    "SmartCity Kochi labour laws",
+    "Cochin Port contractor PF ESIC",
+    "KINFRA industrial unit compliance Kerala",
+    "Principal Employer liability Kochi",
+    "RO Kochi EPFO jurisdiction",
+  ],
+
   alternates: {
-    canonical:
-      "https://epfdesk.com/kochi-ernakulam-epf-esic-compliance",
+    canonical: "https://epfdesk.com/kochi-ernakulam-epf-esic-compliance",
   },
+
   openGraph: {
-    title:
-      "Kochi EPF & ESIC Compliance | IT, Maritime & Industrial Hub",
+    title: "Kochi EPF & ESIC Compliance | IT, Maritime & Industrial Hub",
     description:
-      "Statutory PF & ESIC compliance for Kochi IT parks, KINFRA industries, and Cochin Port vendors.",
+      "PF & ESIC specialists for Kochi IT parks, Cochin Port contractors, KINFRA industries and service-sector employers.",
     url: "https://epfdesk.com/kochi-ernakulam-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Kochi EPF ESIC Compliance",
+        alt: "Kochi PF ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Kochi EPF & ESIC Compliance | IT & Port Contractors | EPFDesk",
+    description:
+      "Expert PF & ESIC compliance for Kochi IT parks, Cochin Port vendors and KINFRA industrial units.",
+    images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
@@ -47,15 +67,57 @@ const page = () => {
     <>
       <Head>
         <title>
-          Kochi EPF & ESIC Compliance | IT, Maritime & Industrial Hub
+          Kochi EPF & ESIC Compliance: IT Parks, Cochin Port Contractors & PE
+          Liability | EPFDesk
         </title>
+
         <meta
           name="description"
-          content="PF & ESIC compliance consultants for Kochi InfoPark, SmartCity, Cochin Port vendors, and KINFRA industrial units."
+          content="EPF & ESIC compliance defence for Kochi (Ernakulam) — InfoPark and SmartCity IT companies, Cochin Port contractors, KINFRA industrial units and service-sector employers. RO Kochi audits, Principal Employer liability and wage restructuring handled."
         />
+
+        <meta
+          name="keywords"
+          content="Kochi PF consultant, Ernakulam ESIC consultant, InfoPark PF ESIC, SmartCity Kochi labour compliance, Cochin Port contractor PF audits, KINFRA unit ESIC Kerala, Principal Employer liability Kochi, NWC 2025 wage restructuring Kerala"
+        />
+
         <link
           rel="canonical"
           href="https://epfdesk.com/kochi-ernakulam-epf-esic-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Kochi EPF & ESIC Consultant | IT & Maritime Hub | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for Kochi IT parks, Cochin Port contractors and KINFRA industrial units."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/kochi-ernakulam-epf-esic-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Kochi EPF & ESIC Compliance | IT & Maritime Hub | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="PF & ESIC services for Kochi IT companies, Cochin Port contractors and industrial units — PE liability and audits handled."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
         />
       </Head>
 
@@ -67,11 +129,9 @@ const page = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
-            name:
-              "Kochi EPF & ESIC Compliance Consultants | EPFDesk",
+            name: "Kochi EPF & ESIC Compliance Consultants | EPFDesk",
             image: "https://epfdesk.com/images/logo.jpg",
-            url:
-              "https://epfdesk.com/kochi-ernakulam-epf-esic-compliance",
+            url: "https://epfdesk.com/kochi-ernakulam-epf-esic-compliance",
             telephone: "+91-9945933333",
             address: {
               "@type": "PostalAddress",

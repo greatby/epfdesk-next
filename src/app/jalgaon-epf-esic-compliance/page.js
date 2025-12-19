@@ -33,8 +33,7 @@ export const metadata = {
     canonical: "https://epfdesk.com/jalgaon-epf-esic-compliance",
   },
   openGraph: {
-    title:
-      "Jalgaon EPF & ESIC Compliance | Banana Processing & PVC MIDC",
+    title: "Jalgaon EPF & ESIC Compliance | Banana Processing & PVC MIDC",
     description:
       "High-risk PF & ESIC compliance for Jalgaon agro-processing, PVC MIDC factories and seasonal labour.",
     url: "https://epfdesk.com/jalgaon-epf-esic-compliance",
@@ -59,17 +58,57 @@ const page = () => {
       ============================ */}
       <Head>
         <title>
-          Jalgaon EPF & ESIC Compliance for Banana Processing | EPFDesk
+          Jalgaon EPF & ESIC Compliance: Banana Processing, MIDC Units &
+          Seasonal Labour PF Liability | EPFDesk
         </title>
 
         <meta
           name="description"
-          content="Expert EPF & ESIC defence for Jalgaon Banana Processing units, PVC MIDC factories, seasonal agro PF liability and Dal Mill piece-rate audits."
+          content="EPF & ESIC compliance defence for Jalgaon banana processing units, PVC MIDC factories, dal mills and seasonal agro labour. Piece-rate wage audits, contractor PF liability and inspection readiness handled."
+        />
+
+        <meta
+          name="keywords"
+          content="Jalgaon PF consultant, Jalgaon ESIC consultant, banana processing PF ESIC Jalgaon, PVC MIDC labour compliance, seasonal agro labour PF liability Jalgaon, dal mill piece-rate wages PF ESIC, contractor PF audits Jalgaon, NWC 2025 wage restructuring Jalgaon"
         />
 
         <link
           rel="canonical"
           href="https://epfdesk.com/jalgaon-epf-esic-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Jalgaon EPF & ESIC Consultant | Banana Processing & Agro Industry | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for Jalgaon banana processing units, MIDC factories and seasonal agro labour."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/jalgaon-epf-esic-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Jalgaon EPF & ESIC Compliance | Banana Processing & Agro Industry | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="PF & ESIC services for Jalgaon banana processing units, MIDC factories and seasonal labour — PF liability and audits handled."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
         />
       </Head>
 

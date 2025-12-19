@@ -33,8 +33,7 @@ export const metadata = {
     canonical: "https://epfdesk.com/parbhani-epf-esic-compliance",
   },
   openGraph: {
-    title:
-      "Parbhani EPF & ESIC Compliance | Dal Mills & Cotton Ginning",
+    title: "Parbhani EPF & ESIC Compliance | Dal Mills & Cotton Ginning",
     description:
       "High-risk PF & ESIC compliance for Parbhani Dal Mills, Cotton Ginning units and seasonal agro-processing workers.",
     url: "https://epfdesk.com/parbhani-epf-esic-compliance",
@@ -59,17 +58,57 @@ const page = () => {
       ============================ */}
       <Head>
         <title>
-          Parbhani EPF & ESIC Compliance for Dal Mills & Cotton Ginning | EPFDesk
+          Parbhani EPF & ESIC Compliance: Dal Mills, Cotton Ginning & Seasonal
+          Labour PF Liability | EPFDesk
         </title>
 
         <meta
           name="description"
-          content="Expert EPF & ESIC defence for Parbhani Dal Mills, PF liability on seasonal cotton ginning workers and agro-processing factories."
+          content="EPF & ESIC compliance defence for Parbhani dal mills, cotton ginning units and agro-processing factories. Seasonal and piece-rate labour PF liability, contractor audits and inspection readiness handled."
+        />
+
+        <meta
+          name="keywords"
+          content="Parbhani PF consultant, Parbhani ESIC consultant, dal mill PF ESIC Parbhani, cotton ginning labour compliance Parbhani, seasonal agro labour PF liability, piece-rate wage PF audits Parbhani, contractor PF compliance Maharashtra, NWC 2025 wage restructuring Parbhani"
         />
 
         <link
           rel="canonical"
           href="https://epfdesk.com/parbhani-epf-esic-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Parbhani EPF & ESIC Consultant | Dal Mills & Cotton Ginning | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for Parbhani dal mills, cotton ginning units and agro-processing industries."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/parbhani-epf-esic-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Parbhani EPF & ESIC Compliance | Dal Mills & Cotton Ginning | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="PF & ESIC services for Parbhani dal mills, cotton ginning units and seasonal agro labour — PF liability and audits handled."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
         />
       </Head>
 

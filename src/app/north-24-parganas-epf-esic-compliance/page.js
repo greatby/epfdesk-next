@@ -18,29 +18,50 @@ import {
 ============================ */
 export const metadata = {
   title:
-    "North 24 Parganas EPF & ESIC Compliance: IT & Manufacturing Hub Consultants | EPFDesk",
+    "North 24 Parganas EPF & ESIC Compliance: Sector V IT Firms, Barrackpore Industries & PE Liability | EPFDesk",
+
   description:
-    "Expert EPF & ESIC consultancy for Barrackpore industries, Sector V IT firms, and Barasat MSMEs. Navigate RO Barrackpore audits, EEC-2025, and IT wage rules.",
+    "High-risk EPF & ESIC compliance defence for North 24 Parganas — Salt Lake Sector V IT companies, Barrackpore manufacturing units, Barasat logistics hubs and MSMEs. Experts in RO Barrackpore enforcement, IT wage audits, Principal Employer liability and EEC-2025 filings.",
+
+  keywords: [
+    "North 24 Parganas PF consultant",
+    "North 24 Parganas ESIC consultant",
+    "Sector V PF ESIC compliance",
+    "Barrackpore industrial labour compliance",
+    "Barasat logistics PF audits",
+    "IT company wage audit North 24 Parganas",
+    "Principal Employer liability West Bengal",
+    "RO Barrackpore EPFO jurisdiction",
+  ],
+
   alternates: {
-    canonical:
-      "https://epfdesk.com/north-24-parganas-epf-esic-compliance",
+    canonical: "https://epfdesk.com/north-24-parganas-epf-esic-compliance",
   },
+
   openGraph: {
-    title:
-      "North 24 Parganas EPF & ESIC Compliance | IT & Industrial Corridor",
+    title: "North 24 Parganas EPF & ESIC Compliance | IT & Industrial Corridor",
     description:
-      "PF & ESIC experts for Salt Lake Sector V IT companies, Barrackpore industries, and logistics hubs.",
+      "PF & ESIC specialists for Sector V IT firms, Barrackpore industries, logistics hubs and MSMEs in North 24 Parganas.",
     url: "https://epfdesk.com/north-24-parganas-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "North 24 Parganas EPF ESIC Compliance",
+        alt: "North 24 Parganas PF ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "North 24 Parganas EPF & ESIC Compliance | IT & Industrial Corridor | EPFDesk",
+    description:
+      "Expert PF & ESIC compliance for Sector V IT companies, Barrackpore industries and logistics hubs.",
+    images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
@@ -53,15 +74,57 @@ const page = () => {
       {/* LEGACY HEAD */}
       <Head>
         <title>
-          North 24 Parganas EPF & ESIC Compliance | IT & Manufacturing Consultants
+          North 24 Parganas EPF & ESIC Compliance: Sector V IT Firms,
+          Barrackpore Industries & PE Liability | EPFDesk
         </title>
+
         <meta
           name="description"
-          content="Statutory PF & ESIC compliance for Sector V IT firms, Barrackpore industries, and Barasat logistics hubs."
+          content="EPF & ESIC compliance defence for North 24 Parganas — Salt Lake Sector V IT companies, Barrackpore manufacturing units, Barasat logistics hubs and MSMEs. RO Barrackpore audits, IT wage scrutiny and Principal Employer liability handled."
         />
+
+        <meta
+          name="keywords"
+          content="North 24 Parganas PF consultant, North 24 Parganas ESIC consultant, Sector V PF ESIC compliance, Barrackpore industry labour laws, Barasat logistics PF audits, IT wage audit West Bengal, Principal Employer liability North 24 Parganas, NWC 2025 wage restructuring WB"
+        />
+
         <link
           rel="canonical"
           href="https://epfdesk.com/north-24-parganas-epf-esic-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="North 24 Parganas EPF & ESIC Consultant | IT & Industrial Corridor | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for Sector V IT firms, Barrackpore industries and logistics hubs in North 24 Parganas."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/north-24-parganas-epf-esic-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="North 24 Parganas EPF & ESIC Compliance | IT & Manufacturing | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="PF & ESIC services for North 24 Parganas IT companies, manufacturing units and logistics hubs — PE liability and audits handled."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
         />
       </Head>
 
@@ -73,8 +136,7 @@ const page = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
-            name:
-              "North 24 Parganas EPF & ESIC Compliance Consultants | EPFDesk",
+            name: "North 24 Parganas EPF & ESIC Compliance Consultants | EPFDesk",
             image: "https://epfdesk.com/images/logo.jpg",
             url: "https://epfdesk.com/north-24-parganas-epf-esic-compliance",
             telephone: "+91-9945933333",

@@ -18,29 +18,50 @@ import {
 ============================ */
 export const metadata = {
   title:
-    "Bihar EPF & ESIC Compliance: Bhagalpur, Rohtas & Purnia Expert Consultants | EPFDesk",
+    "Bihar EPF & ESIC Compliance: Bhagalpur Silk, Rohtas Cement, Purnia Ethanol & PE Liability | EPFDesk",
+
   description:
-    "Expert EPF & ESIC consultancy for Bhagalpur silk units, Rohtas cement plants, and Purnia ethanol hubs. Navigate RO Bhagalpur/Patna audits and EEC-2025.",
+    "High-risk EPF & ESIC compliance defense for Bihar’s balance districts — Bhagalpur silk & textile units, Rohtas cement plants, Purnia ethanol and agro-processing hubs. Experts in RO Patna/Bhagalpur enforcement, Principal Employer liability and New Wage Code restructuring.",
+
+  keywords: [
+    "Bihar PF consultant",
+    "Bihar ESIC consultant",
+    "Bhagalpur silk PF ESIC",
+    "Rohtas cement PF compliance",
+    "Purnia ethanol ESIC coverage",
+    "RO Patna EPFO jurisdiction",
+    "Principal Employer liability Bihar",
+    "Bihar MSME PF ESIC audits",
+  ],
+
   alternates: {
     canonical:
       "https://epfdesk.com/bihar-balance-districts-epf-esic-compliance",
   },
+
   openGraph: {
-    title:
-      "Bihar EPF & ESIC Compliance | Regional Industrial Clusters",
+    title: "Bihar EPF & ESIC Compliance | Silk, Cement & Ethanol Clusters",
     description:
-      "PF & ESIC experts for Bhagalpur textiles, Rohtas cement plants, Purnia ethanol units, and Bihar agri-industrial corridors.",
+      "PF & ESIC specialists for Bhagalpur silk units, Rohtas cement plants, Purnia ethanol hubs and Bihar’s regional MSMEs.",
     url: "https://epfdesk.com/bihar-balance-districts-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Bihar EPF ESIC Compliance",
+        alt: "Bihar PF ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Bihar EPF & ESIC Compliance | Silk, Cement & Ethanol | EPFDesk",
+    description:
+      "Expert PF & ESIC compliance for Bihar’s balance districts — Bhagalpur, Rohtas and Purnia industrial clusters.",
+    images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
@@ -53,15 +74,57 @@ const page = () => {
       {/* LEGACY HEAD */}
       <Head>
         <title>
-          Bihar EPF & ESIC Compliance | Bhagalpur, Rohtas & Purnia
+          Bihar EPF & ESIC Compliance: Bhagalpur Silk, Rohtas Cement & Purnia
+          Ethanol | EPFDesk
         </title>
+
         <meta
           name="description"
-          content="Statutory PF & ESIC compliance for Bihar’s silk clusters, cement plants, ethanol units, rice mills, and regional MSMEs."
+          content="EPF & ESIC compliance defense for Bihar’s balance districts — Bhagalpur silk and textile units, Rohtas cement plants, Purnia ethanol and agro-processing hubs. RO Patna/Bhagalpur audits and Principal Employer liability handled."
         />
+
+        <meta
+          name="keywords"
+          content="Bihar PF consultant, Bihar ESIC consultant, Bhagalpur silk PF ESIC, Rohtas cement labour compliance, Purnia ethanol ESIC coverage, Bihar MSME PF audits, Principal Employer liability Bihar, NWC 2025 wage restructuring Bihar"
+        />
+
         <link
           rel="canonical"
           href="https://epfdesk.com/bihar-balance-districts-epf-esic-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Bihar EPF & ESIC Consultant | Silk, Cement & Ethanol Clusters | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for Bihar’s silk, cement and ethanol clusters. Specialists in PE liability and regional EPFO enforcement."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/bihar-balance-districts-epf-esic-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Bihar EPF & ESIC Compliance | Bhagalpur, Rohtas & Purnia | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="PF & ESIC services for Bihar’s balance districts — silk, cement, ethanol and MSME clusters."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
         />
       </Head>
 
@@ -73,8 +136,7 @@ const page = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
-            name:
-              "Bihar EPF & ESIC Compliance Consultants | EPFDesk",
+            name: "Bihar EPF & ESIC Compliance Consultants | EPFDesk",
             image: "https://epfdesk.com/images/logo.jpg",
             url: "https://epfdesk.com/bihar-balance-districts-epf-esic-compliance",
             telephone: "+91-9945933333",

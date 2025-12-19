@@ -14,17 +14,30 @@ import {
 
 export const metadata = {
   title:
-    "Dharwad EPF & ESIC Compliance for Educational Trusts, IIT Contractors & ESDM Units | EPFDesk",
+    "Dharwad EPF & ESIC Compliance: Educational Trusts, IIT Dharwad Contractors, ESDM Units & PE Liability | EPFDesk",
+
   description:
-    "Expert PF & ESIC compliance for private colleges, universities, IIT Dharwad contractors, ESDM units and Auto Ancillary MSMEs. Specialized in ESIC for educational institutions and PF wage restructuring under NWC 2025.",
+    "High-risk EPF & ESIC compliance defence for Dharwad educational trusts, private colleges, IIT Dharwad contractors, ESDM clusters and auto ancillary MSMEs. Experts in ESIC coverage for education sector, teaching/non-teaching staff audits and New Wage Code 2025 restructuring.",
+
+  keywords: [
+    "Dharwad PF consultant",
+    "Dharwad ESIC consultant",
+    "Educational trust PF ESIC Dharwad",
+    "Private college PF compliance Dharwad",
+    "IIT Dharwad contractor PF ESIC",
+    "ESDM labour compliance Dharwad",
+    "Auto ancillary PF ESIC Dharwad",
+    "Principal Employer liability Dharwad",
+  ],
+
   alternates: {
     canonical: "https://epfdesk.com/dharwad-epf-esic-compliance",
   },
+
   openGraph: {
-    title:
-      "Dharwad EPF & ESIC Compliance | Education • IIT • ESDM • Auto Ancillaries",
+    title: "Dharwad EPF & ESIC Compliance | Education, IIT & ESDM Clusters",
     description:
-      "PF & ESIC specialists for educational trusts, IIT Dharwad contractors, ESDM clusters and auto ancillary MSMEs.",
+      "PF & ESIC specialists for Dharwad educational institutions, IIT Dharwad contractors, ESDM units and auto ancillary MSMEs.",
     url: "https://epfdesk.com/dharwad-epf-esic-compliance",
     images: [
       {
@@ -37,12 +50,12 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Dharwad EPF & ESIC Compliance | Education • IIT • ESDM • MSMEs",
+    title: "Dharwad EPF & ESIC Compliance | Education • IIT • ESDM | EPFDesk",
     description:
-      "PF & ESIC experts for colleges, universities, IIT Dharwad contract staff, ESDM units and auto ancillary workers.",
+      "Expert PF & ESIC compliance for Dharwad colleges, IIT Dharwad contract staff, ESDM units and auto ancillary workers.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
@@ -52,13 +65,18 @@ const page = () => {
     <>
       <Head>
         <title>
-          Dharwad EPF & ESIC Compliance for Educational Trusts, IIT Contractors &
-          ESDM Units | EPFDesk
+          Dharwad EPF & ESIC Compliance: Educational Trusts, IIT Dharwad
+          Contractors & ESDM Units | EPFDesk
         </title>
 
         <meta
           name="description"
-          content="EPF/ESIC compliance for private colleges, IIT Dharwad contractors, ESDM/Auto MSMEs and teaching/non-teaching staff across Dharwad district."
+          content="EPF & ESIC compliance defence for Dharwad educational trusts, private colleges, IIT Dharwad contractors, ESDM clusters and auto ancillary MSMEs. Teaching/non-teaching staff coverage, contractor PF liability and wage audits handled."
+        />
+
+        <meta
+          name="keywords"
+          content="Dharwad PF consultant, Dharwad ESIC consultant, educational trust PF ESIC Dharwad, private college labour compliance, IIT Dharwad contractor PF, ESDM unit PF ESIC, auto ancillary labour laws Dharwad, Principal Employer liability Dharwad, NWC 2025 wage restructuring Dharwad"
         />
 
         <link
@@ -66,15 +84,39 @@ const page = () => {
           href="https://epfdesk.com/dharwad-epf-esic-compliance"
         />
 
+        {/* OpenGraph */}
         <meta
           property="og:title"
-          content="Dharwad EPF & ESIC Compliance | Educational Trusts • IIT • ESDM Units"
+          content="Dharwad EPF & ESIC Consultant | Education, IIT & ESDM Units | EPFDesk"
         />
         <meta
           property="og:description"
-          content="PF & ESIC consultants for educational institutions, IIT Dharwad support staff, ESDM units and auto ancillary MSMEs."
+          content="PF & ESIC compliance for Dharwad educational institutions, IIT Dharwad contractors, ESDM units and auto ancillary MSMEs."
         />
-        <meta property="og:image" content="https://epfdesk.com/images/logo.jpg" />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/dharwad-epf-esic-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Dharwad EPF & ESIC Compliance | Education • IIT • ESDM | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="PF & ESIC services for Dharwad colleges, IIT Dharwad support staff, ESDM units and auto ancillary workers."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
       </Head>
 
       <Script

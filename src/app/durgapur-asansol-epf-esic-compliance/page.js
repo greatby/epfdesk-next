@@ -18,29 +18,50 @@ import {
 ============================ */
 export const metadata = {
   title:
-    "Durgapur & Asansol EPF & ESIC Compliance: Steel & Coal Sector Consultants | EPFDesk",
+    "Durgapur & Asansol EPF & ESIC Compliance: Steel Plants, Coal Contractors & PE Liability | EPFDesk",
+
   description:
-    "Expert EPF & ESIC consultancy for Durgapur Steel Plant vendors, ECL coal contractors, and Asansol MSMEs. Navigate RO Durgapur audits and EEC-2025.",
+    "High-risk EPF & ESIC compliance defence for the Durgapur–Asansol industrial belt — Durgapur Steel Plant (DSP) vendors, ECL coal contractors, sponge iron units and hazardous process industries. Experts in RO Durgapur enforcement, Principal Employer liability and New Wage Code restructuring.",
+
+  keywords: [
+    "Durgapur PF consultant",
+    "Asansol ESIC consultant",
+    "Durgapur Steel Plant PF ESIC",
+    "ECL coal contractor compliance",
+    "Paschim Bardhaman steel PF audits",
+    "Sponge iron ESIC compliance",
+    "Principal Employer liability Durgapur Asansol",
+    "RO Durgapur EPFO jurisdiction",
+  ],
+
   alternates: {
-    canonical:
-      "https://epfdesk.com/durgapur-asansol-epf-esic-compliance",
+    canonical: "https://epfdesk.com/durgapur-asansol-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Asansol–Durgapur EPF & ESIC Compliance | Paschim Bardhaman Industrial Belt",
+      "Durgapur & Asansol EPF & ESIC Compliance | Steel & Coal Industrial Belt",
     description:
-      "PF & ESIC experts for steel, coal, sponge iron, and hazardous process units across Paschim Bardhaman.",
+      "PF & ESIC specialists for Durgapur Steel Plant vendors, ECL coal contractors, sponge iron and hazardous process units across Paschim Bardhaman.",
     url: "https://epfdesk.com/durgapur-asansol-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Asansol Durgapur EPF ESIC Compliance",
+        alt: "Durgapur Asansol PF ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Durgapur & Asansol EPF & ESIC Compliance | Steel & Coal | EPFDesk",
+    description:
+      "Expert PF & ESIC compliance for Durgapur–Asansol steel plants, coal contractors and heavy industries.",
+    images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
@@ -53,15 +74,57 @@ const page = () => {
       {/* LEGACY HEAD */}
       <Head>
         <title>
-          Durgapur & Asansol EPF & ESIC Compliance | Steel & Coal Sector Consultants
+          Durgapur & Asansol EPF & ESIC Compliance: Steel Plants, Coal
+          Contractors & PE Liability | EPFDesk
         </title>
+
         <meta
           name="description"
-          content="Statutory PF & ESIC compliance for Paschim Bardhaman steel plants, coal contractors, and industrial MSMEs."
+          content="EPF & ESIC compliance defence for the Durgapur–Asansol industrial belt — Durgapur Steel Plant vendors, ECL coal contractors, sponge iron units and hazardous industries. RO Durgapur audits and Principal Employer liability handled."
         />
+
+        <meta
+          name="keywords"
+          content="Durgapur PF consultant, Asansol ESIC consultant, Durgapur Steel Plant PF ESIC, ECL coal contractor compliance, Paschim Bardhaman steel labour laws, sponge iron ESIC audits, Principal Employer liability Durgapur Asansol, NWC 2025 wage restructuring West Bengal"
+        />
+
         <link
           rel="canonical"
           href="https://epfdesk.com/durgapur-asansol-epf-esic-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Durgapur & Asansol EPF & ESIC Consultant | Steel & Coal Industrial Belt | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for Paschim Bardhaman’s steel, coal and hazardous process industries."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/durgapur-asansol-epf-esic-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Durgapur & Asansol EPF & ESIC Compliance | Steel & Coal Sector | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="PF & ESIC services for Durgapur–Asansol steel plants, coal contractors and hazardous industries — PE liability and inspections handled."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
         />
       </Head>
 
@@ -73,8 +136,7 @@ const page = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
-            name:
-              "Asansol–Durgapur EPF & ESIC Compliance Consultants | EPFDesk",
+            name: "Asansol–Durgapur EPF & ESIC Compliance Consultants | EPFDesk",
             image: "https://epfdesk.com/images/logo.jpg",
             url: "https://epfdesk.com/durgapur-asansol-epf-esic-compliance",
             telephone: "+91-9945933333",

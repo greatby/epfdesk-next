@@ -59,17 +59,57 @@ const page = () => {
       ============================ */}
       <Head>
         <title>
-          Sindhudurg EPF & ESIC Compliance for Resorts & Cashew | EPFDesk
+          Sindhudurg EPF & ESIC Compliance: Hotels, Resorts, Cashew Processing &
+          PE Liability | EPFDesk
         </title>
 
         <meta
           name="description"
-          content="Expert EPF & ESIC defence for Sindhudurg Hotels, Resorts, Cashew Processing units and Tourism contractors."
+          content="EPF & ESIC compliance defence for Sindhudurg hotels, beach resorts, cashew processing units and tourism contractors. Seasonal labour PF liability, contractor audits and ESIC coverage for hospitality staff handled."
+        />
+
+        <meta
+          name="keywords"
+          content="Sindhudurg PF consultant, Sindhudurg ESIC consultant, hotel resort PF ESIC Sindhudurg, cashew processing labour compliance, tourism contractor PF liability, seasonal labour PF audits Sindhudurg, hospitality ESIC compliance Maharashtra"
         />
 
         <link
           rel="canonical"
           href="https://epfdesk.com/sindhudurg-epf-esic-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Sindhudurg EPF & ESIC Consultant | Resorts & Cashew Processing | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for Sindhudurg hotels, resorts, cashew processing units and tourism contractors."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/sindhudurg-epf-esic-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Sindhudurg EPF & ESIC Compliance | Resorts & Cashew Processing | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="PF & ESIC services for Sindhudurg resorts, hotels and cashew processing units — seasonal labour compliance handled."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
         />
       </Head>
 

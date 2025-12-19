@@ -14,17 +14,31 @@ import {
 
 export const metadata = {
   title:
-    "Ramanagara EPF & ESIC Compliance for Bidadi Auto Cluster, Silk Sericulture & Harohalli Factories | EPFDesk",
+    "Ramanagara EPF & ESIC Compliance: Bidadi Auto Cluster, Sericulture & PE Liability | EPFDesk",
+
   description:
-    "Expert PF & ESIC compliance for Bidadi Toyota/Coca-Cola contractors, Silk Reeling units, Channapatna toy MSMEs, and Harohalli industries. Specialized in NWC wage rules and PE liability.",
+    "High-risk EPF & ESIC compliance defence for Ramanagara — Bidadi Toyota & Coca-Cola contractors, silk reeling and sericulture units, Channapatna toy MSMEs, Harohalli industrial estates and resort/hospitality employers. Experts in NWC wage restructuring, piece-rate labour audits, contractor PF liability and Principal Employer exposure.",
+
+  keywords: [
+    "Ramanagara PF consultant",
+    "Ramanagara ESIC consultant",
+    "Bidadi auto cluster PF ESIC",
+    "Toyota vendor labour compliance Bidadi",
+    "Silk sericulture PF ESIC Karnataka",
+    "Channapatna toy industry labour laws",
+    "Harohalli MSME PF audits",
+    "Principal Employer liability Ramanagara",
+  ],
+
   alternates: {
     canonical: "https://epfdesk.com/ramanagara-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Ramanagara EPF & ESIC Compliance | Bidadi Auto Cluster • Sericulture • Harohalli MSMEs",
+      "Ramanagara EPF & ESIC Compliance | Auto • Sericulture • MSME Clusters",
     description:
-      "PF & ESIC specialists for Toyota vendors, silk reeling units, Channapatna toy makers and Harohalli manufacturing units.",
+      "PF & ESIC specialists for Bidadi auto OEM vendors, silk sericulture units, Channapatna toy makers and Harohalli MSMEs.",
     url: "https://epfdesk.com/ramanagara-epf-esic-compliance",
     images: [
       {
@@ -37,12 +51,13 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title:
-      "Ramanagara EPF & ESIC Compliance | Bidadi Auto • Sericulture • MSMEs",
+      "Ramanagara EPF & ESIC Compliance | Auto & Sericulture Clusters | EPFDesk",
     description:
-      "PF & ESIC experts for Toyota/Coca-Cola contractors, Silk Reeling units, Harohalli industrial workers and resort sector labour.",
+      "Expert PF & ESIC compliance for Bidadi auto vendors, silk sericulture workers, Harohalli MSMEs and resort staff.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
@@ -52,13 +67,18 @@ const page = () => {
     <>
       <Head>
         <title>
-          Ramanagara EPF & ESIC Compliance for Bidadi Auto Cluster, Silk
-          Sericulture & Harohalli Factories | EPFDesk
+          Ramanagara EPF & ESIC Compliance: Bidadi Auto Cluster, Sericulture &
+          PE Liability | EPFDesk
         </title>
 
         <meta
           name="description"
-          content="EPF/ESIC compliance for Bidadi Toyota/Coca-Cola vendors, Silk Sericulture workers, Channapatna toy units, Harohalli MSMEs and resort/hospitality labour."
+          content="EPF & ESIC compliance defence for Ramanagara — Bidadi Toyota & Coca-Cola contractors, silk sericulture and reeling units, Channapatna toy MSMEs, Harohalli industrial estates and resort employers. Piece-rate wage audits, contractor PF liability and Principal Employer exposure handled."
+        />
+
+        <meta
+          name="keywords"
+          content="Ramanagara PF consultant, Ramanagara ESIC consultant, Bidadi auto cluster PF ESIC, Toyota Coca-Cola vendor compliance, silk sericulture labour laws Karnataka, Channapatna toy industry PF audits, Harohalli MSME labour compliance, NWC 2025 wage restructuring Ramanagara"
         />
 
         <link
@@ -66,16 +86,37 @@ const page = () => {
           href="https://epfdesk.com/ramanagara-epf-esic-compliance"
         />
 
+        {/* OpenGraph */}
         <meta
           property="og:title"
-          content="Ramanagara EPF & ESIC Compliance | Bidadi Auto Cluster • Sericulture • Harohalli MSMEs"
+          content="Ramanagara EPF & ESIC Consultant | Auto & Sericulture Clusters | EPFDesk"
         />
         <meta
           property="og:description"
-          content="PF & ESIC consultants for Bidadi OEM contractors, Silk reeling/piece-rate workers, Harohalli MSMEs and resort staff."
+          content="PF & ESIC compliance for Bidadi auto OEM vendors, silk sericulture units, Channapatna toy MSMEs and Harohalli industries."
         />
         <meta
           property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/ramanagara-epf-esic-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Ramanagara EPF & ESIC Compliance | Auto & Sericulture Clusters | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="PF & ESIC services for Ramanagara auto vendors, silk sericulture workers and MSMEs — audits and PE liability handled."
+        />
+        <meta
+          name="twitter:image"
           content="https://epfdesk.com/images/logo.jpg"
         />
       </Head>

@@ -7,39 +7,56 @@ import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndus
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
 
-import {
-  heroDataPanipat,
-  sectionsPanipat,
-  faqPanipat,
-} from "@/utils/data";
+import { heroDataPanipat, sectionsPanipat, faqPanipat } from "@/utils/data";
 
 /* ============================
    METADATA (APP ROUTER)
 ============================ */
 export const metadata = {
   title:
-    "Panipat EPF & ESIC Compliance: Textile Hub & Refinery Vendor Experts | EPFDesk",
+    "Panipat EPF & ESIC Compliance: Textile Exporters, IOCL Refinery Vendors & PE Liability | EPFDesk",
+
   description:
-    "Expert EPF & ESIC consultancy for Panipat handloom units, IOCL Refinery vendors, and textile exporters. Navigate RO Karnal audits, EEC-2025, and hazardous process rules.",
+    "High-risk EPF & ESIC compliance defence for Panipat — handloom and powerloom units, textile exporters, IOCL Refinery contractors and dyeing/processing houses. Experts in RO Karnal enforcement, hazardous process ESIC coverage, Principal Employer liability and New Wage Code restructuring.",
+
+  keywords: [
+    "Panipat PF consultant",
+    "Panipat ESIC consultant",
+    "Panipat textile exporter PF ESIC",
+    "Handloom powerloom labour compliance Panipat",
+    "IOCL Panipat refinery contractor PF ESIC",
+    "Textile dyeing unit PF audits Panipat",
+    "Principal Employer liability Panipat",
+    "RO Karnal EPFO jurisdiction",
+  ],
+
   alternates: {
     canonical: "https://epfdesk.com/panipat-epf-esic-compliance",
   },
+
   openGraph: {
-    title:
-      "Panipat EPF & ESIC Compliance | Textile & Petrochemical Hub",
+    title: "Panipat EPF & ESIC Compliance | Textile & Refinery Industrial Hub",
     description:
-      "PF & ESIC experts for Panipat textile exporters, IOCL refinery contractors, handloom units, and Haryana MSMEs.",
+      "PF & ESIC specialists for Panipat textile exporters, handloom units and IOCL Refinery contractors.",
     url: "https://epfdesk.com/panipat-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Panipat EPF ESIC Compliance",
+        alt: "Panipat PF ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Panipat EPF & ESIC Compliance | Textile & Refinery Hub | EPFDesk",
+    description:
+      "Expert PF & ESIC compliance for Panipat textile exporters and IOCL Refinery vendors.",
+    images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
@@ -52,15 +69,57 @@ const page = () => {
       {/* LEGACY HEAD */}
       <Head>
         <title>
-          Panipat EPF & ESIC Compliance | Textile & Refinery Consultants
+          Panipat EPF & ESIC Compliance: Textile Exporters, IOCL Refinery
+          Vendors & PE Liability | EPFDesk
         </title>
+
         <meta
           name="description"
-          content="Statutory PF & ESIC compliance for Panipat textile exporters, handloom units, IOCL Refinery contractors, and MSMEs."
+          content="EPF & ESIC compliance defence for Panipat textile exporters, handloom and powerloom units, IOCL Refinery contractors and processing houses. RO Karnal audits, hazardous process ESIC coverage and Principal Employer liability handled."
         />
+
+        <meta
+          name="keywords"
+          content="Panipat PF consultant, Panipat ESIC consultant, textile exporter PF ESIC Panipat, handloom powerloom labour compliance, IOCL refinery contractor PF audits Panipat, hazardous industry ESIC Haryana, Principal Employer liability Panipat, NWC 2025 wage restructuring Haryana"
+        />
+
         <link
           rel="canonical"
           href="https://epfdesk.com/panipat-epf-esic-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Panipat EPF & ESIC Consultant | Textile & Refinery Hub | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for Panipat textile exporters, handloom units and IOCL Refinery contractors."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/panipat-epf-esic-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Panipat EPF & ESIC Compliance | Textile & Refinery Hub | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="PF & ESIC services for Panipat textile exporters and IOCL Refinery vendors — wage audits and PE liability handled."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
         />
       </Head>
 
@@ -72,8 +131,7 @@ const page = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
-            name:
-              "Panipat EPF & ESIC Compliance Consultants | EPFDesk",
+            name: "Panipat EPF & ESIC Compliance Consultants | EPFDesk",
             image: "https://epfdesk.com/images/logo.jpg",
             url: "https://epfdesk.com/panipat-epf-esic-compliance",
             telephone: "+91-9945933333",

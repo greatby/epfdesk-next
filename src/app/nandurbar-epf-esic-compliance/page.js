@@ -33,8 +33,7 @@ export const metadata = {
     canonical: "https://epfdesk.com/nandurbar-epf-esic-compliance",
   },
   openGraph: {
-    title:
-      "Nandurbar EPF & ESIC Compliance | Agro-Processing & Tribal Labour",
+    title: "Nandurbar EPF & ESIC Compliance | Agro-Processing & Tribal Labour",
     description:
       "High-risk PF & ESIC compliance for Nandurbar cotton, agro-processing and newly notified ESIC areas.",
     url: "https://epfdesk.com/nandurbar-epf-esic-compliance",
@@ -59,17 +58,57 @@ const page = () => {
       ============================ */}
       <Head>
         <title>
-          Nandurbar EPF & ESIC Compliance for Agro-Processing | EPFDesk
+          Nandurbar EPF & ESIC Compliance: Agro-Processing, Cotton Ginning &
+          Tribal Labour PF Liability | EPFDesk
         </title>
 
         <meta
           name="description"
-          content="Expert EPF & ESIC defence for Nandurbar Cotton Ginning, Agro-Processing units, seasonal tribal labour PF liability and ESIC compliance."
+          content="EPF & ESIC compliance defence for Nandurbar — cotton ginning factories, agro-processing units, seasonal and tribal labour employment. PF liability on migrant and piece-rate workers, ESIC coverage and inspection readiness handled."
+        />
+
+        <meta
+          name="keywords"
+          content="Nandurbar PF consultant, Nandurbar ESIC consultant, cotton ginning PF ESIC Nandurbar, agro processing labour compliance, seasonal tribal labour PF liability, piece rate wages PF audits, ESIC coverage tribal areas, NWC 2025 wage restructuring Maharashtra"
         />
 
         <link
           rel="canonical"
           href="https://epfdesk.com/nandurbar-epf-esic-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Nandurbar EPF & ESIC Consultant | Agro-Processing & Tribal Labour | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for Nandurbar cotton ginning, agro-processing units and seasonal tribal labour."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/nandurbar-epf-esic-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Nandurbar EPF & ESIC Compliance | Agro-Processing & Tribal Labour | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="PF & ESIC services for Nandurbar agro-processing units and seasonal tribal labour — PF liability and audits handled."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
         />
       </Head>
 

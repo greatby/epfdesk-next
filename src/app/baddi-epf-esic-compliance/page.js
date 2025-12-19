@@ -13,28 +13,48 @@ import { faqBaddi, heroDataBaddi, sectionsBaddi } from "@/utils/data";
 ============================ */
 export const metadata = {
   title:
-    "Baddi EPF & ESIC Consultants: BBN Pharma & FMCG Compliance Experts | EPFDesk",
+    "Baddi EPF & ESIC Compliance: Pharma PF Audits, FMCG Wage Code Risk & PE Liability | EPFDesk",
+
   description:
-    "Expert EPF & ESIC consultancy for Baddi pharma MNCs, Nalagarh auto units, and Barotiwala MSMEs. Navigate SRO Baddi audits, New Wage Code, and PE liability.",
+    "High-risk EPF & ESIC compliance defense for Baddi-Barotiwala-Nalagarh pharma MNCs, FMCG plants and MSMEs. Experts in SRO Baddi enforcement, New Wage Code restructuring and Principal Employer liability.",
+
+  keywords: [
+    "Baddi PF consultant",
+    "Baddi ESIC registration",
+    "Pharma PF compliance Baddi",
+    "FMCG ESIC compliance Baddi",
+    "SRO Baddi EPFO jurisdiction",
+    "BBN industrial area PF ESIC",
+    "Principal Employer liability Baddi",
+  ],
+
   alternates: {
     canonical: "https://epfdesk.com/baddi-epf-esic-compliance",
   },
+
   openGraph: {
-    title:
-      "Baddi EPF & ESIC Compliance | BBN Pharma & FMCG Industrial Hub",
+    title: "Baddi EPF & ESIC Compliance | Pharma, FMCG & Manufacturing Hub",
     description:
-      "Statutory PF & ESIC compliance for Baddi-Barotiwala-Nalagarh pharma, FMCG, auto, and MSME units.",
+      "PF & ESIC specialists for Baddi-Barotiwala-Nalagarh pharma, FMCG and manufacturing units. SRO Baddi audits handled.",
     url: "https://epfdesk.com/baddi-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Baddi EPF ESIC Compliance",
+        alt: "Baddi PF ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Baddi EPF & ESIC Compliance | Pharma & FMCG | EPFDesk",
+    description:
+      "Expert PF/ESIC compliance for Baddi pharma MNCs, FMCG plants and MSMEs.",
+    images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
@@ -45,15 +65,35 @@ const page = () => {
   return (
     <>
       <Head>
-        <title>Baddi EPF & ESIC Compliance | EPFDesk</title>
+        <title>
+          Baddi EPF & ESIC Compliance: Pharma PF Audits & FMCG PE Liability |
+          EPFDesk
+        </title>
+
         <meta
           name="description"
-          content="PF & ESIC compliance consultants for Baddi pharma units, Nalagarh manufacturing, and Barotiwala MSMEs."
+          content="EPF & ESIC compliance defense for Baddi pharma MNCs, FMCG plants and MSMEs. New Wage Code impact, Principal Employer liability and SRO Baddi audits handled."
         />
+
         <link
           rel="canonical"
           href="https://epfdesk.com/baddi-epf-esic-compliance"
         />
+
+        <meta
+          property="og:title"
+          content="Baddi EPF & ESIC Compliance | Pharma & FMCG Manufacturing"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC specialists for Baddi-Barotiwala-Nalagarh pharma and FMCG units."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
       {/* SCHEMA */}
@@ -64,8 +104,7 @@ const page = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
-            name:
-              "Baddi (BBN) EPF & ESIC Compliance Consultants | EPFDesk",
+            name: "Baddi (BBN) EPF & ESIC Compliance Consultants | EPFDesk",
             image: "https://epfdesk.com/images/logo.jpg",
             url: "https://epfdesk.com/baddi-epf-esic-compliance",
             telephone: "+91-9945933333",

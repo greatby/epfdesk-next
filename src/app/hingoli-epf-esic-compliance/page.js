@@ -59,17 +59,57 @@ const page = () => {
       ============================ */}
       <Head>
         <title>
-          Hingoli EPF & ESIC Compliance for Cotton Ginning | EPFDesk
+          Hingoli EPF & ESIC Compliance: Cotton Ginning, Piece-Rate Labour & PE
+          Liability | EPFDesk
         </title>
 
         <meta
           name="description"
-          content="Expert EPF & ESIC defence for Hingoli Cotton Ginning units, seasonal piece-rate PF liability and newly notified ESIC areas."
+          content="EPF & ESIC compliance defence for Hingoli cotton ginning units, seasonal and piece-rate workers, and newly notified ESIC coverage areas. Contractor PF liability, wage audits and inspections handled."
+        />
+
+        <meta
+          name="keywords"
+          content="Hingoli PF consultant, Hingoli ESIC consultant, cotton ginning PF ESIC Hingoli, piece-rate labour compliance, seasonal worker PF liability Hingoli, newly notified ESIC area Hingoli, contractor PF audits Hingoli, NWC 2025 wage restructuring Hingoli"
         />
 
         <link
           rel="canonical"
           href="https://epfdesk.com/hingoli-epf-esic-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Hingoli EPF & ESIC Consultant | Cotton Ginning & Seasonal Labour | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for Hingoli cotton ginning units and seasonal piece-rate workforce."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/hingoli-epf-esic-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Hingoli EPF & ESIC Compliance | Cotton Ginning & Piece-Rate Labour | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="PF & ESIC services for Hingoli cotton ginning units and seasonal piece-rate labour — PE liability and audits handled."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
         />
       </Head>
 

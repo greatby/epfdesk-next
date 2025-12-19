@@ -33,8 +33,7 @@ export const metadata = {
     canonical: "https://epfdesk.com/dhule-epf-esic-compliance",
   },
   openGraph: {
-    title:
-      "Dhule EPF & ESIC Compliance | Cotton Ginning & Textile Powerlooms",
+    title: "Dhule EPF & ESIC Compliance | Cotton Ginning & Textile Powerlooms",
     description:
       "High-risk PF & ESIC compliance for Dhule textile, cotton ginning and MIDC manufacturing units.",
     url: "https://epfdesk.com/dhule-epf-esic-compliance",
@@ -59,17 +58,57 @@ const page = () => {
       ============================ */}
       <Head>
         <title>
-          Dhule EPF & ESIC Compliance for Textile & Cotton Units | EPFDesk
+          Dhule EPF & ESIC Compliance: Textile Powerlooms, Cotton Ginning &
+          Seasonal Labour PF Liability | EPFDesk
         </title>
 
         <meta
           name="description"
-          content="Expert EPF & ESIC defence for Dhule Cotton Ginning units, Textile Powerlooms, seasonal labour PF liability and MIDC contractor audits."
+          content="EPF & ESIC compliance defence for Dhule cotton ginning units, textile powerlooms, seasonal and migrant labour, and MIDC contractor operations. Principal Employer liability, wage audits and inspections handled."
+        />
+
+        <meta
+          name="keywords"
+          content="Dhule PF consultant, Dhule ESIC consultant, cotton ginning PF ESIC Dhule, textile powerloom labour compliance, seasonal labour PF liability Dhule, MIDC contractor PF audits, Principal Employer liability Dhule, NWC 2025 wage restructuring Dhule"
         />
 
         <link
           rel="canonical"
           href="https://epfdesk.com/dhule-epf-esic-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Dhule EPF & ESIC Consultant | Textile & Cotton Processing Hub | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for Dhule’s textile powerlooms, cotton ginning units and seasonal labour-intensive industries."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/dhule-epf-esic-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Dhule EPF & ESIC Compliance | Textile & Cotton Units | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="PF & ESIC services for Dhule cotton ginning units, textile powerlooms and seasonal labour — PE liability and audits handled."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
         />
       </Head>
 

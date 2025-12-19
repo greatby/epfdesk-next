@@ -7,39 +7,56 @@ import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndus
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
 
-import {
-  heroDataGurugram,
-  sectionsGurugram,
-  faqGurugram,
-} from "@/utils/data";
+import { heroDataGurugram, sectionsGurugram, faqGurugram } from "@/utils/data";
 
 /* ============================
    METADATA (APP ROUTER)
 ============================ */
 export const metadata = {
   title:
-    "Gurugram EPF & ESIC Consultants: IT Sector & Auto-Hub Compliance Experts | EPFDesk",
+    "Gurugram EPF & ESIC Compliance: IT MNCs, IMT Manesar Auto Units & PE Liability | EPFDesk",
+
   description:
-    "Specialized EPF & ESIC consultancy for Gurugram IT MNCs, Manesar auto units, and Cyber City startups. Navigate RO Gurugram audits, the New Wage Code 50% rule, and local hiring laws.",
+    "High-risk EPF & ESIC compliance defence for Gurugram IT MNCs, Cyber City offices, IMT Manesar auto units and Haryana corporates. Experts in RO Gurugram enforcement, New Wage Code 50% rule, contractor PF liability and local labour law audits.",
+
+  keywords: [
+    "Gurugram PF consultant",
+    "Gurugram ESIC consultant",
+    "IT company PF ESIC Gurugram",
+    "IMT Manesar auto unit labour compliance",
+    "Cyber City PF audits",
+    "Principal Employer liability Gurugram",
+    "RO Gurugram EPFO jurisdiction",
+    "NWC 2025 wage restructuring Gurugram",
+  ],
+
   alternates: {
     canonical: "https://epfdesk.com/gurugram-epf-esic-compliance",
   },
+
   openGraph: {
-    title:
-      "Gurugram EPF & ESIC Compliance | IT & Automotive Powerhouse",
+    title: "Gurugram EPF & ESIC Compliance | IT & Automotive Powerhouse",
     description:
-      "PF & ESIC experts for Gurugram MNCs, IMT Manesar auto suppliers, Cyber City startups, and Haryana corporates.",
+      "PF & ESIC specialists for Gurugram IT MNCs, Cyber City startups, IMT Manesar auto suppliers and corporates.",
     url: "https://epfdesk.com/gurugram-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Gurugram EPF ESIC Compliance",
+        alt: "Gurugram PF ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Gurugram EPF & ESIC Compliance | IT & Auto Hub | EPFDesk",
+    description:
+      "Expert PF & ESIC compliance for Gurugram IT MNCs, IMT Manesar auto units and Cyber City offices.",
+    images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
@@ -52,15 +69,57 @@ const page = () => {
       {/* LEGACY HEAD */}
       <Head>
         <title>
-          Gurugram EPF & ESIC Compliance | IT & Auto-Hub Consultants
+          Gurugram EPF & ESIC Compliance: IT MNCs, IMT Manesar Auto Units & PE
+          Liability | EPFDesk
         </title>
+
         <meta
           name="description"
-          content="Statutory PF & ESIC compliance for Gurugram IT MNCs, IMT Manesar auto units, Cyber City startups, and Haryana corporates."
+          content="EPF & ESIC compliance defence for Gurugram IT MNCs, Cyber City offices, IMT Manesar auto units and Haryana corporates. RO Gurugram audits, New Wage Code 50% rule and contractor PF liability handled."
         />
+
+        <meta
+          name="keywords"
+          content="Gurugram PF consultant, Gurugram ESIC consultant, IT company PF ESIC Gurugram, IMT Manesar auto labour compliance, Cyber City PF audits, Principal Employer liability Gurugram, NWC 2025 wage restructuring Gurugram"
+        />
+
         <link
           rel="canonical"
           href="https://epfdesk.com/gurugram-epf-esic-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Gurugram EPF & ESIC Consultant | IT & Automotive Hub | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for Gurugram’s IT, auto and corporate clusters."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/gurugram-epf-esic-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Gurugram EPF & ESIC Compliance | IT & Auto Hub | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="PF & ESIC services for Gurugram IT MNCs, IMT Manesar auto units and Cyber City startups — PE liability and audits handled."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
         />
       </Head>
 
@@ -72,8 +131,7 @@ const page = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
-            name:
-              "Gurugram EPF & ESIC Compliance Consultants | EPFDesk",
+            name: "Gurugram EPF & ESIC Compliance Consultants | EPFDesk",
             image: "https://epfdesk.com/images/logo.jpg",
             url: "https://epfdesk.com/gurugram-epf-esic-compliance",
             telephone: "+91-9945933333",

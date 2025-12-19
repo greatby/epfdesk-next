@@ -440,8 +440,8 @@ export default function Footer() {
           <div className="max-w-7xl mx-auto px-6 py-8 space-y-6">
             {[
               { title: "PF Consultants", list: footerCities.pfConsultants },
-              { title: "EPF Registration", list: footerCities.epfRegistration },
-              { title: "PF Monthly Filing", list: footerCities.monthlyFiling },
+              // { title: "EPF Registration", list: footerCities.epfRegistration },
+              // { title: "PF Monthly Filing", list: footerCities.monthlyFiling },
               { title: "PF Compliance", list: footerCities.pfCompliance },
             ].map(({ title, list }) => (
               <div key={title} className="leading-relaxed">

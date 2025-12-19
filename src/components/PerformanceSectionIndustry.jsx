@@ -49,7 +49,7 @@ export const PerformanceSectionIndustry = ({ data }) => {
           </button>
 
           <button
-            onClick={() => (window.location.href = "tel:+919980511980")}
+            onClick={() => (window.location.href = "tel:+9119945933333")}
             className="bg-[#c4f5db] cursor-pointer text-[16px] text-[#066] font-[500] px-6 py-3 rounded-[13px] transition"
             style={{
               backgroundImage: "linear-gradient(180deg, #eafce9, #cdface)",

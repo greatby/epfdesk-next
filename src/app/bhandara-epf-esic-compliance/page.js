@@ -29,12 +29,10 @@ export const metadata = {
     "RO Nagpur EPFO defence",
   ],
   alternates: {
-    canonical:
-      "https://epfdesk.com/bhandara-epf-esic-compliance",
+    canonical: "https://epfdesk.com/bhandara-epf-esic-compliance",
   },
   openGraph: {
-    title:
-      "Bhandara EPF & ESIC Compliance | Rice Mills & Seasonal Workers",
+    title: "Bhandara EPF & ESIC Compliance | Rice Mills & Seasonal Workers",
     description:
       "Statutory EPF & ESIC compliance for Bhandara rice mills, agro-processing and seasonal labour.",
     url: "https://epfdesk.com/bhandara-epf-esic-compliance",
@@ -59,17 +57,57 @@ const page = () => {
       ============================ */}
       <Head>
         <title>
-          Bhandara EPF & ESIC Compliance for Rice Mills | EPFDesk
+          Bhandara EPF & ESIC Compliance for Rice Mills, Agro Processing &
+          Seasonal Labour | EPFDesk
         </title>
 
         <meta
           name="description"
-          content="EPF & ESIC compliance services for Bhandara rice mills, tendu leaf processing and seasonal agro-workers."
+          content="Expert PF & ESIC defence for Bhandara rice mills, tendu leaf processing units and seasonal agro-workers — contractor PF liability, ESIC coverage for hazardous handling and wage compliance support."
+        />
+
+        <meta
+          name="keywords"
+          content="Bhandara PF consultant, Bhandara ESIC consultant, rice mill PF ESIC Bhandara, tendu leaf labour compliance, seasonal worker PF ESIC, agro processing EPF ESIC, NWC 2025 wage restructuring Bhandara"
         />
 
         <link
           rel="canonical"
           href="https://epfdesk.com/bhandara-epf-esic-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Bhandara EPF & ESIC Consultant | Rice Mills & Agro Processing | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for Bhandara’s rice mills and agro-processing clusters. Specialists in contractor PF audits and seasonal labour coverage."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/bhandara-epf-esic-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Bhandara EPF & ESIC Compliance | Rice Mills & Agro Processing | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="PF & ESIC services for Bhandara rice mills and seasonal agro labour — contractor PF liability, ESIC coverage and wage audits."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
         />
       </Head>
 
@@ -84,14 +122,12 @@ const page = () => {
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
 
-            name:
-              "Bhandara EPF & ESIC Compliance Service | EPFDesk",
+            name: "Bhandara EPF & ESIC Compliance Service | EPFDesk",
             alternateName:
               "EPFDesk – Rice Mill & Agro-Processing Labour Law Consultants Bhandara",
 
             image: "https://epfdesk.com/images/logo.jpg",
-            url:
-              "https://epfdesk.com/bhandara-epf-esic-compliance",
+            url: "https://epfdesk.com/bhandara-epf-esic-compliance",
             telephone: "+91-9945933333",
 
             /* ✅ ADDRESS KEPT SAME AS BANGALORE */
@@ -136,15 +172,11 @@ const page = () => {
           CONTENT
       ============================ */}
       <FadeInWhenVisible>
-        <PerformanceSectionIndustry
-          data={heroDataBhandaraDistrict}
-        />
+        <PerformanceSectionIndustry data={heroDataBhandaraDistrict} />
       </FadeInWhenVisible>
 
       <FadeInWhenVisible>
-        <CodeOfConduct
-          sections={sectionsBhandaraDistrict}
-        />
+        <CodeOfConduct sections={sectionsBhandaraDistrict} />
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqBhandaraDistrict} />

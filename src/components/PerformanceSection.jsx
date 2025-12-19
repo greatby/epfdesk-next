@@ -1,6 +1,7 @@
 "use client";
 import { IoLogoWhatsapp } from "react-icons/io";
-export const PerformanceSection = ({ data,image }) => {
+import Image from "next/image";
+export const PerformanceSection = ({ data, image }) => {
   return (
     <>
       <section className="flex mt-8 flex-col items-center justify-center px-6 pt-20 text-center">
@@ -42,7 +43,7 @@ export const PerformanceSection = ({ data,image }) => {
           </button>
 
           <button
-            onClick={() => (window.location.href = "tel:+919980511980")}
+            onClick={() => (window.location.href = "tel:+919945933333")}
             className="bg-[#c4f5db] cursor-pointer text-[16px] text-[#066] font-[500] px-6 py-3 rounded-[13px] transition"
             style={{
               backgroundImage: "linear-gradient(180deg, #eafce9, #cdface)",
@@ -91,7 +92,11 @@ export const PerformanceSection = ({ data,image }) => {
       <div className=" relative p-1 rounded-3xl w-full max-w-5xl mx-auto">
         <div className="transition  rounded-[20px] ">
           <div className="grid grid-rows-1 text-left ">
-            <img src={image} alt="City Snap" />
+            <img
+              src={image}
+              alt="City Snap"
+              className="w-full h-auto rounded-2xl block"
+            />
           </div>
         </div>
       </div>

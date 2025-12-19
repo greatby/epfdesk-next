@@ -29,16 +29,13 @@ export const metadata = {
     "RO Akola EPFO defence",
   ],
   alternates: {
-    canonical:
-      "https://epfdesk.com/washim-epf-esic-compliance",
+    canonical: "https://epfdesk.com/washim-epf-esic-compliance",
   },
   openGraph: {
-    title:
-      "Washim EPF & ESIC Compliance | Cotton & Agro-Processing",
+    title: "Washim EPF & ESIC Compliance | Cotton & Agro-Processing",
     description:
       "Statutory EPF & ESIC compliance for Washim cotton ginning, oil mills and seasonal agro-labour.",
-    url:
-      "https://epfdesk.com/washim-epf-esic-compliance",
+    url: "https://epfdesk.com/washim-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
@@ -60,17 +57,57 @@ const page = () => {
       ============================ */}
       <Head>
         <title>
-          Washim EPF & ESIC Compliance for Cotton Ginning | EPFDesk
+          Washim EPF & ESIC Compliance: Cotton Ginning, Oil Mills & Seasonal
+          Labour Audits | EPFDesk
         </title>
 
         <meta
           name="description"
-          content="EPF & ESIC compliance services for Washim cotton ginning, oil mills and seasonal agro-processing units."
+          content="EPF & ESIC compliance defence for Washim cotton ginning factories, oil mills and agro-processing units. Handling seasonal and piece-rate labour PF liability, ESIC coverage expansion and RO Akola enforcement audits."
+        />
+
+        <meta
+          name="keywords"
+          content="Washim PF consultant, Washim ESIC consultant, cotton ginning PF ESIC Washim, oil mill labour compliance Washim, seasonal labour PF liability Vidarbha, RO Akola EPFO jurisdiction, ESIC notified area Washim, agro-processing PF audits Maharashtra"
         />
 
         <link
           rel="canonical"
           href="https://epfdesk.com/washim-epf-esic-compliance"
+        />
+
+        {/* OpenGraph */}
+        <meta
+          property="og:title"
+          content="Washim EPF & ESIC Compliance | Cotton Ginning & Agro-Processing | EPFDesk"
+        />
+        <meta
+          property="og:description"
+          content="PF & ESIC compliance for Washim cotton ginning units, oil mills and seasonal agro-processing employers."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://epfdesk.com/washim-epf-esic-compliance"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Washim EPF & ESIC Compliance | Cotton Ginning & Agro Units | EPFDesk"
+        />
+        <meta
+          name="twitter:description"
+          content="PF & ESIC services for Washim cotton ginning factories, oil mills and seasonal agro-processing units."
+        />
+        <meta
+          name="twitter:image"
+          content="https://epfdesk.com/images/logo.jpg"
         />
       </Head>
 
@@ -85,14 +122,12 @@ const page = () => {
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
 
-            name:
-              "Washim EPF & ESIC Compliance Service | EPFDesk",
+            name: "Washim EPF & ESIC Compliance Service | EPFDesk",
             alternateName:
               "EPFDesk – Cotton Ginning & Agro-Processing Compliance Washim",
 
             image: "https://epfdesk.com/images/logo.jpg",
-            url:
-              "https://epfdesk.com/washim-epf-esic-compliance",
+            url: "https://epfdesk.com/washim-epf-esic-compliance",
             telephone: "+91-9945933333",
 
             /* ✅ ADDRESS KEPT SAME AS BANGALORE */
@@ -137,15 +172,11 @@ const page = () => {
           CONTENT
       ============================ */}
       <FadeInWhenVisible>
-        <PerformanceSectionIndustry
-          data={heroDataWashimDistrict}
-        />
+        <PerformanceSectionIndustry data={heroDataWashimDistrict} />
       </FadeInWhenVisible>
 
       <FadeInWhenVisible>
-        <CodeOfConduct
-          sections={sectionsWashimDistrict}
-        />
+        <CodeOfConduct sections={sectionsWashimDistrict} />
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqWashimDistrict} />

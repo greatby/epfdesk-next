@@ -268,7 +268,7 @@ export default async function EPFPage({ params }) {
             }}
           />
           <FadeInWhenVisible>
-            <PerformanceSection data={data} image={'/images/EPF-bangalore.png'}/>
+            <PerformanceSection data={data} image={"/images/EPF-bangalore.png"}/>
           </FadeInWhenVisible>
           <FadeInWhenVisible>
             <CodeOfConduct sections={sectionsESICConsultant} />
@@ -1748,7 +1748,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/EPF-bangalore.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -1816,7 +1816,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomSix.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -1884,7 +1884,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomFive.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -1952,7 +1952,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomFour.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -2020,7 +2020,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomThree.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -2088,7 +2088,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomTwo.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -2156,7 +2156,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomOne.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -2224,7 +2224,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/random.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -2292,7 +2292,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomSix.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -2360,7 +2360,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/gurgaon.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -2428,7 +2428,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomFive.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -2496,7 +2496,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomThree.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -2564,7 +2564,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomFour.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -2632,7 +2632,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/randomThree.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -2700,7 +2700,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/coimbatore.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -2768,7 +2768,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/vadodara.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -2836,7 +2836,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/visakhapatnam.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -2904,7 +2904,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/nagpur.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -2972,7 +2972,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/bhopal.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -3040,7 +3040,7 @@ export default async function EPFPage({ params }) {
           />
 
           <FadeInWhenVisible>
-            <PerformanceSection data={data} />
+            <PerformanceSection data={data} image={'/images/kanpur.png'}/>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>

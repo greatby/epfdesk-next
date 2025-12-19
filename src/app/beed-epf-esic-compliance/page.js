@@ -59,18 +59,34 @@ const page = () => {
       ============================ */}
       <Head>
         <title>
-          Beed EPF & ESIC Compliance for Sugarcane Contractors & Migrant Worker Liability | EPFDesk
+          Beed EPF & ESIC Compliance: Sugarcane Contractors, Migrant Worker PF &
+          PE Liability | EPFDesk
         </title>
 
         <meta
           name="description"
-          content="Expert EPF & ESIC defence for Beed Sugar Mills, PF liability on migrant cane-cutting contractors (mukadams), Oil & Dal Mills."
+          content="EPF & ESIC compliance defense for Beed sugar mills, cane-cutting mukadam contractors, migrant workforce PF liability, oil mills and dal processing units. Inspection and PE liability handled."
         />
 
         <link
           rel="canonical"
           href="https://epfdesk.com/beed-epf-esic-compliance"
         />
+
+        <meta
+          property="og:title"
+          content="Beed EPF & ESIC Compliance | Sugarcane & Migrant Worker Liability"
+        />
+        <meta
+          property="og:description"
+          content="Specialists in PF & ESIC compliance for Beed sugar mills and migrant cane-cutting contractors."
+        />
+        <meta
+          property="og:image"
+          content="https://epfdesk.com/images/logo.jpg"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
       {/* ============================
