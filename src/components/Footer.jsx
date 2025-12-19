@@ -474,8 +474,8 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-6 pb-10 space-y-6">
           {[
             { title: "ESIC Consultants", list: esicCities.consultants },
-            { title: "ESIC Registration", list: esicCities.registration },
-            { title: "ESIC Monthly Filing", list: esicCities.monthlyFiling },
+            // { title: "ESIC Registration", list: esicCities.registration },
+            // { title: "ESIC Monthly Filing", list: esicCities.monthlyFiling },
             { title: "ESIC Compliance", list: esicCities.compliance },
           ].map(({ title, list }) => (
             <div key={title}>

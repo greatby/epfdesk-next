@@ -1,6 +1,6 @@
 "use client";
 import { IoLogoWhatsapp } from "react-icons/io";
-export const PerformanceSectionIndustry = ({ data}) => {
+export const PerformanceSectionIndustry = ({ data }) => {
   return (
     <>
       <section className="flex mt-8 flex-col items-center justify-center px-6 pt-20 text-center">
@@ -18,10 +18,17 @@ export const PerformanceSectionIndustry = ({ data}) => {
         <h2 className="text-4xl md:text-[3.2rem] mb-2 font-bold text-[#001f1f] max-w-5xl tracking-tight">
           {data?.title}
         </h2>
+         <div className=" relative p-1 rounded-3xl w-full max-w-5xl mx-auto">
+          <div className="transition  rounded-[20px] ">
+            <div className="grid grid-rows-1 text-left ">
+              <img src="/images/abstract.png" alt="City Snap" />
+            </div>
+          </div>
+        </div>
         <h3 className="text-4xl md:text-[2.3rem] font-bold text-[#001f1f] max-w-5xl tracking-tight">
           {data?.subTitle}
         </h3>
-
+       
         {/* Subtitle */}
         <p className="text-[#001f1f] font-normal mt-4 mb-6 max-w-xl text-[1.2rem]">
           {data?.description}
@@ -88,13 +95,6 @@ export const PerformanceSectionIndustry = ({ data}) => {
 
         {/* Card */}
       </section>
-        <div className=" relative p-1 rounded-3xl w-full max-w-5xl mx-auto">
-        <div className="transition  rounded-[20px] ">
-          <div className="grid grid-rows-1 text-left ">
-            <img src="/images/abstract.png" alt="City Snap" />
-          </div>
-        </div>
-      </div>
     </>
   );
 };
