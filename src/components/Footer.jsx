@@ -476,7 +476,7 @@ export default function Footer() {
             { title: "ESIC Consultants", list: esicCities.consultants },
             // { title: "ESIC Registration", list: esicCities.registration },
             // { title: "ESIC Monthly Filing", list: esicCities.monthlyFiling },
-            { title: "ESIC Compliance", list: esicCities.compliance },
+            // { title: "ESIC Compliance", list: esicCities.compliance },
           ].map(({ title, list }) => (
             <div key={title}>
               <div className="text-sm font-semibold text-gray-900 uppercase mb-2">
