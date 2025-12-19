@@ -88,6 +88,13 @@ export const PerformanceSectionIndustry = ({ data}) => {
 
         {/* Card */}
       </section>
+        <div className=" relative p-1 rounded-3xl w-full max-w-5xl mx-auto">
+        <div className="transition  rounded-[20px] ">
+          <div className="grid grid-rows-1 text-left ">
+            <img src="/images/abstract.png" alt="City Snap" />
+          </div>
+        </div>
+      </div>
     </>
   );
 };
