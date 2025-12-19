@@ -328,7 +328,7 @@ export default function Footer() {
             <div className="col-span-12 md:col-span-9 lg:col-span-8">
               <div className="grid grid-cols-2 sm:grid-cols-5 gap-8">
                 {/* 1 — PF Consultants */}
-                <div>
+                {/* <div>
                   <h4 className="text-sm font-semibold mb-4 uppercase">
                     PF Consultants
                   </h4>
@@ -344,10 +344,10 @@ export default function Footer() {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div> */}
 
                 {/* 2 — EPF Registration */}
-                <div>
+                {/* <div>
                   <h4 className="text-sm font-semibold mb-4 uppercase">
                     EPF Registration
                   </h4>
@@ -363,10 +363,10 @@ export default function Footer() {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div> */}
 
                 {/* 3 — Monthly Filing */}
-                <div>
+                {/* <div>
                   <h4 className="text-sm font-semibold mb-4 uppercase">
                     Monthly Filing
                   </h4>
@@ -382,10 +382,10 @@ export default function Footer() {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div> */}
 
                 {/* 4 — PF Compliance */}
-                <div>
+                {/* <div>
                   <h4 className="text-sm font-semibold mb-4 uppercase">
                     PF Compliance
                   </h4>
@@ -401,7 +401,7 @@ export default function Footer() {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div> */}
 
                 {/* 5 — Links (RESTORED) */}
                 <div>
