@@ -286,7 +286,7 @@ export default function Footer() {
                   height={100}
                 />
 
-                <div className="flex flex-row gap-3">
+                <div className="flex flex-row gap-4">
                   {[
                     {
                       label: "YOUTUBE",
@@ -316,7 +316,7 @@ export default function Footer() {
                       rel="noopener noreferrer"
                       className="flex gap-3 text-sm hover:bg-gray-50"
                     >
-                      <Icon />
+                      <Icon size={25}/>
                       {/* <span>{label}</span> */}
                     </a>
                   ))}
