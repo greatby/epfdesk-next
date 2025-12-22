@@ -1655,12 +1655,12 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.8,
     },
-    {
-      url: `${base}/raebareli-epf-esic-compliance`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
+    // {
+    //   url: `${base}/raebareli-epf-esic-compliance`,
+    //   lastModified: new Date(),
+    //   changeFrequency: "monthly",
+    //   priority: 0.8,
+    // },
     {
       url: `${base}/indore-epf-esic-compliance`,
       lastModified: new Date(),

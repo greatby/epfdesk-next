@@ -1062,10 +1062,10 @@ export default function Footer() {
                   label: "Mirzapur EPF & ESIC Compliance",
                   slug: "mirzapur-epf-esic-compliance",
                 },
-                {
-                  label: "Raebareli EPF & ESIC Compliance",
-                  slug: "raebareli-epf-esic-compliance",
-                },
+                // {
+                //   label: "Raebareli EPF & ESIC Compliance",
+                //   slug: "raebareli-epf-esic-compliance",
+                // },
                 {
                   label: "Indore EPF & ESIC Compliance",
                   slug: "indore-epf-esic-compliance",
