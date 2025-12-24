@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,14 +10,16 @@ import {
   faqJPUB,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Rajasthan EPF & ESIC Compliance 2025: Jodhpur Solar, Udaipur Mining & Bhilwara Textile Audits | EPFDesk",
+
   description:
-    "Expert EPF & ESIC defense for Rajasthan’s mining, textile and solar hubs. Navigate RO Jodhpur/Udaipur audits, JPMIA PE liability and Bhilwara textile EEC-2025 amnesty.",
+    "Expert EPF & ESIC compliance defence for Rajasthan’s mining, textile and solar hubs. Coverage includes RO Jodhpur/Udaipur audits, JPMIA Principal Employer liability and Bhilwara textile EEC-2025 exposure.",
+
   keywords: [
     "Jodhpur EPF consultant",
     "Pali solar PF compliance",
@@ -29,142 +28,90 @@ export const metadata = {
     "RO Jodhpur EPF 7A defense",
     "RO Udaipur ESIC compliance",
   ],
+
   alternates: {
     canonical:
       "https://epfdesk.com/jodhpur-pali-udaipur-bhilwara-epf-esic-compliance",
   },
-  openGraph: {
-    title:
-      "Rajasthan EPF & ESIC Compliance | Mineral, Textile & Solar Hubs",
-    description:
-      "PF & ESIC specialists for Jodhpur handicrafts & solar parks, Udaipur mining belt and Bhilwara textiles.",
-    url:
-      "https://epfdesk.com/jodhpur-pali-udaipur-bhilwara-epf-esic-compliance",
-    images: [
-      {
-        url: "https://epfdesk.com/images/logo.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Jodhpur Udaipur Bhilwara EPF ESIC Compliance",
-      },
-    ],
-    locale: "en_IN",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "Rajasthan EPF & ESIC Compliance | Solar, Mining & Textiles",
-    description:
-      "High-risk PF & ESIC compliance for Rajasthan’s solar, mining and textile clusters.",
-    images: ["https://epfdesk.com/images/logo.jpg"],
-  },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Rajasthan EPF & ESIC Compliance 2025: Jodhpur Solar, Udaipur Mining & Bhilwara Textile Audits | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="rajasthan-jpub-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-RJ">
+            <meta name="geo.placename" content="Jodhpur, Pali, Udaipur, Bhilwara, Rajasthan">
+            <meta name="geo.position" content="26.2389;73.0243">
+            <meta name="ICBM" content="26.2389, 73.0243">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for Jodhpur handicraft exporters, Pali solar contractors, Udaipur mining units and Bhilwara textile mills."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/jodhpur-pali-udaipur-bhilwara-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Rajasthan EPF & ESIC Compliance"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Rajasthan’s mineral, textile and renewable energy sectors."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
-        id="schema-jpub"
+        id="schema-rajasthan-jpub"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/jodhpur-pali-udaipur-bhilwara-epf-esic-compliance#organization",
 
-            name:
-              "Rajasthan EPF & ESIC Compliance – Solar, Mining & Textile Zones | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Jodhpur, Pali, Udaipur & Bhilwara",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Specialists for Rajasthan Industrial Hubs",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url:
-              "https://epfdesk.com/jodhpur-pali-udaipur-bhilwara-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Rajasthan EPF & ESIC Compliance for Jodhpur Solar, Udaipur Mining & Bhilwara Textiles",
 
-            /* ✅ SAME ADDRESS */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url:
+            "https://epfdesk.com/jodhpur-pali-udaipur-bhilwara-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ CLUSTER-ACCURATE ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Rajasthan",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance specialists for Rajasthan’s solar parks, handicraft exporters, mining belts and textile clusters governed by RO Jodhpur and RO Udaipur.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 26.2389,
+            longitude: 73.0243,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Jodhpur District" },
+            { "@type": "AdministrativeArea", name: "Pali District" },
+            { "@type": "AdministrativeArea", name: "Udaipur District" },
+            { "@type": "AdministrativeArea", name: "Bhilwara District" },
+            { "@type": "Place", name: "JPMIA – Jodhpur Pali Industrial Area" },
+            { "@type": "Place", name: "Phalodi Solar Belt" },
+            { "@type": "Place", name: "Rajsamand Mining Belt" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Jodhpur District" },
-              { "@type": "AdministrativeArea", name: "Pali District" },
-              { "@type": "AdministrativeArea", name: "Udaipur District" },
-              { "@type": "AdministrativeArea", name: "Bhilwara District" },
-              { "@type": "Place", name: "JPMIA" },
-              { "@type": "Place", name: "Phalodi" },
-              { "@type": "Place", name: "Rajsamand" },
-            ],
+          description:
+            "EPF & ESIC compliance services for Rajasthan’s solar parks, handicraft exporters, marble & mining belts and textile clusters. Expertise includes Principal Employer liability, contractor audits, EEC-2025 disclosure strategy and RO Jodhpur/Udaipur enforcement defence.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "85",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "85",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataJPUB} />
       </FadeInWhenVisible>
@@ -174,8 +121,44 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqJPUB} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script
+        id="conversion-tracking-jpub"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

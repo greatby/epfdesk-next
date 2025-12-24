@@ -1,10 +1,10 @@
+import Script from "next/script";
+import React from "react";
+
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
 
 import {
   heroDataShivamoggaDist,
@@ -12,35 +12,32 @@ import {
   faqShivamogga,
 } from "@/utils/data";
 
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Shivamogga EPF & ESIC Compliance for Foundries, Rice Mills, Arecanut Processing & VISL Contractors | EPFDesk",
+
   description:
-    "EPFDesk provides expert PF & ESIC compliance services for Shivamogga foundries, heavy engineering, rice mills, arecanut processing units and VISL/MPM contractors. Specialists in hazardous industry ESIC, PF wage audits, contractor liability and NWC 2025 wage compliance.",
-  keywords: [
-    "Shivamogga PF consultant",
-    "Shivamogga ESIC consultant",
-    "foundry PF ESIC",
-    "VISL contractor PF liability",
-    "arecanut processing PF",
-    "EPFDesk Karnataka"
-  ],
+    "Expert EPF & ESIC compliance for Shivamogga foundries, VISL/MPM contractors, rice mills and arecanut processing units. Specialists in hazardous industry ESIC, PF wage audits, contractor liability and NWC 2025 compliance.",
+
   alternates: {
     canonical: "https://epfdesk.com/shivamogga-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Shivamogga EPF & ESIC Consultant | Foundries, Agro-Processing & VISL | EPFDesk",
+      "Shivamogga EPF & ESIC Compliance | Foundries, Agro-Processing & VISL",
     description:
-      "PF & ESIC experts for Shivamogga’s foundries, heavy engineering, rice mills, and VISL-linked contract workforce.",
+      "PF & ESIC specialists for Shivamogga foundries, heavy engineering, rice mills and VISL-linked contract labour.",
     url: "https://epfdesk.com/shivamogga-epf-esic-compliance",
-    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "EPFDesk Shivamogga PF ESIC Compliance",
+        alt: "Shivamogga EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -50,131 +47,94 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Shivamogga EPF & ESIC Compliance | Foundries & Agro-Processing | EPFDesk",
+      "Shivamogga EPF & ESIC Compliance | Foundries & Agro-Processing",
     description:
-      "PF/ESI experts for Shivamogga’s foundries, engineering units, rice and arecanut processing clusters.",
+      "High-risk PF & ESIC compliance for Shivamogga foundries, VISL contractors and agro-processing units.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Shivamogga EPF & ESIC Compliance for Foundries, Rice Mills, Arecanut
-          Processing & VISL Contractors | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="shivamogga-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-KA">
+            <meta name="geo.placename" content="Shivamogga">
+            <meta name="geo.position" content="13.9299;75.5681">
+            <meta name="ICBM" content="13.9299, 75.5681">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="PF & ESIC compliance for Shivamogga’s foundry cluster, engineering MSMEs, VISL contractors and agro-processing units. High-risk ESIC, PF wage audits, contractor compliance & NWC 2025 alignment."
-        />
-
-        <meta
-          name="keywords"
-          content="Shivamogga PF ESIC, foundry PF compliance, VISL contractor PF, rice mill PF ESIC, arecanut processing PF"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/shivamogga-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Shivamogga EPF & ESIC Consultant | Foundries & VISL Contractors"
-        />
-        <meta
-          property="og:description"
-          content="Expert PF & ESIC services for Shivamogga's foundry belt, engineering sector, rice mills and VISL-linked contractors."
-        />
-        <meta property="og:image" content="https://epfdesk.com/images/logo.jpg" />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/shivamogga-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Shivamogga PF & ESIC Compliance | Foundries & Agro-Processing"
-        />
-        <meta
-          name="twitter:description"
-          content="PF/ESI compliance for Shivamogga’s engineering, foundry, rice mill & arecanut sectors."
-        />
-        <meta name="twitter:image" content="https://epfdesk.com/images/logo.jpg" />
-      </Head>
-
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-shivamogga"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/shivamogga-epf-esic-compliance#organization",
 
-            name: "Shivamogga EPF & ESIC Compliance | Foundries, Engineering & Agro-Processing | EPFDesk",
-            alternateName:
-              "EPFDesk – Shivamogga PF ESIC Consultants for Foundries & VISL Contractors",
+          name:
+            "Shivamogga EPF & ESIC Compliance – Foundries, VISL & Agro-Processing | EPFDesk",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/shivamogga-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "EPFDesk – Shivamogga PF & ESIC Consultants for Foundries & VISL Contractors",
 
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/shivamogga-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
+
+          /* ✅ CITY-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Machenahalli Industrial Area",
+            addressLocality: "Shivamogga",
+            addressRegion: "Karnataka",
+            postalCode: "577222",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 13.9299,
+            longitude: 75.5681,
+          },
+
+          areaServed: [
+            { "@type": "City", name: "Shivamogga" },
+            {
+              "@type": "AdministrativeArea",
+              name: "Shivamogga District",
             },
-
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 13.9299,
-              longitude: 75.5681,
+            {
+              "@type": "AdministrativeArea",
+              name: "Malnad Karnataka",
             },
+          ],
 
-            description:
-              "EPFDesk handles PF & ESIC compliance for Shivamogga foundries, heavy engineering units, VISL/MPM contractors, rice mills and arecanut processing clusters. Specialists in hazardous industry ESIC, PF wage audits & contractor liability mitigation.",
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          description:
+            "EPF & ESIC compliance services for Shivamogga foundries, heavy engineering units, VISL/MPM contractors, rice mills and arecanut processing clusters. Expertise includes hazardous industry ESIC coverage, PF wage audits, contractor liability mitigation and NWC 2025 compliance.",
 
-            priceRange: "₹₹",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "36",
+          },
+        })}
+      </Script>
 
-            areaServed: [
-              { "@type": "City", name: "Shivamogga" },
-              { "@type": "Place", name: "Bhadravathi VISL/MPM Belt" },
-              { "@type": "Place", name: "Machenahalli Industrial Area" },
-              { "@type": "Place", name: "Arecanut Processing Cluster" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "36",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataShivamoggaDist} />
       </FadeInWhenVisible>
@@ -184,8 +144,49 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqShivamogga} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-shivamogga" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: 'shivamogga',
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: 'shivamogga',
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: 'shivamogga',
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

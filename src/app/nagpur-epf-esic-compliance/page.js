@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,14 +10,16 @@ import {
   faqNagpurDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Nagpur EPF & ESIC Compliance for MIHAN SEZ, Butibori MIDC & Vidarbha Industrial Hubs | EPFDesk",
+
   description:
-    "Expert EPF & ESIC defence for MIHAN SEZ IT and aviation contractors, PF liability for Butibori MIDC factories, and mandatory ESIC for hazardous industry workers. Specialists in SEZ compliance and Principal Employer liability.",
+    "Expert EPF & ESIC defence for MIHAN SEZ IT and aviation contractors, PF liability for Butibori & Hingna MIDC factories, and mandatory ESIC for hazardous industries. Specialists in SEZ compliance and Principal Employer liability across Vidarbha.",
+
   keywords: [
     "Nagpur PF consultant",
     "MIHAN SEZ EPF compliance",
@@ -29,136 +28,116 @@ export const metadata = {
     "EPFO 7A defence Nagpur",
     "SEZ labour law compliance MIHAN",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/nagpur-epf-esic-compliance",
   },
+
   openGraph: {
     title:
       "Nagpur EPF & ESIC Compliance | MIHAN SEZ & MIDC Factories | EPFDesk",
     description:
       "PF & ESIC specialists for Nagpur MIHAN SEZ, Butibori & Hingna MIDC factories, and Vidarbha industrial hubs.",
     url: "https://epfdesk.com/nagpur-epf-esic-compliance",
+    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Nagpur EPF ESIC Compliance",
+        alt: "Nagpur EPF & ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title:
-      "Nagpur EPF & ESIC Compliance | MIHAN SEZ & Butibori MIDC | EPFDesk",
+      "Nagpur EPF & ESIC Compliance | MIHAN SEZ & MIDC Factories | EPFDesk",
     description:
-      "High-risk EPF & ESIC compliance and EPFO 7A defence for Nagpur MIHAN and MIDC factories.",
+      "High-risk EPF & ESIC compliance and EPFO 7A defence for Nagpur MIHAN SEZ and MIDC factories.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Nagpur EPF & ESIC Compliance for MIHAN SEZ, Butibori MIDC & Vidarbha Industrial Hubs | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="nagpur-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Nagpur, Maharashtra, India">
+            <meta name="geo.position" content="21.1458;79.0882">
+            <meta name="ICBM" content="21.1458, 79.0882">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC defence for MIHAN SEZ contractors, Butibori & Hingna MIDC factories, and hazardous industry ESIC compliance."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/nagpur-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Nagpur EPF & ESIC Compliance | MIHAN SEZ & MIDC Factories"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Nagpur MIHAN SEZ, Butibori MIDC, and Vidarbha industrial clusters."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-nagpur"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/nagpur-epf-esic-compliance#organization",
 
-            name: "Nagpur EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for MIHAN SEZ & Butibori MIDC",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Consultants for Nagpur District",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/nagpur-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Nagpur EPF & ESIC Compliance for MIHAN SEZ, Butibori & Hingna MIDC",
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/nagpur-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
+
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Maharashtra",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 21.1458,
+            longitude: 79.0882,
+          },
+
+          areaServed: [
+            { "@type": "City", name: "Nagpur" },
+            { "@type": "Place", name: "MIHAN SEZ" },
+            { "@type": "Place", name: "Butibori MIDC" },
+            { "@type": "Place", name: "Hingna MIDC" },
+            {
+              "@type": "AdministrativeArea",
+              name: "Vidarbha Region",
             },
+          ],
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          description:
+            "EPF & ESIC compliance services for Nagpur MIHAN SEZ operations, Butibori and Hingna MIDC factories, including SEZ labour law compliance, EPFO Section 7A defence, hazardous industry ESIC coverage and Principal Employer liability management.",
 
-            description:
-              "Expert EPF & ESIC compliance for Nagpur district MIHAN SEZ operations, Butibori and Hingna MIDC factories, and Principal Employer liability management across Vidarbha.",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "90",
+          },
+        })}
+      </Script>
 
-            priceRange: "₹₹₹",
-
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Nagpur District" },
-              { "@type": "Place", name: "MIHAN SEZ" },
-              { "@type": "Place", name: "Butibori MIDC" },
-              { "@type": "Place", name: "Hingna MIDC" },
-              { "@type": "Place", name: "Vidarbha Industrial Corridor" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "90",
-            },
-          }),
-        }}
-      />
-
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataNagpurDistrict} />
       </FadeInWhenVisible>
@@ -168,8 +147,52 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqNagpurDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script
+        id="conversion-tracking-nagpur"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

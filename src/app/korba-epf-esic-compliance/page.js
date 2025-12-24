@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,14 +10,16 @@ import {
   faqKorbaDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Korba EPF & ESIC Compliance: Power Plant PE Liability, BALCO Ancillary Audits & EEC-2025 | EPFDesk",
+
   description:
     "Specialized EPF & ESIC defense for Korba power plants, aluminium units and coal contractors. Navigate RO Bilaspur audits, EEC-2025 voluntary disclosure and ESIC medical benefits.",
+
   keywords: [
     "Korba PF consultant",
     "EPF compliance for power plant contractors",
@@ -29,26 +28,32 @@ export const metadata = {
     "RO Bilaspur EPF 7A defense",
     "EEC 2025 Korba contractors",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/korba-epf-esic-compliance",
   },
+
+  /* ✅ OPEN GRAPH */
   openGraph: {
     title:
       "Korba EPF & ESIC Compliance | Power, Aluminum & Mining Hub",
     description:
       "PF & ESIC specialists for Korba power plants, BALCO ancillaries and coal mining contractors.",
     url: "https://epfdesk.com/korba-epf-esic-compliance",
+    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Korba EPF ESIC Compliance",
+        alt: "Korba EPF & ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
+  /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
     title:
@@ -59,107 +64,80 @@ export const metadata = {
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Korba EPF & ESIC Compliance: Power Plant PE Liability, BALCO Ancillary Audits & EEC-2025 | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="korba-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-CG">
+            <meta name="geo.placename" content="Korba, Korba District, Chhattisgarh">
+            <meta name="geo.position" content="22.3595;82.7501">
+            <meta name="ICBM" content="22.3595, 82.7501">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for Korba power plants, aluminium smelters and coal-handling contractors under RO Bilaspur."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/korba-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Korba EPF & ESIC Compliance"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Korba’s power, aluminum and mining ecosystem."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-korba"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/korba-epf-esic-compliance#organization",
 
-            name:
-              "Korba EPF & ESIC Compliance – Power, Aluminum & Mining | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Korba Power & Mining Units",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Consultants for Korba District",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/korba-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Korba EPF & ESIC Compliance for Power, Aluminum & Mining Units",
 
-            /* ✅ SAME ADDRESS */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/korba-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Korba",
+            addressRegion: "Chhattisgarh",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance specialists for Korba’s power plants, aluminium smelters, coal mining contractors and hazardous industrial units governed by RO Bilaspur.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 22.3595,
+            longitude: 82.7501,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Korba District" },
+            { "@type": "Place", name: "NTPC Jamnipali" },
+            { "@type": "Place", name: "BALCO Korba" },
+            { "@type": "Place", name: "SECL Korba" },
+            { "@type": "Place", name: "CSPGCL Korba" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Korba District" },
-              { "@type": "Place", name: "NTPC Jamnipali" },
-              { "@type": "Place", name: "BALCO Korba" },
-              { "@type": "Place", name: "SECL Korba" },
-              { "@type": "Place", name: "CSPGCL Korba" },
-            ],
+          description:
+            "EPF & ESIC compliance services for Korba power plants, aluminium smelters, coal mining contractors and hazardous industrial units governed by RO Bilaspur. Expertise includes Principal Employer liability, Section 7A defense and EEC-2025 filings.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "82",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "82",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataKorbaDistrict} />
       </FadeInWhenVisible>
@@ -169,8 +147,23 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqKorbaDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-korba" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

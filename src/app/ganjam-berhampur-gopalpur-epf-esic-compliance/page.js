@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,30 +10,38 @@ import {
   faqGanjamDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
-    "Ganjam EPF & ESIC Compliance: Berhampur & Gopalpur SEZ Consultants | EPFDesk",
+    "Ganjam EPF & ESIC Compliance 2025: Gopalpur SEZ, Port Contractors & Berhampur MSMEs | EPFDesk",
+
   description:
-    "Expert EPF & ESIC consultancy for Gopalpur Port contractors, Tata Steel SEZ units and Berhampur MSMEs. Navigate RO Berhampur audits, EEC-2025 and SEZ compliance.",
+    "Expert EPF & ESIC compliance for Ganjam district covering Gopalpur Port & SEZ contractors, Tata Steel SEZ units and Berhampur MSMEs. Specialists in RO Berhampur audits, EEC-2025 enrolment and SEZ labour compliance.",
+
   keywords: [
     "Ganjam PF consultant",
+    "Ganjam ESIC consultant",
     "Berhampur EPF ESIC compliance",
     "Gopalpur SEZ PF audit",
     "Port contractor ESIC Odisha",
-    "RO Berhampur EPF 7A defense",
+    "RO Berhampur EPFO jurisdiction",
+    "SEZ labour law compliance Odisha",
+    "EEC 2025 EPF enrolment Ganjam",
+    "EPFDesk Ganjam",
   ],
+
   alternates: {
-    canonical: "https://epfdesk.com/ganjam-epf-esic-compliance",
+    canonical: "https://epfdesk.com/ganjam-berhampur-gopalpur-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Ganjam EPF & ESIC Compliance | Gopalpur SEZ & Port Hub",
+      "Ganjam EPF & ESIC Compliance | Gopalpur SEZ, Port & MSME Hub",
     description:
-      "PF & ESIC specialists for Ganjam’s SEZ, port logistics and MSME ecosystem governed by RO Berhampur.",
-    url: "https://epfdesk.com/ganjam-epf-esic-compliance",
+      "PF & ESIC specialists for Ganjam’s Gopalpur SEZ, port logistics contractors and Berhampur MSMEs.",
+    url: "https://epfdesk.com/ganjam-berhampur-gopalpur-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
@@ -48,111 +53,85 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Ganjam EPF & ESIC Consultants | Berhampur & Gopalpur",
-    description:
-      "High-risk PF & ESIC compliance for Gopalpur SEZ, port contractors and Berhampur MSMEs.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
+/* ===========================
    PAGE COMPONENT
-============================ */
-const page = () => {
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD
-      ============================ */}
-      <Head>
-        <title>
-          Ganjam EPF & ESIC Compliance: Gopalpur SEZ & Port Audits | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="ganjam-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-OD">
+            <meta name="geo.placename" content="Ganjam">
+            <meta name="geo.position" content="19.3149;84.7941">
+            <meta name="ICBM" content="19.3149, 84.7941">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for Gopalpur SEZ contractors, Berhampur MSMEs and hazardous-process units."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/ganjam-epf-esic-compliance"
-        />
-
-        <meta property="og:title" content="Ganjam EPF & ESIC Compliance" />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Ganjam’s SEZ, port logistics and MSME ecosystem."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-ganjam"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/ganjam-berhampur-gopalpur-epf-esic-compliance#organization",
 
-            name:
-              "Ganjam EPF & ESIC Compliance Consultants | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Advisory for Gopalpur SEZ & Berhampur MSMEs",
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Ganjam District & Gopalpur SEZ",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/ganjam-berhampur-gopalpur-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/ganjam-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          /* ✅ DISTRICT-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Berhampur",
+            addressRegion: "Odisha",
+            postalCode: "760001",
+            addressCountry: "IN",
+          },
 
-            /* CONSISTENT ADDRESS */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 19.3149,
+            longitude: 84.7941,
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Ganjam District" },
+            { "@type": "Place", name: "Berhampur" },
+            { "@type": "Place", name: "Gopalpur SEZ" },
+            { "@type": "Place", name: "Gopalpur Port" },
+            { "@type": "Place", name: "Chatrapur" },
+          ],
 
-            description:
-              "EPF & ESIC compliance specialists for Ganjam SEZ units, port contractors and MSMEs governed by RO Berhampur.",
+          description:
+            "EPF & ESIC compliance services for Ganjam district including Gopalpur Port & SEZ contractors, Tata Steel SEZ units and Berhampur MSMEs. Expertise in RO Berhampur inspections, EEC-2025 enrolment, SEZ labour law compliance and Principal Employer liability.",
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Ganjam District" },
-              { "@type": "Place", name: "Berhampur" },
-              { "@type": "Place", name: "Gopalpur SEZ" },
-              { "@type": "Place", name: "Chatrapur" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "81",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "81",
-            },
-          }),
-        }}
-      />
-
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataGanjamDistrict} />
       </FadeInWhenVisible>
@@ -162,8 +141,39 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqGanjamDistrict} />
+       <Script id="conversion-tracking-ganjam" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

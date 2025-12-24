@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,14 +10,16 @@ import {
   faqNandurbarDistrict,
 } from "@/utils/data";
 
-/* ============================
-   METADATA
-============================ */
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Nandurbar EPF & ESIC Compliance for Agro-Processing, Cotton & Newly Notified Areas | EPFDesk",
+
   description:
-    "Expert EPF & ESIC defence for Nandurbar Cotton Ginning, Agro-Processing units, seasonal tribal labour PF liability and mandatory ESIC compliance effective May 2025. SRO Jalgaon liaison.",
+    "Expert EPF & ESIC defence for Nandurbar cotton ginning factories, agro-processing units and seasonal tribal labour. Specialists in PF liability, SRO Jalgaon audits and ESIC applicability effective May 2025.",
+
   keywords: [
     "Nandurbar EPF consultant",
     "Nandurbar ESIC registration",
@@ -29,144 +28,113 @@ export const metadata = {
     "ESIC notification May 2025 Nandurbar",
     "EPFO SRO Jalgaon 7A defence",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/nandurbar-epf-esic-compliance",
   },
+
   openGraph: {
-    title: "Nandurbar EPF & ESIC Compliance | Agro-Processing & Tribal Labour",
+    title:
+      "Nandurbar EPF & ESIC Compliance | Agro-Processing & Tribal Labour | EPFDesk",
     description:
-      "High-risk PF & ESIC compliance for Nandurbar cotton, agro-processing and newly notified ESIC areas.",
+      "High-risk PF & ESIC compliance for Nandurbar cotton ginning units, agro-processing industries and newly notified ESIC zones.",
     url: "https://epfdesk.com/nandurbar-epf-esic-compliance",
+    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Nandurbar EPF ESIC Compliance",
+        alt: "Nandurbar EPF & ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Nandurbar EPF & ESIC Compliance | Agro & Tribal Labour | EPFDesk",
+    description:
+      "PF & ESIC compliance and audit defence for Nandurbar agro-processing units and seasonal tribal labour.",
+    images: ["https://epfdesk.com/images/logo.jpg"],
+  },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD
-      ============================ */}
-      <Head>
-        <title>
-          Nandurbar EPF & ESIC Compliance: Agro-Processing, Cotton Ginning &
-          Tribal Labour PF Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="nandurbar-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Nandurbar, Maharashtra, India">
+            <meta name="geo.position" content="21.3753;74.2428">
+            <meta name="ICBM" content="21.3753, 74.2428">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Nandurbar — cotton ginning factories, agro-processing units, seasonal and tribal labour employment. PF liability on migrant and piece-rate workers, ESIC coverage and inspection readiness handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Nandurbar PF consultant, Nandurbar ESIC consultant, cotton ginning PF ESIC Nandurbar, agro processing labour compliance, seasonal tribal labour PF liability, piece rate wages PF audits, ESIC coverage tribal areas, NWC 2025 wage restructuring Maharashtra"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/nandurbar-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Nandurbar EPF & ESIC Consultant | Agro-Processing & Tribal Labour | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Nandurbar cotton ginning, agro-processing units and seasonal tribal labour."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/nandurbar-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Nandurbar EPF & ESIC Compliance | Agro-Processing & Tribal Labour | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Nandurbar agro-processing units and seasonal tribal labour — PF liability and audits handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* ============================
-          SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-nandurbar"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/nandurbar-epf-esic-compliance#organization",
 
-            name: "Nandurbar EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Nandurbar Agro & Cotton Units",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Consultants for Nandurbar District",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/nandurbar-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Nandurbar EPF & ESIC Compliance for Cotton, Agro-Processing & Tribal Labour",
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/nandurbar-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Maharashtra",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance services for Nandurbar Cotton Ginning, Agro-Processing units and newly notified ESIC areas.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 21.3753,
+            longitude: 74.2428,
+          },
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Nandurbar District" },
-              { "@type": "Place", name: "Nandurbar MIDC" },
-            ],
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Nandurbar District" },
+            { "@type": "Place", name: "Nandurbar MIDC" },
+            { "@type": "Place", name: "Cotton Ginning & Pressing Units" },
+            { "@type": "Place", name: "Tribal Labour Areas" },
+            { "@type": "AdministrativeArea", name: "North Maharashtra" },
+          ],
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "37",
-            },
-          }),
-        }}
-      />
+          description:
+            "EPF & ESIC compliance services for Nandurbar cotton ginning factories, agro-processing units and newly notified ESIC areas effective May 2025. Expertise includes seasonal and tribal labour PF liability, piece-rate wage audits, EPFO Section 7A defence and SRO Jalgaon proceedings.",
 
-      {/* ============================
-          CONTENT
-      ============================ */}
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "37",
+          },
+        })}
+      </Script>
+
+      {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataNandurbarDistrict} />
       </FadeInWhenVisible>
@@ -176,8 +144,52 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqNandurbarDistrict} />
+
+      {/* ========= CONVERSION TRACKING (LOCKED) ========= */}
+      <Script
+        id="conversion-tracking-nandurbar"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

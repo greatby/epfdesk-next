@@ -1,10 +1,10 @@
+import Script from "next/script";
+import React from "react";
+
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
 
 import {
   heroDataRamanagaraDist,
@@ -12,23 +12,15 @@ import {
   faqRamanagara,
 } from "@/utils/data";
 
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Ramanagara EPF & ESIC Compliance: Bidadi Auto Cluster, Sericulture & PE Liability | EPFDesk",
 
   description:
-    "High-risk EPF & ESIC compliance defence for Ramanagara — Bidadi Toyota & Coca-Cola contractors, silk reeling and sericulture units, Channapatna toy MSMEs, Harohalli industrial estates and resort/hospitality employers. Experts in NWC wage restructuring, piece-rate labour audits, contractor PF liability and Principal Employer exposure.",
-
-  keywords: [
-    "Ramanagara PF consultant",
-    "Ramanagara ESIC consultant",
-    "Bidadi auto cluster PF ESIC",
-    "Toyota vendor labour compliance Bidadi",
-    "Silk sericulture PF ESIC Karnataka",
-    "Channapatna toy industry labour laws",
-    "Harohalli MSME PF audits",
-    "Principal Employer liability Ramanagara",
-  ],
+    "High-risk EPF & ESIC compliance defence for Ramanagara — Bidadi Toyota & Coca-Cola contractors, silk sericulture units, Channapatna toy MSMEs, Harohalli industrial estates and hospitality employers. Specialists in piece-rate audits, NWC wage restructuring, contractor PF liability and Principal Employer exposure.",
 
   alternates: {
     canonical: "https://epfdesk.com/ramanagara-epf-esic-compliance",
@@ -62,117 +54,79 @@ export const metadata = {
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Ramanagara EPF & ESIC Compliance: Bidadi Auto Cluster, Sericulture &
-          PE Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="ramanagara-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-KA">
+            <meta name="geo.placename" content="Ramanagara">
+            <meta name="geo.position" content="12.7969;77.3996">
+            <meta name="ICBM" content="12.7969, 77.3996">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Ramanagara — Bidadi Toyota & Coca-Cola contractors, silk sericulture and reeling units, Channapatna toy MSMEs, Harohalli industrial estates and resort employers. Piece-rate wage audits, contractor PF liability and Principal Employer exposure handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Ramanagara PF consultant, Ramanagara ESIC consultant, Bidadi auto cluster PF ESIC, Toyota Coca-Cola vendor compliance, silk sericulture labour laws Karnataka, Channapatna toy industry PF audits, Harohalli MSME labour compliance, NWC 2025 wage restructuring Ramanagara"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/ramanagara-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Ramanagara EPF & ESIC Consultant | Auto & Sericulture Clusters | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Bidadi auto OEM vendors, silk sericulture units, Channapatna toy MSMEs and Harohalli industries."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/ramanagara-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Ramanagara EPF & ESIC Compliance | Auto & Sericulture Clusters | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Ramanagara auto vendors, silk sericulture workers and MSMEs — audits and PE liability handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-ramanagara"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/ramanagara-epf-esic-compliance#organization",
 
-            name: "Ramanagara EPF & ESIC Compliance | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Bidadi Auto Cluster, Silk Sericulture & Harohalli Factories",
+          name:
+            "EPFDesk – Ramanagara EPF & ESIC Compliance for Auto, Sericulture & MSMEs",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/ramanagara-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "PF & ESIC Consultant for Bidadi Auto Cluster, Silk Sericulture & Harohalli MSMEs",
 
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Bidadi",
-              addressRegion: "Karnataka",
-              postalCode: "562109",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/ramanagara-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.7969,
-              longitude: 77.3996,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Karnataka",
+            addressCountry: "IN",
+          },
 
-            description:
-              "PF & ESIC compliance for Toyota contractors, silk reeling units, Channapatna toy manufacturers, Harohalli MSMEs and resort staff in Ramanagara district.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 12.7969,
+            longitude: 77.3996,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "City", name: "Ramanagara" },
+            { "@type": "City", name: "Bidadi" },
+            { "@type": "City", name: "Channapatna" },
+            { "@type": "City", name: "Kanakapura" },
+            { "@type": "City", name: "Harohalli" },
+          ],
 
-            areaServed: [
-              { "@type": "City", name: "Ramanagara" },
-              { "@type": "City", name: "Bidadi" },
-              { "@type": "City", name: "Channapatna" },
-              { "@type": "City", name: "Kanakapura" },
-              { "@type": "City", name: "Harohalli" },
-            ],
+          description:
+            "EPF & ESIC compliance services for Ramanagara district covering Bidadi auto OEM vendors, silk sericulture and reeling units, Channapatna toy MSMEs, Harohalli industrial estates and hospitality employers. Expertise in piece-rate labour audits, contractor PF liability, NWC wage restructuring and Principal Employer exposure.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "71",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "71",
+          },
+        })}
+      </Script>
 
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataRamanagaraDist} />
       </FadeInWhenVisible>
@@ -181,9 +135,52 @@ const page = () => {
         <CodeOfConduct sections={sectionsRamanagaraDist} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqRamanagara} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqRamanagara} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-ramanagara" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

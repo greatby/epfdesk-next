@@ -1,197 +1,191 @@
-// pages/visakhapatnam/page.jsx  (or app/visakhapatnam/page.jsx)
+import React from "react";
+import Script from "next/script";
+
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
-import Script from "next/script";
+import FaqAccordion from "@/components/faqAccordian";
+
 import {
   heroDataVisakhapatnamDist,
   sectionsVisakhapatnamDist,
   vizagDistFAQ,
 } from "@/utils/data";
-import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
+
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Visakhapatnam EPF & ESIC Consultant | NWC 2025 for Port Logistics, Pharma, Heavy Engineering & IT | EPFDesk",
+
   description:
-    "EPFDesk provides EPF & ESIC compliance services in Visakhapatnam, specializing in Port Logistics, Pharma City, Heavy Engineering, Naval Supply Chain & IT/ITES. Includes contractor audits, OSH/ESIC integration, payroll modelling for high-salaried engineering staff, and complete ECR filing management.",
-  keywords: [
-    "Visakhapatnam EPF Consultant",
-    "Vizag ESIC Consultant",
-    "Vizag Port Labour Compliance",
-    "Pharma City PF ESIC",
-    "Vizag Steel Plant Compliance",
-    "NWC 2025 Visakhapatnam",
-    "Contractor PF Audit Vizag",
-    "EPFDesk Visakhapatnam",
-  ],
+    "EPF & ESIC compliance for Visakhapatnam port logistics, Pharma City, heavy engineering, naval supply chain and IT/ITES sectors. Expertise in contractor audits, OSH–ESIC integration and NWC 2025 payroll modelling.",
+
+  alternates: {
+    canonical: "https://epfdesk.com/visakhapatnam-epf-esic-compliance",
+  },
+
   openGraph: {
     title:
-      "Visakhapatnam EPF & ESIC Compliance | Port Logistics, Pharma & Heavy Engineering – EPFDesk",
+      "Visakhapatnam EPF & ESIC Compliance | Port, Pharma & Heavy Engineering",
     description:
-      "Expert EPF & ESIC compliance solutions for Vizag’s Port, Pharma City, Naval Supply Chain, and Heavy Engineering industries. NWC 2025 payroll restructuring, contractor audits, OSH compliance & workforce documentation.",
+      "PF & ESIC specialists for Vizag Port Logistics, Pharma City, Heavy Engineering and IT/ITES sectors.",
     url: "https://epfdesk.com/visakhapatnam-epf-esic-compliance",
-    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Visakhapatnam EPF & ESIC Compliance – EPFDesk",
+        alt: "Visakhapatnam EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title:
-      "Visakhapatnam EPF & ESIC Consultant | Port, Pharma & Heavy Engineering – EPFDesk",
+      "Visakhapatnam EPF & ESIC Compliance | Port, Pharma & Heavy Engineering",
     description:
-      "EPFDesk supports Visakhapatnam industries with EPF/ESIC compliance, NWC 2025 payroll modelling, contractor audits & OSH/ESIC integration. Expertise for Port Logistics, Pharma City, Steel & IT sectors.",
+      "PF/ESIC compliance for Vizag Port Logistics, Pharma City, Steel, Heavy Engineering and IT sectors.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {" "}
-      <Head>
-        <title>
-          Visakhapatnam EPF & ESIC Consultant | NWC 2025 for Port Logistics,
-          Pharma & Heavy Engineering | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="visakhapatnam-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-AP">
+            <meta name="geo.placename" content="Visakhapatnam, Andhra Pradesh">
+            <meta name="geo.position" content="17.6868;83.2185">
+            <meta name="ICBM" content="17.6868, 83.2185">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPFDesk manages EPF & ESIC compliance in Vizag across Port Logistics, Pharma City, Heavy Engineering, IT/ITES and Naval Supply Chain. Includes OSH/ESIC integration, contractor audits, payroll modelling and statutory filing."
-        />
-
-        <meta
-          name="keywords"
-          content="Visakhapatnam EPF Consultant, Vizag ESIC Consultant, Port Logistics Compliance, Pharma City PF ESIC, Vizag Steel Plant PF, Contractor PF Audit Vizag, NWC 2025 Vizag, EPFDesk Visakhapatnam"
-        />
-
-        {/* Open Graph */}
-        <meta
-          property="og:title"
-          content="Visakhapatnam EPF & ESIC Compliance | Port, Pharma & Heavy Engineering – EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="Specialized EPF & ESIC compliance for Vizag's port logistics, pharma clusters, heavy engineering units & IT/ITES companies. Expert PF audits, NWC 2025 payroll restructuring & ESIC applicability guidance."
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/visakhapatnam-epf-esic-compliance"
-        />
-        <meta property="og:site_name" content="EPFDesk" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Visakhapatnam EPF & ESIC Consultant | Port, Pharma & Heavy Engineering – EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="EPFDesk supports Vizag’s port, pharma and industrial ecosystem with EPF/ESIC compliance, payroll restructuring, contractor audits & NWC 2025 readiness."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        {/* Canonical */}
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/visakhapatnam-epf-esic-compliance"
-        />
-      </Head>
-      <script
+      {/* ========= JSON-LD SCHEMA ========= */}
+      <Script
         id="schema-visakhapatnam"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/visakhapatnam-epf-esic-compliance#organization",
 
-            name: "Visakhapatnam EPF & ESIC Consultant: NWC 2025 for Port Logistics, Pharma, Heavy Engineering & IT | EPFDesk",
-            alternateName:
-              "EPFDesk – Visakhapatnam EPF & ESIC Compliance for Port, Pharma, Heavy Engineering and IT",
+          name:
+            "Visakhapatnam EPF & ESIC Compliance for Port Logistics, Pharma City, Heavy Engineering & IT | EPFDesk",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/visakhapatnam-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "EPFDesk – Vizag EPF & ESIC Consultants for Port, Pharma & Industrial Sectors",
 
-            // Address unchanged
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/visakhapatnam-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Visakhapatnam",
+            addressRegion: "Andhra Pradesh",
+            postalCode: "530001",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPFDesk provides EPF and ESIC compliance services in Visakhapatnam, focusing on port logistics, naval defence supply chains, heavy engineering, pharma clusters and IT/ITES. Services include contractor audits, OSH/ESIC integration, payroll modelling for high-salaried staff, and ECR filing.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 17.6868,
+            longitude: 83.2185,
+          },
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Visakhapatnam District" },
+            { "@type": "Place", name: "Visakhapatnam Port & Logistics Zone" },
+            { "@type": "Place", name: "APIIC Pharma City" },
+            { "@type": "Place", name: "Vizag Steel & Heavy Engineering Belt" },
+            { "@type": "Place", name: "Naval Dockyard & Defence Supply Chain" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "Visakhapatnam is a strategic industrial hub covering port logistics, naval defence supply chains, pharma manufacturing, heavy engineering and IT/ITES. EPFDesk provides EPF & ESIC compliance covering contractor audits, OSH–ESIC integration, high-salary payroll modelling under NWC 2025 and end-to-end ECR filing.",
 
-            areaServed: [
-              { "@type": "City", name: "Visakhapatnam" },
-              { "@type": "Place", name: "Port & Shipping Logistics" },
-              { "@type": "Place", name: "APIIC Pharma City" },
-              { "@type": "Place", name: "Vizag Steel & Heavy Engineering" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "47",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "47",
-            },
-          }),
-        }}
-      />
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataVisakhapatnamDist} />
       </FadeInWhenVisible>
+
       <FadeInWhenVisible>
         <CodeOfConduct sections={sectionsVisakhapatnamDist} />
       </FadeInWhenVisible>
+
       <FadeInWhenVisible>
         <FaqAccordion faqs={vizagDistFAQ} />
       </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script
+        id="conversion-tracking-visakhapatnam"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

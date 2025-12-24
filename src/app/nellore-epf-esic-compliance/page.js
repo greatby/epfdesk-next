@@ -1,21 +1,25 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
-import Script from "next/script";
-import Head from "next/head";
+import FaqAccordion from "@/components/faqAccordian";
+
 import {
   heroDataNelloreDist,
   sectionsNelloreDist,
   nelloreFAQ,
 } from "@/utils/data";
 
-import FaqAccordion from "@/components/faqAccordian";
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Nellore EPF & ESIC Consultant: Krishnapatnam Port, Aquaculture Processing & Thermal Power Projects | EPFDesk",
+
   description:
     "EPFDesk delivers EPF & ESIC compliance solutions for Nellore’s Krishnapatnam Port operators, aquaculture and seafood processing units, and EPC contractors in major thermal power projects. Expertise in contract labour audits, BOCW compliance, ESIC coverage for food-processing units, and NWC 2025 payroll restructuring.",
+
   keywords: [
     "Nellore PF consultant",
     "Nellore ESIC consultant",
@@ -29,9 +33,11 @@ export const metadata = {
     "NWC 2025 payroll AP",
     "EPFDesk Nellore",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/nellore-epf-esic-compliance",
   },
+
   openGraph: {
     title:
       "Nellore EPF & ESIC Consultant | Krishnapatnam Port, Aquaculture & Thermal Power Compliance | EPFDesk",
@@ -56,155 +62,142 @@ export const metadata = {
     title:
       "Nellore EPF & ESIC Compliance | Krishnapatnam Port, Aquaculture & Power Projects | EPFDesk",
     description:
-      "Compliance experts for aquaculture, seafood processing, Krishnapatnam Port, EPC contractors and thermal power plant projects in Nellore. PF/ESI audits, vendor compliance and NWC 2025 payroll models.",
+      "Compliance experts for aquaculture, seafood processing, Krishnapatnam Port, EPC contractors and thermal power plant projects in Nellore.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Nellore EPF & ESIC Consultant: Krishnapatnam Port, Aquaculture
-          Processing & Thermal Power Projects | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="nellore-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-AP">
+            <meta name="geo.placename" content="Nellore, Andhra Pradesh, India">
+            <meta name="geo.position" content="14.4426;79.9865">
+            <meta name="ICBM" content="14.4426, 79.9865">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPFDesk offers specialized EPF & ESIC compliance for aquaculture processing units, Krishnapatnam Port operations and EPC contractors in Nellore’s thermal power plants. Services include BOCW compliance, PF/ESI documentation, and NWC 2025 payroll restructuring."
-        />
-
-        <meta
-          name="keywords"
-          content="Nellore PF consultant, Krishnapatnam Port compliance, aquaculture PF ESIC AP, seafood processing EPF ESIC, thermal power plant PF ESIC, Sembcorp labour compliance, SDSTPS PF ESIC, BOCW compliance Nellore, AP contractor EPF audits, EPFDesk Nellore"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/nellore-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Nellore EPF & ESIC Consultant | Ports, Aquaculture & Power Sector Compliance | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="Compliance solutions for Nellore’s Krishnapatnam Port, aquaculture processing and thermal power project contractors. PF/ESI systems, BOCW compliance and NWC 2025 payroll restructuring."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/nellore-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Nellore EPF & ESIC Compliance | Aquaculture, Ports & Power | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC advisory for aquaculture, seafood processing, port logistics and power sector contractors in Nellore. Includes BOCW compliance and NWC 2025 payroll."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-      <script
+      {/* ========= JSON-LD SCHEMA ========= */}
+      <Script
         id="schema-nellore"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/nellore-epf-esic-compliance#organization",
 
-            name: "Nellore EPF & ESIC Consultant: Krishnapatnam Port, Aquaculture Processing & Thermal Power Projects | EPFDesk",
-            alternateName:
-              "EPFDesk – Nellore District EPF & ESIC Compliance for Ports, Aquaculture and Power Sector Contractors",
+          name:
+            "EPFDesk – Nellore EPF & ESIC Compliance for Ports, Aquaculture & Power Projects",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/nellore-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Nellore EPF & ESIC Consultant for Krishnapatnam Port, Aquaculture & Thermal Power",
 
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/nellore-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
+
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Andhra Pradesh",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 14.4426,
+            longitude: 79.9865,
+          },
+
+          areaServed: [
+            { "@type": "City", name: "Nellore" },
+            { "@type": "Place", name: "Krishnapatnam Port" },
+            { "@type": "Place", name: "Gudur–Kavali Aquaculture Belt" },
+            {
+              "@type": "Place",
+              name: "Thermal Power Projects (SDSTPS, Sembcorp)",
             },
+            { "@type": "Place", name: "BOCW Construction Zones" },
+          ],
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          description:
+            "EPF & ESIC compliance services for Nellore district covering Krishnapatnam Port operators, aquaculture and seafood processing units, thermal power project EPC contractors, BOCW construction labour, and NWC 2025 payroll restructuring.",
 
-            description:
-              "EPFDesk offers specialized EPF & ESIC compliance services for Nellore's aquaculture units, Krishnapatnam Port operators, and thermal power plant EPC contractors. Expertise in contract labour liability, food-processing ESIC coverage, and BOCW compliance.",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "48",
+          },
+        })}
+      </Script>
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
-
-            priceRange: "₹₹",
-
-            areaServed: [
-              { "@type": "City", name: "Nellore" },
-              { "@type": "Place", name: "Krishnapatnam Port" },
-              { "@type": "Place", name: "Gudur & Kavali Aquaculture Belt" },
-              {
-                "@type": "Place",
-                name: "Thermal Power Plant Zones (SDSTPS, Sembcorp)",
-              },
-              { "@type": "Place", name: "BOCW Construction Clusters" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "48",
-            },
-          }),
-        }}
-      />
-
-      {/* HERO */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataNelloreDist} />
       </FadeInWhenVisible>
 
-      {/* MAIN SECTIONS */}
       <FadeInWhenVisible>
         <CodeOfConduct sections={sectionsNelloreDist} />
       </FadeInWhenVisible>
 
-      {/* FAQ */}
       <FadeInWhenVisible>
         <FaqAccordion faqs={nelloreFAQ} />
       </FadeInWhenVisible>
+        <Script
+        id="conversion-tracking-nellore"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

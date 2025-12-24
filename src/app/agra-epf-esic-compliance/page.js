@@ -1,156 +1,189 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { faqAgra, heroDataAgraDist, sectionsAgraDist } from "@/utils/data";
+import {
+  faqAgra,
+  heroDataAgraDist,
+  sectionsAgraDist,
+} from "@/utils/data";
 
 /* ===========================
-   METADATA (APP ROUTER)
+   METADATA (DISTRICT PAGE)
 =========================== */
 export const metadata = {
   title:
-    "Agra EPF & ESIC Compliance: Footwear Piece-Rate Evasion, Leather Hazard Risk & Tourism PE Liability | EPFDesk",
-
+    "Agra EPF & ESIC Compliance: Footwear, Leather & Tourism PE Risk | EPFDesk",
   description:
-    "Critical EPF & ESIC defense for Agra footwear manufacturers, leather exporters, and hotels. Experts in RO Agra liaison, combating piece-rate wage suppression, ESIC hazard liability in leather/footwear units, and mitigating CLRA/Principal Employer risk across Western UP.",
-
-  keywords: [
-    "Agra PF consultant",
-    "Agra ESIC registration",
-    "Footwear piece rate PF Agra",
-    "Leather factory ESIC hazard Agra",
-    "Hotel contractor PE liability Agra",
-    "RO Agra EPFO consultant",
-  ],
-
+    "Expert EPF & ESIC compliance services in Agra for footwear manufacturers, leather exporters and hotels. RO Agra audits, piece-rate PF issues, ESIC hazard liability and CLRA Principal Employer risk handled.",
   alternates: {
     canonical: "https://epfdesk.com/agra-epf-esic-compliance",
   },
-
   openGraph: {
-    title:
-      "Agra EPF & ESIC Compliance | Footwear, Leather & Tourism Sector",
+    title: "Agra EPF & ESIC Consultants | EPFDesk",
     description:
-      "PF & ESIC specialists for Agra footwear factories, leather exporters and hotels. Piece-rate audits, PE liability and RO Agra enforcement handled.",
+      "PF & ESIC compliance experts for Agra footwear, leather and tourism industries.",
     url: "https://epfdesk.com/agra-epf-esic-compliance",
+    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Agra PF ESIC Compliance",
+        alt: "Agra EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
-
   twitter: {
     card: "summary_large_image",
-    title:
-      "Agra EPF & ESIC Compliance | Footwear & Leather Risk | EPFDesk",
-    description:
-      "Expert PF/ESIC compliance for Agra footwear, leather and tourism sectors.",
     images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
 /* ===========================
    PAGE COMPONENT
 =========================== */
-const page = () => {
+export default function Page() {
   return (
     <>
-      {/* ========= LEGACY HEAD ========= */}
-      <Head>
-        <title>
-          Agra EPF & ESIC Compliance: Footwear Piece-Rate Evasion, Leather Hazard Risk & Tourism PE Liability | EPFDesk
-        </title>
+      {/* ========= GEO + ADDITIONAL META TAGS ========= */}
+      <Script id="agra-geo-meta" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-UP">
+            <meta name="geo.placename" content="Agra">
+            <meta name="geo.position" content="27.1767;78.0081">
+            <meta name="ICBM" content="27.1767, 78.0081">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/agra-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/agra-epf-esic-compliance">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defense for Agra footwear factories, leather exporters and hotels. Piece-rate PF audits, ESIC hazard exposure and RO Agra enforcement handled."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/agra-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Agra EPF & ESIC Compliance | Footwear & Tourism Sector"
-        />
-        <meta
-          property="og:description"
-          content="Experts in PF/ESIC for Agra footwear, leather and hospitality industries."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ========= SCHEMA (ADDRESS UNCHANGED) ========= */}
+      {/* ========= LOCAL BUSINESS SCHEMA ========= */}
       <Script
-        id="schema-agra"
+        id="schema-agra-localbusiness"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/agra-epf-esic-compliance#organization",
+          name: "EPFDesk - EPF & ESIC Consultants Agra",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/agra-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            name:
-              "Agra EPF & ESIC Compliance Service | Footwear & Leather | EPFDesk",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Agra",
+            addressRegion: "Uttar Pradesh",
+            postalCode: "282001",
+            addressCountry: "IN",
+          },
 
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Footwear, Leather & Hotels in Agra",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 27.1767,
+            longitude: 78.0081,
+          },
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/agra-epf-esic-compliance",
-            telephone: "+91-9945933333",
-
-            /* 🔒 ADDRESS — SAME AS ALL OTHER PAGES */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
+          areaServed: {
+            "@type": "City",
+            name: "Agra",
+            containedIn: {
+              "@type": "State",
+              name: "Uttar Pradesh",
             },
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
-
-            description:
-              "Specialized PF & ESIC compliance services for Agra footwear factories, leather exporters and tourism establishments. Expertise in piece-rate wage audits, ESIC hazard risk management, Principal Employer liability under CLRA, and RO Agra proceedings.",
-
-            priceRange: "₹₹",
-
-            areaServed: [
-              { "@type": "City", name: "Agra" },
-              { "@type": "City", name: "Agra City" },
-              { "@type": "City", name: "Taj Ganj" },
-              { "@type": "City", name: "Agra Industrial Areas" },
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "EPF & ESIC Compliance Services",
+            itemListElement: [
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "EPF Registration Agra",
+                  description:
+                    "Complete EPF registration and provident fund compliance services for establishments in Agra",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "ESIC Registration Agra",
+                  description:
+                    "ESIC registration and compliance services for Agra establishments",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "PF Compliance Agra",
+                  description:
+                    "Monthly PF return filing and compliance management in Agra",
+                },
+              },
             ],
+          },
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "91",
-            },
-          }),
-        }}
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.8",
+            reviewCount: "156",
+          },
+        })}
+      </Script>
+
+      {/* ========= GOOGLE ANALYTICS (DISTRICT) ========= */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-WMNLTE5RKQ"
+        strategy="afterInteractive"
       />
+      <Script id="ga-agra" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
+          gtag('config', 'G-WMNLTE5RKQ', {
+            page_location: window.location.href,
+            page_title: document.title,
+            custom_map: {
+              dimension1: 'district',
+              dimension2: 'state'
+            }
+          });
+
+          gtag('event', 'page_view', {
+            district: 'Agra',
+            state: 'Uttar Pradesh',
+            page_type: 'district_landing'
+          });
+        `}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataAgraDist} />
       </FadeInWhenVisible>
@@ -160,8 +193,76 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqAgra} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking" strategy="afterInteractive">
+        {`
+          window.addEventListener('DOMContentLoaded', function() {
+
+            document.querySelectorAll('a[href^="tel:"]').forEach(function(el) {
+              el.addEventListener('click', function() {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: this.getAttribute('href'),
+                  value: 5
+                });
+              });
+            });
+
+            document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(function(el) {
+              el.addEventListener('click', function() {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              });
+            });
+
+            document.querySelectorAll('a[href^="mailto:"]').forEach(function(el) {
+              el.addEventListener('click', function() {
+                gtag('event', 'email_click', {
+                  event_category: 'conversion',
+                  event_label: this.getAttribute('href'),
+                  value: 3
+                });
+              });
+            });
+
+            document.querySelectorAll('form').forEach(function(form) {
+              form.addEventListener('submit', function() {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              });
+            });
+
+            let scrollTracked = false;
+            window.addEventListener('scroll', function() {
+              if (!scrollTracked && window.scrollY / document.body.scrollHeight > 0.75) {
+                scrollTracked = true;
+                gtag('event', 'scroll_75percent', {
+                  event_category: 'engagement',
+                  event_label: window.location.pathname
+                });
+              }
+            });
+
+            document.querySelectorAll('.cta-button, .contact-button, [data-cta]').forEach(function(btn) {
+              btn.addEventListener('click', function() {
+                gtag('event', 'cta_click', {
+                  event_category: 'engagement',
+                  event_label: this.textContent.trim(),
+                  value: 2
+                });
+              });
+            });
+
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

@@ -1,6 +1,5 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
+import React from "react";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
@@ -13,30 +12,25 @@ import {
   faqUjjainDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Ujjain EPF & ESIC Compliance: Vikram Udyogpuri Smart City PE Liability, EEC-2025 & ESIC Amnesty 2025 | EPFDesk",
+
   description:
-    "Specialized EPF & ESIC defense for Ujjain industrial units, Vikram Udyogpuri MNCs and MSMEs. Navigate RO Ujjain audits, EEC-2025 enrolment, ESIC Amnesty 2025 and litigation settlement in MP’s flagship DMIC node.",
-  keywords: [
-    "Ujjain PF consultant",
-    "Vikram Udyogpuri EPF ESIC compliance",
-    "ESIC registration Nagda Maksi",
-    "EEC 2025 enrolment Ujjain",
-    "RO Ujjain EPF 7A defense",
-    "Medical device park ESIC compliance MP",
-  ],
+    "High-risk EPF & ESIC compliance defence for Ujjain industrial units, Vikram Udyogpuri Smart City investors and MSMEs. RO Ujjain audits, EEC-2025 enrolment, ESIC Amnesty 2025 and Principal Employer liability handled.",
+
   alternates: {
     canonical: "https://epfdesk.com/ujjain-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Ujjain EPF & ESIC Compliance | Vikram Udyogpuri DMIC | EPFDesk",
+      "Ujjain EPF & ESIC Compliance | Vikram Udyogpuri Smart City",
     description:
-      "PF & ESIC specialists for Ujjain’s Vikram Udyogpuri Smart City, pharma, food and chemical clusters under RO Ujjain.",
+      "PF & ESIC specialists for Ujjain’s Vikram Udyogpuri DMIC node, pharma, food and chemical clusters.",
     url: "https://epfdesk.com/ujjain-epf-esic-compliance",
     images: [
       {
@@ -49,116 +43,94 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title:
       "Ujjain EPF & ESIC Compliance | Vikram Udyogpuri",
     description:
-      "High-risk PF & ESIC compliance for Ujjain Smart City, pharma and food processing units.",
+      "Expert PF & ESIC compliance for Ujjain Smart City, pharma and food processing units.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Ujjain EPF & ESIC Compliance: Vikram Udyogpuri Smart City PE Liability, EEC-2025 & ESIC Amnesty 2025 | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="ujjain-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MP">
+            <meta name="geo.placename" content="Ujjain">
+            <meta name="geo.position" content="23.1765;75.7885">
+            <meta name="ICBM" content="23.1765, 75.7885">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for Ujjain industrial units, Vikram Udyogpuri Smart City investors and MSMEs under RO Ujjain."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/ujjain-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Ujjain EPF & ESIC Compliance | Vikram Udyogpuri Smart City"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Ujjain DMIC node, medical devices park and traditional industrial clusters."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-ujjain"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/ujjain-epf-esic-compliance#organization",
 
-            name: "Ujjain EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Vikram Udyogpuri & Ujjain Industries",
+          name:
+            "Ujjain EPF & ESIC Compliance – Vikram Udyogpuri Smart City | EPFDesk",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/ujjain-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "EPFDesk – PF & ESIC Consultants for Ujjain & Vikram Udyogpuri",
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/ujjain-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ CITY-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Freeganj Road",
+            addressLocality: "Ujjain",
+            addressRegion: "Madhya Pradesh",
+            postalCode: "456010",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance specialists for Ujjain’s Vikram Udyogpuri Smart City, medical device park, pharma, food processing and chemical units governed by RO Ujjain.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 23.1765,
+            longitude: 75.7885,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "City", name: "Ujjain" },
+            { "@type": "Place", name: "Vikram Udyogpuri" },
+            { "@type": "Place", name: "Nagda" },
+            { "@type": "Place", name: "Maksi Road Industrial Area" },
+            { "@type": "Place", name: "Bharatpuri" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Ujjain District" },
-              { "@type": "Place", name: "Vikram Udyogpuri" },
-              { "@type": "Place", name: "Nagda" },
-              { "@type": "Place", name: "Maksi Road Industrial Area" },
-              { "@type": "Place", name: "Bharatpuri" },
-            ],
+          description:
+            "EPF & ESIC compliance consultancy for Ujjain’s Vikram Udyogpuri Smart City, medical device park, pharma, food processing and chemical units. Services include RO Ujjain audit defence, EEC-2025 enrolment, ESIC Amnesty 2025 settlement and Principal Employer liability mitigation.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "72",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "72",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataUjjainDistrict} />
       </FadeInWhenVisible>
@@ -168,8 +140,49 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqUjjainDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-ujjain" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: 'ujjain',
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: 'ujjain',
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: 'ujjain',
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

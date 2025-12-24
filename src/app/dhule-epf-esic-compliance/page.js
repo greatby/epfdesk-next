@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,29 +10,38 @@ import {
   faqDhuleDistrict,
 } from "@/utils/data";
 
-/* ============================
-   METADATA
-============================ */
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
-    "Dhule EPF & ESIC Compliance for Cotton Ginning, Textile Powerlooms & MIDC MSMEs | EPFDesk",
+    "Dhule EPF & ESIC Compliance 2025: Cotton Ginning, Textile Powerlooms, MIDC MSMEs & PE Liability | EPFDesk",
+
   description:
-    "Expert EPF & ESIC defence for Dhule Cotton Ginning, Textile Powerloom units, piece-rate PF liability, seasonal labour compliance and MIDC contractor PE risk. SRO Jalgaon liaison.",
+    "Expert EPF & ESIC compliance defence for Dhule cotton ginning units, textile powerlooms, piece-rate wage PF exposure, seasonal and migrant labour compliance, and MIDC contractor Principal Employer liability. SRO Jalgaon jurisdiction specialists.",
+
   keywords: [
-    "Dhule EPF consultant",
-    "Dhule ESIC registration",
-    "Cotton ginning PF compliance",
+    "Dhule PF consultant",
+    "Dhule ESIC consultant",
+    "Cotton ginning PF compliance Dhule",
     "Textile powerloom ESIC Dhule",
     "Piece rate PF audit Dhule",
+    "Seasonal labour PF liability Dhule",
+    "MIDC contractor PF ESIC Dhule",
+    "Principal Employer liability Dhule",
     "EPFO SRO Jalgaon 7A defence",
+    "EPFDesk Dhule",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/dhule-epf-esic-compliance",
   },
+
   openGraph: {
-    title: "Dhule EPF & ESIC Compliance | Cotton Ginning & Textile Powerlooms",
+    title:
+      "Dhule EPF & ESIC Compliance | Cotton Ginning & Textile Powerloom Hub",
     description:
-      "High-risk PF & ESIC compliance for Dhule textile, cotton ginning and MIDC manufacturing units.",
+      "PF & ESIC specialists for Dhule textile powerlooms, cotton ginning units, MIDC MSMEs and seasonal labour-intensive industries.",
     url: "https://epfdesk.com/dhule-epf-esic-compliance",
     images: [
       {
@@ -48,125 +54,83 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
+  twitter: {
+    card: "summary_large_image",
+    images: ["https://epfdesk.com/images/logo.jpg"],
+  },
 };
 
-const page = () => {
+/* ===========================
+   PAGE COMPONENT
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD
-      ============================ */}
-      <Head>
-        <title>
-          Dhule EPF & ESIC Compliance: Textile Powerlooms, Cotton Ginning &
-          Seasonal Labour PF Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="dhule-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Dhule">
+            <meta name="geo.position" content="20.9042;74.7749">
+            <meta name="ICBM" content="20.9042, 74.7749">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Dhule cotton ginning units, textile powerlooms, seasonal and migrant labour, and MIDC contractor operations. Principal Employer liability, wage audits and inspections handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Dhule PF consultant, Dhule ESIC consultant, cotton ginning PF ESIC Dhule, textile powerloom labour compliance, seasonal labour PF liability Dhule, MIDC contractor PF audits, Principal Employer liability Dhule, NWC 2025 wage restructuring Dhule"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/dhule-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Dhule EPF & ESIC Consultant | Textile & Cotton Processing Hub | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Dhule’s textile powerlooms, cotton ginning units and seasonal labour-intensive industries."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/dhule-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Dhule EPF & ESIC Compliance | Textile & Cotton Units | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Dhule cotton ginning units, textile powerlooms and seasonal labour — PE liability and audits handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* ============================
-          SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-dhule"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id": "https://epfdesk.com/dhule-epf-esic-compliance#organization",
 
-            name: "Dhule EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Dhule Textile & Cotton Industries",
+          name: "EPFDesk – EPF & ESIC Consultants for Dhule District",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/dhule-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/dhule-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          /* ✅ DISTRICT-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Dhule",
+            addressRegion: "Maharashtra",
+            postalCode: "424001",
+            addressCountry: "IN",
+          },
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 20.9042,
+            longitude: 74.7749,
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Dhule District" },
+            { "@type": "Place", name: "Dhule MIDC" },
+            { "@type": "Place", name: "Shirpur MIDC" },
+            { "@type": "Place", name: "Sakri" },
+            { "@type": "Place", name: "Sindkheda" },
+          ],
 
-            description:
-              "EPF & ESIC compliance services for Dhule Cotton Ginning, Textile Powerloom units, MIDC MSMEs and seasonal labour.",
+          description:
+            "EPF & ESIC compliance services for Dhule cotton ginning factories, textile powerloom units, MIDC manufacturing MSMEs and seasonal labour-intensive industries. Expertise includes piece-rate wage PF audits, Principal Employer liability for contractors, EPFO Section 7A defence and compliance under SRO Jalgaon jurisdiction.",
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Dhule District" },
-              { "@type": "Place", name: "Dhule MIDC" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "41",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "41",
-            },
-          }),
-        }}
-      />
-
-      {/* ============================
-          CONTENT
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataDhuleDistrict} />
       </FadeInWhenVisible>
@@ -176,8 +140,41 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqDhuleDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-dhule" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

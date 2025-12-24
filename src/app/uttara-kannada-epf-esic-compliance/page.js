@@ -1,10 +1,10 @@
+import React from "react";
+import Script from "next/script";
+
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
 
 import {
   heroDataUttaraKannadaDist,
@@ -12,129 +12,123 @@ import {
   faqUttaraKannada,
 } from "@/utils/data";
 
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Uttara Kannada EPF & ESIC Compliance for Kaiga Power, Dandeli Paper Mill & Naval Contractors | EPFDesk",
+
   description:
-    "Expert PF & ESIC defense for Kaiga/Nuclear contractors, Naval Base vendors, West Coast Paper Mill, and Arecanut Plantation employers in Uttara Kannada.",
-  keywords: [
-    "Kaiga PF compliance",
-    "Naval Base Karwar ESIC",
-    "Dandeli Paper Mill PF ESIC",
-    "Uttara Kannada labour law consultant",
-  ],
+    "High-risk EPF & ESIC compliance defence for Uttara Kannada — Kaiga Nuclear Power contractors, INS Kadamba Naval Base vendors, Dandeli Paper Mill units, and Arecanut Plantation employers.",
+
   alternates: {
     canonical: "https://epfdesk.com/uttara-kannada-epf-esic-compliance",
   },
+
   openGraph: {
     title:
       "Uttara Kannada EPF & ESIC Compliance | Kaiga, Naval Base & Paper Mill",
     description:
-      "PF & ESIC specialist compliance for Kaiga Power Station, INS Kadamba Contractors, Paper Mills and Arecanut Plantations.",
+      "PF & ESIC specialists for Kaiga Power Station contractors, INS Kadamba Naval Base vendors, Dandeli Paper Mill and plantation employers.",
     url: "https://epfdesk.com/uttara-kannada-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Uttara Kannada PF ESIC Compliance",
+        alt: "Uttara Kannada EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title:
       "Uttara Kannada EPF & ESIC Compliance | Kaiga • Naval Base • Paper Mill",
     description:
-      "PF & ESIC experts for Strategic Project contractors, Paper Mills, Heavy Industry & Plantations.",
+      "PF & ESIC compliance experts for nuclear, naval, paper mill and plantation sectors in Uttara Kannada.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Uttara Kannada EPF & ESIC Compliance for Kaiga Power, Dandeli Paper Mill & Naval Contractors | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="uttara-kannada-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-KA">
+            <meta name="geo.placename" content="Karwar, Uttara Kannada">
+            <meta name="geo.position" content="14.8130;74.1290">
+            <meta name="ICBM" content="14.8130, 74.1290">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Kaiga & Naval Base contractor PF/ESI compliance, hazardous industry ESIC for Dandeli Paper Mill, and Arecanut Plantation PF rules for Uttara Kannada."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/uttara-kannada-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Uttara Kannada EPF & ESIC Compliance | Kaiga, Naval Base & Paper Mill"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC consultants for Kaiga Power Station, INS Kadamba contractors, West Coast Paper Mill and Arecanut Plantations."
-        />
-        <meta property="og:image" content="https://epfdesk.com/images/logo.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
-        id="schema-uttarakannada"
+        id="schema-uttara-kannada"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/uttara-kannada-epf-esic-compliance#organization",
 
-            name: "Uttara Kannada EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Kaiga, Naval Base & Dandeli Industry",
+          name:
+            "Uttara Kannada EPF & ESIC Compliance for Kaiga, Naval Base & Heavy Industry | EPFDesk",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/uttara-kannada-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "EPFDesk – PF & ESIC Consultants for Kaiga Nuclear, Naval Base & Dandeli Industry",
 
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Karwar",
-              addressRegion: "Karnataka",
-              postalCode: "581301",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/uttara-kannada-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 14.813,
-              longitude: 74.129,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Karwar",
+            addressRegion: "Karnataka",
+            postalCode: "581301",
+            addressCountry: "IN",
+          },
 
-            description:
-              "PF & ESIC compliance for Kaiga Power Station contractors, Naval Base vendors, Dandeli Paper Mills, and Arecanut Plantations in Uttara Kannada.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 14.813,
+            longitude: 74.129,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Uttara Kannada District" },
+            { "@type": "Place", name: "Kaiga Nuclear Power Station" },
+            { "@type": "Place", name: "INS Kadamba Naval Base" },
+            { "@type": "Place", name: "Dandeli Paper Mill Zone" },
+            { "@type": "Place", name: "Arecanut Plantation Belt" },
+          ],
 
-            areaServed: [
-              { "@type": "City", name: "Karwar" },
-              { "@type": "City", name: "Dandeli" },
-              { "@type": "City", name: "Ankola" },
-              { "@type": "City", name: "Sirsi" },
-              { "@type": "City", name: "Siddapur" },
-            ],
+          description:
+            "EPF & ESIC compliance consultancy for Uttara Kannada’s high-risk employment zones including Kaiga Nuclear Power Station contractors, Naval Base vendors, Dandeli paper manufacturing units and plantation employers.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "71",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "71",
+          },
+        })}
+      </Script>
 
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataUttaraKannadaDist} />
       </FadeInWhenVisible>
@@ -144,8 +138,52 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqUttaraKannada} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script
+        id="conversion-uttara-kannada"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: 'uttara_kannada',
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: 'uttara_kannada',
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: 'uttara_kannada',
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

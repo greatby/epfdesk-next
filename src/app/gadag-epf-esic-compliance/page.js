@@ -1,10 +1,8 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
 
 import {
   heroDataGadagDist,
@@ -12,161 +10,129 @@ import {
   faqGadag,
 } from "@/utils/data";
 
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
-    "Gadag EPF & ESIC Compliance for Cotton Ginning Mills, Textiles & Agro-Processing MSMEs | EPFDesk",
+    "Gadag EPF & ESIC Compliance 2025: Cotton Ginning, Piece-Rate PF, Seasonal ESIC & Agro MSME Audits | EPFDesk",
+
   description:
-    "Expert PF & ESIC compliance for Gadag’s Cotton Ginning Mills, Textile Units, and Agro-Processing MSMEs. Specialists in PF on piece-rate wages, ESIC for seasonal ginning workers, and NWC wage rules.",
+    "Expert EPF & ESIC compliance for Gadag cotton ginning mills, textile units and agro-processing MSMEs. Specialists in piece-rate PF exposure, seasonal ginning labour ESIC coverage and New Wage Code 2025 alignment.",
+
   keywords: [
     "Gadag PF consultant",
     "Gadag ESIC consultant",
     "Cotton ginning PF Karnataka",
     "Textile PF ESIC Gadag",
-    "PF on piece-rate wages Gadag",
+    "Piece rate PF audit Gadag",
+    "Seasonal labour ESIC ginning",
+    "Agro processing PF ESIC Gadag",
     "EPFDesk Gadag",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/gadag-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Gadag EPF & ESIC Compliance | Cotton Ginning, Textiles & Agro MSMEs | EPFDesk",
+      "Gadag EPF & ESIC Compliance | Cotton Ginning, Textile & Agro MSMEs",
     description:
-      "PF/ESI experts for Gadag’s Cotton Ginning, Textile Mills, and Agro-Processing units.",
+      "PF & ESIC specialists for Gadag cotton ginning mills, textile units and agro-processing MSMEs.",
     url: "https://epfdesk.com/gadag-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "EPFDesk Gadag PF ESIC Compliance",
+        alt: "Gadag EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Gadag EPF & ESIC Compliance | Cotton, Textiles & Agro-Processing | EPFDesk",
-    description:
-      "PF/ESIC compliance for Gadag’s Ginning Mills, Spinning Units & MSMEs.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE COMPONENT
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Gadag EPF & ESIC Compliance for Cotton Ginning Mills, Textiles & Agro-Processing | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="gadag-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-KA">
+            <meta name="geo.placename" content="Gadag">
+            <meta name="geo.position" content="15.4314;75.6360">
+            <meta name="ICBM" content="15.4314, 75.6360">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert PF & ESIC compliance for Gadag Ginning Mills, Textile Units & Agro-Processing MSMEs. Specialists in PF for piece-rate workers, seasonal ginning labour ESIC, and NWC wage rules."
-        />
-
-        <meta
-          name="keywords"
-          content="Gadag PF ESIC, Cotton Ginning PF Karnataka, Textile PF ESIC compliance, MSME PF consultant Gadag"
-        />
-
-        <link rel="canonical" href="https://epfdesk.com/gadag-epf-esic-compliance" />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Gadag EPF & ESIC Compliance | Cotton Ginning, Textiles & Agro MSMEs"
-        />
-        <meta
-          property="og:description"
-          content="PF/ESIC experts for Gadag’s Cotton Ginning, Spinning, and Agro-Processing units."
-        />
-        <meta property="og:image" content="https://epfdesk.com/images/logo.jpg" />
-        <meta property="og:url" content="https://epfdesk.com/gadag-epf-esic-compliance" />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Gadag EPF & ESIC Compliance | Cotton Ginning & Textiles"
-        />
-        <meta
-          name="twitter:description"
-          content="PF/ESI compliance management for Gadag’s mills & MSMEs."
-        />
-        <meta name="twitter:image" content="https://epfdesk.com/images/logo.jpg" />
-      </Head>
-
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-gadag"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/gadag-epf-esic-compliance#organization",
 
-            name: "Gadag EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – Gadag PF ESIC Consultants for Cotton Ginning & Textiles",
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Gadag Cotton Ginning & Textile Units",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/gadag-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/gadag-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          /* ✅ DISTRICT-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Gadag",
+            addressRegion: "Karnataka",
+            postalCode: "582101",
+            addressCountry: "IN",
+          },
 
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 15.4314,
+            longitude: 75.6360,
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 15.4314,
-              longitude: 75.6360,
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Gadag District" },
+            { "@type": "Place", name: "Gadag Cotton Ginning Clusters" },
+            { "@type": "Place", name: "Textile & Spinning Units" },
+            { "@type": "Place", name: "Agro-Processing MSMEs" },
+            { "@type": "Place", name: "Mulgund" },
+            { "@type": "Place", name: "Laxmeshwar" },
+            { "@type": "Place", name: "Naragund" },
+          ],
 
-            description:
-              "EPFDesk provides PF & ESIC compliance management for Gadag’s Cotton Ginning Mills, Textile Units, Oil Mills and MSME clusters, specializing in piece-rate wage PF & seasonal ESIC requirements.",
+          description:
+            "EPF & ESIC compliance services for Gadag cotton ginning mills, textile units, oil mills and agro-processing MSMEs. Expertise in piece-rate PF audits, seasonal labour ESIC coverage, Principal Employer exposure and New Wage Code 2025 compliance.",
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "37",
+          },
+        })}
+      </Script>
 
-            priceRange: "₹₹",
-
-            areaServed: [
-              { "@type": "City", name: "Gadag" },
-              { "@type": "Place", name: "Mulgund" },
-              { "@type": "Place", name: "Laxmeshwar" },
-              { "@type": "Place", name: "Naragund" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "37",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataGadagDist} />
       </FadeInWhenVisible>
@@ -176,8 +142,41 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqGadag} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-gadag" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

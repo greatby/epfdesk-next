@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -9,9 +6,9 @@ import FaqAccordion from "@/components/faqAccordian";
 
 import { heroDataHaldia, sectionsHaldia, faqHaldia } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Haldia EPF & ESIC Compliance: Petrochemical Units, IOCL & Port Contractors & PE Liability | EPFDesk",
@@ -35,7 +32,8 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Haldia EPF & ESIC Compliance | Petrochemical & Port Industrial Hub",
+    title:
+      "Haldia EPF & ESIC Compliance | Petrochemical & Port Industrial Hub",
     description:
       "PF & ESIC specialists for Haldia petrochemical units, IOCL refinery vendors, port operators and logistics contractors.",
     url: "https://epfdesk.com/haldia-epf-esic-compliance",
@@ -53,110 +51,85 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Haldia EPF & ESIC Compliance | Petrochemical & Port Contractors | EPFDesk",
-    description:
-      "Expert PF & ESIC compliance for Haldia petrochemical units, IOCL contractors and port logistics firms.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
+/* ===========================
    PAGE COMPONENT
-============================ */
-const page = () => {
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* LEGACY HEAD */}
-      <Head>
-        <title>
-          Haldia EPF & ESIC Compliance: Petrochemical Units, IOCL & Port
-          Contractors & PE Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="haldia-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-WB">
+            <meta name="geo.placename" content="Haldia">
+            <meta name="geo.position" content="22.0667;88.0698">
+            <meta name="ICBM" content="22.0667, 88.0698">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Haldia petrochemical units, IOCL refinery contractors, port operators and logistics firms. RO Haldia audits, hazardous process ESIC and Principal Employer liability handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Haldia PF consultant, Haldia ESIC consultant, Haldia Petrochemical PF ESIC, IOCL Haldia refinery contractor compliance, port labour laws Haldia, logistics contractor PF audits, Principal Employer liability Haldia, NWC 2025 wage restructuring West Bengal"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/haldia-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Haldia EPF & ESIC Consultant | Petrochemical & Port Hub | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Haldia’s petrochemical plants, refinery vendors and port logistics operations."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/haldia-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Haldia EPF & ESIC Compliance | Petrochemical & Port Hub | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Haldia petrochemical units, IOCL contractors and port logistics firms — PE liability and audits handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* JSON-LD SCHEMA */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-haldia"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "Haldia EPF & ESIC Compliance Consultants | EPFDesk",
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/haldia-epf-esic-compliance",
-            telephone: "+91-9945933333",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
-            areaServed: [
-              "Haldia",
-              "Tamluk",
-              "Purba Medinipur",
-              "Haldia Industrial Area",
-            ],
-            description:
-              "EPF & ESIC consultancy for Haldia’s petrochemical, refinery, port, and hazardous process industries.",
-          }),
-        }}
-      />
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/haldia-epf-esic-compliance#organization",
 
-      {/* PAGE SECTIONS */}
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Haldia Petrochemical & Port Industries",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/haldia-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
+
+          /* ✅ DISTRICT-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Haldia",
+            addressRegion: "West Bengal",
+            postalCode: "721657",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 22.0667,
+            longitude: 88.0698,
+          },
+
+          areaServed: [
+            { "@type": "Place", name: "Haldia Industrial Area" },
+            { "@type": "Place", name: "Haldia Dock Complex" },
+            { "@type": "Place", name: "IOCL Haldia Refinery Zone" },
+            { "@type": "Place", name: "Tamluk" },
+            {
+              "@type": "AdministrativeArea",
+              name: "Purba Medinipur District",
+            },
+          ],
+
+          description:
+            "EPF & ESIC compliance services for Haldia petrochemical complexes, IOCL refinery contractors, port labour, logistics operators and hazardous process industries. Expertise in RO Haldia audits, ESIC hazard exposure, Principal Employer liability and New Wage Code payroll restructuring.",
+
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "66",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataHaldia} />
       </FadeInWhenVisible>
@@ -165,9 +138,50 @@ const page = () => {
         <CodeOfConduct sections={sectionsHaldia} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqHaldia} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqHaldia} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-haldia" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

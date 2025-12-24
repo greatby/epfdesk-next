@@ -1,5 +1,3 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
@@ -13,27 +11,15 @@ import {
   faqPunjabBalance,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Punjab EPF & ESIC Compliance: Energy Hubs, Export Clusters & PE Liability | EPFDesk",
 
   description:
     "High-risk EPF & ESIC compliance defence for Punjab’s balance districts — Bathinda refinery and power corridor, Amritsar border trade exporters, Patiala–Rajpura pharma and logistics hubs, and regional MSMEs. Experts in RO Bathinda & RO Amritsar enforcement, contractor audits, Principal Employer liability and EEC-2025 compliance.",
-
-  keywords: [
-    "Punjab PF consultant",
-    "Punjab ESIC consultant",
-    "Bathinda refinery contractor PF ESIC",
-    "Amritsar exporter labour compliance",
-    "Patiala Rajpura pharma PF audits",
-    "Punjab logistics hub PF ESIC",
-    "Principal Employer liability Punjab",
-    "RO Bathinda EPFO jurisdiction",
-    "RO Amritsar EPFO jurisdiction",
-  ],
 
   alternates: {
     canonical:
@@ -66,108 +52,84 @@ export const metadata = {
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* LEGACY HEAD */}
-      <Head>
-        <title>
-          Punjab EPF & ESIC Compliance: Energy Hubs, Export Clusters & PE
-          Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="punjab-balance-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-PB">
+            <meta name="geo.placename" content="Punjab">
+            <meta name="geo.position" content="31.1471;75.3412">
+            <meta name="ICBM" content="31.1471, 75.3412">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Punjab’s balance districts — Bathinda refinery corridor, Amritsar border trade exporters, Patiala–Rajpura pharma hubs and logistics MSMEs. RO Bathinda & RO Amritsar audits, contractor compliance and Principal Employer liability handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Punjab PF consultant, Punjab ESIC consultant, Bathinda refinery PF ESIC, Amritsar exporter labour compliance, Patiala Rajpura pharma PF audits, logistics hub PF ESIC Punjab, Principal Employer liability Punjab, NWC 2025 wage restructuring Punjab"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/punjab-balance-districts-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Punjab EPF & ESIC Consultant | Energy, Export & Pharma Hubs | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Punjab’s energy corridors, export clusters, pharma hubs and regional MSMEs."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/punjab-balance-districts-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Punjab EPF & ESIC Compliance | Energy & Export Hubs | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Punjab energy corridors, exporters and pharma clusters — audits and PE liability handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* JSON-LD SCHEMA */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-punjab-balance"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "Punjab EPF & ESIC Compliance Consultants | EPFDesk",
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/punjab-balance-districts-epf-esic-compliance",
-            telephone: "+91-9945933333",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
-            areaServed: [
-              "Bathinda",
-              "Mansa",
-              "Barnala",
-              "Amritsar",
-              "Gurdaspur",
-              "Pathankot",
-              "Patiala",
-              "Rajpura",
-              "Fatehgarh Sahib",
-              "Mandi Gobindgarh",
-            ],
-            description:
-              "EPF & ESIC consultancy for Punjab’s energy, border trade, pharma, and steel manufacturing districts.",
-          }),
-        }}
-      />
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/punjab-balance-districts-epf-esic-compliance#organization",
 
-      {/* PAGE SECTIONS */}
+          name:
+            "EPFDesk – Punjab EPF & ESIC Compliance for Energy, Export & Pharma Districts",
+
+          alternateName:
+            "PF & ESIC Consultant for Bathinda, Amritsar, Patiala & Punjab Industrial Hubs",
+
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/punjab-balance-districts-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
+
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Punjab",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 31.1471,
+            longitude: 75.3412,
+          },
+
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Bathinda District" },
+            { "@type": "AdministrativeArea", name: "Mansa District" },
+            { "@type": "AdministrativeArea", name: "Barnala District" },
+            { "@type": "AdministrativeArea", name: "Amritsar District" },
+            { "@type": "AdministrativeArea", name: "Gurdaspur District" },
+            { "@type": "AdministrativeArea", name: "Pathankot District" },
+            { "@type": "AdministrativeArea", name: "Patiala District" },
+            { "@type": "AdministrativeArea", name: "Fatehgarh Sahib District" },
+            { "@type": "Place", name: "Rajpura Industrial Area" },
+            { "@type": "Place", name: "Mandi Gobindgarh Steel Cluster" },
+          ],
+
+          description:
+            "EPF & ESIC compliance specialists for Punjab’s energy corridors, border trade exporters, pharma manufacturing hubs, steel clusters and logistics-driven MSMEs. Expertise includes contractor PF audits, Principal Employer liability, RO Bathinda & RO Amritsar proceedings and Labour Code readiness.",
+
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "96",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataPunjabBalance} />
       </FadeInWhenVisible>
@@ -176,9 +138,52 @@ const page = () => {
         <CodeOfConduct sections={sectionsPunjabBalance} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqPunjabBalance} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqPunjabBalance} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-punjab" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

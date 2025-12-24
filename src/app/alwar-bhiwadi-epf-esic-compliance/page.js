@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,31 +10,24 @@ import {
   faqAlwarBhiwadi,
 } from "@/utils/data";
 
-/* ============================
-   METADATA (APP ROUTER)
-============================ */
+/* ===========================
+   METADATA (DISTRICT PAGE)
+=========================== */
 export const metadata = {
   title:
-    "Bhiwadi & Alwar EPF & ESIC Compliance: Japanese Zone PE Liability, EEC-2025 & Global Supply Chain Audits | EPFDesk",
+    "Bhiwadi & Alwar EPF & ESIC Compliance: Japanese Zone, EEC-2025 & PE Liability | EPFDesk",
   description:
-    "Expert EPF & ESIC defense for Bhiwadi auto MNCs, Neemrana Japanese Zone units, and Alwar MSMEs. Navigate RO Alwar/Bhiwadi audits, EEC-2025 and global ESG labour compliance.",
-  keywords: [
-    "Bhiwadi EPF consultant",
-    "Alwar ESIC compliance",
-    "Neemrana Japanese zone PF",
-    "Bhiwadi auto component ESIC",
-    "EEC 2025 EPF Alwar",
-    "RO Bhiwadi 7A defense",
-  ],
+    "Expert EPF & ESIC compliance for Bhiwadi auto MNCs, Neemrana Japanese Zone units and Alwar MSMEs. RO Alwar/Bhiwadi audits, EEC-2025, Principal Employer liability and global supply-chain labour compliance handled.",
   alternates: {
     canonical: "https://epfdesk.com/alwar-bhiwadi-epf-esic-compliance",
   },
   openGraph: {
     title:
-      "Bhiwadi & Alwar EPF & ESIC Compliance | Global Industrial Hub",
+      "Bhiwadi & Alwar EPF & ESIC Compliance | Global Industrial Hub | EPFDesk",
     description:
       "PF & ESIC specialists for Bhiwadi auto MNCs, Neemrana Japanese Zone and Alwar MSMEs.",
     url: "https://epfdesk.com/alwar-bhiwadi-epf-esic-compliance",
+    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
@@ -51,115 +41,151 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Bhiwadi & Alwar EPF & ESIC Compliance | Japanese & Korean Zones",
-    description:
-      "High-risk PF & ESIC compliance for Bhiwadi, Neemrana and Alwar industrial units.",
     images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
-/* ============================
+/* ===========================
    PAGE COMPONENT
-============================ */
-const page = () => {
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Bhiwadi & Alwar EPF & ESIC Compliance: Japanese Zone PE Liability, EEC-2025 & Global Supply Chain Audits | EPFDesk
-        </title>
+      {/* ========= GEO + ADDITIONAL META TAGS ========= */}
+      <Script id="alwar-bhiwadi-geo-meta" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-RJ">
+            <meta name="geo.placename" content="Bhiwadi, Alwar">
+            <meta name="geo.position" content="28.2102;76.8606">
+            <meta name="ICBM" content="28.2102, 76.8606">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/alwar-bhiwadi-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/alwar-bhiwadi-epf-esic-compliance">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for Bhiwadi auto MNCs, Neemrana Japanese Zone units and Alwar MSMEs."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/alwar-bhiwadi-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Bhiwadi & Alwar EPF & ESIC Compliance"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Japanese Zone, Korean Zone and DMIC industrial units."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= LOCAL BUSINESS SCHEMA ========= */}
       <Script
-        id="schema-alwar-bhiwadi"
+        id="schema-alwar-bhiwadi-localbusiness"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/alwar-bhiwadi-epf-esic-compliance#organization",
+          name: "EPFDesk – EPF & ESIC Consultants Bhiwadi & Alwar",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/alwar-bhiwadi-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            name: "Bhiwadi & Alwar EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Bhiwadi, Neemrana & Alwar Industrial Units",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Bhiwadi",
+            addressRegion: "Rajasthan",
+            postalCode: "301019",
+            addressCountry: "IN",
+          },
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/alwar-bhiwadi-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 28.2102,
+            longitude: 76.8606,
+          },
 
-            /* ✅ SAME ADDRESS AS REQUESTED */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
+          areaServed: {
+            "@type": "AdministrativeArea",
+            name: "Alwar District",
+            containedIn: {
+              "@type": "State",
+              name: "Rajasthan",
             },
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
-
-            description:
-              "EPF & ESIC compliance specialists for Bhiwadi auto MNCs, Neemrana Japanese Zone, Ghiloth Korean Zone and Alwar MSMEs under RO Alwar and RO Bhiwadi.",
-
-            priceRange: "₹₹₹",
-
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Alwar District" },
-              { "@type": "Place", name: "Bhiwadi" },
-              { "@type": "Place", name: "Neemrana" },
-              { "@type": "Place", name: "Ghiloth" },
-              { "@type": "Place", name: "Khairthal-Tijara" },
-              { "@type": "Place", name: "Kotputli-Behror" },
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "EPF & ESIC Compliance Services",
+            itemListElement: [
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "EPF Compliance Bhiwadi & Alwar",
+                  description:
+                    "EPF registration, audits and statutory compliance for Bhiwadi and Alwar industrial units",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "ESIC Compliance Bhiwadi & Alwar",
+                  description:
+                    "ESIC registration, inspections and compliance support for Bhiwadi and Alwar MSMEs and MNCs",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Contract Labour PE Liability",
+                  description:
+                    "Principal Employer liability management under CLRA for auto, Japanese and Korean zone units",
+                },
+              },
             ],
+          },
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "71",
-            },
-          }),
-        }}
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "71",
+          },
+        })}
+      </Script>
+
+      {/* ========= GOOGLE ANALYTICS (DISTRICT) ========= */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-WMNLTE5RKQ"
+        strategy="afterInteractive"
       />
+      <Script id="ga-alwar-bhiwadi" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+          gtag('config', 'G-WMNLTE5RKQ', {
+            page_location: window.location.href,
+            page_title: document.title,
+            custom_map: {
+              dimension1: 'district',
+              dimension2: 'state'
+            }
+          });
+
+          gtag('event', 'page_view', {
+            district: 'Alwar–Bhiwadi',
+            state: 'Rajasthan',
+            page_type: 'district_landing'
+          });
+        `}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataAlwarBhiwadi} />
       </FadeInWhenVisible>
@@ -169,8 +195,76 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqAlwarBhiwadi} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking" strategy="afterInteractive">
+        {`
+          window.addEventListener('DOMContentLoaded', function() {
+
+            document.querySelectorAll('a[href^="tel:"]').forEach(function(el) {
+              el.addEventListener('click', function() {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: this.getAttribute('href'),
+                  value: 5
+                });
+              });
+            });
+
+            document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(function(el) {
+              el.addEventListener('click', function() {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              });
+            });
+
+            document.querySelectorAll('a[href^="mailto:"]').forEach(function(el) {
+              el.addEventListener('click', function() {
+                gtag('event', 'email_click', {
+                  event_category: 'conversion',
+                  event_label: this.getAttribute('href'),
+                  value: 3
+                });
+              });
+            });
+
+            document.querySelectorAll('form').forEach(function(form) {
+              form.addEventListener('submit', function() {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              });
+            });
+
+            let scrollTracked = false;
+            window.addEventListener('scroll', function() {
+              if (!scrollTracked && window.scrollY / document.body.scrollHeight > 0.75) {
+                scrollTracked = true;
+                gtag('event', 'scroll_75percent', {
+                  event_category: 'engagement',
+                  event_label: window.location.pathname
+                });
+              }
+            });
+
+            document.querySelectorAll('.cta-button, .contact-button, [data-cta]').forEach(function(btn) {
+              btn.addEventListener('click', function() {
+                gtag('event', 'cta_click', {
+                  event_category: 'engagement',
+                  event_label: this.textContent.trim(),
+                  value: 2
+                });
+              });
+            });
+
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

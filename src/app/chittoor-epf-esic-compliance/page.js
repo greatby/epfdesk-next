@@ -1,189 +1,148 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
-import Script from "next/script";
+import FaqAccordion from "@/components/faqAccordian";
+
 import {
-  chittorDistFAQ,
   heroDataChittoorDist,
   sectionsChittoorDist,
+  chittorDistFAQ,
 } from "@/utils/data";
-import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
 
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
-    "Chittoor EPF & ESIC Consultant: NWC 2025 for Agro-Processing, Dairy & Textile Industries | EPFDesk",
+    "Chittoor EPF & ESIC Compliance 2025: Agro-Processing, Dairy & Textile Industries | EPFDesk",
+
   description:
-    "EPFDesk provides PF & ESIC compliance services in Chittoor, specializing in agro-processing, dairy units, textile & weaving clusters. Expert support in minimum wage audits, seasonal workforce compliance, OSH welfare verification, PF inspections, and complete statutory management.",
+    "Expert EPF & ESIC compliance for Chittoor agro-processing clusters, dairy units, textile & weaving industries. Specialists in seasonal labour audits, minimum wage compliance, OSH welfare verification and NWC-2025 readiness.",
+
   keywords: [
     "Chittoor PF consultant",
     "Chittoor ESIC consultant",
-    "EPF compliance Chittoor",
-    "ESIC compliance Chittoor",
-    "Chittoor agro-processing PF",
-    "dairy industry ESIC compliance",
-    "textile weaving PF ESIC",
-    "seasonal labour compliance Chittoor",
-    "NWC 2025 compliance Andhra Pradesh",
-    "EPFDesk Chittoor",
+    "Agro processing PF compliance Chittoor",
+    "Dairy industry ESIC Andhra Pradesh",
+    "Textile weaving PF ESIC",
+    "Seasonal labour compliance Chittoor",
+    "NWC 2025 Andhra Pradesh",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/chittoor-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Chittoor EPF & ESIC Consultant | Agro-Processing, Dairy & Textile Compliance | EPFDesk",
+      "Chittoor EPF & ESIC Compliance | Agro-Processing, Dairy & Textile Units",
     description:
-      "Expert PF & ESIC compliance support for Chittoor's agro-processing clusters, dairy units, and textile weaving industries. NWC 2025 audits, seasonal labour compliance, OSH verification, and statutory management.",
+      "PF & ESIC specialists for Chittoor agro-processing, dairy and textile industries. End-to-end statutory compliance, audits and OSH verification.",
     url: "https://epfdesk.com/chittoor-epf-esic-compliance",
-    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "EPFDesk Chittoor PF ESIC Compliance",
+        alt: "Chittoor PF ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Chittoor EPF & ESIC Consultant | Agro-Processing, Dairy & Textile Industries | EPFDesk",
-    description:
-      "PF & ESIC compliance for agro-processing, dairy, and textile units in Chittoor. Seasonal workforce compliance, OSH verification, minimum wage audits, and statutory support.",
     images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE COMPONENT
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Chittoor EPF & ESIC Consultant: NWC 2025 for Agro-Processing, Dairy &
-          Textile Industries | EPFDesk
-        </title>
+      {/* ========= GEO META (CHITTOOR) ========= */}
+      <Script id="chittoor-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-AP">
+            <meta name="geo.placename" content="Chittoor">
+            <meta name="geo.position" content="13.2172;79.1003">
+            <meta name="ICBM" content="13.2172, 79.1003">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/chittoor-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/chittoor-epf-esic-compliance">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPFDesk provides PF & ESIC compliance services in Chittoor, focused on agro-processing clusters, dairy units, textile weaving industries, minimum wage audits, seasonal labour compliance, OSH verification, and end-to-end statutory management."
-        />
-
-        <meta
-          name="keywords"
-          content="Chittoor PF consultant, Chittoor ESIC consultant, EPF ESIC Chittoor, agro-processing PF compliance, dairy industry ESIC, textile weaving PF compliance, seasonal workforce compliance AP, OSH welfare verification Chittoor, NWC 2025 Andhra Pradesh, EPFDesk Chittoor"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/chittoor-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Chittoor EPF & ESIC Consultant | Agro-Processing, Dairy & Textile Compliance | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="Expert PF & ESIC compliance services for agro-processing clusters, dairy units, and textile industries in Chittoor. Specialized in seasonal labour audits, NWC 2025 compliance, and OSH verification."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/chittoor-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Chittoor EPF & ESIC Consultant | Agro-Processing, Dairy & Textile | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for agro, textile, and dairy industries in Chittoor with NWC 2025 compliance and seasonal workforce audits."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-      <script
+      {/* ========= LOCAL BUSINESS SCHEMA ========= */}
+      <Script
         id="schema-chittoor"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/chittoor-epf-esic-compliance#organization",
 
-            name: "Chittoor EPF & ESIC Consultant: NWC 2025 for Agro-Processing, Dairy & Textile Industries | EPFDesk",
-            alternateName:
-              "EPFDesk – Chittoor EPF & ESIC Compliance for Agro, Textile and Dairy Units",
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Chittoor District",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/chittoor-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/chittoor-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Church Street",
+            addressLocality: "Bangalore",
+            addressRegion: "Karnataka",
+            postalCode: "560001",
+            addressCountry: "IN",
+          },
 
-            // address kept as per template
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 13.2172,
+            longitude: 79.1003,
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Chittoor District" },
+            { "@type": "City", name: "Chittoor" },
+            { "@type": "Place", name: "Agro-Processing Clusters" },
+            { "@type": "Place", name: "Textile & Weaving Units" },
+            { "@type": "Place", name: "Dairy & Food Processing Units" },
+          ],
 
-            description:
-              "EPFDesk manages EPF and ESIC compliance in Chittoor, focusing on agro-processing, dairy units, textile and weaving industries. Expertise includes minimum wage audits, seasonal compliance systems, and OSH welfare facility verification.",
+          description:
+            "EPF & ESIC compliance services for Chittoor agro-processing clusters, dairy units, textile & weaving industries, including seasonal workforce audits, minimum wage compliance and OSH welfare verification.",
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "47",
+          },
+        })}
+      </Script>
 
-            priceRange: "₹₹",
-
-            areaServed: [
-              { "@type": "City", name: "Chittoor" },
-              { "@type": "Place", name: "Agro-Processing Clusters" },
-              { "@type": "Place", name: "Textile & Weaving Units" },
-              { "@type": "Place", name: "Dairy & Food Processing Units" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "47",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataChittoorDist} />
       </FadeInWhenVisible>
@@ -191,11 +150,43 @@ const page = () => {
       <FadeInWhenVisible>
         <CodeOfConduct sections={sectionsChittoorDist} />
       </FadeInWhenVisible>
+
       <FadeInWhenVisible>
         <FaqAccordion faqs={chittorDistFAQ} />
       </FadeInWhenVisible>
+       <Script id="conversion-tracking-chittoor" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

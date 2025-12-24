@@ -1,10 +1,8 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
 
 import {
   heroDataMandyaDist,
@@ -12,11 +10,16 @@ import {
   faqMandya,
 } from "@/utils/data";
 
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Mandya EPF & ESIC Compliance for Sugar Mills, Distilleries, Textiles & Plantation Workers | EPFDesk",
+
   description:
-    "Expert PF & ESIC compliance for Mandya Sugar Mills (Mysugar, Pandavapura), Distilleries, Textiles & Plantation Workers. Specialists in seasonal workforce PF, ESIC factory compliance, and Principal Employer liability management.",
+    "Expert PF & ESIC compliance for Mandya sugar mills (Mysugar, Pandavapura), distilleries, textile units and plantation workers. Specialists in seasonal workforce PF, ESIC factory compliance and Principal Employer liability management.",
+
   keywords: [
     "Mandya PF consultant",
     "Mandya ESIC consultant",
@@ -25,14 +28,17 @@ export const metadata = {
     "Plantation worker PF Karnataka",
     "EPFDesk Mandya",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/mandya-epf-esic-compliance",
   },
+
+  /* ✅ OPEN GRAPH */
   openGraph: {
     title:
-      "Mandya EPF & ESIC Compliance | Sugar Mills, Distilleries & Textiles | EPFDesk",
+      "Mandya EPF & ESIC Compliance | Sugar Mills, Distilleries & Textiles",
     description:
-      "PF & ESIC experts for Mandya Sugar Mills, Distilleries, Textiles, and Plantation-based industries.",
+      "PF & ESIC experts for Mandya sugar mills, distilleries, textile factories and plantation-based industries.",
     url: "https://epfdesk.com/mandya-epf-esic-compliance",
     siteName: "EPFDesk",
     images: [
@@ -40,140 +46,101 @@ export const metadata = {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "EPFDesk Mandya PF ESIC Compliance",
+        alt: "Mandya EPF & ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
+  /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
     title:
-      "Mandya EPF & ESIC Compliance | Sugar Mills, Distilleries & Textiles | EPFDesk",
+      "Mandya EPF & ESIC Compliance | Sugar Mills & Distilleries",
     description:
-      "PF/ESI compliance for Mandya sugar mills, distilleries, plantations, and textile factories.",
+      "PF/ESI compliance for Mandya sugar factories, distilleries, plantations and textile units.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Mandya EPF & ESIC Compliance for Sugar Mills, Distilleries & Textile Units | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="mandya-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-KA">
+            <meta name="geo.placename" content="Mandya, Karnataka, India">
+            <meta name="geo.position" content="12.5223;76.8970">
+            <meta name="ICBM" content="12.5223, 76.8970">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert PF & ESIC compliance for Mandya sugar factories (MSCL, Pandavapura), distilleries, textiles, and plantation workers. Specialists in PF for seasonal labour, ESIC enforcement, and Principal Employer risk mitigation."
-        />
-
-        <meta
-          name="keywords"
-          content="Mandya PF ESIC, sugar mill PF Karnataka, distillery ESIC compliance, plantation worker PF, textile PF Mandya"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/mandya-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Mandya EPF & ESIC Compliance | Sugar Mills, Distilleries & Textiles"
-        />
-        <meta
-          property="og:description"
-          content="PF/ESI specialists for Mandya sugar mills, distilleries, textiles, and plantation workforce."
-        />
-        <meta property="og:image" content="https://epfdesk.com/images/logo.jpg" />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/mandya-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Mandya EPF & ESIC Compliance | Sugar Mills & Distilleries"
-        />
-        <meta
-          name="twitter:description"
-          content="Comprehensive PF/ESI compliance for Mandya’s sugar factories, distilleries, plantations and textiles."
-        />
-        <meta name="twitter:image" content="https://epfdesk.com/images/logo.jpg" />
-      </Head>
-
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-mandya"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/mandya-epf-esic-compliance#organization",
 
-            name: "Mandya EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – Mandya PF ESIC Consultants for Sugar Mills & Distilleries",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Consultants for Mandya District",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/mandya-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Mandya Sugar Mills, Distilleries & Plantation EPF/ESIC Compliance",
 
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/mandya-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.5223,
-              longitude: 76.8970,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Mandya",
+            addressRegion: "Karnataka",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPFDesk provides audit-ready PF & ESIC compliance for Mandya’s sugar mills, distilleries, textiles, plantations and agro-processing industries. Specialists in managing seasonal labour compliance and Principal Employer liability.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 12.5223,
+            longitude: 76.8970,
+          },
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Mandya District" },
+            { "@type": "Place", name: "Mandya Sugar Mills (MSCL)" },
+            { "@type": "Place", name: "Pandavapura Sugar Factory" },
+            { "@type": "Place", name: "Distilleries" },
+            { "@type": "Place", name: "Textile Units" },
+            { "@type": "Place", name: "Plantation Workforce" },
+            { "@type": "Place", name: "Srirangapatna" },
+            { "@type": "Place", name: "Krishnarajpet" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPF & ESIC compliance services for Mandya sugar mills, distilleries, textile units and plantation-based industries. Expertise includes seasonal workforce PF coverage, ESIC factory applicability, Principal Employer liability control and audit readiness.",
 
-            areaServed: [
-              { "@type": "City", name: "Mandya" },
-              { "@type": "Place", name: "Srirangapatna" },
-              { "@type": "Place", name: "Pandavapura" },
-              { "@type": "Place", name: "Krishnarajpet" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "38",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "38",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataMandyaDist} />
       </FadeInWhenVisible>
@@ -183,8 +150,49 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqMandya} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-mandya" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

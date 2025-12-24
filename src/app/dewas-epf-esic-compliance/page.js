@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,30 +10,38 @@ import {
   faqDewasDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
-    "Dewas EPF & ESIC Compliance: Auto-Ancillary PE Liability, EEC-2025 & Engineering Audit Defense | EPFDesk",
+    "Dewas EPF & ESIC Compliance 2025: Auto-Ancillary PE Liability, EEC-2025 & Engineering Audits | EPFDesk",
+
   description:
-    "Specialized EPF & ESIC defense for Dewas engineering firms, soya processing units and auto-ancillaries. Navigate RO Ujjain audits, EEC-2025 enrolment and ESIC Amnesty 2025 settlement.",
+    "Expert EPF & ESIC compliance for Dewas engineering firms, auto-ancillaries and soya processing units. Specialists in RO Ujjain audits, Principal Employer liability, EEC-2025 enrolment and ESIC Amnesty settlements.",
+
   keywords: [
     "Dewas PF consultant",
-    "EPF ESIC compliance Dewas",
+    "Dewas ESIC consultant",
+    "EPF compliance Dewas",
+    "ESIC compliance Dewas",
     "Dewas auto ancillary PF audit",
-    "ESIC registration Dewas industrial area",
-    "EEC 2025 enrolment Dewas",
+    "Engineering industry PF ESIC Dewas",
+    "Soya processing PF ESIC",
     "RO Ujjain EPF 7A defense",
+    "EEC 2025 Dewas",
+    "Principal Employer liability Dewas",
+    "EPFDesk Dewas",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/dewas-epf-esic-compliance",
   },
+
   openGraph: {
-    title:
-      "Dewas EPF & ESIC Compliance | Engineering & Auto-Ancillary Hub",
+    title: "Dewas EPF & ESIC Compliance | Engineering & Auto Hub",
     description:
-      "PF & ESIC specialists for Dewas engineering, textile and agro-processing units governed by RO Ujjain.",
+      "PF & ESIC specialists for Dewas engineering, auto-ancillary and agro-processing units governed by RO Ujjain.",
     url: "https://epfdesk.com/dewas-epf-esic-compliance",
     images: [
       {
@@ -49,116 +54,81 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Dewas EPF & ESIC Compliance | Engineering & Soya Hub",
-    description:
-      "High-risk PF & ESIC compliance for Dewas engineering, auto-ancillary and soya processing units.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
+/* ===========================
    PAGE COMPONENT
-============================ */
-const page = () => {
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Dewas EPF & ESIC Compliance: Auto-Ancillary PE Liability, EEC-2025 & Engineering Audit Defense | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="dewas-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MP">
+            <meta name="geo.placename" content="Dewas">
+            <meta name="geo.position" content="22.9623;76.0508">
+            <meta name="ICBM" content="22.9623, 76.0508">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for Dewas engineering firms, auto-ancillaries, textile mills and soya processors under RO Ujjain."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/dewas-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Dewas EPF & ESIC Compliance | Engineering & Auto Hub"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Dewas industrial areas and agro-processing units."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-dewas"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id": "https://epfdesk.com/dewas-epf-esic-compliance#organization",
 
-            name: "Dewas EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Dewas Engineering & Auto Units",
+          name: "EPFDesk – EPF & ESIC Consultants for Dewas District",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/dewas-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/dewas-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Dewas",
+            addressRegion: "Madhya Pradesh",
+            postalCode: "455001",
+            addressCountry: "IN",
+          },
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 22.9623,
+            longitude: 76.0508,
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Dewas District" },
+            { "@type": "Place", name: "Dewas Industrial Area" },
+            { "@type": "Place", name: "Bagli" },
+            { "@type": "Place", name: "Sonkatch" },
+          ],
 
-            description:
-              "EPF & ESIC compliance specialists for Dewas engineering firms, auto-ancillaries, textile mills and soya processing units governed by RO Ujjain.",
+          description:
+            "EPF & ESIC compliance services for Dewas engineering firms, auto-ancillaries, textile mills and soya processing units. Expertise in Principal Employer liability, EPFO 7A defense, EEC-2025 enrolment and ESIC amnesty settlements under RO Ujjain.",
 
-            priceRange: "₹₹₹",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "68",
+          },
+        })}
+      </Script>
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Dewas District" },
-              { "@type": "Place", name: "Dewas Industrial Area" },
-              { "@type": "Place", name: "Dewas Sectors 1 2 3" },
-              { "@type": "Place", name: "Bagli" },
-              { "@type": "Place", name: "Sonkatch" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "68",
-            },
-          }),
-        }}
-      />
-
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataDewasDistrict} />
       </FadeInWhenVisible>
@@ -168,8 +138,41 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqDewasDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-dewas" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

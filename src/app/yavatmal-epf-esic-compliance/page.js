@@ -1,10 +1,10 @@
+import React from "react";
+import Script from "next/script";
+
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
 
 import {
   heroDataYavatmalDist,
@@ -20,16 +20,7 @@ export const metadata = {
     "Yavatmal EPF & ESIC Compliance for Cotton Ginning, Oil Mills & Seasonal Piece-Rate Wages | EPFDesk",
 
   description:
-    "Expert EPF & ESIC compliance and defence for Yavatmal Cotton Ginning, Oil Mills, Dal Mills and Agro-Processing units. Specialists in seasonal and piece-rate PF liability, RO Nagpur liaison, and Minimum Wages Act Zone 3 compliance.",
-
-  keywords: [
-    "Yavatmal PF consultant",
-    "Yavatmal ESIC registration",
-    "Cotton ginning PF compliance Yavatmal",
-    "Oil mill ESIC Maharashtra",
-    "Piece rate PF compliance Vidarbha",
-    "RO Nagpur EPFO consultant",
-  ],
+    "Expert PF & ESIC compliance support for Yavatmal Cotton Ginning, Oil Mills, Dal Mills and Agro-Processing units. Specialists in seasonal and piece-rate PF liability, Zone-3 minimum wages and RO Nagpur audit defence.",
 
   alternates: {
     canonical: "https://epfdesk.com/yavatmal-epf-esic-compliance",
@@ -39,14 +30,14 @@ export const metadata = {
     title:
       "Yavatmal EPF & ESIC Compliance | Cotton, Agro-Processing & Seasonal Labour",
     description:
-      "PF & ESIC specialists for Yavatmal Cotton Ginning, Oil Mills, Dal Mills and MSMEs. Seasonal workforce, piece-rate wages & EPFO RO Nagpur audits handled.",
+      "PF & ESIC specialists for Yavatmal cotton ginning factories, oil mills, dal mills and MSMEs. Seasonal workforce and piece-rate wage audits handled.",
     url: "https://epfdesk.com/yavatmal-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Yavatmal PF ESIC Compliance",
+        alt: "Yavatmal EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -58,103 +49,84 @@ export const metadata = {
     title:
       "Yavatmal EPF & ESIC Compliance | Cotton & Seasonal Labour | EPFDesk",
     description:
-      "Expert PF/ESIC compliance for seasonal cotton ginning & agro mills in Yavatmal. RO Nagpur handling & wage audits.",
+      "PF/ESIC compliance experts for Yavatmal cotton ginning, oil mills and seasonal agro-processing employers.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
 /* ===========================
-   PAGE COMPONENT
+   PAGE
 =========================== */
-const page = () => {
+export default function Page() {
   return (
     <>
-      {/* ========= LEGACY HEAD ========= */}
-      <Head>
-        <title>
-          Yavatmal EPF & ESIC Compliance for Cotton Ginning, Oil Mills & Seasonal Piece-Rate Wages | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="yavatmal-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Yavatmal, Maharashtra">
+            <meta name="geo.position" content="20.3890;78.1307">
+            <meta name="ICBM" content="20.3890, 78.1307">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="PF & ESIC compliance support for Cotton Ginning, Oil Mills, Dal Mills and MSMEs in Yavatmal. Specialists in seasonal labour, piece-rate wages and RO Nagpur audits."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/yavatmal-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Yavatmal EPF & ESIC Compliance | Cotton & Agro-Processing"
-        />
-        <meta
-          property="og:description"
-          content="Experts in PF/ESIC for Yavatmal Cotton Ginning, Oil Mills, Dal Mills and MIDC MSMEs."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ========= SCHEMA.ORG (ADDRESS UNCHANGED) ========= */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-yavatmal"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/yavatmal-epf-esic-compliance#organization",
 
-            name:
-              "Yavatmal EPF & ESIC Compliance Service | Cotton & Agro-Processing | EPFDesk",
+          name:
+            "Yavatmal EPF & ESIC Compliance | Cotton Ginning, Oil Mills & Agro-Processing | EPFDesk",
 
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Cotton Ginning, Oil Mills & MSMEs in Yavatmal",
+          alternateName:
+            "EPFDesk – PF & ESIC Consultants for Cotton Ginning, Oil Mills & MSMEs in Yavatmal",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/yavatmal-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/yavatmal-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            /* 🔒 ADDRESS — EXACT SAME AS ALL OTHER PAGES */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Yavatmal",
+            addressRegion: "Maharashtra",
+            postalCode: "445001",
+            addressCountry: "IN",
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 20.3890,
+            longitude: 78.1307,
+          },
 
-            description:
-              "Expert PF & ESIC compliance services for Cotton Ginning, Oil Mills, Dal Mills and Agro-Processing units in Yavatmal. Specialized in seasonal labour, piece-rate wages, Minimum Wages Act Zone 3 and EPFO RO Nagpur audits.",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Yavatmal District" },
+            { "@type": "City", name: "Yavatmal" },
+            { "@type": "City", name: "Pusad" },
+            { "@type": "City", name: "Umarkhed" },
+            { "@type": "City", name: "Darwha" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPF & ESIC compliance consultancy for Yavatmal cotton ginning factories, oil mills, dal mills and agro-processing units. Expertise in seasonal labour PF, piece-rate wage structuring, Zone-3 minimum wages and EPFO RO Nagpur audits.",
 
-            areaServed: [
-              { "@type": "City", name: "Yavatmal" },
-              { "@type": "City", name: "Pusad" },
-              { "@type": "City", name: "Umarkhed" },
-              { "@type": "City", name: "Darwha" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "71",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "71",
+          },
+        })}
+      </Script>
 
       {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
@@ -166,8 +138,49 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqYavatmal} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-yavatmal" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

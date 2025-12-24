@@ -1,45 +1,43 @@
+import Script from "next/script";
+import React from "react";
+
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { heroDataTumakuruDist, sectionsTumakuruDist, faqTumakuru } from "@/utils/data";
 
+import {
+  heroDataTumakuruDist,
+  sectionsTumakuruDist,
+  faqTumakuru,
+} from "@/utils/data";
+
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
-    "Tumakuru EPF & ESIC Compliance for VNA Industrial Area, Cement & Auto Component Factories | EPFDesk",
+    "Tumakuru EPF & ESIC Compliance | VNA Industrial Area, Cement & Auto Component Factories | EPFDesk",
+
   description:
-    "Expert PF & ESIC defence for Tumakuru's VNA Industrial Area and CBIC manufacturing units. Specialized in Principal Employer liability, factory ESIC accident claims, and PF compliance for cement, food processing, and auto component factories.",
-  keywords: [
-    "Tumakuru PF consultant",
-    "Tumakuru ESIC consultant",
-    "VNA Industrial Area EPF ESIC",
-    "cement factory PF ESIC Tumakuru",
-    "auto components PF ESIC",
-    "CBIC node statutory compliance",
-    "NWC 2025 Tumakuru payroll",
-    "Principal Employer PF liability Tumakuru",
-    "factory accident ESIC claim Tumakuru",
-    "EPFDesk Tumakuru",
-  ],
+    "High-risk EPF & ESIC compliance defence for Tumakuru covering VNA Industrial Area, cement plants, auto component factories and CBIC corridor units. NWC 2025 payroll restructuring, ESIC accident claims, contractor audits and Principal Employer liability handled.",
+
   alternates: {
     canonical: "https://epfdesk.com/tumakuru-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Tumakuru EPF & ESIC Consultant | VNA Industrial Area, Cement & Auto Component Factories | EPFDesk",
+      "Tumakuru EPF & ESIC Compliance | VNA Industrial Area & Manufacturing Hub",
     description:
-      "PF & ESIC compliance services for Tumakuru’s manufacturing sector — VNA Industrial Area, cement factories, auto components, food processing and CBIC corridor units.",
+      "PF & ESIC specialists for Tumakuru manufacturing units including VNA Industrial Area, cement factories and auto component clusters.",
     url: "https://epfdesk.com/tumakuru-epf-esic-compliance",
-    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "EPFDesk Tumakuru PF ESIC Compliance",
+        alt: "Tumakuru EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -49,129 +47,90 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Tumakuru EPF & ESIC Compliance | VNA Industrial Area, Cement & Auto Components | EPFDesk",
+      "Tumakuru EPF & ESIC Compliance | VNA Industrial Area & Factories",
     description:
-      "Compliance experts for Tumakuru’s industrial clusters — PF/ESI management, NWC 2025 wage restructuring, contractor compliance and factory ESIC accident claim support.",
+      "Expert PF & ESIC compliance for Tumakuru’s cement plants, auto component units and CBIC industrial corridor.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Tumakuru EPF & ESIC Compliance for VNA Industrial Area, Cement & Auto Components | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="tumakuru-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-KA">
+            <meta name="geo.placename" content="Tumakuru">
+            <meta name="geo.position" content="13.3409;77.1010">
+            <meta name="ICBM" content="13.3409, 77.1010">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="PF & ESIC specialists for Tumakuru’s VNA Industrial Area, cement factories, auto components and CBIC corridor industries. Expertise in PE liability, factory ESIC claims and NWC 2025 PF restructuring."
-        />
-
-        <meta
-          name="keywords"
-          content="Tumakuru PF consultant, Tumakuru ESIC consultant, VNA Industrial Area compliance, cement factory PF ESIC, auto components statutory compliance, CBIC Tumakuru PF ESIC, NWC 2025 Tumakuru wages, Principal Employer PF liability Tumakuru, factory accident ESIC claim Tumakuru"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/tumakuru-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Tumakuru EPF & ESIC Consultant | VNA Industrial Area, Cement & Auto Component Factories | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Tumakuru’s VNA Industrial Area and heavy manufacturing hubs. Specialized in PE liability, ESIC accident cases, NWC 2025 restructuring & factory compliance."
-        />
-        <meta property="og:image" content="https://epfdesk.com/images/logo.jpg" />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/tumakuru-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Tumakuru EPF & ESIC Compliance | VNA Industrial Area, Cement & Auto Components | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="Expert EPF & ESIC support for Tumakuru's factories, cement plants and CBIC industries—contract labour compliance, ESIC claims and PF audits."
-        />
-        <meta name="twitter:image" content="https://epfdesk.com/images/logo.jpg" />
-      </Head>
-
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-tumakuru"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "Tumakuru EPF & ESIC Compliance for VNA Industrial Area, Cement & Auto Component Factories | EPFDesk",
-            alternateName:
-              "EPFDesk – Tumakuru PF ESIC Consultants for Heavy Engineering & CBIC Corridor",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/tumakuru-epf-esic-compliance#organization",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/tumakuru-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          name:
+            "Tumakuru EPF & ESIC Compliance – VNA Industrial Area & Manufacturing | EPFDesk",
 
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          alternateName:
+            "EPFDesk – Tumakuru PF ESIC Consultants for Cement, Auto & CBIC Industries",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 13.3409,
-              longitude: 77.1010,
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/tumakuru-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            description:
-              "Tumakuru is a major heavy manufacturing hub with VNA Industrial Area, cement plants, auto component factories and CBIC corridor industries. EPFDesk specializes in contractor PF/ESI compliance, ESIC accident claim handling and NWC 2025 payroll restructuring.",
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          /* ✅ CITY-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "B.H. Road",
+            addressLocality: "Tumakuru",
+            addressRegion: "Karnataka",
+            postalCode: "572101",
+            addressCountry: "IN",
+          },
 
-            priceRange: "₹₹",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 13.3409,
+            longitude: 77.1010,
+          },
 
-            areaServed: [
-              { "@type": "City", name: "Tumakuru" },
-              { "@type": "Place", name: "VNA Industrial Area" },
-              { "@type": "Place", name: "KIADB Industrial Areas" },
-              { "@type": "Place", name: "CBIC Corridor Node" },
-            ],
+          areaServed: [
+            { "@type": "City", name: "Tumakuru" },
+            { "@type": "Place", name: "VNA Industrial Area" },
+            { "@type": "Place", name: "KIADB Industrial Areas" },
+            { "@type": "Place", name: "CBIC Industrial Corridor" },
+            { "@type": "Place", name: "Cement Manufacturing Units" },
+          ],
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "53",
-            },
-          }),
-        }}
-      />
+          description:
+            "EPF & ESIC compliance consultancy for Tumakuru’s industrial ecosystem including VNA Industrial Area, cement factories, auto component units and CBIC corridor establishments. Services include New Wage Code 2025 payroll restructuring, ESIC accident claim handling, contractor audits and Principal Employer liability mitigation.",
 
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "53",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataTumakuruDist} />
       </FadeInWhenVisible>
@@ -181,8 +140,49 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqTumakuru} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tumakuru" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: 'tumakuru',
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: 'tumakuru',
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: 'tumakuru',
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

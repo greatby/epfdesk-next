@@ -1,5 +1,3 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
@@ -13,25 +11,20 @@ import {
   faqRaigarhDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Raigarh EPF & ESIC Compliance: Steel Hub PE Liability, Sponge Iron Audits & EEC-2025 | EPFDesk",
+
   description:
     "Specialized EPF & ESIC defense for Raigarh steel plants, sponge iron units and power hubs. Navigate RO Bilaspur audits, EEC-2025 voluntary disclosure and hazardous process compliance.",
-  keywords: [
-    "Raigarh PF consultant",
-    "EPF compliance for Raigarh steel plants",
-    "Sponge iron ESIC Raigarh",
-    "RO Bilaspur EPF 7A defense",
-    "EEC 2025 Raigarh MSMEs",
-    "Principal Employer liability Raigarh",
-  ],
+
   alternates: {
     canonical: "https://epfdesk.com/raigarh-epf-esic-compliance",
   },
+
   openGraph: {
     title:
       "Raigarh EPF & ESIC Compliance | Steel, Power & Metal Clusters",
@@ -49,117 +42,89 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Raigarh EPF & ESIC Compliance | Steel & Power Hub",
+    title: "Raigarh EPF & ESIC Compliance | Steel & Power Hub",
     description:
       "High-risk PF & ESIC compliance for Raigarh’s steel, sponge iron and power sectors.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Raigarh EPF & ESIC Compliance: Steel Hub PE Liability, Sponge Iron Audits & EEC-2025 | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="raigarh-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-CG">
+            <meta name="geo.placename" content="Raigarh">
+            <meta name="geo.position" content="21.8974;83.3950">
+            <meta name="ICBM" content="21.8974, 83.3950">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for Raigarh steel plants, sponge iron units and power-sector contractors under RO Bilaspur."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/raigarh-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Raigarh EPF & ESIC Compliance"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Raigarh’s steel, power and secondary metal clusters."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-raigarh"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/raigarh-epf-esic-compliance#organization",
 
-            name:
-              "Raigarh EPF & ESIC Compliance – Steel & Power Clusters | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Raigarh Industrial Area",
+          name:
+            "EPFDesk – Raigarh EPF & ESIC Compliance for Steel, Power & Metal Clusters",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/raigarh-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "PF & ESIC Consultant for Raigarh Steel Plants, Sponge Iron Units & Power Projects",
 
-            /* ✅ SAME ADDRESS */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/raigarh-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Chhattisgarh",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance specialists for Raigarh’s steel plants, sponge iron units, power projects and hazardous industrial operations governed by RO Bilaspur.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 21.8974,
+            longitude: 83.3950,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Raigarh District" },
+            { "@type": "Place", name: "Punjipathra Industrial Area" },
+            { "@type": "Place", name: "Tamnar" },
+            { "@type": "Place", name: "Kharsia" },
+            { "@type": "Place", name: "Raigarh Industrial Area" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Raigarh District" },
-              { "@type": "Place", name: "Punjipathra Industrial Area" },
-              { "@type": "Place", name: "Tamnar" },
-              { "@type": "Place", name: "Kharsia" },
-              { "@type": "Place", name: "Raigarh Industrial Area" },
-            ],
+          description:
+            "EPF & ESIC compliance specialists for Raigarh’s steel plants, sponge iron units, power projects and hazardous industrial operations governed by RO Bilaspur, including PE liability, EEC-2025 disclosures and ESIC hazardous process coverage.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "78",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "78",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataRaigarhDistrict} />
       </FadeInWhenVisible>
@@ -168,9 +133,52 @@ const page = () => {
         <CodeOfConduct sections={sectionsRaigarhDistrict} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqRaigarhDistrict} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqRaigarhDistrict} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-raigarh" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

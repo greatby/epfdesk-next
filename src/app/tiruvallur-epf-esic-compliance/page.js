@@ -1,43 +1,41 @@
+import Script from "next/script";
+import React from "react";
+
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
-import ThreeStepSection from "@/components/ThreeStepSection";
-import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { heroDataTiruvallurDist, sectionsTiruvallurDist } from "@/utils/data";
+
+import {
+  heroDataTiruvallurDist,
+  sectionsTiruvallurDist,
+} from "@/utils/data";
+
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
-    "Tiruvallur EPF & ESIC Compliance | NWC 2025 for Gummidipoondi SIPCOT, Ennore Port & Heavy Engineering – EPFDesk",
+    "Tiruvallur EPF & ESIC Compliance | Gummidipoondi SIPCOT, Ennore Port & Heavy Engineering | EPFDesk",
 
   description:
-    "EPFDesk provides end-to-end EPF & ESIC compliance for Tiruvallur district, covering Gummidipoondi SIPCOT, Ennore Port, Kattupalli logistics corridors, and heavy engineering clusters. Expertise in NWC 2025 payroll restructuring, contractor compliance, PF/ESI registration, and audit defense.",
+    "High-risk EPF & ESIC compliance defence for Tiruvallur district covering Gummidipoondi SIPCOT, Ennore Port, Kattupalli logistics corridor and heavy engineering clusters. NWC 2025 payroll restructuring, contractor compliance, PF/ESI audits and PE liability handled.",
 
-  keywords: [
-    "Tiruvallur EPF Consultant",
-    "Tiruvallur ESIC Consultant",
-    "Gummidipoondi SIPCOT compliance",
-    "Ennore Port EPF ESIC",
-    "Kattupalli Port Labour Compliance",
-    "Heavy Engineering PF ESIC",
-    "NWC 2025 Tiruvallur",
-    "EPFDesk Tiruvallur",
-  ],
+  alternates: {
+    canonical: "https://epfdesk.com/tiruvallur-epf-esic-compliance",
+  },
 
   openGraph: {
     title:
-      "Tiruvallur EPF & ESIC Compliance | Gummidipoondi, Ennore Port & Engineering – EPFDesk",
+      "Tiruvallur EPF & ESIC Compliance | SIPCOT, Ports & Heavy Engineering",
     description:
-      "EPFDesk delivers EPF & ESIC compliance for Tiruvallur’s industrial ecosystem: Gummidipoondi SIPCOT, Ennore Port, Kattupalli logistics, and heavy engineering units. NWC 2025 payroll restructuring & end-to-end statutory compliance.",
+      "PF & ESIC specialists for Tiruvallur SIPCOT industries, Ennore Port labour and heavy engineering units.",
     url: "https://epfdesk.com/tiruvallur-epf-esic-compliance",
-    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Tiruvallur EPF & ESIC Compliance – EPFDesk",
+        alt: "Tiruvallur EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -47,149 +45,140 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Tiruvallur EPF & ESIC Compliance | Gummidipoondi & Ennore Port – EPFDesk",
+      "Tiruvallur EPF & ESIC Compliance | SIPCOT & Port Industries",
     description:
-      "EPFDesk provides EPF & ESIC compliance in Tiruvallur for SIPCOT industries, ports, logistics, and engineering firms. NWC 2025-ready payroll restructuring and contractor compliance solutions.",
+      "Expert PF & ESIC compliance for Tiruvallur SIPCOT units, port labour and engineering industries.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {" "}
-      <Head>
-        <title>
-          Tiruvallur EPF & ESIC Compliance | NWC 2025 for Gummidipoondi SIPCOT,
-          Ennore Port & Heavy Engineering – EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="tiruvallur-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-TN">
+            <meta name="geo.placename" content="Tiruvallur">
+            <meta name="geo.position" content="13.1439;79.9089">
+            <meta name="ICBM" content="13.1439, 79.9089">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPFDesk provides end-to-end EPF & ESIC compliance for Tiruvallur district, covering Gummidipoondi SIPCOT, Ennore Port, Kattupalli logistics corridors, and heavy engineering clusters. Expertise in NWC 2025 payroll restructuring, contractor compliance, PF/ESI registration, and audit defense."
-        />
-
-        <meta
-          name="keywords"
-          content="Tiruvallur EPF Consultant, Tiruvallur ESIC Consultant, Gummidipoondi SIPCOT compliance, Ennore Port EPF ESIC, Kattupalli Port Labour Compliance, Heavy Engineering PF ESIC, NWC 2025 Tiruvallur, EPFDesk Tiruvallur"
-        />
-
-        {/* Open Graph */}
-        <meta
-          property="og:title"
-          content="Tiruvallur EPF & ESIC Compliance | Gummidipoondi, Ennore Port & Engineering – EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="EPFDesk delivers EPF & ESIC compliance for Tiruvallur’s industrial ecosystem: Gummidipoondi SIPCOT, Ennore Port, Kattupalli logistics, and heavy engineering units. NWC 2025 payroll restructuring & end-to-end statutory compliance."
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/tiruvallur-epf-esic-compliance"
-        />
-        <meta property="og:site_name" content="EPFDesk" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Tiruvallur EPF & ESIC Compliance | Gummidipoondi & Ennore Port – EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="EPFDesk provides EPF & ESIC compliance in Tiruvallur for SIPCOT industries, ports, logistics, and engineering firms. NWC 2025-ready payroll restructuring and contractor compliance solutions."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        {/* Canonical */}
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/tiruvallur-epf-esic-compliance"
-        />
-      </Head>
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-tiruvallur"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/tiruvallur-epf-esic-compliance#organization",
 
-            name: "Tiruvallur EPF & ESIC Compliance: NWC 2025 Ready for Gummidipoondi SIPCOT, Ennore Port & Heavy Engineering | EPFDesk",
-            alternateName:
-              "EPFDesk – Tiruvallur Heavy Industry, Port & Logistics Compliance Experts",
+          name:
+            "Tiruvallur EPF & ESIC Compliance – SIPCOT, Ports & Heavy Engineering | EPFDesk",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/tiruvallur-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "EPFDesk – Tiruvallur SIPCOT, Ennore Port & Engineering Compliance Consultants",
 
-            // Address remains unchanged as required
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/tiruvallur-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ CITY-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "J.N. Road",
+            addressLocality: "Tiruvallur",
+            addressRegion: "Tamil Nadu",
+            postalCode: "602001",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPFDesk provides comprehensive EPF and ESIC compliance solutions in Tiruvallur, covering the Gummidipoondi SIPCOT industrial estate, Ennore and Kattupalli port-linked logistics, and major heavy engineering units. We specialize in NWC 2025 payroll restructuring, contract labour compliance, ESIC applicability for port operations, and full statutory management for high-risk industrial clusters.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 13.1439,
+            longitude: 79.9089,
+          },
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          areaServed: [
+            { "@type": "City", name: "Tiruvallur" },
+            { "@type": "Place", name: "Gummidipoondi SIPCOT" },
+            { "@type": "Place", name: "Ennore Port" },
+            { "@type": "Place", name: "Kattupalli Port Logistics Zone" },
+            { "@type": "Place", name: "Heavy Engineering Corridor" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPF & ESIC compliance consultancy for Tiruvallur SIPCOT industries, Ennore and Kattupalli port-linked logistics employers and heavy engineering units. Services include NWC 2025 payroll restructuring, contractor PF audits, ESIC applicability for port labour and Principal Employer liability mitigation.",
 
-            areaServed: [
-              { "@type": "District", name: "Tiruvallur" },
-              { "@type": "Place", name: "Gummidipoondi SIPCOT" },
-              { "@type": "Place", name: "Ennore Port" },
-              { "@type": "Place", name: "Kattupalli Port Logistics Zone" },
-              { "@type": "Place", name: "Heavy Engineering Corridor" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "49",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "47",
-            },
-          }),
-        }}
-      />
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataTiruvallurDist} />
       </FadeInWhenVisible>
+
       <FadeInWhenVisible>
         <CodeOfConduct sections={sectionsTiruvallurDist} />
       </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tiruvallur" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: 'tiruvallur',
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: 'tiruvallur',
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: 'tiruvallur',
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

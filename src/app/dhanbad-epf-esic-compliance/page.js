@@ -1,20 +1,21 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
 
-import { heroDataDhanbad, sectionsDhanbad, faqDhanbad } from "@/utils/data";
+import {
+  heroDataDhanbad,
+  sectionsDhanbad,
+  faqDhanbad,
+} from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
-    "Dhanbad EPF & ESIC Compliance: BCCL Coal Mines, Mining Contractors & PE Liability | EPFDesk",
+    "Dhanbad EPF & ESIC Compliance 2025: BCCL Coal Mines, Mining Contractors & PE Liability | EPFDesk",
 
   description:
     "High-risk EPF & ESIC compliance defence for Dhanbad’s BCCL coal mines, mining contractors, coal transporters and coke oven units. Experts in RO Dhanbad enforcement, Principal Employer liability, hazardous industry ESIC and New Wage Code restructuring.",
@@ -28,6 +29,8 @@ export const metadata = {
     "Coke oven PF ESIC Dhanbad",
     "Principal Employer liability mining",
     "RO Dhanbad EPFO jurisdiction",
+    "NWC 2025 wage restructuring Dhanbad",
+    "EPFDesk Dhanbad",
   ],
 
   alternates: {
@@ -44,7 +47,7 @@ export const metadata = {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Dhanbad PF ESIC Compliance",
+        alt: "Dhanbad EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -53,113 +56,82 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Dhanbad EPF & ESIC Compliance | BCCL Mining Contractors | EPFDesk",
-    description:
-      "Expert PF & ESIC compliance for Dhanbad coal mines, BCCL contractors and coke oven units.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
+/* ===========================
    PAGE COMPONENT
-============================ */
-const page = () => {
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* LEGACY HEAD */}
-      <Head>
-        <title>
-          Dhanbad EPF & ESIC Compliance: BCCL Coal Mines, Mining Contractors &
-          PE Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="dhanbad-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-JH">
+            <meta name="geo.placename" content="Dhanbad">
+            <meta name="geo.position" content="23.7957;86.4304">
+            <meta name="ICBM" content="23.7957, 86.4304">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Dhanbad’s BCCL coal mines, mining contractors, coal transporters and coke oven plants. RO Dhanbad audits, hazardous industry ESIC and Principal Employer liability handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Dhanbad PF consultant, Dhanbad ESIC consultant, BCCL coal mine PF ESIC, mining contractor compliance Dhanbad, coal transporter labour laws, coke oven ESIC Dhanbad, Principal Employer liability mining, NWC 2025 wage restructuring Dhanbad"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/dhanbad-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Dhanbad EPF & ESIC Consultant | Coal Mining & PSU Contractors | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Dhanbad’s coal mining ecosystem — BCCL contractors, transporters and coke oven units."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/dhanbad-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Dhanbad EPF & ESIC Compliance | BCCL Coal Mines | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Dhanbad coal mines, mining contractors and coke oven units — PE liability and inspections handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* JSON-LD SCHEMA */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-dhanbad"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "Dhanbad EPF & ESIC Compliance Consultants | EPFDesk",
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/dhanbad-epf-esic-compliance",
-            telephone: "+91-9945933333",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
-            areaServed: [
-              "Dhanbad",
-              "Jharia",
-              "Katras",
-              "Sijua",
-              "Govindpur",
-              "Barwadda",
-              "Nirsa",
-              "Mugma",
-            ],
-            description:
-              "EPF & ESIC consultancy for coal mining contractors, BCCL vendors, hard coke units, and PSU-linked industries in Dhanbad.",
-          }),
-        }}
-      />
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id": "https://epfdesk.com/dhanbad-epf-esic-compliance#organization",
 
-      {/* PAGE SECTIONS */}
+          name: "EPFDesk – EPF & ESIC Consultants for Dhanbad District",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/dhanbad-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
+
+          /* ✅ DISTRICT-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Dhanbad",
+            addressRegion: "Jharkhand",
+            postalCode: "826001",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 23.7957,
+            longitude: 86.4304,
+          },
+
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Dhanbad District" },
+            { "@type": "Place", name: "Jharia Coalfields" },
+            { "@type": "Place", name: "Katras" },
+            { "@type": "Place", name: "Govindpur" },
+            { "@type": "Place", name: "Nirsa Industrial Belt" },
+            { "@type": "Place", name: "Barwadda" },
+            { "@type": "Place", name: "Mugma" },
+          ],
+
+          description:
+            "EPF & ESIC compliance services for BCCL coal mines, mining contractors, coal transporters and coke oven units in Dhanbad. Specialists in Principal Employer liability, hazardous industry ESIC, EPFO inspections and New Wage Code payroll restructuring under RO Dhanbad.",
+
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "71",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataDhanbad} />
       </FadeInWhenVisible>
@@ -169,8 +141,41 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqDhanbad} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-dhanbad" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

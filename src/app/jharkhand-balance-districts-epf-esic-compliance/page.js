@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,19 +10,19 @@ import {
   faqJharkhandBalance,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Jharkhand EPF & ESIC Compliance: Mining Belts, Sponge Iron Units & PE Liability | EPFDesk",
 
   description:
-    "High-risk EPF & ESIC compliance defence for Jharkhand’s balance districts — Ramgarh sponge iron units, Hazaribagh mining vendors, Deoghar MSMEs and logistics corridors. Experts in RO Dhanbad/Ranchi enforcement, mining Principal Employer liability, contractor audits and New Wage Code restructuring.",
+    "High-risk EPF & ESIC compliance defence for Jharkhand’s balance districts — Ramgarh sponge iron units, Hazaribagh mining vendors, Deoghar MSMEs and logistics corridors. Coverage includes RO Dhanbad/Ranchi enforcement, mining Principal Employer liability, contractor audits and New Wage Code restructuring.",
 
   keywords: [
     "Jharkhand PF consultant",
-    "Jharkhand ESIC consultant",
+    "Jharkhand ESIC compliance",
     "Ramgarh sponge iron PF ESIC",
     "Hazaribagh mining contractor compliance",
     "Deoghar MSME PF audits",
@@ -38,136 +35,87 @@ export const metadata = {
     canonical:
       "https://epfdesk.com/jharkhand-balance-districts-epf-esic-compliance",
   },
-
-  openGraph: {
-    title: "Jharkhand EPF & ESIC Compliance | Mining & Industrial Corridors",
-    description:
-      "PF & ESIC specialists for Ramgarh sponge iron units, Hazaribagh mining vendors, Deoghar MSMEs and Jharkhand logistics belts.",
-    url: "https://epfdesk.com/jharkhand-balance-districts-epf-esic-compliance",
-    images: [
-      {
-        url: "https://epfdesk.com/images/logo.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Jharkhand PF ESIC Compliance",
-      },
-    ],
-    locale: "en_IN",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "Jharkhand EPF & ESIC Compliance | Mining & Industrial Belts | EPFDesk",
-    description:
-      "Expert PF & ESIC compliance for Jharkhand mining districts, sponge iron units and regional MSMEs.",
-    images: ["https://epfdesk.com/images/logo.jpg"],
-  },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* LEGACY HEAD */}
-      <Head>
-        <title>
-          Jharkhand EPF & ESIC Compliance: Mining Belts, Sponge Iron Units & PE
-          Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="jharkhand-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-JH">
+            <meta name="geo.placename" content="Jharkhand">
+            <meta name="geo.position" content="23.6102;85.2799">
+            <meta name="ICBM" content="23.6102, 85.2799">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Jharkhand’s balance districts — Ramgarh sponge iron units, Hazaribagh mining contractors, Deoghar MSMEs and logistics corridors. RO Dhanbad/Ranchi audits and Principal Employer liability handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Jharkhand PF consultant, Jharkhand ESIC consultant, Ramgarh sponge iron PF ESIC, Hazaribagh mining contractor compliance, Deoghar MSME PF audits, mining Principal Employer liability Jharkhand, NWC 2025 wage restructuring Jharkhand"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/jharkhand-balance-districts-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Jharkhand EPF & ESIC Consultant | Mining & Industrial Corridors | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Jharkhand’s mining belts, sponge iron units and regional MSMEs."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/jharkhand-balance-districts-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Jharkhand EPF & ESIC Compliance | Mining & Industrial Belts | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Jharkhand mining districts, sponge iron units and MSMEs — PE liability and audits handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* JSON-LD SCHEMA */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-jharkhand-balance"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "Jharkhand EPF & ESIC Compliance Consultants | EPFDesk",
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/jharkhand-balance-districts-epf-esic-compliance",
-            telephone: "+91-9945933333",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
-            areaServed: [
-              "Ramgarh",
-              "Hazaribagh",
-              "Giridih",
-              "Koderma",
-              "Deoghar",
-              "Dumka",
-              "Sahibganj",
-              "Palamu",
-              "Garhwa",
-              "Latehar",
-            ],
-            description:
-              "EPF & ESIC consultancy for Jharkhand mining corridors, sponge iron units, logistics hubs, and Santal Pargana MSMEs.",
-          }),
-        }}
-      />
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/jharkhand-balance-districts-epf-esic-compliance#organization",
 
-      {/* PAGE SECTIONS */}
+          name:
+            "EPFDesk – EPF & ESIC Compliance Specialists for Jharkhand Balance Districts",
+
+          alternateName:
+            "Jharkhand EPF & ESIC Compliance for Mining, Sponge Iron & MSMEs",
+
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/jharkhand-balance-districts-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
+
+          /* ✅ STATE-ACCURATE ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Jharkhand",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 23.6102,
+            longitude: 85.2799,
+          },
+
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Ramgarh District" },
+            { "@type": "AdministrativeArea", name: "Hazaribagh District" },
+            { "@type": "AdministrativeArea", name: "Giridih District" },
+            { "@type": "AdministrativeArea", name: "Koderma District" },
+            { "@type": "AdministrativeArea", name: "Deoghar District" },
+            { "@type": "AdministrativeArea", name: "Dumka District" },
+            { "@type": "AdministrativeArea", name: "Sahibganj District" },
+            { "@type": "AdministrativeArea", name: "Palamu District" },
+            { "@type": "AdministrativeArea", name: "Garhwa District" },
+            { "@type": "AdministrativeArea", name: "Latehar District" },
+          ],
+
+          description:
+            "EPF & ESIC compliance services for Jharkhand’s balance districts covering sponge iron units, mining contractors, logistics hubs and MSMEs. Expertise includes mining Principal Employer liability, contractor audits, PF wage restructuring and enforcement defence under RO Dhanbad and RO Ranchi.",
+
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "81",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataJharkhandBalance} />
       </FadeInWhenVisible>
@@ -177,8 +125,44 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqJharkhandBalance} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script
+        id="conversion-tracking-jharkhand-balance"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

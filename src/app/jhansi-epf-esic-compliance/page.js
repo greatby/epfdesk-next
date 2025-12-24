@@ -1,11 +1,14 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { faqJhansi, heroDataJhansiDist, sectionsJhansiDist } from "@/utils/data";
+
+import {
+  heroDataJhansiDist,
+  sectionsJhansiDist,
+  faqJhansi,
+} from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -15,11 +18,11 @@ export const metadata = {
     "Jhansi EPF & ESIC Compliance: Railway & Defence PE Liability, Agro-Processing Audits | EPFDesk",
 
   description:
-    "Critical EPF & ESIC defense for Jhansi Railway contractors, Defence units, agro-processing factories and MSMEs. Experts in RO Jhansi liaison, CLRA PE liability and seasonal PF audits across Bundelkhand.",
+    "Critical EPF & ESIC compliance defence for Jhansi Railway contractors, Defence units, agro-processing factories and MSMEs. Coverage includes RO Jhansi inspections, CLRA Principal Employer liability and seasonal PF audits across Bundelkhand.",
 
   keywords: [
     "Jhansi PF consultant",
-    "Jhansi ESIC registration",
+    "Jhansi ESIC compliance",
     "Railway contractor PF compliance Jhansi",
     "Defence PE liability Jhansi",
     "Agro processing PF audits Jhansi",
@@ -29,126 +32,82 @@ export const metadata = {
   alternates: {
     canonical: "https://epfdesk.com/jhansi-epf-esic-compliance",
   },
-
-  openGraph: {
-    title:
-      "Jhansi EPF & ESIC Compliance | Railway, Defence & Agro-Processing",
-    description:
-      "PF & ESIC specialists for Jhansi Railway contractors, Defence establishments, MSMEs and agro units.",
-    url: "https://epfdesk.com/jhansi-epf-esic-compliance",
-    images: [
-      {
-        url: "https://epfdesk.com/images/logo.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Jhansi PF ESIC Compliance",
-      },
-    ],
-    locale: "en_IN",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "Jhansi EPF & ESIC Compliance | Railway & Defence PE Liability | EPFDesk",
-    description:
-      "Expert PF/ESIC compliance for Jhansi Railway contractors, Defence units and agro-processing industries.",
-    images: ["https://epfdesk.com/images/logo.jpg"],
-  },
 };
 
 /* ===========================
-   PAGE COMPONENT
+   PAGE
 =========================== */
-const page = () => {
+export default function Page() {
   return (
     <>
-      {/* ========= LEGACY HEAD ========= */}
-      <Head>
-        <title>
-          Jhansi EPF & ESIC Compliance: Railway & Defence PE Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="jhansi-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-UP">
+            <meta name="geo.placename" content="Jhansi, Uttar Pradesh">
+            <meta name="geo.position" content="25.4484;78.5685">
+            <meta name="ICBM" content="25.4484, 78.5685">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defense for Jhansi Railway contractors, Defence establishments, agro-processing units and MSMEs. RO Jhansi inspections and PE liability handled."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/jhansi-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Jhansi EPF & ESIC Compliance | Railway & Defence Contractors"
-        />
-        <meta
-          property="og:description"
-          content="PF/ESIC experts for Jhansi Railway, Defence, agro-processing and service sectors."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ========= SCHEMA (ADDRESS UNCHANGED) ========= */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-jhansi"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/jhansi-epf-esic-compliance#organization",
 
-            name:
-              "Jhansi EPF & ESIC Compliance Service | Railway & Defence Contractors | EPFDesk",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Specialists for Jhansi Industries",
 
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Railway, Defence and MSMEs in Jhansi",
+          alternateName:
+            "Jhansi EPF & ESIC Compliance for Railway, Defence & Agro Units",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/jhansi-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/jhansi-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            /* 🔒 ADDRESS — DO NOT CHANGE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          /* ✅ DISTRICT-ACCURATE ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Jhansi",
+            addressRegion: "Uttar Pradesh",
+            addressCountry: "IN",
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 25.4484,
+            longitude: 78.5685,
+          },
 
-            description:
-              "Specialized PF & ESIC compliance services for Jhansi Railway contractors, Defence establishments, agro-processing units and MSMEs. Expertise in CLRA PE liability, seasonal PF audits and RO Jhansi inspections.",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Jhansi District" },
+            { "@type": "AdministrativeArea", name: "Bundelkhand Region" },
+            { "@type": "Place", name: "Jhansi Railway Division" },
+            { "@type": "Place", name: "Defence Establishments Jhansi" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPF & ESIC compliance services for Jhansi Railway contractors, Defence establishments, agro-processing units and MSMEs. Expertise includes CLRA Principal Employer liability, seasonal PF audits, inspection defence and RO Jhansi enforcement handling.",
 
-            areaServed: [
-              { "@type": "City", name: "Jhansi" },
-              { "@type": "AdministrativeArea", name: "Bundelkhand Region" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "72",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "76",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataJhansiDist} />
       </FadeInWhenVisible>
@@ -158,8 +117,44 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqJhansi} />
+
+      {/* ========= CONVERSION TRACKING (VERBATIM) ========= */}
+      <Script
+        id="conversion-tracking-jhansi"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

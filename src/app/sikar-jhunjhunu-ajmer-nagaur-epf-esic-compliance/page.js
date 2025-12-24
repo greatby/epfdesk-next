@@ -1,6 +1,5 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
+import React from "react";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
@@ -13,31 +12,26 @@ import {
   faqSJAN,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Rajasthan EPF & ESIC Compliance 2025: Sikar Education Hub, Ajmer Manufacturing & RO Ajmer Audits | EPFDesk",
+
   description:
-    "Expert EPF & ESIC defense for Rajasthan’s central and Shekhawati hubs. Navigate RO Ajmer audits, Sikar education PE liability and Beawar cement EEC-2025 amnesty.",
-  keywords: [
-    "Sikar PF consultant",
-    "Jhunjhunu EPF ESIC compliance",
-    "Ajmer EPF audit defense",
-    "Beawar cement ESIC",
-    "Nagaur marble PF compliance",
-    "RO Ajmer EPF 7A defense",
-  ],
+    "Expert EPF & ESIC compliance for Sikar coaching institutes, Jhunjhunu industrial units, Ajmer MSMEs, Beawar cement plants and Nagaur mineral processors. RO Ajmer audit defence, PE liability and EEC-2025 handled.",
+
   alternates: {
     canonical:
       "https://epfdesk.com/sikar-jhunjhunu-ajmer-nagaur-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Rajasthan EPF & ESIC Compliance | Education, Cement & Central Industry",
+      "Rajasthan EPF & ESIC Compliance | Sikar, Jhunjhunu, Ajmer & Nagaur",
     description:
-      "PF & ESIC specialists for Sikar coaching hubs, Ajmer manufacturing, Beawar cement and Nagaur mineral units.",
+      "PF & ESIC specialists for Rajasthan’s education hubs, cement plants and central industrial districts governed by RO Ajmer.",
     url:
       "https://epfdesk.com/sikar-jhunjhunu-ajmer-nagaur-epf-esic-compliance",
     images: [
@@ -51,119 +45,96 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title:
       "Rajasthan EPF & ESIC Compliance | Education & Cement Hubs",
     description:
-      "High-risk PF & ESIC compliance for Shekhawati and Central Rajasthan industries.",
+      "High-risk PF & ESIC compliance for Sikar education sector, Ajmer manufacturing, Beawar cement and Nagaur mineral belts.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Rajasthan EPF & ESIC Compliance 2025: Sikar Education Hub, Ajmer Manufacturing & RO Ajmer Audits | EPFDesk
-        </title>
+      {/* ========= GEO META (PRIMARY = AJMER) ========= */}
+      <Script id="ajmer-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-RJ">
+            <meta name="geo.placename" content="Ajmer">
+            <meta name="geo.position" content="26.4499;74.6399">
+            <meta name="ICBM" content="26.4499, 74.6399">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for Sikar coaching institutes, Ajmer MSMEs, Beawar cement units and Nagaur mineral processors."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/sikar-jhunjhunu-ajmer-nagaur-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Sikar–Ajmer EPF & ESIC Compliance"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Rajasthan’s education, cement and central industrial sectors."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-sjan"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/sikar-jhunjhunu-ajmer-nagaur-epf-esic-compliance#organization",
 
-            name:
-              "Rajasthan EPF & ESIC Compliance – Education & Central Industrial Zones | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Sikar, Jhunjhunu, Ajmer & Nagaur",
+          name:
+            "Rajasthan EPF & ESIC Compliance – Sikar, Jhunjhunu, Ajmer & Nagaur | EPFDesk",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url:
-              "https://epfdesk.com/sikar-jhunjhunu-ajmer-nagaur-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "EPFDesk – PF & ESIC Consultants for Central & Shekhawati Rajasthan",
 
-            /* ✅ SAME ADDRESS */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url:
+            "https://epfdesk.com/sikar-jhunjhunu-ajmer-nagaur-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ CITY-BASED ADDRESS (AJMER) */
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Civil Lines",
+            addressLocality: "Ajmer",
+            addressRegion: "Rajasthan",
+            postalCode: "305001",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance specialists for Rajasthan’s education-service hubs, cement plants and mineral belts governed by RO Ajmer.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 26.4499,
+            longitude: 74.6399,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "City", name: "Ajmer" },
+            { "@type": "City", name: "Sikar" },
+            { "@type": "City", name: "Jhunjhunu" },
+            { "@type": "City", name: "Nagaur" },
+            { "@type": "Place", name: "Beawar Cement Cluster" },
+            { "@type": "AdministrativeArea", name: "Shekhawati Region" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Sikar District" },
-              { "@type": "AdministrativeArea", name: "Jhunjhunu District" },
-              { "@type": "AdministrativeArea", name: "Ajmer District" },
-              { "@type": "AdministrativeArea", name: "Nagaur District" },
-              { "@type": "Place", name: "Beawar" },
-              { "@type": "Place", name: "Khetri" },
-            ],
+          description:
+            "EPF & ESIC compliance services for Rajasthan’s education hubs, cement plants, MSMEs and mineral belts. Expertise includes RO Ajmer audit defence, PF 7A proceedings, Principal Employer liability, EEC-2025 amnesty and wage code restructuring.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "81",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "81",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataSJAN} />
       </FadeInWhenVisible>
@@ -173,8 +144,49 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqSJAN} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-sjan" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: 'sikar-ajmer-nagaur',
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: 'sikar-ajmer-nagaur',
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: 'sikar-ajmer-nagaur',
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

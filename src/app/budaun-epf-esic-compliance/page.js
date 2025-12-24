@@ -1,14 +1,17 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { faqBudaun, heroDataBudaunDist, sectionsBudaunDist } from "@/utils/data";
+
+import {
+  heroDataBudaunDist,
+  sectionsBudaunDist,
+  faqBudaun,
+} from "@/utils/data";
 
 /* ===========================
-   METADATA (APP ROUTER)
+   METADATA (DISTRICT PAGE)
 =========================== */
 export const metadata = {
   title:
@@ -30,11 +33,11 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Budaun EPF & ESIC Compliance | Agro-Processing & MSME",
+    title: "Budaun EPF & ESIC Compliance | Agro-Processing & MSME",
     description:
       "PF & ESIC specialists for Budaun Agro-Processing units, Cold Storages and Trading MSMEs.",
     url: "https://epfdesk.com/budaun-epf-esic-compliance",
+    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
@@ -49,105 +52,153 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Budaun EPF & ESIC Compliance | Agro & MSME Sector | EPFDesk",
-    description:
-      "Expert PF/ESIC compliance for Budaun Dal Mills, Cold Storages and Trading Firms.",
     images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
 /* ===========================
    PAGE COMPONENT
 =========================== */
-const page = () => {
+export default function Page() {
   return (
     <>
-      {/* ========= LEGACY HEAD ========= */}
-      <Head>
-        <title>
-          Budaun EPF & ESIC Compliance: Agro-Processing & MSME | EPFDesk
-        </title>
+      {/* ========= GEO + EXTRA META ========= */}
+      <Script id="budaun-geo-meta" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-UP">
+            <meta name="geo.placename" content="Budaun">
+            <meta name="geo.position" content="28.0362;79.1267">
+            <meta name="ICBM" content="28.0362, 79.1267">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/budaun-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/budaun-epf-esic-compliance">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defense for Budaun Dal Mills, Cold Storages and Trading MSMEs under RO Bareilly."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/budaun-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Budaun EPF & ESIC Compliance | Agro-Processing & MSME"
-        />
-        <meta
-          property="og:description"
-          content="PF/ESIC experts for Budaun Agro-Processing units and Trading MSMEs."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ========= SCHEMA (ADDRESS UNCHANGED) ========= */}
+      {/* ========= LOCAL BUSINESS SCHEMA ========= */}
       <Script
-        id="schema-budaun"
+        id="schema-budaun-localbusiness"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/budaun-epf-esic-compliance#organization",
 
-            name:
-              "Budaun EPF & ESIC Compliance | Agro-Processing & MSME | EPFDesk",
+          name: "EPFDesk – EPF & ESIC Consultants Budaun",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/budaun-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Agro & Trading MSMEs (Budaun)",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Budaun",
+            addressRegion: "Uttar Pradesh",
+            postalCode: "243601",
+            addressCountry: "IN",
+          },
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/budaun-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 28.0362,
+            longitude: 79.1267,
+          },
 
-            /* 🔒 ADDRESS — DO NOT CHANGE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
+          areaServed: {
+            "@type": "AdministrativeArea",
+            name: "Budaun District",
+            containedIn: {
+              "@type": "State",
+              name: "Uttar Pradesh",
             },
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
-
-            description:
-              "Specialized PF & ESIC compliance services for Budaun Dal Mills, Cold Storages and Trading MSMEs. Expertise in RO Bareilly inspections, seasonal PF audits and MSME headcount compliance defense.",
-
-            priceRange: "₹₹",
-
-            areaServed: [
-              { "@type": "City", name: "Budaun" },
-              { "@type": "AdministrativeArea", name: "Uttar Pradesh" },
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Agro-Processing & MSME Compliance Services",
+            itemListElement: [
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Dal Mill & Agro-Processing PF Compliance",
+                  description:
+                    "Seasonal PF audits, contractor liability and wage structuring for dal mills and agro units",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Cold Storage ESIC Coverage",
+                  description:
+                    "ESIC applicability, accident liability and inspection handling for cold storages",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Trading MSME PE Liability Defense",
+                  description:
+                    "MSME headcount audits, PE liability mitigation and RO Bareilly representation",
+                },
+              },
             ],
+          },
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "64",
-            },
-          }),
-        }}
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "64",
+          },
+        })}
+      </Script>
+
+      {/* ========= GOOGLE ANALYTICS ========= */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-WMNLTE5RKQ"
+        strategy="afterInteractive"
       />
+      <Script id="ga-budaun" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
+          gtag('config', 'G-WMNLTE5RKQ', {
+            page_location: window.location.href,
+            page_title: document.title,
+            custom_map: {
+              dimension1: 'district',
+              dimension2: 'state'
+            }
+          });
+
+          gtag('event', 'page_view', {
+            district: 'Budaun',
+            state: 'Uttar Pradesh',
+            page_type: 'district_landing'
+          });
+        `}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataBudaunDist} />
       </FadeInWhenVisible>
@@ -157,8 +208,41 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqBudaun} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-budaun" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

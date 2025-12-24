@@ -50,7 +50,7 @@ export const PerformanceSectionIndustry = ({ data }) => {
 
           <button
             onClick={() => (window.location.href = "tel:+9119945933333")}
-            className="bg-[#c4f5db] cursor-pointer text-[16px] text-[#066] font-[500] px-6 py-3 rounded-[13px] transition"
+            className="bg-[#c4f5db] cursor-pointer text-[16px] text-[#066] font-medium px-6 py-3 rounded-[13px] transition"
             style={{
               backgroundImage: "linear-gradient(180deg, #eafce9, #cdface)",
               boxShadow:
@@ -72,7 +72,7 @@ export const PerformanceSectionIndustry = ({ data }) => {
               );
               window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
             }}
-            className="relative group bg-[#c4f5db] cursor-pointer text-[16px] flex items-center justify-center gap-2 text-[#066] font-[500] px-6 py-3 rounded-[13px] transition"
+            className="relative group bg-[#c4f5db] cursor-pointer text-[16px] flex items-center justify-center gap-2 text-[#066] font-medium px-6 py-3 rounded-[13px] transition"
             style={{
               backgroundImage: "linear-gradient(180deg, #eafce9, #cdface)",
               boxShadow:

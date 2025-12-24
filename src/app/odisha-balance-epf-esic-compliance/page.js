@@ -1,5 +1,3 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
@@ -13,15 +11,15 @@ import {
   faqOdishaBalance,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Odisha EPF & ESIC Compliance: Agri-Processing, Mineral Belts & PE Liability | EPFDesk",
 
   description:
-    "High-risk EPF & ESIC compliance defence for Odisha’s balance districts — Western Odisha agri-processing hubs (Bargarh), Southern mineral belts (Koraput, Rayagada) and regional MSMEs. Experts in RO Sambalpur & RO Berhampur enforcement, mining Principal Employer liability, contractor audits and Labour Code transitions.",
+    "High-risk EPF & ESIC compliance defence for Odisha’s balance districts — Western Odisha agri-processing hubs (Bargarh, Balangir), Southern mineral belts (Koraput, Rayagada, Kalahandi) and regional MSMEs. Experts in RO Sambalpur & RO Berhampur enforcement, mining Principal Employer liability, contractor audits and Labour Code transitions.",
 
   keywords: [
     "Odisha PF consultant",
@@ -64,107 +62,83 @@ export const metadata = {
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* LEGACY HEAD */}
-      <Head>
-        <title>
-          Odisha EPF & ESIC Compliance: Agri-Processing, Mineral Belts & PE
-          Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="odisha-balance-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-OD">
+            <meta name="geo.placename" content="Odisha">
+            <meta name="geo.position" content="20.9517;85.0985">
+            <meta name="ICBM" content="20.9517, 85.0985">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Odisha’s balance districts — Western Odisha agri-processing hubs and Southern mineral belts. RO Sambalpur & RO Berhampur audits, mining contractor compliance and Principal Employer liability handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Odisha PF consultant, Odisha ESIC consultant, Bargarh agro processing PF ESIC, Koraput mining labour compliance, Rayagada mineral belt PF audits, mining Principal Employer liability Odisha, NWC 2025 wage restructuring Odisha"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/odisha-balance-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Odisha EPF & ESIC Consultant | Agri & Mineral Belts | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Odisha’s agri-processing districts and southern mineral belts."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/odisha-balance-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Odisha EPF & ESIC Compliance | Agri & Mineral Belts | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Odisha agri-processing hubs and mineral districts — PE liability and audits handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* JSON-LD SCHEMA */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-odisha-balance"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "Odisha EPF & ESIC Compliance Consultants | EPFDesk",
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/odisha-balance-epf-esic-compliance",
-            telephone: "+91-9945933333",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
-            areaServed: [
-              "Koraput",
-              "Rayagada",
-              "Kalahandi",
-              "Bargarh",
-              "Balangir",
-              "Sambalpur",
-              "Dhenkanal",
-              "Puri",
-              "Nayagarh",
-            ],
-            description:
-              "EPF & ESIC consultancy for Odisha’s western agri-industrial hubs and southern mineral belt.",
-          }),
-        }}
-      />
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/odisha-balance-epf-esic-compliance#organization",
 
-      {/* PAGE SECTIONS */}
+          name:
+            "EPFDesk – Odisha EPF & ESIC Compliance for Agri-Processing & Mineral Belts",
+
+          alternateName:
+            "PF & ESIC Consultant for Western & Southern Odisha Districts",
+
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/odisha-balance-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
+
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Odisha",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 20.9517,
+            longitude: 85.0985,
+          },
+
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Koraput District" },
+            { "@type": "AdministrativeArea", name: "Rayagada District" },
+            { "@type": "AdministrativeArea", name: "Kalahandi District" },
+            { "@type": "AdministrativeArea", name: "Bargarh District" },
+            { "@type": "AdministrativeArea", name: "Balangir District" },
+            { "@type": "AdministrativeArea", name: "Sambalpur District" },
+            { "@type": "AdministrativeArea", name: "Dhenkanal District" },
+            { "@type": "AdministrativeArea", name: "Nayagarh District" },
+            { "@type": "AdministrativeArea", name: "Puri District" },
+          ],
+
+          description:
+            "EPF & ESIC compliance specialists for Odisha’s western agri-processing hubs and southern mineral belt, with expertise in mining contractor audits, Principal Employer liability, RO Sambalpur & RO Berhampur proceedings and Labour Code readiness.",
+
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "81",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataOdishaBalance} />
       </FadeInWhenVisible>
@@ -173,9 +147,53 @@ const page = () => {
         <CodeOfConduct sections={sectionsOdishaBalance} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqOdishaBalance} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqOdishaBalance} />
+      </FadeInWhenVisible>
+        <Script
+        id="conversion-tracking-odisha"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

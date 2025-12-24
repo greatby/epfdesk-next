@@ -1,196 +1,184 @@
+import Script from "next/script";
+import React from "react";
+
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
-import ThreeStepSection from "@/components/ThreeStepSection";
-import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { heroDataTrichyDist, sectionsTrichyDist } from "@/utils/data";
+
+import {
+  heroDataTrichyDist,
+  sectionsTrichyDist,
+} from "@/utils/data";
+
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
-    "Trichy EPF & ESIC Compliance | BHEL Contract Labour, Fabrication & Gem Industry – EPFDesk",
+    "Trichy EPF & ESIC Compliance | BHEL Contract Labour, Fabrication & Gem Industry | EPFDesk",
+
   description:
-    "EPFDesk provides EPF & ESIC compliance solutions in Trichy for BHEL contract labour, fabrication and welding units, and gem/ornament manufacturing. Includes NWC 2025 payroll restructuring, contractor liability mitigation, PF/ESI audits, and principal employer compliance for heavy engineering ecosystems.",
-  keywords: [
-    "Trichy EPF Consultant",
-    "Trichy ESIC Consultant",
-    "BHEL contract labour compliance",
-    "Trichy fabrication labour EPF",
-    "Heavy engineering EPF ESIC Trichy",
-    "Trichy gem industry PF ESIC",
-    "NWC 2025 Trichy",
-    "EPFDesk Trichy",
-  ],
+    "High-risk EPF & ESIC compliance defence for Trichy covering BHEL contract labour, fabrication & welding ancillaries, and gem/ornament manufacturing units. NWC 2025 payroll restructuring, contractor audits, PF/ESI compliance and Principal Employer liability handled.",
+
+  alternates: {
+    canonical: "https://epfdesk.com/trichy-epf-esic-compliance",
+  },
+
   openGraph: {
     title:
-      "Trichy EPF & ESIC Compliance | BHEL Contract Labour & Fabrication – EPFDesk",
+      "Trichy EPF & ESIC Compliance | BHEL Contract Labour & Heavy Engineering",
     description:
-      "EPFDesk delivers EPF & ESIC compliance for Trichy's heavy engineering and fabrication sector, including BHEL-linked units, welding ancillaries, and gem manufacturing clusters. Specialized contractor compliance and NWC 2025 restructuring.",
+      "PF & ESIC specialists for Trichy BHEL contractors, fabrication units and gem manufacturing clusters.",
     url: "https://epfdesk.com/trichy-epf-esic-compliance",
-    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Trichy EPF & ESIC Compliance – EPFDesk",
+        alt: "Trichy EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title:
-      "Trichy EPF & ESIC Compliance | BHEL Contract Labour & Fabrication – EPFDesk",
+      "Trichy EPF & ESIC Compliance | BHEL Contract Labour & Fabrication",
     description:
-      "EPFDesk provides EPF & ESIC compliance in Trichy for heavy engineering, fabrication units, BHEL contractors, and gem industry workers. NWC 2025 payroll restructuring & statutory audit support.",
+      "Expert PF & ESIC compliance for Trichy heavy engineering, fabrication and contract labour ecosystems.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Trichy EPF & ESIC Compliance | BHEL Contract Labour, Fabrication & Gem
-          Industry – EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="trichy-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-TN">
+            <meta name="geo.placename" content="Tiruchirappalli">
+            <meta name="geo.position" content="10.7905;78.7047">
+            <meta name="ICBM" content="10.7905, 78.7047">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPFDesk provides EPF & ESIC compliance solutions in Trichy for BHEL contract labour, fabrication and welding units, and gem manufacturing. Includes NWC 2025 payroll restructuring, principal employer liability mitigation, PF/ESI audits, and engineering sector compliance."
-        />
-
-        <meta
-          name="keywords"
-          content="Trichy EPF Consultant, Trichy ESIC Consultant, BHEL contract labour compliance, Trichy fabrication labour EPF, Heavy engineering EPF ESIC Trichy, Trichy gem industry PF ESIC, NWC 2025 Trichy, EPFDesk Trichy"
-        />
-
-        {/* Open Graph */}
-        <meta
-          property="og:title"
-          content="Trichy EPF & ESIC Compliance | BHEL Contract Labour & Fabrication – EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="EPFDesk delivers EPF & ESIC compliance for Trichy's heavy engineering sector: BHEL contractor ecosystem, fabrication and welding units, and gem manufacturing clusters. Expert statutory advisory, contractor compliance, and NWC 2025 readiness."
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/trichy-epf-esic-compliance"
-        />
-        <meta property="og:site_name" content="EPFDesk" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Trichy EPF & ESIC Compliance | BHEL Contract Labour & Fabrication – EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="EPFDesk provides EPF & ESIC compliance for Trichy’s fabrication, welding, gem industry, and BHEL-associated contract workforce. NWC 2025 payroll consulting & contractor compliance."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        {/* Canonical */}
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/trichy-epf-esic-compliance"
-        />
-      </Head>
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-trichy"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/trichy-epf-esic-compliance#organization",
 
-            name: "Trichy Labour Compliance Analysis: BHEL Contract Labour, Fabrication, and Gem Industry EPF/ESIC Risk",
-            alternateName:
-              "EPFDesk – Trichy Heavy Engineering, Fabrication & Contract Labour Compliance Experts",
+          name:
+            "Trichy EPF & ESIC Compliance – BHEL Contract Labour & Heavy Engineering | EPFDesk",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/trichy-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "EPFDesk – Trichy BHEL Contractor, Fabrication & Labour Compliance Consultants",
 
-            // Standard address used across all schemas
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/trichy-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ CITY-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Williams Road",
+            addressLocality: "Tiruchirappalli",
+            addressRegion: "Tamil Nadu",
+            postalCode: "620001",
+            addressCountry: "IN",
+          },
 
-            description:
-              "Essential compliance guide for Trichy's heavy engineering and fabrication sector. EPFDesk supports Contract Labour Act 1970 adherence, mitigates principal employer risk, and enables smooth New Wage Code 2025 implementation in BHEL-linked and ancillary industrial units.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 10.7905,
+            longitude: 78.7047,
+          },
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          areaServed: [
+            { "@type": "City", name: "Tiruchirappalli" },
+            { "@type": "Place", name: "BHEL Trichy Complex" },
+            { "@type": "Place", name: "Fabrication & Welding Units" },
+            { "@type": "Place", name: "Heavy Engineering Ancillaries" },
+            { "@type": "Place", name: "Gems & Ornaments Manufacturing Cluster" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPF & ESIC compliance consultancy for Trichy’s heavy engineering ecosystem including BHEL contract labour, fabrication and welding ancillaries, and gem manufacturing units. Services include New Wage Code 2025 payroll restructuring, contractor PF audits, CLRA compliance and Principal Employer liability mitigation.",
 
-            areaServed: [
-              { "@type": "City", name: "Trichy" },
-              { "@type": "Place", name: "BHEL Trichy Zone" },
-              {
-                "@type": "Place",
-                name: "Fabrication & Welding Ancillary Units",
-              },
-              {
-                "@type": "Place",
-                name: "Gems & Ornaments Manufacturing Cluster",
-              },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "51",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "47",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataTrichyDist} />
       </FadeInWhenVisible>
+
       <FadeInWhenVisible>
         <CodeOfConduct sections={sectionsTrichyDist} />
       </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-trichy" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: 'trichy',
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: 'trichy',
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: 'trichy',
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

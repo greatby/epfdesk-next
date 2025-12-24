@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,14 +10,16 @@ import {
   faqNandedDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Nanded EPF & ESIC Compliance for Sugar Mills, Textile Powerlooms & Educational Trusts | EPFDesk",
+
   description:
-    "Expert EPF & ESIC defence for Nanded sugar mills, PF liability for seasonal cane harvest workers, and mandatory ESIC compliance for textile powerlooms and educational institutions. Specialists in piece-rate wage audits and Principal Employer liability.",
+    "Expert EPF & ESIC defence for Nanded sugar mills, seasonal cane harvest workers, textile powerlooms and educational institutions. Specialists in piece-rate wage audits, ESIC coverage and Principal Employer liability.",
+
   keywords: [
     "Nanded PF consultant",
     "Sugar mill EPF compliance Nanded",
@@ -29,135 +28,113 @@ export const metadata = {
     "Educational trust PF ESIC Nanded",
     "Nanded EPFO 7A defence",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/nanded-epf-esic-compliance",
   },
+
   openGraph: {
     title:
       "Nanded EPF & ESIC Compliance | Sugar, Textile & Education | EPFDesk",
     description:
-      "PF & ESIC specialists for Nanded sugar factories, powerloom units, seasonal agro labour, and educational trusts.",
+      "PF & ESIC specialists for Nanded sugar factories, textile powerlooms, seasonal agro labour and educational trusts.",
     url: "https://epfdesk.com/nanded-epf-esic-compliance",
+    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Nanded EPF ESIC Compliance",
+        alt: "Nanded EPF & ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title:
       "Nanded EPF & ESIC Compliance | Sugar Mills & Powerlooms | EPFDesk",
     description:
-      "High-risk EPF & ESIC compliance and EPFO 7A defence for Nanded sugar mills, textiles, and education sector.",
+      "High-risk EPF & ESIC compliance and EPFO 7A defence for Nanded sugar mills, powerloom units and education sector employers.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Nanded EPF & ESIC Compliance for Sugar Mills, Textile Powerlooms & Educational Trusts | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="nanded-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Nanded, Maharashtra, India">
+            <meta name="geo.position" content="19.1383;77.3210">
+            <meta name="ICBM" content="19.1383, 77.3210">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC defence for Nanded sugar mills, seasonal harvest workers, textile powerlooms, and educational institutions."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/nanded-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Nanded EPF & ESIC Compliance | Sugar & Textile Sector"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Nanded sugar factories, powerloom units, agro-processing, and educational trusts."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-nanded"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/nanded-epf-esic-compliance#organization",
 
-            name: "Nanded EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Sugar Mills & Textile Units in Nanded",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Consultants for Nanded District",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/nanded-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Nanded EPF & ESIC Compliance for Sugar Mills, Powerlooms & Education",
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/nanded-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Maharashtra",
+            addressCountry: "IN",
+          },
 
-            description:
-              "Expert EPF & ESIC compliance services for Nanded sugar mills, textile powerloom units, seasonal cane harvest workers, and educational trusts, with focus on piece-rate wages and Principal Employer liability.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 19.1383,
+            longitude: 77.3210,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Nanded District" },
+            { "@type": "Place", name: "Sugar Mills & Cane Harvesting Areas" },
+            { "@type": "Place", name: "Textile Powerloom Clusters" },
+            { "@type": "Place", name: "Educational Institutions & Trusts" },
+            { "@type": "AdministrativeArea", name: "Marathwada Region" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Nanded District" },
-              { "@type": "Place", name: "Sugar Mills & Cane Harvesting" },
-              { "@type": "Place", name: "Textile Powerloom Units" },
-              { "@type": "Place", name: "Educational Institutions" },
-            ],
+          description:
+            "EPF & ESIC compliance services for Nanded sugar mills, seasonal cane harvest workers, textile powerloom units and educational trusts. Expertise includes piece-rate wage PF audits, ESIC applicability, EPFO Section 7A defence and Principal Employer liability.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "74",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "74",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataNandedDistrict} />
       </FadeInWhenVisible>
@@ -167,8 +144,52 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqNandedDistrict} />
+
+      {/* ========= CONVERSION TRACKING (LOCKED) ========= */}
+      <Script
+        id="conversion-tracking-nanded"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

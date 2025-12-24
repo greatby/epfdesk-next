@@ -1,10 +1,10 @@
+import Script from "next/script";
+import React from "react";
+
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
 
 import {
   heroDataUdupiDist,
@@ -12,168 +12,125 @@ import {
   faqUdupi,
 } from "@/utils/data";
 
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Udupi EPF & ESIC Compliance for Manipal Hospitals, Educational Institutions & Tourism Sector | EPFDesk",
+
   description:
-    "Expert PF & ESIC compliance for Manipal educational/medical trusts, Udupi hotels & resorts, fisheries/cashew units, and UPCL contractors. Specialized in PF for seasonal tourism workers and ESIC enforcement in hospitals.",
-  keywords: [
-    "Udupi PF consultant",
-    "Udupi ESIC consultant",
-    "Manipal hospital PF ESIC",
-    "UPCL PF contractor compliance",
-    "Udupi tourism PF ESI",
-    "EPFDesk Karnataka",
-  ],
+    "High-risk EPF & ESIC compliance defence for Udupi covering Manipal hospitals and educational trusts, tourism establishments, fisheries/cashew units and UPCL contractors. Seasonal labour PF, hospital ESIC enforcement and Principal Employer liability handled.",
+
   alternates: {
     canonical: "https://epfdesk.com/udupi-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Udupi EPF & ESIC Compliance | Manipal Hospitals, Tourism & Coastal Industry | EPFDesk",
+      "Udupi EPF & ESIC Compliance | Manipal Hospitals & Coastal Economy",
     description:
-      "PF & ESIC experts for Manipal hospitals, Udupi tourism, fisheries/cashew units, and UPCL contractors.",
+      "PF & ESIC specialists for Manipal hospitals, Udupi tourism sector, fisheries/cashew units and power contractors.",
     url: "https://epfdesk.com/udupi-epf-esic-compliance",
-    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "EPFDesk Udupi PF ESIC Compliance",
+        alt: "Udupi EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title:
-      "Udupi EPF & ESIC Compliance | Manipal Hospitals, Tourism & Coastal Industry | EPFDesk",
+      "Udupi EPF & ESIC Compliance | Manipal Hospitals & Tourism",
     description:
-      "PF/ESI compliance for Manipal medical institutions, resorts, fisheries units, and UPCL power plant contractors.",
+      "Expert PF & ESIC compliance for Udupi hospitals, resorts, fisheries and power contractors.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Udupi EPF & ESIC Compliance for Manipal Hospitals, Educational Institutions & Tourism | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="udupi-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-KA">
+            <meta name="geo.placename" content="Udupi">
+            <meta name="geo.position" content="13.3409;74.7421">
+            <meta name="ICBM" content="13.3409, 74.7421">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert PF & ESIC compliance for Manipal medical/educational trusts, Udupi resorts, fisheries units, and UPCL contractors. Specialists in seasonal tourism PF and ESIC enforcement for hospitals."
-        />
-
-        <meta
-          name="keywords"
-          content="Udupi PF ESIC, Manipal hospital PF ESIC, UPCL PF contractor compliance, Udupi tourism PF ESI, coastal industry PF Karnataka"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/udupi-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Udupi EPF & ESIC Compliance | Manipal Hospitals, Tourism & Coastal Industry"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC specialists for Manipal educational trusts, Udupi hotels, cashew-processing units and UPCL contractors."
-        />
-        <meta property="og:image" content="https://epfdesk.com/images/logo.jpg" />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/udupi-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Udupi EPF & ESIC Compliance | Manipal Hospitals & Coastal Industry"
-        />
-        <meta
-          name="twitter:description"
-          content="Comprehensive PF & ESIC compliance for Udupi's hospitals, tourism, fisheries and power plant contractors."
-        />
-        <meta name="twitter:image" content="https://epfdesk.com/images/logo.jpg" />
-      </Head>
-
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-udupi"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/udupi-epf-esic-compliance#organization",
 
-            name: "Udupi EPF & ESIC Compliance | Manipal Hospitals & Tourism | EPFDesk",
-            alternateName:
-              "EPFDesk – Udupi PF ESIC Consultants for Hospitals, Tourism & Coastal Industry",
+          name:
+            "Udupi EPF & ESIC Compliance – Manipal Hospitals, Tourism & Coastal Industry | EPFDesk",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/udupi-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "EPFDesk – Udupi PF ESIC Consultants for Hospitals & Tourism Sector",
 
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/udupi-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 13.3409,
-              longitude: 74.7421,
-            },
+          /* ✅ CITY-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Court Road",
+            addressLocality: "Udupi",
+            addressRegion: "Karnataka",
+            postalCode: "576101",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPFDesk provides audit-ready PF & ESIC compliance for Udupi’s hospitals, educational trusts, coastal tourism, fisheries, cashew units, and UPCL contractors. Specialized in seasonal and service-sector labour compliance.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 13.3409,
+            longitude: 74.7421,
+          },
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          areaServed: [
+            { "@type": "City", name: "Udupi" },
+            { "@type": "Place", name: "Manipal" },
+            { "@type": "Place", name: "Karkala" },
+            { "@type": "Place", name: "Kundapura" },
+            { "@type": "Place", name: "Coastal Tourism Belt" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPF & ESIC compliance consultancy for Udupi’s hospitals, educational trusts, tourism establishments, fisheries and cashew processing units, and UPCL contractors. Services include ESIC enforcement handling for hospitals, seasonal labour PF compliance, contractor audits and Principal Employer liability mitigation.",
 
-            areaServed: [
-              { "@type": "City", name: "Udupi" },
-              { "@type": "Place", name: "Manipal" },
-              { "@type": "Place", name: "Karkala" },
-              { "@type": "Place", name: "Kundapura" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "41",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "41",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataUdupiDist} />
       </FadeInWhenVisible>
@@ -183,8 +140,49 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqUdupi} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-udupi" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: 'udupi',
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: 'udupi',
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: 'udupi',
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

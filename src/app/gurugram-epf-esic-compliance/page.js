@@ -1,23 +1,24 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
 
-import { heroDataGurugram, sectionsGurugram, faqGurugram } from "@/utils/data";
+import {
+  heroDataGurugram,
+  sectionsGurugram,
+  faqGurugram,
+} from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Gurugram EPF & ESIC Compliance: IT MNCs, IMT Manesar Auto Units & PE Liability | EPFDesk",
 
   description:
-    "High-risk EPF & ESIC compliance defence for Gurugram IT MNCs, Cyber City offices, IMT Manesar auto units and Haryana corporates. Experts in RO Gurugram enforcement, New Wage Code 50% rule, contractor PF liability and local labour law audits.",
+    "High-risk EPF & ESIC compliance defence for Gurugram IT MNCs, Cyber City offices, IMT Manesar auto units and Haryana corporates. Experts in RO Gurugram enforcement, New Wage Code 50% rule and contractor PF liability.",
 
   keywords: [
     "Gurugram PF consultant",
@@ -44,7 +45,7 @@ export const metadata = {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Gurugram PF ESIC Compliance",
+        alt: "Gurugram EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -53,111 +54,83 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Gurugram EPF & ESIC Compliance | IT & Auto Hub | EPFDesk",
-    description:
-      "Expert PF & ESIC compliance for Gurugram IT MNCs, IMT Manesar auto units and Cyber City offices.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
+/* ===========================
    PAGE COMPONENT
-============================ */
-const page = () => {
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* LEGACY HEAD */}
-      <Head>
-        <title>
-          Gurugram EPF & ESIC Compliance: IT MNCs, IMT Manesar Auto Units & PE
-          Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="gurugram-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-HR">
+            <meta name="geo.placename" content="Gurugram">
+            <meta name="geo.position" content="28.4595;77.0266">
+            <meta name="ICBM" content="28.4595, 77.0266">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Gurugram IT MNCs, Cyber City offices, IMT Manesar auto units and Haryana corporates. RO Gurugram audits, New Wage Code 50% rule and contractor PF liability handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Gurugram PF consultant, Gurugram ESIC consultant, IT company PF ESIC Gurugram, IMT Manesar auto labour compliance, Cyber City PF audits, Principal Employer liability Gurugram, NWC 2025 wage restructuring Gurugram"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/gurugram-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Gurugram EPF & ESIC Consultant | IT & Automotive Hub | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Gurugram’s IT, auto and corporate clusters."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/gurugram-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Gurugram EPF & ESIC Compliance | IT & Auto Hub | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Gurugram IT MNCs, IMT Manesar auto units and Cyber City startups — PE liability and audits handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* JSON-LD SCHEMA */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-gurugram"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "Gurugram EPF & ESIC Compliance Consultants | EPFDesk",
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/gurugram-epf-esic-compliance",
-            telephone: "+91-9945933333",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
-            areaServed: [
-              "Gurugram",
-              "IMT Manesar",
-              "Udyog Vihar",
-              "Cyber City",
-              "Golf Course Road",
-              "Sohna Road",
-            ],
-            description:
-              "EPF & ESIC consultancy for Gurugram IT MNCs, Manesar auto suppliers, startups, and Haryana manufacturing units.",
-          }),
-        }}
-      />
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/gurugram-epf-esic-compliance#organization",
 
-      {/* PAGE SECTIONS */}
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Gurugram District",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/gurugram-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
+
+          /* ✅ DISTRICT-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Gurugram",
+            addressRegion: "Haryana",
+            postalCode: "122001",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 28.4595,
+            longitude: 77.0266,
+          },
+
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Gurugram District" },
+            { "@type": "Place", name: "Cyber City" },
+            { "@type": "Place", name: "Udyog Vihar" },
+            { "@type": "Place", name: "IMT Manesar" },
+            { "@type": "Place", name: "Golf Course Road" },
+            { "@type": "Place", name: "Sohna Road" },
+          ],
+
+          description:
+            "EPF & ESIC compliance services for Gurugram IT MNCs, startups, IMT Manesar automotive suppliers and Haryana corporates. Expertise in New Wage Code 50% rule implementation, contractor PF liability, CLRA compliance and RO Gurugram proceedings.",
+
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "92",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataGurugram} />
       </FadeInWhenVisible>
@@ -166,9 +139,50 @@ const page = () => {
         <CodeOfConduct sections={sectionsGurugram} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqGurugram} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqGurugram} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-gurugram" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

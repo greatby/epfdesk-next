@@ -1,10 +1,8 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
 
 import {
   heroDataBidarDist,
@@ -12,27 +10,31 @@ import {
   faqBidar,
 } from "@/utils/data";
 
+/* ===========================
+   METADATA (DISTRICT PAGE)
+=========================== */
 export const metadata = {
   title:
     "Bidar EPF & ESIC Compliance for Sugar Mills, Garments, Pulses & Kalyana Karnataka Industries | EPFDesk",
   description:
-    "Expert PF & ESIC defense for Bidar Sugar Factories, Textile/Garment MSMEs, and Agro-Processing units. Specialists in PF for seasonal crushing labor and ESIC enforcement for garment sector.",
+    "Expert PF & ESIC compliance for Bidar sugar factories, garment MSMEs and agro-processing units. Seasonal labour PF, ESIC garment enforcement and RO Kalaburagi audit defence.",
   keywords: [
     "Bidar PF consultant",
     "Bidar ESIC consultant",
-    "Sugar mill PF ESIC Karnataka",
-    "garment factory PF ESIC Bidar",
-    "dal mill PF inspection",
-    "EPFDesk Karnataka",
+    "Sugar mill PF Karnataka",
+    "Garment factory PF ESIC Bidar",
+    "Dal mill PF inspection",
+    "Kalyana Karnataka labour compliance",
+    "EPFDesk Bidar",
   ],
   alternates: {
     canonical: "https://epfdesk.com/bidar-epf-esic-compliance",
   },
   openGraph: {
     title:
-      "Bidar EPF & ESIC Consultant | Sugar Mills, Garments & Agro-Processing | EPFDesk",
+      "Bidar EPF & ESIC Compliance | Sugar Mills, Garments & Agro-Processing | EPFDesk",
     description:
-      "PF & ESIC experts for Bidar’s sugar factories, garment MSMEs, and agro-processing units.",
+      "PF & ESIC specialists for Bidar’s sugar factories, garment MSMEs and agro-processing sector.",
     url: "https://epfdesk.com/bidar-epf-esic-compliance",
     siteName: "EPFDesk",
     images: [
@@ -40,7 +42,7 @@ export const metadata = {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "EPFDesk Bidar PF ESIC Compliance",
+        alt: "Bidar EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -48,132 +50,152 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Bidar EPF & ESIC Compliance | Sugar Mills, Garments & Agro-Processing | EPFDesk",
-    description:
-      "PF/ESI compliance for Bidar’s sugar factories, garment MSMEs and agro-processing units.",
     images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE COMPONENT
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Bidar EPF & ESIC Compliance for Sugar Mills, Garments & Agro-Processing | EPFDesk
-        </title>
+      {/* ========= GEO + EXTRA META ========= */}
+      <Script id="bidar-geo-meta" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-KA">
+            <meta name="geo.placename" content="Bidar">
+            <meta name="geo.position" content="17.9149;77.5040">
+            <meta name="ICBM" content="17.9149, 77.5040">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/bidar-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/bidar-epf-esic-compliance">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert PF & ESIC compliance for Bidar sugar factories, garment MSMEs, and agro-processing mills. Specialists in PF for seasonal crushing labor and strict ESIC enforcement."
-        />
-
-        <meta
-          name="keywords"
-          content="Bidar PF ESIC, sugar mill PF Karnataka, garment factory PF ESIC Bidar, agro-processing PF ESIC, seasonal labor PF compliance Bidar"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/bidar-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Bidar EPF & ESIC Consultant | Sugar Mills, Garments & Agro-Processing"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance specialists for Bidar’s sugar mills, garment units and agro-processing sector."
-        />
-        <meta property="og:image" content="https://epfdesk.com/images/logo.jpg" />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/bidar-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Bidar PF & ESIC Compliance | Sugar Mills, Garments & Agro-Processing"
-        />
-        <meta
-          name="twitter:description"
-          content="Expert PF & ESIC setup, audits and compliance for Bidar industries."
-        />
-        <meta name="twitter:image" content="https://epfdesk.com/images/logo.jpg" />
-      </Head>
-
+      {/* ========= LOCAL BUSINESS SCHEMA ========= */}
       <Script
-        id="schema-bidar"
+        id="schema-bidar-localbusiness"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/bidar-epf-esic-compliance#organization",
 
-            name: "Bidar EPF & ESIC Compliance | Sugar, Garments & Agro-Processing | EPFDesk",
-            alternateName:
-              "EPFDesk – Bidar PF ESIC Consultants for Sugar Mills & Textile MSMEs",
+          name: "EPFDesk – EPF & ESIC Consultants Bidar",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/bidar-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/bidar-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Bidar",
+            addressRegion: "Karnataka",
+            postalCode: "585401",
+            addressCountry: "IN",
+          },
 
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 17.9149,
+            longitude: 77.5040,
+          },
+
+          areaServed: {
+            "@type": "AdministrativeArea",
+            name: "Bidar District",
+            containedIn: {
+              "@type": "State",
+              name: "Karnataka",
             },
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 17.9149,
-              longitude: 77.5040,
-            },
-
-            description:
-              "EPFDesk provides audit-ready PF & ESIC compliance for Bidar sugar mills, garment MSMEs, dal mills, wineries and agro-processing units. Specialists in seasonal worker compliance and PF wage audits.",
-
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
-
-            priceRange: "₹₹",
-
-            areaServed: [
-              { "@type": "City", name: "Bidar" },
-              { "@type": "Place", name: "Humnabad" },
-              { "@type": "Place", name: "Aurad" },
-              { "@type": "Place", name: "Kalyana Karnataka Region" },
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Sugar, Garment & Agro-Processing Compliance Services",
+            itemListElement: [
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Sugar Mill PF & Seasonal Labour Compliance",
+                  description:
+                    "PF liability management for crushing-season labour, contractors and mukadam systems",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Garment Factory ESIC & PF Audits",
+                  description:
+                    "Strict ESIC coverage, attendance mapping and PF wage audits for garment MSMEs",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Agro-Processing & Dal Mill Compliance",
+                  description:
+                    "PF, ESIC and Minimum Wages compliance for pulses, oil mills and agro units",
+                },
+              },
             ],
+          },
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "37",
-            },
-          }),
-        }}
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "37",
+          },
+        })}
+      </Script>
+
+      {/* ========= GOOGLE ANALYTICS ========= */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-WMNLTE5RKQ"
+        strategy="afterInteractive"
       />
+      <Script id="ga-bidar" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
+          gtag('config', 'G-WMNLTE5RKQ', {
+            page_location: window.location.href,
+            page_title: document.title,
+            custom_map: {
+              dimension1: 'district',
+              dimension2: 'state'
+            }
+          });
+
+          gtag('event', 'page_view', {
+            district: 'Bidar',
+            state: 'Karnataka',
+            page_type: 'district_landing'
+          });
+        `}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataBidarDist} />
       </FadeInWhenVisible>
@@ -183,8 +205,41 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqBidar} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-bidar" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

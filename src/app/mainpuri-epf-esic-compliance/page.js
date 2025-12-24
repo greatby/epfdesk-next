@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,14 +10,16 @@ import {
   faqMainpuriDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Mainpuri EPF & ESIC Compliance: Agro-Industrial PF, MSME Liability & New ESIC Extension Defense | EPFDesk",
+
   description:
-    "Specialized EPF & ESIC advisory for Mainpuri Rice Mills, Cold Storages and MSMEs. Manage RO Agra audits, the 2023 ESIC expansion, Retaining Allowance PF exposure and Principal Employer liability.",
+    "Specialized EPF & ESIC advisory for Mainpuri rice mills, cold storages and MSMEs. Manage RO Agra audits, ESIC expansion compliance, retaining allowance PF exposure and Principal Employer liability.",
+
   keywords: [
     "Mainpuri PF consultant",
     "ESIC registration Mainpuri",
@@ -29,135 +28,118 @@ export const metadata = {
     "RO Agra EPFO audit defense",
     "Mainpuri MSME EPF ESIC",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/mainpuri-epf-esic-compliance",
   },
+
+  /* ✅ OPEN GRAPH */
   openGraph: {
     title:
-      "Mainpuri EPF & ESIC Compliance | Agro-Industry & MSMEs | EPFDesk",
+      "Mainpuri EPF & ESIC Compliance | Agro-Industry & MSMEs",
     description:
-      "PF & ESIC specialists for Mainpuri rice mills, cold storages, tobacco units and MSMEs under RO Agra jurisdiction.",
+      "PF & ESIC specialists for Mainpuri rice mills, cold storages and MSMEs under RO Agra jurisdiction.",
     url: "https://epfdesk.com/mainpuri-epf-esic-compliance",
+    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Mainpuri EPF ESIC Compliance",
+        alt: "Mainpuri EPF & ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
+  /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
     title:
-      "Mainpuri EPF & ESIC Compliance | Agro & MSME Risk | EPFDesk",
+      "Mainpuri EPF & ESIC Compliance | Agro & MSME Risk",
     description:
-      "Critical PF & ESIC compliance for Mainpuri agro-industrial and MSME sectors after ESIC expansion.",
+      "Critical PF & ESIC compliance for Mainpuri agro-industrial units and MSMEs after ESIC expansion.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Mainpuri EPF & ESIC Compliance: Agro-Industrial PF, MSME Liability & New ESIC Extension Defense | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="mainpuri-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-UP">
+            <meta name="geo.placename" content="Mainpuri, Uttar Pradesh, India">
+            <meta name="geo.position" content="27.2285;79.0280">
+            <meta name="ICBM" content="27.2285, 79.0280">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC defense for Mainpuri Rice Mills, Cold Storages, MSMEs and seasonal workforce audits under RO Agra."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/mainpuri-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Mainpuri EPF & ESIC Compliance | Agro & MSMEs"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Mainpuri agro-processing units, MSMEs and seasonal employers."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-mainpuri"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/mainpuri-epf-esic-compliance#organization",
 
-            name: "Mainpuri EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Agro-Industrial Units in Mainpuri",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Consultants for Mainpuri District",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/mainpuri-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Mainpuri Agro-Industrial & MSME EPF/ESIC Compliance",
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/mainpuri-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Mainpuri",
+            addressRegion: "Uttar Pradesh",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance specialists for Mainpuri rice mills, cold storages, tobacco units and MSMEs after the 2023 ESIC extension, governed by RO Agra.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 27.2285,
+            longitude: 79.0280,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Mainpuri District" },
+            { "@type": "Place", name: "Rice Mills" },
+            { "@type": "Place", name: "Cold Storage Units" },
+            { "@type": "Place", name: "Agro-Processing MSMEs" },
+            { "@type": "Place", name: "Kishni" },
+            { "@type": "Place", name: "Karhal" },
+            { "@type": "Place", name: "Bewar" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Mainpuri District" },
-              { "@type": "Place", name: "Kishni" },
-              { "@type": "Place", name: "Karhal" },
-              { "@type": "Place", name: "Bewar" },
-            ],
+          description:
+            "EPF & ESIC compliance services for Mainpuri rice mills, cold storages and MSMEs following ESIC expansion. Expertise includes retaining allowance PF exposure, seasonal workforce audits, Principal Employer liability and RO Agra proceedings.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "64",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "64",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataMainpuriDistrict} />
       </FadeInWhenVisible>
@@ -167,8 +149,49 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqMainpuriDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-mainpuri" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

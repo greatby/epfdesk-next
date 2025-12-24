@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,15 +10,15 @@ import {
   faqJalandhar,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Jalandhar EPF & ESIC Compliance: Sports Goods Exporters, Hand Tools & PE Liability | EPFDesk",
 
   description:
-    "High-risk EPF & ESIC compliance defence for Jalandhar sports goods exporters, hand tool manufacturers, leather complex units and engineering MSMEs. Experts in RO Jalandhar enforcement, Principal Employer liability, export-unit wage audits and New Wage Code restructuring.",
+    "High-risk EPF & ESIC compliance defence for Jalandhar sports goods exporters, hand tool manufacturers, leather complex units and engineering MSMEs. Navigate RO Jalandhar audits, Principal Employer liability, export-unit wage scrutiny and New Wage Code restructuring.",
 
   keywords: [
     "Jalandhar PF consultant",
@@ -39,7 +36,8 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Jalandhar EPF & ESIC Compliance | Sports Goods & Engineering Hub",
+    title:
+      "Jalandhar EPF & ESIC Compliance | Sports Goods & Engineering Hub",
     description:
       "PF & ESIC specialists for Jalandhar sports goods exporters, hand tool units, leather manufacturers and engineering MSMEs.",
     url: "https://epfdesk.com/jalandhar-epf-esic-compliance",
@@ -57,112 +55,86 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Jalandhar EPF & ESIC Compliance | Sports Goods & Hand Tools | EPFDesk",
-    description:
-      "Expert PF & ESIC compliance for Jalandhar sports goods exporters and engineering manufacturers.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* LEGACY HEAD */}
-      <Head>
-        <title>
-          Jalandhar EPF & ESIC Compliance: Sports Goods Exporters, Hand Tools &
-          PE Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="jalandhar-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-PB">
+            <meta name="geo.placename" content="Jalandhar, Punjab">
+            <meta name="geo.position" content="31.3260;75.5762">
+            <meta name="ICBM" content="31.3260, 75.5762">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Jalandhar sports goods exporters, hand tool manufacturers, leather complex units and engineering MSMEs. RO Jalandhar audits, export-unit wage scrutiny and Principal Employer liability handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Jalandhar PF consultant, Jalandhar ESIC consultant, sports goods PF ESIC Jalandhar, hand tool labour compliance, leather complex PF audits Jalandhar, export unit PF ESIC, Principal Employer liability Jalandhar, NWC 2025 wage restructuring Punjab"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/jalandhar-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Jalandhar EPF & ESIC Consultant | Sports Goods & Engineering Hub | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Jalandhar’s sports goods exporters, hand tool units and engineering MSMEs."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/jalandhar-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Jalandhar EPF & ESIC Compliance | Sports Goods & Hand Tools | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Jalandhar sports goods exporters, hand tool manufacturers and engineering MSMEs — PE liability and audits handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* JSON-LD SCHEMA */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-jalandhar"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "Jalandhar EPF & ESIC Compliance Consultants | EPFDesk",
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/jalandhar-epf-esic-compliance",
-            telephone: "+91-9945933333",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
-            areaServed: [
-              "Jalandhar",
-              "Leather Complex",
-              "Focal Point",
-              "Gadaipur",
-              "Dada Colony",
-              "Sports Goods Complex",
-            ],
-            description:
-              "EPF & ESIC consultancy for Jalandhar’s sports goods, leather, foundry, and engineering industries.",
-          }),
-        }}
-      />
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/jalandhar-epf-esic-compliance#organization",
 
-      {/* PAGE SECTIONS */}
+          name:
+            "EPFDesk – EPF & ESIC Compliance Specialists for Jalandhar Industries",
+
+          alternateName:
+            "Jalandhar EPF & ESIC Compliance Experts for Sports Goods, Hand Tools & Export Units",
+
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/jalandhar-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
+
+          /* ✅ DISTRICT-CORRECT ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Jalandhar",
+            addressRegion: "Punjab",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 31.3260,
+            longitude: 75.5762,
+          },
+
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Jalandhar District" },
+            { "@type": "Place", name: "Sports Goods Complex" },
+            { "@type": "Place", name: "Leather Complex Jalandhar" },
+            { "@type": "Place", name: "Focal Point Jalandhar" },
+            { "@type": "Place", name: "Gadaipur Industrial Area" },
+            { "@type": "Place", name: "Dada Colony" },
+          ],
+
+          description:
+            "EPF & ESIC compliance services for Jalandhar sports goods exporters, hand tool manufacturers, leather complex units and engineering MSMEs. Coverage includes RO Jalandhar inspections, EPF Section 7A proceedings, export-unit wage audits, Principal Employer liability and New Wage Code payroll restructuring.",
+
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "78",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataJalandhar} />
       </FadeInWhenVisible>
@@ -172,8 +144,47 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqJalandhar} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-jalandhar" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

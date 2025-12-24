@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,165 +10,170 @@ import {
   faqChandrapurDistrict,
 } from "@/utils/data";
 
-/* ============================
-   METADATA
-============================ */
+/* ===========================
+   METADATA (DISTRICT PAGE)
+=========================== */
 export const metadata = {
   title:
     "Chandrapur EPF & ESIC Compliance for WCL, CSTPS & Mining Contractors | EPFDesk",
+
   description:
-    "Critical EPF & ESIC defence for Chandrapur power plants, coal mining, cement factories and PSU contractors. CLRA PE liability, BOCW cess and hazard compliance under RO Nagpur.",
+    "Critical EPF & ESIC compliance for Chandrapur coal mining, CSTPS power plant contractors, cement factories and PSU vendors. Specialists in CLRA PE liability, BOCW cess, hazardous industry ESIC and RO Nagpur audits.",
+
   keywords: [
-    "Chandrapur EPF consultant",
-    "CSTPS contractor PF compliance",
-    "WCL mining EPF ESIC",
+    "Chandrapur PF consultant",
+    "WCL mining PF ESIC",
+    "CSTPS contractor compliance",
     "Power plant CLRA liability",
     "Cement factory ESIC hazard",
     "RO Nagpur EPFO defence",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/chandrapur-epf-esic-compliance",
   },
+
   openGraph: {
-    title: "Chandrapur EPF & ESIC Compliance | Power, Mining & PSU Contractors",
+    title:
+      "Chandrapur EPF & ESIC Compliance | Power, Mining & PSU Contractors | EPFDesk",
     description:
-      "EPF & ESIC compliance for Chandrapur coal, power, cement and heavy industrial contractors.",
+      "PF & ESIC specialists for Chandrapur coal mines, CSTPS power plant, cement and heavy industrial contractors.",
     url: "https://epfdesk.com/chandrapur-epf-esic-compliance",
+    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Chandrapur EPF ESIC Compliance",
+        alt: "Chandrapur PF ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
+  twitter: {
+    card: "summary_large_image",
+    images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
-const page = () => {
+/* ===========================
+   PAGE COMPONENT
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD
-      ============================ */}
-      <Head>
-        <title>
-          Chandrapur EPF & ESIC Compliance: WCL Coal Mines, CSTPS Power Plant &
-          PE Liability | EPFDesk
-        </title>
+      {/* ========= GEO + EXTRA META ========= */}
+      <Script id="chandrapur-geo-meta" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Chandrapur">
+            <meta name="geo.position" content="19.9615;79.2961">
+            <meta name="ICBM" content="19.9615, 79.2961">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/chandrapur-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/chandrapur-epf-esic-compliance">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Chandrapur’s WCL coal mines, CSTPS power plant contractors, cement factories and hazardous industries. Principal Employer liability, contractor PF audits and ESIC accident compliance handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Chandrapur PF consultant, Chandrapur ESIC consultant, WCL coal mine PF ESIC, CSTPS contractor compliance, hazardous industry ESIC Chandrapur, Principal Employer liability Chandrapur, contractor PF audits Chandrapur, NWC 2025 wage restructuring Chandrapur"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/chandrapur-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Chandrapur EPF & ESIC Consultant | Coal Mines & Power Plant Contractors | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance specialists for Chandrapur’s WCL coal mines, CSTPS power plant and hazardous industrial units."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/chandrapur-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Chandrapur EPF & ESIC Compliance | WCL & CSTPS Contractors | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Chandrapur coal mines, CSTPS contractors and hazardous industries — PE liability and inspections handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* ============================
-          SCHEMA
-      ============================ */}
+      {/* ========= LOCAL BUSINESS SCHEMA ========= */}
       <Script
-        id="schema-chandrapur"
+        id="schema-chandrapur-localbusiness"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/chandrapur-epf-esic-compliance#organization",
 
-            name: "Chandrapur EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – Power, Mining & PSU Labour Law Consultants Chandrapur",
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Chandrapur Mining & Power Contractors",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/chandrapur-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/chandrapur-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Chandrapur",
+            addressRegion: "Maharashtra",
+            postalCode: "442401",
+            addressCountry: "IN",
+          },
 
-            /* ✅ ADDRESS KEPT SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 19.9615,
+            longitude: 79.2961,
+          },
+
+          areaServed: {
+            "@type": "AdministrativeArea",
+            name: "Chandrapur District",
+            containedIn: {
+              "@type": "State",
+              name: "Maharashtra",
             },
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
-
-            description:
-              "EPF, ESIC, CLRA and BOCW compliance services for Chandrapur power plants, coal mining, cement factories and heavy industry contractors.",
-
-            areaServed: [
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Mining, Power & PSU Contractor Compliance",
+            itemListElement: [
               {
-                "@type": "AdministrativeArea",
-                name: "Chandrapur District",
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Coal Mining & WCL Contractor PF ESIC",
+                  description:
+                    "PF, ESIC, CLRA and BOCW compliance for WCL coal mine contractors",
+                },
               },
-              { "@type": "Place", name: "Ballarpur" },
-              { "@type": "Place", name: "Ghugus" },
-              { "@type": "Place", name: "Rajura" },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "CSTPS Power Plant Contractor Compliance",
+                  description:
+                    "Principal Employer liability, contractor audits and ESIC hazard compliance",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Cement & Hazardous Industry ESIC",
+                  description:
+                    "ESIC accident liability, inspection defence and wage audits",
+                },
+              },
             ],
+          },
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "53",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "53",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          CONTENT
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataChandrapurDistrict} />
       </FadeInWhenVisible>
@@ -181,8 +183,39 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqChandrapurDistrict} />
+       <Script id="conversion-tracking-chandrapur" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

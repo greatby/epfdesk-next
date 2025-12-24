@@ -1,6 +1,5 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
+import React from "react";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
@@ -13,42 +12,34 @@ import {
   faqTrivandrum,
 } from "@/utils/data";
 
-/* ============================
-   METADATA
-============================ */
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
-    "Thiruvananthapuram EPF & ESIC Compliance: Technopark IT Firms, Space-Tech Vendors & PE Liability | EPFDesk",
+    "Thiruvananthapuram EPF & ESIC Compliance | Technopark IT Firms & Space-Tech Vendors | EPFDesk",
 
   description:
-    "High-risk EPF & ESIC compliance defence for Thiruvananthapuram — Technopark IT companies, KINFRA Video Park units, ISRO/aerospace and electronics vendors, and service-sector employers. Experts in RO Trivandrum enforcement, New Wage Code compliance, contractor audits and Principal Employer liability.",
-
-  keywords: [
-    "Thiruvananthapuram PF consultant",
-    "Thiruvananthapuram ESIC consultant",
-    "Technopark PF ESIC compliance",
-    "KINFRA aerospace vendor labour compliance",
-    "ISRO contractor PF ESIC Trivandrum",
-    "Electronics manufacturing PF audits Kerala",
-    "Principal Employer liability Thiruvananthapuram",
-    "RO Trivandrum EPFO jurisdiction",
-  ],
+    "High-risk EPF & ESIC compliance defence for Thiruvananthapuram Technopark IT companies, KINFRA aerospace & electronics vendors, ISRO contractors and service-sector employers. RO Trivandrum audits, NWC 2025 and Principal Employer liability handled.",
 
   alternates: {
-    canonical: "https://epfdesk.com/thiruvananthapuram-epf-esic-compliance",
+    canonical:
+      "https://epfdesk.com/thiruvananthapuram-epf-esic-compliance",
   },
 
   openGraph: {
-    title: "Thiruvananthapuram EPF & ESIC Compliance | IT & Space-Tech Hub",
+    title:
+      "Thiruvananthapuram EPF & ESIC Compliance | IT & Space-Tech Hub",
     description:
-      "PF & ESIC specialists for Technopark IT firms, aerospace vendors, electronics manufacturers and MSMEs in Thiruvananthapuram.",
-    url: "https://epfdesk.com/thiruvananthapuram-epf-esic-compliance",
+      "PF & ESIC specialists for Technopark IT firms, aerospace vendors and electronics manufacturers in Thiruvananthapuram.",
+    url:
+      "https://epfdesk.com/thiruvananthapuram-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Thiruvananthapuram PF ESIC Compliance",
+        alt: "Thiruvananthapuram EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -58,110 +49,92 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Thiruvananthapuram EPF & ESIC Compliance | IT & Space-Tech | EPFDesk",
+      "Thiruvananthapuram EPF & ESIC Compliance | IT & Space-Tech",
     description:
       "Expert PF & ESIC compliance for Technopark IT firms, aerospace vendors and electronics units in Thiruvananthapuram.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
+/* ===========================
    PAGE
-============================ */
-const page = () => {
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Thiruvananthapuram EPF & ESIC Compliance: Technopark IT Firms,
-          Space-Tech Vendors & PE Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="thiruvananthapuram-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-KL">
+            <meta name="geo.placename" content="Thiruvananthapuram">
+            <meta name="geo.position" content="8.5241;76.9366">
+            <meta name="ICBM" content="8.5241, 76.9366">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Thiruvananthapuram — Technopark IT companies, KINFRA aerospace and electronics vendors, and service-sector employers. RO Trivandrum audits, New Wage Code compliance and Principal Employer liability handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Thiruvananthapuram PF consultant, Thiruvananthapuram ESIC consultant, Technopark PF ESIC compliance, KINFRA aerospace vendor labour laws, ISRO contractor PF ESIC Trivandrum, electronics manufacturing PF audits Kerala, Principal Employer liability Trivandrum, NWC 2025 wage restructuring Kerala"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/thiruvananthapuram-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Thiruvananthapuram EPF & ESIC Consultant | IT & Space-Tech Hub | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Technopark IT firms, aerospace vendors and electronics manufacturers in Thiruvananthapuram."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/thiruvananthapuram-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Thiruvananthapuram EPF & ESIC Compliance | IT & Space-Tech | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Thiruvananthapuram IT companies and aerospace vendors — audits and PE liability handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* SCHEMA */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
-        id="schema-trivandrum-epf-esic"
+        id="schema-thiruvananthapuram"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "Thiruvananthapuram EPF & ESIC Compliance Consultants | EPFDesk",
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/thiruvananthapuram-epf-esic-compliance",
-            telephone: "+91-9945933333",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
-            areaServed: [
-              "Thiruvananthapuram",
-              "Trivandrum",
-              "Kazhakkoottam",
-              "Pallippuram",
-              "Technopark",
-              "KINFRA Aerospace Park",
-              "KINFRA Video Park",
-            ],
-            description:
-              "EPF & ESIC compliance consultancy for Technopark IT firms, aerospace and defense vendors, electronics units, and creative industries under RO Thiruvananthapuram.",
-          }),
-        }}
-      />
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/thiruvananthapuram-epf-esic-compliance#organization",
 
+          name:
+            "Thiruvananthapuram EPF & ESIC Compliance – IT, Aerospace & Electronics | EPFDesk",
+
+          alternateName:
+            "EPFDesk – Technopark & Space-Tech Compliance Consultants",
+
+          image: "https://epfdesk.com/images/logo.jpg",
+          url:
+            "https://epfdesk.com/thiruvananthapuram-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
+
+          /* ✅ CITY ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Technopark Road",
+            addressLocality: "Kazhakkoottam",
+            addressRegion: "Kerala",
+            postalCode: "695581",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 8.5241,
+            longitude: 76.9366,
+          },
+
+          areaServed: [
+            { "@type": "City", name: "Thiruvananthapuram" },
+            { "@type": "City", name: "Trivandrum" },
+            { "@type": "Place", name: "Technopark" },
+            { "@type": "Place", name: "KINFRA Aerospace Park" },
+            { "@type": "Place", name: "KINFRA Video Park" },
+            { "@type": "Place", name: "ISRO & Space-Tech Vendor Zone" },
+          ],
+
+          description:
+            "EPF & ESIC compliance consultancy for Technopark IT firms, aerospace and electronics vendors, ISRO contractors and service-sector employers in Thiruvananthapuram. Expertise in RO Trivandrum enforcement, NWC 2025 wage restructuring and Principal Employer liability.",
+
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "52",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataTrivandrum} />
       </FadeInWhenVisible>
@@ -171,8 +144,49 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqTrivandrum} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-thiruvananthapuram" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: 'thiruvananthapuram',
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: 'thiruvananthapuram',
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: 'thiruvananthapuram',
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

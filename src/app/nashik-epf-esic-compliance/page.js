@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,14 +10,16 @@ import {
   faqNashikDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Nashik EPF & ESIC Compliance for Satpur/Ambad MIDC, Auto Component & Wine Industry | EPFDesk",
+
   description:
     "Expert EPF & ESIC defence for Nashik auto and pharma factories (Satpur, Ambad, Sinnar MIDC), PF liability for MIDC contract labour, and mandatory ESIC for grape and wine processing units. Specialists in SRO Satpur liaison and Principal Employer liability.",
+
   keywords: [
     "Nashik PF consultant",
     "Satpur MIDC EPF compliance",
@@ -29,26 +28,30 @@ export const metadata = {
     "Sinnar MIDC PF liability",
     "EPFO SRO Satpur 7A defence",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/nashik-epf-esic-compliance",
   },
+
   openGraph: {
     title:
       "Nashik EPF & ESIC Compliance | MIDC, Auto & Wine Industry | EPFDesk",
     description:
       "PF & ESIC specialists for Nashik MIDC factories, auto and pharma units, and grape/wine processing industry.",
     url: "https://epfdesk.com/nashik-epf-esic-compliance",
+    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Nashik EPF ESIC Compliance",
+        alt: "Nashik EPF & ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title:
@@ -59,106 +62,79 @@ export const metadata = {
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Nashik EPF & ESIC Compliance for Satpur/Ambad MIDC, Auto Component & Wine Industry | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="nashik-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Nashik, Maharashtra, India">
+            <meta name="geo.position" content="19.9975;73.7898">
+            <meta name="ICBM" content="19.9975, 73.7898">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC defence for Nashik MIDC auto/pharma factories, contract labour PF liability, and ESIC compliance for wine and grape processing units."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/nashik-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Nashik EPF & ESIC Compliance | MIDC & Wine Industry"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Nashik Satpur, Ambad, Sinnar MIDC clusters and wine/agro-processing industry."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-nashik"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/nashik-epf-esic-compliance#organization",
 
-            name: "Nashik EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Nashik MIDC & Wine Industry",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Consultants for Nashik District",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/nashik-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Nashik EPF & ESIC Compliance for MIDC, Auto & Wine Industry",
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/nashik-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Maharashtra",
+            addressCountry: "IN",
+          },
 
-            description:
-              "Expert EPF & ESIC compliance for Nashik district covering Satpur, Ambad, and Sinnar MIDC factories, auto and pharma manufacturing, wine and grape processing units, and Principal Employer liability management.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 19.9975,
+            longitude: 73.7898,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Nashik District" },
+            { "@type": "Place", name: "Satpur MIDC" },
+            { "@type": "Place", name: "Ambad MIDC" },
+            { "@type": "Place", name: "Sinnar MIDC" },
+            { "@type": "Place", name: "Nashik Wine Industry Belt" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Nashik District" },
-              { "@type": "Place", name: "Satpur MIDC" },
-              { "@type": "Place", name: "Ambad MIDC" },
-              { "@type": "Place", name: "Sinnar MIDC" },
-              { "@type": "Place", name: "Nashik Wine Industry Belt" },
-            ],
+          description:
+            "Expert EPF & ESIC compliance services for Nashik MIDC factories (Satpur, Ambad, Sinnar), auto and pharma manufacturing units, wine and grape processing industry, and Principal Employer liability management under SRO Satpur jurisdiction.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "89",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "89",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataNashikDistrict} />
       </FadeInWhenVisible>
@@ -168,8 +144,52 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqNashikDistrict} />
+
+      {/* ========= CONVERSION TRACKING (LOCKED) ========= */}
+      <Script
+        id="conversion-tracking-nashik"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

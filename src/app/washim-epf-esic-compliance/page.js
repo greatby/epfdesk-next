@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import Script from "next/script";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
@@ -13,24 +12,20 @@ import {
   faqWashimDistrict,
 } from "@/utils/data";
 
-/* ============================
-   METADATA
-============================ */
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Washim EPF & ESIC Compliance for Cotton Ginning & Oil Mills | EPFDesk",
+
   description:
-    "Expert EPF & ESIC compliance for Washim cotton ginning, oil mills and agro-processing units. Zone-3 minimum wage audits, seasonal PF risk and RO Akola defence.",
-  keywords: [
-    "Washim EPF consultant",
-    "Cotton ginning PF compliance Washim",
-    "Zone 3 minimum wages Maharashtra",
-    "Oil mill ESIC registration Washim",
-    "RO Akola EPFO defence",
-  ],
+    "EPF & ESIC compliance for Washim cotton ginning factories, oil mills and agro-processing units. Expertise in Zone-3 minimum wage audits, seasonal labour PF risk and RO Akola enforcement defence.",
+
   alternates: {
     canonical: "https://epfdesk.com/washim-epf-esic-compliance",
   },
+
   openGraph: {
     title: "Washim EPF & ESIC Compliance | Cotton & Agro-Processing",
     description:
@@ -47,130 +42,89 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Washim EPF & ESIC Compliance | Cotton Ginning & Agro Units | EPFDesk",
+    description:
+      "PF & ESIC services for Washim cotton ginning factories, oil mills and seasonal agro-processing units.",
+    images: ["https://epfdesk.com/images/logo.jpg"],
+  },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD
-      ============================ */}
-      <Head>
-        <title>
-          Washim EPF & ESIC Compliance: Cotton Ginning, Oil Mills & Seasonal
-          Labour Audits | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="washim-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Washim, Maharashtra">
+            <meta name="geo.position" content="20.1110;77.1327">
+            <meta name="ICBM" content="20.1110, 77.1327">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Washim cotton ginning factories, oil mills and agro-processing units. Handling seasonal and piece-rate labour PF liability, ESIC coverage expansion and RO Akola enforcement audits."
-        />
-
-        <meta
-          name="keywords"
-          content="Washim PF consultant, Washim ESIC consultant, cotton ginning PF ESIC Washim, oil mill labour compliance Washim, seasonal labour PF liability Vidarbha, RO Akola EPFO jurisdiction, ESIC notified area Washim, agro-processing PF audits Maharashtra"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/washim-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Washim EPF & ESIC Compliance | Cotton Ginning & Agro-Processing | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Washim cotton ginning units, oil mills and seasonal agro-processing employers."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/washim-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Washim EPF & ESIC Compliance | Cotton Ginning & Agro Units | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Washim cotton ginning factories, oil mills and seasonal agro-processing units."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* ============================
-          SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-washim"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id": "https://epfdesk.com/washim-epf-esic-compliance#organization",
 
-            name: "Washim EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – Cotton Ginning & Agro-Processing Compliance Washim",
+          name: "Washim EPF & ESIC Compliance for Cotton Ginning & Oil Mills | EPFDesk",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/washim-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "EPFDesk – Cotton Ginning, Oil Mill & Agro-Processing PF ESIC Consultants in Washim",
 
-            /* ✅ ADDRESS KEPT SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/washim-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Washim",
+            addressRegion: "Maharashtra",
+            postalCode: "444505",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF, ESIC and Minimum Wages Act compliance for Washim cotton ginning, oil mills and agro-processing units under Zone-3 wages.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 20.111,
+            longitude: 77.1327,
+          },
 
-            areaServed: [
-              {
-                "@type": "AdministrativeArea",
-                name: "Washim District",
-              },
-              { "@type": "Place", name: "Washim City" },
-              { "@type": "Place", name: "Mangrulpir" },
-              { "@type": "Place", name: "Karanja Lad" },
-            ],
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Washim District" },
+            { "@type": "Place", name: "Washim City" },
+            { "@type": "Place", name: "Mangrulpir" },
+            { "@type": "Place", name: "Karanja Lad" },
+          ],
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "32",
-            },
-          }),
-        }}
-      />
+          description:
+            "Washim’s compliance risks arise from cotton ginning factories, oil mills and seasonal agro-processing units operating under Zone-3 minimum wages. EPFDesk manages PF & ESIC coverage, seasonal labour audits, wage-structure scrutiny and RO Akola enforcement defence.",
 
-      {/* ============================
-          CONTENT
-      ============================ */}
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "32",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataWashimDistrict} />
       </FadeInWhenVisible>
@@ -180,8 +134,49 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqWashimDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-washim" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

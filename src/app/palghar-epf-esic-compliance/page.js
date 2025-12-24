@@ -1,5 +1,3 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
@@ -13,14 +11,16 @@ import {
   faqPalgharDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Palghar EPF & ESIC Compliance for Tarapur MIDC, Boisar Pharma & Hazardous Factory Liability | EPFDesk",
+
   description:
     "Expert EPF & ESIC defence for Tarapur MIDC chemical and pharma factories, PF liability for Boisar engineering units, and mandatory ESIC for hazardous industry workers. Specialists in Factory Act and Principal Employer liability.",
+
   keywords: [
     "Palghar PF consultant",
     "Tarapur MIDC ESIC compliance",
@@ -29,9 +29,11 @@ export const metadata = {
     "Principal Employer liability Tarapur",
     "EPFO 7A defence Palghar",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/palghar-epf-esic-compliance",
   },
+
   openGraph: {
     title:
       "Palghar EPF & ESIC Compliance | Tarapur MIDC & Hazardous Industries | EPFDesk",
@@ -49,6 +51,7 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title:
@@ -59,106 +62,79 @@ export const metadata = {
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Palghar EPF & ESIC Compliance for Tarapur MIDC, Boisar Pharma & Hazardous Factory Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="palghar-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Palghar">
+            <meta name="geo.position" content="19.6967;72.7699">
+            <meta name="ICBM" content="19.6967, 72.7699">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC defence for Tarapur MIDC chemical and pharma factories, Boisar engineering units, and hazardous industry ESIC compliance."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/palghar-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Palghar EPF & ESIC Compliance | Tarapur MIDC & Hazardous Industries"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Palghar Tarapur MIDC chemical, pharma, and heavy manufacturing units."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-palghar"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/palghar-epf-esic-compliance#organization",
 
-            name: "Palghar EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Tarapur MIDC & Boisar Pharma",
+          name:
+            "EPFDesk – Palghar EPF & ESIC Compliance for Tarapur MIDC & Hazardous Industries",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/palghar-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "PF & ESIC Consultant for Tarapur MIDC, Boisar Pharma & Palghar Industrial Belt",
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/palghar-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Maharashtra",
+            addressCountry: "IN",
+          },
 
-            description:
-              "Expert EPF & ESIC compliance for Palghar district Tarapur MIDC chemical and pharma factories, hazardous manufacturing units, and Principal Employer liability management.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 19.6967,
+            longitude: 72.7699,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Palghar District" },
+            { "@type": "Place", name: "Tarapur MIDC" },
+            { "@type": "Place", name: "Boisar Industrial Area" },
+            { "@type": "Place", name: "Wada Industrial Belt" },
+            { "@type": "Place", name: "Palghar MIDC" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Palghar District" },
-              { "@type": "Place", name: "Tarapur MIDC" },
-              { "@type": "Place", name: "Boisar Industrial Area" },
-              { "@type": "Place", name: "Wada Industrial Belt" },
-              { "@type": "Place", name: "Palghar MIDC" },
-            ],
+          description:
+            "EPF & ESIC compliance specialists for Palghar district covering Tarapur MIDC chemical and pharma factories, hazardous manufacturing units, Factory Act obligations, ESIC coverage, and Principal Employer liability management.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "88",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "88",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataPalgharDistrict} />
       </FadeInWhenVisible>
@@ -167,9 +143,55 @@ const page = () => {
         <CodeOfConduct sections={sectionsPalgharDistrict} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqPalgharDistrict} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqPalgharDistrict} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script
+        id="conversion-tracking-palghar"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

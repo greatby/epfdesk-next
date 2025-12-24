@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,28 +10,34 @@ import {
   faqIndoreDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Indore EPF & ESIC Compliance: Pithampur SEZ Liability, EEC-2025 Enrolment & Pharma Export Audits | EPFDesk",
+
   description:
-    "Specialized EPF & ESIC defense for Indore MNCs, Pithampur Pharma Units and SEZ entities. Navigate RO Indore audits, EEC-2025 voluntary disclosure, New Labour Code wage rules and Principal Employer liability.",
+    "Specialized EPF & ESIC compliance defence for Indore MNCs, Pithampur SEZ units and pharma exporters. Navigate RO Indore audits, EEC-2025 voluntary enrolment, New Labour Code wage rules and Principal Employer liability.",
+
   keywords: [
     "Indore PF consultant",
-    "Pithampur SEZ EPF compliance",
+    "Indore EPF compliance",
+    "Pithampur SEZ EPF ESIC",
     "EEC 2025 enrolment Indore",
-    "RO Indore EPF 7A defense",
+    "RO Indore EPF 7A defence",
     "ESIC compliance pharma units Indore",
+    "Principal Employer liability Indore",
     "New Labour Code salary structure Indore",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/indore-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Indore EPF & ESIC Compliance | Pithampur SEZ & Pharma | EPFDesk",
+      "Indore EPF & ESIC Compliance | Pithampur SEZ & Pharma Clusters",
     description:
       "PF & ESIC specialists for Indore’s Pithampur SEZ, pharma exporters, MNCs and manufacturing clusters under RO Indore.",
     url: "https://epfdesk.com/indore-epf-esic-compliance",
@@ -49,115 +52,88 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Indore EPF & ESIC Compliance | Pithampur SEZ & Pharma",
-    description:
-      "High-risk PF & ESIC compliance for Indore MNCs, SEZ units and pharma exporters.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Indore EPF & ESIC Compliance: Pithampur SEZ Liability, EEC-2025 Enrolment & Pharma Export Audits | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="indore-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MP">
+            <meta name="geo.placename" content="Indore, Madhya Pradesh">
+            <meta name="geo.position" content="22.7196;75.8577">
+            <meta name="ICBM" content="22.7196, 75.8577">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for Indore MNCs, Pithampur SEZ units and pharma exporters under RO Indore."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/indore-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Indore EPF & ESIC Compliance | Pithampur SEZ & Pharma"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Indore SEZ, pharma, auto and manufacturing clusters."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-indore"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/indore-epf-esic-compliance#organization",
 
-            name: "Indore EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Pithampur SEZ & Indore MNCs",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Specialists for Indore & Pithampur",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/indore-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Indore EPF & ESIC Compliance Experts for SEZ, Pharma & Manufacturing Units",
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/indore-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ DISTRICT-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Indore",
+            addressRegion: "Madhya Pradesh",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance specialists for Indore’s Pithampur SEZ, pharma exporters, MNCs and manufacturing units governed by RO Indore.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 22.7196,
+            longitude: 75.8577,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Indore District" },
+            { "@type": "Place", name: "Pithampur Industrial Area" },
+            { "@type": "Place", name: "Indore SEZ" },
+            { "@type": "Place", name: "Super Corridor" },
+            { "@type": "Place", name: "Dewas Naka Industrial Belt" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Indore District" },
-              { "@type": "Place", name: "Pithampur Industrial Area" },
-              { "@type": "Place", name: "Indore SEZ" },
-              { "@type": "Place", name: "Super Corridor" },
-            ],
+          description:
+            "EPF & ESIC compliance services for Indore’s Pithampur SEZ, pharma exporters, auto units, IT parks and manufacturing clusters. Expertise includes RO Indore inspections, EPF 7A proceedings, EEC-2025 enrolment, New Labour Code wage restructuring and Principal Employer liability defence.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "74",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "74",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataIndoreDistrict} />
       </FadeInWhenVisible>
@@ -167,8 +143,47 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqIndoreDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-indore" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

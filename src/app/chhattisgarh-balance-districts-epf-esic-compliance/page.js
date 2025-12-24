@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,15 +10,18 @@ import {
   faqCGBalanceDistricts,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
-    "Chhattisgarh EPF & ESIC Compliance: Cement Hub Audits, Agro-Industrial PE Liability & EEC-2025 | EPFDesk",
+    "Chhattisgarh EPF & ESIC Compliance 2025: Cement Plants, Agro-Industry & PE Liability | EPFDesk",
+
   description:
-    "Expert EPF & ESIC defense for Chhattisgarh’s cement plants, rice mills and mining ancillaries. Navigate RO Raipur/Bilaspur audits, Baloda Bazar PE liability and EEC-2025 amnesty.",
+    "High-risk EPF & ESIC compliance for Chhattisgarh cement plants, rice mills, sugar units and mining ancillaries. Experts in RO Raipur/Bilaspur audits, Principal Employer liability and EEC-2025 amnesty handling.",
+
   keywords: [
+    "Chhattisgarh PF consultant",
     "Baloda Bazar cement EPF compliance",
     "Dhamtari rice mill PF ESIC",
     "Kawardha sugar factory labour law",
@@ -29,13 +29,15 @@ export const metadata = {
     "RO Raipur EPF 7A defense",
     "EEC 2025 Chhattisgarh compliance",
   ],
+
   alternates: {
     canonical:
       "https://epfdesk.com/chhattisgarh-balance-districts-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Chhattisgarh EPF & ESIC Compliance | Cement, Agro & Emerging Zones",
+      "Chhattisgarh EPF & ESIC Compliance | Cement, Agro & Emerging Zones | EPFDesk",
     description:
       "PF & ESIC specialists for cement hubs, agro-processing clusters and emerging industrial belts in Chhattisgarh.",
     url:
@@ -51,120 +53,100 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Chhattisgarh EPF & ESIC Compliance | Cement & Agro Hubs",
-    description:
-      "High-risk PF & ESIC compliance for cement plants, rice mills and emerging mining belts.",
     images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
-/* ============================
+/* ===========================
    PAGE COMPONENT
-============================ */
-const page = () => {
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Chhattisgarh EPF & ESIC Compliance: Cement Hub Audits, Agro-Industrial PE Liability & EEC-2025 | EPFDesk
-        </title>
+      {/* ========= GEO + EXTRA META ========= */}
+      <Script id="cg-geo-meta" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-CG">
+            <meta name="geo.placename" content="Raipur">
+            <meta name="geo.position" content="21.2514;81.6296">
+            <meta name="ICBM" content="21.2514, 81.6296">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/chhattisgarh-balance-districts-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/chhattisgarh-balance-districts-epf-esic-compliance">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for Baloda Bazar cement plants, Dhamtari rice mills, Kawardha sugar units and southern Chhattisgarh MSMEs."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/chhattisgarh-balance-districts-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Chhattisgarh EPF & ESIC Compliance"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for cement, agro-processing and emerging industrial zones in Chhattisgarh."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= LOCAL BUSINESS SCHEMA ========= */}
       <Script
-        id="schema-cg-balance"
+        id="schema-chhattisgarh-balance"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/chhattisgarh-balance-districts-epf-esic-compliance#organization",
 
-            name:
-              "Chhattisgarh EPF & ESIC Compliance – Cement & Agro Zones | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Balance Districts of Chhattisgarh",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Consultants for Chhattisgarh",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url:
+            "https://epfdesk.com/chhattisgarh-balance-districts-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url:
-              "https://epfdesk.com/chhattisgarh-balance-districts-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Raipur",
+            addressRegion: "Chhattisgarh",
+            postalCode: "492001",
+            addressCountry: "IN",
+          },
 
-            /* ✅ SAME ADDRESS */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 21.2514,
+            longitude: 81.6296,
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Baloda Bazar-Bhatapara" },
+            { "@type": "AdministrativeArea", name: "Dhamtari District" },
+            { "@type": "AdministrativeArea", name: "Mahasamund District" },
+            { "@type": "AdministrativeArea", name: "Kabirdham (Kawardha)" },
+            { "@type": "AdministrativeArea", name: "Kanker District" },
+            { "@type": "AdministrativeArea", name: "Kondagaon District" },
+            { "@type": "AdministrativeArea", name: "Gariaband District" },
+          ],
 
-            description:
-              "EPF & ESIC compliance specialists for cement manufacturing belts, agro-processing corridors and emerging mining zones governed by RO Raipur and RO Bilaspur.",
+          description:
+            "EPF & ESIC compliance services for cement manufacturing belts, rice mills, sugar factories, mining ancillaries and agro-industrial clusters governed by RO Raipur and RO Bilaspur.",
 
-            priceRange: "₹₹₹",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "76",
+          },
+        })}
+      </Script>
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Baloda Bazar-Bhatapara" },
-              { "@type": "AdministrativeArea", name: "Dhamtari District" },
-              { "@type": "AdministrativeArea", name: "Mahasamund District" },
-              { "@type": "AdministrativeArea", name: "Kabirdham (Kawardha)" },
-              { "@type": "AdministrativeArea", name: "Kanker District" },
-              { "@type": "AdministrativeArea", name: "Kondagaon District" },
-              { "@type": "AdministrativeArea", name: "Gariaband District" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "76",
-            },
-          }),
-        }}
-      />
-
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataCGBalanceDistricts} />
       </FadeInWhenVisible>
@@ -174,8 +156,39 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqCGBalanceDistricts} />
+       <Script id="conversion-tracking-chhattisgarh-balance" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

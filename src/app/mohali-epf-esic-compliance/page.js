@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -9,15 +6,15 @@ import FaqAccordion from "@/components/faqAccordian";
 
 import { heroDataMohali, sectionsMohali, faqMohali } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Mohali EPF & ESIC Compliance: IT Parks, QuarkCity & 50% Wage Rule | EPFDesk",
 
   description:
-    "High-risk EPF & ESIC compliance defence for Mohali — IT Park companies, QuarkCity startups, electronics and biotech units. Experts in RO Chandigarh enforcement, 50% Wage Rule implementation, Principal Employer liability and ESIC digital filings.",
+    "High-risk EPF & ESIC compliance defence for Mohali IT Park companies, QuarkCity startups, electronics and biotech units. Experts in RO Chandigarh enforcement, 50% Wage Rule implementation, Principal Employer liability and ESIC digital filings.",
 
   keywords: [
     "Mohali PF consultant",
@@ -34,131 +31,109 @@ export const metadata = {
     canonical: "https://epfdesk.com/mohali-epf-esic-compliance",
   },
 
+  /* ✅ OPEN GRAPH */
   openGraph: {
     title: "Mohali EPF & ESIC Compliance | IT & Electronics Hub",
     description:
       "PF & ESIC specialists for Mohali IT companies, QuarkCity startups, electronics manufacturers and service-sector employers.",
     url: "https://epfdesk.com/mohali-epf-esic-compliance",
+    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Mohali PF ESIC Compliance",
+        alt: "Mohali EPF & ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
 
+  /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
-    title: "Mohali EPF & ESIC Compliance | IT & Electronics Hub | EPFDesk",
+    title: "Mohali EPF & ESIC Compliance | IT & Electronics Hub",
     description:
       "Expert PF & ESIC compliance for Mohali IT companies, electronics units and startups.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* LEGACY HEAD */}
-      <Head>
-        <title>
-          Mohali EPF & ESIC Compliance: IT Parks, QuarkCity & 50% Wage Rule |
-          EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="mohali-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-PB">
+            <meta name="geo.placename" content="Mohali, Punjab, India">
+            <meta name="geo.position" content="30.7046;76.7179">
+            <meta name="ICBM" content="30.7046, 76.7179">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Mohali IT Park companies, QuarkCity startups, electronics and biotech units. RO Chandigarh audits, 50% Wage Rule implementation and Principal Employer liability handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Mohali PF consultant, Mohali ESIC consultant, Mohali IT Park PF ESIC, QuarkCity startup labour compliance, electronics unit PF ESIC Mohali, biotech company labour laws Mohali, 50 percent wage rule PF, NWC 2025 wage restructuring Punjab"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/mohali-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Mohali EPF & ESIC Consultant | IT & Electronics Hub | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Mohali IT companies, QuarkCity startups and electronics manufacturers."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/mohali-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Mohali EPF & ESIC Compliance | IT & Electronics Hub | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Mohali IT companies and electronics units — wage audits and PE liability handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* JSON-LD SCHEMA */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-mohali"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "Mohali EPF & ESIC Compliance Consultants | EPFDesk",
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/mohali-epf-esic-compliance",
-            telephone: "+91-9945933333",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
-            areaServed: [
-              "Mohali",
-              "SAS Nagar",
-              "QuarkCity",
-              "IT Park Mohali",
-              "Sector 67",
-              "Sector 82",
-              "Knowledge City",
-            ],
-            description:
-              "EPF & ESIC consultancy for Mohali’s IT, ITeS, electronics, and biotech sectors.",
-          }),
-        }}
-      />
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/mohali-epf-esic-compliance#organization",
 
-      {/* PAGE SECTIONS */}
+          name:
+            "EPFDesk – EPF & ESIC Compliance Consultants for Mohali IT & Industrial Hub",
+
+          alternateName:
+            "Mohali EPF & ESIC Compliance for IT Parks, Electronics & Startups",
+
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/mohali-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
+
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Punjab",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 30.7046,
+            longitude: 76.7179,
+          },
+
+          areaServed: [
+            { "@type": "City", name: "Mohali" },
+            { "@type": "Place", name: "SAS Nagar" },
+            { "@type": "Place", name: "QuarkCity" },
+            { "@type": "Place", name: "IT Park Mohali" },
+            { "@type": "Place", name: "Sector 67 & Sector 82" },
+            { "@type": "Place", name: "Knowledge City" },
+          ],
+
+          description:
+            "EPF & ESIC compliance services for Mohali IT companies, startups, electronics and biotech units. Specialized handling of 50% Wage Rule (NWC 2025), Principal Employer liability, contractor audits, ESIC digital filings and RO Chandigarh proceedings.",
+
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "58",
+          },
+        })}
+      </Script>
+
+      {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataMohali} />
       </FadeInWhenVisible>
@@ -168,8 +143,49 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqMohali} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-mohali" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

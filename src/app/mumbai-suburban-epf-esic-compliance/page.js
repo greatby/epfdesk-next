@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,14 +10,16 @@ import {
   faqMumbaiSuburbanDistrict,
 } from "@/utils/data";
 
-/* ============================
-   METADATA
-============================ */
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Mumbai Suburban EPF & ESIC Compliance for IT, BPO & Film Industry | EPFDesk",
+
   description:
     "Critical EPF & ESIC defence for Mumbai Suburban IT/BPO hubs, Film & Entertainment contract labour, allowance suppression audits and RO Bandra liaison.",
+
   keywords: [
     "Mumbai Suburban EPF consultant",
     "RO Bandra EPFO audit",
@@ -29,152 +28,122 @@ export const metadata = {
     "Allowance suppression PF audit",
     "NWC 2025 payroll restructuring IT",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/mumbai-suburban-epf-esic-compliance",
   },
+
+  /* ✅ OPEN GRAPH */
   openGraph: {
-    title: "Mumbai Suburban EPF & ESIC Compliance | IT, BPO & Film Industry",
+    title:
+      "Mumbai Suburban EPF & ESIC Compliance | IT, BPO & Film Industry | EPFDesk",
     description:
-      "High-risk EPF & ESIC compliance for Mumbai Suburban service sector, IT/ITeS and Film production houses.",
+      "High-risk EPF & ESIC compliance for Mumbai Suburban IT/BPO companies, film production houses and service-sector employers.",
     url: "https://epfdesk.com/mumbai-suburban-epf-esic-compliance",
+    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Mumbai Suburban EPF ESIC Compliance",
+        alt: "Mumbai Suburban EPF & ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
+  /* ✅ TWITTER */
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Mumbai Suburban EPF & ESIC Compliance | IT, BPO & Film Industry | EPFDesk",
+    description:
+      "PF & ESIC compliance for Mumbai Suburban IT/BPO companies and film industry contractors. Allowance audits and PE liability handled.",
+    images: ["https://epfdesk.com/images/logo.jpg"],
+  },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD
-      ============================ */}
-      <Head>
-        <title>
-          Mumbai Suburban EPF & ESIC Compliance: IT, BPO, Film Industry & Wage
-          Audits | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="mumbai-suburban-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Mumbai Suburban, Maharashtra, India">
+            <meta name="geo.position" content="19.1176;72.9060">
+            <meta name="ICBM" content="19.1176, 72.9060">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Mumbai Suburban district — IT & BPO companies, film and media production houses, studios and contractor-driven payrolls. RO Mumbai audits, allowance-based wage scrutiny, Principal Employer liability and ESIC coverage handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Mumbai Suburban PF consultant, Mumbai Suburban ESIC consultant, IT BPO PF ESIC Mumbai, film industry contractor PF liability, media production labour compliance, allowance based payroll PF audits, Principal Employer liability Mumbai Suburban, NWC 2025 wage restructuring Mumbai"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/mumbai-suburban-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Mumbai Suburban EPF & ESIC Consultant | IT, BPO & Film Industry | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Mumbai Suburban IT/BPO companies, film industry contractors and media production houses."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/mumbai-suburban-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Mumbai Suburban EPF & ESIC Compliance | IT, BPO & Film Industry | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Mumbai Suburban IT/BPO companies and film industry contractors — wage audits and PE liability handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* ============================
-          SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-mumbai-suburban"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/mumbai-suburban-epf-esic-compliance#organization",
 
-            name: "Mumbai Suburban EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Mumbai Suburban IT & Film Sector",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Consultants for Mumbai Suburban District",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/mumbai-suburban-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Mumbai Suburban EPF & ESIC Compliance for IT, BPO & Film Industry",
 
-            /* ✅ ADDRESS KEPT SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/mumbai-suburban-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
+
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Maharashtra",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 19.1176,
+            longitude: 72.9060,
+          },
+
+          areaServed: [
+            {
+              "@type": "AdministrativeArea",
+              name: "Mumbai Suburban District",
             },
+            { "@type": "Place", name: "Andheri" },
+            { "@type": "Place", name: "Malad" },
+            { "@type": "Place", name: "Goregaon" },
+            { "@type": "Place", name: "Bandra Kurla Complex (BKC)" },
+          ],
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          description:
+            "EPF & ESIC compliance services for Mumbai Suburban IT & BPO companies, film production houses, studios and service-sector establishments. Expertise includes allowance suppression audits, contract labour PE liability, ESIC coverage for entertainment workers and RO Bandra enforcement.",
 
-            description:
-              "EPF & ESIC compliance services for Mumbai Suburban IT, BPO, Film Industry and service sector establishments.",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "67",
+          },
+        })}
+      </Script>
 
-            areaServed: [
-              {
-                "@type": "AdministrativeArea",
-                name: "Mumbai Suburban District",
-              },
-              { "@type": "Place", name: "Andheri" },
-              { "@type": "Place", name: "Malad" },
-              { "@type": "Place", name: "Goregaon" },
-              { "@type": "Place", name: "BKC" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "67",
-            },
-          }),
-        }}
-      />
-
-      {/* ============================
-          CONTENT
-      ============================ */}
+      {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
-        <PerformanceSectionIndustry data={heroDataMumbaiSuburbanDistrict} />
+        <PerformanceSectionIndustry
+          data={heroDataMumbaiSuburbanDistrict}
+        />
       </FadeInWhenVisible>
 
       <FadeInWhenVisible>
@@ -182,8 +151,52 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqMumbaiSuburbanDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script
+        id="conversion-tracking-mumbai-suburban"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

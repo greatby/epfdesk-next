@@ -1,11 +1,14 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { faqNoida, heroDataNoidaDist, sectionsNoidaDist } from "@/utils/data";
+
+import {
+  faqNoida,
+  heroDataNoidaDist,
+  sectionsNoidaDist,
+} from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -32,7 +35,7 @@ export const metadata = {
 
   openGraph: {
     title:
-      "Noida EPF & ESIC Compliance | IT Allowance Audits & PE Liability",
+      "Noida EPF & ESIC Compliance | IT Allowance Audits & PE Liability | EPFDesk",
     description:
       "PF & ESIC specialists for Noida IT/ITeS, BPOs and Greater Noida manufacturing units. Allowance audits, contractor PE liability and RO Noida enforcement handled.",
     url: "https://epfdesk.com/noida-epf-esic-compliance",
@@ -59,98 +62,78 @@ export const metadata = {
 };
 
 /* ===========================
-   PAGE COMPONENT
+   PAGE
 =========================== */
-const page = () => {
+export default function Page() {
   return (
     <>
-      {/* ========= LEGACY HEAD ========= */}
-      <Head>
-        <title>
-          Noida EPF & ESIC Compliance: Allowance Audits, PE Liability for IT/ITeS & Electronics MIDC | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="noida-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-UP">
+            <meta name="geo.placename" content="Noida, Uttar Pradesh, India">
+            <meta name="geo.position" content="28.5355;77.3910">
+            <meta name="ICBM" content="28.5355, 77.3910">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Noida IT/ITeS, BPOs and Greater Noida factories. Allowance suppression audits, CLRA PE liability and RO Noida enforcement handled."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/noida-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Noida EPF & ESIC Compliance | IT Allowance & PE Liability"
-        />
-        <meta
-          property="og:description"
-          content="Experts in PF/ESIC for Noida IT hubs and Greater Noida electronics & manufacturing units."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ========= SCHEMA (ADDRESS UNCHANGED) ========= */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-noida"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/noida-epf-esic-compliance#organization",
 
-            name:
-              "Noida EPF & ESIC Compliance Service | IT, Electronics & NCR | EPFDesk",
+          name:
+            "EPFDesk – Noida EPF & ESIC Compliance for IT, Electronics & NCR Workforce",
 
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Noida IT/ITeS & Greater Noida MIDC",
+          alternateName:
+            "Noida EPF & ESIC Consultant for IT/ITeS, BPO & Electronics Manufacturing",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/noida-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/noida-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            /* 🔒 ADDRESS — SAME AS ALL OTHER PAGES */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Uttar Pradesh",
+            addressCountry: "IN",
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 28.5355,
+            longitude: 77.3910,
+          },
 
-            description:
-              "Critical PF & ESIC compliance services for Noida IT/ITeS companies, BPOs and Greater Noida Electronics & Manufacturing units. Specialized in allowance suppression audits, Principal Employer liability under CLRA, ESIC factory compliance, and RO Noida proceedings.",
+          areaServed: [
+            { "@type": "City", name: "Noida" },
+            { "@type": "City", name: "Greater Noida" },
+            { "@type": "Place", name: "Sector 62" },
+            { "@type": "Place", name: "Sector 63" },
+            { "@type": "Place", name: "Electronics Manufacturing Cluster" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPF & ESIC compliance services for Noida IT/ITeS companies, BPOs and Greater Noida electronics and manufacturing units, with specialization in allowance suppression audits, Principal Employer liability under CLRA, ESIC factory compliance and RO Noida proceedings.",
 
-            areaServed: [
-              { "@type": "City", name: "Noida" },
-              { "@type": "City", name: "Greater Noida" },
-              { "@type": "City", name: "Sector 62" },
-              { "@type": "City", name: "Sector 63" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "96",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "96",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataNoidaDist} />
       </FadeInWhenVisible>
@@ -159,9 +142,53 @@ const page = () => {
         <CodeOfConduct sections={sectionsNoidaDist} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqNoida} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqNoida} />
+      </FadeInWhenVisible>
+        <Script
+        id="conversion-tracking-noida"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

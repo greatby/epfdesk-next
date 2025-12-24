@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,22 +10,14 @@ import {
   faqAhmednagarDistrict,
 } from "@/utils/data";
 
-/* ============================
-   METADATA (APP ROUTER)
-============================ */
+/* ===========================
+   METADATA (DISTRICT PAGE)
+=========================== */
 export const metadata = {
   title:
     "Ahmednagar EPF & ESIC Compliance for Sugar Mills, MIDC Factories & Dairy Industry | EPFDesk",
   description:
-    "Expert EPF & ESIC defence for Ahmednagar Sugar Mills, PF liability on Retention Allowance (Bombay HC ruling), mandatory ESIC for MIDC MSMEs, Dal Mills and Dairy units. Specialists in agro-industrial Principal Employer liability.",
-  keywords: [
-    "Ahmednagar PF consultant",
-    "Sugar mill retention allowance PF Ahmednagar",
-    "Ahmednagar EPFO 7A defence",
-    "ESIC registration Ahmednagar MIDC",
-    "Dairy ESIC compliance Maharashtra",
-    "Dal mill PF ESIC Ahmednagar",
-  ],
+    "Expert EPF & ESIC defence for Ahmednagar Sugar Mills, PF liability on Retention Allowance, MIDC MSMEs, Dal Mills and Dairy units. Specialists in agro-industrial Principal Employer liability.",
   alternates: {
     canonical: "https://epfdesk.com/ahmednagar-epf-esic-compliance",
   },
@@ -36,8 +25,9 @@ export const metadata = {
     title:
       "Ahmednagar EPF & ESIC Compliance | Sugar, MIDC & Dairy | EPFDesk",
     description:
-      "PF & ESIC specialists for Ahmednagar sugar factories, retention allowance audits, MIDC MSMEs and dairy processing units.",
+      "PF & ESIC specialists for Ahmednagar sugar factories, MIDC MSMEs, retention allowance audits and dairy processing units.",
     url: "https://epfdesk.com/ahmednagar-epf-esic-compliance",
+    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
@@ -51,113 +41,151 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Ahmednagar EPF & ESIC Compliance | Sugar & Agro Industry | EPFDesk",
-    description:
-      "High-risk PF & ESIC compliance for Ahmednagar Sugar Mills, MIDC factories and Dairy units.",
     images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
-/* ============================
+/* ===========================
    PAGE COMPONENT
-============================ */
-const page = () => {
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Ahmednagar EPF & ESIC Compliance for Sugar Mills, MIDC Factories & Dairy Industry | EPFDesk
-        </title>
+      {/* ========= GEO + ADDITIONAL META TAGS ========= */}
+      <Script id="ahmednagar-geo-meta" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Ahmednagar">
+            <meta name="geo.position" content="19.0948;74.7480">
+            <meta name="ICBM" content="19.0948, 74.7480">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/ahmednagar-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/ahmednagar-epf-esic-compliance">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC defence for Ahmednagar Sugar Mills, PF on Retention Allowance, MIDC MSMEs, Dairy & Dal Mills."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/ahmednagar-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Ahmednagar EPF & ESIC Compliance | Sugar & Agro Industry"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Ahmednagar Sugar Factories, MIDC units and Dairy processing plants."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= LOCAL BUSINESS SCHEMA ========= */}
       <Script
-        id="schema-ahmednagar"
+        id="schema-ahmednagar-localbusiness"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/ahmednagar-epf-esic-compliance#organization",
+          name: "EPFDesk - EPF & ESIC Consultants Ahmednagar",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/ahmednagar-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            name: "Ahmednagar EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Sugar Mills & Agro Industry in Ahmednagar",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Ahmednagar",
+            addressRegion: "Maharashtra",
+            postalCode: "414001",
+            addressCountry: "IN",
+          },
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/ahmednagar-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 19.0948,
+            longitude: 74.7480,
+          },
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
+          areaServed: {
+            "@type": "City",
+            name: "Ahmednagar",
+            containedIn: {
+              "@type": "State",
+              name: "Maharashtra",
             },
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
-
-            description:
-              "Expert EPF & ESIC compliance services for Ahmednagar Sugar Mills, PF on Retention Allowance, MIDC manufacturing units, Dairy processing plants and Dal Mills.",
-
-            priceRange: "₹₹₹",
-
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Ahmednagar District" },
-              { "@type": "Place", name: "Ahmednagar MIDC" },
-              { "@type": "Place", name: "Pravaranagar" },
-              { "@type": "Place", name: "Pathardi" },
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "EPF & ESIC Compliance Services",
+            itemListElement: [
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "EPF Registration Ahmednagar",
+                  description:
+                    "Complete EPF registration and provident fund compliance services for establishments in Ahmednagar",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "ESIC Registration Ahmednagar",
+                  description:
+                    "ESIC registration and compliance services for Ahmednagar establishments",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "PF Compliance Ahmednagar",
+                  description:
+                    "Monthly PF return filing and compliance management in Ahmednagar",
+                },
+              },
             ],
+          },
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "71",
-            },
-          }),
-        }}
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "71",
+          },
+        })}
+      </Script>
+
+      {/* ========= GOOGLE ANALYTICS (DISTRICT) ========= */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-WMNLTE5RKQ"
+        strategy="afterInteractive"
       />
+      <Script id="ga-ahmednagar" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+          gtag('config', 'G-WMNLTE5RKQ', {
+            page_location: window.location.href,
+            page_title: document.title,
+            custom_map: {
+              dimension1: 'district',
+              dimension2: 'state'
+            }
+          });
+
+          gtag('event', 'page_view', {
+            district: 'Ahmednagar',
+            state: 'Maharashtra',
+            page_type: 'district_landing'
+          });
+        `}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataAhmednagarDistrict} />
       </FadeInWhenVisible>
@@ -167,8 +195,76 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqAhmednagarDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking" strategy="afterInteractive">
+        {`
+          window.addEventListener('DOMContentLoaded', function() {
+
+            document.querySelectorAll('a[href^="tel:"]').forEach(function(el) {
+              el.addEventListener('click', function() {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: this.getAttribute('href'),
+                  value: 5
+                });
+              });
+            });
+
+            document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(function(el) {
+              el.addEventListener('click', function() {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              });
+            });
+
+            document.querySelectorAll('a[href^="mailto:"]').forEach(function(el) {
+              el.addEventListener('click', function() {
+                gtag('event', 'email_click', {
+                  event_category: 'conversion',
+                  event_label: this.getAttribute('href'),
+                  value: 3
+                });
+              });
+            });
+
+            document.querySelectorAll('form').forEach(function(form) {
+              form.addEventListener('submit', function() {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              });
+            });
+
+            let scrollTracked = false;
+            window.addEventListener('scroll', function() {
+              if (!scrollTracked && window.scrollY / document.body.scrollHeight > 0.75) {
+                scrollTracked = true;
+                gtag('event', 'scroll_75percent', {
+                  event_category: 'engagement',
+                  event_label: window.location.pathname
+                });
+              }
+            });
+
+            document.querySelectorAll('.cta-button, .contact-button, [data-cta]').forEach(function(btn) {
+              btn.addEventListener('click', function() {
+                gtag('event', 'cta_click', {
+                  event_category: 'engagement',
+                  event_label: this.textContent.trim(),
+                  value: 2
+                });
+              });
+            });
+
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

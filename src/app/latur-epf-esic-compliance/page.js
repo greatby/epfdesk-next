@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,14 +10,16 @@ import {
   faqLaturDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Latur EPF & ESIC Compliance for Dal Mills, Oilseed Processing & Educational Institutions | EPFDesk",
+
   description:
     "Expert EPF & ESIC defence for Latur Dal and Oilseed Mills, PF liability for seasonal agro-processing workers, and mandatory ESIC compliance for educational institutions and MIDC MSMEs. Specialists in piece-rate wage audits and Principal Employer liability.",
+
   keywords: [
     "Latur PF consultant",
     "Dal mill EPF compliance Latur",
@@ -29,135 +28,115 @@ export const metadata = {
     "Educational institution ESIC Latur",
     "Latur EPFO 7A defence",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/latur-epf-esic-compliance",
   },
+
+  /* ✅ OPEN GRAPH */
   openGraph: {
     title:
-      "Latur EPF & ESIC Compliance | Dal Mills & Education Sector | EPFDesk",
+      "Latur EPF & ESIC Compliance | Dal Mills & Education Sector",
     description:
-      "PF & ESIC specialists for Latur Dal Mills, oilseed processing units, seasonal agro labour, and educational institutions.",
+      "PF & ESIC specialists for Latur Dal Mills, oilseed processing units, seasonal agro labour and educational institutions.",
     url: "https://epfdesk.com/latur-epf-esic-compliance",
+    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Latur EPF ESIC Compliance",
+        alt: "Latur EPF & ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
+  /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
     title:
-      "Latur EPF & ESIC Compliance | Dal Mills & Agro Processing | EPFDesk",
+      "Latur EPF & ESIC Compliance | Dal Mills & Agro Processing",
     description:
-      "High-risk EPF & ESIC compliance and EPFO 7A defence for Latur Dal Mills, agro-processing, and education sector.",
+      "High-risk EPF & ESIC compliance and EPFO 7A defence for Latur Dal Mills, agro-processing units and educational institutions.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Latur EPF & ESIC Compliance for Dal Mills, Oilseed Processing & Educational Institutions | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="latur-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Latur, Latur District, Maharashtra">
+            <meta name="geo.position" content="18.4088;76.5604">
+            <meta name="ICBM" content="18.4088, 76.5604">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC defence for Latur Dal Mills, oilseed processing units, seasonal agro workers, and educational institutions."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/latur-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Latur EPF & ESIC Compliance | Dal Mills & Education"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Latur Dal Mills, agro-processing, MIDC MSMEs, and educational institutions."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-latur"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/latur-epf-esic-compliance#organization",
 
-            name: "Latur EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Dal Mills & Educational Institutions in Latur",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Consultants for Latur District",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/latur-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Latur EPF & ESIC Compliance for Dal Mills, Agro Processing & Educational Institutions",
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/latur-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Latur",
+            addressRegion: "Maharashtra",
+            addressCountry: "IN",
+          },
 
-            description:
-              "Expert EPF & ESIC compliance services for Latur Dal Mills, oilseed processing units, seasonal agro-processing labour, MIDC MSMEs, and educational institutions with focus on piece-rate wages and Principal Employer liability.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 18.4088,
+            longitude: 76.5604,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Latur District" },
+            { "@type": "Place", name: "Dal Mills & Oilseed Processing Units" },
+            { "@type": "Place", name: "Latur MIDC" },
+            { "@type": "Place", name: "Educational Institutions" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Latur District" },
-              { "@type": "Place", name: "Dal Mills & Oilseed Processing Units" },
-              { "@type": "Place", name: "Latur MIDC" },
-              { "@type": "Place", name: "Educational Institutions" },
-            ],
+          description:
+            "EPF & ESIC compliance services for Latur Dal Mills, oilseed processing units, seasonal agro labour, MIDC MSMEs and educational institutions. Expertise includes piece-rate wage audits, Principal Employer liability and EPFO Section 7A defence.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "71",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "71",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataLaturDistrict} />
       </FadeInWhenVisible>
@@ -167,8 +146,49 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqLaturDistrict} />
+
+      {/* ========= CONVERSION TRACKING (LOCKED) ========= */}
+      <Script id="conversion-tracking-latur" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

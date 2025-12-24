@@ -1,11 +1,14 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { faqKanpur, heroDataKanpurDist, sectionsKanpurDist } from "@/utils/data";
+
+import {
+  heroDataKanpurDist,
+  sectionsKanpurDist,
+  faqKanpur,
+} from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -15,7 +18,7 @@ export const metadata = {
     "Kanpur EPF & ESIC Compliance: Leather Tanning Hazard, Ordnance PE Liability & Textile Allowance Audits | EPFDesk",
 
   description:
-    "Critical EPF & ESIC defense for Kanpur Leather & Textile factories and Defence/Ordnance contractors. Experts in RO Kanpur liaison, catastrophic ESIC hazard mitigation in Jajmau, and minimizing CLRA/Principal Employer liability across Central UP.",
+    "Critical EPF & ESIC compliance defence for Kanpur leather tanneries, textile mills and defence/ordnance contractors. Coverage includes RO Kanpur enforcement, catastrophic ESIC hazard exposure in Jajmau, CLRA Principal Employer liability and wage allowance audits.",
 
   keywords: [
     "Kanpur PF consultant",
@@ -27,130 +30,85 @@ export const metadata = {
   ],
 
   alternates: {
-    canonical: "https://epfdesk.com/kanpur-nagar-epf-esic-compliance",
-  },
-
-  openGraph: {
-    title:
-      "Kanpur EPF & ESIC Compliance | Leather, Defence & Textile Industries",
-    description:
-      "PF & ESIC specialists for Kanpur leather tanneries, defence contractors and textile mills. ESIC hazard risk, PE liability and RO Kanpur audits handled.",
-    url: "https://epfdesk.com/kanpur-nagar-epf-esic-compliance",
-    images: [
-      {
-        url: "https://epfdesk.com/images/logo.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Kanpur PF ESIC Compliance",
-      },
-    ],
-    locale: "en_IN",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "Kanpur EPF & ESIC Compliance | Leather & Defence Risk | EPFDesk",
-    description:
-      "Expert PF/ESIC compliance for Kanpur leather, defence and textile industries.",
-    images: ["https://epfdesk.com/images/logo.jpg"],
+    canonical: "https://epfdesk.com/kanpur-epf-esic-compliance",
   },
 };
 
 /* ===========================
-   PAGE COMPONENT
+   PAGE
 =========================== */
-const page = () => {
+export default function Page() {
   return (
     <>
-      {/* ========= LEGACY HEAD ========= */}
-      <Head>
-        <title>
-          Kanpur EPF & ESIC Compliance: Leather Tanning Hazard, Ordnance PE Liability & Textile Allowance Audits | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="kanpur-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-UP">
+            <meta name="geo.placename" content="Kanpur Nagar, Uttar Pradesh">
+            <meta name="geo.position" content="26.4499;80.3319">
+            <meta name="ICBM" content="26.4499, 80.3319">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defense for Kanpur leather tanneries, textile mills and defence contractors. ESIC hazard exposure, CLRA PE liability and RO Kanpur enforcement handled."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/kanpur-nagar-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Kanpur EPF & ESIC Compliance | Leather, Defence & Textile"
-        />
-        <meta
-          property="og:description"
-          content="Experts in PF/ESIC for Kanpur leather, defence/ordnance and textile industries."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ========= SCHEMA (ADDRESS UNCHANGED) ========= */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-kanpur-nagar"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/kanpur-epf-esic-compliance#organization",
 
-            name:
-              "Kanpur EPF & ESIC Compliance Service | Leather, Defence & Textile | EPFDesk",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Specialists for Kanpur Leather, Defence & Textile Industries",
 
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Kanpur Leather & Defence Industries",
+          alternateName:
+            "Kanpur EPF & ESIC Compliance for Leather Tanneries, Ordnance Units & Textile Mills",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/kanpur-nagar-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/kanpur-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            /* 🔒 ADDRESS — SAME AS ALL OTHER PAGES */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          /* ✅ DISTRICT-ACCURATE ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Kanpur Nagar",
+            addressRegion: "Uttar Pradesh",
+            addressCountry: "IN",
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 26.4499,
+            longitude: 80.3319,
+          },
 
-            description:
-              "Specialized PF & ESIC compliance services for Kanpur leather tanning units, textile mills, and defence/ordnance contractors. Expertise in catastrophic ESIC hazard risk, Principal Employer liability under CLRA, allowance audits, and RO Kanpur proceedings.",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Kanpur Nagar District" },
+            { "@type": "Place", name: "Jajmau Leather Tannery Cluster" },
+            { "@type": "Place", name: "Panki Industrial Area" },
+            { "@type": "Place", name: "Ordnance Factory Kanpur Zone" },
+            { "@type": "Place", name: "Kanpur Textile Belt" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPF & ESIC compliance services for Kanpur leather tanning units, textile mills and defence/ordnance contractors. Expertise includes catastrophic ESIC hazard risk mitigation, Principal Employer liability under CLRA, wage allowance audits and RO Kanpur proceedings.",
 
-            areaServed: [
-              { "@type": "City", name: "Kanpur Nagar" },
-              { "@type": "City", name: "Jajmau" },
-              { "@type": "City", name: "Panki" },
-              { "@type": "City", name: "Kanpur City" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "92",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "92",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataKanpurDist} />
       </FadeInWhenVisible>
@@ -160,8 +118,52 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqKanpur} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script
+        id="conversion-tracking-kanpur"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

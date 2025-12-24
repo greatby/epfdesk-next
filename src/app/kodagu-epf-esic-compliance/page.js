@@ -1,10 +1,8 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
 
 import {
   heroDataKodaguDist,
@@ -12,139 +10,105 @@ import {
   faqKodagu,
 } from "@/utils/data";
 
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Kodagu EPF & ESIC Compliance for Coffee Plantations, Resorts & Madikeri Tourism | EPFDesk",
+
   description:
-    "Expert PF & ESIC defense for Kodagu Coffee Estates, seasonal harvesting workers, resorts, homestays, and hotels. Specialists in PF plantation rules and ESIC hospitality compliance.",
+    "Expert PF & ESIC defense for Kodagu Coffee Estates, seasonal plantation workers, resorts, homestays, and hotels. Specialists in plantation PF rules, ESIC hospitality compliance and audit defence.",
+
   keywords: [
     "Kodagu PF consultant",
     "Coorg plantation PF compliance",
     "ESIC for Madikeri resorts",
-    "EPFDesk Kodagu",
+    "PF for coffee estate workers",
+    "ESIC compliance homestays Kodagu",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/kodagu-epf-esic-compliance",
   },
-  openGraph: {
-    title:
-      "Kodagu EPF & ESIC Compliance | Coffee Estates & Tourism Sector | EPFDesk",
-    description:
-      "PF/ESIC specialists for Coffee Estates, seasonal labor, resorts, hotels, and agro-processing units in Kodagu.",
-    url: "https://epfdesk.com/kodagu-epf-esic-compliance",
-    images: [
-      {
-        url: "https://epfdesk.com/images/logo.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Kodagu PF ESIC Compliance",
-      },
-    ],
-    locale: "en_IN",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "Kodagu EPF & ESIC Compliance | Coffee Plantations & Resorts | EPFDesk",
-    description:
-      "PF/ESI experts for coffee estate owners, homestays, hotels, and agro-units in Kodagu district.",
-    images: ["https://epfdesk.com/images/logo.jpg"],
-  },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Kodagu EPF & ESIC Compliance for Coffee Plantations, Resorts & Madikeri Tourism | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="kodagu-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-KA">
+            <meta name="geo.placename" content="Madikeri, Kodagu District, Karnataka">
+            <meta name="geo.position" content="12.3375;75.8069">
+            <meta name="ICBM" content="12.3375, 75.8069">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="PF & ESIC compliance support for Coffee Plantations, seasonal labor, resorts, hotels, and agro-processing units in Kodagu. Specialists in PF plantation rules & ESIC hospitality mandates."
-        />
-
-        <link rel="canonical" href="https://epfdesk.com/kodagu-epf-esic-compliance" />
-
-        <meta
-          property="og:title"
-          content="Kodagu EPF & ESIC Compliance | Coffee Estates & Tourism Sector"
-        />
-        <meta
-          property="og:description"
-          content="Experts in PF for plantation workers, ESIC for resorts/hotels, and wage audits for agro-units in Kodagu."
-        />
-        <meta property="og:image" content="https://epfdesk.com/images/logo.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-kodagu"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/kodagu-epf-esic-compliance#organization",
 
-            name: "Kodagu EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Coffee Estates, Resorts & Homestays in Kodagu",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Consultants for Kodagu District",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/kodagu-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Kodagu EPF & ESIC Compliance for Coffee Estates, Resorts & Homestays",
 
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Kodagu",
-              addressRegion: "Karnataka",
-              postalCode: "571201",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/kodagu-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.3375,
-              longitude: 75.8069,
-            },
+          /* ✅ DISTRICT-ACCURATE ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Madikeri",
+            addressRegion: "Karnataka",
+            addressCountry: "IN",
+          },
 
-            description:
-              "Specialized PF & ESIC compliance services for Coffee Plantations, Resorts, Homestays, and Agro-Units in Kodagu district.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 12.3375,
+            longitude: 75.8069,
+          },
 
-            priceRange: "₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Kodagu District" },
+            { "@type": "Place", name: "Madikeri" },
+            { "@type": "Place", name: "Virajpet" },
+            { "@type": "Place", name: "Kushalnagar" },
+            { "@type": "Place", name: "Somwarpet" },
+            { "@type": "Place", name: "Coffee Plantations of Coorg" },
+          ],
 
-            areaServed: [
-              { "@type": "City", name: "Madikeri" },
-              { "@type": "City", name: "Virajpet" },
-              { "@type": "City", name: "Kushalnagar" },
-              { "@type": "City", name: "Somwarpet" },
-            ],
+          description:
+            "EPF & ESIC compliance services for Coffee Plantations, seasonal agricultural workers, resorts, homestays, hotels and agro-processing units in Kodagu district. Expertise includes plantation PF applicability, ESIC hospitality coverage and audit defense.",
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "58",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "58",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataKodaguDist} />
       </FadeInWhenVisible>
@@ -154,8 +118,49 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqKodagu} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-kodagu" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

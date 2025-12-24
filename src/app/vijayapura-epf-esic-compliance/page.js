@@ -1,10 +1,10 @@
+import React from "react";
+import Script from "next/script";
+
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
 
 import {
   heroDataVijayapuraDist,
@@ -12,35 +12,32 @@ import {
   faqVijayapura,
 } from "@/utils/data";
 
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Vijayapura EPF & ESIC Compliance for Sugar Mills, Grape Processing & Educational Trusts | EPFDesk",
+
   description:
-    "EPFDesk provides PF & ESIC compliance for Vijayapura sugar mills, grape/pomegranate processors, wineries, dal mills and private educational institutions. Experts in seasonal labour PF, ESIC for medical institutions and wage audit defence.",
-  keywords: [
-    "Vijayapura PF consultant",
-    "Vijayapura ESIC consultant",
-    "sugar mill PF compliance",
-    "grape processing PF ESIC",
-    "educational institution ESIC Vijayapura",
-    "EPFDesk North Karnataka",
-  ],
+    "EPF & ESIC compliance for Vijayapura sugar mills, grape and pomegranate processing units, wineries, dal mills and private educational institutions. Specialists in seasonal labour PF, ESIC for colleges and wage audit defence.",
+
   alternates: {
     canonical: "https://epfdesk.com/vijayapura-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Vijayapura EPF & ESIC Consultant | Sugar Mills, Grape Processing & Education | EPFDesk",
+      "Vijayapura EPF & ESIC Compliance | Sugar Mills & Agro Processing",
     description:
-      "PF/ESI solutions for Vijayapura sugar/agro mills and educational institutions.",
+      "PF & ESIC experts for Vijayapura’s sugar mills, grape processing units and private educational institutions.",
     url: "https://epfdesk.com/vijayapura-epf-esic-compliance",
-    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "EPFDesk Vijayapura PF ESIC Compliance",
+        alt: "Vijayapura EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -50,131 +47,88 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Vijayapura EPF & ESIC Compliance | Sugar Mills & Education | EPFDesk",
+      "Vijayapura EPF & ESIC Compliance | Sugar & Education Sector",
     description:
-      "PF/ESI specialists for Vijayapura’s agro-processing units and private institutions.",
+      "PF/ESIC compliance for Vijayapura sugar mills, agro processors and educational trusts.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Vijayapura EPF & ESIC Compliance for Sugar Mills, Grape Processing &
-          Educational Trusts | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="vijayapura-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-KA">
+            <meta name="geo.placename" content="Vijayapura, Karnataka">
+            <meta name="geo.position" content="16.8302;75.7100">
+            <meta name="ICBM" content="16.8302, 75.7100">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="PF & ESIC compliance for Vijayapura’s sugar mills, grape processors, dal mills and private educational institutions. Specialists in seasonal labour PF, ESIC for hospitals/colleges and MSME statutory onboarding."
-        />
-
-        <meta
-          name="keywords"
-          content="Vijayapura PF ESIC, sugar mill PF compliance, grape processing PF ESIC, educational trust ESIC Vijayapura"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/vijayapura-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Vijayapura EPF & ESIC Consultant | Sugar Mills, Grape Processing & Education"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance experts for Vijayapura’s agro-processing and education sectors."
-        />
-        <meta property="og:image" content="https://epfdesk.com/images/logo.jpg" />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/vijayapura-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Vijayapura PF & ESIC Compliance | Sugar & Education Sectors"
-        />
-        <meta
-          name="twitter:description"
-          content="PF/ESI compliance for Vijayapura’s mills, processors and private institutions."
-        />
-        <meta name="twitter:image" content="https://epfdesk.com/images/logo.jpg" />
-      </Head>
-
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-vijayapura"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/vijayapura-epf-esic-compliance#organization",
 
-            name: "Vijayapura EPF & ESIC Compliance | Sugar Mills, Wine Units & Educational Trusts | EPFDesk",
-            alternateName:
-              "EPFDesk – Vijayapura PF ESIC Consultants for Agro-Processing & Education",
+          name:
+            "Vijayapura EPF & ESIC Compliance for Sugar Mills, Agro Processing & Educational Trusts | EPFDesk",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/vijayapura-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "EPFDesk – PF & ESIC Consultants for Sugar Mills & Education in Vijayapura",
 
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/vijayapura-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 16.8302,
-              longitude: 75.7100,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Vijayapura",
+            addressRegion: "Karnataka",
+            postalCode: "586101",
+            addressCountry: "IN",
+          },
 
-            description:
-              "Vijayapura PF/ESI risks stem from seasonal sugar/agro labour, grape/pomegranate processing units and mandatory ESIC coverage for private colleges and hospitals. EPFDesk specialises in PF wage audits, seasonal labour coverage and statutory MSME onboarding.",
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 16.8302,
+            longitude: 75.7100,
+          },
 
-            priceRange: "₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Vijayapura District" },
+            { "@type": "Place", name: "Aliabad Industrial Estate" },
+            { "@type": "Place", name: "Mahalbagayat Industrial Area" },
+            { "@type": "Place", name: "Sugar Mills Belt" },
+            { "@type": "Place", name: "Grape & Pomegranate Processing Units" },
+          ],
 
-            areaServed: [
-              { "@type": "City", name: "Vijayapura" },
-              { "@type": "Place", name: "Aliabad Industrial Estate" },
-              { "@type": "Place", name: "Mahalbagayat Industrial Area" },
-              { "@type": "Place", name: "Sugar/Grape Processing Belt" },
-            ],
+          description:
+            "EPF & ESIC compliance services for Vijayapura sugar mills, grape and pomegranate processing units, wineries, dal mills and private educational institutions. Expertise includes seasonal labour PF coverage, ESIC applicability for colleges and hospitals, wage audit defence and statutory onboarding.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "53",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "53",
+          },
+        })}
+      </Script>
 
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataVijayapuraDist} />
       </FadeInWhenVisible>
@@ -184,8 +138,52 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqVijayapura} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script
+        id="conversion-tracking-vijayapura"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

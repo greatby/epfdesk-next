@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,29 +10,33 @@ import {
   faqJalgaonDistrict,
 } from "@/utils/data";
 
-/* ============================
-   METADATA
-============================ */
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Jalgaon EPF & ESIC Compliance for Banana Processing, PVC MIDC & Agro Units | EPFDesk",
+
   description:
-    "Expert EPF & ESIC defence for Jalgaon Banana Processing units, PVC/Chemical MIDC factories, seasonal agro labour PF liability and Dal Mill piece-rate wage audits. SRO Jalgaon liaison.",
+    "Expert EPF & ESIC defence for Jalgaon banana processing units, PVC/Chemical MIDC factories, dal mills and seasonal agro labour. Coverage includes SRO Jalgaon inspections, piece-rate wage audits and contractor PF liability.",
+
   keywords: [
-    "Jalgaon EPF consultant",
+    "Jalgaon PF consultant",
     "Jalgaon ESIC registration",
     "Banana processing PF compliance",
     "PVC MIDC ESIC Jalgaon",
     "Dal mill piece rate PF",
     "EPFO SRO Jalgaon 7A defence",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/jalgaon-epf-esic-compliance",
   },
+
   openGraph: {
     title: "Jalgaon EPF & ESIC Compliance | Banana Processing & PVC MIDC",
     description:
-      "High-risk PF & ESIC compliance for Jalgaon agro-processing, PVC MIDC factories and seasonal labour.",
+      "High-risk PF & ESIC compliance for Jalgaon agro-processing units, PVC MIDC factories and seasonal labour.",
     url: "https://epfdesk.com/jalgaon-epf-esic-compliance",
     images: [
       {
@@ -48,126 +49,88 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
+  twitter: {
+    card: "summary_large_image",
+    images: ["https://epfdesk.com/images/logo.jpg"],
+  },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD
-      ============================ */}
-      <Head>
-        <title>
-          Jalgaon EPF & ESIC Compliance: Banana Processing, MIDC Units &
-          Seasonal Labour PF Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="jalgaon-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Jalgaon, Maharashtra">
+            <meta name="geo.position" content="21.0077;75.5626">
+            <meta name="ICBM" content="21.0077, 75.5626">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Jalgaon banana processing units, PVC MIDC factories, dal mills and seasonal agro labour. Piece-rate wage audits, contractor PF liability and inspection readiness handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Jalgaon PF consultant, Jalgaon ESIC consultant, banana processing PF ESIC Jalgaon, PVC MIDC labour compliance, seasonal agro labour PF liability Jalgaon, dal mill piece-rate wages PF ESIC, contractor PF audits Jalgaon, NWC 2025 wage restructuring Jalgaon"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/jalgaon-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Jalgaon EPF & ESIC Consultant | Banana Processing & Agro Industry | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Jalgaon banana processing units, MIDC factories and seasonal agro labour."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/jalgaon-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Jalgaon EPF & ESIC Compliance | Banana Processing & Agro Industry | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Jalgaon banana processing units, MIDC factories and seasonal labour — PF liability and audits handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* ============================
-          SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-jalgaon"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/jalgaon-epf-esic-compliance#organization",
 
-            name: "Jalgaon EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Jalgaon Banana, PVC & MIDC Industries",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Specialists for Jalgaon Industries",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/jalgaon-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Jalgaon EPF & ESIC Compliance Experts for Banana Processing, PVC MIDC & Agro Units",
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/jalgaon-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ DISTRICT-CORRECT ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Jalgaon",
+            addressRegion: "Maharashtra",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance services for Jalgaon Banana Processing units, PVC MIDC factories, Dal Mills and seasonal agro-processing labour.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 21.0077,
+            longitude: 75.5626,
+          },
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Jalgaon District" },
-              { "@type": "Place", name: "Jalgaon MIDC" },
-              { "@type": "Place", name: "Bhusawal MIDC" },
-            ],
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Jalgaon District" },
+            { "@type": "Place", name: "Jalgaon MIDC" },
+            { "@type": "Place", name: "Bhusawal MIDC" },
+            { "@type": "Place", name: "Banana Processing Belt" },
+            { "@type": "Place", name: "Dal Mill Cluster" },
+          ],
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "47",
-            },
-          }),
-        }}
-      />
+          description:
+            "EPF & ESIC compliance services for Jalgaon banana processing units, PVC MIDC factories, dal mills and seasonal agro-processing labour. Expertise includes SRO Jalgaon inspections, EPF Section 7A proceedings, contractor PF liability and New Wage Code payroll alignment.",
 
-      {/* ============================
-          CONTENT
-      ============================ */}
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "48",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataJalgaonDistrict} />
       </FadeInWhenVisible>
@@ -177,8 +140,47 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqJalgaonDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-jalgaon" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

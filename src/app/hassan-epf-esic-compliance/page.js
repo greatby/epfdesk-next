@@ -1,10 +1,8 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
 
 import {
   heroDataHassanDist,
@@ -12,35 +10,42 @@ import {
   faqHassan,
 } from "@/utils/data";
 
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Hassan EPF & ESIC Compliance for Coffee Plantations, Food Processing & Arsikere MSMEs | EPFDesk",
+
   description:
-    "EPFDesk provides PF & ESIC compliance expertise for Hassan’s coffee plantations, curing units, food processing factories and MSME engineering clusters in Arsikere/B. Katihalli. Specialists in plantation PF coverage, piece-rate wage compliance, and MSME statutory onboarding.",
+    "EPFDesk provides PF & ESIC compliance expertise for Hassan’s coffee plantations, curing units, food processing factories and MSME engineering clusters in Arsikere and B. Katihalli. Specialists in plantation PF coverage, piece-rate wage compliance and MSME statutory onboarding.",
+
   keywords: [
     "Hassan PF consultant",
     "Hassan ESIC consultant",
     "coffee plantation PF compliance",
     "food processing PF ESIC",
     "Arsikere MSME labour law",
-    "EPFDesk Karnataka",
+    "plantation labour PF Karnataka",
+    "EPFDesk Hassan",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/hassan-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Hassan EPF & ESIC Consultant | Coffee, Food Processing & MSME Engineering | EPFDesk",
+      "Hassan EPF & ESIC Compliance | Coffee, Food Processing & MSME Engineering",
     description:
-      "PF & ESIC services for Hassan’s plantations, food processing units and MSME engineering sector.",
+      "PF & ESIC specialists for Hassan’s plantations, food processing units and MSME engineering clusters.",
     url: "https://epfdesk.com/hassan-epf-esic-compliance",
-    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "EPFDesk Hassan PF ESIC Compliance",
+        alt: "Hassan EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -49,132 +54,82 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Hassan EPF & ESIC Compliance | Coffee, Food & MSMEs | EPFDesk",
-    description:
-      "PF/ESI experts for Hassan’s plantations, food processing units and MSME engineering clusters.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE COMPONENT
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Hassan EPF & ESIC Compliance for Coffee Plantations, Food Processing &
-          Arsikere MSMEs | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="hassan-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-KA">
+            <meta name="geo.placename" content="Hassan">
+            <meta name="geo.position" content="13.0072;76.0960">
+            <meta name="ICBM" content="13.0072, 76.0960">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="PF & ESIC compliance for Hassan coffee estates, curing units, food processing factories and MSME engineering workshops. Specialists in PF for piece-rate/seasonal workers, ESIC for factory staff, and statutory PF/ESI onboarding."
-        />
-
-        <meta
-          name="keywords"
-          content="Hassan PF ESIC, coffee plantation PF compliance, food processing PF ESIC, MSME labour law Arsikere"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/hassan-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Hassan EPF & ESIC Consultant | Coffee, Food Processing & MSMEs"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance experts for Hassan’s plantations, food processing units, and MSME engineering sector."
-        />
-        <meta property="og:image" content="https://epfdesk.com/images/logo.jpg" />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/hassan-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Hassan PF & ESIC Compliance | Plantations & MSMEs"
-        />
-        <meta
-          name="twitter:description"
-          content="PF/ESI compliance for Hassan’s coffee, spices, food processing & MSME clusters."
-        />
-        <meta name="twitter:image" content="https://epfdesk.com/images/logo.jpg" />
-      </Head>
-
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-hassan"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/hassan-epf-esic-compliance#organization",
 
-            name: "Hassan EPF & ESIC Compliance | Coffee Plantations, Food Processing & MSMEs | EPFDesk",
-            alternateName:
-              "EPFDesk – Hassan PF ESIC Consultants for Plantations & MSME Engineering",
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Hassan Plantations & MSMEs",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/hassan-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/hassan-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          /* ✅ DISTRICT-SPECIFIC ADDRESS (HASSAN) */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Hassan",
+            addressRegion: "Karnataka",
+            postalCode: "573201",
+            addressCountry: "IN",
+          },
 
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 13.0072,
+            longitude: 76.0960,
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 13.0072,
-              longitude: 76.0960,
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Hassan District" },
+            { "@type": "Place", name: "Arsikere Industrial Estate" },
+            { "@type": "Place", name: "B. Katihalli KSSIDC Industrial Area" },
+            { "@type": "Place", name: "Coffee & Spice Plantation Belt" },
+            { "@type": "Place", name: "Food Processing Clusters" },
+          ],
 
-            description:
-              "Hassan's plantation and MSME ecosystem requires PF/ESI compliance for seasonal workers, coffee curing staff, food processing units, and engineering MSMEs. EPFDesk specialises in plantation PF, ESIC for factory workers, and PF wage audits for piece-rate labour.",
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          description:
+            "EPF & ESIC compliance services for Hassan district covering coffee plantations, curing units, food processing factories and MSME engineering clusters. Expertise in plantation PF applicability, piece-rate wage audits, ESIC factory coverage and statutory onboarding.",
 
-            priceRange: "₹₹",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "41",
+          },
+        })}
+      </Script>
 
-            areaServed: [
-              { "@type": "City", name: "Hassan" },
-              { "@type": "Place", name: "Arsikere Industrial Estate" },
-              { "@type": "Place", name: "B. Katihalli KSSIDC Cluster" },
-              { "@type": "Place", name: "Coffee & Spice Plantation Belt" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "41",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataHassanDist} />
       </FadeInWhenVisible>
@@ -183,9 +138,50 @@ const page = () => {
         <CodeOfConduct sections={sectionsHassanDist} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqHassan} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqHassan} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-hassan" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

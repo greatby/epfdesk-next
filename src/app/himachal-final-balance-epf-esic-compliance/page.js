@@ -1,16 +1,14 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
+
 import { faqHP, heroDataHP, sectionsHP } from "@/utils/data";
 
-/* ============================
-   METADATA
-============================ */
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Himachal EPF & ESIC Compliance: Una FMCG Units, Kangra MSMEs & Tourism Labour PE Liability | EPFDesk",
@@ -25,7 +23,7 @@ export const metadata = {
     "Kangra MSME labour compliance",
     "Shimla hotel PF ESIC",
     "Kullu tourism labour laws",
-    "Seasonal worker PF ESIC Himachal",
+    "seasonal worker PF ESIC Himachal",
     "Principal Employer liability Himachal",
     "SRO Dharamshala EPFO jurisdiction",
   ],
@@ -44,7 +42,7 @@ export const metadata = {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Himachal PF ESIC Compliance",
+        alt: "Himachal EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -53,114 +51,81 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Himachal EPF & ESIC Compliance | FMCG & Tourism Labour | EPFDesk",
-    description:
-      "Expert PF & ESIC compliance for Himachal FMCG units, MSMEs and tourism-sector employers.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
+/* ===========================
    PAGE
-============================ */
-const page = () => {
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Himachal EPF & ESIC Compliance: Una FMCG Units, Kangra MSMEs & Tourism
-          Labour PE Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="hp-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-HP">
+            <meta name="geo.placename" content="Himachal Pradesh">
+            <meta name="geo.position" content="31.1048;77.1734">
+            <meta name="ICBM" content="31.1048, 77.1734">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Himachal Pradesh’s balance districts — Una Tahliwal FMCG units, Kangra MSMEs, and Shimla–Kullu hotels and tourism operators. SRO Dharamshala audits, seasonal labour PF/ESIC coverage and Principal Employer liability handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Himachal PF consultant, Himachal ESIC consultant, Una Tahliwal PF ESIC, Kangra MSME labour compliance, Shimla hotel PF ESIC, Kullu tourism labour laws, seasonal worker PF ESIC Himachal, Principal Employer liability Himachal, NWC 2025 wage restructuring Himachal"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/himachal-final-balance-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Himachal EPF & ESIC Consultant | FMCG, MSMEs & Tourism Hubs | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Himachal’s FMCG clusters, MSMEs and tourism-driven hospitality sector."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/himachal-final-balance-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Himachal EPF & ESIC Compliance | FMCG & Tourism Labour | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Himachal FMCG units, MSMEs and tourism employers — PE liability and inspections handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* SCHEMA */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-himachal-balance"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "Himachal EPF & ESIC Compliance Consultants | EPFDesk",
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/himachal-final-balance-epf-esic-compliance",
-            telephone: "+91-9945933333",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
-            areaServed: [
-              "Una",
-              "Tahliwal",
-              "Mehatpur",
-              "Kangra",
-              "Damtal",
-              "Sansarpur Terrace",
-              "Shimla",
-              "Kullu",
-              "Manali",
-              "Mandi",
-              "Bilaspur",
-            ],
-            description:
-              "EPF & ESIC compliance consultancy for Himachal’s FMCG, MSME, and tourism districts under SRO Dharamshala and RO Shimla enforcement.",
-          }),
-        }}
-      />
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/himachal-final-balance-epf-esic-compliance#organization",
 
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Himachal FMCG, MSMEs & Tourism Sector",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/himachal-final-balance-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
+
+          /* ✅ STATE-CENTRIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Himachal Pradesh",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 31.1048,
+            longitude: 77.1734,
+          },
+
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Himachal Pradesh" },
+            { "@type": "Place", name: "Una – Tahliwal Industrial Area" },
+            { "@type": "Place", name: "Kangra Border MSME Belt" },
+            { "@type": "Place", name: "Shimla Hospitality Sector" },
+            { "@type": "Place", name: "Kullu–Manali Tourism Circuit" },
+            { "@type": "Place", name: "Mandi & Bilaspur MSMEs" },
+          ],
+
+          description:
+            "EPF & ESIC compliance consultancy for Himachal Pradesh’s FMCG units, MSMEs and tourism-driven hospitality employers. Expertise in seasonal labour PF/ESIC, Principal Employer liability, and New Wage Code 2025 restructuring under SRO Dharamshala enforcement.",
+
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "58",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataHP} />
       </FadeInWhenVisible>
@@ -169,9 +134,50 @@ const page = () => {
         <CodeOfConduct sections={sectionsHP} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqHP} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqHP} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-himachal" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

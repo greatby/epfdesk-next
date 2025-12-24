@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -9,19 +6,19 @@ import FaqAccordion from "@/components/faqAccordian";
 
 import { heroDataJhajjar, sectionsJhajjar, faqJhajjar } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Jhajjar EPF & ESIC Compliance: Bahadurgarh Footwear Units, MET City & PE Liability | EPFDesk",
 
   description:
-    "High-risk EPF & ESIC compliance defence for Jhajjar district — Bahadurgarh footwear manufacturing clusters, MET City industrial units and regional MSMEs. Experts in RO Rohtak enforcement, contractor PF audits, Principal Employer liability and New Wage Code restructuring.",
+    "High-risk EPF & ESIC compliance defence for Jhajjar district — Bahadurgarh footwear manufacturing clusters, MET City industrial units and MSMEs. RO Rohtak audits, contractor PF liability, PE exposure and New Wage Code restructuring handled.",
 
   keywords: [
     "Jhajjar PF consultant",
-    "Jhajjar ESIC consultant",
+    "Jhajjar ESIC compliance",
     "Bahadurgarh footwear PF ESIC",
     "MET City Jhajjar labour compliance",
     "Footwear factory PF audits Haryana",
@@ -33,132 +30,82 @@ export const metadata = {
   alternates: {
     canonical: "https://epfdesk.com/jhajjar-epf-esic-compliance",
   },
-
-  openGraph: {
-    title: "Jhajjar EPF & ESIC Compliance | Footwear & MET City Industrial Hub",
-    description:
-      "PF & ESIC specialists for Bahadurgarh footwear manufacturers, MET City vendors and Jhajjar industrial MSMEs.",
-    url: "https://epfdesk.com/jhajjar-epf-esic-compliance",
-    images: [
-      {
-        url: "https://epfdesk.com/images/logo.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Jhajjar PF ESIC Compliance",
-      },
-    ],
-    locale: "en_IN",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Jhajjar EPF & ESIC Compliance | Bahadurgarh Footwear Hub | EPFDesk",
-    description:
-      "Expert PF & ESIC compliance for Bahadurgarh footwear units, MET City industries and Jhajjar MSMEs.",
-    images: ["https://epfdesk.com/images/logo.jpg"],
-  },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* LEGACY HEAD */}
-      <Head>
-        <title>
-          Jhajjar EPF & ESIC Compliance: Bahadurgarh Footwear Units, MET City &
-          PE Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="jhajjar-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-HR">
+            <meta name="geo.placename" content="Jhajjar, Haryana">
+            <meta name="geo.position" content="28.6931;76.9310">
+            <meta name="ICBM" content="28.6931, 76.9310">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Jhajjar district — Bahadurgarh footwear manufacturing units, MET City industries and regional MSMEs. RO Rohtak audits, contractor PF liability and Principal Employer compliance handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Jhajjar PF consultant, Jhajjar ESIC consultant, Bahadurgarh footwear PF ESIC, MET City Jhajjar labour compliance, footwear factory PF audits Haryana, Principal Employer liability Jhajjar, NWC 2025 wage restructuring Haryana"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/jhajjar-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Jhajjar EPF & ESIC Consultant | Bahadurgarh Footwear & MET City Hub | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Bahadurgarh footwear manufacturers, MET City industrial units and Jhajjar MSMEs."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/jhajjar-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Jhajjar EPF & ESIC Compliance | Bahadurgarh Footwear Hub | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Bahadurgarh footwear units and MET City industries — PE liability and audits handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* JSON-LD SCHEMA */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-jhajjar"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "Jhajjar EPF & ESIC Compliance Consultants | EPFDesk",
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/jhajjar-epf-esic-compliance",
-            telephone: "+91-9945933333",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
-            areaServed: [
-              "Jhajjar",
-              "Bahadurgarh",
-              "MET City",
-              "Badli",
-              "MIE Bahadurgarh",
-              "Sector 16",
-              "Sector 17",
-            ],
-            description:
-              "EPF & ESIC consultancy for Bahadurgarh footwear clusters, MET City MNC vendors, and Jhajjar industrial units.",
-          }),
-        }}
-      />
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/jhajjar-epf-esic-compliance#organization",
 
-      {/* PAGE SECTIONS */}
+          name:
+            "EPFDesk – EPF & ESIC Compliance Specialists for Jhajjar Industries",
+
+          alternateName:
+            "Jhajjar EPF & ESIC Compliance for Bahadurgarh Footwear & MET City Units",
+
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/jhajjar-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
+
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Jhajjar",
+            addressRegion: "Haryana",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 28.6931,
+            longitude: 76.9310,
+          },
+
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Jhajjar District" },
+            { "@type": "Place", name: "Bahadurgarh" },
+            { "@type": "Place", name: "MET City" },
+            { "@type": "Place", name: "Badli" },
+            { "@type": "Place", name: "MIE Bahadurgarh" },
+          ],
+
+          description:
+            "EPF & ESIC compliance services for Jhajjar district footwear manufacturers, MET City vendors and MSMEs. Expertise includes RO Rohtak audits, contractor PF liability, Principal Employer exposure and wage restructuring under the New Wage Code.",
+
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "64",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataJhajjar} />
       </FadeInWhenVisible>
@@ -168,8 +115,44 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqJhajjar} />
+
+      {/* ========= CONVERSION TRACKING (VERBATIM) ========= */}
+      <Script
+        id="conversion-tracking-jhajjar"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

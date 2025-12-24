@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,14 +10,17 @@ import {
   faqBeedDistrict,
 } from "@/utils/data";
 
-/* ============================
-   METADATA
-============================ */
+/* ===========================
+   METADATA (DISTRICT PAGE)
+=========================== */
 export const metadata = {
   title:
-    "Beed EPF & ESIC Compliance for Sugarcane Contractors, Oil Mills & Migrant Worker Liability | EPFDesk",
+    "Beed EPF & ESIC Compliance for Sugarcane Contractors, Migrant Labour & Agro Units | EPFDesk",
   description:
-    "Expert EPF & ESIC defence for Beed Sugar Mills, PF liability on migrant cane-cutting contractors (mukadams), Oil/Dal Mills and seasonal labour. Specialists in RO Aurangabad audit defence.",
+    "Expert EPF & ESIC compliance for Beed sugar mills, migrant cane-cutting contractors (mukadams), oil & dal mills. RO Aurangabad audits, seasonal PF exposure and PE liability handled.",
+  alternates: {
+    canonical: "https://epfdesk.com/beed-epf-esic-compliance",
+  },
   keywords: [
     "Beed PF consultant",
     "Beed EPF ESIC compliance",
@@ -29,15 +29,13 @@ export const metadata = {
     "Retention allowance PF sugar mill",
     "EPFO 7A defence Beed",
   ],
-  alternates: {
-    canonical: "https://epfdesk.com/beed-epf-esic-compliance",
-  },
   openGraph: {
     title:
-      "Beed EPF & ESIC Compliance | Sugarcane, Migrant Labour & Agro Industry",
+      "Beed EPF & ESIC Compliance | Sugarcane & Migrant Labour Hub | EPFDesk",
     description:
-      "High-risk PF & ESIC compliance for Beed Sugar Mills, migrant cane cutters, Oil & Dal Mills.",
+      "PF & ESIC specialists for Beed sugar mills, migrant cane cutters, oil mills and agro-processing units.",
     url: "https://epfdesk.com/beed-epf-esic-compliance",
+    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
@@ -49,102 +47,153 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
-const page = () => {
+/* ===========================
+   PAGE COMPONENT
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD
-      ============================ */}
-      <Head>
-        <title>
-          Beed EPF & ESIC Compliance: Sugarcane Contractors, Migrant Worker PF &
-          PE Liability | EPFDesk
-        </title>
+      {/* ========= GEO + EXTRA META ========= */}
+      <Script id="beed-geo-meta" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Beed">
+            <meta name="geo.position" content="18.9894;75.7601">
+            <meta name="ICBM" content="18.9894, 75.7601">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/beed-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/beed-epf-esic-compliance">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defense for Beed sugar mills, cane-cutting mukadam contractors, migrant workforce PF liability, oil mills and dal processing units. Inspection and PE liability handled."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/beed-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Beed EPF & ESIC Compliance | Sugarcane & Migrant Worker Liability"
-        />
-        <meta
-          property="og:description"
-          content="Specialists in PF & ESIC compliance for Beed sugar mills and migrant cane-cutting contractors."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          SCHEMA
-      ============================ */}
+      {/* ========= LOCAL BUSINESS SCHEMA ========= */}
       <Script
-        id="schema-beed"
+        id="schema-beed-localbusiness"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/beed-epf-esic-compliance#organization",
+          name: "EPFDesk - EPF & ESIC Consultants Beed",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/beed-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            name: "Beed EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Sugarcane & Migrant Workers in Beed",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Beed",
+            addressRegion: "Maharashtra",
+            postalCode: "431122",
+            addressCountry: "IN",
+          },
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/beed-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 18.9894,
+            longitude: 75.7601,
+          },
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
+          areaServed: {
+            "@type": "AdministrativeArea",
+            name: "Beed District",
+            containedIn: {
+              "@type": "State",
+              name: "Maharashtra",
             },
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
-
-            description:
-              "EPF & ESIC compliance services for Beed Sugar Mills, migrant cane cutters, Oil Mills and Dal Mills with high Principal Employer liability.",
-
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Beed District" },
-              { "@type": "Place", name: "Parli Vaijnath" },
-              { "@type": "Place", name: "Ambajogai" },
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Sugarcane & Migrant Labour Compliance Services",
+            itemListElement: [
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Sugarcane Contractor PF Compliance",
+                  description:
+                    "PF liability management for cane-cutting mukadam contractors",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Migrant Worker EPF & ESIC Compliance",
+                  description:
+                    "PF & ESIC coverage for seasonal and migrant agricultural labour",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Oil & Dal Mill PF ESIC Compliance",
+                  description:
+                    "EPF & ESIC audits, PE liability and RO Aurangabad defence for agro mills",
+                },
+              },
             ],
+          },
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "61",
-            },
-          }),
-        }}
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "61",
+          },
+        })}
+      </Script>
+
+      {/* ========= GOOGLE ANALYTICS (DISTRICT) ========= */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-WMNLTE5RKQ"
+        strategy="afterInteractive"
       />
+      <Script id="ga-beed" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-      {/* ============================
-          CONTENT
-      ============================ */}
+          gtag('config', 'G-WMNLTE5RKQ', {
+            page_location: window.location.href,
+            page_title: document.title,
+            custom_map: {
+              dimension1: 'district',
+              dimension2: 'state'
+            }
+          });
+
+          gtag('event', 'page_view', {
+            district: 'Beed',
+            state: 'Maharashtra',
+            page_type: 'district_landing'
+          });
+        `}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataBeedDistrict} />
       </FadeInWhenVisible>
@@ -154,8 +203,77 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqBeedDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking" strategy="afterInteractive">
+        {`
+          window.addEventListener('DOMContentLoaded', function() {
+
+            document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+              el.addEventListener('click', () => {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              });
+            });
+
+            document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+              el.addEventListener('click', () => {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              });
+            });
+
+            document.querySelectorAll('a[href^="mailto:"]').forEach(el => {
+              el.addEventListener('click', () => {
+                gtag('event', 'email_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 3
+                });
+              });
+            });
+
+            document.querySelectorAll('form').forEach(form => {
+              form.addEventListener('submit', () => {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              });
+            });
+
+            let scrollTracked = false;
+            window.addEventListener('scroll', () => {
+              if (!scrollTracked && window.scrollY / document.body.scrollHeight > 0.75) {
+                scrollTracked = true;
+                gtag('event', 'scroll_75percent', {
+                  event_category: 'engagement',
+                  event_label: window.location.pathname
+                });
+              }
+            });
+
+            document.querySelectorAll('.cta-button, .contact-button, [data-cta]').forEach(btn => {
+              btn.addEventListener('click', () => {
+                gtag('event', 'cta_click', {
+                  event_category: 'engagement',
+                  event_label: btn.textContent.trim(),
+                  value: 2
+                });
+              });
+            });
+
+          });
+        `}
+      </Script>
     </>
   );
-};
+}
 
-export default page;

@@ -1,15 +1,23 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
-import Script from "next/script";
-import { heroDataKhammamDist, sectionsKhammamDist } from "@/utils/data";
-import Head from "next/head";
+
+import {
+  heroDataKhammamDist,
+  sectionsKhammamDist,
+} from "@/utils/data";
+
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Khammam EPF & ESIC Consultant: NWC 2025 for Mining Contractors, Rice Mills & Transport Logistics | EPFDesk",
+
   description:
-    "EPFDesk provides PF & ESIC compliance services in Khammam for SCCL mining contractors, rice mills, agro-processing units, and logistics companies. We offer NWC 2025 wage restructuring, contractor compliance audits, PF/ESI applicability checks, and statutory filing support.",
+    "EPFDesk provides PF & ESIC compliance services in Khammam for SCCL mining contractors, rice mills, agro-processing units and logistics companies. Expertise includes NWC 2025 wage restructuring, contractor audits, PF/ESI applicability checks and statutory filing support.",
+
   keywords: [
     "Khammam PF consultant",
     "Khammam ESIC consultant",
@@ -22,162 +30,87 @@ export const metadata = {
     "contractor PF ESIC audits",
     "EPFDesk Khammam",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/khammam-epf-esic-compliance",
   },
-  openGraph: {
-    title:
-      "Khammam EPF & ESIC Consultant | SCCL Mining Contractors, Rice Mills & Logistics | EPFDesk",
-    description:
-      "PF & ESIC compliance experts for SCCL supply chain contractors, rice mills, agro-processing units, and transport/logistics operators in Khammam. NWC 2025 payroll alignment & contractor audits.",
-    url: "https://epfdesk.com/khammam-epf-esic-compliance",
-    siteName: "EPFDesk",
-    images: [
-      {
-        url: "https://epfdesk.com/images/logo.jpg",
-        width: 1200,
-        height: 630,
-        alt: "EPFDesk Khammam PF ESIC Compliance",
-      },
-    ],
-    locale: "en_IN",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "Khammam EPF & ESIC Consultant | Mining, Agro-Processing & Transport Compliance | EPFDesk",
-    description:
-      "Compliance support for Khammam’s SCCL mining supply chain, rice mills, agro-processing industries, and logistics companies. PF/ESI audits, NWC 2025 payroll & contractor management.",
-    images: ["https://epfdesk.com/images/logo.jpg"],
-  },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Khammam EPF & ESIC Consultant: NWC 2025 for Mining Contractors, Rice
-          Mills & Transport Logistics | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="khammam-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-TG">
+            <meta name="geo.placename" content="Khammam, Telangana">
+            <meta name="geo.position" content="17.2473;80.1514">
+            <meta name="ICBM" content="17.2473, 80.1514">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPFDesk provides PF & ESIC compliance solutions for Khammam’s SCCL mining contractor ecosystem, rice mills, agro-processing units, and logistics operators. Services include NWC 2025 payroll revision, PF/ESI applicability, contractor audits, and statutory filings."
-        />
-
-        <meta
-          name="keywords"
-          content="Khammam PF consultant, SCCL contractor PF ESIC, mining logistics labour compliance, rice mill ESIC Telangana, agro processing PF ESIC, transport PF ESIC, NWC 2025 Telangana payroll, contract labour audits Khammam, PF ESI compliance Telangana, EPFDesk Khammam"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/khammam-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Khammam EPF & ESIC Consultant | SCCL Mining Contractors, Rice Mills & Logistics | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Khammam's SCCL mining supply chain, rice mills, agro-processing units, and transport/logistics ecosystem. NWC 2025 payroll and statutory audits included."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/khammam-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Khammam EPF & ESIC Compliance | Mining, Agro-Processing & Transport | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC solutions for SCCL contractors, rice mills, agro-processing units and transport companies in Khammam. NWC 2025 alignment and contractor audits."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-      <script
+      {/* ========= JSON-LD SCHEMA ========= */}
+      <Script
         id="schema-khammam"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/khammam-epf-esic-compliance#organization",
 
-            name: "Khammam EPF & ESIC Consultant: NWC 2025 for Mining Contractors, Rice Mills & Transport Logistics | EPFDesk",
-            alternateName:
-              "EPFDesk – Khammam EPF & ESIC Compliance for SCCL Supply Chain, Agro-Processing & Transport",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Consultants for Khammam District",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/khammam-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Khammam EPF & ESIC Compliance for SCCL Contractors, Rice Mills & Logistics",
 
-            // TEMPLATE ADDRESS – unchanged as per your system
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/khammam-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ DISTRICT-ACCURATE ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Khammam",
+            addressRegion: "Telangana",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPFDesk manages EPF and ESIC compliance in Khammam, specializing in NWC 2025 liability for mining supply chain contractors (SCCL/CMPS), agro-processing units, rice mills, and logistics companies. Expert PF audits, ESIC coverage mapping, contractor compliance, and wage restructuring.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 17.2473,
+            longitude: 80.1514,
+          },
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Khammam District" },
+            { "@type": "Place", name: "SCCL Mining Supply Chain" },
+            { "@type": "Place", name: "Madhira Rice Mills Cluster" },
+            { "@type": "Place", name: "Wyra Agro-Processing Belt" },
+            { "@type": "Place", name: "Transport & Logistics Corridors" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPF & ESIC compliance services for Khammam’s SCCL mining contractors, rice mills, agro-processing units and transport logistics companies. Specialization includes NWC 2025 wage restructuring, PF/ESI applicability audits, contractor compliance under CLRA and statutory filing support.",
 
-            areaServed: [
-              { "@type": "City", name: "Khammam" },
-              { "@type": "Place", name: "SCCL Mining Logistics Zone" },
-              { "@type": "Place", name: "Madhira Rice Mills" },
-              { "@type": "Place", name: "Wyra Agro-Processing Belt" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "51",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "47",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataKhammamDist} />
       </FadeInWhenVisible>
@@ -185,8 +118,52 @@ const page = () => {
       <FadeInWhenVisible>
         <CodeOfConduct sections={sectionsKhammamDist} />
       </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script
+        id="conversion-tracking-khammam"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

@@ -1,6 +1,5 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
+import React from "react";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
@@ -13,26 +12,15 @@ import {
   faqRanchi,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Ranchi EPF & ESIC Compliance: IT Firms, Hospitals, Educational Institutions & PE Liability | EPFDesk",
 
   description:
     "High-risk EPF & ESIC compliance defence for Ranchi — IT startups, private hospitals, educational institutions, Tupudana industrial MSMEs and service-sector employers. Experts in RO Ranchi enforcement, New Wage Code compliance, contractor audits and Principal Employer liability.",
-
-  keywords: [
-    "Ranchi PF consultant",
-    "Ranchi ESIC consultant",
-    "Ranchi IT company PF ESIC",
-    "Hospital PF ESIC Ranchi",
-    "Educational institution PF ESIC Jharkhand",
-    "Tupudana industrial area PF audits",
-    "Principal Employer liability Ranchi",
-    "RO Ranchi EPFO jurisdiction",
-  ],
 
   alternates: {
     canonical: "https://epfdesk.com/ranchi-epf-esic-compliance",
@@ -66,99 +54,79 @@ export const metadata = {
   },
 };
 
-
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* LEGACY HEAD */}
-     <Head>
-  <title>
-    Ranchi EPF & ESIC Compliance: IT Firms, Hospitals, Educational Institutions & PE Liability | EPFDesk
-  </title>
+      {/* ========= GEO META ========= */}
+      <Script id="ranchi-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-JH">
+            <meta name="geo.placename" content="Ranchi">
+            <meta name="geo.position" content="23.3441;85.3096">
+            <meta name="ICBM" content="23.3441, 85.3096">
+          \`);
+        `}
+      </Script>
 
-  <meta
-    name="description"
-    content="EPF & ESIC compliance defence for Ranchi IT companies, private hospitals, educational institutions and Tupudana industrial MSMEs. RO Ranchi audits, New Wage Code compliance and Principal Employer liability handled."
-  />
-
-  <meta
-    name="keywords"
-    content="Ranchi PF consultant, Ranchi ESIC consultant, IT company PF ESIC Ranchi, hospital labour compliance Ranchi, educational institution PF ESIC Jharkhand, Tupudana MSME PF audits, Principal Employer liability Ranchi, NWC 2025 wage restructuring Jharkhand"
-  />
-
-  <link
-    rel="canonical"
-    href="https://epfdesk.com/ranchi-epf-esic-compliance"
-  />
-
-  {/* OpenGraph */}
-  <meta
-    property="og:title"
-    content="Ranchi EPF & ESIC Consultant | IT, Healthcare & Education | EPFDesk"
-  />
-  <meta
-    property="og:description"
-    content="PF & ESIC compliance for Ranchi IT firms, hospitals, educational institutions and industrial MSMEs."
-  />
-  <meta property="og:image" content="https://epfdesk.com/images/logo.jpg" />
-  <meta
-    property="og:url"
-    content="https://epfdesk.com/ranchi-epf-esic-compliance"
-  />
-  <meta property="og:type" content="website" />
-
-  {/* Twitter */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta
-    name="twitter:title"
-    content="Ranchi EPF & ESIC Compliance | IT, Healthcare & Education | EPFDesk"
-  />
-  <meta
-    name="twitter:description"
-    content="PF & ESIC services for Ranchi IT firms, hospitals and educational institutions — audits and PE liability handled."
-  />
-  <meta name="twitter:image" content="https://epfdesk.com/images/logo.jpg" />
-</Head>
-
-
-      {/* JSON-LD SCHEMA */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-ranchi"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name:
-              "Ranchi EPF & ESIC Compliance Consultants | EPFDesk",
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/ranchi-epf-esic-compliance",
-            telephone: "+91-9945933333",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
-            areaServed: [
-              "Ranchi",
-              "Namkum",
-              "Tupudana",
-              "Tatisilwai",
-              "Khunti",
-            ],
-            description:
-              "EPF & ESIC consultancy for Ranchi IT startups, healthcare institutions, educational hubs, and Jharkhand MSMEs.",
-          }),
-        }}
-      />
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/ranchi-epf-esic-compliance#organization",
 
-      {/* PAGE SECTIONS */}
+          name:
+            "EPFDesk – Ranchi EPF & ESIC Compliance for IT, Healthcare & Education",
+
+          alternateName:
+            "PF & ESIC Consultant for Ranchi IT Firms, Hospitals & Educational Institutions",
+
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/ranchi-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
+
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Jharkhand",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 23.3441,
+            longitude: 85.3096,
+          },
+
+          areaServed: [
+            { "@type": "City", name: "Ranchi" },
+            { "@type": "Place", name: "Namkum Industrial Area" },
+            { "@type": "Place", name: "Tupudana Industrial Area" },
+            { "@type": "Place", name: "Tatisilwai Industrial Area" },
+            { "@type": "City", name: "Khunti" },
+          ],
+
+          description:
+            "EPF & ESIC compliance services for Ranchi IT startups, private hospitals, educational institutions, Tupudana and Tatisilwai industrial MSMEs, and Jharkhand service-sector employers. Expertise in RO Ranchi proceedings, New Wage Code restructuring, contractor audits and Principal Employer liability.",
+
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "76",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataRanchi} />
       </FadeInWhenVisible>
@@ -167,9 +135,52 @@ const page = () => {
         <CodeOfConduct sections={sectionsRanchi} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqRanchi} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqRanchi} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-ranchi" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

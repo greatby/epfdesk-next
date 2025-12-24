@@ -1,5 +1,3 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
@@ -13,25 +11,20 @@ import {
   faqPuneDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Pune EPF & ESIC Compliance for Auto MIDC, Hinjewadi IT Park & Principal Employer Liability | EPFDesk",
+
   description:
-    "Expert EPF & ESIC defence for Pimpri-Chinchwad auto clusters, PF liability for Hinjewadi IT contractors, and ESIC compliance for Bhosari MIDC factory workers. Specialists in CLRA and IT salary allowance audits.",
-  keywords: [
-    "Pune PF consultant",
-    "Hinjewadi IT PF compliance",
-    "Auto MIDC ESIC Pune",
-    "PF on Special Allowance Pune",
-    "EPFO 7A defence Pune IT",
-    "Principal Employer liability Pune",
-  ],
+    "Expert EPF & ESIC defence for Pimpri-Chinchwad auto clusters, PF liability for Hinjewadi IT contractors, and ESIC compliance for Bhosari MIDC factory workers. Specialists in CLRA, IT allowance audits and EPFO 7A defence.",
+
   alternates: {
     canonical: "https://epfdesk.com/pune-epf-esic-compliance",
   },
+
   openGraph: {
     title:
       "Pune EPF & ESIC Compliance | Auto, IT & Manufacturing Hubs | EPFDesk",
@@ -49,6 +42,7 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title:
@@ -59,107 +53,79 @@ export const metadata = {
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Pune EPF & ESIC Compliance for Auto MIDC, Hinjewadi IT Park & Principal Employer Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="pune-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Pune">
+            <meta name="geo.position" content="18.5204;73.8567">
+            <meta name="ICBM" content="18.5204, 73.8567">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC defence for Pune auto clusters, Hinjewadi IT contractors, and MIDC factory ESIC compliance."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/pune-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Pune EPF & ESIC Compliance | Auto, IT & Manufacturing"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Pune auto OEMs, IT parks, and MIDC manufacturing units."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-pune"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id": "https://epfdesk.com/pune-epf-esic-compliance#organization",
 
-            name: "Pune EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Pune Auto & IT Industries",
+          name:
+            "EPFDesk – Pune EPF & ESIC Compliance for Auto, IT & Manufacturing Hubs",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/pune-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "PF & ESIC Consultant for Pune Auto MIDC, Hinjewadi IT Park & PE Liability",
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/pune-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Maharashtra",
+            addressCountry: "IN",
+          },
 
-            description:
-              "Expert EPF & ESIC compliance for Pune district auto manufacturing clusters, IT parks, MIDC factories, and Principal Employer liability management.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 18.5204,
+            longitude: 73.8567,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Pune District" },
+            { "@type": "Place", name: "Pimpri-Chinchwad Auto Cluster" },
+            { "@type": "Place", name: "Chakan MIDC" },
+            { "@type": "Place", name: "Hinjewadi IT Park" },
+            { "@type": "Place", name: "Bhosari MIDC" },
+            { "@type": "Place", name: "Ranjangaon MIDC" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Pune District" },
-              { "@type": "Place", name: "Pimpri-Chinchwad Auto Cluster" },
-              { "@type": "Place", name: "Chakan MIDC" },
-              { "@type": "Place", name: "Hinjewadi IT Park" },
-              { "@type": "Place", name: "Bhosari MIDC" },
-              { "@type": "Place", name: "Ranjangaon MIDC" },
-            ],
+          description:
+            "EPF & ESIC compliance specialists for Pune covering auto OEM clusters, MIDC manufacturing units, IT parks and large contractor ecosystems. Expertise includes PF on allowances, CLRA Principal Employer liability, contractor audits and EPFO 7A proceedings.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "104",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "104",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataPuneDistrict} />
       </FadeInWhenVisible>
@@ -168,9 +134,52 @@ const page = () => {
         <CodeOfConduct sections={sectionsPuneDistrict} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqPuneDistrict} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqPuneDistrict} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-pune" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

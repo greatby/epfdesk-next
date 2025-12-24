@@ -1,43 +1,41 @@
+import Script from "next/script";
+import React from "react";
+
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
-import ThreeStepSection from "@/components/ThreeStepSection";
-import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { heroDataTiruppurDist, sectionsTiruppurDist } from "@/utils/data";
+
+import {
+  heroDataTiruppurDist,
+  sectionsTiruppurDist,
+} from "@/utils/data";
+
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
-    "Tiruppur EPF & ESIC Compliance | NWC 2025 Payroll for Knitwear, Garment Exporters & Piece-Rate Workers – EPFDesk",
+    "Tiruppur EPF & ESIC Compliance | Knitwear, Garment Exports & Piece-Rate Payroll | EPFDesk",
 
   description:
-    "EPFDesk provides EPF & ESIC compliance for Tiruppur’s knitwear ecosystem, garment exporters, MSME units, and piece-rate workforce. We offer NWC 2025 payroll restructuring, migrant labour documentation, contractor compliance, and monthly PF/ESI filing management.",
+    "High-risk EPF & ESIC compliance defence for Tiruppur knitwear manufacturers, garment exporters, MSMEs and piece-rate workforce. NWC 2025 payroll restructuring, migrant labour documentation, contractor compliance and PF/ESI audits handled.",
 
-  keywords: [
-    "Tiruppur EPF Consultant",
-    "Tiruppur ESIC Consultant",
-    "Knitwear Industry Compliance",
-    "Garment Export PF ESIC",
-    "Piece-Rate Worker PF",
-    "NWC 2025 Tiruppur",
-    "EPFDesk Tiruppur",
-    "MSME Garment Compliance",
-  ],
+  alternates: {
+    canonical: "https://epfdesk.com/tiruppur-epf-esic-compliance",
+  },
 
   openGraph: {
     title:
-      "Tiruppur EPF & ESIC Compliance | Knitwear, Garment Exports & Piece-Rate Payroll – EPFDesk",
+      "Tiruppur EPF & ESIC Compliance | Knitwear & Garment Export Hub",
     description:
-      "EPFDesk specializes in EPF and ESIC compliance for Tiruppur’s knitwear units, garment exporters, and MSMEs. Expert support for piece-rate wage integration, migrant labour compliance, PF/ESI registration, and NWC 2025 payroll restructuring.",
+      "PF & ESIC specialists for Tiruppur knitwear units, garment exporters and piece-rate wage systems.",
     url: "https://epfdesk.com/tiruppur-epf-esic-compliance",
-    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Tiruppur EPF & ESIC Compliance – EPFDesk",
+        alt: "Tiruppur EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -47,149 +45,140 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Tiruppur EPF & ESIC Compliance | Knitwear & Garment Export Sector – EPFDesk",
+      "Tiruppur EPF & ESIC Compliance | Knitwear & Garment Export Sector",
     description:
-      "EPFDesk offers full EPF/ESIC compliance for Tiruppur’s knitwear, garment exporters, migrant workforce and piece-rate wage systems. NWC 2025-ready payroll structures.",
+      "Expert PF & ESIC compliance for Tiruppur knitwear, garment exporters and piece-rate labour systems.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Tiruppur EPF & ESIC Compliance | NWC 2025 Payroll for Knitwear,
-          Garment Exporters & Piece-Rate Workers – EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="tiruppur-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-TN">
+            <meta name="geo.placename" content="Tiruppur">
+            <meta name="geo.position" content="11.1085;77.3411">
+            <meta name="ICBM" content="11.1085, 77.3411">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPFDesk provides EPF & ESIC compliance for Tiruppur’s knitwear ecosystem, garment exporters, MSME units, and piece-rate workforce. We offer NWC 2025 payroll restructuring, migrant labour documentation, contractor compliance, and monthly PF/ESI filing management."
-        />
-
-        <meta
-          name="keywords"
-          content="Tiruppur EPF Consultant, Tiruppur ESIC Consultant, Knitwear Industry Compliance, Garment Export PF ESIC, Piece-Rate Worker PF, NWC 2025 Tiruppur, EPFDesk Tiruppur, MSME Garment Compliance"
-        />
-
-        {/* Open Graph */}
-        <meta
-          property="og:title"
-          content="Tiruppur EPF & ESIC Compliance | Knitwear, Garment Exports & Piece-Rate Payroll – EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="EPFDesk specializes in EPF and ESIC compliance for Tiruppur’s knitwear units, garment exporters, and MSMEs. Expert support for piece-rate wage integration, migrant labour compliance, PF/ESI registration, and NWC 2025 payroll restructuring."
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/tiruppur-epf-esic-compliance"
-        />
-        <meta property="og:site_name" content="EPFDesk" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Tiruppur EPF & ESIC Compliance | Knitwear & Garment Export Sector – EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="EPFDesk offers full EPF/ESIC compliance for Tiruppur’s knitwear, garment exporters, migrant workforce and piece-rate wage systems. NWC 2025-ready payroll structures."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        {/* Canonical */}
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/tiruppur-epf-esic-compliance"
-        />
-      </Head>
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-tiruppur"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/tiruppur-epf-esic-compliance#organization",
 
-            name: "Tiruppur EPF & ESIC Compliance: NWC 2025 Payroll for Knitwear, Garment Exporters & Piece-Rate Workers | EPFDesk",
-            alternateName:
-              "EPFDesk – Tiruppur Knitwear & Garment Export Compliance Specialists",
+          name:
+            "Tiruppur EPF & ESIC Compliance – Knitwear, Garment Exports & Piece-Rate Workforce | EPFDesk",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/tiruppur-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "EPFDesk – Tiruppur Knitwear & Garment Export Compliance Consultants",
 
-            // Address unchanged for all schemas
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/tiruppur-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ CITY-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Avinashi Road",
+            addressLocality: "Tiruppur",
+            addressRegion: "Tamil Nadu",
+            postalCode: "641602",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPFDesk provides specialized EPF and ESIC compliance for Tiruppur’s knitwear, garment exporters, and MSME production units. We support NWC 2025 payroll restructuring, piece-rate wage integration into statutory wages, comprehensive migrant labour documentation, contractor compliance, and full monthly PF/ESI filing management.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 11.1085,
+            longitude: 77.3411,
+          },
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          areaServed: [
+            { "@type": "City", name: "Tiruppur" },
+            { "@type": "Place", name: "Knitwear Cluster" },
+            { "@type": "Place", name: "Garment Export Units" },
+            { "@type": "Place", name: "Dyeing & Processing Units" },
+            { "@type": "Place", name: "TEA Member Units" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPF & ESIC compliance consultancy for Tiruppur knitwear manufacturers, garment exporters and MSMEs. Expertise includes piece-rate wage integration, migrant labour documentation, contractor compliance, RO Coimbatore audits and NWC 2025 payroll restructuring.",
 
-            areaServed: [
-              { "@type": "City", name: "Tiruppur" },
-              { "@type": "Place", name: "Knitwear Cluster" },
-              { "@type": "Place", name: "Garment Export Units" },
-              { "@type": "Place", name: "Dyeing & Processing Units" },
-              { "@type": "Place", name: "TEA Member Units" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "51",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "47",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataTiruppurDist} />
       </FadeInWhenVisible>
+
       <FadeInWhenVisible>
         <CodeOfConduct sections={sectionsTiruppurDist} />
       </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tiruppur" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: 'tiruppur',
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: 'tiruppur',
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: 'tiruppur',
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

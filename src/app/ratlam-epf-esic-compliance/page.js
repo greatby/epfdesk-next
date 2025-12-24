@@ -1,6 +1,5 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
+import React from "react";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
@@ -13,25 +12,20 @@ import {
   faqRatlamDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Ratlam EPF & ESIC Compliance: DMIC Logistics, Pharma Hazard & RO Ujjain Audit Defense 2025 | EPFDesk",
+
   description:
     "Expert EPF & ESIC advisory for Ratlam pharma MNCs, logistics hubs and chemical units. Navigate RO Ujjain audits, EEC-2025 amnesty and New Labour Code wage compliance in MP’s strategic rail corridor.",
-  keywords: [
-    "Ratlam PF consultant",
-    "EPF ESIC compliance Ratlam",
-    "Ratlam pharma PF audit",
-    "ESIC registration Ratlam chemical units",
-    "DMIC logistics labour compliance Ratlam",
-    "RO Ujjain EPF 7A defense",
-  ],
+
   alternates: {
     canonical: "https://epfdesk.com/ratlam-epf-esic-compliance",
   },
+
   openGraph: {
     title:
       "Ratlam EPF & ESIC Compliance | DMIC Logistics & Pharma Hub",
@@ -49,116 +43,90 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title:
-      "Ratlam EPF & ESIC Compliance | Logistics & Pharma",
+      "Ratlam EPF & ESIC Compliance | Logistics & Pharma Hub | EPFDesk",
     description:
       "High-risk PF & ESIC compliance for Ratlam DMIC logistics hubs, pharma and chemical units.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Ratlam EPF & ESIC Compliance: DMIC Logistics, Pharma Hazard & RO Ujjain Audit Defense 2025 | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="ratlam-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MP">
+            <meta name="geo.placename" content="Ratlam">
+            <meta name="geo.position" content="23.3315;75.0367">
+            <meta name="ICBM" content="23.3315, 75.0367">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for Ratlam pharma plants, logistics hubs and chemical units under RO Ujjain."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/ratlam-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Ratlam EPF & ESIC Compliance | DMIC Logistics Hub"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Ratlam logistics, pharma, chemical and agro-industrial clusters."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-ratlam"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/ratlam-epf-esic-compliance#organization",
 
-            name: "Ratlam EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Ratlam Pharma & Logistics Hub",
+          name:
+            "EPFDesk – Ratlam EPF & ESIC Compliance for Pharma & Logistics",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/ratlam-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "PF & ESIC Consultant for Ratlam DMIC Logistics & Pharma Units",
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/ratlam-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Madhya Pradesh",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance specialists for Ratlam’s DMIC logistics hub, pharma MNCs, chemical units and agro-processing industries governed by RO Ujjain.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 23.3315,
+            longitude: 75.0367,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Ratlam District" },
+            { "@type": "Place", name: "Industrial Area Namli" },
+            { "@type": "Place", name: "Ratlam Dosigaon Industrial Area" },
+            { "@type": "Place", name: "DMIC Multi-Modal Logistics Hub Ratlam" },
+            { "@type": "City", name: "Jaora" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Ratlam District" },
-              { "@type": "Place", name: "I.A. Namli" },
-              { "@type": "Place", name: "I.A. Ratlam Dosigaon" },
-              { "@type": "Place", name: "Multi-Modal Logistics Hub Ratlam" },
-              { "@type": "Place", name: "Jaora" },
-            ],
+          description:
+            "EPF & ESIC compliance services for Ratlam’s DMIC logistics corridor, pharmaceutical manufacturing units, chemical plants and agro-processing industries governed by RO Ujjain. Expertise includes EPF 7A defense, ESIC hazardous process compliance, EEC-2025 amnesty and New Labour Code wage restructuring.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "66",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "66",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataRatlamDistrict} />
       </FadeInWhenVisible>
@@ -167,9 +135,52 @@ const page = () => {
         <CodeOfConduct sections={sectionsRatlamDistrict} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqRatlamDistrict} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqRatlamDistrict} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-ratlam" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

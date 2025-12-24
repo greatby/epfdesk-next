@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import Script from "next/script";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
@@ -13,28 +12,23 @@ import {
   faqUPThrustZones,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "UP EPF & ESIC Compliance 2025: Raebareli MSME Hub, Ambedkar Nagar Textiles & Kushinagar Agro-Processing | EPFDesk",
+
   description:
-    "Expert EPF & ESIC defense for UP’s new Industrial Thrust Zones. Navigate EEC-2025 enrolment, New Labour Code wage definitions and ESIC 74-district expansion across Raebareli, Ambedkar Nagar and Kushinagar.",
-  keywords: [
-    "UP EPF ESIC compliance 2025",
-    "Raebareli MSME PF ESI",
-    "Ambedkar Nagar textile PF compliance",
-    "Kushinagar agro processing ESIC",
-    "EEC 2025 EPFO enrollment",
-    "Unified wage definition PF 2025",
-  ],
+    "High-risk EPF & ESIC compliance defence for Uttar Pradesh’s new Industrial Thrust Zones. Coverage includes Raebareli MSMEs, Ambedkar Nagar textile clusters and Kushinagar agro-processing units under EEC-2025 and New Labour Codes.",
+
   alternates: {
     canonical: "https://epfdesk.com/up-thrust-zones-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "UP EPF & ESIC Compliance 2025 | New Industrial Thrust Zones | EPFDesk",
+      "UP EPF & ESIC Compliance 2025 | New Industrial Thrust Zones",
     description:
       "Statutory PF & ESIC compliance for UP’s emerging industrial corridors – Raebareli, Ambedkar Nagar and Kushinagar.",
     url: "https://epfdesk.com/up-thrust-zones-epf-esic-compliance",
@@ -49,115 +43,93 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title:
       "UP EPF & ESIC Compliance 2025 | New Industrial Zones",
     description:
-      "PF & ESIC specialists for UP’s new MSME, textile and agro-processing corridors.",
+      "PF & ESIC specialists for Uttar Pradesh’s MSME, textile and agro-processing corridors.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          UP EPF & ESIC Compliance 2025: Raebareli, Ambedkar Nagar & Kushinagar | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="up-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-UP">
+            <meta name="geo.placename" content="Lucknow, Uttar Pradesh">
+            <meta name="geo.position" content="26.8467;80.9462">
+            <meta name="ICBM" content="26.8467, 80.9462">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for UP’s new Industrial Thrust Zones under EEC-2025 and New Labour Codes."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/up-thrust-zones-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="UP EPF & ESIC Compliance 2025 | Industrial Thrust Zones"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Raebareli, Ambedkar Nagar and Kushinagar industrial corridors."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-up-thrust-zones"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/up-thrust-zones-epf-esic-compliance#organization",
 
-            name:
-              "UP EPF & ESIC Compliance for New Industrial Thrust Zones | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Raebareli, Ambedkar Nagar & Kushinagar",
+          name:
+            "UP EPF & ESIC Compliance for New Industrial Thrust Zones | EPFDesk",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/up-thrust-zones-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "EPFDesk – PF & ESIC Consultants for Raebareli, Ambedkar Nagar & Kushinagar",
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/up-thrust-zones-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ STATE-CORRECT ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Gomti Nagar",
+            addressLocality: "Lucknow",
+            addressRegion: "Uttar Pradesh",
+            postalCode: "226010",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance advisory for UP’s new MSME, textile and agro-processing industrial corridors under EEC-2025 and New Labour Codes.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 26.8467,
+            longitude: 80.9462,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Uttar Pradesh" },
+            { "@type": "AdministrativeArea", name: "Raebareli District" },
+            { "@type": "AdministrativeArea", name: "Ambedkar Nagar District" },
+            { "@type": "AdministrativeArea", name: "Kushinagar District" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Raebareli District" },
-              { "@type": "AdministrativeArea", name: "Ambedkar Nagar District" },
-              { "@type": "AdministrativeArea", name: "Kushinagar District" },
-            ],
+          description:
+            "EPF & ESIC compliance consultancy for Uttar Pradesh’s emerging industrial thrust zones. Services include EEC-2025 enrolment, New Wage Code implementation, ESIC applicability analysis and Principal Employer liability management for MSME, textile and agro-processing clusters.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "72",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "72",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataUPThrustZones} />
       </FadeInWhenVisible>
@@ -167,8 +139,49 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqUPThrustZones} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-up-thrust-zones" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: 'up_thrust_zones',
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: 'up_thrust_zones',
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: 'up_thrust_zones',
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

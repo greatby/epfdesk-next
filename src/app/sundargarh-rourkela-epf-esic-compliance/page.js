@@ -1,6 +1,5 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
+import React from "react";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
@@ -13,31 +12,26 @@ import {
   faqSundargarhDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Rourkela EPF & ESIC Compliance: SAIL Vendor Audits & Expert Consultants in Sundargarh | EPFDesk",
+
   description:
-    "Specialized EPF & ESIC consultancy for Rourkela Steel Plant (SAIL) contractors, Kalunga MSMEs and Rajgangpur cement units. Navigate RO Rourkela audits, EEC-2025 and Principal Employer liability.",
-  keywords: [
-    "Rourkela PF consultant",
-    "EPF ESIC compliance Sundargarh",
-    "SAIL contractor PF audit",
-    "ESIC registration Rajgangpur cement",
-    "RO Rourkela EPF 7A defense",
-    "EEC 2025 Rourkela",
-  ],
+    "Specialized EPF & ESIC compliance for Rourkela Steel Plant (SAIL) contractors, Kalunga MSMEs and Rajgangpur cement units. Coverage includes RO Rourkela audits, EEC-2025 and Principal Employer liability.",
+
   alternates: {
-    canonical: "https://epfdesk.com/rourkela-sundargarh-epf-esic-compliance",
+    canonical: "https://epfdesk.com/sundargarh-rourkela-epf-esic-compliance",
   },
+
   openGraph: {
     title:
       "Rourkela EPF & ESIC Compliance | SAIL & Heavy Industry Hub",
     description:
       "PF & ESIC specialists for SAIL vendors, cement plants and MSMEs in Sundargarh district governed by RO Rourkela.",
-    url: "https://epfdesk.com/rourkela-sundargarh-epf-esic-compliance",
+    url: "https://epfdesk.com/sundargarh-rourkela-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
@@ -49,6 +43,7 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title:
@@ -59,101 +54,82 @@ export const metadata = {
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD
-      ============================ */}
-      <Head>
-        <title>
-          Rourkela EPF & ESIC Compliance: SAIL Vendor Audits | EPFDesk
-        </title>
+      {/* ========= GEO META (ROURKELA) ========= */}
+      <Script id="rourkela-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-OD">
+            <meta name="geo.placename" content="Rourkela">
+            <meta name="geo.position" content="22.2604;84.8536">
+            <meta name="ICBM" content="22.2604, 84.8536">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for SAIL Rourkela contractors, cement plants and engineering MSMEs under RO Rourkela."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/rourkela-sundargarh-epf-esic-compliance"
-        />
-
-        <meta property="og:title" content="Rourkela EPF & ESIC Compliance" />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Sundargarh district’s heavy industrial ecosystem."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
-        id="schema-sundargarh"
+        id="schema-rourkela"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/sundargarh-rourkela-epf-esic-compliance#organization",
 
-            name:
-              "Rourkela EPF & ESIC Compliance Consultants | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Advisory for Sundargarh Heavy Industries",
+          name:
+            "Rourkela EPF & ESIC Compliance – SAIL Vendors & Heavy Industry | EPFDesk",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/rourkela-sundargarh-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "EPFDesk – PF & ESIC Consultants for Rourkela Steel Plant (SAIL) & Sundargarh MSMEs",
 
-            /* SAME ADDRESS */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/sundargarh-rourkela-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ CITY-BASED ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Civil Township",
+            addressLocality: "Rourkela",
+            addressRegion: "Odisha",
+            postalCode: "769004",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance specialists for SAIL vendors, cement plants and MSMEs in Rourkela and Sundargarh district governed by RO Rourkela.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 22.2604,
+            longitude: 84.8536,
+          },
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Sundargarh District" },
-              { "@type": "Place", name: "Rourkela" },
-              { "@type": "Place", name: "Rajgangpur" },
-              { "@type": "Place", name: "Kalunga Industrial Estate" },
-            ],
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Sundargarh District" },
+            { "@type": "Place", name: "Rourkela Steel Plant (SAIL)" },
+            { "@type": "Place", name: "Kalunga Industrial Estate" },
+            { "@type": "Place", name: "Rajgangpur Cement Cluster" },
+          ],
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "91",
-            },
-          }),
-        }}
-      />
+          description:
+            "EPF & ESIC compliance services for Rourkela Steel Plant (SAIL) contractors, Kalunga MSMEs, Rajgangpur cement units and heavy industries across Sundargarh district. Expertise includes PF wage audits, ESIC applicability, RO Rourkela inspections, 7A proceedings and Principal Employer liability.",
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "91",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataSundargarhDistrict} />
       </FadeInWhenVisible>
@@ -163,8 +139,49 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqSundargarhDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-rourkela" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: 'rourkela',
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: 'rourkela',
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: 'rourkela',
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

@@ -1,17 +1,23 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
-import ThreeStepSection from "@/components/ThreeStepSection";
-import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { heroDataKanchipuramDist, sectionsKanchipuramDist } from "@/utils/data";
+
+import {
+  heroDataKanchipuramDist,
+  sectionsKanchipuramDist,
+} from "@/utils/data";
+
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Kanchipuram EPF & ESIC Expert: NWC 2025 Payroll for Oragadam Automotive & Sriperumbudur SEZ Manufacturing | EPFDesk",
+
   description:
-    "EPFDesk delivers PF & ESIC compliance for Kanchipuram’s automotive, electronics, SEZ and SIPCOT manufacturing hubs. We support OEMs and supplier units in Oragadam and Sriperumbudur with NWC 2025 payroll restructuring, contract-labour compliance, PF/ESI filings and complete statutory management.",
+    "High-risk EPF & ESIC compliance for Kanchipuram District — Oragadam automotive OEMs, Sriperumbudur SIPCOT & SEZ electronics manufacturers. Coverage includes NWC 2025 payroll restructuring, contractor labour compliance, PF/ESI filings and OEM-driven statutory audits.",
+
   keywords: [
     "Kanchipuram PF consultant",
     "Kanchipuram ESIC consultant",
@@ -21,175 +27,143 @@ export const metadata = {
     "electronics SEZ PF compliance",
     "NWC 2025 payroll Tamil Nadu",
     "contract labour PF ESIC TN",
-    "SEZ statutory compliance TN",
+    "SEZ statutory compliance Tamil Nadu",
     "EPFDesk Kanchipuram",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/kanchipuram-epf-esic-compliance",
   },
-  openGraph: {
-    title:
-      "Kanchipuram EPF & ESIC Consultant | Oragadam Automotive & Sriperumbudur Electronics SEZ Compliance | EPFDesk",
-    description:
-      "PF & ESIC compliance support for automotive OEMs, EMS/electronics units, SIPCOT industries and SEZ operations across Oragadam and Sriperumbudur. NWC 2025 payroll, contractor audits and monthly statutory filings.",
-    url: "https://epfdesk.com/kanchipuram-epf-esic-compliance",
-    siteName: "EPFDesk",
-    images: [
-      {
-        url: "https://epfdesk.com/images/logo.jpg",
-        width: 1200,
-        height: 630,
-        alt: "EPFDesk Kanchipuram PF ESIC Compliance",
-      },
-    ],
-    locale: "en_IN",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "Kanchipuram EPF & ESIC Consultant | Automotive, Electronics & SEZ Compliance | EPFDesk",
-    description:
-      "PF & ESIC advisory for Oragadam and Sriperumbudur's auto and electronics manufacturing ecosystem. Expert NWC 2025 payroll structuring and end-to-end statutory compliance.",
-    images: ["https://epfdesk.com/images/logo.jpg"],
-  },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {" "}
-      <Head>
-        <title>
-          Kanchipuram EPF & ESIC Expert: NWC 2025 Payroll for Oragadam
-          Automotive & Sriperumbudur SEZ Manufacturing | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="kanchipuram-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-TN">
+            <meta name="geo.placename" content="Kanchipuram, Tamil Nadu">
+            <meta name="geo.position" content="12.8185;79.6947">
+            <meta name="ICBM" content="12.8185, 79.6947">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPFDesk provides PF & ESIC compliance services for Kanchipuram’s automotive, electronics, SEZ & SIPCOT clusters in Oragadam and Sriperumbudur. NWC 2025 payroll design, PF/ESI registration, contractor audits & OEM-driven statutory compliance."
-        />
-
-        <meta
-          name="keywords"
-          content="Kanchipuram PF consultant, Oragadam SIPCOT PF ESIC, Sriperumbudur SEZ compliance, automotive PF ESIC Tamil Nadu, electronics EMS PF ESIC, NWC 2025 payroll Tamil Nadu, contract labour compliance TN, SIPCOT statutory filings, OEM PF compliance TN, EPFDesk Kanchipuram"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/kanchipuram-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Kanchipuram EPF & ESIC Consultant | Oragadam Auto Hub & Sriperumbudur Electronics SEZ | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance specialists for automotive, electronics and SEZ units across Oragadam and Sriperumbudur. NWC 2025 payroll restructuring & full statutory support."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/kanchipuram-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Kanchipuram EPF & ESIC Compliance | Auto, Electronics & SEZ Specialists | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC solutions for Oragadam auto corridor and Sriperumbudur SEZ industries. NWC 2025 payroll, contractor audits and OEM statutory compliance."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-kanchipuram"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/kanchipuram-epf-esic-compliance#organization",
 
-            name: "Kanchipuram EPF & ESIC Expert: NWC 2025 Payroll for Oragadam Automotive and Sriperumbudur SEZ Manufacturing | EPFDesk",
-            alternateName:
-              "EPFDesk – Kanchipuram Automotive & Electronics Compliance Specialists",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Specialists for Kanchipuram Manufacturing Hubs",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/kanchipuram-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Kanchipuram EPF & ESIC Compliance for Oragadam Automotive & Sriperumbudur SEZ Units",
 
-            // Address stays consistent across all schemas
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/kanchipuram-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ DISTRICT-ACCURATE ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Kanchipuram",
+            addressRegion: "Tamil Nadu",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPFDesk specializes in EPF and ESIC compliance for Kanchipuram district, covering the automotive, electronics, and SEZ manufacturing ecosystem across Oragadam and Sriperumbudur. We support OEMs and their suppliers with NWC 2025 payroll restructuring, contract-labour compliance, and end-to-end statutory management for SIPCOT industrial parks and SEZs.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 12.8185,
+            longitude: 79.6947,
+          },
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Kanchipuram District" },
+            { "@type": "Place", name: "Oragadam SIPCOT Industrial Park" },
+            { "@type": "Place", name: "Sriperumbudur SIPCOT & SEZ" },
+            { "@type": "Place", name: "Automotive Manufacturing Corridor" },
+            { "@type": "Place", name: "Electronics & EMS SEZ Units" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPF & ESIC compliance services for Kanchipuram automotive OEMs, Tier-1 suppliers, electronics SEZ manufacturers and SIPCOT industrial units. Expertise includes NWC 2025 payroll restructuring, contract labour compliance, PF/ESI filings and OEM-driven statutory audit defence.",
 
-            areaServed: [
-              { "@type": "District", name: "Kanchipuram" },
-              { "@type": "Place", name: "Oragadam SIPCOT" },
-              { "@type": "Place", name: "Sriperumbudur SIPCOT" },
-              { "@type": "Place", name: "Automotive Manufacturing Belt" },
-              { "@type": "Place", name: "Electronics SEZs" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "47",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "47",
-            },
-          }),
-        }}
-      />
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataKanchipuramDist} />
       </FadeInWhenVisible>
+
       <FadeInWhenVisible>
         <CodeOfConduct sections={sectionsKanchipuramDist} />
       </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script
+        id="conversion-tracking-kanchipuram"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

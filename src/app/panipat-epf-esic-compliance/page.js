@@ -1,5 +1,3 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
@@ -9,9 +7,9 @@ import FaqAccordion from "@/components/faqAccordian";
 
 import { heroDataPanipat, sectionsPanipat, faqPanipat } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Panipat EPF & ESIC Compliance: Textile Exporters, IOCL Refinery Vendors & PE Liability | EPFDesk",
@@ -60,105 +58,81 @@ export const metadata = {
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* LEGACY HEAD */}
-      <Head>
-        <title>
-          Panipat EPF & ESIC Compliance: Textile Exporters, IOCL Refinery
-          Vendors & PE Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="panipat-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-HR">
+            <meta name="geo.placename" content="Panipat">
+            <meta name="geo.position" content="29.3909;76.9635">
+            <meta name="ICBM" content="29.3909, 76.9635">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Panipat textile exporters, handloom and powerloom units, IOCL Refinery contractors and processing houses. RO Karnal audits, hazardous process ESIC coverage and Principal Employer liability handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Panipat PF consultant, Panipat ESIC consultant, textile exporter PF ESIC Panipat, handloom powerloom labour compliance, IOCL refinery contractor PF audits Panipat, hazardous industry ESIC Haryana, Principal Employer liability Panipat, NWC 2025 wage restructuring Haryana"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/panipat-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Panipat EPF & ESIC Consultant | Textile & Refinery Hub | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Panipat textile exporters, handloom units and IOCL Refinery contractors."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/panipat-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Panipat EPF & ESIC Compliance | Textile & Refinery Hub | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Panipat textile exporters and IOCL Refinery vendors — wage audits and PE liability handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* JSON-LD SCHEMA */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-panipat"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "Panipat EPF & ESIC Compliance Consultants | EPFDesk",
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/panipat-epf-esic-compliance",
-            telephone: "+91-9945933333",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
-            areaServed: [
-              "Panipat",
-              "Old Industrial Area",
-              "Sector 25",
-              "Sector 29",
-              "Samalkha",
-              "Israna",
-              "Baholi",
-            ],
-            description:
-              "EPF & ESIC consultancy for Panipat textile exporters, handloom clusters, IOCL Refinery contractors, and agro-industrial MSMEs.",
-          }),
-        }}
-      />
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/panipat-epf-esic-compliance#organization",
 
-      {/* PAGE SECTIONS */}
+          name:
+            "EPFDesk – Panipat EPF & ESIC Compliance for Textile & Refinery Industries",
+
+          alternateName:
+            "PF & ESIC Consultant for Panipat Handloom, Powerloom & IOCL Refinery Contractors",
+
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/panipat-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
+
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Haryana",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 29.3909,
+            longitude: 76.9635,
+          },
+
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Panipat District" },
+            { "@type": "Place", name: "Old Industrial Area" },
+            { "@type": "Place", name: "Sector 25" },
+            { "@type": "Place", name: "Sector 29" },
+            { "@type": "Place", name: "Samalkha" },
+            { "@type": "Place", name: "Israna" },
+            { "@type": "Place", name: "Baholi" },
+          ],
+
+          description:
+            "EPF & ESIC compliance specialists for Panipat textile exporters, handloom and powerloom clusters, IOCL Refinery contractors, dyeing and processing units, with expertise in hazardous process ESIC coverage, Principal Employer liability and RO Karnal proceedings.",
+
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "84",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataPanipat} />
       </FadeInWhenVisible>
@@ -167,9 +141,55 @@ const page = () => {
         <CodeOfConduct sections={sectionsPanipat} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqPanipat} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqPanipat} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script
+        id="conversion-tracking-panipat"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

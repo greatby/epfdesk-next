@@ -1,41 +1,41 @@
+import Script from "next/script";
+import React from "react";
+
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
-import Script from "next/script";
-import { heroDataTirupatiDist, sectionsTirupatiDist } from "@/utils/data";
-import Head from "next/head";
+
+import {
+  heroDataTirupatiDist,
+  sectionsTirupatiDist,
+} from "@/utils/data";
+
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
-    "Tirupati EPF & ESIC Consultant | NWC 2025 for Hospitality, Education & Sri City Electronics – EPFDesk",
+    "Tirupati EPF & ESIC Compliance | Hospitality, Education & Sri City Electronics | EPFDesk",
 
   description:
-    "EPFDesk provides EPF & ESIC compliance support in Tirupati, covering hospitality, education institutions, and Sri City electronics manufacturing. We specialize in PF audits, ESIC registration, contractor compliance, fixed-term employment structuring, and NWC 2025-ready payroll systems.",
+    "High-risk EPF & ESIC compliance defence for Tirupati hospitality establishments, educational institutions and Sri City electronics manufacturers. RO Tirupati audits, NWC 2025 payroll restructuring, contractor compliance and fixed-term employment structuring handled.",
 
-  keywords: [
-    "Tirupati EPF Consultant",
-    "Tirupati ESIC Consultant",
-    "Sri City EPF ESIC",
-    "Hospitality Compliance Tirupati",
-    "Education Institution PF ESIC",
-    "NWC 2025 Andhra Pradesh",
-    "EPFDesk Tirupati",
-    "Tirupati Payroll Compliance",
-  ],
+  alternates: {
+    canonical: "https://epfdesk.com/tirupati-epf-esic-compliance",
+  },
 
   openGraph: {
     title:
-      "Tirupati EPF & ESIC Consultant | Hospitality, Education & Electronics Manufacturing – EPFDesk",
+      "Tirupati EPF & ESIC Compliance | Hospitality, Education & Electronics",
     description:
-      "EPFDesk ensures EPF and ESIC compliance for Tirupati's hotels, colleges, and Sri City electronics manufacturers. We provide PF/ESIC registration, payroll restructuring, statutory audits, and contractor compliance management.",
+      "PF & ESIC specialists for Tirupati hotels, colleges and Sri City electronics manufacturing units.",
     url: "https://epfdesk.com/tirupati-epf-esic-compliance",
-    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Tirupati EPF & ESIC Compliance – EPFDesk",
+        alt: "Tirupati EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -45,140 +45,90 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Tirupati EPF & ESIC Consultant | Hotels, Colleges & Sri City Electronics – EPFDesk",
+      "Tirupati EPF & ESIC Compliance | Hospitality & Sri City Electronics",
     description:
-      "NWC 2025-ready EPF & ESIC solutions for Tirupati’s hospitality, education, and electronics manufacturing sectors. Expert compliance management, audits, and payroll advisory.",
+      "Expert PF & ESIC compliance for Tirupati hotels, educational institutions and Sri City electronics manufacturers.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Tirupati EPF & ESIC Consultant | NWC 2025 for Hospitality, Education &
-          Sri City Electronics – EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="tirupati-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-AP">
+            <meta name="geo.placename" content="Tirupati">
+            <meta name="geo.position" content="13.6288;79.4192">
+            <meta name="ICBM" content="13.6288, 79.4192">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPFDesk provides EPF & ESIC compliance support in Tirupati for hospitality, education institutions, and Sri City electronics manufacturing. We specialize in PF audits, ESIC registration, contractor compliance, fixed-term employment structuring, and NWC 2025-ready payroll systems."
-        />
-
-        <meta
-          name="keywords"
-          content="Tirupati EPF Consultant, Tirupati ESIC Consultant, Sri City EPF ESIC, Hospitality Compliance Tirupati, Education PF ESIC, NWC 2025 Andhra Pradesh, EPFDesk Tirupati, Tirupati Payroll Compliance"
-        />
-
-        {/* Open Graph */}
-        <meta
-          property="og:title"
-          content="Tirupati EPF & ESIC Consultant | Hospitality, Education & Electronics Manufacturing – EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="EPFDesk ensures EPF and ESIC compliance for Tirupati's hotels, colleges, and Sri City electronics manufacturers. We provide PF/ESIC registration, payroll restructuring, statutory audits, and contractor compliance management."
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/tirupati-epf-esic-compliance"
-        />
-        <meta property="og:site_name" content="EPFDesk" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Tirupati EPF & ESIC Consultant | Hotels, Colleges & Sri City Electronics – EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="NWC 2025-ready EPF & ESIC solutions for Tirupati’s hospitality, education and electronics manufacturing sectors. Expert compliance management, audits, and payroll advisory."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        {/* Canonical */}
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/tirupati-epf-esic-compliance"
-        />
-      </Head>
-      <script
+      {/* ========= JSON-LD SCHEMA ========= */}
+      <Script
         id="schema-tirupati"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/tirupati-epf-esic-compliance#organization",
 
-            name: "Tirupati EPF & ESIC Consultant: NWC 2025 for Hospitality, Education, and Electronics Manufacturing | EPFDesk",
-            alternateName:
-              "EPFDesk – Tirupati EPF & ESIC Compliance for Hotels, Colleges, and Sri City Electronics",
+          name:
+            "Tirupati EPF & ESIC Compliance – Hospitality, Education & Electronics | EPFDesk",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/tirupati-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "EPFDesk – Tirupati EPF & ESIC Consultants for Hotels, Colleges & Sri City",
 
-            // address kept as per template
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/tirupati-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ CITY-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "AIR Bypass Road",
+            addressLocality: "Tirupati",
+            addressRegion: "Andhra Pradesh",
+            postalCode: "517501",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPFDesk provides EPF and ESIC compliance services in Tirupati, specializing in NWC 2025 payroll restructuring for hospitality, education, and Sri City electronics manufacturing. Expertise includes PF audits, ESIC registration, fixed-term employment structuring, and contractor compliance.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 13.6288,
+            longitude: 79.4192,
+          },
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          areaServed: [
+            { "@type": "City", name: "Tirupati" },
+            { "@type": "Place", name: "Tirupati Temple City" },
+            { "@type": "Place", name: "Sri City Electronics SEZ" },
+            { "@type": "Place", name: "Hospitality & Tourism Zone" },
+            { "@type": "Place", name: "Educational Institutions Belt" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPF & ESIC compliance consultancy for Tirupati hotels, educational institutions and Sri City electronics manufacturers. Expertise in RO Tirupati audits, NWC 2025 payroll restructuring, fixed-term employment, contractor compliance and Principal Employer liability mitigation.",
 
-            areaServed: [
-              { "@type": "City", name: "Tirupati" },
-              { "@type": "Place", name: "Tirupati Temple City" },
-              { "@type": "Place", name: "Sri City Electronics SEZ" },
-              { "@type": "Place", name: "Educational Institutions Belt" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "49",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "47",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataTirupatiDist} />
       </FadeInWhenVisible>
@@ -186,8 +136,49 @@ const page = () => {
       <FadeInWhenVisible>
         <CodeOfConduct sections={sectionsTirupatiDist} />
       </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tirupati" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: 'tirupati',
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: 'tirupati',
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: 'tirupati',
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

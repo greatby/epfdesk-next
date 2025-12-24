@@ -1,195 +1,188 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
-import ThreeStepSection from "@/components/ThreeStepSection";
-import FaqAccordion from "@/components/faqAccordian";
 
-import Script from "next/script";
-import { heroDataCoimbatoreDist, sectionsCoimbatoreDist } from "@/utils/data";
-import Head from "next/head";
+import {
+  heroDataCoimbatoreDist,
+  sectionsCoimbatoreDist,
+} from "@/utils/data";
+
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
-    "Coimbatore EPF & ESIC Solutions: NWC 2025 for Spinning Mills, Pump Manufacturing & IT SEZs | EPFDesk",
+    "Coimbatore EPF & ESIC Compliance 2025: Spinning Mills, Pumps & IT SEZs | EPFDesk",
+
   description:
-    "EPFDesk delivers end-to-end PF & ESIC compliance services in Coimbatore for spinning mills, pump manufacturers, engineering MSMEs, and IT/ITES SEZ units. Specialized in NWC 2025 payroll restructuring, EPFO 7A defense, contractor compliance, and statutory audits for SIMA and CODISSIA member units.",
+    "Expert EPF & ESIC compliance for Coimbatore spinning mills, pump manufacturing units, engineering MSMEs and IT/ITES SEZs. Specialists in NWC 2025 payroll restructuring, EPFO 7A defense, contractor compliance and statutory audits for SIMA & CODISSIA members.",
+
   keywords: [
     "Coimbatore PF consultant",
     "Coimbatore ESIC consultant",
     "SIMA spinning mills PF compliance",
     "CODISSIA industrial estate ESIC",
-    "pump manufacturing PF ESIC",
-    "Coimbatore IT SEZ compliance",
+    "Pump manufacturing PF ESIC",
+    "IT SEZ compliance Coimbatore",
     "NWC 2025 payroll Coimbatore",
     "EPFO 7A defense Coimbatore",
-    "engineering MSME PF ESIC",
-    "EPFDesk Coimbatore",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/coimbatore-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Coimbatore EPF & ESIC Solutions | Spinning Mills, Pumps & IT SEZ Compliance | EPFDesk",
+      "Coimbatore EPF & ESIC Compliance | Spinning Mills, Pumps & IT SEZs",
     description:
-      "PF & ESIC compliance experts for Coimbatore's spinning mills, pump manufacturers, engineering MSMEs, and IT SEZs. NWC 2025 payroll support, EPFO 7A defense, and statutory audits for SIMA and CODISSIA member units.",
+      "PF & ESIC specialists for Coimbatore spinning mills, pump manufacturers, engineering MSMEs and IT SEZ operations.",
     url: "https://epfdesk.com/coimbatore-epf-esic-compliance",
-    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "EPFDesk Coimbatore PF ESIC Compliance",
+        alt: "Coimbatore EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Coimbatore EPF & ESIC Solutions | NWC 2025 Spinning Mills & IT SEZ Support | EPFDesk",
-    description:
-      "Comprehensive PF & ESIC statutory compliance for spinning mills, pump manufacturers, engineering units, and IT/ITES operations in Coimbatore.",
     images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE COMPONENT
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Coimbatore EPF & ESIC Solutions: NWC 2025 for Spinning Mills, Pump
-          Manufacturing & IT SEZs | EPFDesk
-        </title>
+      {/* ========= GEO META (COIMBATORE) ========= */}
+      <Script id="coimbatore-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-TN">
+            <meta name="geo.placename" content="Coimbatore">
+            <meta name="geo.position" content="11.0168;76.9558">
+            <meta name="ICBM" content="11.0168, 76.9558">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/coimbatore-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/coimbatore-epf-esic-compliance">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPFDesk provides PF & ESIC compliance services for Coimbatore's spinning mills, pump manufacturers, engineering MSMEs, and IT SEZs. Expertise in NWC 2025 payroll structuring, EPFO 7A defense, contractor compliance, and statutory audits for SIMA and CODISSIA member firms."
-        />
-
-        <meta
-          name="keywords"
-          content="Coimbatore PF consultant, Coimbatore ESIC consultant, spinning mills PF compliance, pump manufacturing ESIC, CODISSIA industrial estate compliance, Coimbatore IT SEZ PF ESIC, NWC 2025 Coimbatore, EPFO 7A defense, MSME PF compliance Coimbatore, EPFDesk Coimbatore"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/coimbatore-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Coimbatore EPF & ESIC Solutions | Spinning Mills, Pumps & IT SEZ Compliance | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance expertise for spinning mills, pump & motor manufacturers, engineering MSMEs, and IT SEZ operations in Coimbatore. NWC 2025 payroll, EPFO 7A defense, and contractor audits."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/coimbatore-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Coimbatore EPF & ESIC Solutions | NWC 2025 Spinning Mills & IT SEZ | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC statutory compliance for Coimbatore’s spinning mills, pump manufacturing units, engineering MSMEs, and IT/ITES operations."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
+      {/* ========= LOCAL BUSINESS SCHEMA ========= */}
       <Script
         id="schema-coimbatore"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/coimbatore-epf-esic-compliance#organization",
 
-            name: "Coimbatore EPF & ESIC Solutions: NWC 2025 for Spinning Mills, Pump Manufacturing & IT SEZs | EPFDesk",
-            alternateName:
-              "EPFDesk – Coimbatore Engineering, Spinning Mills & IT Compliance Experts",
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Coimbatore Industries",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/coimbatore-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/coimbatore-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Church Street",
+            addressLocality: "Bangalore",
+            addressRegion: "Karnataka",
+            postalCode: "560001",
+            addressCountry: "IN",
+          },
 
-            // Standard address reused for all schemas
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 11.0168,
+            longitude: 76.9558,
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Coimbatore District" },
+            { "@type": "City", name: "Coimbatore" },
+            { "@type": "Place", name: "SIMA Spinning Mills" },
+            { "@type": "Place", name: "CODISSIA Industrial Estate" },
+            { "@type": "Place", name: "Pump & Motor Manufacturing Cluster" },
+            { "@type": "Place", name: "IT SEZs & Tech Parks" },
+          ],
 
-            description:
-              "EPFDesk provides comprehensive EPF and ESIC compliance support in Coimbatore for spinning mills, pump manufacturers, engineering MSMEs, and IT/ITES SEZ units. We assist SIMA and CODISSIA member units with NWC 2025 payroll restructuring, Section 7A defense, contractor compliance, and correct computation of Bonus and Gratuity under the new labour codes.",
+          description:
+            "EPF & ESIC compliance services for Coimbatore spinning mills, pump manufacturing units, engineering MSMEs and IT/ITES SEZs, including NWC 2025 payroll restructuring, EPFO Section 7A defense and contractor compliance.",
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "47",
+          },
+        })}
+      </Script>
 
-            priceRange: "₹₹",
-
-            areaServed: [
-              { "@type": "City", name: "Coimbatore" },
-              { "@type": "Place", name: "SIMA Spinning Mills" },
-              { "@type": "Place", name: "CODISSIA Industrial Estate" },
-              { "@type": "Place", name: "Pump & Motor Manufacturing Cluster" },
-              { "@type": "Place", name: "IT SEZs & Tech Parks" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "47",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataCoimbatoreDist} />
       </FadeInWhenVisible>
+
       <FadeInWhenVisible>
         <CodeOfConduct sections={sectionsCoimbatoreDist} />
       </FadeInWhenVisible>
+       <Script id="conversion-tracking-coimbatore" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

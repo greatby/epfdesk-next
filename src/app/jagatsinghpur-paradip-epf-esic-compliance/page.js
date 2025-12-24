@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,31 +10,36 @@ import {
   faqJagatsinghpurDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Paradip EPF & ESIC Compliance: IOCL & Port Contractor Audits | EPFDesk",
+
   description:
-    "Expert EPF & ESIC consultancy for Paradip Port contractors, IOCL vendors and petrochemical units. Navigate RO Bhubaneswar audits, EEC-2025 and maritime PE liability.",
+    "Expert EPF & ESIC compliance defence for Paradip Port contractors, IOCL refinery vendors and PCPIR petrochemical units in Jagatsinghpur district. Navigate RO Bhubaneswar audits, EEC-2025 and maritime Principal Employer liability.",
+
   keywords: [
     "Paradip PF consultant",
-    "EPF ESIC compliance Jagatsinghpur",
+    "Jagatsinghpur EPF ESIC compliance",
     "Paradip Port contractor PF audit",
     "IOCL Paradip ESIC registration",
     "PCPIR Odisha labour compliance",
-    "RO Bhubaneswar EPF 7A defense",
+    "RO Bhubaneswar EPF 7A defence",
+    "Principal Employer liability Paradip",
   ],
+
   alternates: {
-    canonical: "https://epfdesk.com/jagatsinghpur-epf-esic-compliance",
+    canonical: "https://epfdesk.com/jagatsinghpur-paradip-epf-esic-compliance",
   },
+
   openGraph: {
     title:
       "Paradip EPF & ESIC Compliance | Port & Petrochemical Hub",
     description:
       "PF & ESIC specialists for Paradip Port, IOCL refinery and PCPIR contractors governed by RO Bhubaneswar.",
-    url: "https://epfdesk.com/jagatsinghpur-epf-esic-compliance",
+    url: "https://epfdesk.com/jagatsinghpur-paradip-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
@@ -49,114 +51,88 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Paradip EPF & ESIC Consultants | Port & IOCL Hub",
-    description:
-      "High-risk PF & ESIC compliance for Paradip Port, IOCL and petrochemical contractors.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD
-      ============================ */}
-      <Head>
-        <title>
-          Paradip EPF & ESIC Compliance: IOCL & Port Audits | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="jagatsinghpur-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-OD">
+            <meta name="geo.placename" content="Paradip, Jagatsinghpur, Odisha">
+            <meta name="geo.position" content="20.3166;86.6114">
+            <meta name="ICBM" content="20.3166, 86.6114">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for Paradip Port contractors, IOCL refinery vendors and PCPIR petrochemical units."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/jagatsinghpur-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Paradip EPF & ESIC Compliance"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Jagatsinghpur’s port and petrochemical ecosystem."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-jagatsinghpur"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/jagatsinghpur-paradip-epf-esic-compliance#organization",
 
-            name:
-              "Paradip EPF & ESIC Compliance Consultants | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Advisory for Paradip Port & IOCL Vendors",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Specialists for Paradip Port & IOCL Contractors",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/jagatsinghpur-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Paradip EPF & ESIC Compliance Experts for Port, PCPIR & IOCL Vendors",
 
-            /* CONSISTENT ADDRESS */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/jagatsinghpur-paradip-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ DISTRICT-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Jagatsinghpur",
+            addressRegion: "Odisha",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance specialists for Paradip Port contractors, IOCL refinery vendors and PCPIR petrochemical units under RO Bhubaneswar.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 20.3166,
+            longitude: 86.6114,
+          },
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Jagatsinghpur District" },
-              { "@type": "Place", name: "Paradip Port" },
-              { "@type": "Place", name: "IOCL Paradip Refinery" },
-              { "@type": "Place", name: "PCPIR Odisha" },
-            ],
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Jagatsinghpur District" },
+            { "@type": "Place", name: "Paradip Port" },
+            { "@type": "Place", name: "IOCL Paradip Refinery" },
+            { "@type": "Place", name: "PCPIR Odisha" },
+            { "@type": "Place", name: "Paradeep Industrial Area" },
+          ],
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "91",
-            },
-          }),
-        }}
-      />
+          description:
+            "EPF & ESIC compliance services for Paradip Port contractors, IOCL refinery vendors, shipping agents and PCPIR petrochemical units in Jagatsinghpur district. Coverage includes RO Bhubaneswar inspections, EPF Section 7A proceedings, EEC-2025 voluntary enrolment and maritime Principal Employer liability defence.",
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "91",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry
           data={heroDataJagatsinghpurDistrict}
@@ -168,8 +144,47 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqJagatsinghpurDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-jagatsinghpur" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

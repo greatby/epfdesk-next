@@ -1,5 +1,3 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
@@ -13,28 +11,22 @@ import {
   faqRaipurDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Raipur EPF & ESIC Compliance: Urla-Siltara Steel Hub Audits, EEC-2025 & PE Liability | EPFDesk",
+
   description:
     "Expert EPF & ESIC defense for Raipur steel plants, sponge iron units and MSMEs. Navigate RO Raipur audits, EEC-2025 enrolment and Principal Employer liability.",
-  keywords: [
-    "Raipur PF consultant",
-    "Urla steel plant EPF compliance",
-    "Siltara sponge iron ESIC",
-    "RO Raipur EPF 7A defense",
-    "EEC 2025 PF enrolment Raipur",
-    "Principal Employer liability Raipur",
-  ],
+
   alternates: {
     canonical: "https://epfdesk.com/raipur-epf-esic-compliance",
   },
+
   openGraph: {
-    title:
-      "Raipur EPF & ESIC Compliance | Steel, Power & Manufacturing",
+    title: "Raipur EPF & ESIC Compliance | Steel, Power & Manufacturing",
     description:
       "PF & ESIC specialists for Raipur steel clusters, sponge iron units and industrial MSMEs.",
     url: "https://epfdesk.com/raipur-epf-esic-compliance",
@@ -49,118 +41,90 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Raipur EPF & ESIC Compliance | Steel & Industrial Hub",
+    title: "Raipur EPF & ESIC Compliance | Steel & Industrial Hub",
     description:
       "High-risk PF & ESIC compliance for Raipur’s steel and manufacturing clusters.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Raipur EPF & ESIC Compliance: Urla-Siltara Steel Hub Audits, EEC-2025 & PE Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="raipur-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-CG">
+            <meta name="geo.placename" content="Raipur">
+            <meta name="geo.position" content="21.2514;81.6296">
+            <meta name="ICBM" content="21.2514, 81.6296">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for Raipur steel plants, sponge iron units and MSMEs under RO Raipur."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/raipur-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Raipur EPF & ESIC Compliance"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Raipur’s steel, power and manufacturing sectors."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-raipur"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/raipur-epf-esic-compliance#organization",
 
-            name:
-              "Raipur EPF & ESIC Compliance – Steel & Industrial Clusters | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Urla, Siltara & Birgaon",
+          name:
+            "EPFDesk – Raipur EPF & ESIC Compliance for Steel & Industrial Clusters",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/raipur-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "PF & ESIC Consultant for Urla, Siltara, Birgaon & Nava Raipur",
 
-            /* ✅ SAME ADDRESS */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/raipur-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Chhattisgarh",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance specialists for Raipur’s steel plants, sponge iron units, chemical factories and MSMEs governed by RO Raipur.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 21.2514,
+            longitude: 81.6296,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Raipur District" },
+            { "@type": "Place", name: "Urla Industrial Area" },
+            { "@type": "Place", name: "Siltara Industrial Area" },
+            { "@type": "Place", name: "Birgaon" },
+            { "@type": "Place", name: "Bhanpuri" },
+            { "@type": "Place", name: "Nava Raipur" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Raipur District" },
-              { "@type": "Place", name: "Urla Industrial Area" },
-              { "@type": "Place", name: "Siltara Industrial Area" },
-              { "@type": "Place", name: "Birgaon" },
-              { "@type": "Place", name: "Bhanpuri" },
-              { "@type": "Place", name: "Nava Raipur" },
-            ],
+          description:
+            "EPF & ESIC compliance specialists for Raipur’s steel plants, sponge iron units, chemical factories and MSMEs governed by RO Raipur, including EEC-2025 enrolment and Principal Employer liability defence.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "84",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "84",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataRaipurDistrict} />
       </FadeInWhenVisible>
@@ -169,9 +133,52 @@ const page = () => {
         <CodeOfConduct sections={sectionsRaipurDistrict} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqRaipurDistrict} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqRaipurDistrict} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-raipur" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,31 +10,38 @@ import {
   faqDharDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
-    "Dhar Pithampur EPF & ESIC Compliance: Auto Hub PE Liability, EEC-2025 & ESIC Amnesty 2025 | EPFDesk",
+    "Dhar Pithampur EPF & ESIC Compliance 2025: Auto Hub PE Liability, EEC-2025 & ESIC Amnesty | EPFDesk",
+
   description:
-    "Specialized EPF & ESIC defense for Pithampur auto-component units, Dhar pharma MNCs and MSMEs. Navigate RO Indore audits, EEC-2025 regularization and ESIC Amnesty 2025 settlement in MP’s DMIC auto hub.",
+    "Specialized EPF & ESIC compliance for Pithampur auto-component units, Dhar pharma MNCs and MSMEs. Experts in RO Indore audits, Principal Employer liability, EEC-2025 regularization and ESIC Amnesty settlements in MP’s DMIC auto hub.",
+
   keywords: [
     "Pithampur PF consultant",
     "Dhar EPF ESIC compliance",
     "Pithampur auto component PF audit",
     "ESIC registration Pithampur pharma",
-    "EEC 2025 enrolment Dhar",
+    "Principal Employer liability Pithampur",
     "RO Indore EPF 7A defense",
+    "EEC 2025 Dhar",
+    "ESIC Amnesty 2025 MP",
+    "DMIC auto hub compliance",
+    "EPFDesk Pithampur",
   ],
+
   alternates: {
-    canonical: "https://epfdesk.com/dhar-pithampur-epf-esic-compliance",
+    canonical: "https://epfdesk.com/dhar-epf-esic-compliance",
   },
+
   openGraph: {
-    title:
-      "Dhar Pithampur EPF & ESIC Compliance | Auto Hub & DMIC | EPFDesk",
+    title: "Dhar Pithampur EPF & ESIC Compliance | Auto & Pharma Hub",
     description:
-      "PF & ESIC specialists for Pithampur auto, pharma and SEZ units governed by RO Indore.",
-    url: "https://epfdesk.com/dhar-pithampur-epf-esic-compliance",
+      "PF & ESIC specialists for Pithampur auto, pharma, SEZ and DMIC manufacturing clusters governed by RO Indore.",
+    url: "https://epfdesk.com/dhar-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
@@ -49,116 +53,85 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Dhar Pithampur EPF & ESIC Compliance | Auto & Pharma Hub",
-    description:
-      "High-risk PF & ESIC compliance for Pithampur auto, pharma and SEZ clusters.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
+/* ===========================
    PAGE COMPONENT
-============================ */
-const page = () => {
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Dhar Pithampur EPF & ESIC Compliance: Auto Hub PE Liability, EEC-2025 & ESIC Amnesty 2025 | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="dhar-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MP">
+            <meta name="geo.placename" content="Dhar Pithampur">
+            <meta name="geo.position" content="22.6206;75.6822">
+            <meta name="ICBM" content="22.6206, 75.6822">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for Dhar district’s Pithampur auto hub, pharma MNCs and MSMEs under RO Indore."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/dhar-pithampur-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Dhar Pithampur EPF & ESIC Compliance | Auto Hub"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Pithampur auto, pharma and SEZ manufacturing clusters."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-dhar-pithampur"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/dhar-epf-esic-compliance#organization",
 
-            name: "Dhar Pithampur EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Pithampur Auto & Pharma Hub",
+          name: "EPFDesk – EPF & ESIC Consultants for Dhar & Pithampur",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/dhar-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/dhar-pithampur-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          /* ✅ DISTRICT-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Pithampur",
+            addressRegion: "Madhya Pradesh",
+            postalCode: "454775",
+            addressCountry: "IN",
+          },
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 22.6206,
+            longitude: 75.6822,
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Dhar District" },
+            { "@type": "Place", name: "Pithampur Industrial Area" },
+            { "@type": "Place", name: "Pithampur SEZ" },
+            { "@type": "Place", name: "PDMIR (DMIC)" },
+            { "@type": "Place", name: "Mhow" },
+            { "@type": "Place", name: "Dhar City" },
+          ],
 
-            description:
-              "EPF & ESIC compliance specialists for Dhar district’s Pithampur auto hub, pharma MNCs, SEZs and Tier-2/3 vendors governed by RO Indore.",
+          description:
+            "EPF & ESIC compliance services for Dhar district’s Pithampur auto hub, pharma MNCs, SEZ units and Tier-2/3 vendors. Expertise in Principal Employer liability, EPFO inspections, EEC-2025 enrolment and ESIC Amnesty settlements under RO Indore.",
 
-            priceRange: "₹₹₹",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "75",
+          },
+        })}
+      </Script>
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Dhar District" },
-              { "@type": "Place", name: "Pithampur Industrial Area" },
-              { "@type": "Place", name: "PDMIR" },
-              { "@type": "Place", name: "Pithampur SEZ" },
-              { "@type": "Place", name: "Mhow" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "75",
-            },
-          }),
-        }}
-      />
-
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataDharDistrict} />
       </FadeInWhenVisible>
@@ -168,8 +141,41 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqDharDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-dhar" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

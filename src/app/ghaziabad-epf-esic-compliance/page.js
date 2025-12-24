@@ -1,29 +1,35 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { faqGhaziabad, heroDataGhaziabadDist, sectionsGhaziabadDist } from "@/utils/data";
+
+import {
+  heroDataGhaziabadDist,
+  sectionsGhaziabadDist,
+  faqGhaziabad,
+} from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
 =========================== */
 export const metadata = {
   title:
-    "Ghaziabad EPF & ESIC Compliance: Sahibabad PE Liability, Hazard Risk & Engineering MSME Defense | EPFDesk",
+    "Ghaziabad EPF & ESIC Compliance 2025: Sahibabad PE Liability, Hazard Risk & Engineering MSMEs | EPFDesk",
 
   description:
-    "Critical EPF & ESIC defense for Ghaziabad MSMEs and heavy engineering industries in Sahibabad and Loni. Experts in RO Ghaziabad liaison, CLRA/Principal Employer liability mitigation, Minimum Wage audits, and ESIC hazard risk management across NCR.",
+    "Critical EPF & ESIC compliance defense for Ghaziabad engineering MSMEs and heavy industries in Sahibabad, Loni and Trans-Hindon. Specialists in RO Ghaziabad audits, CLRA Principal Employer liability, ESIC hazard exposure and Minimum Wage enforcement.",
 
   keywords: [
     "Ghaziabad PF consultant",
-    "Ghaziabad ESIC registration",
+    "Ghaziabad ESIC consultant",
     "Sahibabad PE liability PF ESIC",
     "Engineering MSME PF compliance Ghaziabad",
     "ESIC hazard liability heavy industry",
-    "RO Ghaziabad EPFO consultant",
+    "RO Ghaziabad EPFO jurisdiction",
+    "CLRA contractor compliance Ghaziabad",
+    "Minimum Wage audit Ghaziabad",
+    "EPFDesk Ghaziabad",
   ],
 
   alternates: {
@@ -50,10 +56,6 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Ghaziabad EPF & ESIC Compliance | PE Liability & Hazard Risk | EPFDesk",
-    description:
-      "Expert PF/ESIC compliance for Ghaziabad engineering MSMEs and heavy industry clusters.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
@@ -61,96 +63,75 @@ export const metadata = {
 /* ===========================
    PAGE COMPONENT
 =========================== */
-const page = () => {
+export default function Page() {
   return (
     <>
-      {/* ========= LEGACY HEAD ========= */}
-      <Head>
-        <title>
-          Ghaziabad EPF & ESIC Compliance: Sahibabad PE Liability, Hazard Risk & Engineering MSME Defense | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="ghaziabad-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-UP">
+            <meta name="geo.placename" content="Ghaziabad">
+            <meta name="geo.position" content="28.6692;77.4538">
+            <meta name="ICBM" content="28.6692, 77.4538">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defense for Ghaziabad engineering factories and MSMEs in Sahibabad and Loni. Principal Employer liability, ESIC hazard exposure, Minimum Wage audits and RO Ghaziabad enforcement handled."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/ghaziabad-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Ghaziabad EPF & ESIC Compliance | Engineering & MSME Risk"
-        />
-        <meta
-          property="og:description"
-          content="Experts in PF/ESIC for Ghaziabad engineering, steel and chemical MSMEs. PE liability and ESIC hazard risk managed."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ========= SCHEMA (ADDRESS UNCHANGED) ========= */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-ghaziabad"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/ghaziabad-epf-esic-compliance#organization",
 
-            name:
-              "Ghaziabad EPF & ESIC Compliance Service | Engineering & MSME | EPFDesk",
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Ghaziabad District",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/ghaziabad-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Sahibabad & Loni Industrial Areas",
+          /* ✅ DISTRICT-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Ghaziabad",
+            addressRegion: "Uttar Pradesh",
+            postalCode: "201001",
+            addressCountry: "IN",
+          },
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/ghaziabad-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 28.6692,
+            longitude: 77.4538,
+          },
 
-            /* 🔒 ADDRESS — SAME AS ALL OTHER PAGES */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Ghaziabad District" },
+            { "@type": "Place", name: "Sahibabad Industrial Area" },
+            { "@type": "Place", name: "Loni" },
+            { "@type": "Place", name: "Trans-Hindon Industrial Belt" },
+            { "@type": "Place", name: "Ghaziabad City" },
+          ],
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          description:
+            "EPF & ESIC compliance services for Ghaziabad engineering factories, steel units, chemical MSMEs and contractor-driven industries. Expertise in CLRA Principal Employer liability, ESIC hazardous process exposure, Minimum Wage audits and RO Ghaziabad proceedings.",
 
-            description:
-              "Critical PF & ESIC compliance services for Ghaziabad engineering factories, steel and chemical MSMEs. Specialized in Principal Employer liability under CLRA, ESIC hazard exposure, Minimum Wage audits, and RO Ghaziabad proceedings.",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "89",
+          },
+        })}
+      </Script>
 
-            priceRange: "₹₹",
-
-            areaServed: [
-              { "@type": "City", name: "Ghaziabad" },
-              { "@type": "City", name: "Sahibabad" },
-              { "@type": "City", name: "Loni" },
-              { "@type": "City", name: "Ghaziabad City" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "89",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataGhaziabadDist} />
       </FadeInWhenVisible>
@@ -160,8 +141,39 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqGhaziabad} />
+       <Script id="conversion-tracking-ghaziabad" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

@@ -1,25 +1,27 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
-import ThreeStepSection from "@/components/ThreeStepSection";
-import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
 
-import Script from "next/script";
-import { heroDataBharuchDist, sectionsBharuchDist } from "@/utils/data";
+import {
+  heroDataBharuchDist,
+  sectionsBharuchDist,
+} from "@/utils/data";
+
+/* ===========================
+   METADATA (DISTRICT PAGE)
+=========================== */
 export const metadata = {
   title:
     "Bharuch PF & ESI Expert: NWC 2025 Ready Compliance for Ankleshwar GIDC, Dahej SIR & PCPIR Corridor | EPFDesk",
   description:
-    "EPFDesk offers PF & ESIC compliance services in Bharuch with NWC 2025-ready payroll for MNCs in the PCPIR region. Expertise in PF audits, ESIC inspections, contractor compliance, and statutory adherence for chemical & pharma units in Ankleshwar GIDC and Dahej Port.",
+    "EPFDesk provides PF & ESIC compliance in Bharuch with NWC 2025–ready payrolls for MNCs in Ankleshwar GIDC, Dahej SIR and the PCPIR corridor. Expertise in PF audits, ESIC inspections, contractor compliance and chemical industry statutory adherence.",
   keywords: [
     "Bharuch PF consultant",
-    "ESI consultant Bharuch",
+    "ESIC consultant Bharuch",
     "Ankleshwar GIDC PF compliance",
     "Dahej SIR ESIC compliance",
     "PCPIR chemical hub PF ESIC",
-    "PF & ESIC consultant Bharuch",
     "NWC 2025 payroll compliance Gujarat",
     "EPFDesk Bharuch",
   ],
@@ -30,7 +32,7 @@ export const metadata = {
     title:
       "Bharuch PF & ESI Expert | Ankleshwar GIDC & Dahej SIR Compliance | EPFDesk",
     description:
-      "Specialised PF & ESIC compliance for Bharuch’s PCPIR chemical corridor, Ankleshwar GIDC, and Dahej SIR. End-to-end payroll restructuring, contractor audits, and NWC 2025 readiness.",
+      "Specialised PF & ESIC compliance for Bharuch’s PCPIR chemical corridor, Ankleshwar GIDC and Dahej SIR with NWC-2025 payroll restructuring.",
     url: "https://epfdesk.com/bharuch-epf-esic-compliance",
     siteName: "EPFDesk",
     images: [
@@ -38,7 +40,7 @@ export const metadata = {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "EPFDesk Bharuch PF ESIC Compliance",
+        alt: "Bharuch PF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -46,146 +48,194 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Bharuch PF & ESI Expert | Ankleshwar GIDC & Dahej SIR Compliance | EPFDesk",
-    description:
-      "EPFDesk delivers PF, ESIC, and NWC 2025 compliance expertise for Bharuch’s chemical industry clusters including Ankleshwar GIDC & Dahej Port.",
     images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
-
-const page = () => {
+/* ===========================
+   PAGE COMPONENT
+=========================== */
+export default function Page() {
   return (
-    <><Head>
-        <title>
-          Bharuch PF & ESI Expert: NWC 2025 Ready Compliance for Ankleshwar
-          GIDC, Dahej SIR & PCPIR Corridor | EPFDesk
-        </title>
+    <>
+      {/* ========= GEO + EXTRA META ========= */}
+      <Script id="bharuch-geo-meta" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-GJ">
+            <meta name="geo.placename" content="Bharuch">
+            <meta name="geo.position" content="21.7051;72.9959">
+            <meta name="ICBM" content="21.7051, 72.9959">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/bharuch-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/bharuch-epf-esic-compliance">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPFDesk offers PF & ESIC compliance services in Bharuch with NWC 2025-ready payroll for MNCs in the PCPIR region. Expertise in contractor audits, PF inspections, ESIC adherence, and statutory compliance for chemical & pharma units in Ankleshwar GIDC and Dahej Port."
-        />
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/bharuch-epf-esic-compliance"
-        />
-
-        <meta
-          name="keywords"
-          content="Bharuch PF consultant, ESIC consultant Bharuch, Ankleshwar GIDC PF compliance, Dahej SIR ESIC compliance, PCPIR chemical hub compliance, PF ESIC Gujarat, EPFDesk Bharuch, NWC 2025 payroll"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Bharuch PF & ESI Expert | Ankleshwar GIDC & Dahej SIR Compliance | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="Specialised PF & ESIC compliance for Bharuch’s PCPIR chemical corridor, Ankleshwar GIDC, and Dahej SIR. End-to-end payroll restructuring, contractor audits, and NWC 2025 readiness."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/bharuch-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Bharuch PF & ESI Expert | Ankleshwar GIDC & Dahej SIR Compliance | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="End-to-end PF & ESIC compliance services for Bharuch’s chemical manufacturing ecosystem including Ankleshwar GIDC & Dahej Port."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
+      {/* ========= LOCAL BUSINESS SCHEMA ========= */}
       <Script
-        id="schema-bharuch"
+        id="schema-bharuch-localbusiness"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/bharuch-epf-esic-compliance#organization",
 
-            name: "Bharuch PF & ESI Expert: NWC 2025 Ready Compliance for Ankleshwar GIDC, Dahej SIR, and the PCPIR Corridor | EPFDesk",
-            alternateName: "EPFDesk – Bharuch PCPIR & Chemical Hub Compliance",
+          name: "EPFDesk – PF & ESIC Consultants Bharuch",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/bharuch-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/bharuch-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Bharuch",
+            addressRegion: "Gujarat",
+            postalCode: "392001",
+            addressCountry: "IN",
+          },
 
-            // Address remains unchanged
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 21.7051,
+            longitude: 72.9959,
+          },
+
+          areaServed: {
+            "@type": "AdministrativeArea",
+            name: "Bharuch District",
+            containedIn: {
+              "@type": "State",
+              name: "Gujarat",
             },
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
-
-            description:
-              "EPFDesk offers EPF and ESIC compliance in Bharuch, specializing in NWC 2025 payroll for MNCs operating within the PCPIR region. We ensure 100% statutory adherence for pharma and chemical units in Ankleshwar GIDC and Dahej Port, including expert PF and ESI liability resolution. Bharuch’s compliance landscape is shaped by large-scale MNC operations, chemical safety regulations, and project-based labour in the Dahej PCPIR and Ankleshwar industrial corridor.",
-
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
-
-            priceRange: "₹₹",
-
-            areaServed: [
-              { "@type": "City", name: "Bharuch" },
-              { "@type": "Place", name: "Ankleshwar GIDC" },
-              { "@type": "Place", name: "Dahej SIR" },
-              { "@type": "Place", name: "PCPIR Corridor" },
-              { "@type": "Place", name: "Dahej Port" },
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Chemical & PCPIR Compliance Services",
+            itemListElement: [
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "PCPIR & Chemical Industry PF ESIC Compliance",
+                  description:
+                    "PF, ESIC and hazardous industry compliance for chemical and petrochemical units in the PCPIR corridor",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Ankleshwar GIDC & Dahej SIR Contractor Audits",
+                  description:
+                    "Principal Employer liability management, CLRA audits and ESIC inspections for GIDC & SIR units",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "NWC 2025 Payroll Restructuring",
+                  description:
+                    "50% basic wage compliance, allowance restructuring and future-ready payroll design for MNCs",
+                },
+              },
             ],
+          },
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "47",
-            },
-          }),
-        }}
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "47",
+          },
+        })}
+      </Script>
+
+      {/* ========= GOOGLE ANALYTICS ========= */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-WMNLTE5RKQ"
+        strategy="afterInteractive"
       />
+      <Script id="ga-bharuch" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
+          gtag('config', 'G-WMNLTE5RKQ', {
+            page_location: window.location.href,
+            page_title: document.title,
+            custom_map: {
+              dimension1: 'district',
+              dimension2: 'state'
+            }
+          });
+
+          gtag('event', 'page_view', {
+            district: 'Bharuch',
+            state: 'Gujarat',
+            page_type: 'district_landing'
+          });
+        `}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataBharuchDist} />
       </FadeInWhenVisible>
+
       <FadeInWhenVisible>
         <CodeOfConduct sections={sectionsBharuchDist} />
       </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-bharuch" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

@@ -1,17 +1,23 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
-import ThreeStepSection from "@/components/ThreeStepSection";
-import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { heroDataMaduraiDist, sectionsMaduraiDist } from "@/utils/data";
+
+import {
+  heroDataMaduraiDist,
+  sectionsMaduraiDist,
+} from "@/utils/data";
+
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Madurai Labour Compliance Analysis: Risk in Granite, Textiles & MSME EPF/ESIC Adherence | EPFDesk",
+
   description:
-    "EPFDesk provides expert EPF, ESIC and NWC 2025 compliance analysis for Madurai’s labour-intensive sectors including granite processing, textile mills, powerloom clusters and MSME manufacturing. We identify statutory risks, contractor liability gaps, workforce documentation issues and provide practical compliance strategies for local industries.",
+    "EPFDesk provides expert EPF, ESIC and NWC 2025 compliance analysis for Madurai’s granite processing units, textile mills, powerloom clusters and MSME manufacturing. Identify statutory risks, contractor liability gaps and workforce documentation issues.",
+
   keywords: [
     "Madurai PF consultant",
     "Madurai ESIC consultant",
@@ -22,16 +28,18 @@ export const metadata = {
     "NWC 2025 Madurai payroll",
     "contractor compliance Tamil Nadu",
     "EPF inspection risk analysis Madurai",
-    "EPFDesk Madurai",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/madurai-epf-esic-compliance",
   },
+
+  /* ✅ OPEN GRAPH */
   openGraph: {
     title:
-      "Madurai EPF & ESIC Compliance | Granite, Textile & MSME Labour Risk Analysis | EPFDesk",
+      "Madurai EPF & ESIC Compliance | Granite, Textile & MSME Labour Risk Analysis",
     description:
-      "Specialized EPF & ESIC compliance insights for Madurai’s granite, textile and MSME sectors. Identify high-risk labour zones, statutory gaps, contractor liabilities and NWC 2025 readiness challenges.",
+      "EPF & ESIC risk-focused compliance insights for Madurai’s granite, textile and MSME sectors. Contractor liability, statutory gaps and NWC 2025 readiness.",
     url: "https://epfdesk.com/madurai-epf-esic-compliance",
     siteName: "EPFDesk",
     images: [
@@ -39,156 +47,148 @@ export const metadata = {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "EPFDesk Madurai PF ESIC Compliance",
+        alt: "Madurai EPF & ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
 
+  /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
     title:
-      "Madurai Labour Compliance Analysis | Granite, Textile & MSME EPF/ESIC Risks | EPFDesk",
+      "Madurai Labour Compliance | Granite, Textile & MSME EPF/ESIC Risks",
     description:
-      "EPFDesk supports Madurai's industries with risk-focused EPF/ESIC audits, contractor compliance assessment, NWC 2025 payroll restructuring and sector-specific labour law mapping.",
+      "Risk-based EPF/ESIC compliance strategies for Madurai’s granite, textile, powerloom and MSME sectors.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Madurai Labour Compliance Analysis: Risk in Granite, Textiles & MSME
-          EPF/ESIC Adherence | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="madurai-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-TN">
+            <meta name="geo.placename" content="Madurai, Tamil Nadu, India">
+            <meta name="geo.position" content="9.9252;78.1198">
+            <meta name="ICBM" content="9.9252, 78.1198">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPFDesk provides EPF, ESIC and NWC 2025 compliance analysis for Madurai’s granite, textile and MSME sectors—highlighting labour risks, contractor liabilities, documentation gaps and statutory compliance challenges."
-        />
-
-        <meta
-          name="keywords"
-          content="Madurai PF consultant, granite labour compliance, textile PF ESIC Madurai, powerloom compliance Tamil Nadu, MSME EPF ESIC Madurai, NWC 2025 compliance, contractor risk audits TN, labour documentation Madurai, EPF inspection readiness, EPFDesk Madurai"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/madurai-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Madurai EPF & ESIC Compliance | Granite, Textile & MSME Labour Risk | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="Compliance and labour risk insights for Madurai’s granite, textile and MSME industries. Contractor audits, risk assessment and NWC 2025 payroll solutions included."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/madurai-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Madurai Labour Compliance | Granite, Textile & MSME Sectors | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="Risk-based EPF/ESIC compliance strategies for Madurai’s key industrial sectors: granite, powerlooms, textiles and MSMEs. NWC 2025 readiness and contractor liability audits."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-madurai"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/madurai-epf-esic-compliance#organization",
 
-            name: "Madurai Labour Compliance Analysis: Risk in Granite, Textiles, and MSME EPF/ESIC Adherence",
-            alternateName:
-              "EPFDesk – Madurai Granite, Textile & MSME Compliance Experts",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Consultants for Madurai District",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/madurai-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Madurai Granite, Textile & MSME EPF/ESIC Compliance Analysis",
 
-            // Global address format maintained across all schemas
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/madurai-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Madurai",
+            addressRegion: "Tamil Nadu",
+            addressCountry: "IN",
+          },
 
-            description:
-              "Navigate Madurai's complex labour landscape with EPFDesk. We provide critical compliance insights for the granite, textile, and MSME sectors, along with hyper-local strategies for EPF, ESIC, and New Wage Code (NWC 2025) preparedness.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 9.9252,
+            longitude: 78.1198,
+          },
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Madurai District" },
+            { "@type": "Place", name: "Granite Processing Units" },
+            { "@type": "Place", name: "Textile Mills" },
+            { "@type": "Place", name: "Powerloom Clusters" },
+            { "@type": "Place", name: "MSME Manufacturing Units" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPF & ESIC compliance risk analysis for Madurai’s granite, textile, powerloom and MSME sectors. Services include contractor liability mapping, workforce documentation audits and New Wage Code 2025 readiness strategies.",
 
-            areaServed: [
-              { "@type": "City", name: "Madurai" },
-              { "@type": "Place", name: "Granite Industry Belt" },
-              { "@type": "Place", name: "Textile Mills & Powerloom Clusters" },
-              { "@type": "Place", name: "Madurai MSME Industrial Units" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "47",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "47",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataMaduraiDist} />
       </FadeInWhenVisible>
+
       <FadeInWhenVisible>
         <CodeOfConduct sections={sectionsMaduraiDist} />
       </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-madurai" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

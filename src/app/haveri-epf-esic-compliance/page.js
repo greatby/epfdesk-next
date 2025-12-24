@@ -1,10 +1,8 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
 
 import {
   heroDataHaveriDist,
@@ -12,37 +10,43 @@ import {
   faqHaveri,
 } from "@/utils/data";
 
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Haveri EPF & ESIC Compliance for Textile Mills, Cotton Ginning & Seasonal Agro-Processing | EPFDesk",
+
   description:
-    "Expert PF & ESIC compliance for Haveri’s textile mills, cotton ginning units and agro-processing industries. Specialists in PF for piece-rate workers, ESIC for seasonal labor and NWC 2025 wage definition compliance.",
+    "Expert PF & ESIC compliance for Haveri’s textile mills, cotton ginning units and agro-processing industries. Specialists in PF for piece-rate workers, ESIC for seasonal labour and NWC 2025 wage definition compliance.",
+
   keywords: [
     "Haveri PF consultant",
     "Haveri ESIC consultant",
-    "Textile mill PF ESIC",
+    "textile mill PF ESIC Haveri",
     "cotton ginning PF ESIC",
-    "PF on piece-rate wages",
-    "seasonal worker PF ESI Karnataka",
-    "Haveri agro-processing compliance",
+    "piece-rate wage PF Karnataka",
+    "seasonal worker PF ESI Haveri",
+    "agro-processing compliance Haveri",
     "EPFDesk Haveri",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/haveri-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Haveri EPF & ESIC Consultant | Textile Mills, Cotton Ginning & Agro-Processing | EPFDesk",
+      "Haveri EPF & ESIC Compliance | Textile, Cotton Ginning & Agro-Processing",
     description:
-      "PF & ESIC compliance for Haveri’s textile and agro-industrial sector, including piece-rate wages, seasonal ESIC obligations and NWC 2025 implementation.",
+      "PF & ESIC specialists for Haveri’s textile mills, cotton ginning clusters and seasonal agro-processing industries.",
     url: "https://epfdesk.com/haveri-epf-esic-compliance",
-    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "EPFDesk Haveri PF ESIC Compliance",
+        alt: "Haveri EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -51,132 +55,82 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Haveri EPF & ESIC Compliance | Textile, Ginning & Agro-Processing | EPFDesk",
-    description:
-      "PF/ESI solutions for textile mills, cotton ginning units and seasonal agro-processing industries in Haveri.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE COMPONENT
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Haveri EPF & ESIC Compliance for Textile Mills, Cotton Ginning &
-          Agro-Processing | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="haveri-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-KA">
+            <meta name="geo.placename" content="Haveri">
+            <meta name="geo.position" content="14.7951;75.3975">
+            <meta name="ICBM" content="14.7951, 75.3975">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="PF & ESIC compliance for Haveri’s seasonal and piece-rate industries: textile mills, cotton ginning units and agro-processing mills."
-        />
-
-        <meta
-          name="keywords"
-          content="Haveri PF ESIC, cotton ginning PF, textile mill piece-rate PF, agro-processing ESIC Karnataka, Haveri labour compliance"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/haveri-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Haveri EPF & ESIC Consultant | Textile, Ginning & Agro-Processing | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance experts for Haveri’s textile, ginning and agro-processing sectors."
-        />
-        <meta property="og:image" content="https://epfdesk.com/images/logo.jpg" />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/haveri-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Haveri PF & ESIC Compliance | Textile & Agro Industry | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF/ESI solutions for Haveri’s seasonal workforce, piece-rate wage structures and textile compliance risks."
-        />
-        <meta name="twitter:image" content="https://epfdesk.com/images/logo.jpg" />
-      </Head>
-
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-haveri"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/haveri-epf-esic-compliance#organization",
 
-            name: "Haveri EPF & ESIC Compliance | Textile, Cotton Ginning & Agro-Processing | EPFDesk",
-            alternateName:
-              "EPFDesk – Haveri PF ESIC Consultants for Textiles & Agro Units",
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Haveri Textile & Agro Industries",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/haveri-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/haveri-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          /* ✅ DISTRICT-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Haveri",
+            addressRegion: "Karnataka",
+            postalCode: "581110",
+            addressCountry: "IN",
+          },
 
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 14.7951,
+            longitude: 75.3975,
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 14.7951,
-              longitude: 75.3975,
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Haveri District" },
+            { "@type": "Place", name: "Cotton Ginning Clusters" },
+            { "@type": "Place", name: "Textile Mills" },
+            { "@type": "Place", name: "Agro-Processing Units" },
+            { "@type": "Place", name: "Seasonal Labour Belt" },
+          ],
 
-            description:
-              "Haveri’s textile mills, cotton ginning units and agro-processing industries require strict PF/ESI compliance for seasonal and piece-rate workers. EPFDesk specializes in NWC wage alignment, PF audits and ESIC seasonal coverage.",
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          description:
+            "EPF & ESIC compliance services for Haveri district covering textile mills, cotton ginning units and agro-processing industries. Expertise in PF for piece-rate wages, ESIC for seasonal workers, and New Wage Code 2025 compliance.",
 
-            priceRange: "₹₹",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "42",
+          },
+        })}
+      </Script>
 
-            areaServed: [
-              { "@type": "City", name: "Haveri" },
-              { "@type": "Place", name: "Cotton Ginning Cluster" },
-              { "@type": "Place", name: "Textile Mills" },
-              { "@type": "Place", name: "Agro-Processing Units" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "42",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataHaveriDist} />
       </FadeInWhenVisible>
@@ -185,9 +139,50 @@ const page = () => {
         <CodeOfConduct sections={sectionsHaveriDist} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqHaveri} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqHaveri} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-haveri" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

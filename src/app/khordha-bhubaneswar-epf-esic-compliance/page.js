@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,14 +10,16 @@ import {
   faqKhordhaDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Bhubaneswar EPF & ESIC Compliance: IT Sector Audits & Expert Consultants in Khordha | EPFDesk",
+
   description:
-    "Expert EPF & ESIC consultancy for Bhubaneswar IT firms, startups and manufacturing units. Navigate RO Bhubaneswar audits, O-Hub compliance and New Labour Code transitions.",
+    "Expert EPF & ESIC consultancy for Bhubaneswar IT firms, startups, healthcare units and manufacturing establishments. Navigate RO Bhubaneswar audits, O-Hub compliance and New Labour Code transitions.",
+
   keywords: [
     "Bhubaneswar PF consultant",
     "EPF ESIC compliance Khordha",
@@ -29,138 +28,88 @@ export const metadata = {
     "RO Bhubaneswar EPF 7A defense",
     "50% wage rule IT sector Odisha",
   ],
+
   alternates: {
-    canonical: "https://epfdesk.com/bhubaneswar-khordha-epf-esic-compliance",
-  },
-  openGraph: {
-    title:
-      "Bhubaneswar EPF & ESIC Compliance | IT & Services Hub",
-    description:
-      "PF & ESIC specialists for Bhubaneswar IT, startup, healthcare and service-sector establishments governed by RO Bhubaneswar.",
-    url: "https://epfdesk.com/bhubaneswar-khordha-epf-esic-compliance",
-    images: [
-      {
-        url: "https://epfdesk.com/images/logo.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Bhubaneswar EPF ESIC Compliance",
-      },
-    ],
-    locale: "en_IN",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "Bhubaneswar EPF & ESIC Consultants | Khordha District",
-    description:
-      "High-risk PF & ESIC compliance for IT, startups and service-sector employers in Bhubaneswar.",
-    images: ["https://epfdesk.com/images/logo.jpg"],
+    canonical: "https://epfdesk.com/khordha-bhubaneswar-epf-esic-compliance",
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Bhubaneswar EPF & ESIC Compliance: IT Sector Audits | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="khordha-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-OD">
+            <meta name="geo.placename" content="Bhubaneswar, Khordha District, Odisha">
+            <meta name="geo.position" content="20.2961;85.8245">
+            <meta name="ICBM" content="20.2961, 85.8245">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for Bhubaneswar IT companies, startups, hospitals and MSMEs under RO Bhubaneswar."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/bhubaneswar-khordha-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Bhubaneswar EPF & ESIC Compliance"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Khordha district’s IT and service ecosystem."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-khordha"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/khordha-bhubaneswar-epf-esic-compliance#organization",
 
-            name:
-              "Bhubaneswar EPF & ESIC Compliance Consultants | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Advisory for Khordha IT & Service Hub",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Consultants for Bhubaneswar & Khordha District",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/bhubaneswar-khordha-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Bhubaneswar EPF & ESIC Compliance for IT, Startups & Service Sector",
 
-            /* ✅ SAME ADDRESS */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/khordha-bhubaneswar-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ DISTRICT-ACCURATE ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Bhubaneswar",
+            addressRegion: "Odisha",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance specialists for Bhubaneswar IT companies, startups, hospitals, manufacturing units and service-sector employers governed by RO Bhubaneswar.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 20.2961,
+            longitude: 85.8245,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Khordha District" },
+            { "@type": "Place", name: "Bhubaneswar" },
+            { "@type": "Place", name: "Infocity Bhubaneswar" },
+            { "@type": "Place", name: "Patia IT Corridor" },
+            { "@type": "Place", name: "Mancheswar Industrial Area" },
+            { "@type": "Place", name: "Chandaka Industrial Estate" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Khordha District" },
-              { "@type": "Place", name: "Bhubaneswar" },
-              { "@type": "Place", name: "Infocity Bhubaneswar" },
-              { "@type": "Place", name: "Patia" },
-              { "@type": "Place", name: "Mancheswar Industrial Area" },
-              { "@type": "Place", name: "Chandaka Industrial Estate" },
-            ],
+          description:
+            "EPF & ESIC compliance services for Bhubaneswar IT companies, startups, healthcare units, manufacturing plants and service-sector employers. Expertise includes RO Bhubaneswar audit defense, ESIC applicability for IT sector, New Wage Code restructuring and contractor liability control.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "88",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "88",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataKhordhaDistrict} />
       </FadeInWhenVisible>
@@ -170,8 +119,52 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqKhordhaDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script
+        id="conversion-tracking-khordha"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

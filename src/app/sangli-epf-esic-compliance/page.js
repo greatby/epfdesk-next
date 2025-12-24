@@ -1,6 +1,5 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
+import React from "react";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
@@ -13,30 +12,25 @@ import {
   faqSangliDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Sangli EPF & ESIC Compliance for Sugar Mills, Kupwad Foundries & Agro Processing | EPFDesk",
+
   description:
     "Expert EPF & ESIC defence for Sangli sugar factories, PF liability on Retention Allowance, mandatory ESIC for Kupwad foundry and casting units, and turmeric processing compliance. Specialists in PE liability and RO Solapur liaison.",
-  keywords: [
-    "Sangli PF consultant",
-    "Sugar mill PF retention allowance Sangli",
-    "Kupwad foundry ESIC compliance",
-    "Foundry hazard ESIC Maharashtra",
-    "Turmeric processing PF ESIC",
-    "EPFO 7A Sangli sugar mills",
-  ],
+
   alternates: {
     canonical: "https://epfdesk.com/sangli-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Sangli EPF & ESIC Compliance | Sugar Mills & Foundry Sector | EPFDesk",
+      "Sangli EPF & ESIC Compliance | Sugar Mills & Foundry Sector",
     description:
-      "PF & ESIC specialists for Sangli sugar factories, Kupwad foundries, and agro-processing industries.",
+      "PF & ESIC specialists for Sangli sugar factories, Kupwad foundries and agro-processing industries.",
     url: "https://epfdesk.com/sangli-epf-esic-compliance",
     images: [
       {
@@ -49,115 +43,98 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title:
-      "Sangli EPF & ESIC Compliance | Sugar & Foundry Industry | EPFDesk",
+      "Sangli EPF & ESIC Compliance | Sugar & Foundry Industry",
     description:
-      "High-risk EPF & ESIC compliance for Sangli sugar mills, retention allowance audits, and Kupwad foundry units.",
+      "High-risk EPF & ESIC compliance for Sangli sugar mills, retention allowance audits and Kupwad foundry units.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Sangli EPF & ESIC Compliance for Sugar Mills, Kupwad Foundries & Agro Processing | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="sangli-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Sangli">
+            <meta name="geo.position" content="16.8524;74.5815">
+            <meta name="ICBM" content="16.8524, 74.5815">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC defence for Sangli sugar factories, PF on Retention Allowance, ESIC compliance for Kupwad foundries, and agro-processing units."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/sangli-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Sangli EPF & ESIC Compliance | Sugar & Foundry Sector"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Sangli sugar mills, foundry units, and turmeric processing industries."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-sangli"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/sangli-epf-esic-compliance#organization",
 
-            name: "Sangli EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Sugar Mills & Foundries in Sangli",
+          name:
+            "Sangli EPF & ESIC Compliance – Sugar Mills & Foundry Industry | EPFDesk",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/sangli-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "EPFDesk – Sangli PF & ESIC Consultant for Sugar Factories & Kupwad Foundries",
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/sangli-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
+
+          /* ✅ CITY-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Kupwad MIDC Industrial Area",
+            addressLocality: "Sangli",
+            addressRegion: "Maharashtra",
+            postalCode: "416416",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 16.8524,
+            longitude: 74.5815,
+          },
+
+          areaServed: [
+            { "@type": "City", name: "Sangli" },
+            {
+              "@type": "AdministrativeArea",
+              name: "Sangli District",
             },
-
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
+            {
+              "@type": "AdministrativeArea",
+              name: "Western Maharashtra",
             },
+          ],
 
-            description:
-              "Expert EPF & ESIC compliance services for Sangli sugar mills, PF on Retention Allowance, Kupwad foundry hazard ESIC coverage, and agro-processing industries.",
+          description:
+            "EPF & ESIC compliance services for Sangli sugar mills, PF applicability on Retention Allowance, hazardous ESIC coverage for Kupwad foundries, and agro-processing units including turmeric processing. Expertise includes Principal Employer liability management and RO Solapur enforcement handling.",
 
-            priceRange: "₹₹₹",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "64",
+          },
+        })}
+      </Script>
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Sangli District" },
-              { "@type": "Place", name: "Sugar Mills" },
-              { "@type": "Place", name: "Kupwad MIDC" },
-              { "@type": "Place", name: "Foundry & Casting Units" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "64",
-            },
-          }),
-        }}
-      />
-
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataSangliDistrict} />
       </FadeInWhenVisible>
@@ -167,8 +144,49 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqSangliDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-sangli" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: 'sangli',
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: 'sangli',
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: 'sangli',
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

@@ -1,21 +1,25 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
+
 import {
   heroDataHubballiDharwadDist,
   sectionsHubballiDharwadDist,
   faqHubballiDharwad,
 } from "@/utils/data";
 
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
-    "Hubballi-Dharwad EPF & ESIC Compliance for SME Manufacturing, Textiles & Electronics SEZ | EPFDesk",
+    "Hubballi–Dharwad EPF & ESIC Compliance: SME Manufacturing, Textiles & Electronics SEZ | EPFDesk",
+
   description:
-    "EPFDesk provides expert PF & ESIC services for Hubballi-Dharwad’s SME manufacturing, textiles, auto ancillaries and new Electronics SEZ. Specialization in ESIC defence, PF restructuring for SMEs, SEZ statutory setup and KIADB unit compliance.",
+    "Expert EPF & ESIC compliance for Hubballi–Dharwad SME manufacturing units, textile mills, auto ancillaries and Electronics SEZ units. Specialists in ESIC enforcement defence, PF wage restructuring, KIADB compliance and SEZ statutory setup.",
+
   keywords: [
     "Hubballi PF consultant",
     "Dharwad PF consultant",
@@ -25,24 +29,25 @@ export const metadata = {
     "Auto ancillary PF compliance Dharwad",
     "Electronics SEZ PF ESIC registration",
     "KIADB Belur Industrial Area compliance",
-    "EPFDesk Hubballi",
+    "EPFDesk Hubballi Dharwad",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/hubballi-dharwad-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Hubballi-Dharwad EPF & ESIC Consultant | SME Manufacturing, Textiles & Electronics SEZ | EPFDesk",
+      "Hubballi–Dharwad EPF & ESIC Compliance | SME Manufacturing & Electronics SEZ",
     description:
-      "PF & ESIC compliance for Hubballi-Dharwad’s SME factories, textile mills, auto ancillaries and the new Electronics SEZ. ESIC enforcement defence, PF wage restructuring and KIADB industry compliance.",
+      "PF & ESIC specialists for Hubballi–Dharwad SME factories, textile mills, auto ancillaries and Electronics SEZ units.",
     url: "https://epfdesk.com/hubballi-dharwad-epf-esic-compliance",
-    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "EPFDesk Hubballi-Dharwad PF ESIC Compliance",
+        alt: "Hubballi Dharwad PF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -51,132 +56,85 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Hubballi-Dharwad EPF & ESIC Compliance | SME Manufacturing, Textiles & Electronics SEZ | EPFDesk",
-    description:
-      "Compliance experts for Hubballi-Dharwad’s SME sector, textile units and Electronics SEZ — PF audits, ESIC enforcement defence and contractor compliance.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Hubballi-Dharwad EPF & ESIC Compliance for SME Manufacturing,
-          Textiles & Electronics SEZ | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="hubballi-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-KA">
+            <meta name="geo.placename" content="Hubballi–Dharwad, Karnataka">
+            <meta name="geo.position" content="15.3647;75.1239">
+            <meta name="ICBM" content="15.3647, 75.1239">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="PF & ESIC specialists for Hubballi-Dharwad’s SME manufacturing, textile mills, auto ancillaries and Electronics SEZ. Expertise in ESIC enforcement defence, PF wage structuring, contractor compliance and KIADB statutory management."
-        />
-
-        <meta
-          name="keywords"
-          content="Hubballi PF consultant, Dharwad PF ESIC consultant, textile ESIC Hubballi, auto ancillary PF compliance, SEZ statutory compliance Dharwad, KIADB industrial area ESIC, PF SME Hubballi-Dharwad"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/hubballi-dharwad-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Hubballi-Dharwad EPF & ESIC Consultant | SME Manufacturing, Textiles & Electronics SEZ | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Hubballi-Dharwad SMEs, textile mills, auto ancillaries and Electronics SEZ — expert PF/ESI defence and factory compliance."
-        />
-        <meta property="og:image" content="https://epfdesk.com/images/logo.jpg" />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/hubballi-dharwad-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Hubballi-Dharwad EPF & ESIC Compliance | SME Manufacturing, Textiles & Electronics SEZ | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="Expert PF & ESIC solutions for Hubballi-Dharwad’s SME manufacturing sector, textile units and new ESDM/Electronics SEZ."
-        />
-        <meta name="twitter:image" content="https://epfdesk.com/images/logo.jpg" />
-      </Head>
-
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-hubballi-dharwad"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/hubballi-dharwad-epf-esic-compliance#organization",
 
-            name: "Hubballi-Dharwad EPF & ESIC Compliance for SME Manufacturing, Textiles & Electronics SEZ | EPFDesk",
-            alternateName:
-              "EPFDesk – Hubballi-Dharwad PF ESIC Consultants for SME, Textiles & ESDM SEZ",
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Hubballi–Dharwad SME & Electronics SEZ",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/hubballi-dharwad-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Hubballi–Dharwad PF ESIC Compliance Experts for SME Manufacturing & Textiles",
 
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/hubballi-dharwad-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 15.3647,
-              longitude: 75.1239,
-            },
+          /* ✅ DISTRICT-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Hubballi–Dharwad",
+            addressRegion: "Karnataka",
+            addressCountry: "IN",
+          },
 
-            description:
-              "Hubballi-Dharwad is an SME manufacturing, textile and electronics hub. EPFDesk provides EPF/ESIC compliance for KIADB units, textile mills, auto ancillaries and the Electronics SEZ, including PF wage audits, ESIC enforcement defence and statutory setup.",
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 15.3647,
+            longitude: 75.1239,
+          },
 
-            priceRange: "₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Dharwad District" },
+            { "@type": "City", name: "Hubballi" },
+            { "@type": "City", name: "Dharwad" },
+            { "@type": "Place", name: "KIADB Belur Industrial Area" },
+            { "@type": "Place", name: "Electronics & ESDM SEZ Dharwad" },
+          ],
 
-            areaServed: [
-              { "@type": "City", name: "Hubballi" },
-              { "@type": "City", name: "Dharwad" },
-              { "@type": "Place", name: "KIADB Belur Industrial Area" },
-              { "@type": "Place", name: "Electronics SEZ Dharwad" },
-            ],
+          description:
+            "EPF & ESIC compliance consultancy for Hubballi–Dharwad SME manufacturing units, textile mills, auto ancillaries and Electronics SEZ establishments. Expertise in PF wage audits, ESIC enforcement defence, KIADB statutory compliance and SEZ labour law onboarding.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "44",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "44",
+          },
+        })}
+      </Script>
 
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataHubballiDharwadDist} />
       </FadeInWhenVisible>
@@ -185,9 +143,50 @@ const page = () => {
         <CodeOfConduct sections={sectionsHubballiDharwadDist} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqHubballiDharwad} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqHubballiDharwad} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-hubballi" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

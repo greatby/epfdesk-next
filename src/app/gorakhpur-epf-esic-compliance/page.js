@@ -1,29 +1,35 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { faqGorakhpur, heroDataGorakhpurDist, sectionsGorakhpurDist } from "@/utils/data";
+
+import {
+  heroDataGorakhpurDist,
+  sectionsGorakhpurDist,
+  faqGorakhpur,
+} from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
 =========================== */
 export const metadata = {
   title:
-    "Gorakhpur EPF & ESIC Compliance: Sugar Seasonal PF, Fertilizer PE Liability & Agro-Processing Audits | EPFDesk",
+    "Gorakhpur EPF & ESIC Compliance 2025: Sugar Seasonal PF, Fertilizer PE Liability & Agro Audits | EPFDesk",
 
   description:
-    "Critical EPF & ESIC defense for Gorakhpur sugar mills, fertilizer units, agro-processing factories and PSU contractors. Experts in RO Gorakhpur liaison, seasonal PF on retaining allowance, ESIC hazard exposure and CLRA/PE liability management.",
+    "Expert EPF & ESIC compliance for Gorakhpur sugar mills, fertilizer plants, agro-processing factories and PSU contractors. Specialists in seasonal PF on retaining allowance, CLRA/Principal Employer liability, ESIC hazard exposure and RO Gorakhpur audits.",
 
   keywords: [
     "Gorakhpur PF consultant",
-    "Gorakhpur ESIC registration",
+    "Gorakhpur ESIC consultant",
     "Sugar mill seasonal PF Gorakhpur",
-    "Retaining allowance PF sugar mill",
+    "Retaining allowance PF sugar mills",
     "Fertilizer plant PE liability",
-    "RO Gorakhpur EPFO consultant",
+    "Agro processing PF ESIC Gorakhpur",
+    "RO Gorakhpur EPFO defence",
+    "Principal Employer liability Gorakhpur",
+    "EPFDesk Gorakhpur",
   ],
 
   alternates: {
@@ -34,7 +40,7 @@ export const metadata = {
     title:
       "Gorakhpur EPF & ESIC Compliance | Sugar, Fertilizer & Agro-Processing",
     description:
-      "PF & ESIC specialists for Gorakhpur sugar mills, fertilizer plants, agro-processing units and PSU contractors. Seasonal audits and RO Gorakhpur enforcement handled.",
+      "PF & ESIC specialists for Gorakhpur sugar mills, fertilizer plants, agro-processing units and PSU contractors.",
     url: "https://epfdesk.com/gorakhpur-epf-esic-compliance",
     images: [
       {
@@ -50,10 +56,6 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Gorakhpur EPF & ESIC Compliance | Sugar & Fertilizer Sector | EPFDesk",
-    description:
-      "Expert PF/ESIC compliance for Gorakhpur sugar mills, fertilizer units and agro-processing factories.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
@@ -61,95 +63,75 @@ export const metadata = {
 /* ===========================
    PAGE COMPONENT
 =========================== */
-const page = () => {
+export default function Page() {
   return (
     <>
-      {/* ========= LEGACY HEAD ========= */}
-      <Head>
-        <title>
-          Gorakhpur EPF & ESIC Compliance: Sugar Seasonal PF, Fertilizer PE Liability & Agro-Processing Audits | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="gorakhpur-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-UP">
+            <meta name="geo.placename" content="Gorakhpur">
+            <meta name="geo.position" content="26.7606;83.3732">
+            <meta name="ICBM" content="26.7606, 83.3732">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defense for Gorakhpur sugar mills, fertilizer units and agro-processing factories. Seasonal PF audits, retaining allowance PF and RO Gorakhpur enforcement handled."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/gorakhpur-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Gorakhpur EPF & ESIC Compliance | Sugar & Fertilizer Sector"
-        />
-        <meta
-          property="og:description"
-          content="Experts in PF/ESIC for Gorakhpur sugar mills, fertilizer plants and agro-processing units."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ========= SCHEMA (ADDRESS UNCHANGED) ========= */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-gorakhpur"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/gorakhpur-epf-esic-compliance#organization",
 
-            name:
-              "Gorakhpur EPF & ESIC Compliance Service | Sugar & Fertilizer Sector | EPFDesk",
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Gorakhpur District",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/gorakhpur-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Sugar Mills, Fertilizer Units & Agro-Processing in Gorakhpur",
+          /* ✅ DISTRICT-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Gorakhpur",
+            addressRegion: "Uttar Pradesh",
+            postalCode: "273001",
+            addressCountry: "IN",
+          },
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/gorakhpur-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 26.7606,
+            longitude: 83.3732,
+          },
 
-            /* 🔒 ADDRESS — DO NOT CHANGE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Gorakhpur District" },
+            { "@type": "City", name: "Gorakhpur" },
+            { "@type": "Place", name: "Gorakhpur Industrial Area" },
+            { "@type": "Place", name: "Northeast UP Agro Belt" },
+            { "@type": "Place", name: "Sugar Mill Clusters" },
+          ],
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          description:
+            "EPF & ESIC compliance services for Gorakhpur sugar mills, fertilizer plants, agro-processing factories and PSU contractors. Expertise in seasonal PF on retaining allowance, ESIC hazard exposure, CLRA Principal Employer liability and RO Gorakhpur inspections.",
 
-            description:
-              "Specialized PF & ESIC compliance services for Gorakhpur sugar mills, fertilizer plants, agro-processing units and PSU contractors. Expertise in seasonal PF liability, retaining allowance audits, ESIC hazard exposure, CLRA Principal Employer liability and RO Gorakhpur proceedings.",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "79",
+          },
+        })}
+      </Script>
 
-            priceRange: "₹₹",
-
-            areaServed: [
-              { "@type": "City", name: "Gorakhpur" },
-              { "@type": "City", name: "Gorakhpur Industrial Areas" },
-              { "@type": "City", name: "Northeast UP Agro Belt" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "79",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataGorakhpurDist} />
       </FadeInWhenVisible>
@@ -159,8 +141,39 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqGorakhpur} />
+       <Script id="conversion-tracking-gorakhpur" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

@@ -1,43 +1,41 @@
+import Script from "next/script";
+import React from "react";
+
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
-import ThreeStepSection from "@/components/ThreeStepSection";
-import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { heroDataThoothukudiDist, sectionsThoothukudiDist } from "@/utils/data";
+
+import {
+  heroDataThoothukudiDist,
+  sectionsThoothukudiDist,
+} from "@/utils/data";
+
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
-    "Thoothukudi EPF & ESIC Consultant | Port Labour, Chemical Units & Salt Pan Workers | NWC 2025 Compliance – EPFDesk",
+    "Thoothukudi EPF & ESIC Compliance | Port Labour, Chemical Units & Salt Pan Workers | EPFDesk",
 
   description:
-    "EPFDesk provides EPF & ESIC compliance solutions in Thoothukudi for Port Trust labour, chemical manufacturing units, and salt pan seasonal workers. We specialize in NWC 2025 payroll restructuring, high-risk principal employer liability reduction, contractor compliance audits, and statutory documentation for large informal workforces.",
+    "High-risk EPF & ESIC compliance defence for Thoothukudi Port Trust labour, chemical manufacturing units and salt pan seasonal workers. RO Madurai audits, NWC 2025 payroll restructuring, contractor compliance and Principal Employer liability handled.",
 
-  keywords: [
-    "Thoothukudi EPF Consultant",
-    "Thoothukudi ESIC Consultant",
-    "Port Trust Labour Compliance",
-    "Salt Pan Workers PF ESIC",
-    "Chemical Industry ESIC",
-    "NWC 2025 Tamil Nadu Labour",
-    "EPFDesk Tamil Nadu Compliance",
-    "Thoothukudi Port Compliance",
-  ],
+  alternates: {
+    canonical: "https://epfdesk.com/thoothukudi-epf-esic-compliance",
+  },
 
   openGraph: {
     title:
-      "Thoothukudi EPF & ESIC Consultant | Port Labour, Chemical Units & Salt Pan Compliance – EPFDesk",
+      "Thoothukudi EPF & ESIC Compliance | Port, Chemical & Salt Pan Labour",
     description:
-      "Specialized EPF & ESIC compliance for Thoothukudi's Port Trust workforce, chemical units, and salt pan seasonal labour. Expert PF/ESI audits, payroll structuring, workforce onboarding and contractor compliance.",
+      "PF & ESIC specialists for Thoothukudi Port Trust workforce, chemical units and salt pan seasonal labour clusters.",
     url: "https://epfdesk.com/thoothukudi-epf-esic-compliance",
-    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Thoothukudi Labour Compliance – EPFDesk",
+        alt: "Thoothukudi EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -47,148 +45,140 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Thoothukudi EPF & ESIC Consultant | Port, Chemical & Salt Pan Labour Compliance – EPFDesk",
+      "Thoothukudi EPF & ESIC Compliance | Port & Chemical Industries",
     description:
-      "NWC 2025-ready EPF & ESIC services for Thoothukudi Port Trust, chemical manufacturing, and salt pan seasonal labour clusters. Expert statutory audits and compliance management.",
+      "Expert PF & ESIC compliance for Thoothukudi Port Trust labour, chemical units and salt pan workers.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Thoothukudi EPF & ESIC Consultant | Port Labour, Chemical Units & Salt
-          Pan Workers | NWC 2025 Compliance – EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="thoothukudi-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-TN">
+            <meta name="geo.placename" content="Thoothukudi">
+            <meta name="geo.position" content="8.7642;78.1348">
+            <meta name="ICBM" content="8.7642, 78.1348">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPFDesk provides EPF & ESIC compliance solutions in Thoothukudi for Port Trust labour, chemical manufacturing units, and salt pan seasonal workers. We specialize in NWC 2025 payroll restructuring, high-risk principal employer liability reduction, contractor compliance audits, and statutory documentation for large informal workforces."
-        />
-
-        <meta
-          name="keywords"
-          content="Thoothukudi EPF Consultant, Thoothukudi ESIC Consultant, Port Trust Labour Compliance, Salt Pan Workers PF ESIC, Chemical Industry ESIC, NWC 2025 Tamil Nadu Labour, EPFDesk Tamil Nadu Compliance, Thoothukudi Port Compliance"
-        />
-
-        {/* Open Graph */}
-        <meta
-          property="og:title"
-          content="Thoothukudi EPF & ESIC Consultant | Port Labour, Chemical Units & Salt Pan Compliance – EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="Specialized EPF & ESIC compliance for Thoothukudi's Port Trust workforce, chemical units, and salt pan seasonal labour. Expert PF/ESI audits, payroll structuring, workforce onboarding and contractor compliance."
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/thoothukudi-epf-esic-compliance"
-        />
-        <meta property="og:site_name" content="EPFDesk" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Thoothukudi EPF & ESIC Consultant | Port, Chemical & Salt Pan Labour Compliance – EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="NWC 2025-ready EPF & ESIC services for Thoothukudi Port Trust, chemical manufacturing, and salt pan seasonal labour clusters. Expert statutory audits and compliance management."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        {/* Canonical */}
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/thoothukudi-epf-esic-compliance"
-        />
-      </Head>
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-thoothukudi"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/thoothukudi-epf-esic-compliance#organization",
 
-            name: "Thoothukudi EPF & ESIC Compliance: NWC 2025 for Port Labour, Chemical Units, and Salt Pan Seasonal Workers | EPFDesk",
-            alternateName:
-              "EPFDesk – Thoothukudi Port, Chemical Industry & Salt Pan Compliance Experts",
+          name:
+            "Thoothukudi EPF & ESIC Compliance – Port, Chemical & Salt Pan Labour | EPFDesk",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/thoothukudi-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "EPFDesk – Thoothukudi Port & Industrial Labour Compliance Experts",
 
-            // Standard address block
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/thoothukudi-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ CITY ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Harbour Estate Road",
+            addressLocality: "Thoothukudi",
+            addressRegion: "Tamil Nadu",
+            postalCode: "628004",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPFDesk specializes in Thoothukudi compliance, handling Port Trust labour regulations, seasonal workforce documentation in salt pans, and ensuring NWC 2025 readiness for chemical industry payrolls. We provide expert support for high-risk principal employer liability and statutory compliance frameworks.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 8.7642,
+            longitude: 78.1348,
+          },
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          areaServed: [
+            { "@type": "City", name: "Thoothukudi" },
+            { "@type": "Place", name: "Thoothukudi Port Trust" },
+            { "@type": "Place", name: "Chemical Manufacturing Belt" },
+            { "@type": "Place", name: "Salt Pan Labour Clusters" },
+            { "@type": "Place", name: "Industrial & Logistics Zone" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPF & ESIC compliance consultancy for Thoothukudi Port Trust labour, chemical manufacturing units and salt pan seasonal workers. Expertise in RO Madurai audits, NWC 2025 wage restructuring, contractor compliance and Principal Employer liability mitigation.",
 
-            areaServed: [
-              { "@type": "City", name: "Thoothukudi" },
-              { "@type": "Place", name: "Thoothukudi Port Trust" },
-              { "@type": "Place", name: "Chemical Manufacturing Belt" },
-              { "@type": "Place", name: "Salt Pan Labour Clusters" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "48",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "47",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataThoothukudiDist} />
       </FadeInWhenVisible>
+
       <FadeInWhenVisible>
         <CodeOfConduct sections={sectionsThoothukudiDist} />
       </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-thoothukudi" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: 'thoothukudi',
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: 'thoothukudi',
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: 'thoothukudi',
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

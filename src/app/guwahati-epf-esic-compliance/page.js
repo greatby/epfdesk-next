@@ -1,30 +1,31 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
 
-import { heroDataGuwahati, sectionsGuwahati, faqGuwahati } from "@/utils/data";
+import {
+  heroDataGuwahati,
+  sectionsGuwahati,
+  faqGuwahati,
+} from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Guwahati EPF & ESIC Compliance: IT Parks, Logistics Contractors & PE Liability | EPFDesk",
 
   description:
-    "High-risk EPF & ESIC compliance defence for Guwahati IT parks, North Guwahati industrial units, logistics contractors, retail chains and Northeast MSMEs. Experts in RO Guwahati enforcement, NEIDS-linked employment audits, Principal Employer liability and Labour Code compliance.",
+    "High-risk EPF & ESIC compliance defence for Guwahati IT parks, North Guwahati industrial units, logistics contractors, retail chains and Northeast MSMEs. Experts in RO Guwahati enforcement, NEIDS-linked audits and Principal Employer liability.",
 
   keywords: [
     "Guwahati PF consultant",
     "Guwahati ESIC consultant",
     "IT park PF ESIC Guwahati",
     "Logistics contractor PF ESIC Assam",
-    "North Guwahati industrial area labour compliance",
+    "North Guwahati industrial labour compliance",
     "Retail chain ESIC compliance Guwahati",
     "Principal Employer liability Guwahati",
     "RO Guwahati EPFO jurisdiction",
@@ -37,14 +38,14 @@ export const metadata = {
   openGraph: {
     title: "Guwahati EPF & ESIC Compliance | Assam Industrial & Commercial Hub",
     description:
-      "PF & ESIC specialists for Guwahati IT parks, logistics contractors, retail chains and Northeast industrial MSMEs.",
+      "PF & ESIC specialists for Guwahati IT parks, logistics contractors, retail chains and Northeast MSMEs.",
     url: "https://epfdesk.com/guwahati-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Guwahati PF ESIC Compliance",
+        alt: "Guwahati EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -53,113 +54,85 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Guwahati EPF & ESIC Compliance | IT, Logistics & Retail | EPFDesk",
-    description:
-      "Expert PF & ESIC compliance for Guwahati IT parks, logistics operators, retail chains and Northeast businesses.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
+/* ===========================
    PAGE COMPONENT
-============================ */
-const page = () => {
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* LEGACY HEAD */}
-      <Head>
-        <title>
-          Guwahati EPF & ESIC Compliance: IT Parks, Logistics Contractors & PE
-          Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="guwahati-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-AS">
+            <meta name="geo.placename" content="Guwahati">
+            <meta name="geo.position" content="26.1445;91.7362">
+            <meta name="ICBM" content="26.1445, 91.7362">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Guwahati IT parks, North Guwahati industrial units, logistics contractors, retail chains and Northeast MSMEs. RO Guwahati audits, NEIDS-linked employment reviews and Principal Employer liability handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Guwahati PF consultant, Guwahati ESIC consultant, IT park PF ESIC Guwahati, logistics contractor labour compliance Assam, retail chain ESIC Guwahati, North Guwahati industrial area PF audits, Principal Employer liability Guwahati, NWC 2025 wage restructuring Assam"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/guwahati-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Guwahati EPF & ESIC Consultant | IT, Logistics & Retail Hub | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Guwahati’s IT parks, logistics operators, retail chains and industrial units."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/guwahati-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Guwahati EPF & ESIC Compliance | Assam Industrial Hub | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Guwahati IT parks, logistics contractors, retail chains and Northeast MSMEs — PE liability and audits handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* JSON-LD SCHEMA */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-guwahati"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "Guwahati EPF & ESIC Compliance Consultants | EPFDesk",
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/guwahati-epf-esic-compliance",
-            telephone: "+91-9945933333",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
-            areaServed: [
-              "Guwahati",
-              "Amingaon",
-              "North Guwahati",
-              "Rani",
-              "Chaygaon",
-              "Bamunimaidam",
-              "GS Road",
-              "Bongora IT Park",
-            ],
-            description:
-              "EPF & ESIC consultancy for Guwahati’s manufacturing, logistics, IT, retail, and Northeast MSME ecosystem.",
-          }),
-        }}
-      />
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/guwahati-epf-esic-compliance#organization",
 
-      {/* PAGE SECTIONS */}
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Guwahati & Northeast India",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/guwahati-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
+
+          /* ✅ DISTRICT-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Guwahati",
+            addressRegion: "Assam",
+            postalCode: "781001",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 26.1445,
+            longitude: 91.7362,
+          },
+
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Kamrup Metropolitan District" },
+            { "@type": "Place", name: "North Guwahati" },
+            { "@type": "Place", name: "Amingaon" },
+            { "@type": "Place", name: "GS Road" },
+            { "@type": "Place", name: "Bamunimaidam" },
+            { "@type": "Place", name: "Bongora IT Park" },
+            { "@type": "Place", name: "Rani" },
+            { "@type": "Place", name: "Chaygaon" },
+          ],
+
+          description:
+            "EPF & ESIC compliance services for Guwahati IT parks, logistics contractors, retail chains and Northeast MSMEs. Expertise in RO Guwahati audits, NEIDS-linked employment reviews, CLRA Principal Employer liability and Labour Code compliance.",
+
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "84",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataGuwahati} />
       </FadeInWhenVisible>
@@ -168,9 +141,50 @@ const page = () => {
         <CodeOfConduct sections={sectionsGuwahati} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqGuwahati} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqGuwahati} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-guwahati" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

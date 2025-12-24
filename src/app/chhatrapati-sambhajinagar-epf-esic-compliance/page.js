@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,31 +10,35 @@ import {
   faqSambhajinagarDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
-    "Aurangabad EPF & ESIC Compliance for Waluj Auto Cluster, DMIC Factories & Tourism Sector | EPFDesk",
+    "Aurangabad (Chhatrapati Sambhajinagar) EPF & ESIC Compliance for Waluj Auto MIDC & DMIC | EPFDesk",
+
   description:
-    "Expert EPF & ESIC defence for Waluj Auto MIDC, PF liability for Shendra–Bidkin DMIC contractors, and mandatory ESIC for factory and hazardous industry workers. Specialists in DMIC compliance and Principal Employer liability.",
+    "High-risk EPF & ESIC compliance for Waluj Auto MIDC, Shendra–Bidkin DMIC factories, engineering MSMEs and tourism sector employers. Experts in Principal Employer liability, EPFO 7A defence and hazardous industry ESIC.",
+
   keywords: [
     "Aurangabad PF consultant",
-    "Waluj MIDC EPF compliance",
-    "DMIC Shendra ESIC registration",
-    "Bidkin Industrial Area PF liability",
+    "Chhatrapati Sambhajinagar ESIC consultant",
+    "Waluj MIDC PF compliance",
+    "Shendra Bidkin DMIC PF ESIC",
     "Auto MSME EPFO 7A Aurangabad",
-    "Hotel ESIC compliance Aurangabad",
+    "Hotel ESIC compliance Sambhajinagar",
   ],
+
   alternates: {
     canonical:
       "https://epfdesk.com/chhatrapati-sambhajinagar-epf-esic-compliance",
   },
+
   openGraph: {
     title:
       "Aurangabad EPF & ESIC Compliance | Waluj Auto & DMIC Industrial Corridor | EPFDesk",
     description:
-      "PF & ESIC specialists for Waluj Auto MIDC, Shendra–Bidkin DMIC factories, and Chhatrapati Sambhajinagar manufacturing hubs.",
+      "PF & ESIC specialists for Waluj Auto MIDC, Shendra–Bidkin DMIC factories and Chhatrapati Sambhajinagar manufacturing hubs.",
     url:
       "https://epfdesk.com/chhatrapati-sambhajinagar-epf-esic-compliance",
     images: [
@@ -51,121 +52,130 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Aurangabad EPF & ESIC Compliance | Waluj Auto & DMIC | EPFDesk",
-    description:
-      "High-risk EPF & ESIC compliance and EPFO 7A defence for Waluj Auto MIDC and DMIC factories.",
     images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
-/* ============================
+/* ===========================
    PAGE COMPONENT
-============================ */
-const page = () => {
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Aurangabad EPF & ESIC Compliance for Waluj Auto Cluster, DMIC Factories & Tourism Sector | EPFDesk
-        </title>
+      {/* ========= GEO + EXTRA META ========= */}
+      <Script id="sambhajinagar-geo-meta" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Chhatrapati Sambhajinagar">
+            <meta name="geo.position" content="19.8762;75.3433">
+            <meta name="ICBM" content="19.8762, 75.3433">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/chhatrapati-sambhajinagar-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/chhatrapati-sambhajinagar-epf-esic-compliance">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC defence for Waluj Auto MIDC, Shendra–Bidkin DMIC contractors, and factory/hazardous industry ESIC compliance."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/chhatrapati-sambhajinagar-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Aurangabad EPF & ESIC Compliance | Waluj Auto & DMIC"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Chhatrapati Sambhajinagar Auto MIDC, DMIC industrial corridor, and manufacturing hubs."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= LOCAL BUSINESS SCHEMA ========= */}
       <Script
-        id="schema-sambhajinagar"
+        id="schema-sambhajinagar-localbusiness"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/chhatrapati-sambhajinagar-epf-esic-compliance#organization",
 
-            name:
-              "Chhatrapati Sambhajinagar EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Waluj Auto MIDC & DMIC Corridor",
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Waluj Auto MIDC & DMIC Corridor",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url:
+            "https://epfdesk.com/chhatrapati-sambhajinagar-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url:
-              "https://epfdesk.com/chhatrapati-sambhajinagar-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Chhatrapati Sambhajinagar",
+            addressRegion: "Maharashtra",
+            postalCode: "431001",
+            addressCountry: "IN",
+          },
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 19.8762,
+            longitude: 75.3433,
+          },
+
+          areaServed: {
+            "@type": "AdministrativeArea",
+            name: "Chhatrapati Sambhajinagar District",
+            containedIn: {
+              "@type": "State",
+              name: "Maharashtra",
             },
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
-
-            description:
-              "Expert EPF & ESIC compliance for Chhatrapati Sambhajinagar district covering Waluj Auto MIDC, Shendra–Bidkin DMIC corridor, manufacturing MSMEs, and Principal Employer liability management.",
-
-            priceRange: "₹₹₹",
-
-            areaServed: [
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Auto, Manufacturing & DMIC Compliance Services",
+            itemListElement: [
               {
-                "@type": "AdministrativeArea",
-                name: "Chhatrapati Sambhajinagar District",
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Auto & Engineering PF ESIC Compliance",
+                  description:
+                    "EPFO 7A defence, contractor audits and PE liability for Waluj & Chikalthana MIDC units",
+                },
               },
-              { "@type": "Place", name: "Waluj MIDC" },
-              { "@type": "Place", name: "Chikalthana MIDC" },
-              { "@type": "Place", name: "Shendra DMIC" },
-              { "@type": "Place", name: "Bidkin Industrial Area (DMIC)" },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "DMIC Factory & Contractor Compliance",
+                  description:
+                    "PF ESIC coverage, CLRA audits and wage restructuring for Shendra–Bidkin DMIC projects",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Hospitality & Tourism ESIC Compliance",
+                  description:
+                    "Mandatory ESIC coverage and inspection defence for hotels and service establishments",
+                },
+              },
             ],
+          },
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "86",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "86",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataSambhajinagarDistrict} />
       </FadeInWhenVisible>
@@ -175,8 +185,39 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqSambhajinagarDistrict} />
+       <Script id="conversion-tracking-chhatrapati-sambhajinagar" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

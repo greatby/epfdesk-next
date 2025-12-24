@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,29 +10,38 @@ import {
   faqDharashivDistrict,
 } from "@/utils/data";
 
-/* ============================
-   METADATA
-============================ */
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
-    "Dharashiv (Osmanabad) EPF & ESIC Compliance for Sugar, Dal Mills & Textile Piece-Rate Wages | EPFDesk",
+    "Dharashiv (Osmanabad) EPF & ESIC Compliance 2025: Sugar Factories, Dal Mills & Piece-Rate Wage Audits | EPFDesk",
+
   description:
-    "Expert EPF & ESIC defence for Dharashiv Sugar Factories, PF on Retention Allowance, Dal Mill seasonal workers, and ESIC for garment & textile piece-rate staff. Specialists in RO Aurangabad audit defence.",
+    "Expert EPF & ESIC compliance for Dharashiv (Osmanabad) sugar factories, PF on retention allowance, dal mill seasonal workers and textile/garment piece-rate staff. Specialists in RO Aurangabad inspections, contractor liability and New Wage Code audits.",
+
   keywords: [
-    "Osmanabad PF consultant",
-    "Dharashiv EPF ESIC compliance",
-    "Piece rate PF garment factory",
-    "Retention allowance PF sugar mill",
-    "Dal mill PF ESIC Marathwada",
-    "EPFO 7A defence Osmanabad",
+    "Dharashiv PF consultant",
+    "Osmanabad EPF ESIC compliance",
+    "Sugar factory PF retention allowance",
+    "Dal mill seasonal labour PF ESIC",
+    "Textile garment piece rate PF",
+    "EPFO 7A defence Dharashiv",
+    "RO Aurangabad EPF audits",
+    "NWC 2025 wage restructuring Dharashiv",
+    "Contractor PF liability sugar mills",
+    "EPFDesk Dharashiv",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/dharashiv-osmanabad-epf-esic-compliance",
   },
+
   openGraph: {
-    title: "Dharashiv (Osmanabad) EPF & ESIC Compliance | Sugar, Dal & Textile",
+    title:
+      "Dharashiv (Osmanabad) EPF & ESIC Compliance | Sugar, Dal & Textile Units",
     description:
-      "High-risk PF & ESIC compliance for Dharashiv Sugar Mills, Dal Mills and Textile/Garment piece-rate workers.",
+      "High-risk PF & ESIC compliance for Dharashiv sugar factories, dal mills and textile/garment units with piece-rate wage exposure.",
     url: "https://epfdesk.com/dharashiv-osmanabad-epf-esic-compliance",
     images: [
       {
@@ -48,133 +54,84 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Dharashiv EPF & ESIC Compliance | Sugar & Textile | EPFDesk",
-    description:
-      "PF & ESIC specialists for Dharashiv Sugar Factories, Dal Mills and Garment units.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE COMPONENT
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD
-      ============================ */}
-      <Head>
-        <title>
-          Dharashiv (Osmanabad) EPF & ESIC Compliance: Sugar Factories, Dal
-          Mills & Piece-Rate Wage Audits | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="dharashiv-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Dharashiv (Osmanabad)">
+            <meta name="geo.position" content="18.1861;76.0419">
+            <meta name="ICBM" content="18.1861, 76.0419">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Dharashiv (Osmanabad) sugar factories, PF on retention allowance, dal mills and textile/garment units with piece-rate workers. Wage audits, contractor PF liability and inspections handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Dharashiv PF consultant, Osmanabad ESIC consultant, sugar factory PF compliance Dharashiv, retention allowance PF, dal mill labour compliance, textile piece-rate wages PF ESIC, contractor PF liability Dharashiv, NWC 2025 wage restructuring Dharashiv"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/dharashiv-osmanabad-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Dharashiv (Osmanabad) EPF & ESIC Consultant | Sugar & Agro Processing | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Dharashiv sugar factories, dal mills and textile units. Specialists in piece-rate wage audits and PF on retention allowance."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/dharashiv-osmanabad-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Dharashiv (Osmanabad) EPF & ESIC Compliance | Sugar & Piece-Rate Wages | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Dharashiv sugar factories, dal mills and textile piece-rate workers — wage audits and contractor liability handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* ============================
-          SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-dharashiv"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/dharashiv-osmanabad-epf-esic-compliance#organization",
 
-            name: "Dharashiv (Osmanabad) EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Sugar, Dal & Textile Units in Dharashiv",
+          name: "EPFDesk – EPF & ESIC Consultants for Dharashiv (Osmanabad)",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/dharashiv-osmanabad-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/dharashiv-osmanabad-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          /* ✅ DISTRICT-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Dharashiv",
+            addressRegion: "Maharashtra",
+            postalCode: "413501",
+            addressCountry: "IN",
+          },
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 18.1861,
+            longitude: 76.0419,
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Dharashiv District" },
+            { "@type": "Place", name: "Osmanabad MIDC" },
+            { "@type": "Place", name: "Tuljapur" },
+            { "@type": "Place", name: "Paranda" },
+            { "@type": "Place", name: "Lohara" },
+          ],
 
-            description:
-              "EPF & ESIC compliance services for Dharashiv Sugar Mills, Dal Mills, Textile and Garment units with piece-rate wage exposure.",
+          description:
+            "EPF & ESIC compliance services for Dharashiv (Osmanabad) sugar factories, dal mills and textile/garment units. Expertise includes PF on retention allowance, piece-rate wage audits, contractor compliance, EPFO 7A defence and RO Aurangabad inspections.",
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Dharashiv District" },
-              { "@type": "Place", name: "Osmanabad MIDC" },
-              { "@type": "Place", name: "Tuljapur" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "63",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "63",
-            },
-          }),
-        }}
-      />
-
-      {/* ============================
-          CONTENT
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataDharashivDistrict} />
       </FadeInWhenVisible>
@@ -184,8 +141,41 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqDharashivDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-dharashiv" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

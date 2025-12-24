@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,14 +10,16 @@ import {
   faqGwaliorDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Gwalior EPF & ESIC Compliance: Stone Cluster PE Liability, EEC-2025 & ESIC Amnesty 2025 Settlement | EPFDesk",
+
   description:
-    "Expert EPF & ESIC defense for Gwalior stone mines, engineering units and food processors. Navigate RO Gwalior audits, EEC-2025 enrolment, SPREE 2025 onboarding and ESIC Amnesty 2025 litigation settlement in the Gwalior–Chambal belt.",
+    "Expert EPF & ESIC defense for Gwalior stone mines, engineering units and food processors. Navigate RO Gwalior audits, EEC-2025 enrolment, SPREE 2025 onboarding and ESIC Amnesty 2025 settlement across the Gwalior–Chambal belt.",
+
   keywords: [
     "Gwalior PF consultant",
     "Stone industry EPF compliance Gwalior",
@@ -29,9 +28,11 @@ export const metadata = {
     "ESIC Amnesty Scheme 2025 MP",
     "SPREE 2025 registration Gwalior MSME",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/gwalior-epf-esic-compliance",
   },
+
   openGraph: {
     title:
       "Gwalior EPF & ESIC Compliance | Stone & Industrial Clusters | EPFDesk",
@@ -49,116 +50,86 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Gwalior EPF & ESIC Compliance | Stone & MSME Clusters",
-    description:
-      "High-risk PF & ESIC compliance for Gwalior stone quarry units, engineering factories and food processors.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
+/* ===========================
    PAGE COMPONENT
-============================ */
-const page = () => {
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Gwalior EPF & ESIC Compliance: Stone Cluster PE Liability, EEC-2025 & ESIC Amnesty 2025 Settlement | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="gwalior-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MP">
+            <meta name="geo.placename" content="Gwalior">
+            <meta name="geo.position" content="26.2183;78.1828">
+            <meta name="ICBM" content="26.2183, 78.1828">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for Gwalior stone mines, engineering units and food processors under RO Gwalior."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/gwalior-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Gwalior EPF & ESIC Compliance | Stone & Industrial Clusters"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Gwalior stone carving, engineering and food processing clusters."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-gwalior"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/gwalior-epf-esic-compliance#organization",
 
-            name: "Gwalior EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Stone & MSME Units in Gwalior",
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Gwalior Stone & MSME Clusters",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/gwalior-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/gwalior-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          /* ✅ DISTRICT-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Gwalior",
+            addressRegion: "Madhya Pradesh",
+            postalCode: "474001",
+            addressCountry: "IN",
+          },
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 26.2183,
+            longitude: 78.1828,
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Gwalior District" },
+            { "@type": "Place", name: "Banmore Industrial Area" },
+            { "@type": "Place", name: "Malanpur Industrial Area" },
+            { "@type": "Place", name: "Ghatigaon Stone Belt" },
+            { "@type": "Place", name: "Dabra" },
+            { "@type": "Place", name: "Gwalior–Chambal Industrial Zone" },
+          ],
 
-            description:
-              "EPF & ESIC compliance specialists for Gwalior stone clusters, engineering factories, food processors and MSMEs governed by RO Gwalior.",
+          description:
+            "EPF & ESIC compliance services for Gwalior stone mining clusters, engineering MSMEs and food processing units. Expertise in RO Gwalior audits, EEC-2025 enrolment, SPREE 2025 onboarding, ESIC Amnesty 2025 settlement and Principal Employer liability.",
 
-            priceRange: "₹₹₹",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "70",
+          },
+        })}
+      </Script>
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Gwalior District" },
-              { "@type": "Place", name: "Banmore Industrial Area" },
-              { "@type": "Place", name: "Malanpur Industrial Area" },
-              { "@type": "Place", name: "Ghatigaon" },
-              { "@type": "Place", name: "Dabra" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "70",
-            },
-          }),
-        }}
-      />
-
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataGwaliorDistrict} />
       </FadeInWhenVisible>
@@ -167,9 +138,50 @@ const page = () => {
         <CodeOfConduct sections={sectionsGwaliorDistrict} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqGwaliorDistrict} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqGwaliorDistrict} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-gwalior" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

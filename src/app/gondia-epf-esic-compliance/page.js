@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,28 +10,37 @@ import {
   faqGondiaDistrict,
 } from "@/utils/data";
 
-/* ============================
-   METADATA
-============================ */
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
-    "Gondia EPF & ESIC Compliance for Rice Mills & Interstate Workers | EPFDesk",
+    "Gondia EPF & ESIC Compliance 2025: Rice Mills, Interstate Workers & Agro Labour | EPFDesk",
+
   description:
-    "Expert EPF & ESIC compliance for Gondia Rice Mills, interstate tendu leaf workers, seasonal agro-labour and Minimum Wages Act compliance. RO Nagpur defence.",
+    "Expert EPF & ESIC compliance for Gondia rice mills, interstate migrant workers, tendu leaf contractors and seasonal agro labour. Specialists in RO Nagpur audits, ISMW Act compliance and Principal Employer liability.",
+
   keywords: [
-    "Gondia EPF consultant",
-    "Rice mill PF compliance Gondia",
-    "Interstate Migrant Workmen Act Gondia",
-    "Tendu leaf contractor EPF ESIC",
+    "Gondia PF consultant",
+    "Gondia ESIC consultant",
+    "Rice mill PF ESIC Gondia",
+    "Interstate migrant labour compliance Gondia",
+    "Tendu leaf contractor PF ESIC",
     "RO Nagpur EPFO defence",
+    "Seasonal agro labour PF ESIC",
+    "Principal Employer liability Gondia",
+    "EPFDesk Gondia",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/gondia-epf-esic-compliance",
   },
+
   openGraph: {
-    title: "Gondia EPF & ESIC Compliance | Rice Mills & Interstate Labour",
+    title:
+      "Gondia EPF & ESIC Compliance | Rice Mills & Interstate Labour",
     description:
-      "Statutory EPF & ESIC compliance for Gondia rice mills, agro-processing and interstate seasonal workers.",
+      "PF & ESIC specialists for Gondia rice mills, agro-processing units and interstate seasonal workers.",
     url: "https://epfdesk.com/gondia-epf-esic-compliance",
     images: [
       {
@@ -47,130 +53,85 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
+  twitter: {
+    card: "summary_large_image",
+    images: ["https://epfdesk.com/images/logo.jpg"],
+  },
 };
 
-const page = () => {
+/* ===========================
+   PAGE COMPONENT
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD
-      ============================ */}
-      <Head>
-        <title>
-          Gondia EPF & ESIC Compliance: Rice Mills, Interstate Migrant Labour &
-          PE Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="gondia-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Gondia">
+            <meta name="geo.position" content="21.4549;80.1961">
+            <meta name="ICBM" content="21.4549, 80.1961">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Gondia rice mills, interstate migrant workers and seasonal agro-labour. Contractor PF liability, wage audits and inspection readiness handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Gondia PF consultant, Gondia ESIC consultant, rice mill PF ESIC Gondia, interstate migrant labour compliance, seasonal agro labour PF ESIC, contractor PF liability Gondia, Principal Employer liability Gondia, NWC 2025 wage restructuring Gondia"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/gondia-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Gondia EPF & ESIC Consultant | Rice Mills & Agro Labour | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Gondia’s rice mills, migrant workforce and seasonal agro-based industries."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/gondia-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Gondia EPF & ESIC Compliance | Rice Mills & Migrant Labour | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Gondia rice mills and interstate migrant labour — PE liability and audits handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* ============================
-          SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-gondia"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/gondia-epf-esic-compliance#organization",
 
-            name: "Gondia EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – Rice Mill & Interstate Labour Law Consultants Gondia",
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Gondia District",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/gondia-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/gondia-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          /* ✅ DISTRICT-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Gondia",
+            addressRegion: "Maharashtra",
+            postalCode: "441601",
+            addressCountry: "IN",
+          },
 
-            /* ✅ ADDRESS KEPT SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 21.4549,
+            longitude: 80.1961,
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Gondia District" },
+            { "@type": "City", name: "Gondia" },
+            { "@type": "Place", name: "Tirora" },
+            { "@type": "Place", name: "Arjuni Morgaon" },
+            { "@type": "Place", name: "Deori" },
+          ],
 
-            description:
-              "EPF, ESIC, ISMWA and Minimum Wages Act compliance for Gondia rice mills, tendu leaf processing and interstate seasonal labour.",
+          description:
+            "EPF & ESIC compliance services for Gondia rice mills, tendu leaf processing units, interstate migrant labour and seasonal agro workers. Expertise in ISMW Act compliance, Minimum Wages audits, Principal Employer liability and RO Nagpur inspections.",
 
-            areaServed: [
-              {
-                "@type": "AdministrativeArea",
-                name: "Gondia District",
-              },
-              { "@type": "Place", name: "Gondia City" },
-              { "@type": "Place", name: "Tirora" },
-              { "@type": "Place", name: "Arjuni Morgaon" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "38",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "38",
-            },
-          }),
-        }}
-      />
-
-      {/* ============================
-          CONTENT
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataGondiaDistrict} />
       </FadeInWhenVisible>
@@ -180,8 +141,39 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqGondiaDistrict} />
+       <Script id="conversion-tracking-gondia" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

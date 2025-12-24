@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,30 +10,37 @@ import {
   faqGoa,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
-    "Goa EPF & ESIC Compliance for Hotels, Resorts, Pharma Units & Mormugao Port Contractors | EPFDesk",
+    "Goa EPF & ESIC Compliance 2025: Hotels, Resorts, Pharma Units & Mormugao Port Contractors | EPFDesk",
+
   description:
-    "Expert EPF & ESIC compliance for Goa hospitality sector, seasonal hotel staff, Verna MIDC pharma factories, and Mormugao Port contract labour. Strong EPFO 7A & ESIC defence.",
+    "Expert EPF & ESIC compliance for Goa hospitality sector, seasonal hotel staff, Verna MIDC pharma factories, and Mormugao Port contract labour. Specialists in EPFO 7A defence, ESIC inspections and contractor PE liability.",
+
   keywords: [
     "Goa PF consultant",
-    "Goa ESIC registration",
+    "Goa ESIC consultant",
     "PF for hotel staff Goa",
     "ESIC compliance Verna MIDC",
     "Mormugao Port contractor PF",
     "Goa EPFO 7A defence",
+    "Seasonal labour PF ESIC Goa",
+    "Hospitality labour compliance Goa",
+    "EPFDesk Goa",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/goa-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Goa EPF & ESIC Compliance | Tourism, Pharma & Port Logistics | EPFDesk",
+      "Goa EPF & ESIC Compliance | Tourism, Pharma & Port Labour",
     description:
-      "PF & ESIC specialists for Goa Hotels, Resorts, Pharma Units (Verna MIDC) and Mormugao Port contractors.",
+      "PF & ESIC specialists for Goa hotels, resorts, Verna MIDC pharma units and Mormugao Port contractors.",
     url: "https://epfdesk.com/goa-epf-esic-compliance",
     images: [
       {
@@ -49,116 +53,86 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Goa EPF & ESIC Compliance | Hotels, Pharma & Port Labour | EPFDesk",
-    description:
-      "EPF/ESIC compliance and audit defence for Goa tourism, pharma, and port contractors.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
+/* ===========================
    PAGE COMPONENT
-============================ */
-const page = () => {
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Goa EPF & ESIC Compliance for Hotels, Resorts, Pharma Units & Mormugao Port Contractors | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="goa-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-GA">
+            <meta name="geo.placename" content="Goa">
+            <meta name="geo.position" content="15.2993;74.1240">
+            <meta name="ICBM" content="15.2993, 74.1240">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC compliance for Goa hospitality sector, seasonal hotel staff, Verna MIDC pharma factories, and Mormugao Port contract labour."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/goa-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Goa EPF & ESIC Compliance | Tourism, Pharma & Port Logistics"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Goa Hotels, Resorts, Pharma Units and Port contractors."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-goa"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/goa-epf-esic-compliance#organization",
 
-            name: "Goa EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Goa Hotels, Pharma Units & Port Contractors",
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Goa State",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/goa-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/goa-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          /* ✅ STATE-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Panaji",
+            addressRegion: "Goa",
+            postalCode: "403001",
+            addressCountry: "IN",
+          },
 
-            /* ✅ ADDRESS KEPT SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 15.2993,
+            longitude: 74.1240,
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Goa" },
+            { "@type": "City", name: "Panaji" },
+            { "@type": "City", name: "Margao" },
+            { "@type": "City", name: "Vasco da Gama" },
+            { "@type": "Place", name: "Verna MIDC" },
+            { "@type": "Place", name: "Mormugao Port" },
+          ],
 
-            description:
-              "Expert EPF & ESIC compliance for Goa tourism & hospitality sector, pharma manufacturing units at Verna MIDC, and Mormugao Port contractors.",
+          description:
+            "EPF & ESIC compliance services for Goa’s tourism and hospitality sector, seasonal hotel staff, pharma manufacturing units at Verna MIDC, and Mormugao Port contractors. Expertise in EPFO 7A proceedings, ESIC inspections, Principal Employer liability and seasonal workforce structuring.",
 
-            priceRange: "₹₹",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "78",
+          },
+        })}
+      </Script>
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Goa" },
-              { "@type": "City", name: "Panaji" },
-              { "@type": "City", name: "Margao" },
-              { "@type": "City", name: "Vasco da Gama" },
-              { "@type": "City", name: "Mapusa" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "78",
-            },
-          }),
-        }}
-      />
-
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataGoaState} />
       </FadeInWhenVisible>
@@ -168,8 +142,39 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqGoa} />
+       <Script id="conversion-tracking-goa" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

@@ -1,15 +1,23 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
-import Script from "next/script";
-import { heroDataKrishnaDist, sectionsKrishnaDist } from "@/utils/data";
-import Head from "next/head";
+
+import {
+  heroDataKrishnaDist,
+  sectionsKrishnaDist,
+} from "@/utils/data";
+
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Krishna (Vijayawada) EPF & ESIC Consultant: NWC 2025 for Logistics, Infrastructure & Commercial Establishments | EPFDesk",
+
   description:
     "EPFDesk provides PF & ESIC compliance services in Krishna District (Vijayawada), covering logistics hubs, warehousing parks, construction sites, transport operators and commercial establishments. Expertise includes migrant labour PF/ESI onboarding, NWC 2025 payroll restructuring, BOCW cess handling, contractor audits and OSH/night shift compliance.",
+
   keywords: [
     "Vijayawada PF consultant",
     "Vijayawada ESIC consultant",
@@ -22,12 +30,15 @@ export const metadata = {
     "NWC 2025 payroll Vijayawada",
     "EPFDesk Krishna district",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/krishna-epf-esic-compliance",
   },
+
+  /* ✅ OPEN GRAPH */
   openGraph: {
     title:
-      "Vijayawada EPF & ESIC Consultant | Logistics, Warehousing, Construction & Commercial Compliance | EPFDesk",
+      "Vijayawada EPF & ESIC Consultant | Logistics, Warehousing, Construction & Commercial Compliance",
     description:
       "PF & ESIC compliance services for logistics corridors, warehousing, construction companies, banks and commercial establishments in Krishna District. Migrant workforce PF/ESI, NWC 2025 payroll and contractor audits.",
     url: "https://epfdesk.com/krishna-epf-esic-compliance",
@@ -37,151 +48,99 @@ export const metadata = {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "EPFDesk Vijayawada PF ESIC Compliance",
+        alt: "Vijayawada EPF & ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
 
+  /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
     title:
-      "Vijayawada EPF & ESIC Consultant | Logistics, Construction & Commercial Establishments | EPFDesk",
+      "Vijayawada EPF & ESIC Consultant | Logistics, Construction & Commercial Establishments",
     description:
       "EPFDesk helps Vijayawada’s logistics operators, warehouses, construction contractors and commercial establishments navigate PF, ESIC, BOCW and NWC 2025 compliance.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Krishna (Vijayawada) EPF & ESIC Consultant: NWC 2025 for Logistics,
-          Infrastructure & Commercial Establishments | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="krishna-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-AP">
+            <meta name="geo.placename" content="Vijayawada, Krishna District, Andhra Pradesh">
+            <meta name="geo.position" content="16.5062;80.6480">
+            <meta name="ICBM" content="16.5062, 80.6480">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="PF & ESIC compliance for Vijayawada’s logistics and warehousing networks, construction sites, transport operators and commercial establishments. NWC 2025 payroll, migrant labour onboarding, BOCW compliance and statutory audits."
-        />
-
-        <meta
-          name="keywords"
-          content="Vijayawada PF consultant, Krishna district ESIC, logistics labour compliance AP, warehousing PF ESIC AP, transport workforce PF, construction PF ESIC AP, BOCW compliance Vijayawada, NWC 2025 payroll AP, commercial establishment PF ESIC, EPFDesk Vijayawada"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/krishna-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Vijayawada EPF & ESIC Consultant | Logistics, Warehousing, Construction & Commercial Compliance | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance experts for logistics, warehousing, construction zones and commercial establishments across Krishna District. Migrant labour PF/ESI, NWC 2025 payroll and OSH compliance."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/krishna-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Vijayawada EPF & ESIC Compliance | Logistics, Construction & Trade | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="Compliance services for logistics parks, warehousing, construction contractors and commercial establishments in Vijayawada. NWC 2025-ready payroll and statutory audits."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-      <script
+      {/* ========= JSON-LD SCHEMA ========= */}
+      <Script
         id="schema-krishna"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/krishna-epf-esic-compliance#organization",
 
-            name: "Krishna (Vijayawada) EPF & ESIC Consultant: NWC 2025 for Logistics, Infrastructure & Commercial Establishments | EPFDesk",
-            alternateName:
-              "EPFDesk – Vijayawada EPF & ESIC Compliance for Logistics, Warehousing, Construction and Trade",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Consultants for Krishna District (Vijayawada)",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/krishna-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Vijayawada EPF & ESIC Compliance for Logistics, Construction & Commercial Establishments",
 
-            // Address block unchanged per your system
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/krishna-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Vijayawada",
+            addressRegion: "Andhra Pradesh",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPFDesk provides EPF and ESIC compliance services in Krishna District (Vijayawada), specializing in NWC 2025 requirements for logistics, warehousing, transport, construction, and commercial establishments. Expertise includes migrant workforce compliance, BOCW cess management, payroll restructuring, and OSH compliance for night shift operations.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 16.5062,
+            longitude: 80.6480,
+          },
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Krishna District" },
+            { "@type": "Place", name: "Vijayawada" },
+            { "@type": "Place", name: "NH Logistics Corridors" },
+            { "@type": "Place", name: "Warehousing Parks" },
+            { "@type": "Place", name: "Construction Zones" },
+            { "@type": "Place", name: "Commercial Establishments & Banks" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPF & ESIC compliance services for logistics hubs, warehousing parks, construction sites, transport operators and commercial establishments in Krishna District (Vijayawada). Expertise includes migrant workforce onboarding, BOCW cess management, NWC 2025 payroll restructuring and OSH compliance.",
 
-            areaServed: [
-              { "@type": "City", name: "Vijayawada" },
-              { "@type": "Place", name: "NH Network Logistics Belt" },
-              {
-                "@type": "Place",
-                name: "Construction Zones of Krishna District",
-              },
-              { "@type": "Place", name: "Commercial Establishments & Banks" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "47",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "47",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataKrishnaDist} />
       </FadeInWhenVisible>
@@ -189,8 +148,23 @@ const page = () => {
       <FadeInWhenVisible>
         <CodeOfConduct sections={sectionsKrishnaDist} />
       </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-krishna" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

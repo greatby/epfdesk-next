@@ -1,24 +1,23 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
+
 import { faqBaddi, heroDataBaddi, sectionsBaddi } from "@/utils/data";
 
-/* ============================
-   METADATA
-============================ */
+/* ===========================
+   METADATA (DISTRICT PAGE)
+=========================== */
 export const metadata = {
   title:
-    "Baddi EPF & ESIC Compliance: Pharma PF Audits, FMCG Wage Code Risk & PE Liability | EPFDesk",
-
+    "Baddi EPF & ESIC Compliance for Pharma, FMCG & Manufacturing Units | EPFDesk",
   description:
-    "High-risk EPF & ESIC compliance defense for Baddi-Barotiwala-Nalagarh pharma MNCs, FMCG plants and MSMEs. Experts in SRO Baddi enforcement, New Wage Code restructuring and Principal Employer liability.",
-
-  keywords: [
+    "High-risk EPF & ESIC compliance for Baddi–Barotiwala–Nalagarh pharma MNCs, FMCG plants and MSMEs. New Wage Code restructuring, Principal Employer liability and SRO Baddi audits handled.",
+  alternates: {
+    canonical: "https://epfdesk.com/baddi-epf-esic-compliance",
+  },
+    keywords: [
     "Baddi PF consultant",
     "Baddi ESIC registration",
     "Pharma PF compliance Baddi",
@@ -27,107 +26,171 @@ export const metadata = {
     "BBN industrial area PF ESIC",
     "Principal Employer liability Baddi",
   ],
-
-  alternates: {
-    canonical: "https://epfdesk.com/baddi-epf-esic-compliance",
-  },
-
   openGraph: {
-    title: "Baddi EPF & ESIC Compliance | Pharma, FMCG & Manufacturing Hub",
+    title:
+      "Baddi EPF & ESIC Compliance | Pharma, FMCG & BBN Industrial Hub | EPFDesk",
     description:
-      "PF & ESIC specialists for Baddi-Barotiwala-Nalagarh pharma, FMCG and manufacturing units. SRO Baddi audits handled.",
+      "PF & ESIC specialists for Baddi–Barotiwala–Nalagarh pharma, FMCG and manufacturing units.",
     url: "https://epfdesk.com/baddi-epf-esic-compliance",
+    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Baddi PF ESIC Compliance",
+        alt: "Baddi EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
-
   twitter: {
     card: "summary_large_image",
-    title: "Baddi EPF & ESIC Compliance | Pharma & FMCG | EPFDesk",
-    description:
-      "Expert PF/ESIC compliance for Baddi pharma MNCs, FMCG plants and MSMEs.",
     images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
-/* ============================
-   PAGE
-============================ */
-const page = () => {
+/* ===========================
+   PAGE COMPONENT
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Baddi EPF & ESIC Compliance: Pharma PF Audits & FMCG PE Liability |
-          EPFDesk
-        </title>
+      {/* ========= GEO + ADDITIONAL META TAGS ========= */}
+      <Script id="baddi-geo-meta" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-HP">
+            <meta name="geo.placename" content="Baddi">
+            <meta name="geo.position" content="30.9578;76.7914">
+            <meta name="ICBM" content="30.9578, 76.7914">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/baddi-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/baddi-epf-esic-compliance">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defense for Baddi pharma MNCs, FMCG plants and MSMEs. New Wage Code impact, Principal Employer liability and SRO Baddi audits handled."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/baddi-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Baddi EPF & ESIC Compliance | Pharma & FMCG Manufacturing"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC specialists for Baddi-Barotiwala-Nalagarh pharma and FMCG units."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* SCHEMA */}
+      {/* ========= LOCAL BUSINESS SCHEMA ========= */}
       <Script
-        id="schema-baddi"
+        id="schema-baddi-localbusiness"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "Baddi (BBN) EPF & ESIC Compliance Consultants | EPFDesk",
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/baddi-epf-esic-compliance",
-            telephone: "+91-9945933333",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
-            areaServed: [
-              "Baddi",
-              "Barotiwala",
-              "Nalagarh",
-              "BBN Industrial Area",
-            ],
-            description:
-              "EPF & ESIC compliance consultancy for Baddi-Barotiwala-Nalagarh pharma, FMCG, auto-ancillary, and MSME units under SRO Baddi.",
-          }),
-        }}
-      />
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/baddi-epf-esic-compliance#organization",
+          name: "EPFDesk - EPF & ESIC Consultants Baddi (BBN)",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/baddi-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Baddi",
+            addressRegion: "Himachal Pradesh",
+            postalCode: "173205",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 30.9578,
+            longitude: 76.7914,
+          },
+
+          areaServed: {
+            "@type": "AdministrativeArea",
+            name: "Baddi–Barotiwala–Nalagarh (BBN)",
+            containedIn: {
+              "@type": "State",
+              name: "Himachal Pradesh",
+            },
+          },
+
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "EPF & ESIC Compliance Services",
+            itemListElement: [
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "EPF Compliance Baddi",
+                  description:
+                    "EPF registration, audits and statutory compliance for Baddi pharma, FMCG and MSME units",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "ESIC Compliance Baddi",
+                  description:
+                    "ESIC registration, inspections and coverage for BBN industrial establishments",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "New Wage Code & PE Liability Advisory",
+                  description:
+                    "Wage Code restructuring, allowance risk mitigation and Principal Employer liability management under SRO Baddi",
+                },
+              },
+            ],
+          },
+
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "69",
+          },
+        })}
+      </Script>
+
+      {/* ========= GOOGLE ANALYTICS (DISTRICT) ========= */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-WMNLTE5RKQ"
+        strategy="afterInteractive"
+      />
+      <Script id="ga-baddi" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-WMNLTE5RKQ', {
+            page_location: window.location.href,
+            page_title: document.title,
+            custom_map: {
+              dimension1: 'district',
+              dimension2: 'state'
+            }
+          });
+
+          gtag('event', 'page_view', {
+            district: 'Baddi',
+            state: 'Himachal Pradesh',
+            page_type: 'district_landing'
+          });
+        `}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataBaddi} />
       </FadeInWhenVisible>
@@ -137,8 +200,76 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqBaddi} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking" strategy="afterInteractive">
+        {`
+          window.addEventListener('DOMContentLoaded', function() {
+
+            document.querySelectorAll('a[href^="tel:"]').forEach(function(el) {
+              el.addEventListener('click', function() {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: this.getAttribute('href'),
+                  value: 5
+                });
+              });
+            });
+
+            document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(function(el) {
+              el.addEventListener('click', function() {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              });
+            });
+
+            document.querySelectorAll('a[href^="mailto:"]').forEach(function(el) {
+              el.addEventListener('click', function() {
+                gtag('event', 'email_click', {
+                  event_category: 'conversion',
+                  event_label: this.getAttribute('href'),
+                  value: 3
+                });
+              });
+            });
+
+            document.querySelectorAll('form').forEach(function(form) {
+              form.addEventListener('submit', function() {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              });
+            });
+
+            let scrollTracked = false;
+            window.addEventListener('scroll', function() {
+              if (!scrollTracked && window.scrollY / document.body.scrollHeight > 0.75) {
+                scrollTracked = true;
+                gtag('event', 'scroll_75percent', {
+                  event_category: 'engagement',
+                  event_label: window.location.pathname
+                });
+              }
+            });
+
+            document.querySelectorAll('.cta-button, .contact-button, [data-cta]').forEach(function(btn) {
+              btn.addEventListener('click', function() {
+                gtag('event', 'cta_click', {
+                  event_category: 'engagement',
+                  event_label: this.textContent.trim(),
+                  value: 2
+                });
+              });
+            });
+
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

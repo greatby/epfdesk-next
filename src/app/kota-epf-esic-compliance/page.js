@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,14 +10,16 @@ import {
   faqKotaDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Kota EPF & ESIC Compliance: Coaching Sector PF, Stone Mining Hazard & RO Kota Audits 2025 | EPFDesk",
+
   description:
     "Expert EPF & ESIC defense for Kota coaching institutes, Kota stone mines and chemical factories. Navigate RO Kota audits, EEC-2025 amnesty and New Labour Code wage compliance.",
+
   keywords: [
     "Kota PF consultant",
     "EPF ESIC compliance Kota",
@@ -29,26 +28,32 @@ export const metadata = {
     "RO Kota EPF 7A defense",
     "EEC 2025 EPF Kota",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/kota-epf-esic-compliance",
   },
+
+  /* ✅ OPEN GRAPH */
   openGraph: {
     title:
       "Kota EPF & ESIC Compliance | Education, Mining & Industry",
     description:
       "PF & ESIC specialists for Kota coaching institutes, stone mining clusters and chemical industries.",
     url: "https://epfdesk.com/kota-epf-esic-compliance",
+    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Kota EPF ESIC Compliance",
+        alt: "Kota EPF & ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
+  /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
     title:
@@ -59,104 +64,81 @@ export const metadata = {
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Kota EPF & ESIC Compliance: Coaching Sector PF, Stone Mining Hazard & RO Kota Audits 2025 | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="kota-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-RJ">
+            <meta name="geo.placename" content="Kota, Kota District, Rajasthan">
+            <meta name="geo.position" content="25.2138;75.8648">
+            <meta name="ICBM" content="25.2138, 75.8648">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for Kota coaching institutes, Kota stone mining units and chemical factories."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/kota-epf-esic-compliance"
-        />
-
-        <meta property="og:title" content="Kota EPF & ESIC Compliance" />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Kota’s education, mining and industrial sectors."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-kota"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/kota-epf-esic-compliance#organization",
 
-            name: "Kota EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Kota Coaching, Mining & Industrial Units",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Consultants for Kota District",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/kota-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Kota EPF & ESIC Compliance for Coaching, Mining & Industrial Units",
 
-            /* ✅ SAME ADDRESS */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/kota-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Kota",
+            addressRegion: "Rajasthan",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance specialists for Kota coaching institutes, Kota stone mining clusters and chemical factories governed by RO Kota.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 25.2138,
+            longitude: 75.8648,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Kota District" },
+            { "@type": "Place", name: "Ramganj Mandi" },
+            { "@type": "Place", name: "Indraprastha Industrial Area" },
+            { "@type": "Place", name: "Anantpura" },
+            { "@type": "Place", name: "Jawahar Nagar" },
+            { "@type": "Place", name: "Rajiv Gandhi Nagar" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Kota District" },
-              { "@type": "Place", name: "Ramganj Mandi" },
-              { "@type": "Place", name: "Indraprastha Industrial Area" },
-              { "@type": "Place", name: "Anantpura" },
-              { "@type": "Place", name: "Jawahar Nagar" },
-              { "@type": "Place", name: "Rajiv Gandhi Nagar" },
-            ],
+          description:
+            "EPF & ESIC compliance services for Kota coaching institutes, stone mining clusters and chemical factories governed by RO Kota. Expertise includes Section 7A defence, EEC-2025 filings and wage restructuring under the New Labour Code.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "68",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "68",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataKotaDistrict} />
       </FadeInWhenVisible>
@@ -166,8 +148,23 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqKotaDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-kota" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

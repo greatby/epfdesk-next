@@ -1,5 +1,3 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
@@ -13,25 +11,20 @@ import {
   faqParbhaniDistrict,
 } from "@/utils/data";
 
-/* ============================
-   METADATA
-============================ */
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Parbhani EPF & ESIC Compliance for Dal Mills, Cotton Ginning & Seasonal Agro-Processing | EPFDesk",
+
   description:
     "Expert EPF & ESIC defence for Parbhani Dal Mills, PF liability on seasonal cotton ginning workers, and mandatory ESIC for agro-processing factories. Specialists in RO Aurangabad audit defence.",
-  keywords: [
-    "Parbhani PF consultant",
-    "Parbhani EPF ESIC compliance",
-    "Dal mill PF piece rate",
-    "Cotton ginning ESIC",
-    "Seasonal worker PF liability",
-    "EPFO 7A defence Parbhani",
-  ],
+
   alternates: {
     canonical: "https://epfdesk.com/parbhani-epf-esic-compliance",
   },
+
   openGraph: {
     title: "Parbhani EPF & ESIC Compliance | Dal Mills & Cotton Ginning",
     description:
@@ -48,126 +41,90 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Parbhani EPF & ESIC Compliance | Dal Mills & Cotton Ginning | EPFDesk",
+    description:
+      "PF & ESIC services for Parbhani dal mills, cotton ginning units and seasonal agro labour.",
+    images: ["https://epfdesk.com/images/logo.jpg"],
+  },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD
-      ============================ */}
-      <Head>
-        <title>
-          Parbhani EPF & ESIC Compliance: Dal Mills, Cotton Ginning & Seasonal
-          Labour PF Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="parbhani-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Parbhani">
+            <meta name="geo.position" content="19.2600;76.7748">
+            <meta name="ICBM" content="19.2600, 76.7748">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Parbhani dal mills, cotton ginning units and agro-processing factories. Seasonal and piece-rate labour PF liability, contractor audits and inspection readiness handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Parbhani PF consultant, Parbhani ESIC consultant, dal mill PF ESIC Parbhani, cotton ginning labour compliance Parbhani, seasonal agro labour PF liability, piece-rate wage PF audits Parbhani, contractor PF compliance Maharashtra, NWC 2025 wage restructuring Parbhani"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/parbhani-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Parbhani EPF & ESIC Consultant | Dal Mills & Cotton Ginning | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Parbhani dal mills, cotton ginning units and agro-processing industries."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/parbhani-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Parbhani EPF & ESIC Compliance | Dal Mills & Cotton Ginning | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Parbhani dal mills, cotton ginning units and seasonal agro labour — PF liability and audits handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* ============================
-          SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-parbhani"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/parbhani-epf-esic-compliance#organization",
 
-            name: "Parbhani EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Dal Mills & Cotton Ginning in Parbhani",
+          name:
+            "EPFDesk – Parbhani EPF & ESIC Compliance for Dal Mills & Agro Processing",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/parbhani-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "PF & ESIC Consultant for Parbhani Dal Mills, Cotton Ginning & Seasonal Labour",
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/parbhani-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Maharashtra",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance services for Parbhani Dal Mills, Cotton Ginning factories, seasonal agro-processing units and educational institutions.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 19.26,
+            longitude: 76.7748,
+          },
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Parbhani District" },
-              { "@type": "Place", name: "Parbhani MIDC" },
-              { "@type": "Place", name: "Manwat" },
-            ],
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Parbhani District" },
+            { "@type": "Place", name: "Parbhani MIDC" },
+            { "@type": "Place", name: "Manwat" },
+            { "@type": "Place", name: "Jintur" },
+            { "@type": "Place", name: "Pathri" },
+          ],
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "58",
-            },
-          }),
-        }}
-      />
+          description:
+            "EPF & ESIC compliance specialists for Parbhani Dal Mills, cotton ginning factories, seasonal agro-processing units and piece-rate labour employment, with expertise in RO Aurangabad audits, contractor PF liability and Labour Code readiness.",
 
-      {/* ============================
-          CONTENT
-      ============================ */}
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "58",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataParbhaniDistrict} />
       </FadeInWhenVisible>
@@ -176,9 +133,55 @@ const page = () => {
         <CodeOfConduct sections={sectionsParbhaniDistrict} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqParbhaniDistrict} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqParbhaniDistrict} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script
+        id="conversion-tracking-parbhani"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

@@ -1,11 +1,14 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { faqMoradabad, heroDataMoradabadDist, sectionsMoradabadDist } from "@/utils/data";
+
+import {
+  heroDataMoradabadDist,
+  sectionsMoradabadDist,
+  faqMoradabad,
+} from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -30,24 +33,27 @@ export const metadata = {
     canonical: "https://epfdesk.com/moradabad-epf-esic-compliance",
   },
 
+  /* ✅ OPEN GRAPH */
   openGraph: {
     title:
       "Moradabad EPF & ESIC Compliance | Brassware & Handicraft Export Sector",
     description:
       "PF & ESIC specialists for Moradabad brassware manufacturers, handicraft exporters and MSMEs. Piece-rate audits and RO Moradabad enforcement handled.",
     url: "https://epfdesk.com/moradabad-epf-esic-compliance",
+    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Moradabad PF ESIC Compliance",
+        alt: "Moradabad EPF & ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
 
+  /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
     title:
@@ -59,97 +65,77 @@ export const metadata = {
 };
 
 /* ===========================
-   PAGE COMPONENT
+   PAGE
 =========================== */
-const page = () => {
+export default function Page() {
   return (
     <>
-      {/* ========= LEGACY HEAD ========= */}
-      <Head>
-        <title>
-          Moradabad EPF & ESIC Compliance: Brassware Piece-Rate Evasion & Export PE Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="moradabad-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-UP">
+            <meta name="geo.placename" content="Moradabad, Uttar Pradesh, India">
+            <meta name="geo.position" content="28.8386;78.7733">
+            <meta name="ICBM" content="28.8386, 78.7733">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defense for Moradabad brassware manufacturers, handicraft exporters and MSMEs. Piece-rate PF audits, export PE liability and RO Moradabad enforcement handled."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/moradabad-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Moradabad EPF & ESIC Compliance | Brassware & Handicraft Exports"
-        />
-        <meta
-          property="og:description"
-          content="Experts in PF/ESIC for Moradabad brassware manufacturers and handicraft export houses."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ========= SCHEMA (ADDRESS UNCHANGED) ========= */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-moradabad"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/moradabad-epf-esic-compliance#organization",
 
-            name:
-              "Moradabad EPF & ESIC Compliance Service | Brassware & Handicraft Export | EPFDesk",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Consultants for Moradabad Brassware & Export Sector",
 
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Brassware Manufacturers & Export Houses in Moradabad",
+          alternateName:
+            "Moradabad EPF & ESIC Compliance for Brassware Manufacturers & Handicraft Exporters",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/moradabad-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/moradabad-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            /* 🔒 ADDRESS — DO NOT CHANGE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Uttar Pradesh",
+            addressCountry: "IN",
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 28.8386,
+            longitude: 78.7733,
+          },
 
-            description:
-              "Specialized PF & ESIC compliance services for Moradabad brassware manufacturers, handicraft exporters and MSMEs. Expertise in piece-rate PF exposure, job-work PE liability, ESIC hazard compliance and RO Moradabad inspections.",
+          areaServed: [
+            { "@type": "City", name: "Moradabad" },
+            { "@type": "Place", name: "Moradabad Industrial Areas" },
+            { "@type": "Place", name: "Brassware Manufacturing Clusters" },
+            { "@type": "Place", name: "Western UP Export Belt" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPF & ESIC compliance services for Moradabad brassware manufacturers, handicraft exporters and MSMEs. Specialized handling of piece-rate wage evasion, export house Principal Employer liability, ESIC hazard compliance and RO Moradabad inspections.",
 
-            areaServed: [
-              { "@type": "City", name: "Moradabad" },
-              { "@type": "City", name: "Moradabad Industrial Areas" },
-              { "@type": "City", name: "Western UP Export Clusters" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "82",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "82",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataMoradabadDist} />
       </FadeInWhenVisible>
@@ -159,8 +145,49 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqMoradabad} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-moradabad" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

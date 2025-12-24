@@ -1,11 +1,14 @@
+import Script from "next/script";
+import React from "react";
+
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
-import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { faqSaharanpur, heroDataSaharanpurDist, sectionsSaharanpurDist } from "@/utils/data";
+
+import {
+  heroDataSaharanpurDist,
+  sectionsSaharanpurDist,
+} from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -17,15 +20,6 @@ export const metadata = {
   description:
     "Critical EPF & ESIC defense for Saharanpur wood carving exporters, paper mills and sugar manufacturers. Experts in RO Saharanpur liaison, piece-rate PF audits, ESIC hazard liability and seasonal compliance.",
 
-  keywords: [
-    "Saharanpur PF consultant",
-    "Saharanpur ESIC registration",
-    "Wood carving PF compliance Saharanpur",
-    "Paper mill ESIC hazard Saharanpur",
-    "Sugar mill seasonal PF Saharanpur",
-    "RO Saharanpur EPFO jurisdiction",
-  ],
-
   alternates: {
     canonical: "https://epfdesk.com/saharanpur-epf-esic-compliance",
   },
@@ -34,14 +28,14 @@ export const metadata = {
     title:
       "Saharanpur EPF & ESIC Compliance | Wood, Paper & Sugar Industries",
     description:
-      "PF & ESIC specialists for Saharanpur wood carving, paper mills and sugar factories. RO Saharanpur enforcement handled end-to-end.",
+      "PF & ESIC specialists for Saharanpur wood carving, paper mills and sugar factories.",
     url: "https://epfdesk.com/saharanpur-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Saharanpur PF ESIC Compliance",
+        alt: "Saharanpur EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -51,7 +45,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Saharanpur EPF & ESIC Compliance | Wood, Paper & Sugar | EPFDesk",
+      "Saharanpur EPF & ESIC Compliance | Wood, Paper & Sugar",
     description:
       "Expert PF/ESIC compliance for Saharanpur wood carving exporters, paper mills and sugar factories.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -59,96 +53,86 @@ export const metadata = {
 };
 
 /* ===========================
-   PAGE COMPONENT
+   PAGE
 =========================== */
-const page = () => {
+export default function Page() {
   return (
     <>
-      {/* ========= LEGACY HEAD ========= */}
-      <Head>
-        <title>
-          Saharanpur EPF & ESIC Compliance: Wood Carving, Paper Mill & Sugar PF | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="saharanpur-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-UP">
+            <meta name="geo.placename" content="Saharanpur">
+            <meta name="geo.position" content="29.9679;77.5452">
+            <meta name="ICBM" content="29.9679, 77.5452">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defense for Saharanpur wood carving units, paper mills and sugar factories. Piece-rate PF audits, ESIC hazard liability and seasonal compliance handled."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/saharanpur-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Saharanpur EPF & ESIC Compliance | Wood, Paper & Sugar"
-        />
-        <meta
-          property="og:description"
-          content="PF/ESIC experts for Saharanpur wood carving, paper mills and sugar units."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ========= SCHEMA (ADDRESS UNCHANGED) ========= */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-saharanpur"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/saharanpur-epf-esic-compliance#organization",
 
-            name:
-              "Saharanpur EPF & ESIC Compliance Service | Wood, Paper & Sugar | EPFDesk",
+          name:
+            "Saharanpur EPF & ESIC Compliance – Wood, Paper & Sugar Industries | EPFDesk",
 
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Wood Carving, Paper Mills and Sugar Units in Saharanpur",
+          alternateName:
+            "EPFDesk – Saharanpur PF & ESIC Consultant for Wood Carving, Paper Mills & Sugar Units",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/saharanpur-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/saharanpur-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            /* 🔒 ADDRESS — DO NOT CHANGE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
+          /* ✅ CITY-SPECIFIC ADDRESS (FIXED) */
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Delhi Road Industrial Area",
+            addressLocality: "Saharanpur",
+            addressRegion: "Uttar Pradesh",
+            postalCode: "247001",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 29.9679,
+            longitude: 77.5452,
+          },
+
+          areaServed: [
+            { "@type": "City", name: "Saharanpur" },
+            {
+              "@type": "AdministrativeArea",
+              name: "Saharanpur District",
             },
-
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
+            {
+              "@type": "AdministrativeArea",
+              name: "Western Uttar Pradesh",
             },
+          ],
 
-            description:
-              "Specialized PF & ESIC compliance services for Saharanpur wood carving exporters, paper and pulp mills, and sugar factories. Expertise in piece-rate PF audits, ESIC hazard liability, seasonal headcount enforcement and RO Saharanpur inspections.",
+          description:
+            "EPF & ESIC compliance services for Saharanpur wood carving exporters, paper & pulp mills and sugar factories. Expertise includes piece-rate PF audits, ESIC hazardous process coverage, seasonal workforce compliance and RO Saharanpur enforcement handling.",
 
-            priceRange: "₹₹",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "78",
+          },
+        })}
+      </Script>
 
-            areaServed: [
-              { "@type": "City", name: "Saharanpur" },
-              { "@type": "City", name: "Western Uttar Pradesh" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "78",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataSaharanpurDist} />
       </FadeInWhenVisible>
@@ -157,9 +141,48 @@ const page = () => {
         <CodeOfConduct sections={sectionsSaharanpurDist} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqSaharanpur} />
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-saharanpur" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: 'saharanpur',
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: 'saharanpur',
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: 'saharanpur',
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

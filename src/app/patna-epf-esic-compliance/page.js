@@ -1,5 +1,3 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
@@ -9,26 +7,15 @@ import FaqAccordion from "@/components/faqAccordian";
 
 import { heroDataPatna, sectionsPatna, faqPatna } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Patna EPF & ESIC Compliance: IT Firms, Logistics Parks & PE Liability | EPFDesk",
 
   description:
     "High-risk EPF & ESIC compliance defence for Patna — IT & service companies, Bihta logistics parks, Fatuha industrial units, hospitals and retail chains. Experts in RO Patna enforcement, New Wage Code compliance, contractor audits and Principal Employer liability.",
-
-  keywords: [
-    "Patna PF consultant",
-    "Patna ESIC consultant",
-    "Patna IT company PF ESIC",
-    "Bihta logistics park labour compliance",
-    "Fatuha industrial area PF audits",
-    "Hospital PF ESIC Patna",
-    "Principal Employer liability Patna",
-    "RO Patna EPFO jurisdiction",
-  ],
 
   alternates: {
     canonical: "https://epfdesk.com/patna-epf-esic-compliance",
@@ -60,104 +47,79 @@ export const metadata = {
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* LEGACY HEAD */}
-      <Head>
-        <title>
-          Patna EPF & ESIC Compliance: IT Firms, Logistics Parks & PE Liability
-          | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="patna-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-BR">
+            <meta name="geo.placename" content="Patna">
+            <meta name="geo.position" content="25.5941;85.1376">
+            <meta name="ICBM" content="25.5941, 85.1376">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Patna IT firms, Bihta logistics parks, Fatuha industrial units, hospitals and retail chains. RO Patna audits, New Wage Code compliance and Principal Employer liability handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Patna PF consultant, Patna ESIC consultant, IT company PF ESIC Patna, Bihta logistics labour compliance, Fatuha industrial area PF audits, hospital PF ESIC Patna, Principal Employer liability Bihar, NWC 2025 wage restructuring Patna"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/patna-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Patna EPF & ESIC Consultant | IT, Logistics & Services | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Patna IT companies, logistics parks, hospitals and service-sector employers."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/patna-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Patna EPF & ESIC Compliance | IT & Logistics Hub | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Patna IT firms, logistics parks and hospitals — audits and PE liability handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* JSON-LD SCHEMA */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-patna"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "Patna EPF & ESIC Compliance Consultants | EPFDesk",
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/patna-epf-esic-compliance",
-            telephone: "+91-9945933333",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
-            areaServed: [
-              "Patna",
-              "Bihta",
-              "Fatuha",
-              "Kankarbagh",
-              "Boring Road",
-              "Rajendra Nagar",
-            ],
-            description:
-              "EPF & ESIC consultancy for Patna IT firms, Bihta logistics parks, Fatuha industrial units, and Bihar service-sector employers.",
-          }),
-        }}
-      />
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id": "https://epfdesk.com/patna-epf-esic-compliance#organization",
 
-      {/* PAGE SECTIONS */}
+          name:
+            "EPFDesk – Patna EPF & ESIC Compliance for IT, Logistics & Services",
+
+          alternateName:
+            "PF & ESIC Consultant for Patna IT Firms, Logistics Parks & Hospitals",
+
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/patna-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
+
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Bihar",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 25.5941,
+            longitude: 85.1376,
+          },
+
+          areaServed: [
+            { "@type": "City", name: "Patna" },
+            { "@type": "Place", name: "Bihta Industrial Area" },
+            { "@type": "Place", name: "Fatuha Industrial Area" },
+            { "@type": "Place", name: "Kankarbagh" },
+            { "@type": "Place", name: "Rajendra Nagar" },
+            { "@type": "Place", name: "Boring Road" },
+          ],
+
+          description:
+            "EPF & ESIC compliance specialists for Patna IT and service companies, Bihta logistics parks, Fatuha industrial units, hospitals and retail chains, with expertise in RO Patna audits, New Wage Code restructuring, contractor PF liability and Principal Employer compliance.",
+
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "64",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataPatna} />
       </FadeInWhenVisible>
@@ -166,9 +128,55 @@ const page = () => {
         <CodeOfConduct sections={sectionsPatna} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqPatna} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqPatna} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script
+        id="conversion-tracking-patna"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

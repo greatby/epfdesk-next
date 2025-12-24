@@ -1,17 +1,25 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import ThreeStepSection from "@/components/ThreeStepSection";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { heroDataHyderabadDist, sectionsHyderabadDist } from "@/utils/data";
+
+import {
+  heroDataHyderabadDist,
+  sectionsHyderabadDist,
+} from "@/utils/data";
+
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
-    "Hyderabad's Top EPF & ESIC Consultant: NWC 2025 Ready Compliance for HITEC City & Financial District | EPFDesk",
+    "Hyderabad EPF & ESIC Consultant: NWC 2025 Ready Compliance for HITEC City & Financial District | EPFDesk",
+
   description:
-    "EPFDesk provides IT/ITeS-focused PF & ESIC compliance services in Hyderabad. We specialize in NWC 2025 payroll structuring, PF/ESI registration, monthly ECR filings, audit defense, contractor compliance, and corporate statutory management for HITEC City, Gachibowli, and the Financial District.",
+    "Specialized EPF & ESIC compliance for Hyderabad IT & ITeS companies in HITEC City, Gachibowli and the Financial District. Experts in NWC 2025 payroll restructuring, PF/ESI registration, monthly ECR filings, audit defence and corporate statutory compliance.",
+
   keywords: [
     "Hyderabad PF consultant",
     "Hyderabad ESIC consultant",
@@ -19,27 +27,28 @@ export const metadata = {
     "Gachibowli labour law advisor",
     "Financial District PF compliance",
     "NWC 2025 payroll Hyderabad",
-    "IT ITES PF ESIC consultant",
+    "IT ITeS PF ESIC consultant",
     "corporate compliance Hyderabad",
     "PF audit support Hyderabad",
     "EPFDesk Hyderabad",
   ],
+
   alternates: {
-    canonical: "https://epfdesk.com/hyderabad-epf-esic-consultant",
+    canonical: "https://epfdesk.com/hyderabad-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Hyderabad EPF & ESIC Consultant | HITEC City, Gachibowli & Financial District Compliance | EPFDesk",
+      "Hyderabad EPF & ESIC Compliance | HITEC City & Financial District",
     description:
-      "Specialized PF & ESIC compliance for IT/ITeS companies in HITEC City, Gachibowli and Hyderabad Financial District. Expert payroll restructuring for NWC 2025, audit support, PF/ESI registration, and monthly filings.",
-    url: "https://epfdesk.com/hyderabad-epf-esic-consultant",
-    siteName: "EPFDesk",
+      "PF & ESIC specialists for Hyderabad IT/ITeS companies. NWC 2025 payroll structuring, audit defence and monthly compliance handled.",
+    url: "https://epfdesk.com/hyderabad-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "EPFDesk Hyderabad PF ESIC Compliance",
+        alt: "Hyderabad PF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -48,148 +57,137 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Hyderabad EPF & ESIC Consultant | HITEC City & Financial District NWC 2025 Compliance | EPFDesk",
-    description:
-      "PF & ESIC compliance services for IT/ITeS companies in Hyderabad, with NWC 2025 payroll support, monthly ECR filing, and PF/ESI registration for corporate offices and tech parks.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Hyderabad's Top EPF & ESIC Consultant: NWC 2025 Ready Compliance for
-          HITEC City & Financial District | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="hyderabad-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-TS">
+            <meta name="geo.placename" content="Hyderabad, Telangana">
+            <meta name="geo.position" content="17.3850;78.4867">
+            <meta name="ICBM" content="17.3850, 78.4867">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPFDesk provides PF & ESIC compliance solutions for Hyderabad’s IT hubs including HITEC City, Gachibowli, and the Financial District. Services include NWC 2025 payroll restructuring, PF/ESI registration, ECR filing, audit defense, and corporate statutory compliance."
-        />
-
-        <meta
-          name="keywords"
-          content="Hyderabad PF consultant, Hyderabad ESIC consultant, HITEC City PF compliance, Gachibowli ESIC compliance, Financial District PF ESIC, IT ITES PF consultant, payroll restructuring NWC 2025 Hyderabad, PF audit Hyderabad, contractor compliance Hyderabad, EPFDesk Hyderabad"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/hyderabad-epf-esic-consultant"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Hyderabad EPF & ESIC Consultant | HITEC City, Gachibowli & Financial District Compliance | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance expertise for IT/ITeS companies in HITEC City and Gachibowli. NWC 2025 payroll structuring, PF/ESI registration, audits, and statutory filings."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/hyderabad-epf-esic-consultant"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Hyderabad EPF & ESIC Consultant | HITEC City & Financial District | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="Compliance services for IT/ITeS companies in HITEC City, Gachibowli & the Financial District. PF, ESIC, NWC 2025 payroll, and audit support."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-      <script
+      {/* ========= JSON-LD SCHEMA ========= */}
+      <Script
         id="schema-hyderabad"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/hyderabad-epf-esic-compliance#organization",
 
-            name: "Hyderabad's Top EPF & ESIC Consultant: NWC 2025 Ready Compliance for HITEC City & Financial District | EPFDesk",
-            alternateName:
-              "EPFDesk – Hyderabad EPF & ESIC Consultants for IT/ITeS Firms in HITEC City, Gachibowli & Financial District",
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Hyderabad IT & Corporate Sector",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/hyderabad-epf-esic-consultant",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Hyderabad EPF & ESIC Compliance Experts for HITEC City & Financial District",
 
-            // ⛔ Address kept EXACTLY as you requested (Bangalore block reused)
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/hyderabad-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ CITY-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Hyderabad",
+            addressRegion: "Telangana",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPFDesk provides specialized EPF and ESIC compliance services in Hyderabad, ensuring NWC 2025-ready payroll structuring for IT/ITeS companies in HITEC City, Gachibowli, and the Financial District. We offer expert PF & ESI Registration, Monthly ECR Filing, Audit Support, and Risk-Free Statutory Compliance for corporate offices and tech parks.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 17.3850,
+            longitude: 78.4867,
+          },
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          areaServed: [
+            { "@type": "City", name: "Hyderabad" },
+            { "@type": "Place", name: "HITEC City" },
+            { "@type": "Place", name: "Gachibowli" },
+            { "@type": "Place", name: "Financial District" },
+            { "@type": "Place", name: "IT Parks & Corporate Offices" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPFDesk provides NWC 2025–ready EPF & ESIC compliance services for Hyderabad IT/ITeS companies. Coverage includes payroll restructuring, PF & ESIC registration, monthly ECR filing, audit defence, contractor compliance and statutory risk management for tech parks and corporate offices.",
 
-            areaServed: [
-              { "@type": "City", name: "Hyderabad" },
-              { "@type": "Place", name: "HITEC City" },
-              { "@type": "Place", name: "Gachibowli" },
-              { "@type": "Place", name: "Financial District" },
-              { "@type": "Place", name: "Corporate Offices & IT Parks" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "47",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "47",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataHyderabadDist} />
       </FadeInWhenVisible>
+
+      <FadeInWhenVisible>
+        <ThreeStepSection />
+      </FadeInWhenVisible>
+
       <FadeInWhenVisible>
         <CodeOfConduct sections={sectionsHyderabadDist} />
       </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-hyderabad" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

@@ -1,6 +1,5 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
+import React from "react";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
@@ -13,30 +12,25 @@ import {
   faqSolapurDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Solapur EPF & ESIC Compliance for Powerloom, Textile Mills & Sugar Contractors | EPFDesk",
+
   description:
-    "Expert EPF & ESIC defence for Solapur powerloom and textile industries, PF liability for piece-rate workers, and mandatory ESIC compliance for hazardous factories. Specialists in RO Solapur wage audits and PE liability.",
-  keywords: [
-    "Solapur PF consultant",
-    "Powerloom EPF compliance Solapur",
-    "Textile ESIC Solapur",
-    "Piece rate wages PF ESIC",
-    "Sugar mill contractor PF Solapur",
-    "RO Solapur EPFO 7A defence",
-  ],
+    "Expert EPF & ESIC compliance for Solapur powerloom units, textile mills and sugar factory contractors. Coverage includes piece-rate PF liability, ESIC applicability for hazardous units, RO Solapur audits and Principal Employer exposure.",
+
   alternates: {
     canonical: "https://epfdesk.com/solapur-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Solapur EPF & ESIC Compliance | Powerloom & Textile Industry | EPFDesk",
+      "Solapur EPF & ESIC Compliance | Powerloom & Textile Industry",
     description:
-      "PF & ESIC specialists for Solapur powerloom, textile mills, and sugar factories.",
+      "High-risk PF & ESIC compliance for Solapur powerloom, textile processing and sugar industries.",
     url: "https://epfdesk.com/solapur-epf-esic-compliance",
     images: [
       {
@@ -49,115 +43,94 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title:
-      "Solapur EPF & ESIC Compliance | Powerloom & Textile | EPFDesk",
+      "Solapur EPF & ESIC Compliance | Powerloom & Textile Sector",
     description:
-      "High-risk EPF & ESIC compliance and EPFO 7A defence for Solapur textile and powerloom industries.",
+      "PF & ESIC audit defence for Solapur powerloom units, textile mills and sugar contractors.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Solapur EPF & ESIC Compliance for Powerloom, Textile Mills & Sugar Contractors | EPFDesk
-        </title>
+      {/* ========= GEO META (SOLAPUR) ========= */}
+      <Script id="solapur-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Solapur">
+            <meta name="geo.position" content="17.6599;75.9064">
+            <meta name="ICBM" content="17.6599, 75.9064">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC defence for Solapur powerloom industry, textile mills, and sugar factory contractors."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/solapur-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Solapur EPF & ESIC Compliance | Powerloom & Textile Industry"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Solapur powerloom, textile, and agro-industrial establishments."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-solapur"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/solapur-epf-esic-compliance#organization",
 
-            name: "Solapur EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Powerloom & Textile Industry in Solapur",
+          name:
+            "Solapur EPF & ESIC Compliance – Powerloom, Textile & Sugar Industry | EPFDesk",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/solapur-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "EPFDesk – PF & ESIC Consultants for Solapur Powerloom & Textile Sector",
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/solapur-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ CITY-BASED ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "MIDC Akkalkot Road",
+            addressLocality: "Solapur",
+            addressRegion: "Maharashtra",
+            postalCode: "413006",
+            addressCountry: "IN",
+          },
 
-            description:
-              "Expert EPF & ESIC compliance services for Solapur powerloom units, textile mills, sugar factories, and construction Principal Employers with focus on piece-rate wages and RO Solapur audits.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 17.6599,
+            longitude: 75.9064,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Solapur District" },
+            { "@type": "City", name: "Solapur" },
+            { "@type": "Place", name: "Powerloom Clusters" },
+            { "@type": "Place", name: "Textile Processing Units" },
+            { "@type": "Place", name: "Sugar Factories" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Solapur District" },
-              { "@type": "Place", name: "Powerloom & Handloom Units" },
-              { "@type": "Place", name: "Textile Processing Mills" },
-              { "@type": "Place", name: "Sugar Factories" },
-            ],
+          description:
+            "EPF & ESIC compliance services for Solapur powerloom and textile industries, sugar factory contractors and piece-rate workforce. Expertise includes PF wage audits, hazardous industry ESIC coverage, RO Solapur inspections and Principal Employer liability mitigation.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "71",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "71",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataSolapurDistrict} />
       </FadeInWhenVisible>
@@ -167,8 +140,49 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqSolapurDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-solapur" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: 'solapur',
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: 'solapur',
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: 'solapur',
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

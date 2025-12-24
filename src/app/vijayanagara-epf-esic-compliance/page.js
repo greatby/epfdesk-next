@@ -1,10 +1,10 @@
+import React from "react";
+import Script from "next/script";
+
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
 
 import {
   heroDataVijayanagaraDist,
@@ -12,166 +12,124 @@ import {
   faqVijayanagara,
 } from "@/utils/data";
 
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Vijayanagara EPF & ESIC Compliance for JSW Steel, Mining Contractors & Hosapete Industry | EPFDesk",
+
   description:
-    "Expert PF & ESIC defence for JSW Steel contractors and Mining CLRA units in Vijayanagara. Specialists in PE liability, hazardous ESIC compliance, and BOCW Cess management.",
-  keywords: [
-    "Vijayanagara PF consultant",
-    "JSW PF ESIC compliance",
-    "Mining contractor PF Karnataka",
-    "EPFDesk Vijayanagara",
-    "BOCW Cess compliance",
-  ],
+    "Expert EPF & ESIC compliance for JSW Steel vendors, mining contractors and hazardous industry units in Vijayanagara. Specialists in Principal Employer liability, ESIC for hazardous processes and BOCW Cess compliance.",
+
   alternates: {
     canonical: "https://epfdesk.com/vijayanagara-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Vijayanagara EPF & ESIC Compliance | JSW Steel & Mining Sector | EPFDesk",
+      "Vijayanagara EPF & ESIC Compliance | JSW Steel & Mining Sector",
     description:
-      "PF/ESIC experts for JSW Steel Vendors, Mining Contractors & Heavy Industry Units in Vijayanagara.",
+      "PF & ESIC experts for JSW Steel contractors, mining CLRA vendors and heavy industry units in Vijayanagara.",
     url: "https://epfdesk.com/vijayanagara-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "EPFDesk Vijayanagara PF ESIC Compliance",
+        alt: "Vijayanagara EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title:
-      "Vijayanagara EPF & ESIC Compliance for JSW & Mining | EPFDesk",
+      "Vijayanagara EPF & ESIC Compliance | JSW Steel & Mining",
     description:
-      "Specialists in PF/ESIC for Steel, Mining and Construction Contractors in Vijayanagara.",
+      "EPF & ESIC compliance for JSW Steel vendors, mining contractors and hazardous industries in Vijayanagara.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Vijayanagara EPF & ESIC Compliance for JSW Steel, Mining Contractors & Hosapete Industry | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="vijayanagara-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-KA">
+            <meta name="geo.placename" content="Hosapete, Vijayanagara">
+            <meta name="geo.position" content="15.2689;76.3909">
+            <meta name="ICBM" content="15.2689, 76.3909">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert PF & ESIC defence for JSW Steel contractors and Mining CLRA units in Vijayanagara. Specialists in PE liability, ESIC for hazardous industry, and BOCW Cess compliance."
-        />
-
-        <meta
-          name="keywords"
-          content="JSW PF ESIC, Vijayanagara PF consultant, Mining PF Karnataka, Steel Plant PF liability"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/vijayanagara-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Vijayanagara EPF & ESIC Compliance | JSW Steel & Mining Sector"
-        />
-        <meta
-          property="og:description"
-          content="PF/ESIC experts for Steel, Mining, and Construction Contractors in Vijayanagara."
-        />
-        <meta property="og:image" content="https://epfdesk.com/images/logo.jpg" />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/vijayanagara-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Vijayanagara EPF & ESIC Compliance | Steel & Mining"
-        />
-        <meta
-          name="twitter:description"
-          content="Compliance for JSW Steel contractors, Mining CLRA units and heavy industry."
-        />
-        <meta name="twitter:image" content="https://epfdesk.com/images/logo.jpg" />
-      </Head>
-
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-vijayanagara"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/vijayanagara-epf-esic-compliance#organization",
 
-            name: "Vijayanagara EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultants for JSW Steel Vendors & Mining Contractors",
+          name:
+            "Vijayanagara EPF & ESIC Compliance for JSW Steel & Mining Contractors | EPFDesk",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/vijayanagara-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "EPFDesk – PF & ESIC Consultants for JSW Steel Vendors & Mining Contractors",
 
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Vidyanagar",
-              addressLocality: "Hosapete",
-              addressRegion: "Karnataka",
-              postalCode: "583201",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/vijayanagara-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 15.2689,
-              longitude: 76.3909,
-            },
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Vidyanagar",
+            addressLocality: "Hosapete",
+            addressRegion: "Karnataka",
+            postalCode: "583201",
+            addressCountry: "IN",
+          },
 
-            description:
-              "PF & ESIC compliance for JSW Steel contractors, Mining CLRA vendors and Heavy Industry units in Vijayanagara. Specialists in PE liability, hazardous ESIC, and BOCW Cess compliance.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 15.2689,
+            longitude: 76.3909,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Vijayanagara District" },
+            { "@type": "Place", name: "JSW Steel Toranagallu" },
+            { "@type": "Place", name: "Sandur Mining Belt" },
+            { "@type": "Place", name: "Vidyanagar Industrial Area" },
+            { "@type": "Place", name: "Hosapete" },
+          ],
 
-            areaServed: [
-              { "@type": "City", name: "Hosapete" },
-              { "@type": "Place", name: "Toranagallu" },
-              { "@type": "Place", name: "Vidyanagar" },
-              { "@type": "Place", name: "Sandur" },
-            ],
+          description:
+            "EPF & ESIC compliance services for JSW Steel contractors, mining CLRA vendors and hazardous industry units in Vijayanagara. Expertise includes Principal Employer liability mitigation, ESIC compliance for hazardous processes, BOCW Cess management and audit defence.",
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "58",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "58",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataVijayanagaraDist} />
       </FadeInWhenVisible>
@@ -181,8 +139,52 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqVijayanagara} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script
+        id="conversion-tracking-vijayanagara"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

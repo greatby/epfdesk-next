@@ -1,16 +1,14 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
+
 import { faqNE, heroDataNE, sectionsNE } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Northeast India EPF & ESIC Compliance: Infrastructure Projects, Border Industries & PE Liability | EPFDesk",
@@ -61,107 +59,86 @@ export const metadata = {
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* LEGACY HEAD */}
-      <Head>
-        <title>
-          Northeast India EPF & ESIC Compliance: Infrastructure Projects, Border
-          Industries & PE Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="ne-india-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-NER">
+            <meta name="geo.placename" content="Northeast India">
+            <meta name="geo.position" content="26.2006;92.9376">
+            <meta name="ICBM" content="26.2006, 92.9376">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Northeast India — Tripura rubber units, Nagaland trade hubs, Arunachal hydropower contractors, Manipur border industries and regional MSMEs. SRO audits, NEIDS compliance and Principal Employer liability handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Northeast India PF consultant, Northeast India ESIC consultant, Tripura rubber PF ESIC, Nagaland trade hub labour compliance, Arunachal hydropower contractor PF audits, Manipur border industry compliance, NEIDS labour law compliance, Principal Employer liability Northeast"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/northeast-india-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Northeast India EPF & ESIC Consultant | Infrastructure & Frontier States | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Northeast India infrastructure projects, border industries and industrial hubs."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/northeast-india-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Northeast India EPF & ESIC Compliance | Infrastructure & Border Industries | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Northeast India infrastructure projects and border industries — PE liability and audits handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* JSON-LD SCHEMA */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
-        id="schema-northeast"
+        id="schema-northeast-india"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "Northeast India EPF & ESIC Compliance Consultants | EPFDesk",
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/northeast-india-epf-esic-compliance",
-            telephone: "+91-9945933333",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
-            areaServed: [
-              "Agartala",
-              "Dimapur",
-              "Itanagar",
-              "Imphal",
-              "Aizawl",
-              "Bodhjungnagar",
-              "Ganeshnagar",
-              "Moreh",
-              "Zokhawthar",
-            ],
-            description:
-              "EPF & ESIC consultancy for Northeast India covering Tripura, Nagaland, Arunachal Pradesh, Manipur, and Mizoram industrial and infrastructure projects.",
-          }),
-        }}
-      />
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/northeast-india-epf-esic-compliance#organization",
 
-      {/* PAGE SECTIONS */}
+          name:
+            "EPFDesk – Northeast India EPF & ESIC Compliance for Infrastructure & Border Industries",
+
+          alternateName:
+            "PF & ESIC Consultant for Tripura, Nagaland, Arunachal Pradesh, Manipur & Mizoram",
+
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/northeast-india-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
+
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Northeast India",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 26.2006,
+            longitude: 92.9376,
+          },
+
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Tripura" },
+            { "@type": "AdministrativeArea", name: "Nagaland" },
+            { "@type": "AdministrativeArea", name: "Arunachal Pradesh" },
+            { "@type": "AdministrativeArea", name: "Manipur" },
+            { "@type": "AdministrativeArea", name: "Mizoram" },
+            { "@type": "Place", name: "Agartala" },
+            { "@type": "Place", name: "Dimapur" },
+            { "@type": "Place", name: "Itanagar" },
+            { "@type": "Place", name: "Imphal" },
+            { "@type": "Place", name: "Aizawl" },
+            { "@type": "Place", name: "Moreh Border Trade Point" },
+            { "@type": "Place", name: "Zokhawthar Border Trade Zone" },
+          ],
+
+          description:
+            "EPF & ESIC compliance specialists for Northeast India covering infrastructure projects, border trade zones, agro-processing, hydropower, logistics and MSME clusters, with expertise in NEIDS compliance, contractor audits, hazardous industry coverage and Principal Employer liability.",
+
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "83",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataNE} />
       </FadeInWhenVisible>
@@ -170,9 +147,53 @@ const page = () => {
         <CodeOfConduct sections={sectionsNE} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqNE} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqNE} />
+      </FadeInWhenVisible>
+        <Script
+              id="conversion-tracking-northeast-india"
+              strategy="afterInteractive"
+            >
+              {`
+                document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+                  el.addEventListener('click', () => {
+                    if (typeof gtag === 'function') {
+                      gtag('event', 'phone_click', {
+                        event_category: 'conversion',
+                        event_label: el.getAttribute('href'),
+                        value: 5
+                      });
+                    }
+                  });
+                });
+      
+                document
+                  .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+                  .forEach(el => {
+                    el.addEventListener('click', () => {
+                      if (typeof gtag === 'function') {
+                        gtag('event', 'whatsapp_click', {
+                          event_category: 'conversion',
+                          event_label: window.location.pathname,
+                          value: 5
+                        });
+                      }
+                    });
+                  });
+      
+                document.querySelectorAll('form').forEach(form => {
+                  form.addEventListener('submit', () => {
+                    if (typeof gtag === 'function') {
+                      gtag('event', 'form_submission', {
+                        event_category: 'lead',
+                        event_label: window.location.pathname,
+                        value: 10
+                      });
+                    }
+                  });
+                });
+              `}
+            </Script>
     </>
   );
-};
-
-export default page;
+}

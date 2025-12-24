@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,31 +10,35 @@ import {
   faqCGEmergingDistricts,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
-    "Chhattisgarh EPF & ESIC Compliance: Expert Consultants for Dhamtari & Mahasamund Hubs | EPFDesk",
+    "Chhattisgarh EPF & ESIC Compliance 2025: Dhamtari, Mahasamund & Emerging Districts | EPFDesk",
+
   description:
-    "Get expert EPF and ESIC compliance services in Chhattisgarh. We handle RO Raipur audits, EEC-2025 filings, and statutory audits for food processing units and MSMEs.",
+    "Expert EPF & ESIC compliance for Chhattisgarh’s emerging districts including Dhamtari, Mahasamund, Kanker and Gariaband. Specialists in RO Raipur audits, EEC-2025 filings and MSME statutory risk mitigation.",
+
   keywords: [
-    "EPF ESIC consultants Chhattisgarh",
+    "Chhattisgarh PF consultant",
     "Dhamtari rice mill PF compliance",
     "Mahasamund agro industry ESIC",
     "RO Raipur EPF audit support",
     "EEC 2025 Chhattisgarh filing",
     "Labour law consultant Raipur",
   ],
+
   alternates: {
     canonical:
       "https://epfdesk.com/chhattisgarh-emerging-districts-epf-esic-compliance",
   },
+
   openGraph: {
     title:
-      "Chhattisgarh EPF & ESIC Compliance | Emerging Districts",
+      "Chhattisgarh EPF & ESIC Compliance | Emerging Districts | EPFDesk",
     description:
-      "PF & ESIC specialists for food processing, agri-logistics and emerging mining districts in Chhattisgarh.",
+      "PF & ESIC specialists for food processing, agri-logistics and emerging industrial districts in Chhattisgarh.",
     url:
       "https://epfdesk.com/chhattisgarh-emerging-districts-epf-esic-compliance",
     images: [
@@ -51,117 +52,97 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Chhattisgarh EPF & ESIC Compliance | Dhamtari & Mahasamund",
-    description:
-      "Expert PF & ESIC consultancy for food processing and MSMEs in Chhattisgarh.",
     images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
-/* ============================
+/* ===========================
    PAGE COMPONENT
-============================ */
-const page = () => {
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Chhattisgarh EPF & ESIC Compliance: Expert Consultants for Dhamtari & Mahasamund Hubs | EPFDesk
-        </title>
+      {/* ========= GEO + EXTRA META ========= */}
+      <Script id="cg-emerging-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-CG">
+            <meta name="geo.placename" content="Raipur">
+            <meta name="geo.position" content="21.2514;81.6296">
+            <meta name="ICBM" content="21.2514, 81.6296">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/chhattisgarh-emerging-districts-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/chhattisgarh-emerging-districts-epf-esic-compliance">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC consultancy for Dhamtari rice mills, Mahasamund agro units, and emerging MSMEs under RO Raipur."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/chhattisgarh-emerging-districts-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Chhattisgarh EPF & ESIC Compliance"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for emerging food-processing and mining districts in Chhattisgarh."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= LOCAL BUSINESS SCHEMA ========= */}
       <Script
-        id="schema-cg-emerging"
+        id="schema-chhattisgarh-emerging"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/chhattisgarh-emerging-districts-epf-esic-compliance#organization",
 
-            name:
-              "Chhattisgarh EPF & ESIC Compliance – Emerging Districts | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultants for Dhamtari & Mahasamund",
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Emerging Districts of Chhattisgarh",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url:
+            "https://epfdesk.com/chhattisgarh-emerging-districts-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url:
-              "https://epfdesk.com/chhattisgarh-emerging-districts-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Raipur",
+            addressRegion: "Chhattisgarh",
+            postalCode: "492001",
+            addressCountry: "IN",
+          },
 
-            /* ✅ SAME ADDRESS */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 21.2514,
+            longitude: 81.6296,
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Dhamtari District" },
+            { "@type": "AdministrativeArea", name: "Mahasamund District" },
+            { "@type": "AdministrativeArea", name: "Kanker District" },
+            { "@type": "AdministrativeArea", name: "Gariaband District" },
+          ],
 
-            description:
-              "EPF & ESIC compliance specialists for food processing hubs, agri-logistics corridors, and emerging mining districts governed by RO Raipur.",
+          description:
+            "EPF & ESIC compliance services for food processing units, agro-logistics hubs, MSMEs and emerging industrial districts governed by RO Raipur.",
 
-            priceRange: "₹₹₹",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "69",
+          },
+        })}
+      </Script>
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Dhamtari District" },
-              { "@type": "AdministrativeArea", name: "Mahasamund District" },
-              { "@type": "AdministrativeArea", name: "Kanker District" },
-              { "@type": "AdministrativeArea", name: "Gariaband District" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "69",
-            },
-          }),
-        }}
-      />
-
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataCGEmergingDistricts} />
       </FadeInWhenVisible>
@@ -171,8 +152,39 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqCGEmergingDistricts} />
+       <Script id="conversion-tracking-chhattisgarh-emerging" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

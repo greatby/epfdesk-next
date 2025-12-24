@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,25 +10,30 @@ import {
   faqJajpurDistrict,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Jajpur EPF & ESIC Compliance: Kalinganagar Steel Hub Audits & Expert Consultants | EPFDesk",
+
   description:
-    "Specialized EPF & ESIC consultancy for Jajpur steel plants, Kalinganagar MSMEs and mining ancillaries. Navigate RO Keonjhar audits, EEC-2025 and Principal Employer liability in Odisha’s steel hub.",
+    "Specialized EPF & ESIC compliance defence for Jajpur steel plants, Kalinganagar MSMEs and mining ancillaries. Navigate RO Keonjhar audits, EEC-2025 and Principal Employer liability in Odisha’s steel hub.",
+
   keywords: [
     "Jajpur PF consultant",
     "Kalinganagar EPF ESIC compliance",
     "Tata Steel contractor PF audit",
     "JSL vendor ESIC registration",
-    "RO Keonjhar EPF 7A defense",
+    "RO Keonjhar EPF 7A defence",
     "EEC 2025 Jajpur",
+    "Principal Employer liability Kalinganagar",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/jajpur-epf-esic-compliance",
   },
+
   openGraph: {
     title:
       "Jajpur EPF & ESIC Compliance | Kalinganagar Steel Ecosystem",
@@ -49,117 +51,88 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Jajpur EPF & ESIC Consultants | Kalinganagar Steel Hub",
-    description:
-      "High-risk PF & ESIC compliance for Kalinganagar steel, fabrication and mining vendors.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Jajpur EPF & ESIC Compliance: Kalinganagar Steel Hub Audits | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="jajpur-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-OD">
+            <meta name="geo.placename" content="Jajpur, Odisha">
+            <meta name="geo.position" content="20.8480;86.3380">
+            <meta name="ICBM" content="20.8480, 86.3380">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for Jajpur steel plants, Kalinganagar MSMEs and chromite mining vendors under RO Keonjhar."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/jajpur-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Jajpur EPF & ESIC Compliance"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Kalinganagar steel and mining ecosystem."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-jajpur"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/jajpur-epf-esic-compliance#organization",
 
-            name:
-              "Jajpur EPF & ESIC Compliance Consultants | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Advisory for Kalinganagar Steel Hub",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Specialists for Jajpur & Kalinganagar Steel Hub",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/jajpur-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Jajpur EPF & ESIC Compliance Experts for Steel, Mining & MSME Units",
 
-            /* ✅ SAME ADDRESS */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/jajpur-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ DISTRICT-CORRECT ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Jajpur",
+            addressRegion: "Odisha",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance specialists for Jajpur steel plants, Kalinganagar MSMEs, chromite mining vendors and fabrication units governed by RO Keonjhar.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 20.8480,
+            longitude: 86.3380,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Jajpur District" },
+            { "@type": "Place", name: "Kalinganagar Industrial Area" },
+            { "@type": "Place", name: "Jajpur Road" },
+            { "@type": "Place", name: "Duburi" },
+            { "@type": "Place", name: "Sukinda" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Jajpur District" },
-              { "@type": "Place", name: "Kalinganagar Industrial Area" },
-              { "@type": "Place", name: "Jajpur Road" },
-              { "@type": "Place", name: "Duburi" },
-              { "@type": "Place", name: "Sukinda" },
-            ],
+          description:
+            "EPF & ESIC compliance services for Jajpur steel plants, Kalinganagar MSMEs, chromite mining vendors and fabrication units. Coverage includes RO Keonjhar inspections, EPF Section 7A proceedings, EEC-2025 voluntary enrolment and Principal Employer liability defence.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "69",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "69",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataJajpurDistrict} />
       </FadeInWhenVisible>
@@ -169,8 +142,47 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqJajpurDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-jajpur" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

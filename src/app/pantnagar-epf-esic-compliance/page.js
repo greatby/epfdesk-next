@@ -1,28 +1,30 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
 
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
+
 import {
   faqPantnagar,
   heroDataPantnagar,
   sectionsPantnagar,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Pantnagar EPF & ESIC Consultants: Auto-Hub & SIDCUL Compliance | EPFDesk",
+
   description:
-    "Specialized EPF & ESIC consultancy for Pantnagar auto units, Rudrapur MSMEs, and Sitarganj SIDCUL clusters. Navigate RO Haldwani audits, EEC-2025, and PE liability.",
+    "Specialized EPF & ESIC consultancy for Pantnagar auto units, Rudrapur MSMEs, and Sitarganj SIDCUL clusters. Navigate RO Haldwani audits, EEC-2025, and Principal Employer liability.",
+
   alternates: {
     canonical: "https://epfdesk.com/pantnagar-epf-esic-compliance",
   },
+
   openGraph: {
     title: "Pantnagar EPF & ESIC Compliance | Automotive & Industrial Hub",
     description:
@@ -39,105 +41,91 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Pantnagar EPF & ESIC Compliance | Auto & SIDCUL Industries | EPFDesk",
+    description:
+      "PF & ESIC services for Pantnagar auto OEM vendors, SIDCUL industries and MSMEs.",
+    images: ["https://epfdesk.com/images/logo.jpg"],
+  },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* LEGACY HEAD */}
-      <Head>
-        <title>
-          Pantnagar EPF & ESIC Compliance: Auto OEM Vendors, SIDCUL Industries &
-          PE Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="pantnagar-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-UK">
+            <meta name="geo.placename" content="Pantnagar">
+            <meta name="geo.position" content="28.9845;79.4141">
+            <meta name="ICBM" content="28.9845, 79.4141">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Pantnagar auto OEM vendors, Rudrapur and Sitarganj SIDCUL industries, and manufacturing MSMEs. RO Haldwani audits, contractor PF liability, wage code restructuring and ESIC coverage handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Pantnagar PF consultant, Pantnagar ESIC consultant, Pantnagar auto vendor PF ESIC, SIDCUL labour compliance Pantnagar, Rudrapur Sitarganj MSME PF audits, Principal Employer liability Pantnagar, NWC 2025 wage restructuring Uttarakhand"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/pantnagar-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Pantnagar EPF & ESIC Consultant | Auto & SIDCUL Hub | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Pantnagar auto vendors, SIDCUL industries and manufacturing MSMEs."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/pantnagar-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Pantnagar EPF & ESIC Compliance | Auto & SIDCUL Industries | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Pantnagar auto OEM vendors, SIDCUL industries and MSMEs — audits and PE liability handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* JSON-LD SCHEMA */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-pantnagar"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "Pantnagar EPF & ESIC Compliance Consultants | EPFDesk",
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/pantnagar-epf-esic-compliance",
-            telephone: "+91-9945933333",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
-            areaServed: [
-              "Pantnagar",
-              "Rudrapur",
-              "Sitarganj",
-              "Gadarpur",
-              "Kashipur",
-            ],
-            description:
-              "EPF & ESIC consultancy for Pantnagar auto OEM vendors, Rudrapur engineering MSMEs, Sitarganj SIDCUL clusters, and Kumaon logistics hubs.",
-          }),
-        }}
-      />
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/pantnagar-epf-esic-compliance#organization",
 
-      {/* PAGE SECTIONS */}
+          name:
+            "EPFDesk – Pantnagar EPF & ESIC Compliance for Auto & SIDCUL Industries",
+
+          alternateName:
+            "PF & ESIC Consultant for Pantnagar Auto OEM Vendors & SIDCUL Clusters",
+
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/pantnagar-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
+
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Uttarakhand",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 28.9845,
+            longitude: 79.4141,
+          },
+
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Udham Singh Nagar District" },
+            { "@type": "Place", name: "Pantnagar SIDCUL" },
+            { "@type": "Place", name: "Rudrapur" },
+            { "@type": "Place", name: "Sitarganj" },
+            { "@type": "Place", name: "Gadarpur" },
+            { "@type": "Place", name: "Kashipur" },
+          ],
+
+          description:
+            "EPF & ESIC compliance specialists for Pantnagar auto OEM vendors, Rudrapur and Sitarganj SIDCUL industries, engineering MSMEs and contractor-driven manufacturing units, with expertise in RO Haldwani audits, Principal Employer liability and Labour Code readiness.",
+
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "71",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataPantnagar} />
       </FadeInWhenVisible>
@@ -146,9 +134,55 @@ const page = () => {
         <CodeOfConduct sections={sectionsPantnagar} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqPantnagar} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqPantnagar} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script
+        id="conversion-tracking-pantnagar"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

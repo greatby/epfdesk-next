@@ -1,11 +1,15 @@
+import Script from "next/script";
+
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { faqPrayagraj, heroDataPrayagrajDist, sectionsPrayagrajDist } from "@/utils/data";
+
+import {
+  heroDataPrayagrajDist,
+  sectionsPrayagrajDist,
+  faqPrayagraj,
+} from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -15,16 +19,7 @@ export const metadata = {
     "Prayagraj EPF & ESIC Compliance: Educational PF Mandate, High Court PE Liability & Coaching Sector Audits | EPFDesk",
 
   description:
-    "Critical EPF & ESIC defense for Prayagraj educational institutions, coaching centers, hospitals and government contractors. Experts in RO Prayagraj liaison, retrospective PF demands on school staff, allowance audits and CLRA/PE liability management.",
-
-  keywords: [
-    "Prayagraj PF consultant",
-    "Prayagraj ESIC registration",
-    "PF compliance private school Prayagraj",
-    "Coaching center PF ESIC Prayagraj",
-    "High Court contractor PF liability",
-    "RO Prayagraj EPFO consultant",
-  ],
+    "Critical EPF & ESIC defense for Prayagraj educational institutions, coaching centers, hospitals and government contractors. Experts in RO Prayagraj liaison, retrospective PF demands on school staff, allowance audits and CLRA/Principal Employer liability management.",
 
   alternates: {
     canonical: "https://epfdesk.com/prayagraj-epf-esic-compliance",
@@ -59,97 +54,77 @@ export const metadata = {
 };
 
 /* ===========================
-   PAGE COMPONENT
+   PAGE
 =========================== */
-const page = () => {
+export default function Page() {
   return (
     <>
-      {/* ========= LEGACY HEAD ========= */}
-      <Head>
-        <title>
-          Prayagraj EPF & ESIC Compliance: Educational PF Mandate, High Court PE Liability & Coaching Sector Audits | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="prayagraj-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-UP">
+            <meta name="geo.placename" content="Prayagraj">
+            <meta name="geo.position" content="25.4358;81.8463">
+            <meta name="ICBM" content="25.4358, 81.8463">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defense for Prayagraj educational institutions, coaching centers, hospitals and government contractors. Retrospective PF audits and RO Prayagraj enforcement handled."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/prayagraj-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Prayagraj EPF & ESIC Compliance | Education & Government Sector"
-        />
-        <meta
-          property="og:description"
-          content="Experts in PF/ESIC for Prayagraj schools, coaching centers and government contractors."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ========= SCHEMA (ADDRESS UNCHANGED) ========= */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-prayagraj"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/prayagraj-epf-esic-compliance#organization",
 
-            name:
-              "Prayagraj EPF & ESIC Compliance Service | Education & Government Contractors | EPFDesk",
+          name:
+            "EPFDesk – Prayagraj EPF & ESIC Compliance for Education & Government Sector",
 
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Schools, Coaching Centers & Government Contractors in Prayagraj",
+          alternateName:
+            "PF & ESIC Consultant for Schools, Coaching Centers & Government Contractors in Prayagraj",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/prayagraj-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/prayagraj-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            /* 🔒 ADDRESS — DO NOT CHANGE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Uttar Pradesh",
+            addressCountry: "IN",
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 25.4358,
+            longitude: 81.8463,
+          },
 
-            description:
-              "Specialized PF & ESIC compliance services for Prayagraj educational institutions, coaching centers, hospitals and government contractors. Expertise in educational PF mandates, allowance audits, Principal Employer liability under CLRA, ESIC registration and RO Prayagraj proceedings.",
+          areaServed: [
+            { "@type": "City", name: "Prayagraj" },
+            { "@type": "City", name: "Allahabad" },
+            { "@type": "Place", name: "Naini Industrial Area" },
+            { "@type": "Place", name: "Civil Lines Prayagraj" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPF & ESIC compliance specialists for Prayagraj covering private schools, colleges, coaching centers, hospitals, High Court and government contractors, with expertise in retrospective PF audits, allowance suppression cases, CLRA Principal Employer liability and RO Prayagraj proceedings.",
 
-            areaServed: [
-              { "@type": "City", name: "Prayagraj" },
-              { "@type": "City", name: "Allahabad" },
-              { "@type": "City", name: "Naini Industrial Area" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "82",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "82",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataPrayagrajDist} />
       </FadeInWhenVisible>
@@ -158,9 +133,55 @@ const page = () => {
         <CodeOfConduct sections={sectionsPrayagrajDist} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqPrayagraj} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqPrayagraj} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script
+        id="conversion-tracking-prayagraj"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

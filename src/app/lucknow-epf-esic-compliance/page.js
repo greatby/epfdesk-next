@@ -1,11 +1,14 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { faqLucknow, heroDataLucknowDist, sectionsLucknowDist } from "@/utils/data";
+
+import {
+  heroDataLucknowDist,
+  sectionsLucknowDist,
+  faqLucknow,
+} from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -15,7 +18,7 @@ export const metadata = {
     "Lucknow EPF & ESIC Compliance: HAL/BEL PE Liability, Service Sector Allowance Audits & Educational PF | EPFDesk",
 
   description:
-    "Critical EPF & ESIC defense for Lucknow HAL/BEL contractors, IT/ITeS firms, private schools and hospitals. Experts in RO Lucknow liaison, high-stakes allowance suppression audits, and minimizing CLRA/Principal Employer liability across Central UP government contracts.",
+    "Critical EPF & ESIC defense for Lucknow HAL/BEL contractors, IT/ITeS firms, private schools and hospitals. Experts in RO Lucknow liaison, high-stakes allowance suppression audits and Principal Employer liability under CLRA.",
 
   keywords: [
     "Lucknow PF consultant",
@@ -30,28 +33,31 @@ export const metadata = {
     canonical: "https://epfdesk.com/lucknow-epf-esic-compliance",
   },
 
+  /* ✅ OPEN GRAPH */
   openGraph: {
     title:
       "Lucknow EPF & ESIC Compliance | Government Contractors & Service Sector",
     description:
-      "PF & ESIC specialists for Lucknow defence contractors, IT services, private schools and hospitals. Allowance audits, PE liability and RO Lucknow enforcement handled.",
+      "PF & ESIC specialists for Lucknow defence contractors, IT services, private schools and hospitals.",
     url: "https://epfdesk.com/lucknow-epf-esic-compliance",
+    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Lucknow PF ESIC Compliance",
+        alt: "Lucknow EPF & ESIC Compliance",
       },
     ],
     locale: "en_IN",
     type: "website",
   },
 
+  /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
     title:
-      "Lucknow EPF & ESIC Compliance | HAL/BEL & Service Sector | EPFDesk",
+      "Lucknow EPF & ESIC Compliance | HAL/BEL & Service Sector",
     description:
       "Expert PF/ESIC compliance for Lucknow government contractors, IT firms and educational institutions.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -59,98 +65,79 @@ export const metadata = {
 };
 
 /* ===========================
-   PAGE COMPONENT
+   PAGE
 =========================== */
-const page = () => {
+export default function Page() {
   return (
     <>
-      {/* ========= LEGACY HEAD ========= */}
-      <Head>
-        <title>
-          Lucknow EPF & ESIC Compliance: HAL/BEL PE Liability, Service Sector Allowance Audits & Educational PF | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="lucknow-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-UP">
+            <meta name="geo.placename" content="Lucknow, Uttar Pradesh, India">
+            <meta name="geo.position" content="26.8467;80.9462">
+            <meta name="ICBM" content="26.8467, 80.9462">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defense for Lucknow HAL/BEL contractors, IT services, private schools and hospitals. Allowance audits, CLRA PE liability and RO Lucknow enforcement handled."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/lucknow-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Lucknow EPF & ESIC Compliance | Government & Service Sector"
-        />
-        <meta
-          property="og:description"
-          content="Experts in PF/ESIC for Lucknow government contractors, IT/ITeS firms and educational institutions."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ========= SCHEMA (ADDRESS UNCHANGED) ========= */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-lucknow"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/lucknow-epf-esic-compliance#organization",
 
-            name:
-              "Lucknow EPF & ESIC Compliance Service | Government & Service Sector | EPFDesk",
+          name:
+            "EPFDesk – EPF & ESIC Compliance Consultants for Lucknow District",
 
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for HAL/BEL Contractors & Service Firms in Lucknow",
+          alternateName:
+            "Lucknow EPF & ESIC Compliance for HAL/BEL Contractors, IT & Education Sector",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/lucknow-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/lucknow-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            /* 🔒 ADDRESS — SAME AS ALL OTHER PAGES */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Lucknow",
+            addressRegion: "Uttar Pradesh",
+            addressCountry: "IN",
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 26.8467,
+            longitude: 80.9462,
+          },
 
-            description:
-              "Specialized PF & ESIC compliance services for Lucknow defence contractors (HAL/BEL), IT/ITeS firms, private schools, hospitals and government service providers. Expertise in allowance suppression audits, Principal Employer liability under CLRA, educational sector PF mandates, and RO Lucknow proceedings.",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Lucknow District" },
+            { "@type": "Place", name: "HAL Lucknow" },
+            { "@type": "Place", name: "BEL Units" },
+            { "@type": "Place", name: "IT & ITeS Establishments" },
+            { "@type": "Place", name: "Educational Institutions" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPF & ESIC compliance services for Lucknow government contractors, defence PSUs (HAL/BEL), IT/ITeS firms, private schools and hospitals. Expertise includes allowance suppression audits, CLRA Principal Employer liability and RO Lucknow proceedings.",
 
-            areaServed: [
-              { "@type": "City", name: "Lucknow" },
-              { "@type": "City", name: "Alambagh" },
-              { "@type": "City", name: "Chinhat" },
-              { "@type": "City", name: "Amausi" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "95",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "95",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataLucknowDist} />
       </FadeInWhenVisible>
@@ -160,8 +147,49 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqLucknow} />
+
+      {/* ========= CONVERSION TRACKING (LOCKED) ========= */}
+      <Script id="conversion-tracking-lucknow" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

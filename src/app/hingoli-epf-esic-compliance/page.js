@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,30 +10,35 @@ import {
   faqHingoliDistrict,
 } from "@/utils/data";
 
-/* ============================
-   METADATA
-============================ */
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Hingoli EPF & ESIC Compliance for Cotton Ginning, Oil Mills & Newly Notified Areas | EPFDesk",
+
   description:
-    "Expert EPF & ESIC defence for Hingoli Cotton Ginning units, PF liability on seasonal piece-rate workers, and mandatory ESIC compliance in newly notified MIDC and commercial areas.",
+    "Expert EPF & ESIC defence for Hingoli cotton ginning units, oil mills and agro-processing industries. Specialists in PF liability for seasonal and piece-rate workers, ESIC applicability in newly notified areas, EPFO 7A defence and inspection readiness.",
+
   keywords: [
-    "Hingoli EPF consultant",
-    "Hingoli ESIC registration",
-    "Cotton ginning PF piece rate",
+    "Hingoli PF consultant",
+    "Hingoli ESIC consultant",
+    "Cotton ginning PF piece rate Hingoli",
     "Newly notified ESIC area Hingoli",
-    "Seasonal worker PF liability",
+    "Seasonal worker PF liability Hingoli",
     "EPFO 7A defence Hingoli",
+    "Agro processing labour compliance Hingoli",
   ],
+
   alternates: {
     canonical: "https://epfdesk.com/hingoli-epf-esic-compliance",
   },
+
   openGraph: {
     title:
       "Hingoli EPF & ESIC Compliance | Cotton Ginning & Newly Notified Areas",
     description:
-      "High-risk PF & ESIC compliance for Hingoli agro-processing, cotton ginning units and newly ESIC-notified establishments.",
+      "High-risk PF & ESIC compliance for Hingoli agro-processing units, cotton ginning mills and newly ESIC-notified establishments.",
     url: "https://epfdesk.com/hingoli-epf-esic-compliance",
     images: [
       {
@@ -49,125 +51,88 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
+  twitter: {
+    card: "summary_large_image",
+    images: ["https://epfdesk.com/images/logo.jpg"],
+  },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD
-      ============================ */}
-      <Head>
-        <title>
-          Hingoli EPF & ESIC Compliance: Cotton Ginning, Piece-Rate Labour & PE
-          Liability | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="hingoli-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-MH">
+            <meta name="geo.placename" content="Hingoli District, Maharashtra">
+            <meta name="geo.position" content="19.7191;77.1485">
+            <meta name="ICBM" content="19.7191, 77.1485">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Hingoli cotton ginning units, seasonal and piece-rate workers, and newly notified ESIC coverage areas. Contractor PF liability, wage audits and inspections handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Hingoli PF consultant, Hingoli ESIC consultant, cotton ginning PF ESIC Hingoli, piece-rate labour compliance, seasonal worker PF liability Hingoli, newly notified ESIC area Hingoli, contractor PF audits Hingoli, NWC 2025 wage restructuring Hingoli"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/hingoli-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Hingoli EPF & ESIC Consultant | Cotton Ginning & Seasonal Labour | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Hingoli cotton ginning units and seasonal piece-rate workforce."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/hingoli-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Hingoli EPF & ESIC Compliance | Cotton Ginning & Piece-Rate Labour | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Hingoli cotton ginning units and seasonal piece-rate labour — PE liability and audits handled."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
-      {/* ============================
-          SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-hingoli"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/hingoli-epf-esic-compliance#organization",
 
-            name: "Hingoli EPF & ESIC Compliance Service | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Hingoli Agro-Processing & Cotton Ginning",
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Hingoli Cotton Ginning & Agro Industries",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/hingoli-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "Hingoli PF ESIC Compliance Experts for Piece-Rate & Seasonal Workforce",
 
-            /* ✅ ADDRESS SAME AS BANGALORE */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/hingoli-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ DISTRICT-LEVEL ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Hingoli",
+            addressRegion: "Maharashtra",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance services for Hingoli Cotton Ginning units, Oil Mills, Dal Mills and newly ESIC-notified MSMEs.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 19.7191,
+            longitude: 77.1485,
+          },
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Hingoli District" },
-              { "@type": "Place", name: "Hingoli MIDC" },
-            ],
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Hingoli District" },
+            { "@type": "Place", name: "Hingoli MIDC" },
+            { "@type": "Place", name: "Cotton Ginning Clusters" },
+            { "@type": "Place", name: "Oil & Dal Mills" },
+            { "@type": "Place", name: "Newly ESIC-Notified Commercial Areas" },
+          ],
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "44",
-            },
-          }),
-        }}
-      />
+          description:
+            "EPF & ESIC compliance consultancy for Hingoli cotton ginning units, oil mills, dal mills and agro-processing MSMEs. Expertise in PF on piece-rate and seasonal labour, ESIC applicability in newly notified areas, EPFO 7A proceedings and inspection defence.",
 
-      {/* ============================
-          CONTENT
-      ============================ */}
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "44",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataHingoliDistrict} />
       </FadeInWhenVisible>
@@ -176,9 +141,50 @@ const page = () => {
         <CodeOfConduct sections={sectionsHingoliDistrict} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqHingoliDistrict} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqHingoliDistrict} />
+      </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-hingoli" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

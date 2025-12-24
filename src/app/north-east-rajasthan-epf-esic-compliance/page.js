@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,14 +10,16 @@ import {
   faqNorthEastRajasthan,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
     "Rajasthan EPF & ESIC Compliance 2025: Bikaner Agro-Hub, Bharatpur Manufacturing & RO Jaipur/Ajmer Audits | EPFDesk",
+
   description:
     "Expert EPF & ESIC defense for Rajasthan’s northern and eastern hubs. Navigate RO Ajmer/Jaipur audits, Sri Ganganagar agro-logistics PE liability and Bharatpur foundry EEC-2025 amnesty.",
+
   keywords: [
     "Bikaner EPF consultant",
     "Sri Ganganagar PF compliance",
@@ -29,10 +28,12 @@ export const metadata = {
     "RO Ajmer EPF 7A defense",
     "RO Jaipur ESIC audits",
   ],
+
   alternates: {
     canonical:
       "https://epfdesk.com/north-east-rajasthan-epf-esic-compliance",
   },
+
   openGraph: {
     title:
       "Rajasthan EPF & ESIC Compliance | Agro, Foundry & Gateway Zones",
@@ -51,6 +52,7 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title:
@@ -61,108 +63,80 @@ export const metadata = {
   },
 };
 
-/* ============================
-   PAGE COMPONENT
-============================ */
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Rajasthan EPF & ESIC Compliance 2025: Bikaner Agro-Hub, Bharatpur Manufacturing & RO Jaipur/Ajmer Audits | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="ne-rajasthan-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-RJ">
+            <meta name="geo.placename" content="North & East Rajasthan, India">
+            <meta name="geo.position" content="27.0238;74.2179">
+            <meta name="ICBM" content="27.0238, 74.2179">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC advisory for Bikaner agro-processing, Sri Ganganagar logistics, Bharatpur foundries and Dholpur manufacturing units."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/north-east-rajasthan-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="North & East Rajasthan EPF & ESIC Compliance"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for Rajasthan’s agro, foundry and eastern manufacturing hubs."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-north-east-rajasthan"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/north-east-rajasthan-epf-esic-compliance#organization",
 
-            name:
-              "Rajasthan EPF & ESIC Compliance – Agro & Manufacturing Zones | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Bikaner, Sri Ganganagar, Bharatpur & Dholpur",
+          name:
+            "EPFDesk – Rajasthan EPF & ESIC Compliance for Agro & Manufacturing Zones",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url:
-              "https://epfdesk.com/north-east-rajasthan-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "PF & ESIC Consultant for Bikaner, Sri Ganganagar, Bharatpur & Dholpur",
 
-            /* ✅ SAME ADDRESS */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url:
+            "https://epfdesk.com/north-east-rajasthan-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Rajasthan",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPF & ESIC compliance specialists for Rajasthan’s agro-processing, solar, foundry and manufacturing clusters governed by RO Ajmer and RO Jaipur.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 27.0238,
+            longitude: 74.2179,
+          },
 
-            priceRange: "₹₹₹",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Bikaner District" },
+            { "@type": "AdministrativeArea", name: "Sri Ganganagar District" },
+            { "@type": "AdministrativeArea", name: "Bharatpur District" },
+            { "@type": "AdministrativeArea", name: "Dholpur District" },
+            { "@type": "Place", name: "Hanumangarh" },
+          ],
 
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Bikaner District" },
-              { "@type": "AdministrativeArea", name: "Sri Ganganagar District" },
-              { "@type": "AdministrativeArea", name: "Bharatpur District" },
-              { "@type": "AdministrativeArea", name: "Dholpur District" },
-              { "@type": "Place", name: "Hanumangarh" },
-            ],
+          description:
+            "EPF & ESIC compliance specialists for Rajasthan’s agro-processing, logistics, foundry and manufacturing clusters governed by RO Ajmer and RO Jaipur, with expertise in PE liability, wage audits and EEC-2025 filings.",
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "79",
-            },
-          }),
-        }}
-      />
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "79",
+          },
+        })}
+      </Script>
 
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataNorthEastRajasthan} />
       </FadeInWhenVisible>
@@ -171,9 +145,53 @@ const page = () => {
         <CodeOfConduct sections={sectionsNorthEastRajasthan} />
       </FadeInWhenVisible>
 
-      <FaqAccordion faqs={faqNorthEastRajasthan} />
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={faqNorthEastRajasthan} />
+      </FadeInWhenVisible>
+        <Script
+        id="conversion-tracking-north-east-rajasthan"
+        strategy="afterInteractive"
+      >
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: window.location.pathname,
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

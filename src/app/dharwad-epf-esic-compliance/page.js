@@ -1,10 +1,8 @@
+import Script from "next/script";
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
 
 import {
   heroDataDharwadDist,
@@ -12,12 +10,15 @@ import {
   faqDharwad,
 } from "@/utils/data";
 
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
-    "Dharwad EPF & ESIC Compliance: Educational Trusts, IIT Dharwad Contractors, ESDM Units & PE Liability | EPFDesk",
+    "Dharwad EPF & ESIC Compliance 2025: Educational Trusts, IIT Dharwad Contractors, ESDM Units & PE Liability | EPFDesk",
 
   description:
-    "High-risk EPF & ESIC compliance defence for Dharwad educational trusts, private colleges, IIT Dharwad contractors, ESDM clusters and auto ancillary MSMEs. Experts in ESIC coverage for education sector, teaching/non-teaching staff audits and New Wage Code 2025 restructuring.",
+    "High-risk EPF & ESIC compliance defence for Dharwad educational trusts, private colleges, IIT Dharwad contractors, ESDM clusters and auto ancillary MSMEs. Experts in ESIC applicability for education sector, teaching/non-teaching staff audits and New Wage Code 2025 restructuring.",
 
   keywords: [
     "Dharwad PF consultant",
@@ -28,6 +29,8 @@ export const metadata = {
     "ESDM labour compliance Dharwad",
     "Auto ancillary PF ESIC Dharwad",
     "Principal Employer liability Dharwad",
+    "NWC 2025 wage restructuring Dharwad",
+    "EPFDesk Dharwad",
   ],
 
   alternates: {
@@ -35,7 +38,8 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Dharwad EPF & ESIC Compliance | Education, IIT & ESDM Clusters",
+    title:
+      "Dharwad EPF & ESIC Compliance | Education, IIT Dharwad & ESDM Clusters",
     description:
       "PF & ESIC specialists for Dharwad educational institutions, IIT Dharwad contractors, ESDM units and auto ancillary MSMEs.",
     url: "https://epfdesk.com/dharwad-epf-esic-compliance",
@@ -44,7 +48,7 @@ export const metadata = {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Dharwad PF ESIC Compliance",
+        alt: "Dharwad EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -53,123 +57,81 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Dharwad EPF & ESIC Compliance | Education • IIT • ESDM | EPFDesk",
-    description:
-      "Expert PF & ESIC compliance for Dharwad colleges, IIT Dharwad contract staff, ESDM units and auto ancillary workers.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE COMPONENT
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Dharwad EPF & ESIC Compliance: Educational Trusts, IIT Dharwad
-          Contractors & ESDM Units | EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="dharwad-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-KA">
+            <meta name="geo.placename" content="Dharwad">
+            <meta name="geo.position" content="15.4589;75.0078">
+            <meta name="ICBM" content="15.4589, 75.0078">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPF & ESIC compliance defence for Dharwad educational trusts, private colleges, IIT Dharwad contractors, ESDM clusters and auto ancillary MSMEs. Teaching/non-teaching staff coverage, contractor PF liability and wage audits handled."
-        />
-
-        <meta
-          name="keywords"
-          content="Dharwad PF consultant, Dharwad ESIC consultant, educational trust PF ESIC Dharwad, private college labour compliance, IIT Dharwad contractor PF, ESDM unit PF ESIC, auto ancillary labour laws Dharwad, Principal Employer liability Dharwad, NWC 2025 wage restructuring Dharwad"
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/dharwad-epf-esic-compliance"
-        />
-
-        {/* OpenGraph */}
-        <meta
-          property="og:title"
-          content="Dharwad EPF & ESIC Consultant | Education, IIT & ESDM Units | EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC compliance for Dharwad educational institutions, IIT Dharwad contractors, ESDM units and auto ancillary MSMEs."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/dharwad-epf-esic-compliance"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Dharwad EPF & ESIC Compliance | Education • IIT • ESDM | EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="PF & ESIC services for Dharwad colleges, IIT Dharwad support staff, ESDM units and auto ancillary workers."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-      </Head>
-
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-dharwad"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id": "https://epfdesk.com/dharwad-epf-esic-compliance#organization",
 
-            name: "Dharwad EPF & ESIC Compliance | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultant for Educational Trusts, IIT Dharwad & ESDM Units",
+          name: "EPFDesk – EPF & ESIC Consultants for Dharwad District",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/dharwad-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/dharwad-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          /* ✅ DISTRICT-SPECIFIC ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Dharwad",
+            addressRegion: "Karnataka",
+            postalCode: "580001",
+            addressCountry: "IN",
+          },
 
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Dharwad",
-              addressRegion: "Karnataka",
-              postalCode: "580001",
-              addressCountry: "IN",
-            },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 15.4589,
+            longitude: 75.0078,
+          },
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 15.4589,
-              longitude: 75.0078,
-            },
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Dharwad District" },
+            { "@type": "Place", name: "Hubballi–Dharwad" },
+            { "@type": "Place", name: "IIT Dharwad Campus" },
+            { "@type": "Place", name: "ESDM Manufacturing Clusters" },
+            { "@type": "Place", name: "Navalgund" },
+            { "@type": "Place", name: "Kalghatgi" },
+          ],
 
-            description:
-              "PF & ESIC compliance services for educational institutions, IIT Dharwad contractors, Auto Ancillary MSMEs and ESDM manufacturing units.",
+          description:
+            "EPF & ESIC compliance services for Dharwad educational trusts, private colleges, IIT Dharwad contractors, ESDM manufacturing units and auto ancillary MSMEs. Expertise includes ESIC applicability for education sector, teaching and non-teaching staff audits, contractor PF liability, Principal Employer exposure and New Wage Code 2025 payroll restructuring.",
 
-            priceRange: "₹₹₹",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "71",
+          },
+        })}
+      </Script>
 
-            areaServed: [
-              { "@type": "City", name: "Dharwad" },
-              { "@type": "City", name: "Hubballi" },
-              { "@type": "City", name: "Navalgund" },
-              { "@type": "City", name: "Kalghatgi" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "71",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataDharwadDist} />
       </FadeInWhenVisible>
@@ -179,8 +141,41 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqDharwad} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-dharwad" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

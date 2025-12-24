@@ -1,43 +1,41 @@
+import Script from "next/script";
+import React from "react";
+
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
-import React from "react";
 import CodeOfConduct from "@/components/CodeOfConduct";
-import ThreeStepSection from "@/components/ThreeStepSection";
-import FaqAccordion from "@/components/faqAccordian";
-import Head from "next/head";
-import Script from "next/script";
-import { heroDataTanjavurDist, sectionsThanjavurDist } from "@/utils/data";
+
+import {
+  heroDataTanjavurDist,
+  sectionsThanjavurDist,
+} from "@/utils/data";
+
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
 export const metadata = {
   title:
     "Thanjavur EPF & ESIC Consultant | Rice Mills, Agro-Processing & Seasonal Labour | NWC 2025 Compliance – EPFDesk",
 
   description:
-    "EPFDesk provides EPF & ESIC compliance services in Thanjavur for rice mills, agro-processing units, and seasonal labour clusters. We specialize in NWC 2025 payroll alignment, UAN/KYC onboarding for migrant workers, statutory contribution accuracy, and transitioning informal labour systems into full compliance.",
+    "EPFDesk provides EPF & ESIC compliance services in Thanjavur for rice mills, agro-processing units, and seasonal labour clusters. Specialists in NWC 2025 payroll alignment, UAN/KYC onboarding for migrant workers and statutory compliance.",
 
-  keywords: [
-    "Thanjavur EPF Consultant",
-    "Thanjavur ESIC Consultant",
-    "Rice Mill PF Compliance",
-    "Agro Processing ESIC",
-    "Seasonal Labour PF ESIC",
-    "Delta Agro Belt Compliance",
-    "NWC 2025 Thanjavur Payroll",
-    "EPFDesk Tamil Nadu Compliance",
-  ],
+  alternates: {
+    canonical: "https://epfdesk.com/thanjavur-epf-esic-compliance",
+  },
 
   openGraph: {
     title:
-      "Thanjavur EPF & ESIC Consultant | Rice Mills, Agro-Processing & Seasonal Labour | NWC 2025 Ready – EPFDesk",
+      "Thanjavur EPF & ESIC Compliance | Rice Mills & Agro-Processing",
     description:
-      "Specialized EPF & ESIC compliance for Thanjavur's rice mills, agro-processing units, and seasonal labour workforce. Expert payroll restructuring, UAN onboarding, audits, contractor compliance, and statutory advisory.",
+      "PF & ESIC compliance for Thanjavur rice mills, agro-processing units and seasonal labour workforce.",
     url: "https://epfdesk.com/thanjavur-epf-esic-compliance",
-    siteName: "EPFDesk",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Thanjavur Labour Compliance – EPFDesk",
+        alt: "Thanjavur EPF ESIC Compliance",
       },
     ],
     locale: "en_IN",
@@ -47,148 +45,140 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Thanjavur EPF & ESIC Consultant | Rice Mills, Agro-Processing & Labour Compliance – EPFDesk",
+      "Thanjavur EPF & ESIC Consultant | Rice Mills & Agro-Processing",
     description:
-      "EPFDesk delivers NWC 2025-ready EPF & ESIC services for Thanjavur’s rice mills, agro-processing units, and seasonal workforces, including payroll restructuring and statutory audits.",
+      "NWC 2025-ready PF & ESIC compliance for Thanjavur rice mills, agro units and seasonal labour.",
     images: ["https://epfdesk.com/images/logo.jpg"],
   },
 };
 
-const page = () => {
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>
-          Thanjavur EPF & ESIC Consultant | Rice Mills, Agro-Processing &
-          Seasonal Labour | NWC 2025 Compliance – EPFDesk
-        </title>
+      {/* ========= GEO META ========= */}
+      <Script id="thanjavur-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-TN">
+            <meta name="geo.placename" content="Thanjavur">
+            <meta name="geo.position" content="10.7867;79.1378">
+            <meta name="ICBM" content="10.7867, 79.1378">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="EPFDesk provides EPF & ESIC compliance services in Thanjavur for rice mills, agro-processing units, and seasonal labour clusters. We specialize in NWC 2025 payroll alignment, UAN/KYC onboarding for migrant workers, statutory contribution accuracy, and transitioning informal labour systems into full compliance."
-        />
-
-        <meta
-          name="keywords"
-          content="Thanjavur EPF Consultant, Thanjavur ESIC Consultant, Rice Mill PF Compliance, Agro Processing ESIC, Seasonal Labour PF ESIC, Delta Agro Belt Compliance, NWC 2025 Thanjavur Payroll, EPFDesk Tamil Nadu Compliance"
-        />
-
-        {/* Open Graph */}
-        <meta
-          property="og:title"
-          content="Thanjavur EPF & ESIC Consultant | Rice Mills, Agro-Processing & Seasonal Labour | NWC 2025 Ready – EPFDesk"
-        />
-        <meta
-          property="og:description"
-          content="Specialized EPF & ESIC compliance for Thanjavur's rice mills, agro-processing units, and seasonal labour workforce. Expert payroll restructuring, UAN onboarding, audits, contractor compliance, and statutory advisory."
-        />
-        <meta
-          property="og:url"
-          content="https://epfdesk.com/thanjavur-epf-esic-compliance"
-        />
-        <meta property="og:site_name" content="EPFDesk" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Thanjavur EPF & ESIC Consultant | Rice Mills, Agro-Processing & Labour Compliance – EPFDesk"
-        />
-        <meta
-          name="twitter:description"
-          content="EPFDesk delivers NWC 2025-ready EPF & ESIC services for Thanjavur’s rice mills, agro-processing units, and seasonal workforces, including payroll restructuring and statutory audits."
-        />
-        <meta
-          name="twitter:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        {/* Canonical */}
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/thanjavur-epf-esic-compliance"
-        />
-      </Head>
+      {/* ========= JSON-LD SCHEMA ========= */}
       <Script
         id="schema-thanjavur"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/thanjavur-epf-esic-compliance#organization",
 
-            name: "Thanjavur EPF & ESIC Compliance: NWC 2025 for Rice Mills, Agro-Processing & Seasonal Labour | Delta Statutory Solutions | EPFDesk",
-            alternateName:
-              "EPFDesk – Thanjavur Rice Mill, Agro-Processing & Seasonal Labour Compliance Experts",
+          name:
+            "Thanjavur EPF & ESIC Compliance – Rice Mills, Agro Processing & Seasonal Labour | EPFDesk",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url: "https://epfdesk.com/thanjavur-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          alternateName:
+            "EPFDesk – Thanjavur Rice Mill & Agro-Processing Compliance Experts",
 
-            // Standard address (same across all schemas)
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
-            },
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/thanjavur-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹",
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          /* ✅ CITY ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Medical College Road",
+            addressLocality: "Thanjavur",
+            addressRegion: "Tamil Nadu",
+            postalCode: "613004",
+            addressCountry: "IN",
+          },
 
-            description:
-              "EPFDesk delivers EPF and ESIC compliance solutions for Thanjavur's rice mills and agro-processing units. We specialize in seasonal labour UAN/KYC onboarding, statutory contribution management, and transitioning informal payment systems to NWC 2025-compliant wage structures.",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 10.7867,
+            longitude: 79.1378,
+          },
 
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
-            },
+          areaServed: [
+            { "@type": "City", name: "Thanjavur" },
+            { "@type": "AdministrativeArea", name: "Thanjavur District" },
+            { "@type": "Place", name: "Cauvery Delta Agro Belt" },
+            { "@type": "Place", name: "Rice Mill Clusters" },
+            { "@type": "Place", name: "Seasonal Labour Zones" },
+          ],
 
-            priceRange: "₹₹",
+          description:
+            "EPF & ESIC compliance services for Thanjavur rice mills and agro-processing units. Expertise includes seasonal labour UAN/KYC onboarding, migrant workforce compliance, statutory contribution accuracy and NWC 2025 wage restructuring.",
 
-            areaServed: [
-              { "@type": "City", name: "Thanjavur" },
-              { "@type": "Place", name: "Delta Agro-Processing Belt" },
-              { "@type": "Place", name: "Thanjavur Rice Mill Cluster" },
-              { "@type": "Place", name: "Seasonal Labour Zones" },
-            ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "47",
+          },
+        })}
+      </Script>
 
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "47",
-            },
-          }),
-        }}
-      />
-
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataTanjavurDist} />
       </FadeInWhenVisible>
+
       <FadeInWhenVisible>
         <CodeOfConduct sections={sectionsThanjavurDist} />
       </FadeInWhenVisible>
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-thanjavur" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: 'thanjavur',
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document
+            .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+            .forEach(el => {
+              el.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                  gtag('event', 'whatsapp_click', {
+                    event_category: 'conversion',
+                    event_label: 'thanjavur',
+                    value: 5
+                  });
+                }
+              });
+            });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: 'thanjavur',
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}

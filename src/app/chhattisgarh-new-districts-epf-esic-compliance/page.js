@@ -1,7 +1,4 @@
-import React from "react";
-import Head from "next/head";
 import Script from "next/script";
-
 import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
@@ -13,14 +10,16 @@ import {
   faqCGFinalEmergingDistricts,
 } from "@/utils/data";
 
-/* ============================
+/* ===========================
    METADATA (APP ROUTER)
-============================ */
+=========================== */
 export const metadata = {
   title:
-    "Chhattisgarh EPF & ESIC Consultants: Compliance for New Districts & Mining Hubs | EPFDesk",
+    "Chhattisgarh EPF & ESIC Consultants 2025: New Districts, Mining & Agro Hubs | EPFDesk",
+
   description:
-    "Expert EPF & ESIC consultancy for Bemetara, Kawardha, Mungeli and Bastar. Navigate RO Raipur/Bilaspur audits, EEC-2025 and Principal Employer liability in Chhattisgarh’s emerging hubs.",
+    "Expert EPF & ESIC consultancy for Chhattisgarh’s newly formed and emerging districts including Bemetara, Kabirdham, Mungeli, Bastar and Dantewada. Specialists in RO Raipur/Bilaspur audits, EEC-2025 and Principal Employer liability.",
+
   keywords: [
     "EPF ESIC consultants Bastar",
     "Bemetara ethanol plant PF compliance",
@@ -29,10 +28,12 @@ export const metadata = {
     "Mining contractor ESIC Bastar",
     "EEC 2025 Chhattisgarh consultants",
   ],
+
   alternates: {
     canonical:
       "https://epfdesk.com/chhattisgarh-final-emerging-districts-epf-esic-compliance",
   },
+
   openGraph: {
     title:
       "Chhattisgarh EPF & ESIC Compliance | New Districts & Mining Hubs",
@@ -51,126 +52,109 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Chhattisgarh EPF & ESIC Consultants | Emerging Industrial Districts",
-    description:
-      "High-risk PF & ESIC consultancy for ethanol, food processing, mining and tribal-area projects.",
     images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
-/* ============================
+/* ===========================
    PAGE COMPONENT
-============================ */
-const page = () => {
+=========================== */
+export default function Page() {
   return (
     <>
-      {/* ============================
-          LEGACY HEAD TAGS
-      ============================ */}
-      <Head>
-        <title>
-          Chhattisgarh EPF & ESIC Consultants: Compliance for New Districts & Mining Hubs | EPFDesk
-        </title>
+      {/* ========= GEO & SEARCH META ========= */}
+      <Script id="cg-final-emerging-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-CG">
+            <meta name="geo.placename" content="Raipur">
+            <meta name="geo.position" content="21.2514;81.6296">
+            <meta name="ICBM" content="21.2514, 81.6296">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/chhattisgarh-final-emerging-districts-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/chhattisgarh-final-emerging-districts-epf-esic-compliance">
+          \`);
+        `}
+      </Script>
 
-        <meta
-          name="description"
-          content="Expert EPF & ESIC consultancy for Bemetara, Kawardha, Mungeli and Bastar districts under RO Raipur and RO Bilaspur."
-        />
-
-        <link
-          rel="canonical"
-          href="https://epfdesk.com/chhattisgarh-final-emerging-districts-epf-esic-compliance"
-        />
-
-        <meta
-          property="og:title"
-          content="Chhattisgarh EPF & ESIC Consultants"
-        />
-        <meta
-          property="og:description"
-          content="PF & ESIC experts for emerging industrial, tribal and mining districts of Chhattisgarh."
-        />
-        <meta
-          property="og:image"
-          content="https://epfdesk.com/images/logo.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      {/* ============================
-          JSON-LD SCHEMA
-      ============================ */}
+      {/* ========= LOCAL BUSINESS SCHEMA ========= */}
       <Script
         id="schema-cg-final-emerging"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id":
+            "https://epfdesk.com/chhattisgarh-final-emerging-districts-epf-esic-compliance#organization",
 
-            name:
-              "Chhattisgarh EPF & ESIC Consultants – Emerging Districts | EPFDesk",
-            alternateName:
-              "EPFDesk – PF & ESIC Consultants for New CG Districts",
+          name:
+            "EPFDesk – EPF & ESIC Consultants for Emerging Districts of Chhattisgarh",
+          image: "https://epfdesk.com/images/logo.jpg",
+          url:
+            "https://epfdesk.com/chhattisgarh-final-emerging-districts-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
 
-            image: "https://epfdesk.com/images/logo.jpg",
-            url:
-              "https://epfdesk.com/chhattisgarh-final-emerging-districts-epf-esic-compliance",
-            telephone: "+91-9945933333",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Raipur",
+            addressRegion: "Chhattisgarh",
+            postalCode: "492001",
+            addressCountry: "IN",
+          },
 
-            /* ✅ SAME ADDRESS */
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
-              addressCountry: "IN",
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 21.2514,
+            longitude: 81.6296,
+          },
+
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Bemetara District" },
+            { "@type": "AdministrativeArea", name: "Kabirdham (Kawardha)" },
+            { "@type": "AdministrativeArea", name: "Mungeli District" },
+            { "@type": "AdministrativeArea", name: "Bastar District" },
+            { "@type": "AdministrativeArea", name: "Dantewada District" },
+            { "@type": "AdministrativeArea", name: "Sukma District" },
+            { "@type": "AdministrativeArea", name: "Bijapur District" },
+            { "@type": "AdministrativeArea", name: "Narayanpur District" },
+            { "@type": "AdministrativeArea", name: "Kondagaon District" },
+            { "@type": "AdministrativeArea", name: "Sakti District" },
+            { "@type": "AdministrativeArea", name: "Sarangarh-Bilaigarh" },
+            { "@type": "AdministrativeArea", name: "Gaurela-Pendra-Marwahi" },
+            {
+              "@type": "AdministrativeArea",
+              name: "Khairagarh-Chhuikhadan-Gandai",
             },
+          ],
 
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 12.9716,
-              longitude: 77.5946,
-            },
+          description:
+            "EPF & ESIC compliance consultancy for ethanol plants, food processing units, mining contractors and newly formed districts governed by RO Raipur and RO Bilaspur.",
 
-            description:
-              "EPF & ESIC compliance consultants for ethanol plants, food processing units, mining contractors and newly formed districts governed by RO Raipur and RO Bilaspur.",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "83",
+          },
+        })}
+      </Script>
 
-            priceRange: "₹₹₹",
-
-            areaServed: [
-              { "@type": "AdministrativeArea", name: "Bemetara District" },
-              { "@type": "AdministrativeArea", name: "Kabirdham (Kawardha)" },
-              { "@type": "AdministrativeArea", name: "Mungeli District" },
-              { "@type": "AdministrativeArea", name: "Bastar District" },
-              { "@type": "AdministrativeArea", name: "Dantewada District" },
-              { "@type": "AdministrativeArea", name: "Sukma District" },
-              { "@type": "AdministrativeArea", name: "Bijapur District" },
-              { "@type": "AdministrativeArea", name: "Narayanpur District" },
-              { "@type": "AdministrativeArea", name: "Kondagaon District" },
-              { "@type": "AdministrativeArea", name: "Sakti District" },
-              { "@type": "AdministrativeArea", name: "Sarangarh-Bilaigarh" },
-              { "@type": "AdministrativeArea", name: "Gaurela-Pendra-Marwahi" },
-              { "@type": "AdministrativeArea", name: "Khairagarh-Chhuikhadan-Gandai" },
-            ],
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "83",
-            },
-          }),
-        }}
-      />
-
-      {/* ============================
-          PAGE SECTIONS
-      ============================ */}
+      {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataCGFinalEmergingDistricts} />
       </FadeInWhenVisible>
@@ -180,8 +164,39 @@ const page = () => {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqCGFinalEmergingDistricts} />
+       <Script id="conversion-tracking-chhatisgarh-new" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'phone_click', {
+                event_category: 'conversion',
+                event_label: el.getAttribute('href'),
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              gtag('event', 'form_submission', {
+                event_category: 'lead',
+                event_label: window.location.pathname,
+                value: 10
+              });
+            });
+          });
+        `}
+      </Script>
     </>
   );
-};
-
-export default page;
+}
