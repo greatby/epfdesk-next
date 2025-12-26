@@ -33,12 +33,12 @@ export const metadata = {
   ],
 
   alternates: {
-    canonical: "https://epfdesk.com/ganjam-berhampur-gopalpur-epf-esic-compliance",
+    canonical:
+      "https://epfdesk.com/ganjam-berhampur-gopalpur-epf-esic-compliance",
   },
 
   openGraph: {
-    title:
-      "Ganjam EPF & ESIC Compliance | Gopalpur SEZ, Port & MSME Hub",
+    title: "Ganjam EPF & ESIC Compliance | Gopalpur SEZ, Port & MSME Hub",
     description:
       "PF & ESIC specialists for Ganjam’s Gopalpur SEZ, port logistics contractors and Berhampur MSMEs.",
     url: "https://epfdesk.com/ganjam-berhampur-gopalpur-epf-esic-compliance",
@@ -74,6 +74,14 @@ export default function Page() {
             <meta name="geo.placename" content="Ganjam">
             <meta name="geo.position" content="19.3149;84.7941">
             <meta name="ICBM" content="19.3149, 84.7941">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/ganjam-berhampur-gopalpur-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/ganjam-berhampur-gopalpur-epf-esic-compliance">
           \`);
         `}
       </Script>
@@ -90,8 +98,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/ganjam-berhampur-gopalpur-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Consultants for Ganjam District & Gopalpur SEZ",
+          name: "EPFDesk – EPF & ESIC Consultants for Ganjam District & Gopalpur SEZ",
           image: "https://epfdesk.com/images/logo.jpg",
           url: "https://epfdesk.com/ganjam-berhampur-gopalpur-epf-esic-compliance",
           telephone: "+91-9945933333",
@@ -141,7 +148,7 @@ export default function Page() {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqGanjamDistrict} />
-       <Script id="conversion-tracking-ganjam" strategy="afterInteractive">
+      <Script id="conversion-tracking-ganjam" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

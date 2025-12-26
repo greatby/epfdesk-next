@@ -76,6 +76,14 @@ export default function Page() {
             <meta name="geo.placename" content="Nashik, Maharashtra, India">
             <meta name="geo.position" content="19.9975;73.7898">
             <meta name="ICBM" content="19.9975, 73.7898">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/nashik-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/nashik-epf-esic-compliance">
           \`);
         `}
       </Script>

@@ -74,6 +74,14 @@ export default function Page() {
             <meta name="geo.placename" content="Gorakhpur">
             <meta name="geo.position" content="26.7606;83.3732">
             <meta name="ICBM" content="26.7606, 83.3732">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/gorakhpur-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/gorakhpur-epf-esic-compliance">
           \`);
         `}
       </Script>

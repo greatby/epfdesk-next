@@ -77,6 +77,14 @@ export default function Page() {
             <meta name="geo.placename" content="North 24 Parganas, West Bengal, India">
             <meta name="geo.position" content="22.6166;88.4029">
             <meta name="ICBM" content="22.6166, 88.4029">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/north-24-parganas-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/north-24-parganas-epf-esic-compliance">
           \`);
         `}
       </Script>

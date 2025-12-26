@@ -80,6 +80,14 @@ export default function Page() {
             <meta name="geo.placename" content="Meghalaya, India">
             <meta name="geo.position" content="25.4670;91.3662">
             <meta name="ICBM" content="25.4670, 91.3662">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/meghalaya-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/meghalaya-epf-esic-compliance">
           \`);
         `}
       </Script>

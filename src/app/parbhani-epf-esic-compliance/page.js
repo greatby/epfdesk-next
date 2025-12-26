@@ -66,6 +66,14 @@ export default function Page() {
             <meta name="geo.placename" content="Parbhani">
             <meta name="geo.position" content="19.2600;76.7748">
             <meta name="ICBM" content="19.2600, 76.7748">
+            <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/parbhani-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/parbhani-epf-esic-compliance">
           \`);
         `}
       </Script>
