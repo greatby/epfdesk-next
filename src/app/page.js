@@ -218,6 +218,81 @@ export default function Home() {
           ],
         })}
       </Script>
+      <Script id="conversion-tracking-global" strategy="afterInteractive">
+        {`
+    // Ensure DOM is ready
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // Phone click tracking
+      document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+        el.addEventListener('click', () => {
+          if (typeof gtag === 'function') {
+            gtag('event', 'phone_click', {
+              event_category: 'conversion',
+              event_label: el.getAttribute('href'),
+              value: 5
+            });
+          }
+        });
+      });
+
+      // WhatsApp click tracking
+      document
+        .querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]')
+        .forEach(el => {
+          el.addEventListener('click', () => {
+            if (typeof gtag === 'function') {
+              gtag('event', 'whatsapp_click', {
+                event_category: 'conversion',
+                event_label: window.location.pathname,
+                value: 5
+              });
+            }
+          });
+        });
+
+      // Form submission tracking
+      document.querySelectorAll('form').forEach(form => {
+        form.addEventListener('submit', () => {
+          if (typeof gtag === 'function') {
+            gtag('event', 'form_submission', {
+              event_category: 'lead',
+              event_label: window.location.pathname,
+              value: 10
+            });
+          }
+        });
+      });
+
+      // CTA click tracking
+      document.querySelectorAll('button, a[class*="cta"]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (typeof gtag === 'function') {
+            gtag('event', 'cta_click', {
+              event_category: 'engagement',
+              event_label: btn.textContent.trim()
+            });
+          }
+        });
+      });
+
+      // Scroll depth tracking (75%)
+      let scrollTracked = false;
+      window.addEventListener('scroll', () => {
+        if (!scrollTracked && (window.scrollY / document.body.scrollHeight) > 0.75) {
+          scrollTracked = true;
+          if (typeof gtag === 'function') {
+            gtag('event', 'scroll_depth', {
+              event_category: 'engagement',
+              event_label: '75%'
+            });
+          }
+        }
+      });
+
+    });
+  `}
+      </Script>
 
       {/* ================== UI ================== */}
       <Toaster position="top-center" />

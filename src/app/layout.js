@@ -29,21 +29,23 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* GA4 */}
-        <Script
+        <script
+          async
           src="https://www.googletagmanager.com/gtag/js?id=G-WMNLTE5RKQ"
-          strategy="afterInteractive"
-        />
+        ></script>
 
-        <Script id="ga4-init" strategy="afterInteractive">
-          {`
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-WMNLTE5RKQ', {
-        send_page_view: true
-      });
-    `}
-        </Script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WMNLTE5RKQ', {
+          send_page_view: false
+        });
+      `,
+          }}
+        />
       </head>
 
       <body>
