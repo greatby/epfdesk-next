@@ -101,8 +101,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/chandrapur-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Consultants for Chandrapur Mining & Power Contractors",
+          name: "EPFDesk – EPF & ESIC Consultants for Chandrapur Mining & Power Contractors",
           image: "https://epfdesk.com/images/logo.jpg",
           url: "https://epfdesk.com/chandrapur-epf-esic-compliance",
           telephone: "+91-9945933333",
@@ -110,6 +109,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Civil Lines",
             addressLocality: "Chandrapur",
             addressRegion: "Maharashtra",
             postalCode: "442401",
@@ -183,7 +183,7 @@ export default function Page() {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqChandrapurDistrict} />
-       <Script id="conversion-tracking-chandrapur" strategy="afterInteractive">
+      <Script id="conversion-tracking-chandrapur" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

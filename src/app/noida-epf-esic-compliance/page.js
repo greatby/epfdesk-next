@@ -4,11 +4,7 @@ import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndus
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
 
-import {
-  faqNoida,
-  heroDataNoidaDist,
-  sectionsNoidaDist,
-} from "@/utils/data";
+import { faqNoida, heroDataNoidaDist, sectionsNoidaDist } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -53,8 +49,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Noida EPF & ESIC Compliance | IT Allowance & PE Risk | EPFDesk",
+    title: "Noida EPF & ESIC Compliance | IT Allowance & PE Risk | EPFDesk",
     description:
       "Expert PF/ESIC compliance for Noida IT, BPO and Electronics units. RO Noida audits & NWC readiness covered.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -96,11 +91,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/noida-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/noida-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Noida EPF & ESIC Compliance for IT, Electronics & NCR Workforce",
+          name: "EPFDesk – Noida EPF & ESIC Compliance for IT, Electronics & NCR Workforce",
 
           alternateName:
             "Noida EPF & ESIC Consultant for IT/ITeS, BPO & Electronics Manufacturing",
@@ -112,14 +105,16 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Sector 62",
             addressRegion: "Uttar Pradesh",
+            postalCode: "201309",
             addressCountry: "IN",
           },
 
           geo: {
             "@type": "GeoCoordinates",
             latitude: 28.5355,
-            longitude: 77.3910,
+            longitude: 77.391,
           },
 
           areaServed: [
@@ -153,10 +148,7 @@ export default function Page() {
       <FadeInWhenVisible>
         <FaqAccordion faqs={faqNoida} />
       </FadeInWhenVisible>
-        <Script
-        id="conversion-tracking-noida"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-noida" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

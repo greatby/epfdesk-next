@@ -102,8 +102,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/mumbai-suburban-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Mumbai Suburban District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Mumbai Suburban District",
 
           alternateName:
             "Mumbai Suburban EPF & ESIC Compliance for IT, BPO & Film Industry",
@@ -115,14 +114,16 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "FC Road",
             addressRegion: "Maharashtra",
+            postalCode: "411004",
             addressCountry: "IN",
           },
 
           geo: {
             "@type": "GeoCoordinates",
             latitude: 19.1176,
-            longitude: 72.9060,
+            longitude: 72.906,
           },
 
           areaServed: [
@@ -149,9 +150,7 @@ export default function Page() {
 
       {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
-        <PerformanceSectionIndustry
-          data={heroDataMumbaiSuburbanDistrict}
-        />
+        <PerformanceSectionIndustry data={heroDataMumbaiSuburbanDistrict} />
       </FadeInWhenVisible>
 
       <FadeInWhenVisible>

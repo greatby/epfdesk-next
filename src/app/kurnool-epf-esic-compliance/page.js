@@ -103,11 +103,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/kurnool-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/kurnool-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Kurnool District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Kurnool District",
 
           alternateName:
             "Kurnool EPF & ESIC Compliance for Cement, Quarrying & Renewable Energy Projects",
@@ -119,8 +117,10 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Ballary Road",
             addressLocality: "Kurnool",
             addressRegion: "Andhra Pradesh",
+            postalCode: "518002",
             addressCountry: "IN",
           },
 

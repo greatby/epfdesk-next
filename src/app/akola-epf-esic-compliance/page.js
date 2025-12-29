@@ -84,8 +84,7 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/akola-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/akola-epf-esic-compliance#organization",
           name: "EPFDesk - EPF & ESIC Consultants Akola",
           image: "https://epfdesk.com/images/logo.jpg",
           url: "https://epfdesk.com/akola-epf-esic-compliance",
@@ -94,9 +93,10 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Ratanlal Plot",
             addressLocality: "Akola",
             addressRegion: "Maharashtra",
-            postalCode: "444001",
+            postalCode: "444005",
             addressCountry: "IN",
           },
 

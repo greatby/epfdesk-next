@@ -35,8 +35,7 @@ export const metadata = {
 
   /* ✅ OPEN GRAPH */
   openGraph: {
-    title:
-      "Kota EPF & ESIC Compliance | Education, Mining & Industry",
+    title: "Kota EPF & ESIC Compliance | Education, Mining & Industry",
     description:
       "PF & ESIC specialists for Kota coaching institutes, stone mining clusters and chemical industries.",
     url: "https://epfdesk.com/kota-epf-esic-compliance",
@@ -56,8 +55,7 @@ export const metadata = {
   /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
-    title:
-      "Kota EPF & ESIC Compliance | Coaching, Mining & MSMEs",
+    title: "Kota EPF & ESIC Compliance | Coaching, Mining & MSMEs",
     description:
       "High-risk PF & ESIC compliance for Kota coaching, mining and industrial clusters.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -99,11 +97,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/kota-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/kota-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Kota District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Kota District",
 
           alternateName:
             "Kota EPF & ESIC Compliance for Coaching, Mining & Industrial Units",
@@ -115,6 +111,8 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Jhalawar Road",
+            postalCode: "324007",
             addressLocality: "Kota",
             addressRegion: "Rajasthan",
             addressCountry: "IN",

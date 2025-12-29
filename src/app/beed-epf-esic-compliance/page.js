@@ -92,8 +92,7 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/beed-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/beed-epf-esic-compliance#organization",
           name: "EPFDesk - EPF & ESIC Consultants Beed",
           image: "https://epfdesk.com/images/logo.jpg",
           url: "https://epfdesk.com/beed-epf-esic-compliance",
@@ -102,6 +101,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Civil Lines",
             addressLocality: "Beed",
             addressRegion: "Maharashtra",
             postalCode: "431122",
@@ -276,4 +276,3 @@ export default function Page() {
     </>
   );
 }
-

@@ -88,11 +88,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/raigad-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/raigad-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Raigad EPF & ESIC Compliance for JNPT Port & MIDC Chemical Industries",
+          name: "EPFDesk – Raigad EPF & ESIC Compliance for JNPT Port & MIDC Chemical Industries",
 
           alternateName:
             "PF & ESIC Consultant for JNPT, Patalganga MIDC & Taloja MIDC",
@@ -104,7 +102,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Pen Road",
             addressRegion: "Maharashtra",
+            postalCode: "402107",
             addressCountry: "IN",
           },
 

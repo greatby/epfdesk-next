@@ -36,8 +36,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Indore EPF & ESIC Compliance | Pithampur SEZ & Pharma Clusters",
+    title: "Indore EPF & ESIC Compliance | Pithampur SEZ & Pharma Clusters",
     description:
       "PF & ESIC specialists for Indore’s Pithampur SEZ, pharma exporters, MNCs and manufacturing clusters under RO Indore.",
     url: "https://epfdesk.com/indore-epf-esic-compliance",
@@ -94,11 +93,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/indore-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/indore-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Indore & Pithampur",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Indore & Pithampur",
 
           alternateName:
             "Indore EPF & ESIC Compliance Experts for SEZ, Pharma & Manufacturing Units",
@@ -111,8 +108,10 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Vijay Nagar",
             addressLocality: "Indore",
             addressRegion: "Madhya Pradesh",
+            postalCode: "452010",
             addressCountry: "IN",
           },
 

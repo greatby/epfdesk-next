@@ -130,6 +130,66 @@ export default function Page() {
           },
         })}
       </Script>
+      <Script
+        id="faq-schema-yadadri"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF mandatory for Pochampally handloom and piece-rate workers in Yadadri?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPF applies to Pochampally handloom units once the statutory threshold is met. Piece-rate workers must be covered by converting wages into EPF-compliant basic pay structures as per applicable norms.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does ESIC apply to handloom and dyeing units in Yadadri Bhuvanagiri?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. ESIC coverage is mandatory for eligible employees in handloom dyeing, weaving and processing units earning up to ₹21,000 per month, especially where chemical processes or wet work is involved.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the EPF and ESIC compliance risks for chemical and pharma units in Bhongir Industrial Park?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include non-enrolment of contract workers, incorrect wage splitting, exclusion of allowances from EPF and non-alignment with New Wage Code 2025 requirements.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 affect MSMEs in Dandumalkapur MSME Park?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Under NWC 2025, basic wages must constitute at least 50% of total remuneration. MSMEs must restructure payroll to avoid retrospective EPF liabilities and inspection objections.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are Principal Employers liable for contractor PF and ESIC compliance in Yadadri district?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Principal Employers are fully liable for EPF and ESIC compliance of contractors operating within their premises, including handloom units, chemical plants and MSMEs.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does EPFDesk handle EPF and ESIC inspections and audits in Yadadri Bhuvanagiri?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides complete audit defence including wage reconciliation, contractor mapping, inspection response drafting and statutory representation before EPFO and ESIC authorities.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>

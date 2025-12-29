@@ -4,10 +4,7 @@ import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndus
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
 
-import {
-  heroDataGandhinagarDist,
-  sectionsGandhinagarDist,
-} from "@/utils/data";
+import { heroDataGandhinagarDist, sectionsGandhinagarDist } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -98,8 +95,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/gandhinagar-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Consultants for GIFT City & Gandhinagar District",
+          name: "EPFDesk – EPF & ESIC Consultants for GIFT City & Gandhinagar District",
           image: "https://epfdesk.com/images/logo.jpg",
           url: "https://epfdesk.com/gandhinagar-epf-esic-compliance",
           telephone: "+91-9945933333",
@@ -108,6 +104,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Sector 11",
             addressLocality: "Gandhinagar",
             addressRegion: "Gujarat",
             postalCode: "382010",
@@ -136,6 +133,42 @@ export default function Page() {
             ratingValue: "4.9",
             reviewCount: "47",
           },
+        })}
+      </Script>
+      <Script
+        id="schema-gandhinagar-faq"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for companies operating in GIFT City and IT SEZs in Gandhinagar?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPF and ESIC are mandatory for eligible establishments operating in GIFT City, IT/ITES SEZs and fintech hubs in Gandhinagar. Authorities closely monitor PF coverage, fixed-term employment compliance and SEZ labour regulations.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the key EPF and ESIC compliance risks for fintech and startup companies in Gandhinagar?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include incorrect wage structuring under the 50% basic rule, non-compliance in fixed-term employment contracts, contractor coverage gaps and EPFO Section 7A proceedings. Startups in GIFT City face focused scrutiny due to high salary structures.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does EPFDesk handle PF, ESIC and contractor audits for GIFT City and SEZ units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides end-to-end PF, ESIC and CLRA compliance support for GIFT City firms, IT/ITES SEZ units and electronics manufacturers in Gandhinagar, including audits, inspections handling and NWC 2025 payroll alignment.",
+              },
+            },
+          ],
         })}
       </Script>
 

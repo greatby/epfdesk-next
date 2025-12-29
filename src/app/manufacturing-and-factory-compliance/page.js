@@ -177,6 +177,67 @@ const page = () => {
           }),
         }}
       />
+      {/* ================== FAQ SCHEMA ================== */}
+      <Script
+        id="faq-manufacturing-factory-india"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for manufacturing units and factories in India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Manufacturing units and factories are required to comply with EPF and ESIC laws once statutory thresholds are met. Coverage typically includes permanent workers, shop-floor employees, supervisors, and eligible contract labour.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the Factories Act impact EPF and ESIC compliance?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The Factories Act governs working conditions, safety, and welfare of factory workers. EPF and ESIC compliance must align with factory headcount, shift structures, contractor engagement, and statutory registers maintained under the Act.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are contract labour and shop-floor workers covered under EPF and ESIC?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Contract labour and shop-floor workers are required to be covered under EPF and ESIC if eligibility conditions are met. Principal employers remain liable if contractors fail to comply with statutory contributions.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are common EPF and ESIC compliance risks in manufacturing units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include non-enrolment of contract labour, improper wage structuring, allowance-heavy payrolls, delayed remittances, incomplete registers, and non-alignment between factory records and EPF/ESIC filings.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 affect manufacturing payroll?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The New Wage Code 2025 impacts EPF and ESIC calculations by redefining wage components. Manufacturing units with overtime, incentives, and allowance-heavy structures may face increased contribution liabilities without proper payroll restructuring.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does EPFDesk support manufacturing and factory compliance?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "EPFDesk provides end-to-end EPF and ESIC compliance for manufacturing units including registrations, contractor audits, Factories Act alignment, NWC 2025 payroll restructuring, inspection handling, monthly filings, and statutory advisory across India.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataManufacturing} />

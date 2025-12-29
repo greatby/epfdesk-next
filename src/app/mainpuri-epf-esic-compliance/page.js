@@ -35,8 +35,7 @@ export const metadata = {
 
   /* ✅ OPEN GRAPH */
   openGraph: {
-    title:
-      "Mainpuri EPF & ESIC Compliance | Agro-Industry & MSMEs",
+    title: "Mainpuri EPF & ESIC Compliance | Agro-Industry & MSMEs",
     description:
       "PF & ESIC specialists for Mainpuri rice mills, cold storages and MSMEs under RO Agra jurisdiction.",
     url: "https://epfdesk.com/mainpuri-epf-esic-compliance",
@@ -56,8 +55,7 @@ export const metadata = {
   /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
-    title:
-      "Mainpuri EPF & ESIC Compliance | Agro & MSME Risk",
+    title: "Mainpuri EPF & ESIC Compliance | Agro & MSME Risk",
     description:
       "Critical PF & ESIC compliance for Mainpuri agro-industrial units and MSMEs after ESIC expansion.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -102,11 +100,9 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/mainpuri-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Mainpuri District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Mainpuri District",
 
-          alternateName:
-            "Mainpuri Agro-Industrial & MSME EPF/ESIC Compliance",
+          alternateName: "Mainpuri Agro-Industrial & MSME EPF/ESIC Compliance",
 
           image: "https://epfdesk.com/images/logo.jpg",
           url: "https://epfdesk.com/mainpuri-epf-esic-compliance",
@@ -115,15 +111,17 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Station Road",
             addressLocality: "Mainpuri",
             addressRegion: "Uttar Pradesh",
+            postalCode: "205001",
             addressCountry: "IN",
           },
 
           geo: {
             "@type": "GeoCoordinates",
             latitude: 27.2285,
-            longitude: 79.0280,
+            longitude: 79.028,
           },
 
           areaServed: [

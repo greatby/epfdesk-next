@@ -35,8 +35,7 @@ export const metadata = {
 
   /* ✅ OPEN GRAPH */
   openGraph: {
-    title:
-      "Korba EPF & ESIC Compliance | Power, Aluminum & Mining Hub",
+    title: "Korba EPF & ESIC Compliance | Power, Aluminum & Mining Hub",
     description:
       "PF & ESIC specialists for Korba power plants, BALCO ancillaries and coal mining contractors.",
     url: "https://epfdesk.com/korba-epf-esic-compliance",
@@ -56,8 +55,7 @@ export const metadata = {
   /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
-    title:
-      "Korba EPF & ESIC Compliance | Power & Mining Ecosystem",
+    title: "Korba EPF & ESIC Compliance | Power & Mining Ecosystem",
     description:
       "High-risk PF & ESIC compliance for Korba’s energy, aluminum and coal sectors.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -99,11 +97,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/korba-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/korba-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Korba District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Korba District",
 
           alternateName:
             "Korba EPF & ESIC Compliance for Power, Aluminum & Mining Units",
@@ -115,6 +111,8 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Transport Nagar Road",
+            postalCode: "495677",
             addressLocality: "Korba",
             addressRegion: "Chhattisgarh",
             addressCountry: "IN",

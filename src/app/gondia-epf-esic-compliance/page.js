@@ -108,6 +108,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Civil Lines",
             addressLocality: "Gondia",
             addressRegion: "Maharashtra",
             postalCode: "441601",

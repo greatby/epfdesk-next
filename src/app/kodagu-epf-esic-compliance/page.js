@@ -68,11 +68,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/kodagu-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/kodagu-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Kodagu District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Kodagu District",
 
           alternateName:
             "Kodagu EPF & ESIC Compliance for Coffee Estates, Resorts & Homestays",
@@ -85,6 +83,8 @@ export default function Page() {
           /* ✅ DISTRICT-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "College Road",
+            postalCode: "571201",
             addressLocality: "Madikeri",
             addressRegion: "Karnataka",
             addressCountry: "IN",

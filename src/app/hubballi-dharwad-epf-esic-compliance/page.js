@@ -98,8 +98,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/hubballi-dharwad-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Consultants for Hubballi–Dharwad SME & Electronics SEZ",
+          name: "EPFDesk – EPF & ESIC Consultants for Hubballi–Dharwad SME & Electronics SEZ",
 
           alternateName:
             "Hubballi–Dharwad PF ESIC Compliance Experts for SME Manufacturing & Textiles",
@@ -112,8 +111,10 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Koppikar Road",
             addressLocality: "Hubballi–Dharwad",
             addressRegion: "Karnataka",
+            postalCode: "580020",
             addressCountry: "IN",
           },
 

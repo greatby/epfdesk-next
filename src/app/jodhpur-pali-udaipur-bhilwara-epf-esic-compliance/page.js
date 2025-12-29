@@ -4,11 +4,7 @@ import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndus
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
 
-import {
-  heroDataJPUB,
-  sectionsJPUB,
-  faqJPUB,
-} from "@/utils/data";
+import { heroDataJPUB, sectionsJPUB, faqJPUB } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -73,22 +69,23 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/jodhpur-pali-udaipur-bhilwara-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Rajasthan Industrial Hubs",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Rajasthan Industrial Hubs",
 
           alternateName:
             "Rajasthan EPF & ESIC Compliance for Jodhpur Solar, Udaipur Mining & Bhilwara Textiles",
 
           image: "https://epfdesk.com/images/logo.jpg",
-          url:
-            "https://epfdesk.com/jodhpur-pali-udaipur-bhilwara-epf-esic-compliance",
+          url: "https://epfdesk.com/jodhpur-pali-udaipur-bhilwara-epf-esic-compliance",
           telephone: "+91-9945933333",
           priceRange: "₹₹₹",
 
           /* ✅ CLUSTER-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "MI Road",
+            addressLocality: "Jaipur",
             addressRegion: "Rajasthan",
+            postalCode: "302001",
             addressCountry: "IN",
           },
 
@@ -131,10 +128,7 @@ export default function Page() {
       <FaqAccordion faqs={faqJPUB} />
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-jpub"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-jpub" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

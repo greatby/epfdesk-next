@@ -176,6 +176,67 @@ const page = () => {
           }),
         }}
       />
+      {/* ================== FAQ SCHEMA ================== */}
+      <Script
+        id="faq-textile-garments-india"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for textile and garment factories in India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPF and ESIC are mandatory for textile mills and garment factories once statutory employee thresholds are met. Coverage applies to permanent workers, piece-rate workers, contract labour, and eligible apprentices depending on wages and employment conditions.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does EPF apply to piece-rate and production-based workers in textiles?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "EPF applies to piece-rate and production-based textile workers based on earned wages. Employers must ensure correct wage computation, minimum wage alignment, and accurate EPF contributions even when workers are paid per piece or output.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are contract labour and job workers covered under EPF and ESIC in garment units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Contract labour engaged through contractors or manpower agencies is covered under EPF and ESIC. The principal employer, including garment factories and export units, remains legally responsible for compliance failures by contractors.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 impact textile and garment payroll?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The New Wage Code 2025 impacts textile and garment units by redefining wage components used for EPF and ESIC calculations. Allowance-heavy and incentive-based payroll structures may require restructuring to avoid future compliance risks and retrospective liabilities.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC compliance mandatory for export-oriented garment units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Export-oriented garment units are fully subject to EPF and ESIC laws. Non-compliance can lead to inspections, penalties, and serious risks during buyer audits, SEDEX reviews, and international compliance assessments.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does EPFDesk support textile and garment manufacturers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "EPFDesk provides end-to-end EPF and ESIC compliance for textile mills and garment factories including registration, piece-rate wage audits, contractor compliance checks, payroll restructuring under NWC 2025, inspection handling, and monthly statutory filings across India.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataTextile} />

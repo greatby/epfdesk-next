@@ -35,8 +35,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Paradip EPF & ESIC Compliance | Port & Petrochemical Hub",
+    title: "Paradip EPF & ESIC Compliance | Port & Petrochemical Hub",
     description:
       "PF & ESIC specialists for Paradip Port, IOCL refinery and PCPIR contractors governed by RO Bhubaneswar.",
     url: "https://epfdesk.com/jagatsinghpur-paradip-epf-esic-compliance",
@@ -96,8 +95,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/jagatsinghpur-paradip-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Paradip Port & IOCL Contractors",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Paradip Port & IOCL Contractors",
 
           alternateName:
             "Paradip EPF & ESIC Compliance Experts for Port, PCPIR & IOCL Vendors",
@@ -110,8 +108,10 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "College Road",
             addressLocality: "Jagatsinghpur",
             addressRegion: "Odisha",
+            postalCode: "754103",
             addressCountry: "IN",
           },
 
@@ -142,9 +142,7 @@ export default function Page() {
 
       {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
-        <PerformanceSectionIndustry
-          data={heroDataJagatsinghpurDistrict}
-        />
+        <PerformanceSectionIndustry data={heroDataJagatsinghpurDistrict} />
       </FadeInWhenVisible>
 
       <FadeInWhenVisible>
@@ -154,7 +152,10 @@ export default function Page() {
       <FaqAccordion faqs={faqJagatsinghpurDistrict} />
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script id="conversion-tracking-jagatsinghpur" strategy="afterInteractive">
+      <Script
+        id="conversion-tracking-jagatsinghpur"
+        strategy="afterInteractive"
+      >
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

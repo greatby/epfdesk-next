@@ -91,8 +91,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/prakasam-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Prakasam EPF & ESIC Compliance for Granite, Aqua & Seasonal Labour",
+          name: "EPFDesk – Prakasam EPF & ESIC Compliance for Granite, Aqua & Seasonal Labour",
 
           alternateName:
             "PF & ESIC Consultant for Chimakurthy Granite & Prakasam Agro Units",
@@ -104,7 +103,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Ongole Bypass Road",
             addressRegion: "Andhra Pradesh",
+            postalCode: "523001",
             addressCountry: "IN",
           },
 
@@ -147,10 +148,7 @@ export default function Page() {
       </FadeInWhenVisible>
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-prakasam"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-prakasam" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

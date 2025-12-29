@@ -93,11 +93,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/hingoli-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/hingoli-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Consultants for Hingoli Cotton Ginning & Agro Industries",
+          name: "EPFDesk – EPF & ESIC Consultants for Hingoli Cotton Ginning & Agro Industries",
 
           alternateName:
             "Hingoli PF ESIC Compliance Experts for Piece-Rate & Seasonal Workforce",
@@ -110,8 +108,10 @@ export default function Page() {
           /* ✅ DISTRICT-LEVEL ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Civil Lines",
             addressLocality: "Hingoli",
             addressRegion: "Maharashtra",
+            postalCode: "431513",
             addressCountry: "IN",
           },
 

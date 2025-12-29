@@ -96,11 +96,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/mohali-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/mohali-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Mohali IT & Industrial Hub",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Mohali IT & Industrial Hub",
 
           alternateName:
             "Mohali EPF & ESIC Compliance for IT Parks, Electronics & Startups",
@@ -112,10 +110,11 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Sector 17",
             addressRegion: "Punjab",
+            postalCode: "160017",
             addressCountry: "IN",
           },
-
           geo: {
             "@type": "GeoCoordinates",
             latitude: 30.7046,

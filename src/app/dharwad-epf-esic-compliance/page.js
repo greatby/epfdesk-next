@@ -105,8 +105,9 @@ export default function Page() {
           priceRange: "₹₹₹",
 
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
-          address: {
+          adaddress: {
             "@type": "PostalAddress",
+            streetAddress: "Court Circle",
             addressLocality: "Dharwad",
             addressRegion: "Karnataka",
             postalCode: "580001",

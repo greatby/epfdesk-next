@@ -108,6 +108,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Suhag Nagar",
             addressLocality: "Firozabad",
             addressRegion: "Uttar Pradesh",
             postalCode: "283203",

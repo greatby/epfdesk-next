@@ -69,11 +69,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/jhansi-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/jhansi-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Jhansi Industries",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Jhansi Industries",
 
           alternateName:
             "Jhansi EPF & ESIC Compliance for Railway, Defence & Agro Units",
@@ -86,8 +84,10 @@ export default function Page() {
           /* ✅ DISTRICT-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Civil Lines",
             addressLocality: "Jhansi",
             addressRegion: "Uttar Pradesh",
+            postalCode: "284001",
             addressCountry: "IN",
           },
 
@@ -127,10 +127,7 @@ export default function Page() {
       <FaqAccordion faqs={faqJhansi} />
 
       {/* ========= CONVERSION TRACKING (VERBATIM) ========= */}
-      <Script
-        id="conversion-tracking-jhansi"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-jhansi" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

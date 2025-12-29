@@ -76,8 +76,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/kakinada-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Kakinada Port & Industrial Belt",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Kakinada Port & Industrial Belt",
 
           alternateName:
             "Kakinada EPF & ESIC Compliance for Port, SEZ, Petrochemical & Oil & Gas Contractors",
@@ -90,8 +89,10 @@ export default function Page() {
           /* ✅ DISTRICT-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Sarpavaram Road",
             addressLocality: "Kakinada",
             addressRegion: "Andhra Pradesh",
+            postalCode: "533005",
             addressCountry: "IN",
           },
 
@@ -132,10 +133,7 @@ export default function Page() {
       <FaqAccordion faqs={kakinandaDistFAQ} />
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-kakinada"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-kakinada" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

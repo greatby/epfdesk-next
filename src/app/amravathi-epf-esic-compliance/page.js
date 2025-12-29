@@ -94,9 +94,10 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Camp Area",
             addressLocality: "Amravati",
             addressRegion: "Maharashtra",
-            postalCode: "444601",
+            postalCode: "444602",
             addressCountry: "IN",
           },
 

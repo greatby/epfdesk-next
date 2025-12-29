@@ -73,11 +73,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/kadapa-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/kadapa-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Kadapa (YSR District)",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Kadapa (YSR District)",
 
           alternateName:
             "Kadapa EPF & ESIC Compliance for Mining, Temple Trust & Agri-Processing Units",
@@ -90,8 +88,10 @@ export default function Page() {
           /* ✅ DISTRICT-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "RS Road",
             addressLocality: "Kadapa",
             addressRegion: "Andhra Pradesh",
+            postalCode: "516001",
             addressCountry: "IN",
           },
 
@@ -132,10 +132,7 @@ export default function Page() {
       <FaqAccordion faqs={kadapaFAQ} />
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-kadapa"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-kadapa" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

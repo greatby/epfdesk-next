@@ -91,8 +91,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/jamnagar-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Jamnagar Industries",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Jamnagar Industries",
 
           alternateName:
             "Jamnagar EPF & ESIC Compliance for Brass Industry, GIDC Units & Refinery Contractors",
@@ -105,8 +104,10 @@ export default function Page() {
           /* ✅ DISTRICT-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Pandit Nehru Marg",
             addressLocality: "Jamnagar",
             addressRegion: "Gujarat",
+            postalCode: "361008",
             addressCountry: "IN",
           },
 
@@ -132,6 +133,42 @@ export default function Page() {
             ratingValue: "4.9",
             reviewCount: "47",
           },
+        })}
+      </Script>
+      <Script
+        id="schema-jamnagar-faq"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for brass industry and GIDC units in Jamnagar?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPF and ESIC are mandatory for eligible brass manufacturers, engineering units and GIDC factories in Jamnagar. Authorities closely scrutinize wage structures, contractor deployment and contribution compliance in the district.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the major EPF and ESIC risks for refinery-linked contractors in Jamnagar?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Key risks include Principal Employer liability for unpaid contractor PF and ESIC, incorrect wage bifurcation, coverage of hazardous process workers and EPFO audits. Refinery-linked contractors in Jamnagar face heightened statutory scrutiny.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does EPFDesk handle Exempted Trust and contractor audits in Jamnagar?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides support for EPF Exempted Trust compliance, contractor PF and ESIC audits, CLRA obligations and NWC 2025 payroll restructuring for Jamnagar industries.",
+              },
+            },
+          ],
         })}
       </Script>
 

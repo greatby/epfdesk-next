@@ -4,11 +4,7 @@ import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndus
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
 
-import {
-  heroDataBBJDT,
-  sectionsBBJDT,
-  faqBBJDT,
-} from "@/utils/data";
+import { heroDataBBJDT, sectionsBBJDT, faqBBJDT } from "@/utils/data";
 
 /* ===========================
    METADATA (DISTRICT CLUSTER)
@@ -40,8 +36,7 @@ export const metadata = {
       "Rajasthan EPF & ESIC Compliance | Agro, Stone & Central Industrial Zones",
     description:
       "PF & ESIC specialists for Bundi rice mills, Jhalawar spice units, Dausa stone mining and Tonk manufacturing clusters.",
-    url:
-      "https://epfdesk.com/bundi-baran-jhalawar-dausa-tonk-epf-esic-compliance",
+    url: "https://epfdesk.com/bundi-baran-jhalawar-dausa-tonk-epf-esic-compliance",
     siteName: "EPFDesk",
     images: [
       {
@@ -104,16 +99,15 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/bundi-baran-jhalawar-dausa-tonk-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Consultants for Bundi, Baran, Jhalawar, Dausa & Tonk",
+          name: "EPFDesk – EPF & ESIC Consultants for Bundi, Baran, Jhalawar, Dausa & Tonk",
           image: "https://epfdesk.com/images/logo.jpg",
-          url:
-            "https://epfdesk.com/bundi-baran-jhalawar-dausa-tonk-epf-esic-compliance",
+          url: "https://epfdesk.com/bundi-baran-jhalawar-dausa-tonk-epf-esic-compliance",
           telephone: "+91-9945933333",
           priceRange: "₹₹₹",
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "MI Road",
             addressLocality: "Jaipur",
             addressRegion: "Rajasthan",
             postalCode: "302001",

@@ -92,13 +92,15 @@ export default function Page() {
           telephone: "+91-9945933333",
           priceRange: "₹₹₹",
 
-          address: {
-            "@type": "PostalAddress",
-            addressLocality: "Ayodhya",
-            addressRegion: "Uttar Pradesh",
-            postalCode: "224123",
-            addressCountry: "IN",
-          },
+         address: {
+  "@type": "PostalAddress",
+  streetAddress: "Civil Lines",
+  addressLocality: "Ayodhya",
+  addressRegion: "Uttar Pradesh",
+  postalCode: "224001",
+  addressCountry: "IN",
+},
+
 
           geo: {
             "@type": "GeoCoordinates",

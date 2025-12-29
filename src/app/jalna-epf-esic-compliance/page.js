@@ -91,11 +91,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/jalna-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/jalna-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Jalna Industries",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Jalna Industries",
 
           alternateName:
             "Jalna EPF & ESIC Compliance Experts for Steel Mills, Seed Processing & Agro Units",
@@ -108,8 +106,10 @@ export default function Page() {
           /* ✅ DISTRICT-CORRECT ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Old Jalna Road",
             addressLocality: "Jalna",
             addressRegion: "Maharashtra",
+            postalCode: "431203",
             addressCountry: "IN",
           },
 

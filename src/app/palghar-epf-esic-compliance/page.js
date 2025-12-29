@@ -54,8 +54,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Palghar EPF & ESIC Compliance | Tarapur MIDC & Pharma | EPFDesk",
+    title: "Palghar EPF & ESIC Compliance | Tarapur MIDC & Pharma | EPFDesk",
     description:
       "High-risk EPF & ESIC compliance and audit defence for Tarapur MIDC hazardous factories.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -97,11 +96,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/palghar-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/palghar-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Palghar EPF & ESIC Compliance for Tarapur MIDC & Hazardous Industries",
+          name: "EPFDesk – Palghar EPF & ESIC Compliance for Tarapur MIDC & Hazardous Industries",
 
           alternateName:
             "PF & ESIC Consultant for Tarapur MIDC, Boisar Pharma & Palghar Industrial Belt",
@@ -113,7 +110,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "CIDCO",
             addressRegion: "Maharashtra",
+            postalCode: "431003",
             addressCountry: "IN",
           },
 
@@ -156,10 +155,7 @@ export default function Page() {
       </FadeInWhenVisible>
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-palghar"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-palghar" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

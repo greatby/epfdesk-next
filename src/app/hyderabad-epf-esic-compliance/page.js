@@ -5,10 +5,7 @@ import CodeOfConduct from "@/components/CodeOfConduct";
 import ThreeStepSection from "@/components/ThreeStepSection";
 import FaqAccordion from "@/components/faqAccordian";
 
-import {
-  heroDataHyderabadDist,
-  sectionsHyderabadDist,
-} from "@/utils/data";
+import { heroDataHyderabadDist, sectionsHyderabadDist } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -38,8 +35,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Hyderabad EPF & ESIC Compliance | HITEC City & Financial District",
+    title: "Hyderabad EPF & ESIC Compliance | HITEC City & Financial District",
     description:
       "PF & ESIC specialists for Hyderabad IT/ITeS companies. NWC 2025 payroll structuring, audit defence and monthly compliance handled.",
     url: "https://epfdesk.com/hyderabad-epf-esic-compliance",
@@ -99,8 +95,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/hyderabad-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Consultants for Hyderabad IT & Corporate Sector",
+          name: "EPFDesk – EPF & ESIC Consultants for Hyderabad IT & Corporate Sector",
 
           alternateName:
             "Hyderabad EPF & ESIC Compliance Experts for HITEC City & Financial District",
@@ -113,14 +108,16 @@ export default function Page() {
           /* ✅ CITY-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "HITEC City",
             addressLocality: "Hyderabad",
             addressRegion: "Telangana",
+            postalCode: "500081",
             addressCountry: "IN",
           },
 
           geo: {
             "@type": "GeoCoordinates",
-            latitude: 17.3850,
+            latitude: 17.385,
             longitude: 78.4867,
           },
 
@@ -140,6 +137,42 @@ export default function Page() {
             ratingValue: "4.9",
             reviewCount: "47",
           },
+        })}
+      </Script>
+      <Script
+        id="schema-hyderabad-faq"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for IT and ITES companies in Hyderabad?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPF and ESIC are mandatory for eligible IT, ITES and corporate establishments in Hyderabad, including companies operating in HITEC City, Gachibowli and the Financial District. Authorities closely monitor payroll structures and contribution compliance.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the major EPF and ESIC risks for Hyderabad corporates under NWC 2025?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Key risks include non-compliance with the 50% basic wage rule, incorrect allowance structuring, exclusion of contractor wages and EPFO Section 7A inquiries. Hyderabad IT companies face heightened scrutiny due to high salary packages and outsourcing models.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does EPFDesk handle EPFO audits and contractor compliance in Hyderabad?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides end-to-end support for EPFO audits, Section 7A proceedings, contractor compliance, CLRA obligations and monthly PF & ESIC filings for IT and corporate establishments across Hyderabad.",
+              },
+            },
+          ],
         })}
       </Script>
 

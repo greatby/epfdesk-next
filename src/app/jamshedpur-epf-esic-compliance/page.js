@@ -109,8 +109,10 @@ export default function Page() {
           /* ✅ DISTRICT-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Bistupur",
             addressLocality: "Jamshedpur",
             addressRegion: "Jharkhand",
+            postalCode: "831001",
             addressCountry: "IN",
           },
 

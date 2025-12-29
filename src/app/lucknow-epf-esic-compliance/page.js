@@ -56,8 +56,7 @@ export const metadata = {
   /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
-    title:
-      "Lucknow EPF & ESIC Compliance | HAL/BEL & Service Sector",
+    title: "Lucknow EPF & ESIC Compliance | HAL/BEL & Service Sector",
     description:
       "Expert PF/ESIC compliance for Lucknow government contractors, IT firms and educational institutions.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -99,11 +98,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/lucknow-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/lucknow-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Lucknow District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Lucknow District",
 
           alternateName:
             "Lucknow EPF & ESIC Compliance for HAL/BEL Contractors, IT & Education Sector",
@@ -115,8 +112,10 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Hazratganj Main Road",
             addressLocality: "Lucknow",
             addressRegion: "Uttar Pradesh",
+            postalCode: "226001",
             addressCountry: "IN",
           },
 

@@ -84,8 +84,7 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/aligarh-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/aligarh-epf-esic-compliance#organization",
           name: "EPFDesk - EPF & ESIC Consultants Aligarh",
           image: "https://epfdesk.com/images/logo.jpg",
           url: "https://epfdesk.com/aligarh-epf-esic-compliance",
@@ -94,6 +93,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Civil Lines",
             addressLocality: "Aligarh",
             addressRegion: "Uttar Pradesh",
             postalCode: "202001",
@@ -103,7 +103,7 @@ export default function Page() {
           geo: {
             "@type": "GeoCoordinates",
             latitude: 27.8974,
-            longitude: 78.0880,
+            longitude: 78.088,
           },
 
           areaServed: {

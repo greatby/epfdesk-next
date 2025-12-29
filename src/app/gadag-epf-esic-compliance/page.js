@@ -107,6 +107,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Station Road",
             addressLocality: "Gadag",
             addressRegion: "Karnataka",
             postalCode: "582101",

@@ -90,8 +90,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/surendranagar-epf-esic-compliance#organization",
 
-          name:
-            "Surendranagar EPF & ESIC Compliance – Ceramics, Textiles & Salt Industries | EPFDesk",
+          name: "Surendranagar EPF & ESIC Compliance – Ceramics, Textiles & Salt Industries | EPFDesk",
 
           alternateName:
             "EPFDesk – Surendranagar Ceramics, Textile & GIDC Compliance Experts",
@@ -133,6 +132,58 @@ export default function Page() {
             ratingValue: "4.9",
             reviewCount: "47",
           },
+        })}
+      </Script>
+      <Script
+        id="faq-schema-surendranagar"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF registration mandatory for ceramic and textile units in Surendranagar?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Ceramic manufacturing units, textile mills, and allied industries in Surendranagar must register under EPF once they employ 20 or more workers. Units operating in Wadhwan GIDC and Thangadh clusters are frequently covered due to contractor and piece-rate labour.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does ESIC apply to Thangadh ceramic clusters and salt-processing units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. ESIC applies to ceramic, salt-processing, and industrial units employing 10 or more workers with wages up to ₹21,000 per month. Seasonal and migrant workers engaged in kilns, packing, and loading must also be covered.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are common EPF compliance risks for Surendranagar industries?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Key risks include non-inclusion of contract labour, improper basic wage structuring, incorrect handling of piece-rate wages, non-registration of contractors, and mismatches between wage registers and monthly ECR filings.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 impact ceramic and textile units in Surendranagar?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Under the New Wage Code 2025, basic wages must constitute at least 50% of total remuneration. Ceramic and textile units using high allowances or piece-rate pay structures must restructure payrolls to avoid retrospective EPF liabilities.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can EPFDesk manage contractor and seasonal labour compliance in Surendranagar?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides end-to-end contractor compliance support including PF/ESIC registration checks, principal employer liability audits, piece-rate wage validation, seasonal labour coverage, and inspection defence for Surendranagar industries.",
+              },
+            },
+          ],
         })}
       </Script>
 

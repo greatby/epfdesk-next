@@ -108,6 +108,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "NIT Faridabad",
             addressLocality: "Faridabad",
             addressRegion: "Haryana",
             postalCode: "121001",

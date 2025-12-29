@@ -74,8 +74,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/kerala-balance-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Kerala Balance Districts",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Kerala Balance Districts",
 
           alternateName:
             "Kerala EPF & ESIC Compliance for IT Parks, Cashew Units & Gold Trade",
@@ -88,7 +87,10 @@ export default function Page() {
           /* ✅ STATE-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "MG Road",
+            addressLocality: "Thiruvananthapuram",
             addressRegion: "Kerala",
+            postalCode: "695001",
             addressCountry: "IN",
           },
 

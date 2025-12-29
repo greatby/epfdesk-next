@@ -93,17 +93,19 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/himachal-final-balance-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Consultants for Himachal FMCG, MSMEs & Tourism Sector",
+          name: "EPFDesk – EPF & ESIC Consultants for Himachal FMCG, MSMEs & Tourism Sector",
           image: "https://epfdesk.com/images/logo.jpg",
           url: "https://epfdesk.com/himachal-final-balance-epf-esic-compliance",
           telephone: "+91-9945933333",
           priceRange: "₹₹",
 
           /* ✅ STATE-CENTRIC ADDRESS */
-          address: {
+          aaddress: {
             "@type": "PostalAddress",
+            streetAddress: "Mall Road",
+            addressLocality: "Shimla",
             addressRegion: "Himachal Pradesh",
+            postalCode: "171001",
             addressCountry: "IN",
           },
 

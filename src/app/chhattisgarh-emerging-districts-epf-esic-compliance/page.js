@@ -35,12 +35,10 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Chhattisgarh EPF & ESIC Compliance | Emerging Districts | EPFDesk",
+    title: "Chhattisgarh EPF & ESIC Compliance | Emerging Districts | EPFDesk",
     description:
       "PF & ESIC specialists for food processing, agri-logistics and emerging industrial districts in Chhattisgarh.",
-    url:
-      "https://epfdesk.com/chhattisgarh-emerging-districts-epf-esic-compliance",
+    url: "https://epfdesk.com/chhattisgarh-emerging-districts-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
@@ -102,16 +100,15 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/chhattisgarh-emerging-districts-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Consultants for Emerging Districts of Chhattisgarh",
+          name: "EPFDesk – EPF & ESIC Consultants for Emerging Districts of Chhattisgarh",
           image: "https://epfdesk.com/images/logo.jpg",
-          url:
-            "https://epfdesk.com/chhattisgarh-emerging-districts-epf-esic-compliance",
+          url: "https://epfdesk.com/chhattisgarh-emerging-districts-epf-esic-compliance",
           telephone: "+91-9945933333",
           priceRange: "₹₹₹",
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Pandri",
             addressLocality: "Raipur",
             addressRegion: "Chhattisgarh",
             postalCode: "492001",
@@ -152,7 +149,10 @@ export default function Page() {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqCGEmergingDistricts} />
-       <Script id="conversion-tracking-chhattisgarh-emerging" strategy="afterInteractive">
+      <Script
+        id="conversion-tracking-chhattisgarh-emerging"
+        strategy="afterInteractive"
+      >
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

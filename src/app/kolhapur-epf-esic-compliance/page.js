@@ -56,8 +56,7 @@ export const metadata = {
   /* ✅ TWITTER (OPTIONAL BUT CLEAN) */
   twitter: {
     card: "summary_large_image",
-    title:
-      "Kolhapur EPF & ESIC Compliance | Foundry & Sugar Industry",
+    title: "Kolhapur EPF & ESIC Compliance | Foundry & Sugar Industry",
     description:
       "High-risk EPF & ESIC compliance for Kolhapur foundries, sugar mills and MIDC contractors.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -102,8 +101,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/kolhapur-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Kolhapur District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Kolhapur District",
 
           alternateName:
             "Kolhapur EPF & ESIC Compliance for Foundries, Sugar Mills & MIDC Units",
@@ -115,6 +113,8 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Shahupuri Main Road",
+            postalCode: "416001",
             addressLocality: "Kolhapur",
             addressRegion: "Maharashtra",
             addressCountry: "IN",
@@ -122,7 +122,7 @@ export default function Page() {
 
           geo: {
             "@type": "GeoCoordinates",
-            latitude: 16.7050,
+            latitude: 16.705,
             longitude: 74.2433,
           },
 

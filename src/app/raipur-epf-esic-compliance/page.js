@@ -86,11 +86,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/raipur-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/raipur-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Raipur EPF & ESIC Compliance for Steel & Industrial Clusters",
+          name: "EPFDesk – Raipur EPF & ESIC Compliance for Steel & Industrial Clusters",
 
           alternateName:
             "PF & ESIC Consultant for Urla, Siltara, Birgaon & Nava Raipur",
@@ -102,7 +100,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Pandri",
             addressRegion: "Chhattisgarh",
+            postalCode: "492004",
             addressCountry: "IN",
           },
 

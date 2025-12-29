@@ -56,8 +56,7 @@ export const metadata = {
   /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
-    title:
-      "Mandya EPF & ESIC Compliance | Sugar Mills & Distilleries",
+    title: "Mandya EPF & ESIC Compliance | Sugar Mills & Distilleries",
     description:
       "PF/ESI compliance for Mandya sugar factories, distilleries, plantations and textile units.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -99,11 +98,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/mandya-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/mandya-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Mandya District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Mandya District",
 
           alternateName:
             "Mandya Sugar Mills, Distilleries & Plantation EPF/ESIC Compliance",
@@ -115,15 +112,17 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Bangalore–Mysore Road",
             addressLocality: "Mandya",
             addressRegion: "Karnataka",
+            postalCode: "571401",
             addressCountry: "IN",
           },
 
           geo: {
             "@type": "GeoCoordinates",
             latitude: 12.5223,
-            longitude: 76.8970,
+            longitude: 76.897,
           },
 
           areaServed: [

@@ -21,7 +21,7 @@ export const metadata = {
   alternates: {
     canonical: "https://epfdesk.com/ballari-epf-esic-compliance",
   },
-   keywords: [
+  keywords: [
     "Ballari PF consultant",
     "Vijayanagara PF ESIC consultant",
     "mining contractor PF Ballari",
@@ -94,8 +94,7 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/ballari-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/ballari-epf-esic-compliance#organization",
           name: "EPFDesk - EPF & ESIC Consultants Ballari",
           image: "https://epfdesk.com/images/logo.jpg",
           url: "https://epfdesk.com/ballari-epf-esic-compliance",
@@ -104,6 +103,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Cantonment Area",
             addressLocality: "Ballari",
             addressRegion: "Karnataka",
             postalCode: "583101",

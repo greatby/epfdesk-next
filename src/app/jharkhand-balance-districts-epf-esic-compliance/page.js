@@ -75,8 +75,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/jharkhand-balance-districts-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Jharkhand Balance Districts",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Jharkhand Balance Districts",
 
           alternateName:
             "Jharkhand EPF & ESIC Compliance for Mining, Sponge Iron & MSMEs",
@@ -89,7 +88,10 @@ export default function Page() {
           /* ✅ STATE-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Main Road",
+            addressLocality: "Ranchi",
             addressRegion: "Jharkhand",
+            postalCode: "834001",
             addressCountry: "IN",
           },
 

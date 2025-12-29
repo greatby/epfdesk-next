@@ -37,8 +37,7 @@ export const metadata = {
 
   /* ✅ OPEN GRAPH */
   openGraph: {
-    title:
-      "Kolkata & Rajarhat EPF & ESIC Compliance | IT & Service Sector Hub",
+    title: "Kolkata & Rajarhat EPF & ESIC Compliance | IT & Service Sector Hub",
     description:
       "PF & ESIC specialists for Sector V IT parks, Rajarhat startups and Kolkata service-sector employers.",
     url: "https://epfdesk.com/kolkata-rajarhat-epf-esic-compliance",
@@ -58,8 +57,7 @@ export const metadata = {
   /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
-    title:
-      "Kolkata & Rajarhat EPF & ESIC Compliance | IT & Startups",
+    title: "Kolkata & Rajarhat EPF & ESIC Compliance | IT & Startups",
     description:
       "Expert PF & ESIC compliance for Kolkata IT firms, Rajarhat startups and service-sector employers.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -104,8 +102,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/kolkata-rajarhat-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Kolkata & Rajarhat",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Kolkata & Rajarhat",
 
           alternateName:
             "Kolkata & Rajarhat EPF & ESIC Compliance for IT & Service Sector",
@@ -117,6 +114,8 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Park Street",
+            postalCode: "700016",
             addressLocality: "Kolkata",
             addressRegion: "West Bengal",
             addressCountry: "IN",
@@ -129,7 +128,10 @@ export default function Page() {
           },
 
           areaServed: [
-            { "@type": "AdministrativeArea", name: "Kolkata Metropolitan Area" },
+            {
+              "@type": "AdministrativeArea",
+              name: "Kolkata Metropolitan Area",
+            },
             { "@type": "Place", name: "Salt Lake Sector V" },
             { "@type": "Place", name: "Rajarhat" },
             { "@type": "Place", name: "New Town Kolkata" },
@@ -158,10 +160,7 @@ export default function Page() {
       <FaqAccordion faqs={faqKolkataRajarhat} />
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-kolkata"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-kolkata" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

@@ -54,8 +54,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Nanded EPF & ESIC Compliance | Sugar Mills & Powerlooms | EPFDesk",
+    title: "Nanded EPF & ESIC Compliance | Sugar Mills & Powerlooms | EPFDesk",
     description:
       "High-risk EPF & ESIC compliance and EPFO 7A defence for Nanded sugar mills, powerloom units and education sector employers.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -97,11 +96,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/nanded-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/nanded-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Nanded District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Nanded District",
 
           alternateName:
             "Nanded EPF & ESIC Compliance for Sugar Mills, Powerlooms & Education",
@@ -113,14 +110,16 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Vazirabad",
             addressRegion: "Maharashtra",
+            postalCode: "431601",
             addressCountry: "IN",
           },
 
           geo: {
             "@type": "GeoCoordinates",
             latitude: 19.1383,
-            longitude: 77.3210,
+            longitude: 77.321,
           },
 
           areaServed: [
@@ -154,10 +153,7 @@ export default function Page() {
       <FaqAccordion faqs={faqNandedDistrict} />
 
       {/* ========= CONVERSION TRACKING (LOCKED) ========= */}
-      <Script
-        id="conversion-tracking-nanded"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-nanded" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

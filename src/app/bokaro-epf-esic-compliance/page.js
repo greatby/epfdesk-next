@@ -89,8 +89,7 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/bokaro-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/bokaro-epf-esic-compliance#organization",
 
           name: "EPFDesk – EPF & ESIC Consultants Bokaro",
           image: "https://epfdesk.com/images/logo.jpg",
@@ -100,6 +99,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Sector 4",
             addressLocality: "Bokaro Steel City",
             addressRegion: "Jharkhand",
             postalCode: "827004",

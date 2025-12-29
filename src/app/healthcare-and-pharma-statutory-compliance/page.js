@@ -180,6 +180,67 @@ const page = () => {
           }),
         }}
       />
+      {/* ================== FAQ SCHEMA ================== */}
+      <Script
+        id="faq-healthcare-pharma-india"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for hospitals and healthcare institutions in India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Hospitals, clinics, and healthcare institutions are required to comply with EPF and ESIC laws once statutory employee thresholds are met. Coverage generally includes doctors on payroll, nurses, paramedical staff, administrative employees, and eligible contract workers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Do diagnostic labs and testing centres require EPF and ESIC registration?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Diagnostic laboratories and testing centres must register under EPF and ESIC when eligibility criteria are satisfied. Coverage typically includes lab technicians, support staff, administrative employees, and contract workers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC applicable to pharmaceutical manufacturing units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Pharmaceutical manufacturing units are covered under EPF and ESIC laws once applicable thresholds are crossed. This includes production workers, quality control staff, R&D teams, warehouse staff, and eligible contractual labour.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are common EPF and ESIC compliance risks in the healthcare and pharma sector?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include non-enrolment of eligible staff, misclassification of consultants, exclusion of allowances from PF wages, contractor non-compliance, delayed remittances, and gaps in statutory documentation during inspections.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 affect healthcare and pharma employers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The New Wage Code 2025 impacts EPF and ESIC calculations by redefining wage components. Healthcare and pharma employers with high allowances or incentive-heavy pay structures may face increased contribution liabilities if payroll is not restructured correctly.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does EPFDesk support healthcare and pharmaceutical organizations?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "EPFDesk provides end-to-end EPF and ESIC compliance services including registration, payroll restructuring under NWC 2025, contractor audits, inspection handling, monthly filings, and statutory advisory for healthcare and pharma organizations across India.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataHealthcare} />

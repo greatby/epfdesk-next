@@ -3,10 +3,7 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 
-import {
-  heroDataMedchalDist,
-  sectionsMedchalDist,
-} from "@/utils/data";
+import { heroDataMedchalDist, sectionsMedchalDist } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -31,8 +28,7 @@ export const metadata = {
   ],
 
   alternates: {
-    canonical:
-      "https://epfdesk.com/medchal-malkajgiri-epf-esic-compliance",
+    canonical: "https://epfdesk.com/medchal-malkajgiri-epf-esic-compliance",
   },
 
   /* ✅ OPEN GRAPH */
@@ -104,33 +100,36 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/medchal-malkajgiri-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Medchal-Malkajgiri",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Medchal-Malkajgiri",
 
           alternateName:
             "Medchal-Malkajgiri Genome Valley, IT Park & Industrial EPF/ESIC Compliance",
 
           image: "https://epfdesk.com/images/logo.jpg",
-          url:
-            "https://epfdesk.com/medchal-malkajgiri-epf-esic-compliance",
+          url: "https://epfdesk.com/medchal-malkajgiri-epf-esic-compliance",
           telephone: "+91-9945933333",
           priceRange: "₹₹",
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Kompally–Medchal Road",
             addressLocality: "Medchal-Malkajgiri",
             addressRegion: "Telangana",
+            postalCode: "501401",
             addressCountry: "IN",
           },
 
           geo: {
             "@type": "GeoCoordinates",
-            latitude: 17.6290,
+            latitude: 17.629,
             longitude: 78.4815,
           },
 
           areaServed: [
-            { "@type": "AdministrativeArea", name: "Medchal-Malkajgiri District" },
+            {
+              "@type": "AdministrativeArea",
+              name: "Medchal-Malkajgiri District",
+            },
             { "@type": "Place", name: "Genome Valley" },
             { "@type": "Place", name: "Keesara IT Park" },
             { "@type": "Place", name: "IDA Jeedimetla" },
@@ -145,6 +144,50 @@ export default function Page() {
             ratingValue: "4.9",
             reviewCount: "47",
           },
+        })}
+      </Script>
+      <Script
+        id="faq-schema-medchal"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Are pharma and biotech units in Genome Valley required to register under EPF and ESIC?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Pharma R&D, biotech labs and life sciences units in Genome Valley are mandatorily covered under EPF and ESIC if employee thresholds are met, including contract and fixed-term workers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC applicable to IT Parks and manufacturing units in Medchal-Malkajgiri?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. IT Parks, electronics manufacturing units and industrial establishments in Keesara IT Park and IDA Jeedimetla fall under EPF and ESIC based on employee strength and wage eligibility.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are common compliance risks in IDA Jeedimetla industrial units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include non-enrolment of contract labour, incorrect wage structuring, delayed ECR filings, ESIC non-coverage and exposure under the New Wage Code 2025.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does NWC 2025 impact Medchal-Malkajgiri industries?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The New Wage Code 2025 affects basic wage calculations, PF contribution levels and allowance structures for pharma, biotech, IT and manufacturing units in Medchal-Malkajgiri.",
+              },
+            },
+          ],
         })}
       </Script>
 

@@ -74,8 +74,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/kalaburagi-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Kalaburagi Industries",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Kalaburagi Industries",
 
           alternateName:
             "Kalaburagi EPF & ESIC Compliance for Cement Plants, Dal Mills & Educational Institutions",
@@ -88,8 +87,10 @@ export default function Page() {
           /* ✅ DISTRICT-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Sedam Road",
             addressLocality: "Kalaburagi",
             addressRegion: "Karnataka",
+            postalCode: "585105",
             addressCountry: "IN",
           },
 
@@ -130,10 +131,7 @@ export default function Page() {
       <FaqAccordion faqs={faqKalaburagi} />
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-kalaburagi"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-kalaburagi" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

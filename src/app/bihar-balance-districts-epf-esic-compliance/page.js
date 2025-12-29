@@ -106,6 +106,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Fraser Road",
             addressLocality: "Patna",
             addressRegion: "Bihar",
             postalCode: "800001",

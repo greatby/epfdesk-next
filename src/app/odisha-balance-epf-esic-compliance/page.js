@@ -100,8 +100,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/odisha-balance-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Odisha EPF & ESIC Compliance for Agri-Processing & Mineral Belts",
+          name: "EPFDesk – Odisha EPF & ESIC Compliance for Agri-Processing & Mineral Belts",
 
           alternateName:
             "PF & ESIC Consultant for Western & Southern Odisha Districts",
@@ -113,7 +112,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Janpath Road",
             addressRegion: "Odisha",
+            postalCode: "751001",
             addressCountry: "IN",
           },
 
@@ -158,10 +159,7 @@ export default function Page() {
       <FadeInWhenVisible>
         <FaqAccordion faqs={faqOdishaBalance} />
       </FadeInWhenVisible>
-        <Script
-        id="conversion-tracking-odisha"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-odisha" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

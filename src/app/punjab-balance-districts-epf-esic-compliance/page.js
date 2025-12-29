@@ -90,8 +90,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/punjab-balance-districts-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Punjab EPF & ESIC Compliance for Energy, Export & Pharma Districts",
+          name: "EPFDesk – Punjab EPF & ESIC Compliance for Energy, Export & Pharma Districts",
 
           alternateName:
             "PF & ESIC Consultant for Bathinda, Amritsar, Patiala & Punjab Industrial Hubs",
@@ -103,7 +102,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Ferozepur Road",
             addressRegion: "Punjab",
+            postalCode: "141001",
             addressCountry: "IN",
           },
 

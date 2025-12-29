@@ -97,8 +97,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/northeast-india-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Northeast India EPF & ESIC Compliance for Infrastructure & Border Industries",
+          name: "EPFDesk – Northeast India EPF & ESIC Compliance for Infrastructure & Border Industries",
 
           alternateName:
             "PF & ESIC Consultant for Tripura, Nagaland, Arunachal Pradesh, Manipur & Mizoram",
@@ -110,7 +109,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "GS Road",
             addressRegion: "Northeast India",
+            postalCode: "793001",
             addressCountry: "IN",
           },
 
@@ -158,11 +159,11 @@ export default function Page() {
       <FadeInWhenVisible>
         <FaqAccordion faqs={faqNE} />
       </FadeInWhenVisible>
-        <Script
-              id="conversion-tracking-northeast-india"
-              strategy="afterInteractive"
-            >
-              {`
+      <Script
+        id="conversion-tracking-northeast-india"
+        strategy="afterInteractive"
+      >
+        {`
                 document.querySelectorAll('a[href^="tel:"]').forEach(el => {
                   el.addEventListener('click', () => {
                     if (typeof gtag === 'function') {
@@ -201,7 +202,7 @@ export default function Page() {
                   });
                 });
               `}
-            </Script>
+      </Script>
     </>
   );
 }

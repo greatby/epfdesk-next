@@ -177,6 +177,67 @@ const page = () => {
           }),
         }}
       />
+      {/* ================== FAQ SCHEMA ================== */}
+      <Script
+        id="faq-education-charitable-india"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for schools and colleges in India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Schools, colleges, universities, and other educational institutions are required to comply with EPF and ESIC laws once statutory employee thresholds are met. Coverage applies to teaching, non-teaching, and eligible contract staff.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Do charitable trusts and NGOs need to register under EPF and ESIC?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Charitable trusts and NGOs are not exempt from EPF and ESIC laws solely due to their non-profit status. Applicability depends on employee strength, wage limits, and the nature of activities performed.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are hospitals and educational trusts covered under ESIC?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Hospitals and educational trusts are generally covered under ESIC once eligibility criteria are satisfied. Coverage may include doctors, nursing staff, administrative employees, and support staff, subject to wage thresholds.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are common EPF and ESIC compliance risks for educational institutions?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include non-enrolment of eligible staff, incorrect wage structuring, exclusion of allowances from PF wages, delayed remittances, and non-compliance by outsourced service providers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 affect schools, colleges, and trusts?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The New Wage Code 2025 impacts EPF and ESIC calculations by redefining wage components. Educational institutions and trusts with high allowance structures may face increased contribution liabilities if payroll is not restructured correctly.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does EPFDesk support educational institutions and charitable trusts?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "EPFDesk provides end-to-end EPF and ESIC compliance services including registration, payroll restructuring under NWC 2025, contractor audits, inspection handling, monthly filings, and statutory advisory across India.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataEducation} />

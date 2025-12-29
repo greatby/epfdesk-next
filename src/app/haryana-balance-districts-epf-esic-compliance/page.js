@@ -108,6 +108,7 @@ export default function Page() {
           /* ✅ STATE-SPECIFIC ADDRESS (HARYANA) */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "MG Road",
             addressLocality: "Gurugram",
             addressRegion: "Haryana",
             postalCode: "122001",

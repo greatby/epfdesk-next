@@ -107,6 +107,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "PB Road",
             addressLocality: "Haveri",
             addressRegion: "Karnataka",
             postalCode: "581110",

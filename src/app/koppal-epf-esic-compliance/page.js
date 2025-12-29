@@ -57,8 +57,7 @@ export const metadata = {
   /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
-    title:
-      "Koppal EPF & ESIC Compliance | Rice Mills, Agro & MSME Cluster",
+    title: "Koppal EPF & ESIC Compliance | Rice Mills, Agro & MSME Cluster",
     description:
       "PF/ESI compliance for seasonal and piece-rate workforce in Koppal rice mills, agro-processing units and Gangavathi MSME clusters.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -100,11 +99,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/koppal-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/koppal-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Koppal District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Koppal District",
 
           alternateName:
             "Koppal EPF & ESIC Compliance for Rice Mills & Agro-Processing Units",
@@ -116,6 +113,8 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Hospet Road",
+            postalCode: "583231",
             addressLocality: "Koppal",
             addressRegion: "Karnataka",
             addressCountry: "IN",

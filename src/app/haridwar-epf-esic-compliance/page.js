@@ -102,6 +102,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Jwalapur",
             addressLocality: "Haridwar",
             addressRegion: "Uttarakhand",
             postalCode: "249401",

@@ -3,10 +3,7 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 
-import {
-  heroDataKanchipuramDist,
-  sectionsKanchipuramDist,
-} from "@/utils/data";
+import { heroDataKanchipuramDist, sectionsKanchipuramDist } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -74,8 +71,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/kanchipuram-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Kanchipuram Manufacturing Hubs",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Kanchipuram Manufacturing Hubs",
 
           alternateName:
             "Kanchipuram EPF & ESIC Compliance for Oragadam Automotive & Sriperumbudur SEZ Units",
@@ -88,8 +84,10 @@ export default function Page() {
           /* ✅ DISTRICT-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Gandhi Road",
             addressLocality: "Kanchipuram",
             addressRegion: "Tamil Nadu",
+            postalCode: "631501",
             addressCountry: "IN",
           },
 
@@ -117,6 +115,42 @@ export default function Page() {
           },
         })}
       </Script>
+      <Script
+        id="schema-kanchipuram-faq"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for Oragadam and Sriperumbudur manufacturing units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPF and ESIC are mandatory for eligible automotive OEMs, Tier-1 suppliers and electronics manufacturers operating in Oragadam SIPCOT and Sriperumbudur SIPCOT & SEZ. These zones are subject to frequent audits due to large contract labour deployment.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the major EPF and ESIC risks for Kanchipuram manufacturing units under NWC 2025?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Key risks include non-compliance with the 50% basic wage rule, contractor wage exclusion, improper handling of fixed-term employment and Principal Employer liability for unpaid PF and ESIC contributions.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does EPFDesk handle contractor audits and OEM-driven statutory inspections in Kanchipuram?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides end-to-end support for contractor audits, CLRA compliance, EPFO and ESIC inspections, and NWC 2025 payroll restructuring for automotive and electronics manufacturing units in Kanchipuram District.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
@@ -128,10 +162,7 @@ export default function Page() {
       </FadeInWhenVisible>
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-kanchipuram"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-kanchipuram" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

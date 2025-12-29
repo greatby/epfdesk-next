@@ -3,10 +3,7 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 
-import {
-  heroDataCoimbatoreDist,
-  sectionsCoimbatoreDist,
-} from "@/utils/data";
+import { heroDataCoimbatoreDist, sectionsCoimbatoreDist } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -34,8 +31,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Coimbatore EPF & ESIC Compliance | Spinning Mills, Pumps & IT SEZs",
+    title: "Coimbatore EPF & ESIC Compliance | Spinning Mills, Pumps & IT SEZs",
     description:
       "PF & ESIC specialists for Coimbatore spinning mills, pump manufacturers, engineering MSMEs and IT SEZ operations.",
     url: "https://epfdesk.com/coimbatore-epf-esic-compliance",
@@ -100,19 +96,18 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/coimbatore-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Consultants for Coimbatore Industries",
+          name: "EPFDesk – EPF & ESIC Consultants for Coimbatore Industries",
           image: "https://epfdesk.com/images/logo.jpg",
           url: "https://epfdesk.com/coimbatore-epf-esic-compliance",
           telephone: "+91-9945933333",
           priceRange: "₹₹",
 
-          address: {
+          aaddress: {
             "@type": "PostalAddress",
-            streetAddress: "Church Street",
-            addressLocality: "Bangalore",
-            addressRegion: "Karnataka",
-            postalCode: "560001",
+            streetAddress: "Avinashi Road",
+            addressLocality: "Coimbatore",
+            addressRegion: "Tamil Nadu",
+            postalCode: "641018",
             addressCountry: "IN",
           },
 
@@ -141,6 +136,42 @@ export default function Page() {
           },
         })}
       </Script>
+      <Script
+        id="schema-coimbatore-faq"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for spinning mills and manufacturing units in Coimbatore?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPF and ESIC are mandatory for eligible spinning mills, pump manufacturing units, engineering MSMEs and factories in Coimbatore. Units associated with SIMA and CODISSIA are regularly audited for PF coverage, ESIC registration and contractor compliance.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the common PF and ESIC compliance risks for Coimbatore industries under NWC 2025?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Major risks include incorrect allowance structuring under the 50% basic wage rule, exclusion of contract labour wages, overtime misclassification and EPFO Section 7A inquiries. Textile and engineering units in Coimbatore face high scrutiny due to large workforce strength.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does EPFDesk handle EPFO 7A notices and contractor audits in Coimbatore?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides end-to-end support for EPFO Section 7A proceedings, contractor audits, CLRA compliance and ESIC inspections for spinning mills, manufacturing units and IT SEZs across Coimbatore.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
@@ -150,7 +181,7 @@ export default function Page() {
       <FadeInWhenVisible>
         <CodeOfConduct sections={sectionsCoimbatoreDist} />
       </FadeInWhenVisible>
-       <Script id="conversion-tracking-coimbatore" strategy="afterInteractive">
+      <Script id="conversion-tracking-coimbatore" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

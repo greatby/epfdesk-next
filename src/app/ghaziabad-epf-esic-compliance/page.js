@@ -108,6 +108,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Nehru Nagar",
             addressLocality: "Ghaziabad",
             addressRegion: "Uttar Pradesh",
             postalCode: "201001",

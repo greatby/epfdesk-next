@@ -108,6 +108,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Barshi Road",
             addressLocality: "Dharashiv",
             addressRegion: "Maharashtra",
             postalCode: "413501",

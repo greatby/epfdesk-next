@@ -21,7 +21,7 @@ export const metadata = {
   alternates: {
     canonical: "https://epfdesk.com/bareilly-epf-esic-compliance",
   },
-   keywords: [
+  keywords: [
     "Bareilly PF consultant",
     "Bareilly ESIC registration",
     "Furniture piece rate PF Bareilly",
@@ -102,6 +102,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Civil Lines",
             addressLocality: "Bareilly",
             addressRegion: "Uttar Pradesh",
             postalCode: "243001",
@@ -110,7 +111,7 @@ export default function Page() {
 
           geo: {
             "@type": "GeoCoordinates",
-            latitude: 28.3670,
+            latitude: 28.367,
             longitude: 79.4304,
           },
 

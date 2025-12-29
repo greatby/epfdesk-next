@@ -5,11 +5,7 @@ import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndus
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
 
-import {
-  faqSirmaur,
-  heroDataSirmaur,
-  sectionsSirmaur,
-} from "@/utils/data";
+import { faqSirmaur, heroDataSirmaur, sectionsSirmaur } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -91,8 +87,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/paonta-sahib-kala-amb-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Paonta Sahib & Kala Amb EPF & ESIC Compliance for Pharma & Chemical Industries",
+          name: "EPFDesk – Paonta Sahib & Kala Amb EPF & ESIC Compliance for Pharma & Chemical Industries",
 
           alternateName:
             "PF & ESIC Consultant for Sirmaur Industrial Belt (Paonta Sahib & Kala Amb)",
@@ -104,7 +99,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Kala Amb Industrial Area",
             addressRegion: "Himachal Pradesh",
+            postalCode: "173030",
             addressCountry: "IN",
           },
 
@@ -147,10 +144,7 @@ export default function Page() {
       </FadeInWhenVisible>
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-sirmaur"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-sirmaur" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

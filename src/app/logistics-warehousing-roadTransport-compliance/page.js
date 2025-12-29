@@ -178,6 +178,67 @@ const page = () => {
           }),
         }}
       />
+      {/* ================== FAQ SCHEMA ================== */}
+      <Script
+        id="faq-logistics-transport-india"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for logistics and transport companies in India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Logistics, warehousing, and road transport companies are required to comply with EPF and ESIC laws once statutory thresholds are met. Coverage may include office staff, warehouse workers, drivers, loaders, and eligible contract labour.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are drivers and loaders covered under ESIC?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Drivers, helpers, and loaders may be covered under ESIC depending on wage limits and employment structure. Coverage applies to both direct employees and eligible contractual personnel engaged by transport operators.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Do warehousing units require EPF and ESIC registration?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Warehousing units must register under EPF and ESIC once eligibility conditions are satisfied. Coverage generally includes warehouse staff, inventory handlers, supervisors, security personnel, and contract workers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are common EPF and ESIC compliance risks in the logistics sector?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include non-enrolment of drivers and loaders, contractor non-compliance, improper wage structuring, delayed remittances, high workforce turnover without proper exits, and incomplete statutory records during inspections.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 affect logistics and transport businesses?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The New Wage Code 2025 impacts EPF and ESIC calculations by redefining wage components. Logistics and transport businesses with allowance-heavy or trip-based pay structures may face increased contribution liabilities if payroll is not aligned correctly.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does EPFDesk support logistics, warehousing, and transport companies?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "EPFDesk provides end-to-end EPF and ESIC compliance services including registration, payroll restructuring under NWC 2025, contractor audits, driver and labour coverage review, inspection handling, monthly filings, and statutory advisory across India.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataLogistics} />

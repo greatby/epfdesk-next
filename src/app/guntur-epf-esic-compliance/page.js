@@ -109,6 +109,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Brodipet",
             addressLocality: "Guntur",
             addressRegion: "Andhra Pradesh",
             postalCode: "522002",

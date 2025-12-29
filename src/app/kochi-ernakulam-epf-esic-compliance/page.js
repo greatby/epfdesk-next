@@ -70,8 +70,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/kochi-ernakulam-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Kochi & Ernakulam District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Kochi & Ernakulam District",
 
           alternateName:
             "Kochi EPF & ESIC Compliance for IT Parks, Ports & Industrial Units",
@@ -84,6 +83,8 @@ export default function Page() {
           /* ✅ DISTRICT-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "MG Road",
+            postalCode: "682016",
             addressLocality: "Kochi",
             addressRegion: "Kerala",
             addressCountry: "IN",

@@ -183,6 +183,67 @@ const page = () => {
           }),
         }}
       />
+      {/* ================== FAQ SCHEMA ================== */}
+      <Script
+        id="faq-financial-services-india"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for banks and financial institutions in India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Banks, NBFCs, insurance companies, and financial institutions are required to comply with EPF and ESIC laws once statutory thresholds are met. Coverage generally applies to permanent staff, contractual employees, and eligible outsourced personnel.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are sales staff, field executives, and relationship managers covered under EPF and ESIC?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Sales staff, field executives, and relationship managers may be covered under EPF and ESIC depending on their employment structure, wage levels, and degree of employer control. Misclassification is a common compliance risk in the financial services sector.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Do NBFCs and FinTech companies require EPF and ESIC registration?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. NBFCs and FinTech companies are required to register under EPF and ESIC once eligibility conditions are met. Coverage may include technology teams, operations staff, sales personnel, and contract workers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are common EPF and ESIC compliance risks in the financial services sector?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include exclusion of variable pay from PF wages, non-enrolment of sales staff, contractor non-compliance, delayed remittances, and documentation gaps during statutory inspections.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 affect banks and financial service providers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The New Wage Code 2025 impacts EPF and ESIC calculations by redefining wage components. Financial service employers with high incentive or allowance-based pay structures may face increased contribution liabilities if payroll is not aligned correctly.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does EPFDesk support banks, NBFCs, and FinTech companies?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "EPFDesk provides end-to-end EPF and ESIC compliance support including registration, payroll restructuring under NWC 2025, contractor and sales-force audits, inspection handling, monthly filings, and statutory advisory across India.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataFinancial} />

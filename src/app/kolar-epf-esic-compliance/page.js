@@ -4,11 +4,7 @@ import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndus
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
 
-import {
-  heroDataKolarDist,
-  sectionsKolarDist,
-  faqKolar,
-} from "@/utils/data";
+import { heroDataKolarDist, sectionsKolarDist, faqKolar } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -69,11 +65,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/kolar-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/kolar-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Kolar District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Kolar District",
 
           alternateName:
             "Kolar EPF & ESIC Compliance for Auto EMC, Honda Vendors & Sericulture",
@@ -86,6 +80,8 @@ export default function Page() {
           /* ✅ DISTRICT-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Bangalore Road",
+            postalCode: "563101",
             addressLocality: "Kolar",
             addressRegion: "Karnataka",
             addressCountry: "IN",
@@ -94,7 +90,7 @@ export default function Page() {
           geo: {
             "@type": "GeoCoordinates",
             latitude: 13.1369,
-            longitude: 78.1290,
+            longitude: 78.129,
           },
 
           areaServed: [

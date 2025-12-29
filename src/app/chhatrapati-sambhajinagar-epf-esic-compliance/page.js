@@ -112,6 +112,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Jalna Road",
             addressLocality: "Chhatrapati Sambhajinagar",
             addressRegion: "Maharashtra",
             postalCode: "431001",

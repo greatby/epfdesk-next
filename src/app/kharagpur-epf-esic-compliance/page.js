@@ -74,8 +74,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/kharagpur-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Kharagpur Industrial Belt",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Kharagpur Industrial Belt",
 
           alternateName:
             "Kharagpur EPF & ESIC Compliance for Cement, Metal & Engineering Units",
@@ -88,19 +87,24 @@ export default function Page() {
           /* ✅ DISTRICT-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Malanchak Road",
             addressLocality: "Kharagpur",
             addressRegion: "West Bengal",
+            postalCode: "721301",
             addressCountry: "IN",
           },
 
           geo: {
             "@type": "GeoCoordinates",
-            latitude: 22.3460,
-            longitude: 87.2310,
+            latitude: 22.346,
+            longitude: 87.231,
           },
 
           areaServed: [
-            { "@type": "AdministrativeArea", name: "Paschim Medinipur District" },
+            {
+              "@type": "AdministrativeArea",
+              name: "Paschim Medinipur District",
+            },
             { "@type": "Place", name: "Kharagpur Industrial Area" },
             { "@type": "Place", name: "Vidyasagar Industrial Park" },
             { "@type": "Place", name: "Nimpura Industrial Estate" },
@@ -130,10 +134,7 @@ export default function Page() {
       <FaqAccordion faqs={faqKharagpur} />
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-kharagpur"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-kharagpur" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

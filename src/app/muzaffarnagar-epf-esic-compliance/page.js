@@ -99,8 +99,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/muzaffarnagar-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Muzaffarnagar District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Muzaffarnagar District",
 
           alternateName:
             "Muzaffarnagar EPF & ESIC Compliance for Sugar, Paper & Agro Industries",
@@ -112,7 +111,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Civil Lines",
             addressRegion: "Uttar Pradesh",
+            postalCode: "251001",
             addressCountry: "IN",
           },
 
@@ -143,9 +144,7 @@ export default function Page() {
 
       {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
-        <PerformanceSectionIndustry
-          data={heroDataMuzaffarnagarDist}
-        />
+        <PerformanceSectionIndustry data={heroDataMuzaffarnagarDist} />
       </FadeInWhenVisible>
 
       <FadeInWhenVisible>

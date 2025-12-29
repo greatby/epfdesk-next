@@ -101,8 +101,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/north-24-parganas-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – North 24 Parganas EPF & ESIC Compliance for IT & Industrial Corridor",
+          name: "EPFDesk – North 24 Parganas EPF & ESIC Compliance for IT & Industrial Corridor",
 
           alternateName:
             "North 24 Parganas PF & ESIC Consultant for Sector V, Barrackpore & Logistics Hubs",
@@ -114,10 +113,11 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Barasat Road",
             addressRegion: "West Bengal",
+            postalCode: "700124",
             addressCountry: "IN",
           },
-
           geo: {
             "@type": "GeoCoordinates",
             latitude: 22.6166,
@@ -129,7 +129,10 @@ export default function Page() {
             { "@type": "City", name: "Barrackpore" },
             { "@type": "City", name: "Barasat" },
             { "@type": "City", name: "Madhyamgram" },
-            { "@type": "AdministrativeArea", name: "North 24 Parganas District" },
+            {
+              "@type": "AdministrativeArea",
+              name: "North 24 Parganas District",
+            },
           ],
 
           description:
@@ -155,10 +158,7 @@ export default function Page() {
       <FadeInWhenVisible>
         <FaqAccordion faqs={faqNorth24Parganas} />
       </FadeInWhenVisible>
-        <Script
-        id="conversion-tracking-north"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-north" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

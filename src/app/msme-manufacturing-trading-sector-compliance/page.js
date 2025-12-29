@@ -182,6 +182,67 @@ const page = () => {
           }),
         }}
       />
+      {/* ================== FAQ SCHEMA ================== */}
+      <Script
+        id="faq-msme-manufacturing-trading-india"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for MSME manufacturing and trading businesses?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. MSME manufacturing and trading businesses must comply with EPF and ESIC laws once statutory employee thresholds are met. Coverage applies to permanent staff, shop-floor workers, helpers, clerical employees, and eligible contract labour.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Do small manufacturing units and traders need EPF registration?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Even small manufacturing units and trading establishments are required to obtain EPF registration if they employ the minimum number of workers prescribed under the EPF Act. Size of business or turnover does not exempt statutory compliance.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are contract labour and casual workers covered under EPF and ESIC for MSMEs?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Contract labour, casual workers, and daily wage employees engaged by MSMEs must be covered under EPF and ESIC if eligibility conditions are met. Principal employers remain liable if contractors fail to comply.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are common EPF and ESIC compliance mistakes made by MSMEs?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common MSME compliance issues include delayed registrations, incorrect wage structuring, exclusion of helpers or contract staff, delayed monthly filings, and mismatch between payroll records and statutory returns.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 affect MSME payroll structures?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The New Wage Code 2025 impacts MSMEs by redefining wage components for EPF and ESIC calculations. Allowance-heavy salary structures may lead to higher statutory liabilities if payroll is not proactively restructured.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does EPFDesk help MSME manufacturing and trading businesses?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "EPFDesk provides complete EPF and ESIC compliance support for MSMEs including registrations, contractor audits, payroll restructuring under NWC 2025, inspection handling, monthly filings, and ongoing statutory advisory across India.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataMsmeManufacturing} />

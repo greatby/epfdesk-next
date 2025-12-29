@@ -176,6 +176,67 @@ const page = () => {
           }),
         }}
       />
+      {/* ================== FAQ SCHEMA ================== */}
+      <Script
+        id="faq-food-beverage-india"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for restaurants and hotels in India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Restaurants, hotels, and hospitality businesses are required to comply with EPF and ESIC laws once statutory thresholds are met. Coverage generally includes kitchen staff, service staff, housekeeping, and eligible contract workers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Do cloud kitchens and food delivery kitchens need EPF and ESIC registration?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Cloud kitchens must register under EPF and ESIC when applicable thresholds are crossed. Coverage typically includes kitchen workers, helpers, cleaners, and eligible delivery or contract personnel.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are contract workers and seasonal staff covered under EPF and ESIC in the food sector?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Contract workers and seasonal staff may be covered under EPF and ESIC depending on wage levels and employment terms. Principal employers are responsible for compliance when contractors fail to meet statutory obligations.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are common EPF and ESIC compliance risks in the food and beverage industry?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include non-enrolment of eligible staff, exclusion of allowances from PF wages, high worker attrition without proper exits, contractor non-compliance, and incomplete records during inspections.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 affect food and beverage businesses?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The New Wage Code 2025 impacts payroll structuring by redefining wage components for EPF and ESIC calculations. Food and beverage businesses with high allowances or incentive-based pay structures may face increased contribution liabilities if not restructured correctly.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does EPFDesk support food and beverage businesses across India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "EPFDesk provides end-to-end EPF and ESIC compliance services including registration, payroll restructuring under NWC 2025, contractor audits, inspection handling, monthly filings, and statutory advisory for food and beverage businesses across India.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataFoodAndBevarage} />

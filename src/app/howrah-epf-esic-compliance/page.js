@@ -89,11 +89,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/howrah-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/howrah-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Consultants for Howrah Jute & Engineering Industries",
+          name: "EPFDesk – EPF & ESIC Consultants for Howrah Jute & Engineering Industries",
 
           alternateName:
             "Howrah PF ESIC Compliance Experts for Jute Mills, Foundries & MSMEs",
@@ -106,8 +104,10 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Dobson Road",
             addressLocality: "Howrah",
             addressRegion: "West Bengal",
+            postalCode: "711101",
             addressCountry: "IN",
           },
 

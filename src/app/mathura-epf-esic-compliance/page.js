@@ -56,8 +56,7 @@ export const metadata = {
   /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
-    title:
-      "Mathura EPF & ESIC Compliance | IOCL Refinery & Hazard Defence",
+    title: "Mathura EPF & ESIC Compliance | IOCL Refinery & Hazard Defence",
     description:
       "Expert PF/ESIC compliance for Mathura refinery contractors, dairy and tourism sectors.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -99,11 +98,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/mathura-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/mathura-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Mathura District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Mathura District",
 
           alternateName:
             "Mathura IOCL Refinery, Petrochemical & Tourism EPF/ESIC Compliance",
@@ -115,8 +112,10 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Holi Gate Road",
             addressLocality: "Mathura",
             addressRegion: "Uttar Pradesh",
+            postalCode: "281001",
             addressCountry: "IN",
           },
 

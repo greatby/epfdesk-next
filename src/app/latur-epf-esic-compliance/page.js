@@ -35,8 +35,7 @@ export const metadata = {
 
   /* ✅ OPEN GRAPH */
   openGraph: {
-    title:
-      "Latur EPF & ESIC Compliance | Dal Mills & Education Sector",
+    title: "Latur EPF & ESIC Compliance | Dal Mills & Education Sector",
     description:
       "PF & ESIC specialists for Latur Dal Mills, oilseed processing units, seasonal agro labour and educational institutions.",
     url: "https://epfdesk.com/latur-epf-esic-compliance",
@@ -56,8 +55,7 @@ export const metadata = {
   /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
-    title:
-      "Latur EPF & ESIC Compliance | Dal Mills & Agro Processing",
+    title: "Latur EPF & ESIC Compliance | Dal Mills & Agro Processing",
     description:
       "High-risk EPF & ESIC compliance and EPFO 7A defence for Latur Dal Mills, agro-processing units and educational institutions.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -99,11 +97,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/latur-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/latur-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Latur District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Latur District",
 
           alternateName:
             "Latur EPF & ESIC Compliance for Dal Mills, Agro Processing & Educational Institutions",
@@ -115,8 +111,10 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Barshi Road, Near Ausa Chowk",
             addressLocality: "Latur",
             addressRegion: "Maharashtra",
+            postalCode: "413512",
             addressCountry: "IN",
           },
 

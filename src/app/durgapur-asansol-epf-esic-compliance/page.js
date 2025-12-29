@@ -99,8 +99,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/durgapur-asansol-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Consultants for Paschim Bardhaman District",
+          name: "EPFDesk – EPF & ESIC Consultants for Paschim Bardhaman District",
           image: "https://epfdesk.com/images/logo.jpg",
           url: "https://epfdesk.com/durgapur-asansol-epf-esic-compliance",
           telephone: "+91-9945933333",
@@ -109,6 +108,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "City Centre",
             addressLocality: "Durgapur",
             addressRegion: "West Bengal",
             postalCode: "713201",
@@ -122,7 +122,10 @@ export default function Page() {
           },
 
           areaServed: [
-            { "@type": "AdministrativeArea", name: "Paschim Bardhaman District" },
+            {
+              "@type": "AdministrativeArea",
+              name: "Paschim Bardhaman District",
+            },
             { "@type": "City", name: "Durgapur" },
             { "@type": "City", name: "Asansol" },
             { "@type": "Place", name: "Raniganj Coal Belt" },

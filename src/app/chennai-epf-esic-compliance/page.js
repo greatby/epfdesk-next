@@ -95,11 +95,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/chennai-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/chennai-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Consultants for Chennai IT & Corporate Sector",
+          name: "EPFDesk – EPF & ESIC Consultants for Chennai IT & Corporate Sector",
           image: "https://epfdesk.com/images/logo.jpg",
           url: "https://epfdesk.com/chennai-epf-esic-compliance",
           telephone: "+91-9945933333",
@@ -107,9 +105,10 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Teynampet",
             addressLocality: "Chennai",
             addressRegion: "Tamil Nadu",
-            postalCode: "600001",
+            postalCode: "600018",
             addressCountry: "IN",
           },
 
@@ -169,6 +168,42 @@ export default function Page() {
           },
         })}
       </Script>
+      <Script
+        id="schema-chennai-faq"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for IT and ITES companies in Chennai?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPF and ESIC are mandatory for eligible IT, ITES and corporate establishments in Chennai. Companies operating in OMR, Guindy, Ambattur and other IT corridors are regularly audited for PF coverage, wage structuring and ESIC applicability.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the major PF and ESIC risks for Chennai-based corporates under NWC 2025?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Major risks include non-compliance with the 50% basic wage rule, incorrect allowance structuring, contractor wage exclusion and EPFO Section 7A inquiries. Chennai corporates are under increased scrutiny due to high salary structures and outsourcing models.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does EPFDesk handle EPFO 7A notices and contractor audits in Chennai?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides end-to-end support for EPFO Section 7A proceedings, contractor audits, CLRA compliance and ESIC inspections for corporates and manufacturing units across Chennai.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
@@ -178,7 +213,7 @@ export default function Page() {
       <FadeInWhenVisible>
         <CodeOfConduct sections={sectionsChennaiDist} />
       </FadeInWhenVisible>
-       <Script id="conversion-tracking-chennnai" strategy="afterInteractive">
+      <Script id="conversion-tracking-chennnai" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

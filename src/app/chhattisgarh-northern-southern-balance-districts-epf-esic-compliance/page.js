@@ -38,8 +38,7 @@ export const metadata = {
       "Chhattisgarh EPF & ESIC Consultants | Northern Mining & Agro Frontier",
     description:
       "PF & ESIC specialists for mining belts, ethanol plants and agro-processing clusters in Chhattisgarh.",
-    url:
-      "https://epfdesk.com/chhattisgarh-northern-southern-balance-districts-epf-esic-compliance",
+    url: "https://epfdesk.com/chhattisgarh-northern-southern-balance-districts-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
@@ -53,8 +52,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Chhattisgarh EPF & ESIC Consultants | Mining & Agro Compliance",
+    title: "Chhattisgarh EPF & ESIC Consultants | Mining & Agro Compliance",
     description:
       "High-risk PF & ESIC consultancy for mining, food processing and tribal-area projects.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -72,7 +70,8 @@ const page = () => {
       ============================ */}
       <Head>
         <title>
-          Chhattisgarh EPF & ESIC Consultants: Northern Mining & Central Agro-Processing Compliance | EPFDesk
+          Chhattisgarh EPF & ESIC Consultants: Northern Mining & Central
+          Agro-Processing Compliance | EPFDesk
         </title>
 
         <meta
@@ -112,23 +111,21 @@ const page = () => {
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
 
-            name:
-              "Chhattisgarh EPF & ESIC Consultants – Mining & Agro Frontier | EPFDesk",
+            name: "Chhattisgarh EPF & ESIC Consultants – Mining & Agro Frontier | EPFDesk",
             alternateName:
               "EPFDesk – PF & ESIC Consultants for Emerging CG Districts",
 
             image: "https://epfdesk.com/images/logo.jpg",
-            url:
-              "https://epfdesk.com/chhattisgarh-northern-southern-balance-districts-epf-esic-compliance",
+            url: "https://epfdesk.com/chhattisgarh-northern-southern-balance-districts-epf-esic-compliance",
             telephone: "+91-9945933333",
 
             /* ✅ SAME ADDRESS */
             address: {
               "@type": "PostalAddress",
-              streetAddress: "Church Street",
-              addressLocality: "Bangalore",
-              addressRegion: "Karnataka",
-              postalCode: "560001",
+              streetAddress: "Pandri",
+              addressLocality: "Raipur",
+              addressRegion: "Chhattisgarh",
+              postalCode: "492001",
               addressCountry: "IN",
             },
 

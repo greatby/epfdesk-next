@@ -69,11 +69,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/kanpur-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/kanpur-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Kanpur Leather, Defence & Textile Industries",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Kanpur Leather, Defence & Textile Industries",
 
           alternateName:
             "Kanpur EPF & ESIC Compliance for Leather Tanneries, Ordnance Units & Textile Mills",
@@ -86,8 +84,10 @@ export default function Page() {
           /* ✅ DISTRICT-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Civil Lines",
             addressLocality: "Kanpur Nagar",
             addressRegion: "Uttar Pradesh",
+            postalCode: "208001",
             addressCountry: "IN",
           },
 
@@ -128,10 +128,7 @@ export default function Page() {
       <FaqAccordion faqs={faqKanpur} />
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-kanpur"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-kanpur" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

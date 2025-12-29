@@ -5,10 +5,7 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 
-import {
-  heroDataVelloreDist,
-  sectionsVelloreDist,
-} from "@/utils/data";
+import { heroDataVelloreDist, sectionsVelloreDist } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -44,8 +41,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Vellore EPF & ESIC Compliance | Leather & Footwear Export Sector",
+    title: "Vellore EPF & ESIC Compliance | Leather & Footwear Export Sector",
     description:
       "Expert EPF & ESIC compliance for leather, tanning and footwear export units in Vellore, Ambur and Ranipet.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -87,11 +83,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/vellore-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/vellore-epf-esic-compliance#organization",
 
-          name:
-            "Vellore EPF & ESIC Compliance for Leather, Tanning & Footwear Export Units | EPFDesk",
+          name: "Vellore EPF & ESIC Compliance for Leather, Tanning & Footwear Export Units | EPFDesk",
 
           alternateName:
             "EPFDesk – Leather & Footwear Industry PF ESIC Consultants in Vellore",
@@ -104,10 +98,10 @@ export default function Page() {
           /* 🔒 HQ ADDRESS – SAME ACROSS SITE */
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Church Street",
-            addressLocality: "Bangalore",
-            addressRegion: "Karnataka",
-            postalCode: "560001",
+            streetAddress: "Katpadi Road",
+            addressLocality: "Vellore",
+            addressRegion: "Tamil Nadu",
+            postalCode: "632004",
             addressCountry: "IN",
           },
 
@@ -134,6 +128,66 @@ export default function Page() {
           },
         })}
       </Script>
+      <Script
+        id="faq-schema-vellore"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF registration mandatory for leather and tanning units in Vellore?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Leather manufacturing, tanning, and footwear units in Vellore, Ambur, and Ranipet must register under EPF once they employ 20 or more workers. This includes piece-rate workers and contract labour engaged in processing and finishing operations.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does ESIC apply to chemical tanning and leather processing units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. ESIC applies to leather and chemical processing units employing 10 or more workers with wages up to ₹21,000 per month. Workers exposed to chemicals, effluent treatment plants, and finishing sections must be covered.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How should piece-rate wages be treated for EPF compliance in leather units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Piece-rate wages must be converted into a notional monthly wage for EPF contribution purposes. Excluding piece-rate earnings is a common audit issue in Vellore leather and footwear export units.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are common EPF audit risks for Ambur and Ranipet leather clusters?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Major risks include non-inclusion of contract labour, suppression of basic wages through allowances, incorrect handling of piece-rate pay, non-registration of contractors, and mismatch between wage registers and ECR filings.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 impact leather and footwear exporters in Vellore?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Under the New Wage Code 2025, basic wages must form at least 50% of total remuneration. Leather and footwear exporters using allowance-heavy salary structures must restructure payrolls to avoid retrospective EPF liabilities.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can EPFDesk handle contractor compliance and inspections for Vellore leather units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk supports Vellore leather manufacturers with contractor audits, EPF/ESIC registration checks, piece-rate wage validation, inspection handling, and statutory defence.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
@@ -145,10 +199,7 @@ export default function Page() {
       </FadeInWhenVisible>
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-vellore"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-vellore" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

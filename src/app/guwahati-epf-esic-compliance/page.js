@@ -106,6 +106,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "GS Road",
             addressLocality: "Guwahati",
             addressRegion: "Assam",
             postalCode: "781001",

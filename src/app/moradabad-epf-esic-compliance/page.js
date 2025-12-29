@@ -102,8 +102,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/moradabad-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Moradabad Brassware & Export Sector",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Moradabad Brassware & Export Sector",
 
           alternateName:
             "Moradabad EPF & ESIC Compliance for Brassware Manufacturers & Handicraft Exporters",
@@ -115,10 +114,11 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Hazratganj",
             addressRegion: "Uttar Pradesh",
+            postalCode: "226001",
             addressCountry: "IN",
           },
-
           geo: {
             "@type": "GeoCoordinates",
             latitude: 28.8386,

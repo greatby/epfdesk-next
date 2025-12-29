@@ -3,11 +3,7 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
-import {
-  faqAgra,
-  heroDataAgraDist,
-  sectionsAgraDist,
-} from "@/utils/data";
+import { faqAgra, heroDataAgraDist, sectionsAgraDist } from "@/utils/data";
 
 /* ===========================
    METADATA (DISTRICT PAGE)
@@ -82,8 +78,7 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/agra-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/agra-epf-esic-compliance#organization",
           name: "EPFDesk - EPF & ESIC Consultants Agra",
           image: "https://epfdesk.com/images/logo.jpg",
           url: "https://epfdesk.com/agra-epf-esic-compliance",
@@ -92,9 +87,10 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Sanjay Place",
             addressLocality: "Agra",
             addressRegion: "Uttar Pradesh",
-            postalCode: "282001",
+            postalCode: "282002",
             addressCountry: "IN",
           },
 

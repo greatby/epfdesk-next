@@ -183,6 +183,59 @@ const page = () => {
           }),
         }}
       />
+      {/* ================== FAQ SCHEMA ================== */}
+      <Script
+        id="faq-ecommerce-gig-cloudkitchen"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for e-commerce companies in Bangalore?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. E-commerce companies employing eligible workers are required to comply with EPF and ESIC laws. Applicability depends on employee count, wage thresholds, and nature of employment, including contractual and delivery workforce.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are gig workers and delivery partners covered under EPF or ESIC?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Gig workers and delivery partners may fall under EPF or ESIC coverage depending on the level of control, payment structure, and contractual relationship. Misclassification is a key focus area during inspections and audits.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Do cloud kitchens need EPF and ESIC registration?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Cloud kitchens are required to obtain EPF and ESIC registration once statutory thresholds are met. Coverage typically includes kitchen staff, delivery personnel, helpers, and contract workers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are common EPF and ESIC compliance risks for gig economy employers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include incorrect worker classification, exclusion of incentives from PF wages, non-registration of contractors, delayed remittances, and incomplete records during inspections.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does EPFDesk help e-commerce and cloud kitchen businesses?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "EPFDesk provides end-to-end EPF and ESIC compliance including registration, wage structuring aligned with NWC 2025, contractor compliance audits, monthly filings, inspection handling, and statutory advisory.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataAutomotive} />

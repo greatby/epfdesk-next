@@ -26,8 +26,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Raigarh EPF & ESIC Compliance | Steel, Power & Metal Clusters",
+    title: "Raigarh EPF & ESIC Compliance | Steel, Power & Metal Clusters",
     description:
       "PF & ESIC specialists for Raigarh steel belts, sponge iron units and power plants.",
     url: "https://epfdesk.com/raigarh-epf-esic-compliance",
@@ -87,11 +86,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/raigarh-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/raigarh-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Raigarh EPF & ESIC Compliance for Steel, Power & Metal Clusters",
+          name: "EPFDesk – Raigarh EPF & ESIC Compliance for Steel, Power & Metal Clusters",
 
           alternateName:
             "PF & ESIC Consultant for Raigarh Steel Plants, Sponge Iron Units & Power Projects",
@@ -103,14 +100,16 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Chakradhar Nagar",
             addressRegion: "Chhattisgarh",
+            postalCode: "496001",
             addressCountry: "IN",
           },
 
           geo: {
             "@type": "GeoCoordinates",
             latitude: 21.8974,
-            longitude: 83.3950,
+            longitude: 83.395,
           },
 
           areaServed: [

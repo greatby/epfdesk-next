@@ -46,8 +46,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Varanasi EPF & ESIC Compliance | Handloom & Tourism Risk | EPFDesk",
+    title: "Varanasi EPF & ESIC Compliance | Handloom & Tourism Risk | EPFDesk",
     description:
       "Expert PF & ESIC compliance for Varanasi silk, handloom and tourism sectors.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -92,8 +91,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/varanasi-epf-esic-compliance#organization",
 
-          name:
-            "Varanasi EPF & ESIC Compliance for Handloom, Tourism & Service Sector | EPFDesk",
+          name: "Varanasi EPF & ESIC Compliance for Handloom, Tourism & Service Sector | EPFDesk",
 
           alternateName:
             "EPFDesk – PF & ESIC Consultants for Handloom Exporters & Hotels in Varanasi",
@@ -106,10 +104,10 @@ export default function Page() {
           /* 🔒 HQ ADDRESS – SAME AS ALL OTHER PAGES */
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Church Street",
-            addressLocality: "Bangalore",
-            addressRegion: "Karnataka",
-            postalCode: "560001",
+            streetAddress: "Sigra–Mahmoorganj Road",
+            addressLocality: "Varanasi",
+            addressRegion: "Uttar Pradesh",
+            postalCode: "221010",
             addressCountry: "IN",
           },
 
@@ -150,10 +148,7 @@ export default function Page() {
       <FaqAccordion faqs={faqVaranasi} />
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-varanasi"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-varanasi" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

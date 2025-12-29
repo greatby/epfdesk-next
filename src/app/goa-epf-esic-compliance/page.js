@@ -108,6 +108,7 @@ export default function Page() {
           /* ✅ STATE-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Campal Area",
             addressLocality: "Panaji",
             addressRegion: "Goa",
             postalCode: "403001",

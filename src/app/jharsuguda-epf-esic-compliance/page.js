@@ -72,8 +72,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/jharsuguda-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Jharsuguda Energy & Mining Hub",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Jharsuguda Energy & Mining Hub",
 
           alternateName:
             "Jharsuguda EPF & ESIC Compliance for Vedanta, MCL & Power Contractors",
@@ -86,8 +85,10 @@ export default function Page() {
           /* ✅ DISTRICT-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Power House Road",
             addressLocality: "Jharsuguda",
             addressRegion: "Odisha",
+            postalCode: "768201",
             addressCountry: "IN",
           },
 
@@ -128,10 +129,7 @@ export default function Page() {
       <FaqAccordion faqs={faqJharsugudaDistrict} />
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-jharsuguda"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-jharsuguda" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

@@ -102,6 +102,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Civil Lines",
             addressLocality: "Bhandara",
             addressRegion: "Maharashtra",
             postalCode: "441904",

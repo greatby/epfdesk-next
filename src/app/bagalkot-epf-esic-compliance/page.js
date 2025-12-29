@@ -21,7 +21,7 @@ export const metadata = {
   alternates: {
     canonical: "https://epfdesk.com/bagalkot-epf-esic-compliance",
   },
-   keywords: [
+  keywords: [
     "Bagalkot PF consultant",
     "Bagalkot ESIC consultant",
     "Sugar mill PF Karnataka",
@@ -102,9 +102,10 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Navanagar",
             addressLocality: "Bagalkot",
             addressRegion: "Karnataka",
-            postalCode: "587101",
+            postalCode: "587103",
             addressCountry: "IN",
           },
 

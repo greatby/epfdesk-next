@@ -3,10 +3,7 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 
-import {
-  heroDataKarurDist,
-  sectionsKarurDist,
-} from "@/utils/data";
+import { heroDataKarurDist, sectionsKarurDist } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -70,11 +67,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/karur-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/karur-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Karur Home Textile & Export Industries",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Karur Home Textile & Export Industries",
 
           alternateName:
             "Karur EPF & ESIC Compliance for Home Textiles, Paper Mills & Bus Body Building Units",
@@ -87,8 +82,10 @@ export default function Page() {
           /* ✅ DISTRICT-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Jawahar Bazaar",
             addressLocality: "Karur",
             addressRegion: "Tamil Nadu",
+            postalCode: "639001",
             addressCountry: "IN",
           },
 
@@ -115,6 +112,42 @@ export default function Page() {
           },
         })}
       </Script>
+      <Script
+        id="schema-karur-faq"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for home textile exporters and units in Karur?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPF and ESIC are mandatory for eligible home textile exporters, weaving units and processing units in Karur. Authorities closely monitor wage structures, migrant labour deployment and contractor compliance in export-linked industries.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the major PF and ESIC risks for Karur textile and paper industries under NWC 2025?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Key risks include improper basic wage calculation under the 50% rule, exclusion of migrant and contract labour wages, piece-rate payment issues and EPFO audits. Export-oriented units face heightened scrutiny due to compliance documentation requirements.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does EPFDesk handle PF, ESIC and contractor compliance for Karur industries?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides end-to-end EPF, ESIC and CLRA compliance support for Karur home textile exporters, paper mills and bus body building units, including monthly filings, inspections handling and NWC 2025 payroll alignment.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
@@ -126,10 +159,7 @@ export default function Page() {
       </FadeInWhenVisible>
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-karur"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-karur" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

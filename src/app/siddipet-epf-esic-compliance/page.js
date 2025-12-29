@@ -5,10 +5,7 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 
-import {
-  heroDataSiddipetDist,
-  sectionsSiddipetDist,
-} from "@/utils/data";
+import { heroDataSiddipetDist, sectionsSiddipetDist } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -25,8 +22,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Siddipet EPF & ESIC Compliance | Genome Valley, Nangnoor & Gajwel",
+    title: "Siddipet EPF & ESIC Compliance | Genome Valley, Nangnoor & Gajwel",
     description:
       "PF & ESIC compliance for Siddipet’s biotech parks, industrial estates and agro-processing units. NWC 2025 payroll, contractor audits and statutory defence handled.",
     url: "https://epfdesk.com/siddipet-epf-esic-compliance",
@@ -44,8 +40,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Siddipet EPF & ESIC Consultant | Industrial & Agro Compliance",
+    title: "Siddipet EPF & ESIC Consultant | Industrial & Agro Compliance",
     description:
       "NWC 2025–ready EPF & ESIC compliance for Siddipet biotech, agro and industrial clusters.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -90,8 +85,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/siddipet-epf-esic-compliance#organization",
 
-          name:
-            "Siddipet EPF & ESIC Compliance – Genome Valley, Industrial Parks & Agro Units | EPFDesk",
+          name: "Siddipet EPF & ESIC Compliance – Genome Valley, Industrial Parks & Agro Units | EPFDesk",
 
           alternateName:
             "EPFDesk – Siddipet PF & ESIC Consultants for Biotech, Agro & MSME Units",
@@ -137,6 +131,58 @@ export default function Page() {
             ratingValue: "4.9",
             reviewCount: "47",
           },
+        })}
+      </Script>
+      <Script
+        id="faq-schema-siddipet"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF registration mandatory for biotech and industrial units in Siddipet?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Biotech, pharma, engineering and manufacturing units in Siddipet must register under EPF once they employ 20 or more workers. Units in Nangnoor Industrial Park and Mulugu Biotech Park are commonly covered due to contractor-based manpower.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does ESIC apply to agro-processing and cotton ginning units in Siddipet district?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. ESIC applies to agro-processing, cotton ginning and food units employing 10 or more workers with wages up to ₹21,000 per month. Seasonal and migrant labour engaged during peak periods must also be included.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are common EPF compliance risks for Siddipet MSMEs?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include non-inclusion of contract labour, suppression of basic wages, incorrect allowance structuring, non-registration of contractors, and mismatch between ECR filings and wage registers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 impact Siddipet industrial units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Under the New Wage Code 2025, basic wages must constitute at least 50% of total remuneration. Siddipet units using high allowances must restructure payrolls to avoid retrospective EPF liabilities and inspection penalties.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can EPFDesk handle contractor and seasonal labour compliance in Siddipet?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk manages end-to-end contractor compliance including PF/ESIC registration validation, principal employer liability audits, seasonal labour coverage, inspection handling and statutory defence for Siddipet units.",
+              },
+            },
+          ],
         })}
       </Script>
 

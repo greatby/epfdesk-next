@@ -35,8 +35,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Jaipur EPF & ESIC Compliance | Gem, IT & Handicraft Hub",
+    title: "Jaipur EPF & ESIC Compliance | Gem, IT & Handicraft Hub",
     description:
       "PF & ESIC specialists for Jaipur gem exporters, IT parks and handicraft clusters under RO Jaipur.",
     url: "https://epfdesk.com/jaipur-epf-esic-compliance",
@@ -93,11 +92,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/jaipur-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/jaipur-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Jaipur Gem, IT & MSME Units",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Jaipur Gem, IT & MSME Units",
 
           alternateName:
             "Jaipur EPF & ESIC Compliance Experts for Gem & Jewellery, IT Parks and RIICO MSMEs",
@@ -110,8 +107,10 @@ export default function Page() {
           /* ✅ DISTRICT-CORRECT ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "MI Road",
             addressLocality: "Jaipur",
             addressRegion: "Rajasthan",
+            postalCode: "302001",
             addressCountry: "IN",
           },
 

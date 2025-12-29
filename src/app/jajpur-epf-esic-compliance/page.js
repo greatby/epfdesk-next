@@ -35,8 +35,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Jajpur EPF & ESIC Compliance | Kalinganagar Steel Ecosystem",
+    title: "Jajpur EPF & ESIC Compliance | Kalinganagar Steel Ecosystem",
     description:
       "PF & ESIC specialists for Kalinganagar steel plants, mining vendors and MSMEs governed by RO Keonjhar.",
     url: "https://epfdesk.com/jajpur-epf-esic-compliance",
@@ -93,11 +92,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/jajpur-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/jajpur-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Jajpur & Kalinganagar Steel Hub",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Jajpur & Kalinganagar Steel Hub",
 
           alternateName:
             "Jajpur EPF & ESIC Compliance Experts for Steel, Mining & MSME Units",
@@ -110,15 +107,17 @@ export default function Page() {
           /* ✅ DISTRICT-CORRECT ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Bypass Road",
             addressLocality: "Jajpur",
             addressRegion: "Odisha",
+            postalCode: "755001",
             addressCountry: "IN",
           },
 
           geo: {
             "@type": "GeoCoordinates",
-            latitude: 20.8480,
-            longitude: 86.3380,
+            latitude: 20.848,
+            longitude: 86.338,
           },
 
           areaServed: [

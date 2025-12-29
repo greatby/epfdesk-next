@@ -91,8 +91,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/prayagraj-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Prayagraj EPF & ESIC Compliance for Education & Government Sector",
+          name: "EPFDesk – Prayagraj EPF & ESIC Compliance for Education & Government Sector",
 
           alternateName:
             "PF & ESIC Consultant for Schools, Coaching Centers & Government Contractors in Prayagraj",
@@ -104,7 +103,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Civil Lines",
             addressRegion: "Uttar Pradesh",
+            postalCode: "211001",
             addressCountry: "IN",
           },
 
@@ -146,10 +147,7 @@ export default function Page() {
       </FadeInWhenVisible>
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-prayagraj"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-prayagraj" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

@@ -92,8 +92,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/ramanagara-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Ramanagara EPF & ESIC Compliance for Auto, Sericulture & MSMEs",
+          name: "EPFDesk – Ramanagara EPF & ESIC Compliance for Auto, Sericulture & MSMEs",
 
           alternateName:
             "PF & ESIC Consultant for Bidadi Auto Cluster, Silk Sericulture & Harohalli MSMEs",
@@ -105,7 +104,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Bangalore–Mysore Road",
             addressRegion: "Karnataka",
+            postalCode: "562159",
             addressCountry: "IN",
           },
 

@@ -21,7 +21,7 @@ export const metadata = {
   alternates: {
     canonical: "https://epfdesk.com/belagavi-epf-esic-compliance",
   },
-   keywords: [
+  keywords: [
     "Belagavi PF consultant",
     "Belagavi ESIC consultant",
     "foundry PF ESIC compliance",
@@ -105,6 +105,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "College Road",
             addressLocality: "Belagavi",
             addressRegion: "Karnataka",
             postalCode: "590001",

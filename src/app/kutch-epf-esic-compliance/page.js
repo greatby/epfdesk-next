@@ -3,10 +3,7 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 
-import {
-  heroDataKutchDist,
-  sectionsKutchDist,
-} from "@/utils/data";
+import { heroDataKutchDist, sectionsKutchDist } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -55,8 +52,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Kutch EPF & ESIC Consultant | Port, SEZ & Logistics Compliance",
+    title: "Kutch EPF & ESIC Consultant | Port, SEZ & Logistics Compliance",
     description:
       "Compliance experts for Kandla Port, Mundra SEZ, Gandhidham logistics and marine trade. PF/ESI audits, contractor compliance and NWC 2025 statutory alignment.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -98,11 +94,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/kutch-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/kutch-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Kutch District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Kutch District",
 
           alternateName:
             "Kutch EPF & ESIC Compliance for Ports, SEZs & Logistics",
@@ -114,8 +108,10 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Kutch",
+            streetAddress: "Tagore Road",
+            addressLocality: "Gandhidham",
             addressRegion: "Gujarat",
+            postalCode: "370201",
             addressCountry: "IN",
           },
 
@@ -143,7 +139,66 @@ export default function Page() {
           },
         })}
       </Script>
-
+      <Script
+        id="faq-kutch"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for contractors working at Kandla Port and Mundra SEZ?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Contractors and subcontractors engaged at Kandla Port, Mundra SEZ and Gandhidham logistics hubs are mandatorily covered under EPF and ESIC if they meet employee and wage thresholds. Principal Employers are jointly liable for non-compliance.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does Principal Employer liability apply in Kutch port and SEZ operations?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "In Kutch, port authorities, SEZ developers and large logistics firms are treated as Principal Employers. They are legally responsible for PF and ESIC compliance of all on-roll and contract labour, even if the contractor defaults.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is ESIC applicable for port, shipping and marine trade workers in Kutch?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. ESIC applies to port handling staff, warehouse workers, transport labour, marine service crews and logistics employees earning within the ESIC wage ceiling. Coverage is closely audited in port-linked establishments.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the common EPF and ESIC audit risks in Mundra SEZ and Gandhidham?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include unregistered contractors, wage splitting to suppress PF, non-enrollment of temporary port labour, and incorrect ESIC applicability assumptions in SEZ units. These frequently trigger inspections and Section 7A proceedings.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does NWC 2025 impact payroll structures for Kutch port and logistics companies?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Under NWC 2025, at least 50% of total wages must be treated as basic wages for PF calculation. Port contractors and logistics firms in Kutch must restructure allowances to avoid retrospective PF demands and penalties.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does EPFDesk handle contractor audits and compliance for Kutch SEZ units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk specializes in contractor compliance audits, Principal Employer risk mitigation, EPF/ESIC registrations, payroll restructuring and inspection defense for Kutch SEZs, ports and logistics-heavy establishments.",
+              },
+            },
+          ],
+        })}
+      </Script>
       {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataKutchDist} />

@@ -56,8 +56,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Muzaffarpur EPF & ESIC Compliance | Textile & Food Park | EPFDesk",
+    title: "Muzaffarpur EPF & ESIC Compliance | Textile & Food Park | EPFDesk",
     description:
       "Expert PF & ESIC compliance for Muzaffarpur apparel exporters, food-park vendors and leather units.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -102,8 +101,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/muzaffarpur-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Muzaffarpur District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Muzaffarpur District",
 
           alternateName:
             "Muzaffarpur EPF & ESIC Compliance for Apparel Park, Food Park & MSMEs",
@@ -115,7 +113,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Club Road",
             addressRegion: "Bihar",
+            postalCode: "842001",
             addressCountry: "IN",
           },
 
@@ -158,10 +158,7 @@ export default function Page() {
       <FaqAccordion faqs={faqMuzaffarpur} />
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-muzaffarpur"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-muzaffarpur" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

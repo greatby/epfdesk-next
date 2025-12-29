@@ -99,11 +99,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/mumbai-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/mumbai-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Mumbai BFSI & Corporate Sector",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Mumbai BFSI & Corporate Sector",
 
           alternateName:
             "Mumbai EPF & ESIC Compliance for BFSI, IT Services & Port Contractors",
@@ -115,13 +113,15 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Nariman Point",
             addressRegion: "Maharashtra",
+            postalCode: "400021",
             addressCountry: "IN",
           },
 
           geo: {
             "@type": "GeoCoordinates",
-            latitude: 19.0760,
+            latitude: 19.076,
             longitude: 72.8777,
           },
 

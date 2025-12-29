@@ -97,11 +97,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/nashik-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/nashik-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Nashik District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Nashik District",
 
           alternateName:
             "Nashik EPF & ESIC Compliance for MIDC, Auto & Wine Industry",
@@ -113,7 +111,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Shivaji Nagar",
             addressRegion: "Maharashtra",
+            postalCode: "411005",
             addressCountry: "IN",
           },
 
@@ -154,10 +154,7 @@ export default function Page() {
       <FaqAccordion faqs={faqNashikDistrict} />
 
       {/* ========= CONVERSION TRACKING (LOCKED) ========= */}
-      <Script
-        id="conversion-tracking-nashik"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-nashik" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

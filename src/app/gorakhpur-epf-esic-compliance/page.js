@@ -108,6 +108,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Golghar",
             addressLocality: "Gorakhpur",
             addressRegion: "Uttar Pradesh",
             postalCode: "273001",

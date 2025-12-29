@@ -180,6 +180,67 @@ const page = () => {
           }),
         }}
       />
+      {/* ================== FAQ SCHEMA ================== */}
+      <Script
+        id="faq-retail-sector-india"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for retail shops and retail chains in India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Retail shops, supermarkets, showrooms, and retail chains are required to comply with EPF and ESIC laws once statutory employee thresholds are met. Coverage applies to sales staff, cashiers, warehouse staff, supervisors, and eligible contract workers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Do franchise stores and multi-location retail chains need separate EPF and ESIC registrations?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Franchise stores and multi-location retail chains may require separate EPF and ESIC registrations depending on ownership structure, control, and payroll management. Centralised registration may be allowed where statutory conditions are met.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are contract staff, promoters, and sales executives covered under EPF and ESIC in retail?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Contract staff, promoters, sales executives, and temporary retail workers must be covered under EPF and ESIC if eligibility conditions are satisfied. Principal employers remain liable for compliance failures by contractors.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are common EPF and ESIC compliance issues faced by retail businesses?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common retail compliance risks include exclusion of floor staff, incorrect wage structuring, high attrition without proper exits, delayed monthly filings, contractor non-compliance, and mismatches between attendance, payroll, and statutory records.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 impact retail payroll and EPF contributions?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The New Wage Code 2025 affects retail businesses by redefining wage components used for EPF and ESIC calculations. Allowance-heavy retail salaries may result in higher statutory contributions if payroll structures are not adjusted.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does EPFDesk support retail sector EPF and ESIC compliance?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "EPFDesk provides end-to-end EPF and ESIC compliance support for retail businesses including registrations, franchise and contractor audits, payroll restructuring, inspection handling, monthly filings, and ongoing statutory advisory across India.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataRetailSector} />

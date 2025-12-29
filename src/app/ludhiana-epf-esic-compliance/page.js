@@ -4,11 +4,7 @@ import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndus
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
 
-import {
-  heroDataLudhiana,
-  sectionsLudhiana,
-  faqLudhiana,
-} from "@/utils/data";
+import { heroDataLudhiana, sectionsLudhiana, faqLudhiana } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -57,8 +53,7 @@ export const metadata = {
   /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
-    title:
-      "Ludhiana EPF & ESIC Compliance | Hosiery & Cycle Industry",
+    title: "Ludhiana EPF & ESIC Compliance | Hosiery & Cycle Industry",
     description:
       "Expert PF & ESIC compliance for Ludhiana hosiery exporters, cycle manufacturers and engineering units.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -103,8 +98,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/ludhiana-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Ludhiana District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Ludhiana District",
 
           alternateName:
             "Ludhiana EPF & ESIC Compliance for Hosiery, Cycle & Engineering Industries",
@@ -116,14 +110,16 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Ferozepur Road",
             addressLocality: "Ludhiana",
             addressRegion: "Punjab",
+            postalCode: "141001",
             addressCountry: "IN",
           },
 
           geo: {
             "@type": "GeoCoordinates",
-            latitude: 30.9010,
+            latitude: 30.901,
             longitude: 75.8573,
           },
 

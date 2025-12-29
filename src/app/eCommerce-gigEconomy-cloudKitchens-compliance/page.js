@@ -73,8 +73,8 @@ const page = () => {
     <>
       <Head>
         <title>
-          E-Commerce, Gig Economy & Cloud Kitchen EPF & ESIC
-          Compliance | NWC 2025 Ready | EPFDesk
+          E-Commerce, Gig Economy & Cloud Kitchen EPF & ESIC Compliance | NWC
+          2025 Ready | EPFDesk
         </title>
 
         <meta
@@ -179,6 +179,67 @@ const page = () => {
           }),
         }}
       />
+      {/* ================== FAQ SCHEMA ================== */}
+      <Script
+        id="faq-ecommerce-gig-cloudkitchen-india"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for e-commerce companies in India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. E-commerce companies operating in India are required to comply with EPF and ESIC laws once statutory thresholds are met. Applicability depends on employee count, wage limits, and the nature of engagement, including contractual and delivery workforce.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are gig workers and delivery partners covered under EPF or ESIC?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Gig workers and delivery partners may fall under EPF or ESIC coverage depending on the degree of control, payment structure, and contractual relationship. Incorrect classification is a common compliance risk during inspections.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Do cloud kitchens need EPF and ESIC registration in India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Cloud kitchens are required to register under EPF and ESIC once eligibility thresholds are crossed. Coverage generally includes kitchen staff, helpers, cleaners, and eligible contract workers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are common EPF and ESIC risks for gig economy employers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include misclassification of workers, exclusion of incentives from PF wages, non-registration of contractors, delayed remittances, and incomplete statutory records during audits.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 affect e-commerce and gig platforms?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The New Wage Code 2025 impacts payroll structuring by redefining wage components used for EPF and ESIC calculations. Improper structuring may result in retrospective liabilities and penalties.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does EPFDesk support e-commerce and cloud kitchen businesses?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "EPFDesk provides end-to-end EPF and ESIC compliance support including registration, NWC 2025 wage structuring, contractor audits, monthly filings, inspection handling, and statutory advisory across India.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataEcommerce} />

@@ -97,11 +97,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/nagpur-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/nagpur-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Nagpur District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Nagpur District",
 
           alternateName:
             "Nagpur EPF & ESIC Compliance for MIHAN SEZ, Butibori & Hingna MIDC",
@@ -113,7 +111,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Sitabuldi",
             addressRegion: "Maharashtra",
+            postalCode: "440001",
             addressCountry: "IN",
           },
 
@@ -157,10 +157,7 @@ export default function Page() {
       <FaqAccordion faqs={faqNagpurDistrict} />
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-nagpur"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-nagpur" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

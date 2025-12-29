@@ -109,6 +109,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Complex Area",
             addressLocality: "Gadchiroli",
             addressRegion: "Maharashtra",
             postalCode: "442605",

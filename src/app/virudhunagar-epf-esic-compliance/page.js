@@ -25,8 +25,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Virudhunagar EPF & ESIC Compliance | Fireworks & Mega Textile Park",
+    title: "Virudhunagar EPF & ESIC Compliance | Fireworks & Mega Textile Park",
     description:
       "PF & ESIC specialists for Virudhunagar’s fireworks, match factories and PM MITRA Mega Textile Park.",
     url: "https://epfdesk.com/virudhunagar-epf-esic-compliance",
@@ -44,8 +43,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Virudhunagar EPF & ESIC Compliance | Fireworks & Textile Park",
+    title: "Virudhunagar EPF & ESIC Compliance | Fireworks & Textile Park",
     description:
       "PF/ESIC compliance for fireworks, match industries and PM MITRA Mega Textile Park in Virudhunagar.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -90,8 +88,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/virudhunagar-epf-esic-compliance#organization",
 
-          name:
-            "Virudhunagar EPF & ESIC Compliance for Fireworks, Match Industries & PM MITRA Mega Textile Park | EPFDesk",
+          name: "Virudhunagar EPF & ESIC Compliance for Fireworks, Match Industries & PM MITRA Mega Textile Park | EPFDesk",
 
           alternateName:
             "EPFDesk – Virudhunagar Fireworks, Match & Mega Textile Park Compliance Experts",
@@ -111,7 +108,7 @@ export default function Page() {
 
           geo: {
             "@type": "GeoCoordinates",
-            latitude: 9.5680,
+            latitude: 9.568,
             longitude: 77.9624,
           },
 
@@ -135,6 +132,66 @@ export default function Page() {
           },
         })}
       </Script>
+      <Script
+        id="faq-schema-virudhunagar"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF registration mandatory for fireworks and match factories in Virudhunagar?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Fireworks and match manufacturing units in Virudhunagar must register under EPF once they employ 20 or more workers. Both permanent and contract labour engaged in production, packing, and loading operations are required to be covered.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does ESIC apply to hazardous fireworks and chemical-based industries?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. ESIC coverage is mandatory for hazardous industries employing 10 or more workers with wages up to ₹21,000 per month. Workers exposed to chemicals, explosives, and high-risk processes must be enrolled under ESIC.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How are seasonal and contract workers treated for EPF compliance in Virudhunagar?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Seasonal and contract workers must be included under EPF if statutory thresholds are met. Non-inclusion of short-term or migrant labour is a common audit issue in Virudhunagar’s fireworks and match industries.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the major EPF audit risks for fireworks and match units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Key risks include non-registration of contractors, under-reporting of worker strength, suppression of basic wages, mismatch between muster rolls and ECR filings, and failure to meet Principal Employer obligations.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 impact Virudhunagar industries?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Under the New Wage Code 2025, basic wages must constitute at least 50% of total remuneration. Fireworks, match, and textile units using allowance-heavy wage structures must realign payrolls to avoid retrospective EPF liabilities.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does EPFDesk support compliance for PM MITRA Mega Textile Park units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk assists PM MITRA Mega Textile Park employers with large-scale workforce onboarding, EPF/ESIC registration, contractor audits, wage restructuring under NWC 2025, and statutory inspection handling.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
@@ -146,10 +203,7 @@ export default function Page() {
       </FadeInWhenVisible>
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-virudhunagar"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-virudhunagar" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

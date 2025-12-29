@@ -3,10 +3,7 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 
-import {
-  heroDataKhammamDist,
-  sectionsKhammamDist,
-} from "@/utils/data";
+import { heroDataKhammamDist, sectionsKhammamDist } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -71,11 +68,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/khammam-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/khammam-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Khammam District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Khammam District",
 
           alternateName:
             "Khammam EPF & ESIC Compliance for SCCL Contractors, Rice Mills & Logistics",
@@ -88,8 +83,10 @@ export default function Page() {
           /* ✅ DISTRICT-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Wyra Road",
             addressLocality: "Khammam",
             addressRegion: "Telangana",
+            postalCode: "507001",
             addressCountry: "IN",
           },
 
@@ -117,6 +114,58 @@ export default function Page() {
           },
         })}
       </Script>
+      <Script
+        id="faq-khammam"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for SCCL mining contractors in Khammam?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. SCCL mining contractors in Khammam are mandatorily covered under EPF and ESIC. Principal Employer liability applies to manpower supplied for mining, transportation, loading, and allied services.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are rice mills in Khammam required to register under ESIC?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Rice mills employing 10 or more workers and located in ESIC-notified areas of Khammam must register under ESIC. Coverage includes permanent, temporary, and seasonal workers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does NWC 2025 impact Khammam transport and logistics companies?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Under NWC 2025, at least 50% of wages must be treated as basic pay. Khammam transport and logistics companies must restructure driver and helper salaries to avoid PF and ESIC assessment risks.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Do agro-processing units in Wyra and Madhira need PF compliance?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Agro-processing units in Wyra, Madhira, and surrounding mandals must comply with EPF once employment thresholds are crossed, including contract and migrant labour.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can EPFDesk represent employers during PF or ESIC inspections in Khammam?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides end-to-end inspection handling, notice replies, wage reconciliation, and audit defence for EPF and ESIC inspections conducted by Khammam enforcement authorities.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       {/* ========= PAGE CONTENT ========= */}
       <FadeInWhenVisible>
@@ -128,10 +177,7 @@ export default function Page() {
       </FadeInWhenVisible>
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-khammam"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-khammam" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

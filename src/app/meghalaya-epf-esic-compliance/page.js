@@ -58,8 +58,7 @@ export const metadata = {
   /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
-    title:
-      "Meghalaya EPF & ESIC Compliance | Cement & Steel Industries",
+    title: "Meghalaya EPF & ESIC Compliance | Cement & Steel Industries",
     description:
       "Expert PF & ESIC compliance for Meghalaya cement plants, steel mills and industrial estates.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -104,8 +103,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/meghalaya-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Meghalaya",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Meghalaya",
 
           alternateName:
             "Meghalaya Cement, Steel & Industrial EPF/ESIC Compliance",
@@ -117,13 +115,15 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "GS Road",
             addressRegion: "Meghalaya",
+            postalCode: "793001",
             addressCountry: "IN",
           },
 
           geo: {
             "@type": "GeoCoordinates",
-            latitude: 25.4670,
+            latitude: 25.467,
             longitude: 91.3662,
           },
 

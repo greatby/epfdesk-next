@@ -92,8 +92,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/visakhapatnam-epf-esic-compliance#organization",
 
-          name:
-            "Visakhapatnam EPF & ESIC Compliance for Port Logistics, Pharma City, Heavy Engineering & IT | EPFDesk",
+          name: "Visakhapatnam EPF & ESIC Compliance for Port Logistics, Pharma City, Heavy Engineering & IT | EPFDesk",
 
           alternateName:
             "EPFDesk – Vizag EPF & ESIC Consultants for Port, Pharma & Industrial Sectors",
@@ -133,6 +132,66 @@ export default function Page() {
             ratingValue: "4.9",
             reviewCount: "47",
           },
+        })}
+      </Script>
+      <Script
+        id="faq-schema-visakhapatnam"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF registration mandatory for port logistics and cargo handling contractors in Visakhapatnam?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Port logistics operators and cargo handling contractors in Visakhapatnam must register under EPF once the employee threshold is met. Principal Employers at ports are liable for EPF compliance of all engaged contractors.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does ESIC apply to port labour, shipyard workers and dock employees?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. ESIC coverage is mandatory for eligible dock workers, shipyard labour and logistics staff earning up to ₹21,000 per month. High-risk operational zones are closely scrutinized during ESIC inspections.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the EPF compliance risks for Pharma City units in Visakhapatnam?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include exclusion of contract chemists, misuse of consultant classifications, allowance-heavy salary structures and non-alignment with New Wage Code 2025 requirements.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 affect high-salary employees in Vizag IT and engineering sectors?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Under NWC 2025, basic wages must form at least 50% of total remuneration. IT, PSU and engineering employers in Visakhapatnam must restructure CTC models to prevent retrospective EPF liabilities.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are defence supply chain and naval contractors required to follow EPF and ESIC norms?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Naval dockyard contractors and defence supply chain vendors are fully subject to EPF, ESIC and CLRA compliance. Principal Employer liability applies strictly in defence-linked establishments.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does EPFDesk support EPF and ESIC audits conducted by RO Visakhapatnam?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides complete audit defence for RO Visakhapatnam inspections, including contractor mapping, wage reconciliation, OSH–ESIC alignment and statutory representation.",
+              },
+            },
+          ],
         })}
       </Script>
 

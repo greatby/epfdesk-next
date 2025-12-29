@@ -94,6 +94,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Capital Mall Area",
             addressLocality: "Bhiwadi",
             addressRegion: "Rajasthan",
             postalCode: "301019",

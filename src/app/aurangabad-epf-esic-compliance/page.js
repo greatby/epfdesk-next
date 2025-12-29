@@ -94,6 +94,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Jalna Road",
             addressLocality: "Aurangabad",
             addressRegion: "Maharashtra",
             postalCode: "431001",

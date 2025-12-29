@@ -27,12 +27,10 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Rajasthan EPF & ESIC Compliance | Energy, Mineral & Textile Hubs",
+    title: "Rajasthan EPF & ESIC Compliance | Energy, Mineral & Textile Hubs",
     description:
       "PF & ESIC specialists for Jodhpur solar parks, Balotra refinery, Udaipur mining belt and Bhilwara textiles.",
-    url:
-      "https://epfdesk.com/rajasthan-energy-mineral-textile-epf-esic-compliance",
+    url: "https://epfdesk.com/rajasthan-energy-mineral-textile-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
@@ -47,8 +45,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Rajasthan EPF & ESIC Compliance | Energy & Textile Thrust Zones",
+    title: "Rajasthan EPF & ESIC Compliance | Energy & Textile Thrust Zones",
     description:
       "High-risk PF & ESIC compliance for Rajasthan’s refinery, mining and textile clusters.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -93,21 +90,21 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/rajasthan-energy-mineral-textile-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Rajasthan EPF & ESIC Compliance for Energy, Mineral & Textile Zones",
+          name: "EPFDesk – Rajasthan EPF & ESIC Compliance for Energy, Mineral & Textile Zones",
 
           alternateName:
             "PF & ESIC Consultant for Jodhpur, Balotra, Udaipur & Bhilwara",
 
           image: "https://epfdesk.com/images/logo.jpg",
-          url:
-            "https://epfdesk.com/rajasthan-energy-mineral-textile-epf-esic-compliance",
+          url: "https://epfdesk.com/rajasthan-energy-mineral-textile-epf-esic-compliance",
           telephone: "+91-9945933333",
           priceRange: "₹₹₹",
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "RIICO Industrial Area",
             addressRegion: "Rajasthan",
+            postalCode: "302022",
             addressCountry: "IN",
           },
 

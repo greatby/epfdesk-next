@@ -101,8 +101,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/chittoor-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Consultants for Chittoor District",
+          name: "EPFDesk – EPF & ESIC Consultants for Chittoor District",
           image: "https://epfdesk.com/images/logo.jpg",
           url: "https://epfdesk.com/chittoor-epf-esic-compliance",
           telephone: "+91-9945933333",
@@ -110,10 +109,10 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Church Street",
-            addressLocality: "Bangalore",
-            addressRegion: "Karnataka",
-            postalCode: "560001",
+            streetAddress: "Gandhi Road",
+            addressLocality: "Chittoor",
+            addressRegion: "Andhra Pradesh",
+            postalCode: "517001",
             addressCountry: "IN",
           },
 
@@ -154,7 +153,7 @@ export default function Page() {
       <FadeInWhenVisible>
         <FaqAccordion faqs={chittorDistFAQ} />
       </FadeInWhenVisible>
-       <Script id="conversion-tracking-chittoor" strategy="afterInteractive">
+      <Script id="conversion-tracking-chittoor" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

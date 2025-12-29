@@ -175,6 +175,59 @@ const page = () => {
           }),
         }}
       />
+      {/* ================== FAQ SCHEMA ================== */}
+      <Script
+        id="faq-construction-sector"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for construction companies in Bangalore?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Construction companies and real estate developers are required to comply with EPF and ESIC laws once statutory thresholds are met. Coverage typically includes permanent staff, site labour, and eligible contract workers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are contract labour and site workers covered under EPF and ESIC?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Contract labour engaged at construction sites may be covered under EPF and ESIC. Principal employers are responsible for ensuring compliance when contractors fail to register or remit contributions.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are common EPF and ESIC risks in the construction sector?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include non-registration of contractors, exclusion of allowances from PF wages, delayed remittances, incomplete muster rolls, and non-compliance during inspections at active construction sites.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does NWC 2025 impact construction sector payroll and compliance?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The New Wage Code 2025 impacts construction payroll by redefining wage components for EPF and ESIC calculations. Improper wage structuring can lead to retrospective liabilities and penalties during audits.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does EPFDesk support construction and real estate companies?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "EPFDesk supports construction companies with EPF and ESIC registration, contractor compliance audits, site inspection handling, NWC 2025 wage structuring, monthly filings, and statutory advisory for ongoing projects.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataConstruction} />

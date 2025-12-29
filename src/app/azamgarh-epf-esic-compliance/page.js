@@ -39,7 +39,7 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
-   keywords: [
+  keywords: [
     "Azamgarh PF consultant",
     "Azamgarh ESIC registration",
     "Private school PF Azamgarh",
@@ -102,6 +102,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Civil Lines",
             addressLocality: "Azamgarh",
             addressRegion: "Uttar Pradesh",
             postalCode: "276001",

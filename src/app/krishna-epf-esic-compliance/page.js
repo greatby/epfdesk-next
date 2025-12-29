@@ -3,10 +3,7 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 
-import {
-  heroDataKrishnaDist,
-  sectionsKrishnaDist,
-} from "@/utils/data";
+import { heroDataKrishnaDist, sectionsKrishnaDist } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -101,11 +98,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/krishna-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/krishna-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Krishna District (Vijayawada)",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Krishna District (Vijayawada)",
 
           alternateName:
             "Vijayawada EPF & ESIC Compliance for Logistics, Construction & Commercial Establishments",
@@ -117,15 +112,17 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Benz Circle",
             addressLocality: "Vijayawada",
             addressRegion: "Andhra Pradesh",
+            postalCode: "520010",
             addressCountry: "IN",
           },
 
           geo: {
             "@type": "GeoCoordinates",
             latitude: 16.5062,
-            longitude: 80.6480,
+            longitude: 80.648,
           },
 
           areaServed: [
@@ -145,6 +142,50 @@ export default function Page() {
             ratingValue: "4.9",
             reviewCount: "47",
           },
+        })}
+      </Script>
+      <Script
+        id="faq-krishna"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for logistics and transport companies in Vijayawada?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Logistics operators, transport companies, warehouses and fleet owners in Vijayawada must comply with EPF and ESIC if employee thresholds are met. Contractor and driver coverage is a key audit focus in Krishna District.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does NWC 2025 impact payroll structuring in Krishna District?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Under NWC 2025, basic wages must form at least 50% of total remuneration. EPFDesk helps Vijayawada establishments restructure salaries to remain compliant while controlling PF and ESIC cost impact.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are construction contractors in Vijayawada required to pay BOCW cess along with EPF and ESIC?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Construction contractors in Krishna District must comply with EPF, ESIC and BOCW cess provisions. Non-payment often results in retrospective assessments during labour inspections.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does EPFDesk support PF and ESIC audits in Vijayawada?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides audit defence, Section 7A representation, contractor verification and documentation support for EPF and ESIC inspections in Vijayawada and across Krishna District.",
+              },
+            },
+          ],
         })}
       </Script>
 

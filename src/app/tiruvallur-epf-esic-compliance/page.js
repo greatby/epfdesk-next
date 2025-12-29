@@ -5,10 +5,7 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 
-import {
-  heroDataTiruvallurDist,
-  sectionsTiruvallurDist,
-} from "@/utils/data";
+import { heroDataTiruvallurDist, sectionsTiruvallurDist } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -44,8 +41,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Tiruvallur EPF & ESIC Compliance | SIPCOT & Port Industries",
+    title: "Tiruvallur EPF & ESIC Compliance | SIPCOT & Port Industries",
     description:
       "Expert PF & ESIC compliance for Tiruvallur SIPCOT units, port labour and engineering industries.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -90,8 +86,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/tiruvallur-epf-esic-compliance#organization",
 
-          name:
-            "Tiruvallur EPF & ESIC Compliance – SIPCOT, Ports & Heavy Engineering | EPFDesk",
+          name: "Tiruvallur EPF & ESIC Compliance – SIPCOT, Ports & Heavy Engineering | EPFDesk",
 
           alternateName:
             "EPFDesk – Tiruvallur SIPCOT, Ennore Port & Engineering Compliance Consultants",
@@ -133,6 +128,58 @@ export default function Page() {
             ratingValue: "4.9",
             reviewCount: "49",
           },
+        })}
+      </Script>
+      <Script
+        id="faq-schema-tiruvallur"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF registration mandatory for units in Gummidipoondi SIPCOT, Tiruvallur?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Manufacturing, engineering, automobile, and logistics units in Gummidipoondi SIPCOT must register under EPF once they employ 20 or more workers. Contract labour engaged through multiple vendors must also be included under Principal Employer responsibility.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does ESIC apply to Ennore Port and Kattupalli port-linked labour?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. ESIC applies to port, stevedoring, warehousing, and logistics operations employing 10 or more workers with wages up to ₹21,000 per month. Contract workers involved in loading, unloading, transport, and yard operations must be covered.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the major EPF compliance risks for Tiruvallur heavy engineering units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Key risks include non-inclusion of contract labour, improper allowance structuring to suppress basic wages, non-registration of contractors, mismatch between attendance registers and ECR filings, and lapses in Principal Employer liability compliance.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 impact Tiruvallur SIPCOT employers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Under the New Wage Code 2025, basic wages must constitute at least 50% of total remuneration. Tiruvallur SIPCOT employers using high allowances must restructure payrolls to avoid retrospective EPF demands during inspections.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can EPFDesk handle contractor audits and Principal Employer liability in Tiruvallur?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides end-to-end support including contractor compliance audits, Principal Employer liability mitigation, EPF/ESIC registration validation, RO Chennai inspection handling, and statutory defence for Tiruvallur industries.",
+              },
+            },
+          ],
         })}
       </Script>
 

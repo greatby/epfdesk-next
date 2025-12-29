@@ -95,8 +95,7 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/dhar-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/dhar-epf-esic-compliance#organization",
 
           name: "EPFDesk – EPF & ESIC Consultants for Dhar & Pithampur",
           image: "https://epfdesk.com/images/logo.jpg",
@@ -107,6 +106,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Sector 1",
             addressLocality: "Pithampur",
             addressRegion: "Madhya Pradesh",
             postalCode: "454775",

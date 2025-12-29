@@ -104,8 +104,9 @@ export default function Page() {
           telephone: "+91-9945933333",
           priceRange: "₹₹₹",
 
-          address: {
+          aaddress: {
             "@type": "PostalAddress",
+            streetAddress: "AB Road",
             addressLocality: "Dewas",
             addressRegion: "Madhya Pradesh",
             postalCode: "455001",

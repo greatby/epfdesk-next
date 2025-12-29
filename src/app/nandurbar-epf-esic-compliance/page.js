@@ -54,8 +54,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Nandurbar EPF & ESIC Compliance | Agro & Tribal Labour | EPFDesk",
+    title: "Nandurbar EPF & ESIC Compliance | Agro & Tribal Labour | EPFDesk",
     description:
       "PF & ESIC compliance and audit defence for Nandurbar agro-processing units and seasonal tribal labour.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -100,8 +99,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/nandurbar-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Nandurbar District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Nandurbar District",
 
           alternateName:
             "Nandurbar EPF & ESIC Compliance for Cotton, Agro-Processing & Tribal Labour",
@@ -113,7 +111,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Station Road",
             addressRegion: "Maharashtra",
+            postalCode: "425412",
             addressCountry: "IN",
           },
 
@@ -154,10 +154,7 @@ export default function Page() {
       <FaqAccordion faqs={faqNandurbarDistrict} />
 
       {/* ========= CONVERSION TRACKING (LOCKED) ========= */}
-      <Script
-        id="conversion-tracking-nandurbar"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-nandurbar" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

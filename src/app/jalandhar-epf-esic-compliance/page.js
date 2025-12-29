@@ -36,8 +36,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Jalandhar EPF & ESIC Compliance | Sports Goods & Engineering Hub",
+    title: "Jalandhar EPF & ESIC Compliance | Sports Goods & Engineering Hub",
     description:
       "PF & ESIC specialists for Jalandhar sports goods exporters, hand tool units, leather manufacturers and engineering MSMEs.",
     url: "https://epfdesk.com/jalandhar-epf-esic-compliance",
@@ -97,8 +96,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/jalandhar-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Jalandhar Industries",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Jalandhar Industries",
 
           alternateName:
             "Jalandhar EPF & ESIC Compliance Experts for Sports Goods, Hand Tools & Export Units",
@@ -111,14 +109,16 @@ export default function Page() {
           /* ✅ DISTRICT-CORRECT ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Model Town",
             addressLocality: "Jalandhar",
             addressRegion: "Punjab",
+            postalCode: "144003",
             addressCountry: "IN",
           },
 
           geo: {
             "@type": "GeoCoordinates",
-            latitude: 31.3260,
+            latitude: 31.326,
             longitude: 75.5762,
           },
 

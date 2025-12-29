@@ -176,6 +176,67 @@ const page = () => {
           }),
         }}
       />
+      {/* ================== FAQ SCHEMA ================== */}
+      <Script
+        id="faq-startup-labour-hr-india"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for startups in India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPF and ESIC become mandatory for startups once the applicable employee thresholds are crossed. Coverage applies to full-time employees, eligible contractual staff, and certain categories of interns depending on wage and employment conditions.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "When should a startup register for EPF and ESIC?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "A startup must register for EPF and ESIC immediately after crossing statutory employee limits. Delayed registration can attract penalties, interest, and retrospective compliance liabilities during inspections or funding due diligence.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does EPF and ESIC apply to startup founders, directors, and co-founders?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "EPF applicability for founders and directors depends on employment structure, remuneration, and control. ESIC coverage applies if the individual is classified as an employee and meets wage eligibility criteria.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 impact startup payroll structures?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The New Wage Code 2025 impacts startups by redefining wage components used for EPF and ESIC calculations. Startups using allowance-heavy or variable pay structures may face increased statutory contributions if payroll is not restructured.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are contractors, consultants, and gig workers covered under EPF and ESIC in startups?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Contractors and consultants may fall under EPF and ESIC coverage if the engagement reflects an employer-employee relationship. Startups remain principal employers and are liable for compliance failures by vendors or manpower agencies.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does EPFDesk help startups with labour law and HR compliance?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "EPFDesk supports startups with EPF and ESIC registration, HR compliance setup, payroll structuring, contractor audits, inspection handling, investor due diligence readiness, and ongoing monthly statutory filings across India.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataStartup} />

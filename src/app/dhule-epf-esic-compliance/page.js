@@ -107,6 +107,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Agra Road",
             addressLocality: "Dhule",
             addressRegion: "Maharashtra",
             postalCode: "424001",

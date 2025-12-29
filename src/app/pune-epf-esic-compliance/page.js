@@ -45,8 +45,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Pune EPF & ESIC Compliance | Auto MIDC & Hinjewadi IT | EPFDesk",
+    title: "Pune EPF & ESIC Compliance | Auto MIDC & Hinjewadi IT | EPFDesk",
     description:
       "High-risk EPF & ESIC compliance and EPFO 7A defence for Pune auto and IT sectors.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -90,8 +89,7 @@ export default function Page() {
           "@type": "ProfessionalService",
           "@id": "https://epfdesk.com/pune-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Pune EPF & ESIC Compliance for Auto, IT & Manufacturing Hubs",
+          name: "EPFDesk – Pune EPF & ESIC Compliance for Auto, IT & Manufacturing Hubs",
 
           alternateName:
             "PF & ESIC Consultant for Pune Auto MIDC, Hinjewadi IT Park & PE Liability",
@@ -103,7 +101,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Shivaji Nagar",
             addressRegion: "Maharashtra",
+            postalCode: "411005",
             addressCountry: "IN",
           },
 

@@ -30,17 +30,14 @@ export const metadata = {
   ],
 
   alternates: {
-    canonical:
-      "https://epfdesk.com/north-east-rajasthan-epf-esic-compliance",
+    canonical: "https://epfdesk.com/north-east-rajasthan-epf-esic-compliance",
   },
 
   openGraph: {
-    title:
-      "Rajasthan EPF & ESIC Compliance | Agro, Foundry & Gateway Zones",
+    title: "Rajasthan EPF & ESIC Compliance | Agro, Foundry & Gateway Zones",
     description:
       "PF & ESIC specialists for Bikaner agro hubs, Sri Ganganagar logistics, Bharatpur foundries and Dholpur manufacturing.",
-    url:
-      "https://epfdesk.com/north-east-rajasthan-epf-esic-compliance",
+    url: "https://epfdesk.com/north-east-rajasthan-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
@@ -55,8 +52,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Rajasthan EPF & ESIC Compliance | Agro & Manufacturing Hubs",
+    title: "Rajasthan EPF & ESIC Compliance | Agro & Manufacturing Hubs",
     description:
       "High-risk PF & ESIC compliance for Rajasthan’s agro-logistics and foundry clusters.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -101,21 +97,21 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/north-east-rajasthan-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Rajasthan EPF & ESIC Compliance for Agro & Manufacturing Zones",
+          name: "EPFDesk – Rajasthan EPF & ESIC Compliance for Agro & Manufacturing Zones",
 
           alternateName:
             "PF & ESIC Consultant for Bikaner, Sri Ganganagar, Bharatpur & Dholpur",
 
           image: "https://epfdesk.com/images/logo.jpg",
-          url:
-            "https://epfdesk.com/north-east-rajasthan-epf-esic-compliance",
+          url: "https://epfdesk.com/north-east-rajasthan-epf-esic-compliance",
           telephone: "+91-9945933333",
           priceRange: "₹₹₹",
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "MI Road",
             addressRegion: "Rajasthan",
+            postalCode: "302001",
             addressCountry: "IN",
           },
 
@@ -156,7 +152,7 @@ export default function Page() {
       <FadeInWhenVisible>
         <FaqAccordion faqs={faqNorthEastRajasthan} />
       </FadeInWhenVisible>
-        <Script
+      <Script
         id="conversion-tracking-north-east-rajasthan"
         strategy="afterInteractive"
       >

@@ -67,11 +67,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/jhajjar-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/jhajjar-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Jhajjar Industries",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Jhajjar Industries",
 
           alternateName:
             "Jhajjar EPF & ESIC Compliance for Bahadurgarh Footwear & MET City Units",
@@ -83,15 +81,17 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Bahadurgarh Road",
             addressLocality: "Jhajjar",
             addressRegion: "Haryana",
+            postalCode: "124103",
             addressCountry: "IN",
           },
 
           geo: {
             "@type": "GeoCoordinates",
             latitude: 28.6931,
-            longitude: 76.9310,
+            longitude: 76.931,
           },
 
           areaServed: [
@@ -125,10 +125,7 @@ export default function Page() {
       <FaqAccordion faqs={faqJhajjar} />
 
       {/* ========= CONVERSION TRACKING (VERBATIM) ========= */}
-      <Script
-        id="conversion-tracking-jhajjar"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-jhajjar" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

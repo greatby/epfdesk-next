@@ -101,8 +101,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/chamarajanagar-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Consultants for Chamarajanagar Textile & Agro MSMEs",
+          name: "EPFDesk – EPF & ESIC Consultants for Chamarajanagar Textile & Agro MSMEs",
           image: "https://epfdesk.com/images/logo.jpg",
           url: "https://epfdesk.com/chamarajanagar-epf-esic-compliance",
           telephone: "+91-9945933333",
@@ -110,6 +109,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "MG Road",
             addressLocality: "Chamarajanagar",
             addressRegion: "Karnataka",
             postalCode: "571313",
@@ -209,7 +209,10 @@ export default function Page() {
       <FaqAccordion faqs={faqChamarajanagar} />
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script id="conversion-tracking-chamarajanagar" strategy="afterInteractive">
+      <Script
+        id="conversion-tracking-chamarajanagar"
+        strategy="afterInteractive"
+      >
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

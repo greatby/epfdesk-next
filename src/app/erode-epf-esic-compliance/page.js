@@ -103,6 +103,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Perundurai Road",
             addressLocality: "Erode",
             addressRegion: "Tamil Nadu",
             postalCode: "638001",
@@ -111,7 +112,7 @@ export default function Page() {
 
           geo: {
             "@type": "GeoCoordinates",
-            latitude: 11.3410,
+            latitude: 11.341,
             longitude: 77.7172,
           },
 
@@ -131,6 +132,42 @@ export default function Page() {
             ratingValue: "4.9",
             reviewCount: "47",
           },
+        })}
+      </Script>
+      <Script
+        id="schema-erode-faq"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for powerloom and handloom units in Erode?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPF and ESIC are mandatory for eligible powerloom units, handloom cooperatives, textile processing mills and dyeing units in Erode. Authorities closely monitor wage records, worker classification and contribution compliance in the textile sector.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the key PF and ESIC risks for Erode textile units under NWC 2025?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Major risks include improper basic wage calculation under the 50% rule, exclusion of piece-rate and seasonal workers, cooperative society payroll gaps and contractor non-compliance. Textile units in Erode face frequent inspections due to decentralized workforce structures.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does EPFDesk support cooperative societies and contractors in Erode?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides PF, ESIC and contractor compliance support for powerloom units, handloom cooperatives and textile processing mills in Erode, including monthly filings, inspections handling and NWC 2025 wage alignment.",
+              },
+            },
+          ],
         })}
       </Script>
 

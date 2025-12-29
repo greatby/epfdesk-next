@@ -17,7 +17,7 @@ export const metadata = {
   alternates: {
     canonical: "https://epfdesk.com/baddi-epf-esic-compliance",
   },
-    keywords: [
+  keywords: [
     "Baddi PF consultant",
     "Baddi ESIC registration",
     "Pharma PF compliance Baddi",
@@ -89,8 +89,7 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/baddi-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/baddi-epf-esic-compliance#organization",
           name: "EPFDesk - EPF & ESIC Consultants Baddi (BBN)",
           image: "https://epfdesk.com/images/logo.jpg",
           url: "https://epfdesk.com/baddi-epf-esic-compliance",
@@ -99,6 +98,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Sai Road",
             addressLocality: "Baddi",
             addressRegion: "Himachal Pradesh",
             postalCode: "173205",

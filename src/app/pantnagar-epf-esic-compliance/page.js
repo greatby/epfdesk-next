@@ -90,8 +90,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/pantnagar-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Pantnagar EPF & ESIC Compliance for Auto & SIDCUL Industries",
+          name: "EPFDesk – Pantnagar EPF & ESIC Compliance for Auto & SIDCUL Industries",
 
           alternateName:
             "PF & ESIC Consultant for Pantnagar Auto OEM Vendors & SIDCUL Clusters",
@@ -103,7 +102,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Rajpur Road",
             addressRegion: "Uttarakhand",
+            postalCode: "248001",
             addressCountry: "IN",
           },
 
@@ -114,7 +115,10 @@ export default function Page() {
           },
 
           areaServed: [
-            { "@type": "AdministrativeArea", name: "Udham Singh Nagar District" },
+            {
+              "@type": "AdministrativeArea",
+              name: "Udham Singh Nagar District",
+            },
             { "@type": "Place", name: "Pantnagar SIDCUL" },
             { "@type": "Place", name: "Rudrapur" },
             { "@type": "Place", name: "Sitarganj" },
@@ -147,10 +151,7 @@ export default function Page() {
       </FadeInWhenVisible>
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-pantnagar"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-pantnagar" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

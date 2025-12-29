@@ -105,6 +105,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Lashkar",
             addressLocality: "Gwalior",
             addressRegion: "Madhya Pradesh",
             postalCode: "474001",

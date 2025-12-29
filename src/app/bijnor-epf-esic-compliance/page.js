@@ -92,8 +92,7 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/bijnor-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/bijnor-epf-esic-compliance#organization",
 
           name: "EPFDesk – EPF & ESIC Consultants Bijnor",
           image: "https://epfdesk.com/images/logo.jpg",
@@ -103,6 +102,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Civil Lines",
             addressLocality: "Bijnor",
             addressRegion: "Uttar Pradesh",
             postalCode: "246701",

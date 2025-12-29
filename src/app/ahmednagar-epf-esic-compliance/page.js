@@ -22,8 +22,7 @@ export const metadata = {
     canonical: "https://epfdesk.com/ahmednagar-epf-esic-compliance",
   },
   openGraph: {
-    title:
-      "Ahmednagar EPF & ESIC Compliance | Sugar, MIDC & Dairy | EPFDesk",
+    title: "Ahmednagar EPF & ESIC Compliance | Sugar, MIDC & Dairy | EPFDesk",
     description:
       "PF & ESIC specialists for Ahmednagar sugar factories, MIDC MSMEs, retention allowance audits and dairy processing units.",
     url: "https://epfdesk.com/ahmednagar-epf-esic-compliance",
@@ -94,16 +93,17 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Savedi",
             addressLocality: "Ahmednagar",
             addressRegion: "Maharashtra",
-            postalCode: "414001",
+            postalCode: "414003",
             addressCountry: "IN",
           },
 
           geo: {
             "@type": "GeoCoordinates",
             latitude: 19.0948,
-            longitude: 74.7480,
+            longitude: 74.748,
           },
 
           areaServed: {

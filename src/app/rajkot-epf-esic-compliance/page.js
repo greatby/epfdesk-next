@@ -84,11 +84,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/rajkot-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/rajkot-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Rajkot EPF & ESIC Compliance for Engineering & Casting MSMEs",
+          name: "EPFDesk – Rajkot EPF & ESIC Compliance for Engineering & Casting MSMEs",
 
           alternateName:
             "PF & ESIC Consultant for GIDC Metoda & Shapar Veraval MSMEs",
@@ -100,7 +98,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "GIDC Metoda",
             addressRegion: "Gujarat",
+            postalCode: "360021",
             addressCountry: "IN",
           },
 
@@ -125,6 +125,58 @@ export default function Page() {
             ratingValue: "4.9",
             reviewCount: "47",
           },
+        })}
+      </Script>
+      <Script
+        id="faq-schema-rajkot"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF registration mandatory for engineering MSMEs in Rajkot?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Engineering, casting, fabrication, and machine component units in Rajkot must register under EPF once they employ 20 or more workers. Many MSMEs in GIDC Metoda and Shapar Veraval are covered due to contractor-based manpower.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does ESIC apply to foundries and casting units in Rajkot?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. ESIC applies to foundries, casting units, and fabrication workshops employing 10 or more workers with wages up to ₹21,000 per month. Rajkot units are frequently audited for exclusion of helpers, loaders, and contract labour.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the main EPF audit risks for GIDC Metoda and Shapar Veraval units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Key EPF risks include suppression of basic wages, improper allowance structuring, non-inclusion of contract labour, and mismatch between ECR filings and GST/vendor records.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does NWC 2025 impact payroll for Rajkot MSMEs?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Under the New Wage Code 2025, basic wages must be at least 50% of total remuneration. Rajkot MSMEs using high allowances for cost control must restructure payrolls to avoid retrospective EPF liabilities.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can EPFDesk handle contractor compliance for Rajkot engineering units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk manages end-to-end contractor compliance including registration validation, monthly ECR reconciliation, principal employer liability audits, and inspection defense for Rajkot engineering and casting units.",
+              },
+            },
+          ],
         })}
       </Script>
 

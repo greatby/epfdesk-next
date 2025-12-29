@@ -93,11 +93,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/panipat-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/panipat-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Panipat EPF & ESIC Compliance for Textile & Refinery Industries",
+          name: "EPFDesk – Panipat EPF & ESIC Compliance for Textile & Refinery Industries",
 
           alternateName:
             "PF & ESIC Consultant for Panipat Handloom, Powerloom & IOCL Refinery Contractors",
@@ -109,7 +107,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Sector 17",
             addressRegion: "Haryana",
+            postalCode: "134109",
             addressCountry: "IN",
           },
 
@@ -154,10 +154,7 @@ export default function Page() {
       </FadeInWhenVisible>
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-panipat"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-panipat" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

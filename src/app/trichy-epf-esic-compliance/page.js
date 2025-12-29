@@ -5,10 +5,7 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 
-import {
-  heroDataTrichyDist,
-  sectionsTrichyDist,
-} from "@/utils/data";
+import { heroDataTrichyDist, sectionsTrichyDist } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -44,8 +41,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Trichy EPF & ESIC Compliance | BHEL Contract Labour & Fabrication",
+    title: "Trichy EPF & ESIC Compliance | BHEL Contract Labour & Fabrication",
     description:
       "Expert PF & ESIC compliance for Trichy heavy engineering, fabrication and contract labour ecosystems.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -87,11 +83,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/trichy-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/trichy-epf-esic-compliance#organization",
 
-          name:
-            "Trichy EPF & ESIC Compliance – BHEL Contract Labour & Heavy Engineering | EPFDesk",
+          name: "Trichy EPF & ESIC Compliance – BHEL Contract Labour & Heavy Engineering | EPFDesk",
 
           alternateName:
             "EPFDesk – Trichy BHEL Contractor, Fabrication & Labour Compliance Consultants",
@@ -122,7 +116,10 @@ export default function Page() {
             { "@type": "Place", name: "BHEL Trichy Complex" },
             { "@type": "Place", name: "Fabrication & Welding Units" },
             { "@type": "Place", name: "Heavy Engineering Ancillaries" },
-            { "@type": "Place", name: "Gems & Ornaments Manufacturing Cluster" },
+            {
+              "@type": "Place",
+              name: "Gems & Ornaments Manufacturing Cluster",
+            },
           ],
 
           description:
@@ -133,6 +130,66 @@ export default function Page() {
             ratingValue: "4.9",
             reviewCount: "51",
           },
+        })}
+      </Script>
+      <Script
+        id="faq-schema-trichy"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF registration mandatory for BHEL contractors and contract labour in Trichy?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPF registration is mandatory for BHEL contractors and contract labour providers in Trichy once 20 or more workers are engaged. The Principal Employer is jointly liable for EPF compliance of all on-roll and contract workers deployed at the BHEL Trichy complex.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does ESIC apply to fabrication, welding, and heavy engineering units in Trichy?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. ESIC applies to fabrication, welding, and heavy engineering units employing 10 or more workers with wages up to ₹21,000 per month. This includes fitters, welders, helpers, riggers, and maintenance staff.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the main EPF audit risks for Trichy engineering and fabrication units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Key EPF risks include non-inclusion of contract labour, suppression of basic wages through allowances, non-registration or partial registration of contractors, mismatch between muster rolls and ECR filings, and lapses in Principal Employer compliance.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are gem and ornament manufacturing units in Trichy covered under EPF and ESIC?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Gem cutting and ornament manufacturing units are covered under EPF once employment thresholds are met. ESIC applies where wage limits and employee strength criteria are satisfied, including job workers engaged through contractors.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 impact Trichy employers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Under the New Wage Code 2025, basic wages must constitute at least 50% of total remuneration. Trichy employers using allowances to reduce statutory outgo must restructure payrolls to avoid retrospective EPF liabilities during inspections.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can EPFDesk manage BHEL contractor audits and Principal Employer liability in Trichy?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides end-to-end support for Trichy employers including contractor compliance audits, Principal Employer liability mitigation, EPF/ESIC registration validation, RO Trichy inspection handling, and statutory defence.",
+              },
+            },
+          ],
         })}
       </Script>
 

@@ -107,6 +107,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Gandhi Nagar",
             addressLocality: "Berhampur",
             addressRegion: "Odisha",
             postalCode: "760001",

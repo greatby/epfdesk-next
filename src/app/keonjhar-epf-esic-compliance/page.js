@@ -72,8 +72,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/keonjhar-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Keonjhar Mining Sector",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Keonjhar Mining Sector",
 
           alternateName:
             "Keonjhar EPF & ESIC Compliance for Iron Ore Mines & Crusher Units",
@@ -86,14 +85,16 @@ export default function Page() {
           /* ✅ DISTRICT-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Mining Road",
             addressLocality: "Keonjhar",
             addressRegion: "Odisha",
+            postalCode: "758001",
             addressCountry: "IN",
           },
 
           geo: {
             "@type": "GeoCoordinates",
-            latitude: 21.6280,
+            latitude: 21.628,
             longitude: 85.5817,
           },
 
@@ -131,10 +132,7 @@ export default function Page() {
       </FadeInWhenVisible>
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-keonjhar"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-keonjhar" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

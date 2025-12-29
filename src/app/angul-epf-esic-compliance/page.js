@@ -22,8 +22,7 @@ export const metadata = {
     canonical: "https://epfdesk.com/angul-epf-esic-compliance",
   },
   openGraph: {
-    title:
-      "Angul EPF & ESIC Compliance | Power, Aluminum & Coal Hub | EPFDesk",
+    title: "Angul EPF & ESIC Compliance | Power, Aluminum & Coal Hub | EPFDesk",
     description:
       "PF & ESIC specialists for NTPC, NALCO and coal mining contractors in Angul district.",
     url: "https://epfdesk.com/angul-epf-esic-compliance",
@@ -84,8 +83,7 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/angul-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/angul-epf-esic-compliance#organization",
           name: "EPFDesk - EPF & ESIC Consultants Angul",
           image: "https://epfdesk.com/images/logo.jpg",
           url: "https://epfdesk.com/angul-epf-esic-compliance",
@@ -94,6 +92,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Gandhi Marg",
             addressLocality: "Angul",
             addressRegion: "Odisha",
             postalCode: "759122",

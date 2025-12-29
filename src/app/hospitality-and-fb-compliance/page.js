@@ -176,6 +176,67 @@ const page = () => {
           }),
         }}
       />
+      {/* ================== FAQ SCHEMA ================== */}
+      <Script
+        id="faq-hospitality-fb-india"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for hotels and hospitality businesses in India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Hotels, resorts, and hospitality businesses are required to comply with EPF and ESIC laws once statutory thresholds are met. Coverage generally includes front office staff, housekeeping, kitchen staff, service teams, and eligible contract workers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Do restaurants and QSR chains need EPF and ESIC registration?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Restaurants and QSR chains must register under EPF and ESIC when employee and wage thresholds are crossed. Coverage may include chefs, helpers, service staff, cashiers, cleaners, and contractual labour.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are contract workers and outsourced staff covered under EPF and ESIC in hospitality?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Contract and outsourced workers may be covered under EPF and ESIC depending on wage limits and engagement terms. Principal employers are responsible for compliance if contractors fail to fulfil statutory obligations.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are common EPF and ESIC compliance risks in the hospitality sector?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include non-enrolment of eligible staff, high employee turnover without proper exits, exclusion of allowances from PF wages, contractor non-compliance, and documentation gaps during inspections.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 affect hospitality and F&B businesses?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The New Wage Code 2025 impacts EPF and ESIC calculations by redefining wage components. Hospitality businesses with high allowances, service charges, or incentive-based pay may face increased statutory contributions if payroll structures are not aligned.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does EPFDesk support hospitality and F&B businesses across India?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "EPFDesk provides end-to-end EPF and ESIC compliance services including registration, payroll restructuring under NWC 2025, contractor audits, inspection handling, monthly filings, and statutory advisory for hospitality and F&B businesses across India.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       <FadeInWhenVisible>
         <PerformanceSectionIndustry data={heroDataHospitality} />

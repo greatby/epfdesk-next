@@ -102,11 +102,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/nellore-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/nellore-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Nellore EPF & ESIC Compliance for Ports, Aquaculture & Power Projects",
+          name: "EPFDesk – Nellore EPF & ESIC Compliance for Ports, Aquaculture & Power Projects",
 
           alternateName:
             "Nellore EPF & ESIC Consultant for Krishnapatnam Port, Aquaculture & Thermal Power",
@@ -118,10 +116,11 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Magunta Layout",
             addressRegion: "Andhra Pradesh",
+            postalCode: "524003",
             addressCountry: "IN",
           },
-
           geo: {
             "@type": "GeoCoordinates",
             latitude: 14.4426,
@@ -162,10 +161,7 @@ export default function Page() {
       <FadeInWhenVisible>
         <FaqAccordion faqs={nelloreFAQ} />
       </FadeInWhenVisible>
-        <Script
-        id="conversion-tracking-nellore"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-nellore" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

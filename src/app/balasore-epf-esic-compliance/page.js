@@ -21,7 +21,7 @@ export const metadata = {
   alternates: {
     canonical: "https://epfdesk.com/balasore-epf-esic-compliance",
   },
-   keywords: [
+  keywords: [
     "Balasore PF consultant",
     "EPF ESIC compliance Balasore",
     "Plastic industry PF audit Odisha",
@@ -30,8 +30,7 @@ export const metadata = {
     "RO Bhubaneswar EPF 7A defense",
   ],
   openGraph: {
-    title:
-      "Balasore EPF & ESIC Compliance | MSME & Export Hub | EPFDesk",
+    title: "Balasore EPF & ESIC Compliance | MSME & Export Hub | EPFDesk",
     description:
       "PF & ESIC specialists for Balasore plastic, seafood export and MSME clusters governed by RO Bhubaneswar.",
     url: "https://epfdesk.com/balasore-epf-esic-compliance",
@@ -102,6 +101,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Motiganj",
             addressLocality: "Balasore",
             addressRegion: "Odisha",
             postalCode: "756001",

@@ -35,12 +35,10 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Chhattisgarh EPF & ESIC Compliance | New Districts & Mining Hubs",
+    title: "Chhattisgarh EPF & ESIC Compliance | New Districts & Mining Hubs",
     description:
       "PF & ESIC specialists for ethanol plants, food processing units, mining contractors and newly formed districts in Chhattisgarh.",
-    url:
-      "https://epfdesk.com/chhattisgarh-final-emerging-districts-epf-esic-compliance",
+    url: "https://epfdesk.com/chhattisgarh-final-emerging-districts-epf-esic-compliance",
     images: [
       {
         url: "https://epfdesk.com/images/logo.jpg",
@@ -102,16 +100,15 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/chhattisgarh-final-emerging-districts-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Consultants for Emerging Districts of Chhattisgarh",
+          name: "EPFDesk – EPF & ESIC Consultants for Emerging Districts of Chhattisgarh",
           image: "https://epfdesk.com/images/logo.jpg",
-          url:
-            "https://epfdesk.com/chhattisgarh-final-emerging-districts-epf-esic-compliance",
+          url: "https://epfdesk.com/chhattisgarh-final-emerging-districts-epf-esic-compliance",
           telephone: "+91-9945933333",
           priceRange: "₹₹₹",
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Pandri",
             addressLocality: "Raipur",
             addressRegion: "Chhattisgarh",
             postalCode: "492001",
@@ -164,7 +161,10 @@ export default function Page() {
       </FadeInWhenVisible>
 
       <FaqAccordion faqs={faqCGFinalEmergingDistricts} />
-       <Script id="conversion-tracking-chhatisgarh-new" strategy="afterInteractive">
+      <Script
+        id="conversion-tracking-chhatisgarh-new"
+        strategy="afterInteractive"
+      >
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

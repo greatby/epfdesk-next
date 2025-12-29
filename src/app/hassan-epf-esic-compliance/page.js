@@ -106,6 +106,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS (HASSAN) */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "BM Road",
             addressLocality: "Hassan",
             addressRegion: "Karnataka",
             postalCode: "573201",

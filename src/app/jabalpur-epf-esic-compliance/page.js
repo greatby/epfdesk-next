@@ -36,8 +36,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Jabalpur EPF & ESIC Compliance | Mining & Cement Sector",
+    title: "Jabalpur EPF & ESIC Compliance | Mining & Cement Sector",
     description:
       "PF & ESIC specialists for Jabalpur mining, cement and heavy industrial units under RO Jabalpur jurisdiction.",
     url: "https://epfdesk.com/jabalpur-epf-esic-compliance",
@@ -97,8 +96,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/jabalpur-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Jabalpur Mining & Cement Units",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Jabalpur Mining & Cement Units",
 
           alternateName:
             "Jabalpur EPF & ESIC Compliance Experts for Mining Contractors, Cement Plants & PSU Vendors",
@@ -111,8 +109,10 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Wright Town",
             addressLocality: "Jabalpur",
             addressRegion: "Madhya Pradesh",
+            postalCode: "482002",
             addressCountry: "IN",
           },
 

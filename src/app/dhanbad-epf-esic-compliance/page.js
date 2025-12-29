@@ -4,11 +4,7 @@ import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndus
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
 
-import {
-  heroDataDhanbad,
-  sectionsDhanbad,
-  faqDhanbad,
-} from "@/utils/data";
+import { heroDataDhanbad, sectionsDhanbad, faqDhanbad } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -106,6 +102,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Bank More",
             addressLocality: "Dhanbad",
             addressRegion: "Jharkhand",
             postalCode: "826001",

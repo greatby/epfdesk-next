@@ -96,8 +96,7 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/budaun-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/budaun-epf-esic-compliance#organization",
 
           name: "EPFDesk – EPF & ESIC Consultants Budaun",
           image: "https://epfdesk.com/images/logo.jpg",
@@ -107,6 +106,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Civil Lines",
             addressLocality: "Budaun",
             addressRegion: "Uttar Pradesh",
             postalCode: "243601",

@@ -3,10 +3,7 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 
-import {
-  heroDataBharuchDist,
-  sectionsBharuchDist,
-} from "@/utils/data";
+import { heroDataBharuchDist, sectionsBharuchDist } from "@/utils/data";
 
 /* ===========================
    METADATA (DISTRICT PAGE)
@@ -91,8 +88,7 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/bharuch-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/bharuch-epf-esic-compliance#organization",
 
           name: "EPFDesk – PF & ESIC Consultants Bharuch",
           image: "https://epfdesk.com/images/logo.jpg",
@@ -102,6 +98,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Station Road",
             addressLocality: "Bharuch",
             addressRegion: "Gujarat",
             postalCode: "392001",
@@ -162,6 +159,42 @@ export default function Page() {
             ratingValue: "4.9",
             reviewCount: "47",
           },
+        })}
+      </Script>
+      <Script
+        id="schema-bharuch-faq"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for units in Ankleshwar GIDC and Dahej SIR?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPF and ESIC are mandatory for eligible establishments operating in Ankleshwar GIDC, Dahej SIR and the PCPIR corridor. Chemical, petrochemical and engineering units are under strict scrutiny for PF coverage, ESIC registration and contractor compliance.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the common PF and ESIC audit risks in Bharuch’s chemical industries?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include misclassification of allowances under the New Wage Code 2025, non-inclusion of contract labour wages, ESIC hazard exposure issues and Principal Employer liability under CLRA for contractors operating in GIDC and PCPIR zones.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does EPFDesk handle contractor compliance and CLRA audits in Bharuch?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides end-to-end PF, ESIC and CLRA compliance support for Principal Employers in Bharuch, including contractor audits, ESIC inspections, payroll restructuring and statutory risk mitigation.",
+              },
+            },
+          ],
         })}
       </Script>
 

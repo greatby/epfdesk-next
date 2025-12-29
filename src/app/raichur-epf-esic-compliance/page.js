@@ -88,11 +88,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/raichur-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/raichur-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Raichur EPF & ESIC Compliance for Thermal Power, Mining & Agro Processing",
+          name: "EPFDesk – Raichur EPF & ESIC Compliance for Thermal Power, Mining & Agro Processing",
 
           alternateName:
             "PF & ESIC Consultant for RTPS Shaktinagar, Hutti Gold Mines & Sindhanur Rice Mills",
@@ -104,7 +102,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Station Road",
             addressRegion: "Karnataka",
+            postalCode: "584101",
             addressCountry: "IN",
           },
 

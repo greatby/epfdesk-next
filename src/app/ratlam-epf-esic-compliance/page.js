@@ -27,8 +27,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Ratlam EPF & ESIC Compliance | DMIC Logistics & Pharma Hub",
+    title: "Ratlam EPF & ESIC Compliance | DMIC Logistics & Pharma Hub",
     description:
       "PF & ESIC specialists for Ratlam pharma, logistics, chemical and agro-processing units governed by RO Ujjain.",
     url: "https://epfdesk.com/ratlam-epf-esic-compliance",
@@ -46,8 +45,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Ratlam EPF & ESIC Compliance | Logistics & Pharma Hub | EPFDesk",
+    title: "Ratlam EPF & ESIC Compliance | Logistics & Pharma Hub | EPFDesk",
     description:
       "High-risk PF & ESIC compliance for Ratlam DMIC logistics hubs, pharma and chemical units.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -89,11 +87,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/ratlam-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/ratlam-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Ratlam EPF & ESIC Compliance for Pharma & Logistics",
+          name: "EPFDesk – Ratlam EPF & ESIC Compliance for Pharma & Logistics",
 
           alternateName:
             "PF & ESIC Consultant for Ratlam DMIC Logistics & Pharma Units",
@@ -105,7 +101,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Station Road",
             addressRegion: "Madhya Pradesh",
+            postalCode: "457001",
             addressCountry: "IN",
           },
 

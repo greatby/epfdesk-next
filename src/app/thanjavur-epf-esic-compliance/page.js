@@ -5,10 +5,7 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 
-import {
-  heroDataTanjavurDist,
-  sectionsThanjavurDist,
-} from "@/utils/data";
+import { heroDataTanjavurDist, sectionsThanjavurDist } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -25,8 +22,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Thanjavur EPF & ESIC Compliance | Rice Mills & Agro-Processing",
+    title: "Thanjavur EPF & ESIC Compliance | Rice Mills & Agro-Processing",
     description:
       "PF & ESIC compliance for Thanjavur rice mills, agro-processing units and seasonal labour workforce.",
     url: "https://epfdesk.com/thanjavur-epf-esic-compliance",
@@ -44,8 +40,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Thanjavur EPF & ESIC Consultant | Rice Mills & Agro-Processing",
+    title: "Thanjavur EPF & ESIC Consultant | Rice Mills & Agro-Processing",
     description:
       "NWC 2025-ready PF & ESIC compliance for Thanjavur rice mills, agro units and seasonal labour.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -90,8 +85,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/thanjavur-epf-esic-compliance#organization",
 
-          name:
-            "Thanjavur EPF & ESIC Compliance – Rice Mills, Agro Processing & Seasonal Labour | EPFDesk",
+          name: "Thanjavur EPF & ESIC Compliance – Rice Mills, Agro Processing & Seasonal Labour | EPFDesk",
 
           alternateName:
             "EPFDesk – Thanjavur Rice Mill & Agro-Processing Compliance Experts",
@@ -133,6 +127,58 @@ export default function Page() {
             ratingValue: "4.9",
             reviewCount: "47",
           },
+        })}
+      </Script>
+      <Script
+        id="faq-schema-thanjavur"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF registration mandatory for rice mills in Thanjavur?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Rice mills and allied agro-processing units in Thanjavur must register under EPF once they employ 20 or more workers. Seasonal and migrant workers engaged during harvesting and milling periods are also required to be covered.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does ESIC apply to agro-processing and food units in Thanjavur district?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. ESIC applies to agro-processing, food, and rice mill units employing 10 or more workers with wages up to ₹21,000 per month. Temporary and contract workers involved in cleaning, packing, loading, and storage operations must be included.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the common EPF compliance risks for Thanjavur rice mills?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include non-enrolment of seasonal labour, incomplete UAN/KYC for migrant workers, suppression of basic wages, non-registration of contractors, and mismatch between wage registers and monthly ECR filings.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 impact Thanjavur agro and rice mill units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Under the New Wage Code 2025, basic wages must constitute at least 50% of total remuneration. Thanjavur agro and rice mill units using allowances or daily-wage structures must realign payrolls to avoid retrospective EPF liabilities.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can EPFDesk manage seasonal and migrant labour compliance in Thanjavur?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk supports Thanjavur units with seasonal labour onboarding, UAN and KYC completion for migrant workers, contractor compliance audits, EPF/ESIC registration, and inspection defence.",
+              },
+            },
+          ],
         })}
       </Script>
 

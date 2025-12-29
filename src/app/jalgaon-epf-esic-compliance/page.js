@@ -91,11 +91,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/jalgaon-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/jalgaon-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Specialists for Jalgaon Industries",
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Jalgaon Industries",
 
           alternateName:
             "Jalgaon EPF & ESIC Compliance Experts for Banana Processing, PVC MIDC & Agro Units",
@@ -108,8 +106,10 @@ export default function Page() {
           /* ✅ DISTRICT-CORRECT ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Ring Road",
             addressLocality: "Jalgaon",
             addressRegion: "Maharashtra",
+            postalCode: "425001",
             addressCountry: "IN",
           },
 

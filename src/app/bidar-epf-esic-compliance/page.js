@@ -4,11 +4,7 @@ import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndus
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
 
-import {
-  heroDataBidarDist,
-  sectionsBidarDist,
-  faqBidar,
-} from "@/utils/data";
+import { heroDataBidarDist, sectionsBidarDist, faqBidar } from "@/utils/data";
 
 /* ===========================
    METADATA (DISTRICT PAGE)
@@ -93,8 +89,7 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/bidar-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/bidar-epf-esic-compliance#organization",
 
           name: "EPFDesk – EPF & ESIC Consultants Bidar",
           image: "https://epfdesk.com/images/logo.jpg",
@@ -104,6 +99,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Udgir Road",
             addressLocality: "Bidar",
             addressRegion: "Karnataka",
             postalCode: "585401",
@@ -113,7 +109,7 @@ export default function Page() {
           geo: {
             "@type": "GeoCoordinates",
             latitude: 17.9149,
-            longitude: 77.5040,
+            longitude: 77.504,
           },
 
           areaServed: {

@@ -103,6 +103,7 @@ export default function Page() {
           /* ✅ DISTRICT-SPECIFIC ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Township Area",
             addressLocality: "Haldia",
             addressRegion: "West Bengal",
             postalCode: "721657",

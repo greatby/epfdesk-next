@@ -95,6 +95,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Vijayapura Road",
             addressLocality: "Devanahalli",
             addressRegion: "Karnataka",
             postalCode: "562110",

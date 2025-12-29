@@ -90,8 +90,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/parbhani-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Parbhani EPF & ESIC Compliance for Dal Mills & Agro Processing",
+          name: "EPFDesk – Parbhani EPF & ESIC Compliance for Dal Mills & Agro Processing",
 
           alternateName:
             "PF & ESIC Consultant for Parbhani Dal Mills, Cotton Ginning & Seasonal Labour",
@@ -103,7 +102,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Basmat Road",
             addressRegion: "Maharashtra",
+            postalCode: "431401",
             addressCountry: "IN",
           },
 
@@ -146,10 +147,7 @@ export default function Page() {
       </FadeInWhenVisible>
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-parbhani"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-parbhani" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

@@ -84,8 +84,7 @@ export default function Page() {
           "@type": "ProfessionalService",
           "@id": "https://epfdesk.com/patna-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Patna EPF & ESIC Compliance for IT, Logistics & Services",
+          name: "EPFDesk – Patna EPF & ESIC Compliance for IT, Logistics & Services",
 
           alternateName:
             "PF & ESIC Consultant for Patna IT Firms, Logistics Parks & Hospitals",
@@ -97,7 +96,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Fraser Road",
             addressRegion: "Bihar",
+            postalCode: "800001",
             addressCountry: "IN",
           },
 
@@ -141,10 +142,7 @@ export default function Page() {
       </FadeInWhenVisible>
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-patna"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-patna" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

@@ -72,8 +72,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/khordha-bhubaneswar-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Bhubaneswar & Khordha District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Bhubaneswar & Khordha District",
 
           alternateName:
             "Bhubaneswar EPF & ESIC Compliance for IT, Startups & Service Sector",
@@ -86,8 +85,10 @@ export default function Page() {
           /* ✅ DISTRICT-ACCURATE ADDRESS */
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Janpath Road",
             addressLocality: "Bhubaneswar",
             addressRegion: "Odisha",
+            postalCode: "751001",
             addressCountry: "IN",
           },
 
@@ -129,10 +130,7 @@ export default function Page() {
       <FaqAccordion faqs={faqKhordhaDistrict} />
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-khordha"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-khordha" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

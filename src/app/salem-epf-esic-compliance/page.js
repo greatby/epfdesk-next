@@ -98,10 +98,9 @@ export default function Page() {
           /* 🔒 ADDRESS — STANDARDIZED */
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Church Street",
-            addressLocality: "Bangalore",
-            addressRegion: "Karnataka",
-            postalCode: "560001",
+            streetAddress: "Steel Plant Road",
+            addressRegion: "Tamil Nadu",
+            postalCode: "636005",
             addressCountry: "IN",
           },
 
@@ -125,6 +124,58 @@ export default function Page() {
             ratingValue: "4.9",
             reviewCount: "47",
           },
+        })}
+      </Script>
+      <Script
+        id="faq-schema-salem"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF registration mandatory for steel plants and rolling mills in Salem?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Steel plants, rolling mills, and allied engineering units in Salem must register under EPF once they employ 20 or more workers. Contract labour engaged in loading, furnace operations, maintenance, and logistics must also be included.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does ESIC apply to Salem powerloom and textile units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Powerloom and textile units employing 10 or more workers with wages up to ₹21,000 per month are covered under ESIC. Salem units are frequently audited for exclusion of helpers, winders, cleaners, and piece-rate workers.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are common EPF compliance risks for sago and tapioca factories in Salem?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include non-coverage of seasonal and migrant workers, incorrect basic wage structuring, non-registration of contractors, and mismatch between wage registers and ECR filings.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 impact Salem manufacturing units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Under the New Wage Code 2025, basic wages must form at least 50% of total remuneration. Salem manufacturing units using high allowances must restructure payrolls to avoid retrospective EPF liabilities and inspection penalties.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can EPFDesk manage contractor compliance for Salem industrial units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides end-to-end contractor compliance management including principal employer liability audits, PF/ESIC registration validation, ECR reconciliation, inspection handling, and statutory defence for Salem industries.",
+              },
+            },
+          ],
         })}
       </Script>
 

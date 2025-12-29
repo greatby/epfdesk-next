@@ -30,8 +30,7 @@ export const metadata = {
     canonical: "https://epfdesk.com/bhopal-epf-esic-compliance",
   },
   openGraph: {
-    title:
-      "Bhopal EPF & ESIC Compliance | Labour Code 2025 | EPFDesk",
+    title: "Bhopal EPF & ESIC Compliance | Labour Code 2025 | EPFDesk",
     description:
       "PF & ESIC specialists for Bhopal’s IT, engineering and government contractor ecosystem under RO Bhopal.",
     url: "https://epfdesk.com/bhopal-epf-esic-compliance",
@@ -92,8 +91,7 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/bhopal-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/bhopal-epf-esic-compliance#organization",
 
           name: "EPFDesk – EPF & ESIC Consultants Bhopal",
           image: "https://epfdesk.com/images/logo.jpg",
@@ -103,9 +101,10 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "MP Nagar Zone I",
             addressLocality: "Bhopal",
             addressRegion: "Madhya Pradesh",
-            postalCode: "462001",
+            postalCode: "462011",
             addressCountry: "IN",
           },
 

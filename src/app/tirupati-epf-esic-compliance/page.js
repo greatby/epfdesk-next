@@ -5,10 +5,7 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 
-import {
-  heroDataTirupatiDist,
-  sectionsTirupatiDist,
-} from "@/utils/data";
+import { heroDataTirupatiDist, sectionsTirupatiDist } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -90,8 +87,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/tirupati-epf-esic-compliance#organization",
 
-          name:
-            "Tirupati EPF & ESIC Compliance – Hospitality, Education & Electronics | EPFDesk",
+          name: "Tirupati EPF & ESIC Compliance – Hospitality, Education & Electronics | EPFDesk",
 
           alternateName:
             "EPFDesk – Tirupati EPF & ESIC Consultants for Hotels, Colleges & Sri City",
@@ -133,6 +129,66 @@ export default function Page() {
             ratingValue: "4.9",
             reviewCount: "49",
           },
+        })}
+      </Script>
+      <Script
+        id="faq-schema-tirupati"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF registration mandatory for hotels and hospitality establishments in Tirupati?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Hotels, lodges, choultries, and hospitality establishments in Tirupati must register under EPF once they employ 20 or more workers. Contract staff such as housekeeping, security, kitchen, and transport workers must also be covered.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does ESIC apply to educational institutions in Tirupati?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Educational institutions employing 10 or more non-teaching staff with wages up to ₹21,000 per month are covered under ESIC. This includes administrative staff, lab assistants, transport crews, hostel workers, and support services.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are Sri City electronics manufacturers required to comply with EPF and ESIC?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Electronics manufacturing units in Sri City SEZ are fully covered under EPF and ESIC. Fixed-term employees, apprentices not covered under the Apprentices Act, and contract labour must be included as per statutory provisions.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are common EPF audit risks for Tirupati employers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include non-inclusion of contract labour, incorrect fixed-term employment structuring, suppression of basic wages, mismatch between ECR filings and attendance records, and Principal Employer liability lapses.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 affect Tirupati hospitality and electronics units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Under the New Wage Code 2025, basic wages must be at least 50% of total remuneration. Tirupati employers using allowances to control statutory costs must restructure payrolls to avoid retrospective EPF liabilities during inspections.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can EPFDesk handle contractor compliance and RO Tirupati inspections?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides end-to-end support including contractor compliance audits, Principal Employer liability management, EPF/ESIC registration validation, RO Tirupati inspection handling, and statutory defence.",
+              },
+            },
+          ],
         })}
       </Script>
 

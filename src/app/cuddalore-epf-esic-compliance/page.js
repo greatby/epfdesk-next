@@ -3,10 +3,7 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 
-import {
-  heroDataCuddaloreDist,
-  sectionsCuddaloreDist,
-} from "@/utils/data";
+import { heroDataCuddaloreDist, sectionsCuddaloreDist } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -101,8 +98,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/cuddalore-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Consultants for Cuddalore SIPCOT Industries",
+          name: "EPFDesk – EPF & ESIC Consultants for Cuddalore SIPCOT Industries",
           image: "https://epfdesk.com/images/logo.jpg",
           url: "https://epfdesk.com/cuddalore-epf-esic-compliance",
           telephone: "+91-9945933333",
@@ -110,16 +106,16 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Church Street",
-            addressLocality: "Bangalore",
-            addressRegion: "Karnataka",
-            postalCode: "560001",
+            streetAddress: "OT Road",
+            addressLocality: "Cuddalore",
+            addressRegion: "Tamil Nadu",
+            postalCode: "607001",
             addressCountry: "IN",
           },
 
           geo: {
             "@type": "GeoCoordinates",
-            latitude: 11.7480,
+            latitude: 11.748,
             longitude: 79.7714,
           },
 
@@ -128,7 +124,10 @@ export default function Page() {
             { "@type": "City", name: "Cuddalore" },
             { "@type": "Place", name: "Cuddalore SIPCOT Industrial Park" },
             { "@type": "Place", name: "Chemical & Petrochemical Units" },
-            { "@type": "Place", name: "Pharma & Fertilizer Manufacturing Belt" },
+            {
+              "@type": "Place",
+              name: "Pharma & Fertilizer Manufacturing Belt",
+            },
           ],
 
           description:
@@ -141,6 +140,42 @@ export default function Page() {
           },
         })}
       </Script>
+      <Script
+        id="schema-cuddalore-faq"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF and ESIC mandatory for chemical and pharma units in Cuddalore SIPCOT?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPF and ESIC are mandatory for eligible chemical, petrochemical, pharmaceutical and fertilizer units operating in Cuddalore SIPCOT. These industries are categorised as high-risk and are closely monitored for PF coverage, ESIC registration and contractor compliance.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the major Principal Employer risks in Cuddalore SIPCOT?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Principal Employers in Cuddalore SIPCOT face risks related to unpaid PF and ESIC contributions of contractors, incorrect wage structuring, hazardous process coverage under ESIC and non-compliance with CLRA provisions. Audits frequently focus on contractor wage records and deployment.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does EPFDesk handle PF, ESIC and contractor audits for SIPCOT units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides end-to-end PF, ESIC and CLRA compliance support for SIPCOT units in Cuddalore, including contractor audits, PE liability mitigation, ESIC inspections and NWC 2025 payroll alignment.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       {/* ========= CONTENT ========= */}
       <FadeInWhenVisible>
@@ -150,7 +185,7 @@ export default function Page() {
       <FadeInWhenVisible>
         <CodeOfConduct sections={sectionsCuddaloreDist} />
       </FadeInWhenVisible>
-       <Script id="conversion-tracking-cuddalore" strategy="afterInteractive">
+      <Script id="conversion-tracking-cuddalore" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

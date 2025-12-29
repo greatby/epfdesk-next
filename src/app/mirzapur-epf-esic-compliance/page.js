@@ -35,8 +35,7 @@ export const metadata = {
 
   /* ✅ OPEN GRAPH */
   openGraph: {
-    title:
-      "Mirzapur EPF & ESIC Compliance | Carpet, Brass & Mining",
+    title: "Mirzapur EPF & ESIC Compliance | Carpet, Brass & Mining",
     description:
       "PF & ESIC specialists for Mirzapur carpet exporters, brassware units and sandstone mining clusters under RO Varanasi.",
     url: "https://epfdesk.com/mirzapur-epf-esic-compliance",
@@ -56,8 +55,7 @@ export const metadata = {
   /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
-    title:
-      "Mirzapur EPF & ESIC Compliance | Carpet & Brass Industry",
+    title: "Mirzapur EPF & ESIC Compliance | Carpet & Brass Industry",
     description:
       "High-risk PF & ESIC compliance for Mirzapur’s carpet, brassware and mining sectors.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -102,8 +100,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/mirzapur-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Mirzapur District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Mirzapur District",
 
           alternateName:
             "Mirzapur Carpet, Brassware & Mining EPF/ESIC Compliance",
@@ -115,10 +112,11 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "MG Road",
             addressRegion: "Uttar Pradesh",
+            postalCode: "226001",
             addressCountry: "IN",
           },
-
           geo: {
             "@type": "GeoCoordinates",
             latitude: 25.1337,

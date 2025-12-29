@@ -3,10 +3,7 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 
-import {
-  heroDataMaduraiDist,
-  sectionsMaduraiDist,
-} from "@/utils/data";
+import { heroDataMaduraiDist, sectionsMaduraiDist } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -57,8 +54,7 @@ export const metadata = {
   /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
-    title:
-      "Madurai Labour Compliance | Granite, Textile & MSME EPF/ESIC Risks",
+    title: "Madurai Labour Compliance | Granite, Textile & MSME EPF/ESIC Risks",
     description:
       "Risk-based EPF/ESIC compliance strategies for Madurai’s granite, textile, powerloom and MSME sectors.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -100,11 +96,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/madurai-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/madurai-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Madurai District",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Madurai District",
 
           alternateName:
             "Madurai Granite, Textile & MSME EPF/ESIC Compliance Analysis",
@@ -116,8 +110,10 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Anna Nagar Main Road",
             addressLocality: "Madurai",
             addressRegion: "Tamil Nadu",
+            postalCode: "625020",
             addressCountry: "IN",
           },
 
@@ -143,6 +139,50 @@ export default function Page() {
             ratingValue: "4.9",
             reviewCount: "47",
           },
+        })}
+      </Script>
+      <Script
+        id="faq-schema-madurai"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF registration mandatory for granite and textile units in Madurai?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Granite processing units, textile mills and powerloom clusters in Madurai are mandatorily covered under EPF if they employ 20 or more workers, including contract and migrant labour.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are powerloom and MSME units in Madurai covered under ESIC?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Powerloom units, MSMEs and processing units employing 10 or more workers are covered under ESIC if wages are within the notified limit, including contract labour.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are common EPF and ESIC compliance risks in Madurai industries?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Common risks include non-coverage of contract workers, incorrect wage bifurcation, under-reporting of granite processing manpower, missing ECR filings and non-compliance with NWC 2025 wage rules.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does the New Wage Code 2025 affect Madurai textile and granite units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. The New Wage Code 2025 impacts basic wage calculations, PF contribution levels and allowance structuring for Madurai’s textile mills, powerloom units and granite industries.",
+              },
+            },
+          ],
         })}
       </Script>
 

@@ -92,9 +92,10 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Ashram Road",
             addressLocality: "Ahmedabad",
             addressRegion: "Gujarat",
-            postalCode: "380001",
+            postalCode: "380009",
             addressCountry: "IN",
           },
 

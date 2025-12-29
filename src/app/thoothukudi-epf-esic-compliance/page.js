@@ -5,10 +5,7 @@ import FadeInWhenVisible from "@/components/fadeInWhenVisible";
 import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
 import CodeOfConduct from "@/components/CodeOfConduct";
 
-import {
-  heroDataThoothukudiDist,
-  sectionsThoothukudiDist,
-} from "@/utils/data";
+import { heroDataThoothukudiDist, sectionsThoothukudiDist } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -44,8 +41,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Thoothukudi EPF & ESIC Compliance | Port & Chemical Industries",
+    title: "Thoothukudi EPF & ESIC Compliance | Port & Chemical Industries",
     description:
       "Expert PF & ESIC compliance for Thoothukudi Port Trust labour, chemical units and salt pan workers.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -90,8 +86,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/thoothukudi-epf-esic-compliance#organization",
 
-          name:
-            "Thoothukudi EPF & ESIC Compliance – Port, Chemical & Salt Pan Labour | EPFDesk",
+          name: "Thoothukudi EPF & ESIC Compliance – Port, Chemical & Salt Pan Labour | EPFDesk",
 
           alternateName:
             "EPFDesk – Thoothukudi Port & Industrial Labour Compliance Experts",
@@ -133,6 +128,66 @@ export default function Page() {
             ratingValue: "4.9",
             reviewCount: "48",
           },
+        })}
+      </Script>
+      <Script
+        id="faq-schema-thoothukudi"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Is EPF registration mandatory for port labour and stevedoring contractors in Thoothukudi?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPF registration is mandatory for port labour contractors and stevedoring agencies in Thoothukudi once 20 or more workers are engaged. Principal Employers operating at Thoothukudi Port Trust are jointly liable for PF compliance of contractors.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does ESIC apply to chemical manufacturing units in Thoothukudi?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Chemical and process manufacturing units employing 10 or more workers with wages up to ₹21,000 per month are covered under ESIC. This includes contract labour engaged in production, packing, utilities, and maintenance operations.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are salt pan seasonal workers required to be covered under EPF and ESIC?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Salt pan workers engaged on a seasonal or migratory basis are required to be covered under EPF and ESIC if statutory thresholds are met. Non-enrolment of seasonal labour is a major audit trigger in Thoothukudi.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the main EPF audit risks for Thoothukudi Port and industrial units?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Key risks include non-registration of contractors, exclusion of port handling labour, suppression of basic wages, mismatch between ECR filings and port attendance records, and non-compliance with Principal Employer obligations.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does the New Wage Code 2025 impact Thoothukudi industrial employers?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Under the New Wage Code 2025, basic wages must constitute at least 50% of total remuneration. Thoothukudi employers using allowances to control PF costs must restructure payrolls to avoid retrospective liabilities during EPF inspections.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can EPFDesk manage Principal Employer liability and contractor audits in Thoothukudi?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. EPFDesk provides end-to-end support including contractor compliance audits, Principal Employer liability mitigation, EPF/ESIC registration validation, inspection handling, and statutory defence for Thoothukudi port and industrial units.",
+              },
+            },
+          ],
         })}
       </Script>
 

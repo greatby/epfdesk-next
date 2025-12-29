@@ -34,8 +34,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Burhanpur EPF & ESIC Compliance | Textile & Power Loom Hub",
+    title: "Burhanpur EPF & ESIC Compliance | Textile & Power Loom Hub",
     description:
       "PF & ESIC specialists for Burhanpur textile mills, power looms and sugar units governed by RO Indore.",
     url: "https://epfdesk.com/burhanpur-epf-esic-compliance",
@@ -101,8 +100,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/burhanpur-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Consultants for Burhanpur Textile & Power Loom Units",
+          name: "EPFDesk – EPF & ESIC Consultants for Burhanpur Textile & Power Loom Units",
           image: "https://epfdesk.com/images/logo.jpg",
           url: "https://epfdesk.com/burhanpur-epf-esic-compliance",
           telephone: "+91-9945933333",
@@ -110,6 +108,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Shahpur Road",
             addressLocality: "Burhanpur",
             addressRegion: "Madhya Pradesh",
             postalCode: "450331",
@@ -119,7 +118,7 @@ export default function Page() {
           geo: {
             "@type": "GeoCoordinates",
             latitude: 21.3145,
-            longitude: 76.2180,
+            longitude: 76.218,
           },
 
           areaServed: {

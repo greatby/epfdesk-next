@@ -21,7 +21,7 @@ export const metadata = {
   alternates: {
     canonical: "https://epfdesk.com/begusarai-epf-esic-compliance",
   },
-   keywords: [
+  keywords: [
     "Begusarai PF consultant",
     "Begusarai ESIC registration",
     "Barauni Refinery PF ESIC compliance",
@@ -103,6 +103,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Kachahari Road",
             addressLocality: "Begusarai",
             addressRegion: "Bihar",
             postalCode: "851101",

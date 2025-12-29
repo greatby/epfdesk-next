@@ -56,8 +56,7 @@ export const metadata = {
   /* ✅ TWITTER */
   twitter: {
     card: "summary_large_image",
-    title:
-      "Meerut EPF & ESIC Compliance | Sports Goods & Seasonal Risk",
+    title: "Meerut EPF & ESIC Compliance | Sports Goods & Seasonal Risk",
     description:
       "Expert PF/ESIC compliance for Meerut sports goods, engineering and sugar sectors.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -99,11 +98,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/meerut-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/meerut-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – EPF & ESIC Compliance Consultants for Meerut",
+          name: "EPFDesk – EPF & ESIC Compliance Consultants for Meerut",
 
           alternateName:
             "Meerut Sports Goods, Engineering & Sugar Industry EPF/ESIC Compliance",
@@ -115,8 +112,10 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Garh Road",
             addressLocality: "Meerut",
             addressRegion: "Uttar Pradesh",
+            postalCode: "250002",
             addressCountry: "IN",
           },
 

@@ -6,11 +6,7 @@ import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndus
 import CodeOfConduct from "@/components/CodeOfConduct";
 import FaqAccordion from "@/components/faqAccordian";
 
-import {
-  heroDataRanchi,
-  sectionsRanchi,
-  faqRanchi,
-} from "@/utils/data";
+import { heroDataRanchi, sectionsRanchi, faqRanchi } from "@/utils/data";
 
 /* ===========================
    METADATA (APP ROUTER)
@@ -27,8 +23,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Ranchi EPF & ESIC Compliance | IT, Healthcare & Education Hub",
+    title: "Ranchi EPF & ESIC Compliance | IT, Healthcare & Education Hub",
     description:
       "PF & ESIC specialists for Ranchi IT firms, hospitals, educational institutions and industrial MSMEs.",
     url: "https://epfdesk.com/ranchi-epf-esic-compliance",
@@ -89,11 +84,9 @@ export default function Page() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id":
-            "https://epfdesk.com/ranchi-epf-esic-compliance#organization",
+          "@id": "https://epfdesk.com/ranchi-epf-esic-compliance#organization",
 
-          name:
-            "EPFDesk – Ranchi EPF & ESIC Compliance for IT, Healthcare & Education",
+          name: "EPFDesk – Ranchi EPF & ESIC Compliance for IT, Healthcare & Education",
 
           alternateName:
             "PF & ESIC Consultant for Ranchi IT Firms, Hospitals & Educational Institutions",
@@ -105,7 +98,9 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Main Road",
             addressRegion: "Jharkhand",
+            postalCode: "834001",
             addressCountry: "IN",
           },
 
