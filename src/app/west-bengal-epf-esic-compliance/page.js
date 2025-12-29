@@ -104,6 +104,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "B.B.D. Bagh Area",
             addressLocality: "Kolkata",
             addressRegion: "West Bengal",
             postalCode: "700001",

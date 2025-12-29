@@ -104,6 +104,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Dwaraka Nagar",
             addressLocality: "Visakhapatnam",
             addressRegion: "Andhra Pradesh",
             postalCode: "530001",

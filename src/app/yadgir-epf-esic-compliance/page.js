@@ -101,6 +101,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Shorapur Road",
             addressLocality: "Yadgir",
             addressRegion: "Karnataka",
             postalCode: "585202",

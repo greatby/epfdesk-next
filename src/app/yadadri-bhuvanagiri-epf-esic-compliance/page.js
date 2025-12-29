@@ -98,6 +98,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Bhongir Road",
             addressLocality: "Bhuvanagiri",
             addressRegion: "Telangana",
             postalCode: "508116",

@@ -98,6 +98,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Alkapuri Main Road",
             addressLocality: "Vadodara",
             addressRegion: "Gujarat",
             postalCode: "390001",

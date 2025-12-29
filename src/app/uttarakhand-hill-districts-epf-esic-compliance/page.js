@@ -101,6 +101,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Rajpur Road",
             addressLocality: "Dehradun",
             addressRegion: "Uttarakhand",
             postalCode: "248001",

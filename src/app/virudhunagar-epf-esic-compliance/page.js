@@ -100,6 +100,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Madurai Road",
             addressLocality: "Virudhunagar",
             addressRegion: "Tamil Nadu",
             postalCode: "626001",

@@ -92,8 +92,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/uttara-kannada-epf-esic-compliance#organization",
 
-          name:
-            "Uttara Kannada EPF & ESIC Compliance for Kaiga, Naval Base & Heavy Industry | EPFDesk",
+          name: "Uttara Kannada EPF & ESIC Compliance for Kaiga, Naval Base & Heavy Industry | EPFDesk",
 
           alternateName:
             "EPFDesk – PF & ESIC Consultants for Kaiga Nuclear, Naval Base & Dandeli Industry",
@@ -105,6 +104,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "MG Road",
             addressLocality: "Karwar",
             addressRegion: "Karnataka",
             postalCode: "581301",
@@ -148,10 +148,7 @@ export default function Page() {
       <FaqAccordion faqs={faqUttaraKannada} />
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-uttara-kannada"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-uttara-kannada" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {

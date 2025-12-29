@@ -102,6 +102,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Patni Chowk Area",
             addressLocality: "Washim",
             addressRegion: "Maharashtra",
             postalCode: "444505",

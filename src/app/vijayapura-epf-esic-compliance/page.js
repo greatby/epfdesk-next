@@ -27,8 +27,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Vijayapura EPF & ESIC Compliance | Sugar Mills & Agro Processing",
+    title: "Vijayapura EPF & ESIC Compliance | Sugar Mills & Agro Processing",
     description:
       "PF & ESIC experts for Vijayapura’s sugar mills, grape processing units and private educational institutions.",
     url: "https://epfdesk.com/vijayapura-epf-esic-compliance",
@@ -46,8 +45,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Vijayapura EPF & ESIC Compliance | Sugar & Education Sector",
+    title: "Vijayapura EPF & ESIC Compliance | Sugar & Education Sector",
     description:
       "PF/ESIC compliance for Vijayapura sugar mills, agro processors and educational trusts.",
     images: ["https://epfdesk.com/images/logo.jpg"],
@@ -92,8 +90,7 @@ export default function Page() {
           "@id":
             "https://epfdesk.com/vijayapura-epf-esic-compliance#organization",
 
-          name:
-            "Vijayapura EPF & ESIC Compliance for Sugar Mills, Agro Processing & Educational Trusts | EPFDesk",
+          name: "Vijayapura EPF & ESIC Compliance for Sugar Mills, Agro Processing & Educational Trusts | EPFDesk",
 
           alternateName:
             "EPFDesk – PF & ESIC Consultants for Sugar Mills & Education in Vijayapura",
@@ -105,6 +102,7 @@ export default function Page() {
 
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Solapur Road",
             addressLocality: "Vijayapura",
             addressRegion: "Karnataka",
             postalCode: "586101",
@@ -114,7 +112,7 @@ export default function Page() {
           geo: {
             "@type": "GeoCoordinates",
             latitude: 16.8302,
-            longitude: 75.7100,
+            longitude: 75.71,
           },
 
           areaServed: [
@@ -148,10 +146,7 @@ export default function Page() {
       <FaqAccordion faqs={faqVijayapura} />
 
       {/* ========= CONVERSION TRACKING ========= */}
-      <Script
-        id="conversion-tracking-vijayapura"
-        strategy="afterInteractive"
-      >
+      <Script id="conversion-tracking-vijayapura" strategy="afterInteractive">
         {`
           document.querySelectorAll('a[href^="tel:"]').forEach(el => {
             el.addEventListener('click', () => {
